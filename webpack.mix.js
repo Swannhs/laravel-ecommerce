@@ -62,4 +62,4 @@ if (! buildPaths.length) {
     buildPaths = ['*/*']
 }
 
-buildPaths.forEach(buildPath => glob.sync(`./platform/${buildPath}/webpack.mix.js`).forEach(item => require(__dirname + '/' + item)))
+buildPaths.forEach(buildPath => glob.sync(`./app/${buildPath}/webpack.mix.js`).forEach(item => require(__dirname + '/' + item)))

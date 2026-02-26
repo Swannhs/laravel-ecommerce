@@ -1,0 +1,37 @@
+<?php
+
+return [
+    App\Providers\AppServiceProvider::class,
+    App\Providers\EventServiceProvider::class,
+    App\Providers\RouteServiceProvider::class,
+
+    Botble\Base\Providers\BaseServiceProvider::class,
+    Botble\Base\Providers\CommandServiceProvider::class,
+    Botble\Base\Providers\EventServiceProvider::class,
+    Botble\Base\Providers\ComposerServiceProvider::class,
+    Botble\Base\Providers\MailConfigServiceProvider::class,
+    Botble\Base\Providers\FormServiceProvider::class,
+    Botble\Support\Providers\SupportServiceProvider::class,
+    Botble\Table\Providers\TableServiceProvider::class,
+    Botble\ACL\Providers\AclServiceProvider::class,
+    Botble\Dashboard\Providers\DashboardServiceProvider::class,
+    Botble\Media\Providers\MediaServiceProvider::class,
+    Botble\JsValidation\Providers\JsValidationServiceProvider::class,
+    Botble\Chart\Providers\ChartServiceProvider::class,
+    Botble\Icon\Providers\IconServiceProvider::class,
+
+    Botble\GetStarted\Providers\GetStartedServiceProvider::class,
+    Botble\Installer\Providers\InstallerServiceProvider::class,
+    Botble\Menu\Providers\MenuServiceProvider::class,
+    Botble\Optimize\Providers\OptimizeServiceProvider::class,
+    Botble\Page\Providers\PageServiceProvider::class,
+    Botble\PluginManagement\Providers\PluginManagementServiceProvider::class,
+    Botble\Revision\Providers\RevisionServiceProvider::class,
+    Botble\SeoHelper\Providers\SeoHelperServiceProvider::class,
+    Botble\Shortcode\Providers\ShortcodeServiceProvider::class,
+    Botble\Sitemap\Providers\SitemapServiceProvider::class,
+    Botble\Slug\Providers\SlugServiceProvider::class,
+    Botble\Theme\Providers\ThemeServiceProvider::class,
+    Botble\Theme\Providers\RouteServiceProvider::class,
+    Botble\Widget\Providers\WidgetServiceProvider::class,
+];
