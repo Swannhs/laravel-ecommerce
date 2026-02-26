@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Slug\\": "src"
+            "App\\Slug\\": "src"
         }
     },
     "require": {
@@ -13,10 +13,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Slug\\Providers\\SlugServiceProvider"
+                "App\\Slug\\Providers\\SlugServiceProvider"
             ],
             "aliases": {
-                "SlugHelper": "Botble\\Slug\\Facades\\SlugHelper"
+                "SlugHelper": "App\\Slug\\Facades\\SlugHelper"
             }
         }
     }

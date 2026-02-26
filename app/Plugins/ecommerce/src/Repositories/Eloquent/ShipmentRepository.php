@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\ShipmentInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ShipmentInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ShipmentRepository extends RepositoriesAbstract implements ShipmentInterface
 {

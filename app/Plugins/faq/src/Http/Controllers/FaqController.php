@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Faq\Http\Controllers;
+namespace App\Plugins\Faq\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Faq\Forms\FaqForm;
-use Botble\Faq\Http\Requests\FaqRequest;
-use Botble\Faq\Models\Faq;
-use Botble\Faq\Tables\FaqTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Faq\Forms\FaqForm;
+use App\Plugins\Faq\Http\Requests\FaqRequest;
+use App\Plugins\Faq\Models\Faq;
+use App\Plugins\Faq\Tables\FaqTable;
 
 class FaqController extends BaseController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Enums\CrossSellPriceType;
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Enums\CrossSellPriceType;
+use App\Plugins\Ecommerce\Models\Product;
 use Closure;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Collection;

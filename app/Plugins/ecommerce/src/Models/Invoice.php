@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\InvoiceStatusEnum;
-use Botble\Payment\Models\Payment;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\InvoiceStatusEnum;
+use App\Plugins\Payment\Models\Payment;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;

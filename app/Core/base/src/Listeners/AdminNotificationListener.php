@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace App\Core\Base\Listeners;
 
-use Botble\Base\Events\AdminNotificationEvent;
-use Botble\Base\Models\AdminNotification;
+use App\Core\Base\Events\AdminNotificationEvent;
+use App\Core\Base\Models\AdminNotification;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 

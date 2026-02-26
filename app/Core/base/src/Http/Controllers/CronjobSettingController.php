@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Setting\Facades\Setting;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Symfony\Component\Process\PhpExecutableFinder;

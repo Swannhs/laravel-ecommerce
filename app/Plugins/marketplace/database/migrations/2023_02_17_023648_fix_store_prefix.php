@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Marketplace\Models\Store;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Plugins\Marketplace\Models\Store;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

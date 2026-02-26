@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Newsletter\Providers;
+namespace App\Plugins\Newsletter\Providers;
 
-use Botble\Newsletter\Events\SubscribeNewsletterEvent;
-use Botble\Newsletter\Events\UnsubscribeNewsletterEvent;
-use Botble\Newsletter\Listeners\AddSubscriberToMailchimpContactListListener;
-use Botble\Newsletter\Listeners\AddSubscriberToSendGridContactListListener;
-use Botble\Newsletter\Listeners\RemoveSubscriberToMailchimpContactListListener;
-use Botble\Newsletter\Listeners\SendEmailNotificationAboutNewSubscriberListener;
+use App\Plugins\Newsletter\Events\SubscribeNewsletterEvent;
+use App\Plugins\Newsletter\Events\UnsubscribeNewsletterEvent;
+use App\Plugins\Newsletter\Listeners\AddSubscriberToMailchimpContactListListener;
+use App\Plugins\Newsletter\Listeners\AddSubscriberToSendGridContactListListener;
+use App\Plugins\Newsletter\Listeners\RemoveSubscriberToMailchimpContactListListener;
+use App\Plugins\Newsletter\Listeners\SendEmailNotificationAboutNewSubscriberListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

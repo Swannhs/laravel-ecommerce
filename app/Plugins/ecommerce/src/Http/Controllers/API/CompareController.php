@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Http\Requests\API\AddCompareRequest;
-use Botble\Ecommerce\Http\Requests\API\DeleteCompareRequest;
-use Botble\Ecommerce\Http\Resources\API\CompareItemResource;
-use Botble\Ecommerce\Models\Product;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Http\Requests\API\AddCompareRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\DeleteCompareRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\CompareItemResource;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Str;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources\API;
+namespace App\Plugins\Ecommerce\Http\Resources\API;
 
-use Botble\Ecommerce\Models\Order;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;

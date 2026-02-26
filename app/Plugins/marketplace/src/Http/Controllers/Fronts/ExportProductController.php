@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\DataSynchronize\Http\Controllers\ExportController;
-use Botble\Marketplace\Exporters\ProductExporter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Packages\DataSynchronize\Http\Controllers\ExportController;
+use App\Plugins\Marketplace\Exporters\ProductExporter;
 
 class ExportProductController extends ExportController
 {

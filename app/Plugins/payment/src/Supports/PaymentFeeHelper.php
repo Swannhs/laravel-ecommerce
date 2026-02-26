@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Supports;
+namespace App\Plugins\Payment\Supports;
 
-use Botble\Payment\Enums\PaymentFeeTypeEnum;
+use App\Plugins\Payment\Enums\PaymentFeeTypeEnum;
 
 class PaymentFeeHelper
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Faq;
+namespace App\Plugins\Faq;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Models\BaseModel;
-use Botble\Faq\Contracts\Faq as FaqContract;
-use Botble\Faq\Models\Faq;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Faq\Contracts\Faq as FaqContract;
+use App\Plugins\Faq\Models\Faq;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

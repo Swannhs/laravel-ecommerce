@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Listeners;
+namespace App\Packages\Theme\Listeners;
 
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Facades\Theme;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Facades\Theme;
 
 class SetDefaultTheme
 {

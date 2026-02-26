@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\Theme\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Packages\Theme\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         if (config('packages.theme.general.display_theme_manager_in_admin_panel', true)) {
             Route::group(['prefix' => 'theme'], function (): void {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Repositories\Eloquent;
+namespace App\Plugins\Blog\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Repositories\Interfaces\CategoryInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 

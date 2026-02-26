@@ -1,28 +1,28 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\DatePickerFieldOption;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\PhoneNumberFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\DatePickerField;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\PhoneNumberField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Enums\CustomerStatusEnum;
-use Botble\Ecommerce\Http\Requests\CustomerCreateRequest;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\DatePickerFieldOption;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\PhoneNumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\DatePickerField;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\PhoneNumberField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Enums\CustomerStatusEnum;
+use App\Plugins\Ecommerce\Http\Requests\CustomerCreateRequest;
+use App\Plugins\Ecommerce\Models\Customer;
 
 class CustomerForm extends FormAbstract
 {

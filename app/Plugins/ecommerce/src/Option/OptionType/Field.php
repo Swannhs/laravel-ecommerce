@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Option\OptionType;
+namespace App\Plugins\Ecommerce\Option\OptionType;
 
-use Botble\Ecommerce\Option\Interfaces\OptionTypeInterface;
+use App\Plugins\Ecommerce\Option\Interfaces\OptionTypeInterface;
 
 class Field extends BaseOptionType implements OptionTypeInterface
 {

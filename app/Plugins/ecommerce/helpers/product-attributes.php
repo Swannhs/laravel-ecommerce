@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Supports\RenderProductAttributesViewOnlySupport;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Ecommerce\Supports\RenderProductAttributesViewOnlySupport;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Collection;

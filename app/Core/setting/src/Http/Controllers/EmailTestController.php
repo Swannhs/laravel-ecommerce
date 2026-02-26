@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Setting\Http\Requests\EmailSendTestRequest;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Setting\Http\Requests\EmailSendTestRequest;
 use Exception;
 
 class EmailTestController extends BaseController

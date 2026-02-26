@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\FormattedColumn;
 use Illuminate\Database\Query\Builder;
 
 class ProductPriceTable extends ProductBulkEditableTable

@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Slug\Models\Slug;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

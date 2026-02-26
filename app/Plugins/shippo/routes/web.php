@@ -1,10 +1,10 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\Shippo\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Plugins\Shippo\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group([
             'prefix' => 'shipments/shippo',
@@ -89,7 +89,7 @@ Route::group(['namespace' => 'Botble\Shippo\Http\Controllers'], function (): voi
 });
 
 Route::group([
-    'namespace' => 'Botble\Shippo\Http\Controllers',
+    'namespace' => 'App\Plugins\Shippo\Http\Controllers',
     'prefix' => 'shippo',
     'middleware' => ['api', 'shippo.webhook'],
     'as' => 'shippo.',

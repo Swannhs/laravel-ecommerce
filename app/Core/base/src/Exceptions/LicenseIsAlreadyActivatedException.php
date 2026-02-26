@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Exceptions;
+namespace App\Core\Base\Exceptions;
 
 use RuntimeException;
 

@@ -1,16 +1,16 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Http\Controllers\CacheManagementController;
-use Botble\Base\Http\Controllers\CoreIconController;
-use Botble\Base\Http\Controllers\NotificationController;
-use Botble\Base\Http\Controllers\SearchController;
-use Botble\Base\Http\Controllers\SystemInformationController;
-use Botble\Base\Http\Controllers\ToggleThemeModeController;
-use Botble\Base\Http\Middleware\RequiresJsonRequestMiddleware;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Http\Controllers\CacheManagementController;
+use App\Core\Base\Http\Controllers\CoreIconController;
+use App\Core\Base\Http\Controllers\NotificationController;
+use App\Core\Base\Http\Controllers\SearchController;
+use App\Core\Base\Http\Controllers\SystemInformationController;
+use App\Core\Base\Http\Controllers\ToggleThemeModeController;
+use App\Core\Base\Http\Middleware\RequiresJsonRequestMiddleware;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\Base\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Core\Base\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group(['prefix' => 'system'], function (): void {
             Route::get('', [

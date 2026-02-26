@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\SpecificationGroupForm;
-use Botble\Ecommerce\Http\Requests\SpecificationGroupRequest;
-use Botble\Ecommerce\Models\SpecificationGroup;
-use Botble\Ecommerce\Tables\SpecificationGroupTable;
-use Botble\Table\Abstracts\TableAbstract;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\SpecificationGroupForm;
+use App\Plugins\Ecommerce\Http\Requests\SpecificationGroupRequest;
+use App\Plugins\Ecommerce\Models\SpecificationGroup;
+use App\Plugins\Ecommerce\Tables\SpecificationGroupTable;
+use App\Core\Table\Abstracts\TableAbstract;
 
 class SpecificationGroupController extends BaseController
 {

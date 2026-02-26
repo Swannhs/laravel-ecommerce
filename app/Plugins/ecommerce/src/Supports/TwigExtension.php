@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
 use Twig\Extension\AbstractExtension;
 use Twig\Extension\ExtensionInterface;

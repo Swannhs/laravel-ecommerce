@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SslCommerz\Services;
+namespace App\Plugins\SslCommerz\Services;
 
-use Botble\SslCommerz\Library\SslCommerz\SslCommerzNotification;
+use App\Plugins\SslCommerz\Library\SslCommerz\SslCommerzNotification;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Setting\Listeners;
+namespace App\Core\Setting\Listeners;
 
-use Botble\Base\Events\PanelSectionsRendering;
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
+use App\Core\Base\Events\PanelSectionsRendering;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
 use Closure;
 
 class PushDashboardMenuToOtherSectionPanel

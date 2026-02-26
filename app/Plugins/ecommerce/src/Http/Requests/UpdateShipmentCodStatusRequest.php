@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\ShippingCodStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\ShippingCodStatusEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class UpdateShipmentCodStatusRequest extends Request

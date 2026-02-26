@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\CurrencyInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\CurrencyInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Collection;
 
 class CurrencyRepository extends RepositoriesAbstract implements CurrencyInterface

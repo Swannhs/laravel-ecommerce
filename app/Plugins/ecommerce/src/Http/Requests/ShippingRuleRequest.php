@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class ShippingRuleRequest extends Request

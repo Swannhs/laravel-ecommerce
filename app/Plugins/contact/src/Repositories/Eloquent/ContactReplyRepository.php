@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Contact\Repositories\Eloquent;
+namespace App\Plugins\Contact\Repositories\Eloquent;
 
-use Botble\Contact\Repositories\Interfaces\ContactReplyInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Contact\Repositories\Interfaces\ContactReplyInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ContactReplyRepository extends RepositoriesAbstract implements ContactReplyInterface
 {

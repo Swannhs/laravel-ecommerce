@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

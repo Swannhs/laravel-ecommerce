@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
 
 class CountryController extends BaseApiController
 {

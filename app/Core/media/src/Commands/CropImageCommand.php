@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Commands;
+namespace App\Core\Media\Commands;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

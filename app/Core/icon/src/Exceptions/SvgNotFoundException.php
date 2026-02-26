@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Icon\Exceptions;
+namespace App\Core\Icon\Exceptions;
 
 use Exception;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\PluginManagement\Providers;
+namespace App\Packages\PluginManagement\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Dashboard\Events\RenderingDashboardWidgets;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Dashboard\Events\RenderingDashboardWidgets;
+use App\Core\Dashboard\Supports\DashboardWidgetInstance;
 use Illuminate\Support\Collection;
 
 class HookServiceProvider extends ServiceProvider

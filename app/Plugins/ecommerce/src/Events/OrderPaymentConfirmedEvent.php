@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Events;
+namespace App\Plugins\Ecommerce\Events;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Events\Event;
-use Botble\Ecommerce\Models\Order;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Events\Event;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Queue\SerializesModels;
 
 class OrderPaymentConfirmedEvent extends Event

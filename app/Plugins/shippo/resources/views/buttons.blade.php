@@ -1,6 +1,6 @@
-@if (app(Botble\Shippo\Shippo::class)->canCreateTransaction($shipment))
+@if (app(App\Plugins\Shippo\Shippo::class)->canCreateTransaction($shipment))
     @php
-        $url = route(app(\Botble\Shippo\Shippo::class)->getRoutePrefixByFactor() . 'shippo.show', $shipment->id);
+        $url = route(app(\App\Plugins\Shippo\Shippo::class)->getRoutePrefixByFactor() . 'shippo.show', $shipment->id);
     @endphp
     <button
         class="btn btn-primary"

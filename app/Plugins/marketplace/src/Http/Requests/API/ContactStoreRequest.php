@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\API;
+namespace App\Plugins\Marketplace\Http\Requests\API;
 
-use Botble\Base\Rules\EmailRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Support\Http\Requests\Request;
 
 class ContactStoreRequest extends Request
 {

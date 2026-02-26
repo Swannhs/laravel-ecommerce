@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Contracts\GlobalSearchableManager;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Contracts\GlobalSearchableManager;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Http\Request;
 
 class SearchController extends BaseController

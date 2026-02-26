@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Ads\Forms\Settings;
+namespace App\Plugins\Ads\Forms\Settings;
 
-use Botble\Ads\Http\Requests\Settings\AdsSettingRequest;
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\CodeEditorFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\RadioFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\CodeEditorField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\RadioField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Setting\Forms\SettingForm;
+use App\Plugins\Ads\Http\Requests\Settings\AdsSettingRequest;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\CodeEditorFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\RadioFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\CodeEditorField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\RadioField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Setting\Forms\SettingForm;
 
 class AdsSettingForm extends SettingForm
 {

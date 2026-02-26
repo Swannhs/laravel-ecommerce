@@ -14,7 +14,7 @@
             ->modify(
                 'submit',
                 'submit',
-                Botble\Base\Forms\FieldOptions\ButtonFieldOption::make()
+                App\Core\Base\Forms\FieldOptions\ButtonFieldOption::make()
                     ->label(__('Register'))
                     ->cssClass('ps-btn'),
                 true

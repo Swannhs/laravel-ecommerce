@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Support\Http\Requests;
+namespace App\Core\Support\Http\Requests;
 
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Foundation\Http\FormRequest;

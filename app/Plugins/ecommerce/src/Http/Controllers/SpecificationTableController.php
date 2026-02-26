@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\SpecificationTableForm;
-use Botble\Ecommerce\Http\Requests\SpecificationTableRequest;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\SpecificationTable;
-use Botble\Ecommerce\Tables\SpecificationTableTable;
-use Botble\Table\Abstracts\TableAbstract;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\SpecificationTableForm;
+use App\Plugins\Ecommerce\Http\Requests\SpecificationTableRequest;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\SpecificationTable;
+use App\Plugins\Ecommerce\Tables\SpecificationTableTable;
+use App\Core\Table\Abstracts\TableAbstract;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

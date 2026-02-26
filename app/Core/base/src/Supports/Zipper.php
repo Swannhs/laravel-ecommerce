@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\PclZip as Zip;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\PclZip as Zip;
 use Illuminate\Support\Facades\File;
 use Throwable;
 use ZipArchive;

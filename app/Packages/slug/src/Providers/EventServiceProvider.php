@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace App\Packages\Slug\Providers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\FinishedSeederEvent;
-use Botble\Base\Events\SeederPrepared;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Slug\Listeners\CreatedContentListener;
-use Botble\Slug\Listeners\CreateMissingSlug;
-use Botble\Slug\Listeners\DeletedContentListener;
-use Botble\Slug\Listeners\TruncateSlug;
-use Botble\Slug\Listeners\UpdatedContentListener;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Events\FinishedSeederEvent;
+use App\Core\Base\Events\SeederPrepared;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Packages\Slug\Listeners\CreatedContentListener;
+use App\Packages\Slug\Listeners\CreateMissingSlug;
+use App\Packages\Slug\Listeners\DeletedContentListener;
+use App\Packages\Slug\Listeners\TruncateSlug;
+use App\Packages\Slug\Listeners\UpdatedContentListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Payment\Supports;
+namespace App\Plugins\Payment\Supports;
 
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Events\RenderedPaymentMethods;
-use Botble\Payment\Events\RenderingPaymentMethods;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Events\RenderedPaymentMethods;
+use App\Plugins\Payment\Events\RenderingPaymentMethods;
 
 class PaymentMethods
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace App\Core\ACL\Providers;
 
-use Botble\ACL\Events\RoleAssignmentEvent;
-use Botble\ACL\Events\RoleUpdateEvent;
-use Botble\ACL\Listeners\LoginListener;
-use Botble\ACL\Listeners\RoleAssignmentListener;
-use Botble\ACL\Listeners\RoleUpdateListener;
+use App\Core\ACL\Events\RoleAssignmentEvent;
+use App\Core\ACL\Events\RoleUpdateEvent;
+use App\Core\ACL\Listeners\LoginListener;
+use App\Core\ACL\Listeners\RoleAssignmentListener;
+use App\Core\ACL\Listeners\RoleUpdateListener;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Events\AbandonedCartReminderEvent;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Services\AbandonedCartService;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Events\AbandonedCartReminderEvent;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Services\AbandonedCartService;
+use App\Core\Media\Facades\RvMedia;
 use Exception;
 use Illuminate\Support\Facades\Log;
 

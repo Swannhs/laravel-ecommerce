@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Faq\Listeners;
+namespace App\Plugins\Faq\Listeners;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\MetaBox;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\MetaBox;
 use Exception;
 
 class DeletedContentListener

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Widget\Factories;
+namespace App\Packages\Widget\Factories;
 
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\Misc\InvalidWidgetClassException;
-use Botble\Widget\Misc\ViewExpressionTrait;
-use Botble\Widget\WidgetId;
+use App\Packages\Widget\AbstractWidget;
+use App\Packages\Widget\Misc\InvalidWidgetClassException;
+use App\Packages\Widget\Misc\ViewExpressionTrait;
+use App\Packages\Widget\WidgetId;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Str;

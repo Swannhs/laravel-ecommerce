@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\AuditLog\Events;
+namespace App\Plugins\AuditLog\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Auth;
 

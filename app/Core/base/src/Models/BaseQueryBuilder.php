@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Models;
+namespace App\Core\Base\Models;
 
-use Botble\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Enums\BaseStatusEnum;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
 

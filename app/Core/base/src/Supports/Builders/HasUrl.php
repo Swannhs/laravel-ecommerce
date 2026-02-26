@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports\Builders;
+namespace App\Core\Base\Supports\Builders;
 
-use Botble\Table\Actions\Action;
+use App\Core\Table\Actions\Action;
 use Closure;
 
 trait HasUrl

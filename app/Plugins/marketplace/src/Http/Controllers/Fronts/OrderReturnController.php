@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Enums\OrderReturnStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\OrderReturnHelper;
-use Botble\Ecommerce\Http\Requests\UpdateOrderReturnRequest;
-use Botble\Ecommerce\Models\OrderReturn;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Tables\OrderReturnTable;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\OrderReturnHelper;
+use App\Plugins\Ecommerce\Http\Requests\UpdateOrderReturnRequest;
+use App\Plugins\Ecommerce\Models\OrderReturn;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Tables\OrderReturnTable;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;

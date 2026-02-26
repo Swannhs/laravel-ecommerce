@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Newsletter\Repositories\Caches;
+namespace App\Plugins\Newsletter\Repositories\Caches;
 
-use Botble\Newsletter\Repositories\Eloquent\NewsletterRepository;
+use App\Plugins\Newsletter\Repositories\Eloquent\NewsletterRepository;
 
 /**
  * @deprecated

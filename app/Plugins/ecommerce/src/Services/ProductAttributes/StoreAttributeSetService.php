@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Services\ProductAttributes;
+namespace App\Plugins\Ecommerce\Services\ProductAttributes;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Ecommerce\Models\ProductAttribute;
-use Botble\Ecommerce\Models\ProductAttributeSet;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Plugins\Ecommerce\Models\ProductAttribute;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
 use Illuminate\Http\Request;
 
 class StoreAttributeSetService

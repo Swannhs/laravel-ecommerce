@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\PluginManagement\Providers;
+namespace App\Packages\PluginManagement\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\PluginManagement\PluginManifest;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\PluginManagement\PluginManifest;
 use Composer\Autoload\ClassLoader;
 
 class PluginManagementServiceProvider extends ServiceProvider

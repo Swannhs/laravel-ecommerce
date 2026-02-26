@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Testimonial\Forms;
+namespace App\Plugins\Testimonial\Forms;
 
-use Botble\Base\Forms\FieldOptions\ContentFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\EditorField;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Testimonial\Http\Requests\TestimonialRequest;
-use Botble\Testimonial\Models\Testimonial;
+use App\Core\Base\Forms\FieldOptions\ContentFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\EditorField;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Testimonial\Http\Requests\TestimonialRequest;
+use App\Plugins\Testimonial\Models\Testimonial;
 
 class TestimonialForm extends FormAbstract
 {

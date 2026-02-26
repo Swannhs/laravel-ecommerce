@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Importers;
+namespace App\Plugins\Ecommerce\Importers;
 
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Ecommerce\Models\Product;
+use App\Packages\DataSynchronize\Importer\ImportColumn;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Support\Facades\Auth;
 
 class ProductPriceImporter extends Importer

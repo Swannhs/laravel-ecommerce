@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Forms\FieldOptions\ButtonFieldOption;
-use Botble\Base\Forms\FieldOptions\DescriptionFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\FormAbstract;
+use App\Core\Base\Forms\FieldOptions\ButtonFieldOption;
+use App\Core\Base\Forms\FieldOptions\DescriptionFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\FormAbstract;
 
 class ModerateOrderReturnForm extends FormAbstract
 {

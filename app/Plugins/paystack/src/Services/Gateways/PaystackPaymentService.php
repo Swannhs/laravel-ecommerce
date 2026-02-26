@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Paystack\Services\Gateways;
+namespace App\Plugins\Paystack\Services\Gateways;
 
-use Botble\Paystack\Services\Abstracts\PaystackPaymentAbstract;
+use App\Plugins\Paystack\Services\Abstracts\PaystackPaymentAbstract;
 use Illuminate\Http\Request;
 
 class PaystackPaymentService extends PaystackPaymentAbstract

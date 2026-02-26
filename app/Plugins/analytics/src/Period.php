@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Analytics;
+namespace App\Plugins\Analytics;
 
-use Botble\Analytics\Exceptions\InvalidPeriod;
+use App\Plugins\Analytics\Exceptions\InvalidPeriod;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 

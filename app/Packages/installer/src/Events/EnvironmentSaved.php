@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Installer\Events;
+namespace App\Packages\Installer\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Http\Request;
 
 class EnvironmentSaved extends Event

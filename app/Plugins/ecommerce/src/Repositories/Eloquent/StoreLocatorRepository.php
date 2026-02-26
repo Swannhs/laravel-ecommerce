@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class StoreLocatorRepository extends RepositoriesAbstract implements StoreLocatorInterface
 {

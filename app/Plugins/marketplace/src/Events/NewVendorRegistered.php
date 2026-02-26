@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Events;
+namespace App\Plugins\Marketplace\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Events\Event;
+use App\Plugins\Ecommerce\Models\Customer;
 use Illuminate\Queue\SerializesModels;
 
 class NewVendorRegistered extends Event

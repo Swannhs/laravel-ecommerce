@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Translation\Tokens;
+namespace App\Plugins\Translation\Tokens;
 
 interface TokenProviderInterface
 {

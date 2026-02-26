@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Widgets\Contracts;
+namespace App\Core\Base\Widgets\Contracts;
 
 use Illuminate\Contracts\View\View;
 

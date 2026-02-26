@@ -1,5 +1,5 @@
 @php
-    use Botble\Ecommerce\Models\ProductSpecificationAttributeTranslation;
+    use App\Plugins\Ecommerce\Models\ProductSpecificationAttributeTranslation;
 
     $currentLangCode = ProductSpecificationAttributeTranslation::getCurrentLanguageCode();
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Mollie\Forms;
+namespace App\Plugins\Mollie\Forms;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Payment\Concerns\Forms\HasAvailableCountriesField;
-use Botble\Payment\Forms\PaymentMethodForm;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Payment\Concerns\Forms\HasAvailableCountriesField;
+use App\Plugins\Payment\Forms\PaymentMethodForm;
 
 class MolliePaymentMethodForm extends PaymentMethodForm
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Translation;
+namespace App\Plugins\Translation;
 
 use ArrayAccess;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Services\DeleteLocaleService;
-use Botble\Base\Services\DeleteUnusedTranslationFilesService;
-use Botble\Base\Services\DownloadLocaleService;
-use Botble\Base\Supports\Language;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Services\DeleteLocaleService;
+use App\Core\Base\Services\DeleteUnusedTranslationFilesService;
+use App\Core\Base\Services\DownloadLocaleService;
+use App\Core\Base\Supports\Language;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Packages\Theme\Facades\Theme;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Filesystem\Filesystem;

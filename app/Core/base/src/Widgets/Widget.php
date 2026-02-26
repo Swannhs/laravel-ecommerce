@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Widgets;
+namespace App\Core\Base\Widgets;
 
-use Botble\Base\Helpers\ChartHelper;
+use App\Core\Base\Helpers\ChartHelper;
 use Carbon\CarbonInterface;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;

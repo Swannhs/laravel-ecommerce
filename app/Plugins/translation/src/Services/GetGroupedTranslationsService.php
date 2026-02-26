@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Translation\Services;
+namespace App\Plugins\Translation\Services;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

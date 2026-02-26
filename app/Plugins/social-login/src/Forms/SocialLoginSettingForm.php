@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\SocialLogin\Forms;
+namespace App\Plugins\SocialLogin\Forms;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\FieldOptions\UiSelectorFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\Fields\UiSelectorField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Setting\Forms\SettingForm;
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\SocialLogin\Http\Requests\Settings\SocialLoginSettingRequest;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\FieldOptions\UiSelectorFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\Fields\UiSelectorField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Setting\Forms\SettingForm;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Plugins\SocialLogin\Http\Requests\Settings\SocialLoginSettingRequest;
 use Illuminate\Support\Arr;
 
 class SocialLoginSettingForm extends SettingForm

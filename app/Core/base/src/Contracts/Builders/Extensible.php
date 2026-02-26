@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Contracts\Builders;
+namespace App\Core\Base\Contracts\Builders;
 
 interface Extensible
 {

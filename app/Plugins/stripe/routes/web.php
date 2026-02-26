@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Stripe\Http\Controllers\StripeController;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Stripe\Http\Controllers\StripeController;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('payment/stripe')

@@ -2,7 +2,7 @@
 
 @section('export_extra_filters_after')
     @php
-        $statuses = \Botble\Ecommerce\Enums\OrderStatusEnum::labels();
+        $statuses = \App\Plugins\Ecommerce\Enums\OrderStatusEnum::labels();
     @endphp
 
     <div class="row mb-3">

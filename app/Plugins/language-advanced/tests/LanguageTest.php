@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Tests;
+namespace App\Plugins\LanguageAdvanced\Tests;
 
-use Botble\ACL\Models\User;
-use Botble\ACL\Services\ActivateUserService;
-use Botble\Language\Facades\Language as LanguageFacade;
-use Botble\Language\Models\Language;
-use Botble\Language\Models\LanguageMeta;
-use Botble\Page\Models\Page;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Services\ActivateUserService;
+use App\Plugins\Language\Facades\Language as LanguageFacade;
+use App\Plugins\Language\Models\Language;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Packages\Page\Models\Page;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Tests\TestCase;

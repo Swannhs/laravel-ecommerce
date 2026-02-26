@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets\Traits;
+namespace App\Plugins\Ecommerce\Widgets\Traits;
 
 use Carbon\Carbon;
 

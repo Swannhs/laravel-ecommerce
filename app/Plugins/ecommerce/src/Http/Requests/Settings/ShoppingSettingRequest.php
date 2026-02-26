@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\Settings;
+namespace App\Plugins\Ecommerce\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class ShoppingSettingRequest extends Request

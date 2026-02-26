@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
 use BaconQrCode\Renderer\Image\SvgImageBackEnd;
 use BaconQrCode\Renderer\ImageRenderer;
 use BaconQrCode\Renderer\RendererStyle\RendererStyle;
 use BaconQrCode\Writer;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Pdf;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Location\Models\City;
-use Botble\Location\Models\State;
-use Botble\Media\Facades\RvMedia;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Pdf;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Models\Shipment;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\State;
+use App\Core\Media\Facades\RvMedia;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Response;
 use Illuminate\Support\Str;
 

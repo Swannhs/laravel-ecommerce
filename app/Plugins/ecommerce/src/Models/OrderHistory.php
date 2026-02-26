@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\OrderHistoryActionEnum;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\OrderHistoryActionEnum;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 

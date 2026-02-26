@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\API;
+namespace App\Plugins\Marketplace\Http\Requests\API;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Support\Http\Requests\Request;
 
 class BecomeVendorRequest extends Request
 {

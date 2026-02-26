@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Location\Services;
+namespace App\Plugins\Location\Services;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Location\Enums\ImportType;
-use Botble\Location\Events\ImportedCityEvent;
-use Botble\Location\Events\ImportedCountryEvent;
-use Botble\Location\Events\ImportedStateEvent;
-use Botble\Location\Models\City;
-use Botble\Location\Models\Country;
-use Botble\Location\Models\State;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Location\Enums\ImportType;
+use App\Plugins\Location\Events\ImportedCityEvent;
+use App\Plugins\Location\Events\ImportedCountryEvent;
+use App\Plugins\Location\Events\ImportedStateEvent;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Models\State;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 

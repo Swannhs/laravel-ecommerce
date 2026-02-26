@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Enums\DeletionRequestStatusEnum;
+use App\Plugins\Ecommerce\Enums\DeletionRequestStatusEnum;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

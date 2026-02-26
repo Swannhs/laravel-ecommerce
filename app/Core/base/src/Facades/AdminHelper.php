@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Helpers\AdminHelper as AdminHelperSupport;
+use App\Core\Base\Helpers\AdminHelper as AdminHelperSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool isPreviewing()
  * @method static array getAdminLocales()
  *
- * @see \Botble\Base\Helpers\AdminHelper
+ * @see \App\Core\Base\Helpers\AdminHelper
  */
 class AdminHelper extends Facade
 {

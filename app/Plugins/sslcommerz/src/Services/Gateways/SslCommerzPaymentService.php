@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SslCommerz\Services\Gateways;
+namespace App\Plugins\SslCommerz\Services\Gateways;
 
-use Botble\SslCommerz\Services\Abstracts\SslCommerzPaymentAbstract;
+use App\Plugins\SslCommerz\Services\Abstracts\SslCommerzPaymentAbstract;
 use Illuminate\Http\Request;
 
 class SslCommerzPaymentService extends SslCommerzPaymentAbstract

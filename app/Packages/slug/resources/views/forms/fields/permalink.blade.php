@@ -22,7 +22,7 @@
             $model->slug_id,
             $options['prefix'],
             SlugHelper::canPreview($model) &&
-                in_array($model->status, [Botble\Base\Enums\BaseStatusEnum::DRAFT, Botble\Base\Enums\BaseStatusEnum::PENDING]),
+                in_array($model->status, [App\Core\Base\Enums\BaseStatusEnum::DRAFT, App\Core\Base\Enums\BaseStatusEnum::PENDING]),
             [],
             true,
             $model,

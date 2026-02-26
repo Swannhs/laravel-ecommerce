@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Widget\Providers;
+namespace App\Packages\Widget\Providers;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Supports\ServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 

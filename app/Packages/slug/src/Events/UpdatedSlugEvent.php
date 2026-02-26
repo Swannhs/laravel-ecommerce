@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Events;
+namespace App\Packages\Slug\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Events\Event;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

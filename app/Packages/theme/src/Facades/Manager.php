@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Facades;
+namespace App\Packages\Theme\Facades;
 
-use Botble\Theme\Manager as ManagerSupport;
+use App\Packages\Theme\Manager as ManagerSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void clearCache()
  * @method static array refreshThemes()
  *
- * @see \Botble\Theme\Manager
+ * @see \App\Packages\Theme\Manager
  */
 class Manager extends Facade
 {

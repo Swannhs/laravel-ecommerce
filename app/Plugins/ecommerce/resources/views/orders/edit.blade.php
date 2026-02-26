@@ -42,7 +42,7 @@
                                         >
                                             {{ trans('plugins/ecommerce::order.download_invoice') }}
                                         </x-core::button>
-                                    @elseif ($order->status != \Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                                    @elseif ($order->status != \App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                                         <x-core::button
                                             tag="a"
                                             :href="route('orders.invoice.generate', $order->id)"
@@ -60,7 +60,7 @@
                     </x-core::card.body>
 
                     <div class="list-group list-group-flush">
-                        @if ($order->status != Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED || $order->is_confirmed)
+                        @if ($order->status != App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED || $order->is_confirmed)
                             <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
                                 <div class="text-uppercase">
                                     <x-core::icon name="ti ti-check" @class(['text-success' => $order->is_confirmed]) />
@@ -80,9 +80,9 @@
                                 @endif
                             </div>
                         @endif
-                        @if ($order->status == Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED || is_plugin_active('payment') && $order->payment->id)
+                        @if ($order->status == App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED || is_plugin_active('payment') && $order->payment->id)
                             <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
-                                @if ($order->status == Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                                @if ($order->status == App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                                     <div class="d-flex align-items-start gap-1">
                                         <x-core::icon name="ti ti-circle-off" />
                                         <div>
@@ -97,20 +97,20 @@
                                     </div>
                                 @endif
 
-                                @if (is_plugin_active('payment') && $order->payment->id && $order->payment->status != \Botble\Payment\Enums\PaymentStatusEnum::REFUNDED)
+                                @if (is_plugin_active('payment') && $order->payment->id && $order->payment->status != \App\Plugins\Payment\Enums\PaymentStatusEnum::REFUNDED)
                                     <div class="text-uppercase">
-                                        @if (!$order->payment->status || $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                                        @if (!$order->payment->status || $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::PENDING)
                                             <x-core::icon name="ti ti-credit-card" />
                                         @elseif (
-                                            $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED
-                                            || $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::PENDING
+                                            $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED
+                                            || $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::PENDING
                                         )
                                             <x-core::icon name="ti ti-check" class="text-success" />
                                         @endif
 
-                                        @if (!$order->payment->status || $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                                        @if (!$order->payment->status || $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::PENDING)
                                             {{ trans('plugins/ecommerce::order.pending_payment') }}
-                                        @elseif ($order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED)
+                                        @elseif ($order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED)
                                             {{ trans('plugins/ecommerce::order.payment_was_accepted', ['money' => format_price($order->payment->amount - $order->payment->refunded_amount)]) }}
                                         @elseif ($order->payment->amount - $order->payment->refunded_amount == 0)
                                             {{ trans('plugins/ecommerce::order.payment_was_refunded') }}
@@ -118,7 +118,7 @@
                                     </div>
 
                                     <div class="btn-list">
-                                        @if (!$order->payment->status || $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                                        @if (!$order->payment->status || $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::PENDING)
                                             <x-core::button
                                                 type="button"
                                                 color="info"
@@ -129,7 +129,7 @@
                                             </x-core::button>
                                         @endif
                                         @if (
-                                            $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED
+                                            $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED
                                             && (
                                                 $order->payment->amount - $order->payment->refunded_amount > 0
                                                 || $order->products->sum('qty') - $order->products->sum('restock_quantity') > 0
@@ -142,7 +142,7 @@
                                     </div>
                                 @endif
 
-                                @if (is_plugin_active('payment') && $order->payment->id && $order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::REFUNDED)
+                                @if (is_plugin_active('payment') && $order->payment->id && $order->payment->status == \App\Plugins\Payment\Enums\PaymentStatusEnum::REFUNDED)
                                     <div class="text-uppercase">
                                         <x-core::icon name="ti ti-receipt-refund" class="text-warning" />
                                         {{ trans('plugins/ecommerce::order.payment_was_refunded') }}
@@ -219,7 +219,7 @@
 
                         @if (EcommerceHelper::countDigitalProducts($order->products) != $order->products->count() && ! EcommerceHelper::isDisabledPhysicalProduct())
                             <div class="p-3 d-flex justify-content-between align-items-center">
-                                @if ($order->status == Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED && !$order->shipment->id)
+                                @if ($order->status == App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED && !$order->shipment->id)
                                     <div class="text-uppercase">
                                         <x-core::icon name="ti ti-check" class="text-success" />
                                         <span>{{ trans('plugins/ecommerce::order.all_products_are_not_delivered') }}</span>
@@ -542,7 +542,7 @@
                                 <div class="p-3">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h4>{{ trans('plugins/ecommerce::order.shipping_info') }}</h4>
-                                        @if ($order->status != Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                                        @if ($order->status != App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                                             <a
                                                 class="btn-trigger-update-shipping-address btn-action text-decoration-none"
                                                 href="#"
@@ -592,7 +592,7 @@
                             <div class="p-3">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h4>{{ trans('plugins/ecommerce::order.tax_info.name') }}</h4>
-                                    @if ($order->status !== Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                                    @if ($order->status !== App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                                         <div class="flexbox-auto-content-right text-end">
                                             <a
                                                 class="btn-trigger-update-tax-information"
@@ -664,7 +664,7 @@
     </div>
 @endsection
 
-@pushif($order->status != Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED, 'footer')
+@pushif($order->status != App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED, 'footer')
     @include('plugins/ecommerce::orders.edit.modal', [
         'updateShippingAddressRoute' => 'orders.update-shipping-address',
     ])
@@ -700,7 +700,7 @@
     @endif
 @endpushif
 
-@pushif(is_plugin_active('payment') && $order->payment->id && $order->payment->status != \Botble\Payment\Enums\PaymentStatusEnum::REFUNDED, 'footer')
+@pushif(is_plugin_active('payment') && $order->payment->id && $order->payment->status != \App\Plugins\Payment\Enums\PaymentStatusEnum::REFUNDED, 'footer')
     <x-core::modal.action
         id="confirm-payment-modal"
         type="info"

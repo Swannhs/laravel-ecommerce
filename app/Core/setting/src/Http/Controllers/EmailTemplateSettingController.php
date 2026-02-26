@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Setting\Forms\EmailTemplateSettingForm;
-use Botble\Setting\Http\Requests\EmailTemplateSettingRequest;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Setting\Forms\EmailTemplateSettingForm;
+use App\Core\Setting\Http\Requests\EmailTemplateSettingRequest;
 use Illuminate\Contracts\View\View;
 
 class EmailTemplateSettingController extends SettingController

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace App\Core\ACL\Providers;
 
-use Botble\ACL\Hooks\UserWidgetHook;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Dashboard\Events\RenderingDashboardWidgets;
+use App\Core\ACL\Hooks\UserWidgetHook;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Dashboard\Events\RenderingDashboardWidgets;
 
 class HookServiceProvider extends ServiceProvider
 {

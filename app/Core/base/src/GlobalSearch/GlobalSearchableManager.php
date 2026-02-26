@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\GlobalSearch;
+namespace App\Core\Base\GlobalSearch;
 
-use Botble\Base\Contracts\GlobalSearchableManager as GlobalSearchableManagerContract;
-use Botble\Base\Contracts\GlobalSearchableProvider as GlobalSearchableProviderContract;
-use Botble\Base\GlobalSearch\Providers\DashboardMenuProvider;
-use Botble\Base\GlobalSearch\Providers\PanelSectionProvider;
+use App\Core\Base\Contracts\GlobalSearchableManager as GlobalSearchableManagerContract;
+use App\Core\Base\Contracts\GlobalSearchableProvider as GlobalSearchableProviderContract;
+use App\Core\Base\GlobalSearch\Providers\DashboardMenuProvider;
+use App\Core\Base\GlobalSearch\Providers\PanelSectionProvider;
 use Illuminate\Support\Collection;
 
 class GlobalSearchableManager implements GlobalSearchableManagerContract

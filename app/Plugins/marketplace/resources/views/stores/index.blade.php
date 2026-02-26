@@ -222,8 +222,8 @@
             <x-core::form.radio-list
                 :label="trans('plugins/marketplace::revenue.forms.type')"
                 name="type"
-                :options="Botble\Marketplace\Enums\RevenueTypeEnum::adjustLabels()"
-                :value="Botble\Marketplace\Enums\RevenueTypeEnum::ADD_AMOUNT"
+                :options="App\Plugins\Marketplace\Enums\RevenueTypeEnum::adjustLabels()"
+                :value="App\Plugins\Marketplace\Enums\RevenueTypeEnum::ADD_AMOUNT"
             />
 
             <x-core::form.textarea

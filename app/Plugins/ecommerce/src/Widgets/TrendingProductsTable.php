@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Table;
-use Botble\Ecommerce\Tables\Reports\TrendingProductsTable as BaseTrendingProductsTable;
+use App\Core\Base\Widgets\Table;
+use App\Plugins\Ecommerce\Tables\Reports\TrendingProductsTable as BaseTrendingProductsTable;
 
 class TrendingProductsTable extends Table
 {

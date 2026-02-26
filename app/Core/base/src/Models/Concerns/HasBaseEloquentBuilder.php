@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Models\Concerns;
+namespace App\Core\Base\Models\Concerns;
 
-use Botble\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Models\BaseQueryBuilder;
 
 trait HasBaseEloquentBuilder
 {

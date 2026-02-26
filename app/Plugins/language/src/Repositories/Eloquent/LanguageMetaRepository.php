@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Repositories\Eloquent;
+namespace App\Plugins\Language\Repositories\Eloquent;
 
-use Botble\Language\Repositories\Interfaces\LanguageMetaInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Language\Repositories\Interfaces\LanguageMetaInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class LanguageMetaRepository extends RepositoriesAbstract implements LanguageMetaInterface
 {

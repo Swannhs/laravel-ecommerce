@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\Concerns\HasSlug;
-use Botble\Ecommerce\Enums\DiscountTargetEnum;
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\Concerns\HasSlug;
+use App\Plugins\Ecommerce\Enums\DiscountTargetEnum;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Repositories\Interfaces;
+namespace App\Plugins\Marketplace\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface StoreInterface extends RepositoryInterface
 {

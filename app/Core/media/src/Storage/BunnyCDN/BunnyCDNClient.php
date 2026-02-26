@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Media\Storage\BunnyCDN;
+namespace App\Core\Media\Storage\BunnyCDN;
 
-use Botble\Media\Storage\BunnyCDN\Exceptions\BunnyCDNException;
-use Botble\Media\Storage\BunnyCDN\Exceptions\DirectoryNotEmptyException;
-use Botble\Media\Storage\BunnyCDN\Exceptions\NotFoundException;
+use App\Core\Media\Storage\BunnyCDN\Exceptions\BunnyCDNException;
+use App\Core\Media\Storage\BunnyCDN\Exceptions\DirectoryNotEmptyException;
+use App\Core\Media\Storage\BunnyCDN\Exceptions\NotFoundException;
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Exception\GuzzleException;
 

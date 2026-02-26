@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\ACL\Forms;
+namespace App\Core\ACL\Forms;
 
-use Botble\ACL\Http\Requests\UpdateProfileRequest;
-use Botble\ACL\Models\User;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\FieldOptions\PhoneNumberFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\PhoneNumberField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
+use App\Core\ACL\Http\Requests\UpdateProfileRequest;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\PhoneNumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\PhoneNumberField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
 
 class ProfileForm extends FormAbstract
 {

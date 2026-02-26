@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Http\Requests;
+namespace App\Plugins\Language\Http\Requests;
 
-use Botble\Base\Supports\Language;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Supports\Language;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class LanguageRequest extends Request

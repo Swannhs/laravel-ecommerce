@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Theme\Providers;
+namespace App\Packages\Theme\Providers;
 
-use Botble\Base\Events\CacheCleared;
-use Botble\Base\Events\FormRendering;
-use Botble\Base\Events\SeederPrepared;
-use Botble\Base\Events\SystemUpdateDBMigrated;
-use Botble\Base\Events\SystemUpdatePublished;
-use Botble\Theme\Listeners\AddFormJsValidation;
-use Botble\Theme\Listeners\ClearThemeCache;
-use Botble\Theme\Listeners\CoreUpdateThemeDB;
-use Botble\Theme\Listeners\PublishThemeAssets;
-use Botble\Theme\Listeners\SetDefaultTheme;
+use App\Core\Base\Events\CacheCleared;
+use App\Core\Base\Events\FormRendering;
+use App\Core\Base\Events\SeederPrepared;
+use App\Core\Base\Events\SystemUpdateDBMigrated;
+use App\Core\Base\Events\SystemUpdatePublished;
+use App\Packages\Theme\Listeners\AddFormJsValidation;
+use App\Packages\Theme\Listeners\ClearThemeCache;
+use App\Packages\Theme\Listeners\CoreUpdateThemeDB;
+use App\Packages\Theme\Listeners\PublishThemeAssets;
+use App\Packages\Theme\Listeners\SetDefaultTheme;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

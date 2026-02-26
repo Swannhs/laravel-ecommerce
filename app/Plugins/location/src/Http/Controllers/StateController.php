@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Location\Http\Controllers;
+namespace App\Plugins\Location\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Location\Forms\StateForm;
-use Botble\Location\Http\Requests\StateRequest;
-use Botble\Location\Http\Resources\StateResource;
-use Botble\Location\Models\State;
-use Botble\Location\Tables\StateTable;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Location\Forms\StateForm;
+use App\Plugins\Location\Http\Requests\StateRequest;
+use App\Plugins\Location\Http\Resources\StateResource;
+use App\Plugins\Location\Models\State;
+use App\Plugins\Location\Tables\StateTable;
 use Illuminate\Http\Request;
 
 class StateController extends BaseController

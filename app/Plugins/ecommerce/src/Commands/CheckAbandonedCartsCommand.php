@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Commands;
+namespace App\Plugins\Ecommerce\Commands;
 
-use Botble\Ecommerce\Events\AbandonedCartReminderEvent;
-use Botble\Ecommerce\Services\AbandonedCartService;
+use App\Plugins\Ecommerce\Events\AbandonedCartReminderEvent;
+use App\Plugins\Ecommerce\Services\AbandonedCartService;
 use Exception;
 use Illuminate\Console\Command;
 

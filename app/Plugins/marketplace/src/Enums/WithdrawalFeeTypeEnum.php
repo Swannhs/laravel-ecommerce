@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Enums;
+namespace App\Plugins\Marketplace\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 /**
  * @method static WithdrawalFeeTypeEnum FIXED()

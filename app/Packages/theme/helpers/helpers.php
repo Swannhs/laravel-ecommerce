@@ -1,11 +1,11 @@
 <?php
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Theme\Contracts\Theme as ThemeContract;
-use Botble\Theme\Facades\AdminBar;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Theme\Supports\AdminBar as AdminBarBase;
-use Botble\Theme\ThemeOption as ThemeOptionBase;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\Theme\Contracts\Theme as ThemeContract;
+use App\Packages\Theme\Facades\AdminBar;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Theme\Supports\AdminBar as AdminBarBase;
+use App\Packages\Theme\ThemeOption as ThemeOptionBase;
 
 if (! function_exists('sanitize_html_class')) {
     function sanitize_html_class(string $class, string|callable|null $fallback = ''): string

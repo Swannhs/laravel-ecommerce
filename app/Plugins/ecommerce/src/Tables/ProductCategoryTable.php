@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\BulkChanges\CreatedAtBulkChange;
-use Botble\Table\BulkChanges\NameBulkChange;
-use Botble\Table\BulkChanges\NumberBulkChange;
-use Botble\Table\BulkChanges\SelectBulkChange;
-use Botble\Table\BulkChanges\StatusBulkChange;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\StatusColumn;
-use Botble\Table\Columns\YesNoColumn;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\EditAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\BulkChanges\CreatedAtBulkChange;
+use App\Core\Table\BulkChanges\NameBulkChange;
+use App\Core\Table\BulkChanges\NumberBulkChange;
+use App\Core\Table\BulkChanges\SelectBulkChange;
+use App\Core\Table\BulkChanges\StatusBulkChange;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\StatusColumn;
+use App\Core\Table\Columns\YesNoColumn;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;

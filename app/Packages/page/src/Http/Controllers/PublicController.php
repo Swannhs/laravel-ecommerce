@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Page\Http\Controllers;
+namespace App\Packages\Page\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Page\Models\Page;
-use Botble\Page\Services\PageService;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Theme\Events\RenderingSingleEvent;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Packages\Page\Models\Page;
+use App\Packages\Page\Services\PageService;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Theme\Events\RenderingSingleEvent;
+use App\Packages\Theme\Facades\Theme;
 
 class PublicController extends BaseController
 {

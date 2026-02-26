@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Supports;
+namespace App\Plugins\LanguageAdvanced\Supports;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Facades\MacroableModels;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\DataSynchronize\PanelSections\ExportPanelSection;
-use Botble\DataSynchronize\PanelSections\ImportPanelSection;
-use Botble\Language\Facades\Language;
-use Botble\LanguageAdvanced\Exporters\ModelTranslationExporter;
-use Botble\LanguageAdvanced\Exporters\TranslationExporterManager;
-use Botble\LanguageAdvanced\Importers\ModelTranslationImporter;
-use Botble\LanguageAdvanced\Importers\TranslationImporterManager;
-use Botble\LanguageAdvanced\Models\TranslationResolver;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Facades\MacroableModels;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Packages\DataSynchronize\PanelSections\ExportPanelSection;
+use App\Packages\DataSynchronize\PanelSections\ImportPanelSection;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\LanguageAdvanced\Exporters\ModelTranslationExporter;
+use App\Plugins\LanguageAdvanced\Exporters\TranslationExporterManager;
+use App\Plugins\LanguageAdvanced\Importers\ModelTranslationImporter;
+use App\Plugins\LanguageAdvanced\Importers\TranslationImporterManager;
+use App\Plugins\LanguageAdvanced\Models\TranslationResolver;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Http\Request;

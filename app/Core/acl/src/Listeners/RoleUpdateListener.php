@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Listeners;
+namespace App\Core\ACL\Listeners;
 
-use Botble\ACL\Events\RoleUpdateEvent;
+use App\Core\ACL\Events\RoleUpdateEvent;
 
 class RoleUpdateListener
 {

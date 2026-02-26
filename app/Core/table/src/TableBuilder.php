@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table;
+namespace App\Core\Table;
 
-use Botble\Table\Abstracts\TableAbstract;
+use App\Core\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Container\Container;
 use InvalidArgumentException;
 

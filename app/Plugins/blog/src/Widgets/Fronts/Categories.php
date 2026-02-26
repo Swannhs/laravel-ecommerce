@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Blog\Widgets\Fronts;
+namespace App\Plugins\Blog\Widgets\Fronts;
 
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Blog\Models\Category;
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\Forms\WidgetForm;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Blog\Models\Category;
+use App\Packages\Widget\AbstractWidget;
+use App\Packages\Widget\Forms\WidgetForm;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 

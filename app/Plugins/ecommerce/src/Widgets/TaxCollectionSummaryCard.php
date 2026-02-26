@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Card;
-use Botble\Ecommerce\Models\Order;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use App\Core\Base\Widgets\Card;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
 use Carbon\CarbonPeriod;
 
 class TaxCollectionSummaryCard extends Card

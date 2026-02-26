@@ -1,7 +1,7 @@
 <?php
 
-use Botble\StripeConnect\Http\Controllers\StripeConnectController;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\StripeConnect\Http\Controllers\StripeConnectController;
+use App\Packages\Theme\Facades\Theme;
 
 Theme::registerRoutes(function (): void {
     Route::middleware('customer')->name('stripe-connect.')->prefix('stripe-connect')->group(function (): void {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Setting\Forms;
+namespace App\Core\Setting\Forms;
 
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Setting\Http\Requests\DataTableSettingRequest;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Setting\Http\Requests\DataTableSettingRequest;
 
 class DataTableSettingForm extends SettingForm
 {

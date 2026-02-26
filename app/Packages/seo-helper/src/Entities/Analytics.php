@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace App\Packages\SeoHelper\Entities;
 
-use Botble\SeoHelper\Contracts\Entities\AnalyticsContract;
-use Botble\Theme\Supports\ThemeSupport;
+use App\Packages\SeoHelper\Contracts\Entities\AnalyticsContract;
+use App\Packages\Theme\Supports\ThemeSupport;
 
 /**
  * @deprecated since 7.3.0 use ThemeSupport::renderGoogleTagManagerScript() instead.

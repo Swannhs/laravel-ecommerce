@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Events;
+namespace App\Packages\Slug\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Http\Request;
 use Illuminate\Queue\SerializesModels;
 

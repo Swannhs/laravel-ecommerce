@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\ACL\Models\UserMeta;
+use App\Core\ACL\Models\UserMeta;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 

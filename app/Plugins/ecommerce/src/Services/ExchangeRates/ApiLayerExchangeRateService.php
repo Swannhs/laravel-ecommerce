@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services\ExchangeRates;
+namespace App\Plugins\Ecommerce\Services\ExchangeRates;
 
-use Botble\Ecommerce\Facades\Currency;
-use Botble\Ecommerce\Models\Currency as CurrencyModel;
+use App\Plugins\Ecommerce\Facades\Currency;
+use App\Plugins\Ecommerce\Models\Currency as CurrencyModel;
 use Exception;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;

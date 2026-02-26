@@ -1,5 +1,5 @@
 @php
-    $fields = Botble\Marketplace\Enums\PayoutPaymentMethodsEnum::getFields($paymentChannel);
+    $fields = App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum::getFields($paymentChannel);
 @endphp
 
 @if($fields)

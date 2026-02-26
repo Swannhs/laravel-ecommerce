@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Repositories\Caches;
+namespace App\Packages\Slug\Repositories\Caches;
 
-use Botble\Slug\Repositories\Eloquent\SlugRepository;
+use App\Packages\Slug\Repositories\Eloquent\SlugRepository;
 
 /**
  * @deprecated

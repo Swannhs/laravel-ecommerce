@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Media\Facades\RvMedia;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Http\UploadedFile;
 
 if (! function_exists('is_image')) {

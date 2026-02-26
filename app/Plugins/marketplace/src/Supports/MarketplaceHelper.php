@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Marketplace\Supports;
+namespace App\Plugins\Marketplace\Supports;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Supports\EmailHandler as BaseEmailHandler;
-use Botble\Ecommerce\Enums\DiscountTypeOptionEnum;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Models\Order as OrderModel;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Media\Facades\RvMedia;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Supports\EmailHandler as BaseEmailHandler;
+use App\Plugins\Ecommerce\Enums\DiscountTypeOptionEnum;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Models\Order as OrderModel;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection as SupportCollection;

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Settings\TaxSettingRequest;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Settings\TaxSettingRequest;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Core\Setting\Forms\SettingForm;
 
 class TaxSettingForm extends SettingForm
 {

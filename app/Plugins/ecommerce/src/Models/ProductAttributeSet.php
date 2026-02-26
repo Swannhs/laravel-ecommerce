@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\Concerns\HasSlug;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\Concerns\HasSlug;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\StripeConnect;
+namespace App\Plugins\StripeConnect;
 
 use Exception;
 use Stripe\Account;

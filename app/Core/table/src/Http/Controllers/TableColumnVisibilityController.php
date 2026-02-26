@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Http\Controllers;
+namespace App\Core\Table\Http\Controllers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Rules\OnOffRule;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Rules\OnOffRule;
 use Illuminate\Http\Request;
 
 class TableColumnVisibilityController extends BaseController

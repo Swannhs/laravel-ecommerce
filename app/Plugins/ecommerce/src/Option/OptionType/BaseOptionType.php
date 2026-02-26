@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Option\OptionType;
+namespace App\Plugins\Ecommerce\Option\OptionType;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Option;
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Option;
+use App\Plugins\Ecommerce\Models\Product;
 
 abstract class BaseOptionType
 {

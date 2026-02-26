@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Services\ExchangeRates;
+namespace App\Plugins\Ecommerce\Services\ExchangeRates;
 
 use Exception;
 use Illuminate\Support\Collection;

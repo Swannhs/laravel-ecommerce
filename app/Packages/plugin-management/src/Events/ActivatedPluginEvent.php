@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Events;
+namespace App\Packages\PluginManagement\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 class ActivatedPluginEvent extends Event

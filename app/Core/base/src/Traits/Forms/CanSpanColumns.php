@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Traits\Forms;
+namespace App\Core\Base\Traits\Forms;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Forms\FormField;
 
 trait CanSpanColumns
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Widgets;
+namespace App\Core\Base\Widgets;
 
-use Botble\Base\Events\RenderingAdminWidgetEvent;
-use Botble\Base\Widgets\Contracts\AdminWidget as AdminWidgetContract;
+use App\Core\Base\Events\RenderingAdminWidgetEvent;
+use App\Core\Base\Widgets\Contracts\AdminWidget as AdminWidgetContract;
 use Illuminate\Contracts\View\View;
 
 class AdminWidget implements AdminWidgetContract

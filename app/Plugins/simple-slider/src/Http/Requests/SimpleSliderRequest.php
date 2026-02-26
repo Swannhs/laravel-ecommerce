@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Requests;
+namespace App\Plugins\SimpleSlider\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class SimpleSliderRequest extends Request

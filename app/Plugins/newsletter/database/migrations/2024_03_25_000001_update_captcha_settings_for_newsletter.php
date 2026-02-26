@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use Carbon\Carbon;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;

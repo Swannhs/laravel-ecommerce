@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Captcha\Contracts;
+namespace App\Plugins\Captcha\Contracts;
 
-use Botble\Theme\FormFrontManager;
+use App\Packages\Theme\FormFrontManager;
 use Illuminate\Support\Str;
 
 abstract class Captcha

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Models\BaseModel;
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Marketplace\Forms\Concerns\HasSubmitButton;
-use Botble\Marketplace\Http\Requests\PayoutInformationSettingRequest;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\Marketplace\Forms\Concerns\HasSubmitButton;
+use App\Plugins\Marketplace\Http\Requests\PayoutInformationSettingRequest;
 use Illuminate\Support\Arr;
 
 class PayoutInformationForm extends FormAbstract

@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Facades;
+namespace App\Plugins\Ecommerce\Facades;
 
-use Botble\Ecommerce\Supports\FlashSaleSupport;
+use App\Plugins\Ecommerce\Supports\FlashSaleSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Botble\Ecommerce\Models\Product|null flashSaleForProduct(\Botble\Ecommerce\Models\Product $product)
- * @method static \Botble\Ecommerce\Models\FlashSale|null getFlashSaleForProduct(\Botble\Ecommerce\Models\Product $product)
+ * @method static \App\Plugins\Ecommerce\Models\Product|null flashSaleForProduct(\App\Plugins\Ecommerce\Models\Product $product)
+ * @method static \App\Plugins\Ecommerce\Models\FlashSale|null getFlashSaleForProduct(\App\Plugins\Ecommerce\Models\Product $product)
  * @method static \Illuminate\Support\Collection getAvailableFlashSales()
  * @method static bool isEnabled()
  * @method static bool isShowSaleCountLeft()
  * @method static void addShowSaleCountLeftSetting()
  *
- * @see \Botble\Ecommerce\Supports\FlashSaleSupport
+ * @see \App\Plugins\Ecommerce\Supports\FlashSaleSupport
  */
 class FlashSale extends Facade
 {

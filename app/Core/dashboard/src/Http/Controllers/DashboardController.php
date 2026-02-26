@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Dashboard\Http\Controllers;
+namespace App\Core\Dashboard\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Dashboard\Events\RenderingDashboardWidgets;
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\Dashboard\Models\DashboardWidgetSetting;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Dashboard\Events\RenderingDashboardWidgets;
+use App\Core\Dashboard\Models\DashboardWidget;
+use App\Core\Dashboard\Models\DashboardWidgetSetting;
 use Exception;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Http\Request;

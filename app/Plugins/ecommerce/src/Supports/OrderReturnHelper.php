@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Enums\OrderReturnHistoryActionEnum;
-use Botble\Ecommerce\Enums\OrderReturnStatusEnum;
-use Botble\Ecommerce\Events\OrderReturnedEvent;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\OrderHelper as OrderHelperFacade;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderProduct;
-use Botble\Ecommerce\Models\OrderReturn;
-use Botble\Ecommerce\Models\OrderReturnItem;
-use Botble\Ecommerce\Models\Product;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Enums\OrderReturnHistoryActionEnum;
+use App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum;
+use App\Plugins\Ecommerce\Events\OrderReturnedEvent;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper as OrderHelperFacade;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\OrderProduct;
+use App\Plugins\Ecommerce\Models\OrderReturn;
+use App\Plugins\Ecommerce\Models\OrderReturnItem;
+use App\Plugins\Ecommerce\Models\Product;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;

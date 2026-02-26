@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\PluginManagement\\": "src"
+            "App\\PluginManagement\\": "src"
         }
     },
     "require": {
@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\PluginManagement\\Providers\\PluginManagementServiceProvider"
+                "App\\PluginManagement\\Providers\\PluginManagementServiceProvider"
             ]
         }
     }

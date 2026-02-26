@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Repositories\Interfaces\OrderInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Carbon\CarbonInterface;
 use Illuminate\Database\Eloquent\Collection;
 

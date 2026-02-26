@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\Enums;
+namespace App\Core\Setting\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 class DataRetentionPeriod extends Enum
 {

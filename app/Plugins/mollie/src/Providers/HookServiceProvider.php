@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Mollie\Providers;
+namespace App\Plugins\Mollie\Providers;
 
-use Botble\Base\Facades\Html;
-use Botble\Mollie\Forms\MolliePaymentMethodForm;
-use Botble\Mollie\Services\Gateways\MolliePaymentService;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\Payment\Supports\PaymentHelper;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Mollie\Forms\MolliePaymentMethodForm;
+use App\Plugins\Mollie\Services\Gateways\MolliePaymentService;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Plugins\Payment\Supports\PaymentHelper;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;

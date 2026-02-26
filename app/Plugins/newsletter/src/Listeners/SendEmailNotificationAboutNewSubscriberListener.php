@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Newsletter\Listeners;
+namespace App\Plugins\Newsletter\Listeners;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Facades\Html;
-use Botble\Newsletter\Events\SubscribeNewsletterEvent;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Newsletter\Events\SubscribeNewsletterEvent;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\URL;
 

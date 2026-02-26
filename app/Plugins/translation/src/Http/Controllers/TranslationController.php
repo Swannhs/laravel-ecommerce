@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Translation\Http\Controllers;
+namespace App\Plugins\Translation\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\Translation\Http\Controllers\Concerns\HasMapTranslationsTable;
-use Botble\Translation\Http\Requests\TranslationRequest;
-use Botble\Translation\Manager;
-use Botble\Translation\Tables\TranslationTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Plugins\Translation\Http\Controllers\Concerns\HasMapTranslationsTable;
+use App\Plugins\Translation\Http\Requests\TranslationRequest;
+use App\Plugins\Translation\Manager;
+use App\Plugins\Translation\Tables\TranslationTable;
 use Illuminate\Http\Request;
 
 class TranslationController extends SettingController

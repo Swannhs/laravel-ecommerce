@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Services;
+namespace App\Core\Base\Services;
 
-use Botble\Base\Events\CacheCleared;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Events\CacheCleared;
+use App\Core\Media\Facades\RvMedia;
 use Closure;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;

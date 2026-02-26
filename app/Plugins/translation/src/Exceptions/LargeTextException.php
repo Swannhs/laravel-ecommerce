@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Translation\Exceptions;
+namespace App\Plugins\Translation\Exceptions;
 
 use ErrorException;
 

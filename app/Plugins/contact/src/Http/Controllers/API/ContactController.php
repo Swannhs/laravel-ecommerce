@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Http\Controllers\API;
+namespace App\Plugins\Contact\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Contact\Http\Requests\ContactRequest;
-use Botble\Contact\Services\ContactService;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Contact\Http\Requests\ContactRequest;
+use App\Plugins\Contact\Services\ContactService;
 use Illuminate\Validation\ValidationException;
 
 class ContactController extends BaseApiController

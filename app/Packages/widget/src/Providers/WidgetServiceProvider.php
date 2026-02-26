@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Widget\Providers;
+namespace App\Packages\Widget\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Theme\Events\RenderingAdminBar;
-use Botble\Theme\Facades\AdminBar;
-use Botble\Widget\Events\RenderingWidgetSettings;
-use Botble\Widget\Facades\WidgetGroup;
-use Botble\Widget\Factories\WidgetFactory;
-use Botble\Widget\Models\Widget;
-use Botble\Widget\Repositories\Eloquent\WidgetRepository;
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
-use Botble\Widget\WidgetGroupCollection;
-use Botble\Widget\Widgets\CoreSimpleMenu;
-use Botble\Widget\Widgets\Text;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Theme\Events\RenderingAdminBar;
+use App\Packages\Theme\Facades\AdminBar;
+use App\Packages\Widget\Events\RenderingWidgetSettings;
+use App\Packages\Widget\Facades\WidgetGroup;
+use App\Packages\Widget\Factories\WidgetFactory;
+use App\Packages\Widget\Models\Widget;
+use App\Packages\Widget\Repositories\Eloquent\WidgetRepository;
+use App\Packages\Widget\Repositories\Interfaces\WidgetInterface;
+use App\Packages\Widget\WidgetGroupCollection;
+use App\Packages\Widget\Widgets\CoreSimpleMenu;
+use App\Packages\Widget\Widgets\Text;
 use Illuminate\Contracts\Foundation\Application;
 
 class WidgetServiceProvider extends ServiceProvider

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Exporters;
+namespace App\Plugins\LanguageAdvanced\Exporters;
 
-use Botble\Base\Supports\Language as LanguageSupport;
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\ExportCounter;
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\Language\Facades\Language;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Base\Supports\Language as LanguageSupport;
+use App\Packages\DataSynchronize\Exporter\ExportColumn;
+use App\Packages\DataSynchronize\Exporter\ExportCounter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;

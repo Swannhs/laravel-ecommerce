@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Marketplace\Providers;
+namespace App\Plugins\Marketplace\Providers;
 
-use Botble\Base\Events\RenderingAdminWidgetEvent;
-use Botble\Ecommerce\Events\OrderCancelledEvent;
-use Botble\Ecommerce\Events\OrderCreated;
-use Botble\Marketplace\Events\WithdrawalRequested;
-use Botble\Marketplace\Listeners\ClearVendorCategoriesCacheOnSync;
-use Botble\Marketplace\Listeners\OrderCancelledEmailNotification;
-use Botble\Marketplace\Listeners\OrderCreatedEmailNotification;
-use Botble\Marketplace\Listeners\RegisterMarketplaceWidget;
-use Botble\Marketplace\Listeners\RenderingSiteMapListener;
-use Botble\Marketplace\Listeners\SaveVendorInformationListener;
-use Botble\Marketplace\Listeners\SendMailAfterVendorRegistered;
-use Botble\Marketplace\Listeners\WithdrawalRequestedNotification;
-use Botble\Theme\Events\RenderingSiteMapEvent;
+use App\Core\Base\Events\RenderingAdminWidgetEvent;
+use App\Plugins\Ecommerce\Events\OrderCancelledEvent;
+use App\Plugins\Ecommerce\Events\OrderCreated;
+use App\Plugins\Marketplace\Events\WithdrawalRequested;
+use App\Plugins\Marketplace\Listeners\ClearVendorCategoriesCacheOnSync;
+use App\Plugins\Marketplace\Listeners\OrderCancelledEmailNotification;
+use App\Plugins\Marketplace\Listeners\OrderCreatedEmailNotification;
+use App\Plugins\Marketplace\Listeners\RegisterMarketplaceWidget;
+use App\Plugins\Marketplace\Listeners\RenderingSiteMapListener;
+use App\Plugins\Marketplace\Listeners\SaveVendorInformationListener;
+use App\Plugins\Marketplace\Listeners\SendMailAfterVendorRegistered;
+use App\Plugins\Marketplace\Listeners\WithdrawalRequestedNotification;
+use App\Packages\Theme\Events\RenderingSiteMapEvent;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -40,13 +40,13 @@ class EventServiceProvider extends ServiceProvider
         RenderingAdminWidgetEvent::class => [
             RegisterMarketplaceWidget::class,
         ],
-        'eloquent.pivotAttached: Botble\Ecommerce\Models\Product' => [
+        'eloquent.pivotAttached: App\Plugins\Ecommerce\Models\Product' => [
             ClearVendorCategoriesCacheOnSync::class,
         ],
-        'eloquent.pivotDetached: Botble\Ecommerce\Models\Product' => [
+        'eloquent.pivotDetached: App\Plugins\Ecommerce\Models\Product' => [
             ClearVendorCategoriesCacheOnSync::class,
         ],
-        'eloquent.pivotUpdated: Botble\Ecommerce\Models\Product' => [
+        'eloquent.pivotUpdated: App\Plugins\Ecommerce\Models\Product' => [
             ClearVendorCategoriesCacheOnSync::class,
         ],
     ];

@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Base\Models;
+namespace App\Core\Base\Models;
 
-use Botble\Base\Contracts\BaseModel as BaseModelContract;
-use Botble\Base\Facades\MacroableModels;
-use Botble\Base\Models\Concerns\HasBaseEloquentBuilder;
-use Botble\Base\Models\Concerns\HasMetadata;
-use Botble\Base\Models\Concerns\HasUuidsOrIntegerIds;
+use App\Core\Base\Contracts\BaseModel as BaseModelContract;
+use App\Core\Base\Facades\MacroableModels;
+use App\Core\Base\Models\Concerns\HasBaseEloquentBuilder;
+use App\Core\Base\Models\Concerns\HasMetadata;
+use App\Core\Base\Models\Concerns\HasUuidsOrIntegerIds;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
 /**
- * @method static \Botble\Base\Models\BaseQueryBuilder query()
+ * @method static \App\Core\Base\Models\BaseQueryBuilder query()
  */
 class BaseModel extends Model implements BaseModelContract
 {

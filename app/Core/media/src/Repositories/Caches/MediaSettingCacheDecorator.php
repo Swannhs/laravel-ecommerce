@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Repositories\Caches;
+namespace App\Core\Media\Repositories\Caches;
 
-use Botble\Media\Repositories\Eloquent\MediaSettingRepository;
+use App\Core\Media\Repositories\Eloquent\MediaSettingRepository;
 
 /**
  * @deprecated

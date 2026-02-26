@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\ACL\Http\Requests;
+namespace App\Core\ACL\Http\Requests;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
-use Botble\Base\Rules\EmailRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Support\Http\Requests\Request;
 
 class UpdateProfileRequest extends Request
 {

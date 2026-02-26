@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Enums;
+namespace App\Plugins\Contact\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 /**
  * @method static CustomFieldType TEXT()

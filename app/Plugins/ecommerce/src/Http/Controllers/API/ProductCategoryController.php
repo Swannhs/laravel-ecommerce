@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\API\CategoryRequest;
-use Botble\Ecommerce\Http\Resources\API\AvailableProductResource;
-use Botble\Ecommerce\Http\Resources\API\ProductCategoryDetailResource;
-use Botble\Ecommerce\Http\Resources\API\ProductCategoryResource;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Services\Products\GetProductService;
-use Botble\Slug\Facades\SlugHelper;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\API\CategoryRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\AvailableProductResource;
+use App\Plugins\Ecommerce\Http\Resources\API\ProductCategoryDetailResource;
+use App\Plugins\Ecommerce\Http\Resources\API\ProductCategoryResource;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Services\Products\GetProductService;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

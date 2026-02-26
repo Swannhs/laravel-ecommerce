@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Helper;
-use Botble\Setting\Forms\PhoneNumberSettingForm;
-use Botble\Setting\Http\Requests\PhoneNumberSettingRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Helper;
+use App\Core\Setting\Forms\PhoneNumberSettingForm;
+use App\Core\Setting\Http\Requests\PhoneNumberSettingRequest;
 use Illuminate\Support\Facades\Validator;
 
 class PhoneNumberSettingController extends SettingController

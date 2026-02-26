@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace App\Plugins\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Enums\DeletionRequestStatusEnum;
-use Botble\Ecommerce\Http\Requests\Fronts\AccountDeletionRequest;
-use Botble\Ecommerce\Jobs\CustomerDeleteAccountJob;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\CustomerDeletionRequest;
-use Botble\Ecommerce\Notifications\ConfirmDeletionRequestNotification;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Enums\DeletionRequestStatusEnum;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\AccountDeletionRequest;
+use App\Plugins\Ecommerce\Jobs\CustomerDeleteAccountJob;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\CustomerDeletionRequest;
+use App\Plugins\Ecommerce\Notifications\ConfirmDeletionRequestNotification;
+use App\Packages\Theme\Facades\Theme;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

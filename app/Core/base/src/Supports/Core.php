@@ -1,40 +1,40 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Events\LicenseActivated;
-use Botble\Base\Events\LicenseActivating;
-use Botble\Base\Events\LicenseDeactivated;
-use Botble\Base\Events\LicenseDeactivating;
-use Botble\Base\Events\LicenseInvalid;
-use Botble\Base\Events\LicenseRevoked;
-use Botble\Base\Events\LicenseRevoking;
-use Botble\Base\Events\LicenseUnverified;
-use Botble\Base\Events\LicenseVerified;
-use Botble\Base\Events\LicenseVerifying;
-use Botble\Base\Events\SystemUpdateAvailable;
-use Botble\Base\Events\SystemUpdateCachesCleared;
-use Botble\Base\Events\SystemUpdateCachesClearing;
-use Botble\Base\Events\SystemUpdateChecked;
-use Botble\Base\Events\SystemUpdateChecking;
-use Botble\Base\Events\SystemUpdateDBMigrated;
-use Botble\Base\Events\SystemUpdateDBMigrating;
-use Botble\Base\Events\SystemUpdateDownloaded;
-use Botble\Base\Events\SystemUpdateDownloading;
-use Botble\Base\Events\SystemUpdateExtractedFiles;
-use Botble\Base\Events\SystemUpdatePublished;
-use Botble\Base\Events\SystemUpdatePublishing;
-use Botble\Base\Events\SystemUpdateUnavailable;
-use Botble\Base\Exceptions\CouldNotConnectToLicenseServerException;
-use Botble\Base\Exceptions\LicenseInvalidException;
-use Botble\Base\Exceptions\LicenseIsAlreadyActivatedException;
-use Botble\Base\Exceptions\MissingCURLExtensionException;
-use Botble\Base\Exceptions\MissingZipExtensionException;
-use Botble\Base\Exceptions\RequiresLicenseActivatedException;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Services\ClearCacheService;
-use Botble\Base\Supports\ValueObjects\CoreProduct;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Events\LicenseActivated;
+use App\Core\Base\Events\LicenseActivating;
+use App\Core\Base\Events\LicenseDeactivated;
+use App\Core\Base\Events\LicenseDeactivating;
+use App\Core\Base\Events\LicenseInvalid;
+use App\Core\Base\Events\LicenseRevoked;
+use App\Core\Base\Events\LicenseRevoking;
+use App\Core\Base\Events\LicenseUnverified;
+use App\Core\Base\Events\LicenseVerified;
+use App\Core\Base\Events\LicenseVerifying;
+use App\Core\Base\Events\SystemUpdateAvailable;
+use App\Core\Base\Events\SystemUpdateCachesCleared;
+use App\Core\Base\Events\SystemUpdateCachesClearing;
+use App\Core\Base\Events\SystemUpdateChecked;
+use App\Core\Base\Events\SystemUpdateChecking;
+use App\Core\Base\Events\SystemUpdateDBMigrated;
+use App\Core\Base\Events\SystemUpdateDBMigrating;
+use App\Core\Base\Events\SystemUpdateDownloaded;
+use App\Core\Base\Events\SystemUpdateDownloading;
+use App\Core\Base\Events\SystemUpdateExtractedFiles;
+use App\Core\Base\Events\SystemUpdatePublished;
+use App\Core\Base\Events\SystemUpdatePublishing;
+use App\Core\Base\Events\SystemUpdateUnavailable;
+use App\Core\Base\Exceptions\CouldNotConnectToLicenseServerException;
+use App\Core\Base\Exceptions\LicenseInvalidException;
+use App\Core\Base\Exceptions\LicenseIsAlreadyActivatedException;
+use App\Core\Base\Exceptions\MissingCURLExtensionException;
+use App\Core\Base\Exceptions\MissingZipExtensionException;
+use App\Core\Base\Exceptions\RequiresLicenseActivatedException;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Services\ClearCacheService;
+use App\Core\Base\Supports\ValueObjects\CoreProduct;
+use App\Core\Setting\Facades\Setting;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
@@ -177,8 +177,8 @@ final class Core
     }
 
     /**
-     * @throws \Botble\Base\Exceptions\LicenseInvalidException
-     * @throws \Botble\Base\Exceptions\LicenseIsAlreadyActivatedException
+     * @throws \App\Core\Base\Exceptions\LicenseInvalidException
+     * @throws \App\Core\Base\Exceptions\LicenseIsAlreadyActivatedException
      */
     public function activateLicense(string $license, string $client): bool
     {

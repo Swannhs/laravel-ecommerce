@@ -1,14 +1,14 @@
 <?php
 
-use Botble\Ads\Facades\AdsManager;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\FlashSale;
-use Botble\Ecommerce\Supports\FlashSaleSupport;
-use Botble\Media\Facades\RvMedia;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Supports\ThemeSupport;
-use Botble\Widget\Events\RenderingWidgetSettings;
+use App\Plugins\Ads\Facades\AdsManager;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\FlashSale;
+use App\Plugins\Ecommerce\Supports\FlashSaleSupport;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Supports\ThemeSupport;
+use App\Packages\Widget\Events\RenderingWidgetSettings;
 
 if (! function_exists('theme_get_autoplay_speed_options')) {
     function theme_get_autoplay_speed_options(): array

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Enums;
+namespace App\Plugins\Ecommerce\Enums;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\Enum;
 use Illuminate\Support\HtmlString;
 
 /**

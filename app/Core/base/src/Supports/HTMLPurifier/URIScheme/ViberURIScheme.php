@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports\HTMLPurifier\URIScheme;
+namespace App\Core\Base\Supports\HTMLPurifier\URIScheme;
 
 use HTMLPurifier_URIScheme;
 

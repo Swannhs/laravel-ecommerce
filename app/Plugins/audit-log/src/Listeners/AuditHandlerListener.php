@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\AuditLog\Listeners;
+namespace App\Plugins\AuditLog\Listeners;
 
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\AuditLog\Models\AuditHistory;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Setting\Enums\DataRetentionPeriod;
+use App\Plugins\AuditLog\Events\AuditHandlerEvent;
+use App\Plugins\AuditLog\Models\AuditHistory;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Setting\Enums\DataRetentionPeriod;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;

@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\Order;
-use Botble\Payment\Models\Payment;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Payment\Models\Payment;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Commands;
+namespace App\Packages\Menu\Commands;
 
-use Botble\Menu\Facades\Menu;
+use App\Packages\Menu\Facades\Menu;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

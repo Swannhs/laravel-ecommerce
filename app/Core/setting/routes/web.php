@@ -1,10 +1,10 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Setting\Http\Controllers\EmailRuleSettingController;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Setting\Http\Controllers\EmailRuleSettingController;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\Setting\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Core\Setting\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::prefix('settings')->name('settings.')->group(function (): void {
             Route::get('/', [

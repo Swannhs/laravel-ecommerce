@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Contact\Http\Controllers\Settings;
+namespace App\Plugins\Contact\Http\Controllers\Settings;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Contact\Forms\Settings\ContactSettingForm;
-use Botble\Contact\Http\Requests\Settings\ContactSettingRequest;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Contact\Forms\Settings\ContactSettingForm;
+use App\Plugins\Contact\Http\Requests\Settings\ContactSettingRequest;
+use App\Core\Setting\Http\Controllers\SettingController;
 use Illuminate\Support\Arr;
 
 class ContactSettingController extends SettingController

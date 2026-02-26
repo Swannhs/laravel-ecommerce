@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Theme\Facades;
+namespace App\Packages\Theme\Facades;
 
-use Botble\Theme\Theme as BaseTheme;
+use App\Packages\Theme\Theme as BaseTheme;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Botble\Theme\Theme layout(string $layout)
- * @method static \Botble\Theme\Theme uses(string|null $theme = null)
- * @method static \Botble\Theme\Theme theme(string|null $theme = null)
+ * @method static \App\Packages\Theme\Theme layout(string $layout)
+ * @method static \App\Packages\Theme\Theme uses(string|null $theme = null)
+ * @method static \App\Packages\Theme\Theme theme(string|null $theme = null)
  * @method static bool hasInheritTheme()
  * @method static string|null getInheritTheme()
  * @method static bool exists(string|null $theme)
@@ -17,13 +17,13 @@ use Illuminate\Support\Facades\Facade;
  * @method static mixed|null getInheritConfig(string|null $key = null)
  * @method static string getThemeNamespace(string $path = '')
  * @method static string getThemeName()
- * @method static \Botble\Theme\Theme setThemeName(string $theme)
+ * @method static \App\Packages\Theme\Theme setThemeName(string $theme)
  * @method static string getPublicThemeName()
  * @method static void fire(string $event, callable|object|array|string|null $args)
- * @method static \Botble\Theme\Breadcrumb breadcrumb()
- * @method static \Botble\Theme\Theme append(string $region, string $value)
- * @method static \Botble\Theme\Theme set(string $region, mixed|null $value)
- * @method static \Botble\Theme\Theme prepend(string $region, string $value)
+ * @method static \App\Packages\Theme\Breadcrumb breadcrumb()
+ * @method static \App\Packages\Theme\Theme append(string $region, string $value)
+ * @method static \App\Packages\Theme\Theme set(string $region, mixed|null $value)
+ * @method static \App\Packages\Theme\Theme prepend(string $region, string $value)
  * @method static mixed bind(string $variable, callable|array|string|null $callback = null)
  * @method static bool binded(string $variable)
  * @method static mixed share(string $key, $value)
@@ -38,12 +38,12 @@ use Illuminate\Support\Facades\Facade;
  * @method static mixed get(string $region, string|null $default = null)
  * @method static bool has(string $region)
  * @method static string|null content()
- * @method static \Botble\Theme\Asset|\Botble\Theme\AssetContainer asset()
- * @method static \Botble\Theme\Theme ofWithLayout(string $view, array $args = [])
- * @method static \Botble\Theme\Theme of(string $view, array $args = [])
+ * @method static \App\Packages\Theme\Asset|\App\Packages\Theme\AssetContainer asset()
+ * @method static \App\Packages\Theme\Theme ofWithLayout(string $view, array $args = [])
+ * @method static \App\Packages\Theme\Theme of(string $view, array $args = [])
  * @method static mixed scope(string $view, array $args = [], $default = null)
- * @method static \Botble\Theme\Theme setUpContent(string $view, array $args = [])
- * @method static \Botble\Theme\Theme load(string $view, array $args = [])
+ * @method static \App\Packages\Theme\Theme setUpContent(string $view, array $args = [])
+ * @method static \App\Packages\Theme\Theme load(string $view, array $args = [])
  * @method static array getContentArguments()
  * @method static mixed getContentArgument(string $key, $default = null)
  * @method static bool hasContentArgument(string $key)
@@ -55,7 +55,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Illuminate\Routing\Router registerRoutes(\Closure|callable $closure, array $middlewares = ['web', 'core'])
  * @method static string loadView(string $view)
  * @method static string getStyleIntegrationPath()
- * @method static \Botble\Theme\Theme fireEventGlobalAssets()
+ * @method static \App\Packages\Theme\Theme fireEventGlobalAssets()
  * @method static string getThemeScreenshot(string $theme, ?string $name = null)
  * @method static void registerThemeIconFields(array $icons, array $css = [], array $js = [])
  * @method static void registerFacebookIntegration()
@@ -82,10 +82,10 @@ use Illuminate\Support\Facades\Facade;
  * @method static string|null termAndPrivacyPolicyUrl()
  * @method static \Illuminate\Support\HtmlString|null getLogoImage(array $attributes = [], string $logoKey = 'logo', int $maxHeight = 0, string|null $logoUrl = null)
  * @method static string|null formatDate(\Carbon\CarbonInterface|string|int|null $date, string|null $format = null)
- * @method static \Botble\Theme\Typography\Typography typography()
+ * @method static \App\Packages\Theme\Typography\Typography typography()
  * @method static string renderSocialSharing(string|null $url = null, string|null $title = null, string|null $thumbnail = null)
  *
- * @see \Botble\Theme\Theme
+ * @see \App\Packages\Theme\Theme
  */
 class Theme extends Facade
 {

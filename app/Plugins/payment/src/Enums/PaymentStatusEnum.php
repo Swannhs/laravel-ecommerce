@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Payment\Enums;
+namespace App\Plugins\Payment\Enums;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Enum;
 use Illuminate\Support\HtmlString;
 
 /**

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Services;
+namespace App\Core\Media\Services;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Encoders\AutoEncoder;
 use Throwable;

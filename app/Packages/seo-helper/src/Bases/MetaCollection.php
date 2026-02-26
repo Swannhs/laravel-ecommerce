@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\SeoHelper\Bases;
+namespace App\Packages\SeoHelper\Bases;
 
-use Botble\SeoHelper\Contracts\Entities\MetaCollectionContract;
-use Botble\SeoHelper\Contracts\Helpers\MetaContract;
-use Botble\SeoHelper\Contracts\RenderableContract;
-use Botble\SeoHelper\Exceptions\InvalidArgumentException;
-use Botble\SeoHelper\Helpers\Meta;
+use App\Packages\SeoHelper\Contracts\Entities\MetaCollectionContract;
+use App\Packages\SeoHelper\Contracts\Helpers\MetaContract;
+use App\Packages\SeoHelper\Contracts\RenderableContract;
+use App\Packages\SeoHelper\Exceptions\InvalidArgumentException;
+use App\Packages\SeoHelper\Helpers\Meta;
 use Illuminate\Support\Collection;
 
 abstract class MetaCollection extends Collection implements MetaCollectionContract

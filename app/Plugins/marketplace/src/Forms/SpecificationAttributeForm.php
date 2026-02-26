@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Ecommerce\Forms\SpecificationAttributeForm as BaseSpecificationAttributeForm;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Ecommerce\Forms\SpecificationAttributeForm as BaseSpecificationAttributeForm;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 
 class SpecificationAttributeForm extends BaseSpecificationAttributeForm
 {

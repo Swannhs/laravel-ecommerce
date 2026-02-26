@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Marketplace\Models;
+namespace App\Plugins\Marketplace\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Models\Currency;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Order;
-use Botble\Marketplace\Enums\RevenueTypeEnum;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Models\Currency;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Revenue extends BaseModel

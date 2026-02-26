@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Imports;
+namespace App\Plugins\Ecommerce\Imports;
 
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
-use Botble\Ecommerce\Exceptions\ImportShippingRulesException;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Shipping;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Ecommerce\Models\ShippingRuleItem;
-use Botble\Location\Models\Country;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Exceptions\ImportShippingRulesException;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Shipping;
+use App\Plugins\Ecommerce\Models\ShippingRule;
+use App\Plugins\Ecommerce\Models\ShippingRuleItem;
+use App\Plugins\Location\Models\Country;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

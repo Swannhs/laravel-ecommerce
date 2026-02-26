@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace App\Plugins\AuditLog\Providers;
 
-use Botble\AuditLog\AuditLog;
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Dashboard\Events\RenderingDashboardWidgets;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
-use Botble\Setting\Enums\DataRetentionPeriod;
-use Botble\Setting\Forms\GeneralSettingForm;
-use Botble\Setting\Http\Requests\GeneralSettingRequest;
+use App\Plugins\AuditLog\AuditLog;
+use App\Plugins\AuditLog\Events\AuditHandlerEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Dashboard\Events\RenderingDashboardWidgets;
+use App\Core\Dashboard\Supports\DashboardWidgetInstance;
+use App\Core\Setting\Enums\DataRetentionPeriod;
+use App\Core\Setting\Forms\GeneralSettingForm;
+use App\Core\Setting\Http\Requests\GeneralSettingRequest;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;

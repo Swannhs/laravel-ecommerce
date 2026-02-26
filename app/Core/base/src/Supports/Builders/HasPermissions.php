@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports\Builders;
+namespace App\Core\Base\Supports\Builders;
 
-use Botble\ACL\Models\User;
+use App\Core\ACL\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 trait HasPermissions

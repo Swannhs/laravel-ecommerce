@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Blog\Widgets\Fronts;
+namespace App\Plugins\Blog\Widgets\Fronts;
 
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\Forms\WidgetForm;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Packages\Widget\AbstractWidget;
+use App\Packages\Widget\Forms\WidgetForm;
 use Illuminate\Support\Collection;
 
 class Tags extends AbstractWidget

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Testimonial\Http\Controllers;
+namespace App\Plugins\Testimonial\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Testimonial\Forms\TestimonialForm;
-use Botble\Testimonial\Http\Requests\TestimonialRequest;
-use Botble\Testimonial\Models\Testimonial;
-use Botble\Testimonial\Tables\TestimonialTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Testimonial\Forms\TestimonialForm;
+use App\Plugins\Testimonial\Http\Requests\TestimonialRequest;
+use App\Plugins\Testimonial\Models\Testimonial;
+use App\Plugins\Testimonial\Tables\TestimonialTable;
 
 class TestimonialController extends BaseController
 {

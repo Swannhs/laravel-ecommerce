@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Backup\Commands;
+namespace App\Plugins\Backup\Commands;
 
-use Botble\Backup\Supports\Backup;
+use App\Plugins\Backup\Supports\Backup;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;

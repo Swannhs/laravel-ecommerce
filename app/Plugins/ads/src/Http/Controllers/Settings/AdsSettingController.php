@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ads\Http\Controllers\Settings;
+namespace App\Plugins\Ads\Http\Controllers\Settings;
 
-use Botble\Ads\Forms\Settings\AdsSettingForm;
-use Botble\Ads\Http\Requests\Settings\AdsSettingRequest;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Plugins\Ads\Forms\Settings\AdsSettingForm;
+use App\Plugins\Ads\Http\Requests\Settings\AdsSettingRequest;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\SettingController;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 

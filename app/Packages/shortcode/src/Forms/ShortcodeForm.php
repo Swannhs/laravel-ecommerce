@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Shortcode\Forms;
+namespace App\Packages\Shortcode\Forms;
 
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\ColorFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\ColorField;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Models\BaseModel;
-use Botble\Shortcode\Compilers\ShortcodeCompiler;
-use Botble\Shortcode\Forms\Fields\ShortcodeTabsField;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\ColorFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\ColorField;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Packages\Shortcode\Compilers\ShortcodeCompiler;
+use App\Packages\Shortcode\Forms\Fields\ShortcodeTabsField;
 
 class ShortcodeForm extends FormAbstract
 {

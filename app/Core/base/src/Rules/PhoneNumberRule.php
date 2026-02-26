@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Rules;
+namespace App\Core\Base\Rules;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;
 

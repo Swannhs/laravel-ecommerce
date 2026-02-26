@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\SocialLogin\Facades;
+namespace App\Plugins\SocialLogin\Facades;
 
-use Botble\SocialLogin\Supports\SocialService as SocialServiceSupport;
+use App\Plugins\SocialLogin\Supports\SocialService as SocialServiceSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Botble\SocialLogin\Supports\SocialService registerModule(array $model)
+ * @method static \App\Plugins\SocialLogin\Supports\SocialService registerModule(array $model)
  * @method static array supportedModules()
  * @method static bool isSupportedModule(string $model)
  * @method static bool isSupportedModuleByKey(string $key)
@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array getProviderKeysEnabled()
  * @method static array refreshToken(string $provider, string $refreshToken)
  *
- * @see \Botble\SocialLogin\Supports\SocialService
+ * @see \App\Plugins\SocialLogin\Supports\SocialService
  */
 class SocialService extends Facade
 {

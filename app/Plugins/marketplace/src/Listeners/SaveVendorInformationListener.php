@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Base\Events\AdminNotificationEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Supports\AdminNotificationItem;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Events\NewVendorRegistered;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Models\Store;
-use Botble\Marketplace\Models\VendorInfo;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Events\AdminNotificationEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Supports\AdminNotificationItem;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Events\NewVendorRegistered;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Models\Store;
+use App\Plugins\Marketplace\Models\VendorInfo;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;

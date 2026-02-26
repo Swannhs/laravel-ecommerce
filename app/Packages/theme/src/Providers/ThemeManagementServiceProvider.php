@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Theme\Providers;
+namespace App\Packages\Theme\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Supports\ThemeSupport;
-use Botble\Widget\AbstractWidget;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\Helper;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Supports\ThemeSupport;
+use App\Packages\Widget\AbstractWidget;
 use Composer\Autoload\ClassLoader;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
@@ -74,7 +74,7 @@ class ThemeManagementServiceProvider extends ServiceProvider
 
     protected function bootWidgets(): void
     {
-        if (! class_exists('Botble\Widget\Providers\WidgetServiceProvider')) {
+        if (! class_exists('App\Packages\Widget\Providers\WidgetServiceProvider')) {
             return;
         }
 

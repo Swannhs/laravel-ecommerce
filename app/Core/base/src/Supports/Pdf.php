@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
 use ArPHP\I18N\Arabic;
 use Barryvdh\DomPDF\Facade\Pdf as PdfFacade;
 use Barryvdh\DomPDF\PDF as DomPDF;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
 use Closure;
 use Dompdf\Adapter\CPDF;
 use Dompdf\Image\Cache;

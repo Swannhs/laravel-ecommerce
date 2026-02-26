@@ -1,5 +1,5 @@
 @php
-    /** @var Botble\Table\Abstracts\TableAbstract $table */
+    /** @var App\Core\Table\Abstracts\TableAbstract $table */
 @endphp
 
 @once
@@ -179,7 +179,7 @@
                                 @break
 
                                 @case('visibility')
-                                    @break(!Auth::user() instanceof \Botble\ACL\Models\User || !AdminHelper::isInAdmin(true))
+                                    @break(!Auth::user() instanceof \App\Core\ACL\Models\User || !AdminHelper::isInAdmin(true))
 
                                     <div
                                         class="dropdown"
@@ -216,10 +216,10 @@
 
                                                 @foreach ($table->getColumns() as $column)
                                                     @php
-                                                        /** @var \Botble\Table\Columns\Column $column */
+                                                        /** @var \App\Core\Table\Columns\Column $column */
                                                     @endphp
 
-                                                    @continue(!$column instanceof \Botble\Table\Columns\Column || Str::contains($column->className, 'no-column-visibility') || in_array($column->name, $table->getDefaultVisibleColumns(), true))
+                                                    @continue(!$column instanceof \App\Core\Table\Columns\Column || Str::contains($column->className, 'no-column-visibility') || in_array($column->name, $table->getDefaultVisibleColumns(), true))
 
                                                     {{ Form::onOffCheckbox("columns_visibility[{$column->name}]", $table->determineIfColumnIsVisible($column), ['label' => $column->titleAttr ?: $column->title, 'data-bb-toggle' => 'dt-columns-visibility-toggle']) }}
                                                 @endforeach

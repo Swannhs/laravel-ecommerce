@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Contact\Providers;
+namespace App\Plugins\Contact\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Contact\Models\Contact;
-use Botble\Contact\Models\ContactReply;
-use Botble\Contact\Models\CustomField;
-use Botble\Contact\Models\CustomFieldOption;
-use Botble\Contact\Repositories\Eloquent\ContactReplyRepository;
-use Botble\Contact\Repositories\Eloquent\ContactRepository;
-use Botble\Contact\Repositories\Interfaces\ContactInterface;
-use Botble\Contact\Repositories\Interfaces\ContactReplyInterface;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Contact\Models\Contact;
+use App\Plugins\Contact\Models\ContactReply;
+use App\Plugins\Contact\Models\CustomField;
+use App\Plugins\Contact\Models\CustomFieldOption;
+use App\Plugins\Contact\Repositories\Eloquent\ContactReplyRepository;
+use App\Plugins\Contact\Repositories\Eloquent\ContactRepository;
+use App\Plugins\Contact\Repositories\Interfaces\ContactInterface;
+use App\Plugins\Contact\Repositories\Interfaces\ContactReplyInterface;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
 use Illuminate\Http\Request;
 
 class ContactServiceProvider extends ServiceProvider

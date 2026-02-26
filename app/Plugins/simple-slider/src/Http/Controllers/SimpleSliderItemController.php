@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Controllers;
+namespace App\Plugins\SimpleSlider\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\SimpleSlider\Forms\SimpleSliderItemForm;
-use Botble\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
-use Botble\SimpleSlider\Tables\SimpleSliderItemTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\SimpleSlider\Forms\SimpleSliderItemForm;
+use App\Plugins\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
+use App\Plugins\SimpleSlider\Models\SimpleSliderItem;
+use App\Plugins\SimpleSlider\Tables\SimpleSliderItemTable;
 
 class SimpleSliderItemController extends BaseController
 {

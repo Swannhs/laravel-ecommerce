@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\MultiChecklistFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Settings\ProductSearchSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Forms\FieldOptions\MultiChecklistFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Settings\ProductSearchSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class ProductSearchSettingForm extends SettingForm
 {

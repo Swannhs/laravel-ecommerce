@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace App\Core\Base\Providers;
 
-use Botble\Base\Commands\ActivateLicenseCommand;
-use Botble\Base\Commands\CacheWarmCommand;
-use Botble\Base\Commands\CleanupSystemCommand;
-use Botble\Base\Commands\ClearExpiredCacheCommand;
-use Botble\Base\Commands\ClearLogCommand;
-use Botble\Base\Commands\CompressImagesCommand;
-use Botble\Base\Commands\ExportDatabaseCommand;
-use Botble\Base\Commands\FetchGoogleFontsCommand;
-use Botble\Base\Commands\GoogleFontsUpdateCommand;
-use Botble\Base\Commands\ImportDatabaseCommand;
-use Botble\Base\Commands\InstallCommand;
-use Botble\Base\Commands\PublishAssetsCommand;
-use Botble\Base\Commands\UpdateCommand;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Commands\ActivateLicenseCommand;
+use App\Core\Base\Commands\CacheWarmCommand;
+use App\Core\Base\Commands\CleanupSystemCommand;
+use App\Core\Base\Commands\ClearExpiredCacheCommand;
+use App\Core\Base\Commands\ClearLogCommand;
+use App\Core\Base\Commands\CompressImagesCommand;
+use App\Core\Base\Commands\ExportDatabaseCommand;
+use App\Core\Base\Commands\FetchGoogleFontsCommand;
+use App\Core\Base\Commands\GoogleFontsUpdateCommand;
+use App\Core\Base\Commands\ImportDatabaseCommand;
+use App\Core\Base\Commands\InstallCommand;
+use App\Core\Base\Commands\PublishAssetsCommand;
+use App\Core\Base\Commands\UpdateCommand;
+use App\Core\Base\Supports\ServiceProvider;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\AboutCommand;
 

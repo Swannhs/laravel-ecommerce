@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Cart\Contracts;
+namespace App\Plugins\Ecommerce\Cart\Contracts;
 
 interface Buyable
 {

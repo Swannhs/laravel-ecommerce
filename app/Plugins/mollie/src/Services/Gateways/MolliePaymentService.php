@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Mollie\Services\Gateways;
+namespace App\Plugins\Mollie\Services\Gateways;
 
-use Botble\Mollie\Services\Abstracts\MolliePaymentAbstract;
+use App\Plugins\Mollie\Services\Abstracts\MolliePaymentAbstract;
 use Illuminate\Http\Request;
 
 class MolliePaymentService extends MolliePaymentAbstract

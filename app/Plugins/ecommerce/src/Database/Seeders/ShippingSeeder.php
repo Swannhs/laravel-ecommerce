@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders;
+namespace App\Plugins\Ecommerce\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
-use Botble\Ecommerce\Models\Shipping;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Ecommerce\Models\ShippingRuleItem;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Models\Shipping;
+use App\Plugins\Ecommerce\Models\ShippingRule;
+use App\Plugins\Ecommerce\Models\ShippingRuleItem;
 
 class ShippingSeeder extends BaseSeeder
 {

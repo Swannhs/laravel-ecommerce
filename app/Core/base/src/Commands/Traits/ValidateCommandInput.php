@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Commands\Traits;
+namespace App\Core\Base\Commands\Traits;
 
 use Closure;
 use Illuminate\Support\Facades\Validator;

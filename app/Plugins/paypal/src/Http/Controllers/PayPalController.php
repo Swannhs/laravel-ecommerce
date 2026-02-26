@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\PayPal\Http\Controllers;
+namespace App\Plugins\PayPal\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\PayPal\Http\Requests\PayPalPaymentCallbackRequest;
-use Botble\PayPal\Services\Gateways\PayPalPaymentService;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Plugins\PayPal\Http\Requests\PayPalPaymentCallbackRequest;
+use App\Plugins\PayPal\Services\Gateways\PayPalPaymentService;
 
 class PayPalController extends BaseController
 {

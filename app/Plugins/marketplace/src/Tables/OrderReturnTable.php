@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Models\OrderReturn;
-use Botble\Marketplace\Tables\Traits\ForVendor;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\EnumColumn;
-use Botble\Table\Columns\IdColumn;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Models\OrderReturn;
+use App\Plugins\Marketplace\Tables\Traits\ForVendor;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\EditAction;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\EnumColumn;
+use App\Core\Table\Columns\IdColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Invoice;
-use Botble\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Invoice;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

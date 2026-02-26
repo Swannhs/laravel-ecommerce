@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Listeners;
+namespace App\Packages\Slug\Listeners;
 
-use Botble\Slug\Models\Slug;
+use App\Packages\Slug\Models\Slug;
 
 class TruncateSlug
 {

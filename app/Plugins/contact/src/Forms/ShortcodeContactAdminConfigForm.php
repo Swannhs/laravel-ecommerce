@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Forms;
+namespace App\Plugins\Contact\Forms;
 
-use Botble\Base\Forms\FieldOptions\MultiChecklistFieldOption;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Shortcode\Forms\ShortcodeForm;
+use App\Core\Base\Forms\FieldOptions\MultiChecklistFieldOption;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Packages\Shortcode\Forms\ShortcodeForm;
 
 class ShortcodeContactAdminConfigForm extends ShortcodeForm
 {

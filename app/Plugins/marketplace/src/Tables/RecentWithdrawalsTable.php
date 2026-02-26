@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Marketplace\Models\Withdrawal;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\EnumColumn;
-use Botble\Table\Columns\IdColumn;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Marketplace\Models\Withdrawal;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\EnumColumn;
+use App\Core\Table\Columns\IdColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

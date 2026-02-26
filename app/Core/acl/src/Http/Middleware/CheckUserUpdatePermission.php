@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Http\Middleware;
+namespace App\Core\ACL\Http\Middleware;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Closure;
 use Illuminate\Http\Request;
 

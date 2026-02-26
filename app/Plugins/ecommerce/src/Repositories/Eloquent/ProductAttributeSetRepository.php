@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Collection;
 
 class ProductAttributeSetRepository extends RepositoriesAbstract implements ProductAttributeSetInterface

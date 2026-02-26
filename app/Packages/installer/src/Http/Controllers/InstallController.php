@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers;
+namespace App\Packages\Installer\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Services\DownloadLocaleService;
-use Botble\Base\Supports\Language;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Services\DownloadLocaleService;
+use App\Core\Base\Supports\Language;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;

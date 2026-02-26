@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Theme\Http\Controllers;
+namespace App\Packages\Theme\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Page\Models\Page;
-use Botble\Page\Services\PageService;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
-use Botble\Theme\Events\RenderingHomePageEvent;
-use Botble\Theme\Events\RenderingSingleEvent;
-use Botble\Theme\Events\RenderingSiteMapEvent;
-use Botble\Theme\Facades\SiteMapManager;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Packages\Page\Models\Page;
+use App\Packages\Page\Services\PageService;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Theme\Events\RenderingHomePageEvent;
+use App\Packages\Theme\Events\RenderingSingleEvent;
+use App\Packages\Theme\Events\RenderingSiteMapEvent;
+use App\Packages\Theme\Facades\SiteMapManager;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

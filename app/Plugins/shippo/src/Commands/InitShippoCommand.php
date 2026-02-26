@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Shippo\Commands;
+namespace App\Plugins\Shippo\Commands;
 
-use Botble\Ecommerce\Models\Address;
-use Botble\Ecommerce\Models\StoreLocator;
-use Botble\Location\Facades\Location;
-use Botble\Location\Models\City;
-use Botble\Location\Models\Country;
-use Botble\Location\Models\State;
-use Botble\Setting\Facades\Setting;
+use App\Plugins\Ecommerce\Models\Address;
+use App\Plugins\Ecommerce\Models\StoreLocator;
+use App\Plugins\Location\Facades\Location;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Models\State;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Contracts\Console\PromptsForMissingInput;

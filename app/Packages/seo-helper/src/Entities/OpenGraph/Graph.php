@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\SeoHelper\Entities\OpenGraph;
+namespace App\Packages\SeoHelper\Entities\OpenGraph;
 
-use Botble\SeoHelper\Contracts\Entities\MetaCollectionContract;
-use Botble\SeoHelper\Contracts\Entities\OpenGraphContract;
-use Botble\SeoHelper\Contracts\Helpers\MetaContract;
-use Botble\Theme\Facades\Theme;
+use App\Packages\SeoHelper\Contracts\Entities\MetaCollectionContract;
+use App\Packages\SeoHelper\Contracts\Entities\OpenGraphContract;
+use App\Packages\SeoHelper\Contracts\Helpers\MetaContract;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Collection;
 
 class Graph implements OpenGraphContract

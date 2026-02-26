@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Rules\DomainRule;
-use Botble\Setting\Forms\EmailRulesSettingForm;
-use Botble\Setting\Http\Requests\EmailRulesSettingRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Rules\DomainRule;
+use App\Core\Setting\Forms\EmailRulesSettingForm;
+use App\Core\Setting\Http\Requests\EmailRulesSettingRequest;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 

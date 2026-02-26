@@ -2,7 +2,7 @@
 
 @section('content')
     @php
-        $hasMoreThanOneLanguage = count(\Botble\Base\Supports\Language::getAvailableLocales()) > 1;
+        $hasMoreThanOneLanguage = count(\App\Core\Base\Supports\Language::getAvailableLocales()) > 1;
     @endphp
     <x-core::card>
         <x-core::card.header>
@@ -38,7 +38,7 @@
 
                     @if ($hasMoreThanOneLanguage)
                         <x-core::tab.pane id="tab_preferences">
-                            {!! \Botble\Marketplace\Forms\Vendor\LanguageSettingForm::createFromModel($store->customer)->renderForm() !!}
+                            {!! \App\Plugins\Marketplace\Forms\Vendor\LanguageSettingForm::createFromModel($store->customer)->renderForm() !!}
                         </x-core::tab.pane>
                     @endif
                 @endif

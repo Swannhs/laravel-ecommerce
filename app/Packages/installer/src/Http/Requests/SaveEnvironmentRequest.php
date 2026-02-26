@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Installer\Http\Requests;
+namespace App\Packages\Installer\Http\Requests;
 
-use Botble\Installer\Enums\DatabaseConnectionsEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Packages\Installer\Enums\DatabaseConnectionsEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class SaveEnvironmentRequest extends Request

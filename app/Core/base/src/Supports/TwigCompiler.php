@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
 use Twig\Environment;
 use Twig\Extension\ExtensionInterface;

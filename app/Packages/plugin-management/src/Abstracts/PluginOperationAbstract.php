@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\PluginManagement\Abstracts;
+namespace App\Packages\PluginManagement\Abstracts;
 
 abstract class PluginOperationAbstract
 {

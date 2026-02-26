@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\AuditLog\Listeners;
+namespace App\Plugins\AuditLog\Listeners;
 
-use Botble\ACL\Models\User;
-use Botble\AuditLog\Models\AuditHistory;
-use Botble\Base\Facades\BaseHelper;
+use App\Core\ACL\Models\User;
+use App\Plugins\AuditLog\Models\AuditHistory;
+use App\Core\Base\Facades\BaseHelper;
 use Exception;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Http\Request;

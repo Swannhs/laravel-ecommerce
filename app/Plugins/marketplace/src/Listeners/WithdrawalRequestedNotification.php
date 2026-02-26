@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Base\Events\AdminNotificationEvent;
-use Botble\Base\Supports\AdminNotificationItem;
-use Botble\Marketplace\Events\WithdrawalRequested;
+use App\Core\Base\Events\AdminNotificationEvent;
+use App\Core\Base\Supports\AdminNotificationItem;
+use App\Plugins\Marketplace\Events\WithdrawalRequested;
 
 class WithdrawalRequestedNotification
 {

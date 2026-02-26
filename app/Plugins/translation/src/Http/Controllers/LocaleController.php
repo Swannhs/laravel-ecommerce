@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Translation\Http\Controllers;
+namespace App\Plugins\Translation\Http\Controllers;
 
-use Botble\Base\Exceptions\FileNotWritableException;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Services\DeleteLocaleService;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Base\Supports\Language;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\Translation\Http\Requests\LocaleRequest;
-use Botble\Translation\Services\CreateLocaleService;
-use Botble\Translation\Services\DownloadLocaleService;
+use App\Core\Base\Exceptions\FileNotWritableException;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Services\DeleteLocaleService;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Base\Supports\Language;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Plugins\Translation\Http\Requests\LocaleRequest;
+use App\Plugins\Translation\Services\CreateLocaleService;
+use App\Plugins\Translation\Services\DownloadLocaleService;
 use Illuminate\Support\Facades\File;
 use Throwable;
 

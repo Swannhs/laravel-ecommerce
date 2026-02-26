@@ -1,26 +1,26 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Enums\ProductTypeEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\ProductForm;
-use Botble\Ecommerce\Http\Requests\ProductRequest;
-use Botble\Ecommerce\Models\GroupedProduct;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Models\ProductVariationItem;
-use Botble\Ecommerce\Services\Products\DuplicateProductService;
-use Botble\Ecommerce\Services\Products\StoreAttributesOfProductService;
-use Botble\Ecommerce\Services\Products\StoreProductService;
-use Botble\Ecommerce\Services\StoreProductTagService;
-use Botble\Ecommerce\Tables\ProductTable;
-use Botble\Ecommerce\Tables\ProductVariationTable;
-use Botble\Ecommerce\Traits\ProductActionsTrait;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\ProductForm;
+use App\Plugins\Ecommerce\Http\Requests\ProductRequest;
+use App\Plugins\Ecommerce\Models\GroupedProduct;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Models\ProductVariationItem;
+use App\Plugins\Ecommerce\Services\Products\DuplicateProductService;
+use App\Plugins\Ecommerce\Services\Products\StoreAttributesOfProductService;
+use App\Plugins\Ecommerce\Services\Products\StoreProductService;
+use App\Plugins\Ecommerce\Services\StoreProductTagService;
+use App\Plugins\Ecommerce\Tables\ProductTable;
+use App\Plugins\Ecommerce\Tables\ProductVariationTable;
+use App\Plugins\Ecommerce\Traits\ProductActionsTrait;
 use Illuminate\Http\Request;
 
 class ProductController extends BaseController

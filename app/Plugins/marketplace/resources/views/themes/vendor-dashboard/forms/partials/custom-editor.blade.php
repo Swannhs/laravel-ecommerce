@@ -1,6 +1,6 @@
 @php
 
-    $editor = new Botble\Base\Supports\Editor();
+    $editor = new App\Core\Base\Supports\Editor();
     $editor->registerAssets();
 
     $attributes = Arr::set($attributes, 'class', Arr::get($attributes, 'class', 'form-control') . ' editor-' . setting('rich_editor', config('core.base.general.editor.primary')));

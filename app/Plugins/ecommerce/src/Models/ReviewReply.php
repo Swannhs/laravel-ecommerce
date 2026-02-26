@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Models\BaseModel;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ReviewReply extends BaseModel

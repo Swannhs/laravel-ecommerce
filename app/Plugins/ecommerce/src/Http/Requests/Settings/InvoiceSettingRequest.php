@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\Settings;
+namespace App\Plugins\Ecommerce\Http\Requests\Settings;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Rules\EmailRule;
-use Botble\Base\Rules\OnOffRule;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class InvoiceSettingRequest extends Request

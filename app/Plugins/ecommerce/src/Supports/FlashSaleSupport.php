@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Rules\OnOffRule;
-use Botble\Ecommerce\Forms\Settings\FlashSaleSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\FlashSaleSettingRequest;
-use Botble\Ecommerce\Models\FlashSale;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Interfaces\FlashSaleInterface;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\Ecommerce\Forms\Settings\FlashSaleSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\FlashSaleSettingRequest;
+use App\Plugins\Ecommerce\Models\FlashSale;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Repositories\Interfaces\FlashSaleInterface;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Support\Collection;
 
 class FlashSaleSupport

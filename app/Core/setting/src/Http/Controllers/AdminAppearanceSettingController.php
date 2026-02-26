@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Facades\AdminAppearance;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Services\DownloadLocaleService;
-use Botble\Setting\Forms\AdminAppearanceSettingForm;
-use Botble\Setting\Http\Requests\AdminAppearanceRequest;
+use App\Core\Base\Facades\AdminAppearance;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Services\DownloadLocaleService;
+use App\Core\Setting\Forms\AdminAppearanceSettingForm;
+use App\Core\Setting\Http\Requests\AdminAppearanceRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 

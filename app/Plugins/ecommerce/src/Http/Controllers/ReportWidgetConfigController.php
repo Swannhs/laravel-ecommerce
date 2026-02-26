@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -54,107 +54,107 @@ class ReportWidgetConfigController extends BaseController
     protected function getAvailableWidgets(): array
     {
         return [
-            'Botble\Ecommerce\Widgets\RevenueCard' => [
+            'App\Plugins\Ecommerce\Widgets\RevenueCard' => [
                 'name' => trans('plugins/ecommerce::reports.revenue'),
                 'description' => trans('plugins/ecommerce::reports.revenue_description'),
                 'category' => 'financial',
             ],
-            'Botble\Ecommerce\Widgets\ProfitCard' => [
+            'App\Plugins\Ecommerce\Widgets\ProfitCard' => [
                 'name' => trans('plugins/ecommerce::reports.profit'),
                 'description' => trans('plugins/ecommerce::reports.profit_description'),
                 'category' => 'financial',
             ],
-            'Botble\Ecommerce\Widgets\ExpensesCard' => [
+            'App\Plugins\Ecommerce\Widgets\ExpensesCard' => [
                 'name' => trans('plugins/ecommerce::reports.expenses'),
                 'description' => trans('plugins/ecommerce::reports.expenses_description'),
                 'category' => 'financial',
             ],
-            'Botble\Ecommerce\Widgets\AverageOrderValueCard' => [
+            'App\Plugins\Ecommerce\Widgets\AverageOrderValueCard' => [
                 'name' => trans('plugins/ecommerce::reports.average_order_value'),
                 'description' => trans('plugins/ecommerce::reports.average_order_value_description'),
                 'category' => 'financial',
             ],
-            'Botble\Ecommerce\Widgets\NewOrderCard' => [
+            'App\Plugins\Ecommerce\Widgets\NewOrderCard' => [
                 'name' => trans('plugins/ecommerce::reports.orders'),
                 'description' => trans('plugins/ecommerce::reports.new_orders_description'),
                 'category' => 'activity',
             ],
-            'Botble\Ecommerce\Widgets\NewCustomerCard' => [
+            'App\Plugins\Ecommerce\Widgets\NewCustomerCard' => [
                 'name' => trans('plugins/ecommerce::reports.customers'),
                 'description' => trans('plugins/ecommerce::reports.new_customers_description'),
                 'category' => 'activity',
             ],
-            'Botble\Ecommerce\Widgets\NewProductCard' => [
+            'App\Plugins\Ecommerce\Widgets\NewProductCard' => [
                 'name' => trans('plugins/ecommerce::reports.products'),
                 'description' => trans('plugins/ecommerce::reports.new_products_description'),
                 'category' => 'activity',
             ],
-            'Botble\Ecommerce\Widgets\ConversionRateCard' => [
+            'App\Plugins\Ecommerce\Widgets\ConversionRateCard' => [
                 'name' => trans('plugins/ecommerce::reports.conversion_rate'),
                 'description' => trans('plugins/ecommerce::reports.conversion_rate_description'),
                 'category' => 'activity',
             ],
-            'Botble\Ecommerce\Widgets\TaxCollectionSummaryCard' => [
+            'App\Plugins\Ecommerce\Widgets\TaxCollectionSummaryCard' => [
                 'name' => trans('plugins/ecommerce::reports.tax_collection'),
                 'description' => trans('plugins/ecommerce::reports.tax_collection_description'),
                 'category' => 'additional',
             ],
-            'Botble\Ecommerce\Widgets\ProductReviewsSummaryCard' => [
+            'App\Plugins\Ecommerce\Widgets\ProductReviewsSummaryCard' => [
                 'name' => trans('plugins/ecommerce::reports.product_reviews'),
                 'description' => trans('plugins/ecommerce::reports.product_reviews_description'),
                 'category' => 'additional',
             ],
-            'Botble\Ecommerce\Widgets\ReportGeneralHtml' => [
+            'App\Plugins\Ecommerce\Widgets\ReportGeneralHtml' => [
                 'name' => trans('plugins/ecommerce::reports.detailed_analytics'),
                 'description' => trans('plugins/ecommerce::reports.detailed_analytics_description'),
                 'category' => 'analytics',
             ],
-            'Botble\Ecommerce\Widgets\CustomerChart' => [
+            'App\Plugins\Ecommerce\Widgets\CustomerChart' => [
                 'name' => trans('plugins/ecommerce::reports.customers_chart'),
                 'description' => trans('plugins/ecommerce::reports.customers_chart_description'),
                 'category' => 'charts',
             ],
-            'Botble\Ecommerce\Widgets\OrderChart' => [
+            'App\Plugins\Ecommerce\Widgets\OrderChart' => [
                 'name' => trans('plugins/ecommerce::reports.orders_chart'),
                 'description' => trans('plugins/ecommerce::reports.orders_chart_description'),
                 'category' => 'charts',
             ],
-            'Botble\Ecommerce\Widgets\CustomerRetentionChart' => [
+            'App\Plugins\Ecommerce\Widgets\CustomerRetentionChart' => [
                 'name' => trans('plugins/ecommerce::reports.customer_retention'),
                 'description' => trans('plugins/ecommerce::reports.customer_retention_description'),
                 'category' => 'charts',
             ],
-            'Botble\Ecommerce\Widgets\ProductCategoryDistributionChart' => [
+            'App\Plugins\Ecommerce\Widgets\ProductCategoryDistributionChart' => [
                 'name' => trans('plugins/ecommerce::reports.product_category_distribution'),
                 'description' => trans('plugins/ecommerce::reports.product_category_distribution_description'),
                 'category' => 'distribution',
             ],
-            'Botble\Ecommerce\Widgets\OrderStatusDistributionChart' => [
+            'App\Plugins\Ecommerce\Widgets\OrderStatusDistributionChart' => [
                 'name' => trans('plugins/ecommerce::reports.order_status_distribution'),
                 'description' => trans('plugins/ecommerce::reports.order_status_distribution_description'),
                 'category' => 'distribution',
             ],
-            'Botble\Ecommerce\Widgets\PaymentMethodDistributionChart' => [
+            'App\Plugins\Ecommerce\Widgets\PaymentMethodDistributionChart' => [
                 'name' => trans('plugins/ecommerce::reports.payment_method_distribution'),
                 'description' => trans('plugins/ecommerce::reports.payment_method_distribution_description'),
                 'category' => 'distribution',
             ],
-            'Botble\Ecommerce\Widgets\ShippingMethodUsageChart' => [
+            'App\Plugins\Ecommerce\Widgets\ShippingMethodUsageChart' => [
                 'name' => trans('plugins/ecommerce::reports.shipping_method_usage'),
                 'description' => trans('plugins/ecommerce::reports.shipping_method_usage_description'),
                 'category' => 'distribution',
             ],
-            'Botble\Ecommerce\Widgets\RecentOrdersTable' => [
+            'App\Plugins\Ecommerce\Widgets\RecentOrdersTable' => [
                 'name' => trans('plugins/ecommerce::reports.recent_orders'),
                 'description' => trans('plugins/ecommerce::reports.recent_orders_description'),
                 'category' => 'tables',
             ],
-            'Botble\Ecommerce\Widgets\TopSellingProductsTable' => [
+            'App\Plugins\Ecommerce\Widgets\TopSellingProductsTable' => [
                 'name' => trans('plugins/ecommerce::reports.top_selling_products'),
                 'description' => trans('plugins/ecommerce::reports.top_selling_products_description'),
                 'category' => 'tables',
             ],
-            'Botble\Ecommerce\Widgets\TrendingProductsTable' => [
+            'App\Plugins\Ecommerce\Widgets\TrendingProductsTable' => [
                 'name' => trans('plugins/ecommerce::reports.trending_products'),
                 'description' => trans('plugins/ecommerce::reports.trending_products_description'),
                 'category' => 'tables',

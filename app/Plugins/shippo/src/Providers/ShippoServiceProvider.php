@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Shippo\Providers;
+namespace App\Plugins\Shippo\Providers;
 
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Shippo\Http\Middleware\WebhookMiddleware;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Shippo\Http\Middleware\WebhookMiddleware;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\ServiceProvider;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Table\Contracts;
+namespace App\Core\Table\Contracts;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Table\Abstracts\TableAbstract;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Table\Abstracts\TableAbstract;
 use stdClass;
 
 interface FormattedColumn

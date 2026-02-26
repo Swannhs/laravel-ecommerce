@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Unit;
+namespace App\Plugins\Ecommerce\Tests\Unit;
 
-use Botble\Ecommerce\Supports\EcommerceHelper;
-use Botble\Setting\Facades\Setting;
+use App\Plugins\Ecommerce\Supports\EcommerceHelper;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\App;
 use Tests\TestCase;

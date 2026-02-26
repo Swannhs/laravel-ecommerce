@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Setting\Forms;
+namespace App\Core\Setting\Forms;
 
-use Botble\Base\Forms\FieldOptions\CodeEditorFieldOption;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\RepeaterFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\CodeEditorField;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\RepeaterField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Setting\Http\Requests\EmailTemplateSettingRequest;
+use App\Core\Base\Forms\FieldOptions\CodeEditorFieldOption;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\RepeaterFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\CodeEditorField;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\RepeaterField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Setting\Http\Requests\EmailTemplateSettingRequest;
 
 class EmailTemplateSettingForm extends SettingForm
 {

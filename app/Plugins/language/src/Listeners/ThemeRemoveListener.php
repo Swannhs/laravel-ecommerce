@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Language\Listeners;
+namespace App\Plugins\Language\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Language\Facades\Language;
-use Botble\Setting\Models\Setting;
-use Botble\Theme\Events\ThemeRemoveEvent;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Widget\Models\Widget;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Language\Facades\Language;
+use App\Core\Setting\Models\Setting;
+use App\Packages\Theme\Events\ThemeRemoveEvent;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Widget\Models\Widget;
 use Exception;
 
 class ThemeRemoveListener

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Data;
+namespace App\Plugins\Ecommerce\Services\Data;
 
-use Botble\Ecommerce\Http\Requests\API\CalculateTaxRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\CalculateTaxRequest;
 
 class CalculateTaxData
 {

@@ -1,4 +1,4 @@
-@if ($order->status == Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+@if ($order->status == App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED)
     <x-core::alert type="warning">
         <x-slot:title>
             {{ trans('plugins/ecommerce::order.order_canceled') }}

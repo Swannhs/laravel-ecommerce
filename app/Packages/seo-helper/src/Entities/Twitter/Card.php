@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\SeoHelper\Entities\Twitter;
+namespace App\Packages\SeoHelper\Entities\Twitter;
 
-use Botble\SeoHelper\Contracts\Entities\MetaCollectionContract;
-use Botble\SeoHelper\Contracts\Entities\MiscTagsContract;
-use Botble\SeoHelper\Contracts\Entities\TwitterCardContract;
-use Botble\SeoHelper\Exceptions\InvalidTwitterCardException;
+use App\Packages\SeoHelper\Contracts\Entities\MetaCollectionContract;
+use App\Packages\SeoHelper\Contracts\Entities\MiscTagsContract;
+use App\Packages\SeoHelper\Contracts\Entities\TwitterCardContract;
+use App\Packages\SeoHelper\Exceptions\InvalidTwitterCardException;
 use Illuminate\Support\Str;
 
 class Card implements TwitterCardContract

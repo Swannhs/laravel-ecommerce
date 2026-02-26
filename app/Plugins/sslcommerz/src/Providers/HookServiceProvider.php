@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SslCommerz\Providers;
+namespace App\Plugins\SslCommerz\Providers;
 
-use Botble\Base\Facades\Html;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\SslCommerz\Forms\SslCommerzPaymentMethodForm;
-use Botble\SslCommerz\Library\SslCommerz\SslCommerzNotification;
-use Botble\SslCommerz\Services\Gateways\SslCommerzPaymentService;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Plugins\SslCommerz\Forms\SslCommerzPaymentMethodForm;
+use App\Plugins\SslCommerz\Library\SslCommerz\SslCommerzNotification;
+use App\Plugins\SslCommerz\Services\Gateways\SslCommerzPaymentService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;

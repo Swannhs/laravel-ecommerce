@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Controllers\Concerns;
+namespace App\Core\Base\Http\Controllers\Concerns;
 
-use Botble\Base\Facades\Breadcrumb as BreadcrumbFacade;
-use Botble\Base\Supports\Breadcrumb;
+use App\Core\Base\Facades\Breadcrumb as BreadcrumbFacade;
+use App\Core\Base\Supports\Breadcrumb;
 
 trait HasBreadcrumb
 {

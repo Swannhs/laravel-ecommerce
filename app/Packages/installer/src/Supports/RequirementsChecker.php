@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Installer\Supports;
+namespace App\Packages\Installer\Supports;
 
 use Illuminate\Support\Facades\File;
 

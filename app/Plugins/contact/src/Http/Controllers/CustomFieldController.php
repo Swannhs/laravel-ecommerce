@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Contact\Http\Controllers;
+namespace App\Plugins\Contact\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Contact\Forms\CustomFieldForm;
-use Botble\Contact\Http\Requests\CustomFieldRequest;
-use Botble\Contact\Models\CustomField;
-use Botble\Contact\Tables\CustomFieldTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Contact\Forms\CustomFieldForm;
+use App\Plugins\Contact\Http\Requests\CustomFieldRequest;
+use App\Plugins\Contact\Models\CustomField;
+use App\Plugins\Contact\Tables\CustomFieldTable;
 
 class CustomFieldController extends BaseController
 {

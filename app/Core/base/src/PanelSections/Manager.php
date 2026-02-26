@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\PanelSections;
+namespace App\Core\Base\PanelSections;
 
-use Botble\Base\Contracts\PanelSections\Manager as ManagerContract;
-use Botble\Base\Contracts\PanelSections\PanelSection as PanelSectionContract;
-use Botble\Base\Events\PanelSectionsRendered;
-use Botble\Base\Events\PanelSectionsRendering;
+use App\Core\Base\Contracts\PanelSections\Manager as ManagerContract;
+use App\Core\Base\Contracts\PanelSections\PanelSection as PanelSectionContract;
+use App\Core\Base\Events\PanelSectionsRendered;
+use App\Core\Base\Events\PanelSectionsRendering;
 use Closure;
 use Illuminate\Support\Arr;
 

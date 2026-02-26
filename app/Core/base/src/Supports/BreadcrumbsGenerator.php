@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
 use Exception;
 use Illuminate\Support\Collection;

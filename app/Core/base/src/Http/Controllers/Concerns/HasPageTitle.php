@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Controllers\Concerns;
+namespace App\Core\Base\Http\Controllers\Concerns;
 
-use Botble\Base\Facades\PageTitle;
+use App\Core\Base\Facades\PageTitle;
 
 trait HasPageTitle
 {

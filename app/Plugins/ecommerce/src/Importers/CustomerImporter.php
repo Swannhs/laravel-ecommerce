@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Importers;
+namespace App\Plugins\Ecommerce\Importers;
 
-use Botble\DataSynchronize\Contracts\Importer\WithMapping;
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Ecommerce\Enums\CustomerStatusEnum;
-use Botble\Ecommerce\Models\Customer;
+use App\Packages\DataSynchronize\Contracts\Importer\WithMapping;
+use App\Packages\DataSynchronize\Importer\ImportColumn;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Ecommerce\Enums\CustomerStatusEnum;
+use App\Plugins\Ecommerce\Models\Customer;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;

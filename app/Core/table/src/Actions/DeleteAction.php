@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Actions;
+namespace App\Core\Table\Actions;
 
 class DeleteAction extends Action
 {

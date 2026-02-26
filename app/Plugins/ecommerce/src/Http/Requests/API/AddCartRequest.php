@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\API;
+namespace App\Plugins\Ecommerce\Http\Requests\API;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class AddCartRequest extends Request

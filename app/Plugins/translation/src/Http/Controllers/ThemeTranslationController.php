@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Translation\Http\Controllers;
+namespace App\Plugins\Translation\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\Theme\Facades\Theme;
-use Botble\Translation\Http\Controllers\Concerns\HasMapTranslationsTable;
-use Botble\Translation\Manager;
-use Botble\Translation\Tables\ThemeTranslationTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Packages\Theme\Facades\Theme;
+use App\Plugins\Translation\Http\Controllers\Concerns\HasMapTranslationsTable;
+use App\Plugins\Translation\Manager;
+use App\Plugins\Translation\Tables\ThemeTranslationTable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;

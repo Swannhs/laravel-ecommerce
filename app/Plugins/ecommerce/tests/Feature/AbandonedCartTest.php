@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Enums\CustomerStatusEnum;
-use Botble\Ecommerce\Enums\StockStatusEnum;
-use Botble\Ecommerce\Models\AbandonedCart;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Services\AbandonedCartService;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Enums\CustomerStatusEnum;
+use App\Plugins\Ecommerce\Enums\StockStatusEnum;
+use App\Plugins\Ecommerce\Models\AbandonedCart;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Services\AbandonedCartService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class AbandonedCartTest extends BaseTestCase

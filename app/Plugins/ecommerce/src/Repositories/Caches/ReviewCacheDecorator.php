@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Caches;
+namespace App\Plugins\Ecommerce\Repositories\Caches;
 
-use Botble\Ecommerce\Repositories\Eloquent\ReviewRepository;
+use App\Plugins\Ecommerce\Repositories\Eloquent\ReviewRepository;
 
 /**
  * @deprecated

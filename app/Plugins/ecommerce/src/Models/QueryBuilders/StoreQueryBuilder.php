@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Models\QueryBuilders;
+namespace App\Plugins\Ecommerce\Models\QueryBuilders;
 
-use Botble\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Models\BaseQueryBuilder;
 
 class StoreQueryBuilder extends BaseQueryBuilder
 {

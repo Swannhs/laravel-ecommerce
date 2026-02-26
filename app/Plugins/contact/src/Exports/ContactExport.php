@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Contact\Exports;
+namespace App\Plugins\Contact\Exports;
 
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Table\Supports\TableExportHandler;
+use App\Plugins\Contact\Enums\ContactStatusEnum;
+use App\Core\Table\Supports\TableExportHandler;
 use Maatwebsite\Excel\Events\AfterSheet;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
 

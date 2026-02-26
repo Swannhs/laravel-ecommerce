@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\Settings;
+namespace App\Plugins\Ecommerce\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Base\Supports\Helper;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Base\Supports\Helper;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CheckoutSettingRequest extends Request

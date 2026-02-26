@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Events;
+namespace App\Core\Media\Events;
 
-use Botble\Media\Models\MediaFolder;
+use App\Core\Media\Models\MediaFolder;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class MediaFolderRenamed

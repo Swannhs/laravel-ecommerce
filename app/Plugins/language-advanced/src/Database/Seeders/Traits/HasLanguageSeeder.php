@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Database\Seeders\Traits;
+namespace App\Plugins\LanguageAdvanced\Database\Seeders\Traits;
 
-use Botble\Language\Models\Language;
+use App\Plugins\Language\Models\Language;
 
 trait HasLanguageSeeder
 {

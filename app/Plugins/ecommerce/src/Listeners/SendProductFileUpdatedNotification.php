@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Events\ProductFileUpdatedEvent;
-use Botble\Ecommerce\Models\OrderProduct;
-use Botble\Ecommerce\Models\ProductFile;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Events\ProductFileUpdatedEvent;
+use App\Plugins\Ecommerce\Models\OrderProduct;
+use App\Plugins\Ecommerce\Models\ProductFile;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendProductFileUpdatedNotification implements ShouldQueue

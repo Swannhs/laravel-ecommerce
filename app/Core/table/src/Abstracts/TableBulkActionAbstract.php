@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Table\Abstracts;
+namespace App\Core\Table\Abstracts;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Builders\HasLabel;
-use Botble\Base\Supports\Builders\HasPermissions;
-use Botble\Table\Abstracts\Concerns\HasConfirmation;
-use Botble\Table\Abstracts\Concerns\HasPriority;
-use Botble\Table\Actions\Concerns\HasAction;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\Builders\HasLabel;
+use App\Core\Base\Supports\Builders\HasPermissions;
+use App\Core\Table\Abstracts\Concerns\HasConfirmation;
+use App\Core\Table\Abstracts\Concerns\HasPriority;
+use App\Core\Table\Actions\Concerns\HasAction;
 use Closure;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;

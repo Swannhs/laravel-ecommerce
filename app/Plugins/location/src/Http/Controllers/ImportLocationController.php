@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Location\Http\Controllers;
+namespace App\Plugins\Location\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\DataSynchronize\Http\Controllers\ImportController;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Location\Facades\Location;
-use Botble\Location\Http\Requests\ImportLocationRequest;
-use Botble\Location\Importers\LocationImporter;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\DataSynchronize\Http\Controllers\ImportController;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Location\Facades\Location;
+use App\Plugins\Location\Http\Requests\ImportLocationRequest;
+use App\Plugins\Location\Importers\LocationImporter;
 
 class ImportLocationController extends ImportController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace App\Plugins\Translation\Console;
 
-use Botble\Theme\Facades\Theme;
-use Botble\Translation\Manager;
+use App\Packages\Theme\Facades\Theme;
+use App\Plugins\Translation\Manager;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputOption;

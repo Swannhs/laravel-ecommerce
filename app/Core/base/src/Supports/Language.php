@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;

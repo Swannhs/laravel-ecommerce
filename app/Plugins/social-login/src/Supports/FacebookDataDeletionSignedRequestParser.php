@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SocialLogin\Supports;
+namespace App\Plugins\SocialLogin\Supports;
 
-use Botble\SocialLogin\Facades\SocialService;
+use App\Plugins\SocialLogin\Facades\SocialService;
 
 class FacebookDataDeletionSignedRequestParser
 {

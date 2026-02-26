@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Traits\Settings;
+namespace App\Plugins\Ecommerce\Traits\Settings;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Setting\Facades\Setting;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Setting\Facades\Setting;
 
 trait StoreSettingsTrait
 {

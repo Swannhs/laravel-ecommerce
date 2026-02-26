@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Blog\Repositories\Interfaces\PostInterface;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 
 class PublicController extends BaseController

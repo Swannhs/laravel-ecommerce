@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Language\Listeners;
+namespace App\Plugins\Language\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Language\Facades\Language;
-use Botble\Language\Models\LanguageMeta;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Page\Models\Page;
-use Botble\Slug\Models\Slug;
-use Botble\Theme\Events\RenderingSingleEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Packages\Page\Models\Page;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Theme\Events\RenderingSingleEvent;
 use Exception;
 
 class AddHrefLangListener

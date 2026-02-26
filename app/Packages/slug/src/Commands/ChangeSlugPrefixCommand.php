@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Commands;
+namespace App\Packages\Slug\Commands;
 
-use Botble\Slug\Models\Slug;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Symfony\Component\Console\Attribute\AsCommand;

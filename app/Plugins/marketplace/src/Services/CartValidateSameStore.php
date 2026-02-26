@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Services;
+namespace App\Plugins\Marketplace\Services;
 
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Models\Product;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 use Exception;
 
 class CartValidateSameStore

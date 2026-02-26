@@ -3,9 +3,9 @@
         {{ trans('plugins/marketplace::marketplace.settings.payout_methods') }}
     </x-core::form.label>
     @php
-        $payoutMethods = Botble\Marketplace\Enums\PayoutPaymentMethodsEnum::payoutMethods();
+        $payoutMethods = App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum::payoutMethods();
     @endphp
-    @foreach (Botble\Marketplace\Enums\PayoutPaymentMethodsEnum::labels() as $key => $item)
+    @foreach (App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum::labels() as $key => $item)
         <input type="hidden" name="{{ 'payout_methods[' . $key . ']' }}" value="0">
         <x-core::form.checkbox
             :label="$item"

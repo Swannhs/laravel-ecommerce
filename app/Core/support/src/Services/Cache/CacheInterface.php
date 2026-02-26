@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Support\Services\Cache;
+namespace App\Core\Support\Services\Cache;
 
 use Closure;
 use DateInterval;

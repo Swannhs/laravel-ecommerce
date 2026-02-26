@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Controllers\API;
+namespace App\Plugins\SimpleSlider\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Media\Facades\RvMedia;
-use Botble\SimpleSlider\Models\SimpleSlider;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Media\Facades\RvMedia;
+use App\Plugins\SimpleSlider\Models\SimpleSlider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;

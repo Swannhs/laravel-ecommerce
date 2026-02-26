@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Concerns\ThemeOption\Fields;
+namespace App\Packages\Theme\Concerns\ThemeOption\Fields;
 
 trait HasOptions
 {

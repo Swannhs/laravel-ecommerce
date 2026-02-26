@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Blog\Importers;
+namespace App\Plugins\Blog\Importers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Services\StoreCategoryService;
-use Botble\Blog\Services\StoreTagService;
-use Botble\Blog\Supports\PostFormat;
-use Botble\DataSynchronize\Contracts\Importer\WithMapping;
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Media\Facades\RvMedia;
-use Botble\Slug\Facades\SlugHelper;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Services\StoreCategoryService;
+use App\Plugins\Blog\Services\StoreTagService;
+use App\Plugins\Blog\Supports\PostFormat;
+use App\Packages\DataSynchronize\Contracts\Importer\WithMapping;
+use App\Packages\DataSynchronize\Importer\ImportColumn;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;

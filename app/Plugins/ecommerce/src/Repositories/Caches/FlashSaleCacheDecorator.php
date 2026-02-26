@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Caches;
+namespace App\Plugins\Ecommerce\Repositories\Caches;
 
-use Botble\Ecommerce\Repositories\Eloquent\FlashSaleRepository;
+use App\Plugins\Ecommerce\Repositories\Eloquent\FlashSaleRepository;
 
 /**
  * @deprecated

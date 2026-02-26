@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Tables\SpecificationGroupTable as BaseSpecificationGroupTable;
-use Botble\Marketplace\Tables\Traits\ForVendor;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Tables\SpecificationGroupTable as BaseSpecificationGroupTable;
+use App\Plugins\Marketplace\Tables\Traits\ForVendor;
 use Illuminate\Database\Eloquent\Builder;
 
 class SpecificationGroupTable extends BaseSpecificationGroupTable

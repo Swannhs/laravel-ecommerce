@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests;
+namespace App\Plugins\Marketplace\Http\Requests;
 
-use Botble\Ecommerce\Http\Requests\ProductRequest as BaseProductRequest;
+use App\Plugins\Ecommerce\Http\Requests\ProductRequest as BaseProductRequest;
 
 class ProductRequest extends BaseProductRequest
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\FormattedColumn;
 
 class ProductInventoryTable extends ProductBulkEditableTable
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Blog\Repositories\Interfaces;
+namespace App\Plugins\Blog\Repositories\Interfaces;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Blog\Models\Category;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Blog\Models\Category;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 

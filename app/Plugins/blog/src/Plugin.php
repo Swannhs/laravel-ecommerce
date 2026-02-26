@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Blog;
+namespace App\Plugins\Blog;
 
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Tag;
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\Menu\Models\MenuNode;
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Setting\Facades\Setting;
-use Botble\Widget\Models\Widget;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Models\Tag;
+use App\Core\Dashboard\Models\DashboardWidget;
+use App\Packages\Menu\Models\MenuNode;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Widget\Models\Widget;
 use Illuminate\Support\Facades\Schema;
 
 class Plugin extends PluginOperationAbstract

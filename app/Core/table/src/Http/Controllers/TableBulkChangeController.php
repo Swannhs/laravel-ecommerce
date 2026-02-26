@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Http\Controllers;
+namespace App\Core\Table\Http\Controllers;
 
-use Botble\Base\Facades\Form;
-use Botble\Table\Http\Requests\BulkChangeRequest;
-use Botble\Table\Http\Requests\SaveBulkChangeRequest;
+use App\Core\Base\Facades\Form;
+use App\Core\Table\Http\Requests\BulkChangeRequest;
+use App\Core\Table\Http\Requests\SaveBulkChangeRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;

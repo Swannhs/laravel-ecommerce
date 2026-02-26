@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Backup;
+namespace App\Plugins\Backup;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
 use Illuminate\Support\Facades\File;
 
 class Plugin extends PluginOperationAbstract

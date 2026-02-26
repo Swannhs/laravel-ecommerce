@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\SslCommerz\Library\SslCommerz;
+namespace App\Plugins\SslCommerz\Library\SslCommerz;
 
 abstract class AbstractSslCommerz implements SslCommerzInterface
 {

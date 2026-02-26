@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace App\Packages\PluginManagement\Commands;
 
-use Botble\PluginManagement\Commands\Concern\HasPluginNameValidation;
-use Botble\PluginManagement\Services\MarketplaceService;
+use App\Packages\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use App\Packages\PluginManagement\Services\MarketplaceService;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Http\JsonResponse;

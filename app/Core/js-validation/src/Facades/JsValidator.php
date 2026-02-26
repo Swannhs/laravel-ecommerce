@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\JsValidation\Facades;
+namespace App\Core\JsValidation\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Botble\JsValidation\Javascript\JavascriptValidator make(array $rules, array $messages = [], array $customAttributes = [], string|null $selector = null)
- * @method static \Botble\JsValidation\Javascript\JavascriptValidator formRequest($formRequest, $selector = null)
- * @method static \Botble\JsValidation\Javascript\JavascriptValidator validator(\Illuminate\Validation\Validator $validator, string|null $selector = null)
+ * @method static \App\Core\JsValidation\Javascript\JavascriptValidator make(array $rules, array $messages = [], array $customAttributes = [], string|null $selector = null)
+ * @method static \App\Core\JsValidation\Javascript\JavascriptValidator formRequest($formRequest, $selector = null)
+ * @method static \App\Core\JsValidation\Javascript\JavascriptValidator validator(\Illuminate\Validation\Validator $validator, string|null $selector = null)
  *
- * @see \Botble\JsValidation\JsValidatorFactory
+ * @see \App\Core\JsValidation\JsValidatorFactory
  */
 class JsValidator extends Facade
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\AuditLog\Http\Controllers;
+namespace App\Plugins\AuditLog\Http\Controllers;
 
-use Botble\AuditLog\Models\AuditHistory;
-use Botble\AuditLog\Tables\AuditLogTable;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseSystemController;
+use App\Plugins\AuditLog\Models\AuditHistory;
+use App\Plugins\AuditLog\Tables\AuditLogTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseSystemController;
 use Illuminate\Http\Request;
 
 class AuditLogController extends BaseSystemController

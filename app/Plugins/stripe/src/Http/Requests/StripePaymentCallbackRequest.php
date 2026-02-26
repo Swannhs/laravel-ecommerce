@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Stripe\Http\Requests;
+namespace App\Plugins\Stripe\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class StripePaymentCallbackRequest extends Request
 {

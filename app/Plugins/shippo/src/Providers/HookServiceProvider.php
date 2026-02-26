@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Shippo\Providers;
+namespace App\Plugins\Shippo\Providers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Shippo\Shippo;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Models\Shipment;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Shippo\Shippo;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;

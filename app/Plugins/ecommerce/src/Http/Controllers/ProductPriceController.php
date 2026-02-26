@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Ecommerce\Http\Requests\UpdateProductPriceRequest;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Services\Products\UpdateDefaultProductService;
-use Botble\Ecommerce\Tables\ProductPriceTable;
+use App\Core\Base\Facades\Assets;
+use App\Plugins\Ecommerce\Http\Requests\UpdateProductPriceRequest;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Services\Products\UpdateDefaultProductService;
+use App\Plugins\Ecommerce\Tables\ProductPriceTable;
 
 class ProductPriceController extends BaseController
 {

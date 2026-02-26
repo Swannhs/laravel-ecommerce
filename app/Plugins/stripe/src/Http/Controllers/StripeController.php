@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Stripe\Http\Controllers;
+namespace App\Plugins\Stripe\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\Stripe\Http\Requests\StripePaymentCallbackRequest;
-use Botble\Stripe\Services\Gateways\StripePaymentService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Plugins\Stripe\Http\Requests\StripePaymentCallbackRequest;
+use App\Plugins\Stripe\Services\Gateways\StripePaymentService;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

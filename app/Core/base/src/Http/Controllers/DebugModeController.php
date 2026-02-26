@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;
 

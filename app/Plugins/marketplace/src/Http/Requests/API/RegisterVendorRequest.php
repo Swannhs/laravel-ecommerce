@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\API;
+namespace App\Plugins\Marketplace\Http\Requests\API;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class RegisterVendorRequest extends Request

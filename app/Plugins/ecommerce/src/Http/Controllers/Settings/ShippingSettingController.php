@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Ecommerce\Forms\Settings\ShippingSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\ShippingSettingRequest;
-use Botble\Ecommerce\Models\Shipping;
-use Botble\Ecommerce\Services\HandleShippingFeeService;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Facades\Assets;
+use App\Plugins\Ecommerce\Forms\Settings\ShippingSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\ShippingSettingRequest;
+use App\Plugins\Ecommerce\Models\Shipping;
+use App\Plugins\Ecommerce\Services\HandleShippingFeeService;
+use App\Core\Support\Services\Cache\Cache;
 
 class ShippingSettingController extends SettingController
 {

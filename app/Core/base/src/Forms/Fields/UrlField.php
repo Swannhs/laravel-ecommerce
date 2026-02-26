@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Forms\Fields;
+namespace App\Core\Base\Forms\Fields;
 
 class UrlField extends TextField
 {

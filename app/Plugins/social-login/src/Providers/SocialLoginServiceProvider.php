@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\SocialLogin\Providers;
+namespace App\Plugins\SocialLogin\Providers;
 
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
-use Botble\SocialLogin\Console\RefreshSocialTokensCommand;
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\SocialLogin\Services\AppleJwtService;
-use Botble\SocialLogin\Services\SocialLoginService;
-use Botble\SocialLogin\Supports\SocialService as SocialServiceSupport;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
+use App\Plugins\SocialLogin\Console\RefreshSocialTokensCommand;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Plugins\SocialLogin\Services\AppleJwtService;
+use App\Plugins\SocialLogin\Services\SocialLoginService;
+use App\Plugins\SocialLogin\Supports\SocialService as SocialServiceSupport;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\AliasLoader;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers;
+namespace App\Packages\Installer\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Core;
-use Botble\Installer\Events\EnvironmentSaved;
-use Botble\Installer\Http\Requests\SaveEnvironmentRequest;
-use Botble\Installer\InstallerStep\InstallerStep;
-use Botble\Installer\Services\ImportDatabaseService;
-use Botble\Installer\Supports\EnvironmentManager;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Core;
+use App\Packages\Installer\Events\EnvironmentSaved;
+use App\Packages\Installer\Http\Requests\SaveEnvironmentRequest;
+use App\Packages\Installer\InstallerStep\InstallerStep;
+use App\Packages\Installer\Services\ImportDatabaseService;
+use App\Packages\Installer\Supports\EnvironmentManager;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;

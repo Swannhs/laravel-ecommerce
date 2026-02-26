@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Controllers\Fronts\PublicCartController;
-use Botble\Ecommerce\Http\Middleware\CheckCartEnabledMiddleware;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\PublicCartController;
+use App\Plugins\Ecommerce\Http\Middleware\CheckCartEnabledMiddleware;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 Theme::registerRoutes(function (): void {

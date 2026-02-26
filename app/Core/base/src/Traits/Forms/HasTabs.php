@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Traits\Forms;
+namespace App\Core\Base\Traits\Forms;
 
-use Botble\Base\Forms\FormTab;
+use App\Core\Base\Forms\FormTab;
 
 trait HasTabs
 {

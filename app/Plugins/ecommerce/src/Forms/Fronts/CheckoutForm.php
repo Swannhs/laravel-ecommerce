@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts;
+namespace App\Plugins\Ecommerce\Forms\Fronts;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\CheckboxField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\SaveCheckoutInformationRequest;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\FormFront;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\CheckboxField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\SaveCheckoutInformationRequest;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\FormFront;
 use Closure;
 use Detection\MobileDetect;
 use Illuminate\Support\Arr;

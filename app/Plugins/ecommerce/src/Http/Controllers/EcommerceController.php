@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Services\ExchangeRates\ExchangeRateInterface;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Services\ExchangeRates\ExchangeRateInterface;
 use Illuminate\Support\Facades\Cache;
 use Throwable;
 

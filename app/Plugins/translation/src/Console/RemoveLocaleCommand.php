@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace App\Plugins\Translation\Console;
 
-use Botble\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Contracts\Console\PromptsForMissingInput;

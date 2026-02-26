@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\PluginManagement\Providers;
+namespace App\Packages\PluginManagement\Providers;
 
-use Botble\Base\Events\SeederPrepared;
-use Botble\Base\Events\SystemUpdateDBMigrated;
-use Botble\Base\Events\SystemUpdatePublished;
-use Botble\Base\Listeners\ClearDashboardMenuCaches;
-use Botble\PluginManagement\Events\ActivatedPluginEvent;
-use Botble\PluginManagement\Events\UpdatedPluginEvent;
-use Botble\PluginManagement\Events\UpdatingPluginEvent;
-use Botble\PluginManagement\Listeners\ActivateAllPlugins;
-use Botble\PluginManagement\Listeners\ClearPluginCaches;
-use Botble\PluginManagement\Listeners\CoreUpdatePluginsDB;
-use Botble\PluginManagement\Listeners\PublishPluginAssets;
+use App\Core\Base\Events\SeederPrepared;
+use App\Core\Base\Events\SystemUpdateDBMigrated;
+use App\Core\Base\Events\SystemUpdatePublished;
+use App\Core\Base\Listeners\ClearDashboardMenuCaches;
+use App\Packages\PluginManagement\Events\ActivatedPluginEvent;
+use App\Packages\PluginManagement\Events\UpdatedPluginEvent;
+use App\Packages\PluginManagement\Events\UpdatingPluginEvent;
+use App\Packages\PluginManagement\Listeners\ActivateAllPlugins;
+use App\Packages\PluginManagement\Listeners\ClearPluginCaches;
+use App\Packages\PluginManagement\Listeners\CoreUpdatePluginsDB;
+use App\Packages\PluginManagement\Listeners\PublishPluginAssets;
 use Illuminate\Contracts\Database\Events\MigrationEvent;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 

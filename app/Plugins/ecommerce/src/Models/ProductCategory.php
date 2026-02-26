@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Contracts\HasTreeCategory as HasTreeCategoryContract;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\HasTreeCategory;
-use Botble\Ecommerce\Tables\ProductTable;
-use Botble\Media\Facades\RvMedia;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Contracts\HasTreeCategory as HasTreeCategoryContract;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Traits\HasTreeCategory;
+use App\Plugins\Ecommerce\Tables\ProductTable;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Core\Support\Services\Cache\Cache;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;

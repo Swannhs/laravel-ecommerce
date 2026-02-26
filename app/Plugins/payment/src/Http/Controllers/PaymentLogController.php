@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Payment\Http\Controllers;
+namespace App\Plugins\Payment\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Payment\Models\PaymentLog;
-use Botble\Payment\Tables\PaymentLogTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Payment\Models\PaymentLog;
+use App\Plugins\Payment\Tables\PaymentLogTable;
 
 class PaymentLogController extends BaseController
 {

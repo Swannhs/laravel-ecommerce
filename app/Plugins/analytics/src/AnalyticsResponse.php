@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics;
+namespace App\Plugins\Analytics;
 
 use Google\Analytics\Data\V1beta\RunReportResponse;
 use Illuminate\Support\Collection;

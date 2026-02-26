@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\ThemeOption;
+namespace App\Packages\Theme\ThemeOption;
 
 use Illuminate\Contracts\Support\Arrayable;
 

@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Page\Models\Page;
-use Botble\Page\Supports\Template;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Supports\RepositoryHelper;
+use App\Packages\Page\Models\Page;
+use App\Packages\Page\Supports\Template;
 use Illuminate\Database\Eloquent\Collection;
 
 if (! function_exists('get_all_pages')) {

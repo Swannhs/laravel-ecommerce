@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\PluginManagement\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Packages\PluginManagement\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group(['prefix' => 'plugins'], function (): void {
 

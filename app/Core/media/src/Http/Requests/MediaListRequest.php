@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Http\Requests;
+namespace App\Core\Media\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class MediaListRequest extends Request
 {

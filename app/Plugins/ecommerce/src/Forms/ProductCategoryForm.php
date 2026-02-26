@@ -1,26 +1,26 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Forms\FieldOptions\ContentFieldOption;
-use Botble\Base\Forms\FieldOptions\CoreIconFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\CoreIconField;
-use Botble\Base\Forms\Fields\EditorField;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Facades\ProductCategoryHelper;
-use Botble\Ecommerce\Http\Requests\ProductCategoryRequest;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Forms\FieldOptions\ContentFieldOption;
+use App\Core\Base\Forms\FieldOptions\CoreIconFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\CoreIconField;
+use App\Core\Base\Forms\Fields\EditorField;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Facades\ProductCategoryHelper;
+use App\Plugins\Ecommerce\Http\Requests\ProductCategoryRequest;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Core\Support\Services\Cache\Cache;
 use Carbon\Carbon;
 
 class ProductCategoryForm extends FormAbstract

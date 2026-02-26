@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Analytics\Traits;
+namespace App\Plugins\Analytics\Traits;
 
-use Botble\Analytics\Period;
+use App\Plugins\Analytics\Period;
 use Google\Analytics\Data\V1beta\DateRange;
 
 trait DateRangeTrait

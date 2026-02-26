@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Listeners;
+namespace App\Packages\Theme\Listeners;
 
-use Botble\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\File;
 
 class CoreUpdateThemeDB

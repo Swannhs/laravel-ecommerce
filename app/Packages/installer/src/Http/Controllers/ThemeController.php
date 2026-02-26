@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers;
+namespace App\Packages\Installer\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Installer\Http\Controllers\Concerns\InteractsWithDatabaseFile;
-use Botble\Installer\Http\Requests\ChooseThemeRequest;
-use Botble\Installer\InstallerStep\InstallerStep;
-use Botble\Installer\Services\ImportDatabaseService;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Packages\Installer\Http\Controllers\Concerns\InteractsWithDatabaseFile;
+use App\Packages\Installer\Http\Requests\ChooseThemeRequest;
+use App\Packages\Installer\InstallerStep\InstallerStep;
+use App\Packages\Installer\Services\ImportDatabaseService;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Contracts\View\View;

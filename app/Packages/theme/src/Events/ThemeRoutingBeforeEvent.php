@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Events;
+namespace App\Packages\Theme\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Routing\Router;
 

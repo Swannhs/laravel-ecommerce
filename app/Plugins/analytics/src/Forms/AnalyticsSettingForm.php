@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Analytics\Forms;
+namespace App\Plugins\Analytics\Forms;
 
-use Botble\Analytics\Http\Requests\Settings\AnalyticsSettingRequest;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\CodeEditorFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\CodeEditorField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Setting\Forms\SettingForm;
+use App\Plugins\Analytics\Http\Requests\Settings\AnalyticsSettingRequest;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\CodeEditorFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\CodeEditorField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Setting\Forms\SettingForm;
 
 class AnalyticsSettingForm extends SettingForm
 {

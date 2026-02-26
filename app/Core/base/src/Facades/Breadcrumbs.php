@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Supports\BreadcrumbsManager;
+use App\Core\Base\Supports\BreadcrumbsManager;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool hasMacro(string $name)
  * @method static void flushMacros()
  *
- * @see \Botble\Base\Supports\BreadcrumbsManager
+ * @see \App\Core\Base\Supports\BreadcrumbsManager
  */
 class Breadcrumbs extends Facade
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Page\Services;
+namespace App\Packages\Page\Services;
 
 class ShortcodeParserService
 {

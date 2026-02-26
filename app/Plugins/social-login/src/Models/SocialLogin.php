@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SocialLogin\Models;
+namespace App\Plugins\SocialLogin\Models;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 

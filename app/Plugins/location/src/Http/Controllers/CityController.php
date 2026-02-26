@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Location\Http\Controllers;
+namespace App\Plugins\Location\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Location\Forms\CityForm;
-use Botble\Location\Http\Requests\CityRequest;
-use Botble\Location\Http\Resources\CityResource;
-use Botble\Location\Models\City;
-use Botble\Location\Tables\CityTable;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Location\Forms\CityForm;
+use App\Plugins\Location\Http\Requests\CityRequest;
+use App\Plugins\Location\Http\Resources\CityResource;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Tables\CityTable;
 use Illuminate\Http\Request;
 
 class CityController extends BaseController

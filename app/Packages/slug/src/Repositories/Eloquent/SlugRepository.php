@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Repositories\Eloquent;
+namespace App\Packages\Slug\Repositories\Eloquent;
 
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Packages\Slug\Repositories\Interfaces\SlugInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class SlugRepository extends RepositoriesAbstract implements SlugInterface
 {

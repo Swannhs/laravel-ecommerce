@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Models\Message;
-use Botble\Marketplace\Tables\MessageTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Models\Message;
+use App\Plugins\Marketplace\Tables\MessageTable;
 
 class MessageController extends BaseController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Media\Storage\BunnyCDN;
+namespace App\Core\Media\Storage\BunnyCDN;
 
 class BunnyCDNRegion
 {

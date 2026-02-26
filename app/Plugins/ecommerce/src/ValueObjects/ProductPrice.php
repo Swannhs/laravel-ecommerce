@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\ValueObjects;
+namespace App\Plugins\Ecommerce\ValueObjects;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductVariation;
 use Illuminate\Database\Eloquent\Collection;
 
 /**

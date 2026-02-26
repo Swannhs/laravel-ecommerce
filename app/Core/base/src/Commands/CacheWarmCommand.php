@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Base\Supports\GoogleFonts;
-use Botble\PluginManagement\PluginManifest;
+use App\Core\Base\Supports\GoogleFonts;
+use App\Packages\PluginManagement\PluginManifest;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

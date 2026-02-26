@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Forms\WithdrawalForm;
-use Botble\Marketplace\Http\Requests\WithdrawalRequest;
-use Botble\Marketplace\Models\Withdrawal;
-use Botble\Marketplace\Tables\WithdrawalTable;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Forms\WithdrawalForm;
+use App\Plugins\Marketplace\Http\Requests\WithdrawalRequest;
+use App\Plugins\Marketplace\Models\Withdrawal;
+use App\Plugins\Marketplace\Tables\WithdrawalTable;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

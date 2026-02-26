@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Http\Middleware;
+namespace App\Plugins\Marketplace\Http\Middleware;
 
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

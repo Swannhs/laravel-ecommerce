@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\ShippingCodStatusEnum;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\ShippingCodStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;

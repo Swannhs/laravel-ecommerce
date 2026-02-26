@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Option\Interfaces;
+namespace App\Plugins\Ecommerce\Option\Interfaces;
 
 interface OptionTypeInterface
 {

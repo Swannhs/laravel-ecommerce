@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Backup\Commands;
+namespace App\Plugins\Backup\Commands;
 
-use Botble\Backup\Supports\Backup;
-use Botble\Base\Facades\BaseHelper;
+use App\Plugins\Backup\Supports\Backup;
+use App\Core\Base\Facades\BaseHelper;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Providers;
+namespace App\Plugins\LanguageAdvanced\Providers;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Language\Facades\Language;
-use Botble\Language\Models\Language as LanguageModel;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Table\CollectionDataTable;
-use Botble\Table\EloquentDataTable;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Models\Language as LanguageModel;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Table\CollectionDataTable;
+use App\Core\Table\EloquentDataTable;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;

@@ -1,8 +1,8 @@
 {
     "id": "botble/blog",
     "name": "Blog",
-    "namespace": "Botble\\Blog\\",
-    "provider": "Botble\\Blog\\Providers\\BlogServiceProvider",
+    "namespace": "App\\Plugins\\Blog\\",
+    "provider": "App\\Plugins\\Blog\\Providers\\BlogServiceProvider",
     "author": "Botble Technologies",
     "url": "https://botble.com",
     "version": "2.0.8",

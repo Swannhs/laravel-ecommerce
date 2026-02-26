@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Events\ProductViewed;
-use Botble\Ecommerce\Models\ProductView;
+use App\Plugins\Ecommerce\Events\ProductViewed;
+use App\Plugins\Ecommerce\Models\ProductView;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\DB;

@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Sitemap\Forms\Settings;
+namespace App\Packages\Sitemap\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Setting\Forms\SettingForm;
-use Botble\Sitemap\Http\Requests\SitemapSettingRequest;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Setting\Forms\SettingForm;
+use App\Packages\Sitemap\Http\Requests\SitemapSettingRequest;
 
 class SitemapSettingForm extends SettingForm
 {

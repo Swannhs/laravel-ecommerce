@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Events;
+namespace App\Plugins\Ecommerce\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Ecommerce\Models\Order;
+use App\Core\Base\Events\Event;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 

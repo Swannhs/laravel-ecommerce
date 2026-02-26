@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController as Controller;
-use Botble\Base\Supports\Breadcrumb;
+use App\Core\Base\Http\Controllers\BaseController as Controller;
+use App\Core\Base\Supports\Breadcrumb;
 
 abstract class BaseController extends Controller
 {

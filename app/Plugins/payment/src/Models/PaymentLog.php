@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Payment\Models;
+namespace App\Plugins\Payment\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Payment\Enums\PaymentMethodEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
 
 class PaymentLog extends BaseModel
 {

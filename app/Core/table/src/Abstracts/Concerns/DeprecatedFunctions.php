@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Abstracts\Concerns;
+namespace App\Core\Table\Abstracts\Concerns;
 
-use Botble\Base\Facades\Html;
-use Botble\Media\Facades\RvMedia;
-use Botble\Table\BulkActions\DeleteBulkAction;
+use App\Core\Base\Facades\Html;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Table\BulkActions\DeleteBulkAction;
 use Illuminate\Support\HtmlString;
 
 trait DeprecatedFunctions

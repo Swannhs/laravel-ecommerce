@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Http\Controllers;
+namespace App\Plugins\LanguageAdvanced\Http\Controllers;
 
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\LanguageAdvanced\Http\Requests\LanguageAdvancedRequest;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Slug\Events\UpdatedSlugEvent;
-use Botble\Slug\Facades\SlugHelper;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\LanguageAdvanced\Http\Requests\LanguageAdvancedRequest;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Packages\Slug\Events\UpdatedSlugEvent;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Support\Facades\DB;
 
 class LanguageAdvancedController extends BaseController

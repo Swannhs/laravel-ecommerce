@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\SeoHelper;
+namespace App\Packages\SeoHelper;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\MetaBox;
-use Botble\Media\Facades\RvMedia;
-use Botble\SeoHelper\Contracts\SeoHelperContract;
-use Botble\SeoHelper\Contracts\SeoMetaContract;
-use Botble\SeoHelper\Contracts\SeoOpenGraphContract;
-use Botble\SeoHelper\Contracts\SeoTwitterContract;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\SeoHelper\Contracts\SeoHelperContract;
+use App\Packages\SeoHelper\Contracts\SeoMetaContract;
+use App\Packages\SeoHelper\Contracts\SeoOpenGraphContract;
+use App\Packages\SeoHelper\Contracts\SeoTwitterContract;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ads\Models;
+namespace App\Plugins\Ads\Models;
 
-use Botble\Ads\Database\Factories\AdsFactory;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ads\Database\Factories\AdsFactory;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Media\Facades\RvMedia;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;

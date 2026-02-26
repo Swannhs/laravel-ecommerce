@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Requests\SelectSearchAjaxRequest;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\ReviewForm;
-use Botble\Ecommerce\Http\Requests\ReviewRequest;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\Review;
-use Botble\Ecommerce\Tables\ReviewTable;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Requests\SelectSearchAjaxRequest;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\ReviewForm;
+use App\Plugins\Ecommerce\Http\Requests\ReviewRequest;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Tables\ReviewTable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

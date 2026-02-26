@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Page\Supports;
+namespace App\Packages\Page\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Event;
 
 class Template

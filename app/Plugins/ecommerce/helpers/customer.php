@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Models\Address;
+use App\Plugins\Ecommerce\Models\Address;
 use Illuminate\Support\Collection;
 
 if (! function_exists('is_added_to_wishlist')) {

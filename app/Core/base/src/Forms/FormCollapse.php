@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Forms;
+namespace App\Core\Base\Forms;
 
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
 use Closure;
 use Illuminate\Support\Traits\Conditionable;
 use Illuminate\Support\Traits\Tappable;

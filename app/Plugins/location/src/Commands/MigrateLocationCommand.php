@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Location\Commands;
+namespace App\Plugins\Location\Commands;
 
-use Botble\Location\Facades\Location;
+use App\Plugins\Location\Facades\Location;
 use Illuminate\Console\Command;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

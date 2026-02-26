@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Actions\Concerns;
+namespace App\Core\Table\Actions\Concerns;
 
 trait HasAction
 {

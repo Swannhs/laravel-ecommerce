@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\AdsTracking;
+namespace App\Plugins\Ecommerce\AdsTracking;
 
 class GoogleTagItem
 {

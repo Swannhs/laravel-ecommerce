@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers;
+namespace App\Packages\Installer\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Installer\Events\InstallerFinished;
-use Botble\Installer\Services\CleanupSystemAfterInstalledService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\Installer\Events\InstallerFinished;
+use App\Packages\Installer\Services\CleanupSystemAfterInstalledService;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;

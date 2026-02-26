@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\ACL\Http\Controllers\Auth;
+namespace App\Core\ACL\Http\Controllers\Auth;
 
-use Botble\ACL\Forms\Auth\LoginForm;
-use Botble\ACL\Http\Requests\LoginRequest;
-use Botble\ACL\Traits\AuthenticatesUsers;
-use Botble\Base\Http\Controllers\BaseController;
+use App\Core\ACL\Forms\Auth\LoginForm;
+use App\Core\ACL\Http\Requests\LoginRequest;
+use App\Core\ACL\Traits\AuthenticatesUsers;
+use App\Core\Base\Http\Controllers\BaseController;
 use Closure;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;

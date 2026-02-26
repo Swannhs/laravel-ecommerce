@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Shortcode\Shortcode;
+use App\Packages\Shortcode\Shortcode;
 use Illuminate\Support\HtmlString;
 
 if (! function_exists('shortcode')) {

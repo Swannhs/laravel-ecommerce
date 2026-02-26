@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Enums\OrderHistoryActionEnum;
-use Botble\Ecommerce\Enums\ShippingCodStatusEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Events\ShippingStatusChanged;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Http\Requests\ShipmentRequest;
-use Botble\Ecommerce\Http\Requests\UpdateShipmentCodStatusRequest;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Ecommerce\Models\ShipmentHistory;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Http\Requests\Fronts\UpdateShippingStatusRequest;
-use Botble\Marketplace\Tables\ShipmentTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Enums\OrderHistoryActionEnum;
+use App\Plugins\Ecommerce\Enums\ShippingCodStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Events\ShippingStatusChanged;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Http\Requests\ShipmentRequest;
+use App\Plugins\Ecommerce\Http\Requests\UpdateShipmentCodStatusRequest;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\OrderHistory;
+use App\Plugins\Ecommerce\Models\Shipment;
+use App\Plugins\Ecommerce\Models\ShipmentHistory;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Http\Requests\Fronts\UpdateShippingStatusRequest;
+use App\Plugins\Marketplace\Tables\ShipmentTable;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Database\Eloquent\Model;

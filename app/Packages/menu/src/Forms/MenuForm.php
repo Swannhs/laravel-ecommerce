@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Menu\Forms;
+namespace App\Packages\Menu\Forms;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Menu\Http\Requests\MenuRequest;
-use Botble\Menu\Models\Menu;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Packages\Menu\Http\Requests\MenuRequest;
+use App\Packages\Menu\Models\Menu;
 
 class MenuForm extends FormAbstract
 {

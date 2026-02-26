@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Models;
+namespace App\Plugins\Marketplace\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Lang;

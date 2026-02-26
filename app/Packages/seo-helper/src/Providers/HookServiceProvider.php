@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\SeoHelper\Providers;
+namespace App\Packages\SeoHelper\Providers;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Media\Facades\RvMedia;
-use Botble\Page\Models\Page;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\SeoHelper\Forms\SeoForm;
-use Botble\Theme\Facades\ThemeOption;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Page\Models\Page;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\SeoHelper\Forms\SeoForm;
+use App\Packages\Theme\Facades\ThemeOption;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Routing\Events\RouteMatched;
 

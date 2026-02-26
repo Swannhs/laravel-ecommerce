@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Forms\FieldOptions\DescriptionFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\ProductTagRequest;
-use Botble\Ecommerce\Models\ProductTag;
+use App\Core\Base\Forms\FieldOptions\DescriptionFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Http\Requests\ProductTagRequest;
+use App\Plugins\Ecommerce\Models\ProductTag;
 
 class ProductTagForm extends FormAbstract
 {

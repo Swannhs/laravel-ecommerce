@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace App\Packages\PluginManagement\Commands;
 
-use Botble\PluginManagement\Commands\Concern\HasPluginNameValidation;
-use Botble\PluginManagement\Services\PluginService;
+use App\Packages\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use App\Packages\PluginManagement\Services\PluginService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;

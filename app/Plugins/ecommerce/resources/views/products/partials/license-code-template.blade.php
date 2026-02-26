@@ -7,7 +7,7 @@
                    class="form-control license-code-input">
         </td>
         <td>
-            {!! \Botble\Ecommerce\Enums\ProductLicenseCodeStatusEnum::AVAILABLE()->toHtml() !!}
+            {!! \App\Plugins\Ecommerce\Enums\ProductLicenseCodeStatusEnum::AVAILABLE()->toHtml() !!}
         </td>
         <td>-</td>
         <td>

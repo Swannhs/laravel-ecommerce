@@ -3,7 +3,7 @@
         <x-core::form.select
             :label="trans('plugins/ecommerce::shipping.status')"
             name="status"
-            :options="Botble\Ecommerce\Enums\ShippingStatusEnum::labels()"
+            :options="App\Plugins\Ecommerce\Enums\ShippingStatusEnum::labels()"
             :value="$shipment->status"
         />
     @else
@@ -11,8 +11,8 @@
             :label="trans('plugins/ecommerce::shipping.status')"
             name="status"
             :options="[
-                Botble\Ecommerce\Enums\ShippingStatusEnum::ARRANGE_SHIPMENT => Botble\Ecommerce\Enums\ShippingStatusEnum::ARRANGE_SHIPMENT()->label(),
-                Botble\Ecommerce\Enums\ShippingStatusEnum::READY_TO_BE_SHIPPED_OUT => Botble\Ecommerce\Enums\ShippingStatusEnum::READY_TO_BE_SHIPPED_OUT()->label(),
+                App\Plugins\Ecommerce\Enums\ShippingStatusEnum::ARRANGE_SHIPMENT => App\Plugins\Ecommerce\Enums\ShippingStatusEnum::ARRANGE_SHIPMENT()->label(),
+                App\Plugins\Ecommerce\Enums\ShippingStatusEnum::READY_TO_BE_SHIPPED_OUT => App\Plugins\Ecommerce\Enums\ShippingStatusEnum::READY_TO_BE_SHIPPED_OUT()->label(),
             ]"
             :value="$shipment->status"
         />

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Widget\Widgets;
+namespace App\Packages\Widget\Widgets;
 
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\Widgets\ValueObjects\CoreSimpleMenuItem;
+use App\Packages\Widget\AbstractWidget;
+use App\Packages\Widget\Widgets\ValueObjects\CoreSimpleMenuItem;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 

@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Providers;
+namespace App\Plugins\LanguageAdvanced\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Language\Facades\Language;
-use Botble\Language\Models\Language as LanguageModel;
-use Botble\LanguageAdvanced\Exporters\TranslationExporterManager;
-use Botble\LanguageAdvanced\Importers\TranslationImporterManager;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Page\Models\Page;
-use Botble\Setting\Facades\Setting;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Models\Language as LanguageModel;
+use App\Plugins\LanguageAdvanced\Exporters\TranslationExporterManager;
+use App\Plugins\LanguageAdvanced\Importers\TranslationImporterManager;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Packages\Page\Models\Page;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;

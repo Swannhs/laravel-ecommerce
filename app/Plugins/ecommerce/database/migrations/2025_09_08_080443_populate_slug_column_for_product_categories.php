@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Slug\Models\Slug;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;

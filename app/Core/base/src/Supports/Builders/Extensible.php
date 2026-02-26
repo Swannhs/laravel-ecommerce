@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Supports\Builders;
+namespace App\Core\Base\Supports\Builders;
 
 use Closure;
 use LogicException;
 
 /**
- * @mixin \Botble\Base\Contracts\Builders\Extensible
+ * @mixin \App\Core\Base\Contracts\Builders\Extensible
  */
 trait Extensible
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Enums\StockStatusEnum;
-use Botble\Ecommerce\Events\ProductQuantityUpdatedEvent;
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Enums\StockStatusEnum;
+use App\Plugins\Ecommerce\Events\ProductQuantityUpdatedEvent;
+use App\Plugins\Ecommerce\Models\Product;
 
 class UpdateProductStockStatus
 {

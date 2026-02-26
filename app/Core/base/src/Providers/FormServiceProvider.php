@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace App\Core\Base\Providers;
 
-use Botble\Base\Forms\Form as PlainFormClass;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Forms\FormHelper;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Forms\Form as PlainFormClass;
+use App\Core\Base\Forms\FormBuilder;
+use App\Core\Base\Forms\FormHelper;
+use App\Core\Base\Supports\ServiceProvider;
 use Illuminate\Config\Repository;
 use Kris\LaravelFormBuilder\Events\FormComponentRegistering;
 

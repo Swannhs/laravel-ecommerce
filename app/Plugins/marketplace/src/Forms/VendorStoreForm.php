@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Marketplace\Forms\Fields\CustomEditorField;
-use Botble\Marketplace\Http\Requests\Fronts\VendorStoreRequest;
+use App\Plugins\Marketplace\Forms\Fields\CustomEditorField;
+use App\Plugins\Marketplace\Http\Requests\Fronts\VendorStoreRequest;
 
 class VendorStoreForm extends StoreForm
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\SpecificationAttributeForm;
-use Botble\Ecommerce\Http\Requests\SpecificationAttributeRequest;
-use Botble\Ecommerce\Models\SpecificationAttribute;
-use Botble\Ecommerce\Tables\SpecificationAttributeTable;
-use Botble\Table\Abstracts\TableAbstract;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\SpecificationAttributeForm;
+use App\Plugins\Ecommerce\Http\Requests\SpecificationAttributeRequest;
+use App\Plugins\Ecommerce\Models\SpecificationAttribute;
+use App\Plugins\Ecommerce\Tables\SpecificationAttributeTable;
+use App\Core\Table\Abstracts\TableAbstract;
 
 class SpecificationAttributeController extends BaseController
 {

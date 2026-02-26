@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Table\Columns\Concerns\HasStyle;
+use App\Core\Table\Columns\Concerns\HasStyle;
 use Illuminate\Support\Traits\Conditionable;
 use Yajra\DataTables\Html\Column as BaseColumn;
 

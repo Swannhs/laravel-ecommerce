@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\BulkChanges;
+namespace App\Core\Table\BulkChanges;
 
-use Botble\Table\Abstracts\TableBulkChangeAbstract;
+use App\Core\Table\Abstracts\TableBulkChangeAbstract;
 use Closure;
 use Illuminate\Validation\Rule;
 

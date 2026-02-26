@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Unit;
+namespace App\Plugins\Ecommerce\Tests\Unit;
 
-use Botble\Base\Supports\EmailAbstract;
-use Botble\Ecommerce\Enums\InvoiceStatusEnum;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Invoice;
-use Botble\Ecommerce\Models\Order;
+use App\Core\Base\Supports\EmailAbstract;
+use App\Plugins\Ecommerce\Enums\InvoiceStatusEnum;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Invoice;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;

@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Theme\Services;
+namespace App\Packages\Theme\Services;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Helper;
-use Botble\PluginManagement\Services\PluginService;
-use Botble\Setting\Models\Setting;
-use Botble\Setting\Supports\SettingStore;
-use Botble\Theme\Events\ThemeRemoveEvent;
-use Botble\Theme\Facades\Manager as ThemeManager;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Widget\Models\Widget;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Helper;
+use App\Packages\PluginManagement\Services\PluginService;
+use App\Core\Setting\Models\Setting;
+use App\Core\Setting\Supports\SettingStore;
+use App\Packages\Theme\Events\ThemeRemoveEvent;
+use App\Packages\Theme\Facades\Manager as ThemeManager;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Widget\Models\Widget;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Filesystem\Filesystem;

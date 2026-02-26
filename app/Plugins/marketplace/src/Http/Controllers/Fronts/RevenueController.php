@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Marketplace\Enums\RevenueTypeEnum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Models\Revenue;
-use Botble\Marketplace\Tables\StoreRevenueTable;
-use Botble\Table\Abstracts\TableAbstract;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Models\Revenue;
+use App\Plugins\Marketplace\Tables\StoreRevenueTable;
+use App\Core\Table\Abstracts\TableAbstract;
 use Carbon\CarbonPeriod;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

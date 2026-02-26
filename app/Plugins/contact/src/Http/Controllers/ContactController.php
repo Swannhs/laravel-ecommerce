@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Contact\Http\Controllers;
+namespace App\Plugins\Contact\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Contact\Forms\ContactForm;
-use Botble\Contact\Http\Requests\ContactReplyRequest;
-use Botble\Contact\Http\Requests\EditContactRequest;
-use Botble\Contact\Models\Contact;
-use Botble\Contact\Models\ContactReply;
-use Botble\Contact\Tables\ContactTable;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Contact\Enums\ContactStatusEnum;
+use App\Plugins\Contact\Forms\ContactForm;
+use App\Plugins\Contact\Http\Requests\ContactReplyRequest;
+use App\Plugins\Contact\Http\Requests\EditContactRequest;
+use App\Plugins\Contact\Models\Contact;
+use App\Plugins\Contact\Models\ContactReply;
+use App\Plugins\Contact\Tables\ContactTable;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Validation\ValidationException;
 
 class ContactController extends BaseController

@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Base\Models\BaseModel;
-use Botble\Payment\Models\Payment;
-use Botble\Stripe\Supports\StripeHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Stripe\Supports\StripeHelper;
 
 if (! function_exists('convert_stripe_amount_from_api')) {
     function convert_stripe_amount_from_api(float $amount, ?BaseModel $currency): float

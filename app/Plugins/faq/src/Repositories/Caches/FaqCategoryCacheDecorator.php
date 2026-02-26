@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Faq\Repositories\Caches;
+namespace App\Plugins\Faq\Repositories\Caches;
 
-use Botble\Faq\Repositories\Eloquent\FaqCategoryRepository;
+use App\Plugins\Faq\Repositories\Eloquent\FaqCategoryRepository;
 
 /**
  * @deprecated

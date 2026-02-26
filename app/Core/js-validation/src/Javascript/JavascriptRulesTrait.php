@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\JsValidation\Javascript;
+namespace App\Core\JsValidation\Javascript;
 
 trait JavascriptRulesTrait
 {

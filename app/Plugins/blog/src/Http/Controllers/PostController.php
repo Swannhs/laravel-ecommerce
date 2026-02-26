@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Blog\Forms\PostForm;
-use Botble\Blog\Http\Requests\PostRequest;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Services\StoreCategoryService;
-use Botble\Blog\Services\StoreTagService;
-use Botble\Blog\Tables\PostTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Blog\Forms\PostForm;
+use App\Plugins\Blog\Http\Requests\PostRequest;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Services\StoreCategoryService;
+use App\Plugins\Blog\Services\StoreTagService;
+use App\Plugins\Blog\Tables\PostTable;
 use Illuminate\Http\Request;
 
 class PostController extends BaseController

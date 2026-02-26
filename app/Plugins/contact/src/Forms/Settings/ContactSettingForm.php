@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Contact\Forms\Settings;
+namespace App\Plugins\Contact\Forms\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Contact\Http\Requests\Settings\ContactSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Plugins\Contact\Http\Requests\Settings\ContactSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class ContactSettingForm extends SettingForm
 {

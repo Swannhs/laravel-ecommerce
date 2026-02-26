@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Shortcode\\": "src"
+            "App\\Shortcode\\": "src"
         }
     },
     "require": {
@@ -13,10 +13,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Shortcode\\Providers\\ShortcodeServiceProvider"
+                "App\\Shortcode\\Providers\\ShortcodeServiceProvider"
             ],
             "aliases": {
-                "Shortcode": "Botble\\Shortcode\\Facades\\Shortcode"
+                "Shortcode": "App\\Shortcode\\Facades\\Shortcode"
             }
         }
     }

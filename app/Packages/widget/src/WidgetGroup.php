@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget;
+namespace App\Packages\Widget;
 
-use Botble\Widget\Misc\ViewExpressionTrait;
+use App\Packages\Widget\Misc\ViewExpressionTrait;
 use Closure;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Arr;

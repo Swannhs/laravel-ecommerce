@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Models\Concerns;
+namespace App\Core\Base\Models\Concerns;
 
-use Botble\Base\Facades\MetaBox as MetaBoxSupport;
-use Botble\Base\Models\MetaBox;
-use Botble\Base\Supports\MetadataCache;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\MetaBox as MetaBoxSupport;
+use App\Core\Base\Models\MetaBox;
+use App\Core\Base\Supports\MetadataCache;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

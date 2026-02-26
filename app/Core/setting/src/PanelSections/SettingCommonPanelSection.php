@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\PanelSections;
+namespace App\Core\Setting\PanelSections;
 
-use Botble\Base\PanelSections\PanelSection;
-use Botble\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\PanelSection;
+use App\Core\Base\PanelSections\PanelSectionItem;
 
 class SettingCommonPanelSection extends PanelSection
 {

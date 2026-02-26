@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Models;
+namespace App\Plugins\Contact\Models;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class CustomFieldOption extends BaseModel

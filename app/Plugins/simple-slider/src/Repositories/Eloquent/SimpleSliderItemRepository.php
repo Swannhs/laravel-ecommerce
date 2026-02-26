@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SimpleSlider\Repositories\Eloquent;
+namespace App\Plugins\SimpleSlider\Repositories\Eloquent;
 
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class SimpleSliderItemRepository extends RepositoriesAbstract implements SimpleSliderItemInterface
 {

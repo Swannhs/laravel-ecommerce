@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Media\Supports;
+namespace App\Core\Media\Supports;
 
 /**
  * RepositoryInterface that needs to be implemented by every Repository

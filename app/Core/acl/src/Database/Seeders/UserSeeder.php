@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\ACL\Database\Seeders;
+namespace App\Core\ACL\Database\Seeders;
 
-use Botble\ACL\Models\Role;
-use Botble\ACL\Models\User;
-use Botble\ACL\Services\ActivateUserService;
-use Botble\Base\Supports\BaseSeeder;
+use App\Core\ACL\Models\Role;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Services\ActivateUserService;
+use App\Core\Base\Supports\BaseSeeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;

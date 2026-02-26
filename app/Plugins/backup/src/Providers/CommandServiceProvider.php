@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Backup\Providers;
+namespace App\Plugins\Backup\Providers;
 
-use Botble\Backup\Commands\BackupCleanCommand;
-use Botble\Backup\Commands\BackupCreateCommand;
-use Botble\Backup\Commands\BackupListCommand;
-use Botble\Backup\Commands\BackupRemoveCommand;
-use Botble\Backup\Commands\BackupRestoreCommand;
-use Botble\Base\Supports\ServiceProvider;
+use App\Plugins\Backup\Commands\BackupCleanCommand;
+use App\Plugins\Backup\Commands\BackupCreateCommand;
+use App\Plugins\Backup\Commands\BackupListCommand;
+use App\Plugins\Backup\Commands\BackupRemoveCommand;
+use App\Plugins\Backup\Commands\BackupRestoreCommand;
+use App\Core\Base\Supports\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
 {

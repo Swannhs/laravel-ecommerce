@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Models\Invoice;
+use App\Plugins\Ecommerce\Models\Invoice;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

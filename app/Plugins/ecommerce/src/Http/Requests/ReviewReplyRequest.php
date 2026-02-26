@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class ReviewReplyRequest extends Request
 {

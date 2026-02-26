@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Http\Requests;
+namespace App\Core\Setting\Http\Requests;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class PhoneNumberSettingRequest extends Request
 {

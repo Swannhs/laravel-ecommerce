@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Contact\Http\Requests;
+namespace App\Plugins\Contact\Http\Requests;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Contact\Enums\CustomFieldType;
-use Botble\Contact\Models\CustomFieldOption;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\Contact\Enums\CustomFieldType;
+use App\Plugins\Contact\Models\CustomFieldOption;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CustomFieldRequest extends Request

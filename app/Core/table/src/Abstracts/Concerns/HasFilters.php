@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Table\Abstracts\Concerns;
+namespace App\Core\Table\Abstracts\Concerns;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Table\Abstracts\TableBulkChangeAbstract;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Table\Abstracts\TableBulkChangeAbstract;
 use Closure;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Relations\Relation as EloquentRelation;

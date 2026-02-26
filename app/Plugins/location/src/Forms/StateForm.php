@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Location\Forms;
+namespace App\Plugins\Location\Forms;
 
-use Botble\Base\Forms\FieldOptions\IsDefaultFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\SortOrderFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Location\Http\Requests\StateRequest;
-use Botble\Location\Models\Country;
-use Botble\Location\Models\State;
+use App\Core\Base\Forms\FieldOptions\IsDefaultFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\SortOrderFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Location\Http\Requests\StateRequest;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Models\State;
 
 class StateForm extends FormAbstract
 {

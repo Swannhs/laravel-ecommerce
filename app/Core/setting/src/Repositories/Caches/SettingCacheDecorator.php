@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\Repositories\Caches;
+namespace App\Core\Setting\Repositories\Caches;
 
-use Botble\Setting\Repositories\Eloquent\SettingRepository;
+use App\Core\Setting\Repositories\Eloquent\SettingRepository;
 
 /**
  * @deprecated

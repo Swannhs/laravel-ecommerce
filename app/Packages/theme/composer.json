@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Theme\\": "src"
+            "App\\Theme\\": "src"
         }
     },
     "require": {
@@ -17,15 +17,15 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Theme\\Providers\\ThemeServiceProvider",
-                "Botble\\Theme\\Providers\\RouteServiceProvider"
+                "App\\Theme\\Providers\\ThemeServiceProvider",
+                "App\\Theme\\Providers\\RouteServiceProvider"
             ],
             "aliases": {
-                "Theme": "Botble\\Theme\\Facades\\Theme",
-                "ThemeOption": "Botble\\Theme\\Facades\\ThemeOption",
-                "ThemeManager": "Botble\\Theme\\Facades\\Manager",
-                "AdminBar": "Botble\\Theme\\Facades\\AdminBar",
-                "SiteMapManager": "Botble\\Theme\\Facades\\SiteMapManager"
+                "Theme": "App\\Theme\\Facades\\Theme",
+                "ThemeOption": "App\\Theme\\Facades\\ThemeOption",
+                "ThemeManager": "App\\Theme\\Facades\\Manager",
+                "AdminBar": "App\\Theme\\Facades\\AdminBar",
+                "SiteMapManager": "App\\Theme\\Facades\\SiteMapManager"
             }
         }
     }

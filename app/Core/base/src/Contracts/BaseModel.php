@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Contracts;
+namespace App\Core\Base\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 

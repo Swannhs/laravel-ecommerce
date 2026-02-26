@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Shippo;
+namespace App\Plugins\Shippo;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Location\Facades\Location;
-use Botble\Location\Models\City;
-use Botble\Location\Models\State;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Shipment;
+use App\Plugins\Location\Facades\Location;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\State;
+use App\Core\Support\Services\Cache\Cache;
 use Carbon\Carbon;
 use Illuminate\Log\Logger;
 use Illuminate\Support\Arr;

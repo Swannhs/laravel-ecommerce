@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\ACL\Traits\AuthenticatesUsers;
-use Botble\ACL\Traits\LogoutGuardTrait;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Enums\CustomerStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\Fronts\Auth\LoginForm;
-use Botble\Ecommerce\Http\Requests\LoginRequest;
-use Botble\Ecommerce\Models\Customer;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\ACL\Traits\AuthenticatesUsers;
+use App\Core\ACL\Traits\LogoutGuardTrait;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Enums\CustomerStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\LoginForm;
+use App\Plugins\Ecommerce\Http\Requests\LoginRequest;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;

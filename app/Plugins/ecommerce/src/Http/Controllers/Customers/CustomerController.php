@@ -1,25 +1,25 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\CustomerForm;
-use Botble\Ecommerce\Http\Controllers\BaseController;
-use Botble\Ecommerce\Http\Requests\AddCustomerWhenCreateOrderRequest;
-use Botble\Ecommerce\Http\Requests\CustomerCreateRequest;
-use Botble\Ecommerce\Http\Requests\CustomerEditRequest;
-use Botble\Ecommerce\Http\Requests\CustomerUpdateEmailRequest;
-use Botble\Ecommerce\Http\Resources\CustomerAddressResource;
-use Botble\Ecommerce\Models\Address;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Tables\CustomerReviewTable;
-use Botble\Ecommerce\Tables\CustomerTable;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\CustomerForm;
+use App\Plugins\Ecommerce\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Http\Requests\AddCustomerWhenCreateOrderRequest;
+use App\Plugins\Ecommerce\Http\Requests\CustomerCreateRequest;
+use App\Plugins\Ecommerce\Http\Requests\CustomerEditRequest;
+use App\Plugins\Ecommerce\Http\Requests\CustomerUpdateEmailRequest;
+use App\Plugins\Ecommerce\Http\Resources\CustomerAddressResource;
+use App\Plugins\Ecommerce\Models\Address;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Tables\CustomerReviewTable;
+use App\Plugins\Ecommerce\Tables\CustomerTable;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;

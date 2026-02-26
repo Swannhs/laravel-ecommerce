@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\ACL\Models\User;
-use Botble\Ecommerce\Enums\OrderHistoryActionEnum;
-use Botble\Ecommerce\Events\OrderPaymentConfirmedEvent;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
+use App\Core\ACL\Models\User;
+use App\Plugins\Ecommerce\Enums\OrderHistoryActionEnum;
+use App\Plugins\Ecommerce\Events\OrderPaymentConfirmedEvent;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\OrderHistory;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 

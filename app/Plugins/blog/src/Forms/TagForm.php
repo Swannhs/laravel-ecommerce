@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Blog\Forms;
+namespace App\Plugins\Blog\Forms;
 
-use Botble\Base\Forms\FieldOptions\ContentFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\EditorField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Blog\Http\Requests\TagRequest;
-use Botble\Blog\Models\Tag;
+use App\Core\Base\Forms\FieldOptions\ContentFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\EditorField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Blog\Http\Requests\TagRequest;
+use App\Plugins\Blog\Models\Tag;
 
 class TagForm extends FormAbstract
 {

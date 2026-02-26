@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\PluginManagement\Listeners;
+namespace App\Packages\PluginManagement\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\PluginManagement\Services\PluginService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\PluginManagement\Services\PluginService;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
 use Throwable;

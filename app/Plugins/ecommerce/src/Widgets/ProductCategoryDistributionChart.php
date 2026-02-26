@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
 
 class ProductCategoryDistributionChart extends Chart
 {

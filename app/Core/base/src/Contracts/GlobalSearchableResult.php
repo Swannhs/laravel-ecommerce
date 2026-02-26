@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Contracts;
+namespace App\Core\Base\Contracts;
 
 interface GlobalSearchableResult
 {

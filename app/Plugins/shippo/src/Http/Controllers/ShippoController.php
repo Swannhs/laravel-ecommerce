@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Shippo\Http\Controllers;
+namespace App\Plugins\Shippo\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Ecommerce\Models\ShipmentHistory;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Shippo\Shippo;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Shipment;
+use App\Plugins\Ecommerce\Models\ShipmentHistory;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Shippo\Shippo;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

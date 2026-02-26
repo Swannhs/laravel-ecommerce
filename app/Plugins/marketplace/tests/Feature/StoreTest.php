@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Tests\Feature;
+namespace App\Plugins\Marketplace\Tests\Feature;
 
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\StoreStatusEnum;
-use Botble\Marketplace\Models\Store;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\StoreStatusEnum;
+use App\Plugins\Marketplace\Models\Store;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class StoreTest extends BaseTestCase

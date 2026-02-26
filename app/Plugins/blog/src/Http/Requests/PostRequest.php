@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Blog\Http\Requests;
+namespace App\Plugins\Blog\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Rules\MediaImageRule;
-use Botble\Base\Rules\OnOffRule;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Supports\PostFormat;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Rules\MediaImageRule;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Supports\PostFormat;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class PostRequest extends Request

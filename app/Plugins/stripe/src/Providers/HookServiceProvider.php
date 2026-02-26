@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Stripe\Providers;
+namespace App\Plugins\Stripe\Providers;
 
-use Botble\Base\Facades\Html;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\Payment\Supports\PaymentFeeHelper;
-use Botble\Stripe\Forms\StripePaymentMethodForm;
-use Botble\Stripe\Services\Gateways\StripePaymentService;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Plugins\Payment\Supports\PaymentFeeHelper;
+use App\Plugins\Stripe\Forms\StripePaymentMethodForm;
+use App\Plugins\Stripe\Services\Gateways\StripePaymentService;
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 

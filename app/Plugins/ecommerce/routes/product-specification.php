@@ -1,10 +1,10 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Ecommerce\Http\Controllers\SpecificationAttributeController;
-use Botble\Ecommerce\Http\Controllers\SpecificationGroupController;
-use Botble\Ecommerce\Http\Controllers\SpecificationTableController;
-use Botble\Ecommerce\Http\Middleware\CheckProductSpecificationEnabledMiddleware;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Ecommerce\Http\Controllers\SpecificationAttributeController;
+use App\Plugins\Ecommerce\Http\Controllers\SpecificationGroupController;
+use App\Plugins\Ecommerce\Http\Controllers\SpecificationTableController;
+use App\Plugins\Ecommerce\Http\Middleware\CheckProductSpecificationEnabledMiddleware;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {

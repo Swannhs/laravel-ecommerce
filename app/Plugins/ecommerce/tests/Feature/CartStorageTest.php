@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Cart\Exceptions\CartAlreadyStoredException;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Models\Product;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Cart\Exceptions\CartAlreadyStoredException;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;

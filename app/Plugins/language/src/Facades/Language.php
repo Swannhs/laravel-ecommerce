@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Language\Facades;
+namespace App\Plugins\Language\Facades;
 
-use Botble\Language\LanguageManager;
+use App\Plugins\Language\LanguageManager;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -43,14 +43,14 @@ use Illuminate\Support\Facades\Facade;
  * @method static string|bool getRouteNameFromAPath(string $path)
  * @method static void setBaseUrl(string $url)
  * @method static bool saveLanguage(string $screen, \Illuminate\Http\Request $request, \Illuminate\Database\Eloquent\Model|false|null $data)
- * @method static \Botble\Language\Models\Language|\Botble\Base\Models\BaseModel|\Illuminate\Database\Eloquent\Model|null getDefaultLanguage(array $select = ['*'])
+ * @method static \App\Plugins\Language\Models\Language|\App\Core\Base\Models\BaseModel|\Illuminate\Database\Eloquent\Model|null getDefaultLanguage(array $select = ['*'])
  * @method static array supportedModels()
  * @method static bool deleteLanguage(string $screen, \Illuminate\Database\Eloquent\Model|false|null $data)
- * @method static \Botble\Language\LanguageManager registerModule(array|string $model)
+ * @method static \App\Plugins\Language\LanguageManager registerModule(array|string $model)
  * @method static string|null setLocale(string|null $locale = null)
  * @method static string|null getForcedLocale()
  * @method static bool useAcceptLanguageHeader()
- * @method static \Botble\Language\LanguageManager setSwitcherURLs(array $urls)
+ * @method static \App\Plugins\Language\LanguageManager setSwitcherURLs(array $urls)
  * @method static string|null getSwitcherUrl(string $localeCode, string $languageCode)
  * @method static string getSerializedTranslatedRoutes()
  * @method static void setSerializedTranslatedRoutes(string|null $serializedRoutes)
@@ -63,7 +63,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array getTableHeading()
  * @method static void clearCache()
  *
- * @see \Botble\Language\LanguageManager
+ * @see \App\Plugins\Language\LanguageManager
  */
 class Language extends Facade
 {

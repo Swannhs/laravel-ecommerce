@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseQueryBuilder;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

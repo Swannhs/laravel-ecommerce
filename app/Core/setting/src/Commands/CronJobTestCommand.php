@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\Commands;
+namespace App\Core\Setting\Commands;
 
-use Botble\Setting\Facades\Setting;
+use App\Core\Setting\Facades\Setting;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;

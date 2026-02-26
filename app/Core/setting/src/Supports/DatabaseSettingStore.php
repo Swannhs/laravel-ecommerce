@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Supports;
+namespace App\Core\Setting\Supports;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Helper;
-use Botble\Setting\Models\Setting;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\Helper;
+use App\Core\Setting\Models\Setting;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

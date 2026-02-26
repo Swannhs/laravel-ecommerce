@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Tables\Reports;
+namespace App\Plugins\Ecommerce\Tables\Reports;
 
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Facades\EcommerceHelper as EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductView;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\IdColumn;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper as EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductView;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\IdColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

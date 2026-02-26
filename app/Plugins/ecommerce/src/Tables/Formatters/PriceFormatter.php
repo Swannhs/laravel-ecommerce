@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Tables\Formatters;
+namespace App\Plugins\Ecommerce\Tables\Formatters;
 
-use Botble\Table\Formatter;
+use App\Core\Table\Formatter;
 
 class PriceFormatter implements Formatter
 {

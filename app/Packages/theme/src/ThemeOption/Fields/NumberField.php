@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\ThemeOption\Fields;
+namespace App\Packages\Theme\ThemeOption\Fields;
 
-use Botble\Theme\ThemeOption\ThemeOptionField;
+use App\Packages\Theme\ThemeOption\ThemeOptionField;
 
 class NumberField extends ThemeOptionField
 {

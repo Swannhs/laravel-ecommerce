@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Theme\Commands;
+namespace App\Packages\Theme\Commands;
 
-use Botble\Theme\Commands\Traits\ThemeTrait;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Services\ThemeService;
+use App\Packages\Theme\Commands\Traits\ThemeTrait;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Services\ThemeService;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Symfony\Component\Console\Attribute\AsCommand;

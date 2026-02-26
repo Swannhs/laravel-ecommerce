@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Dashboard\Repositories\Caches;
+namespace App\Core\Dashboard\Repositories\Caches;
 
-use Botble\Dashboard\Repositories\Eloquent\DashboardWidgetRepository;
+use App\Core\Dashboard\Repositories\Eloquent\DashboardWidgetRepository;
 
 /**
  * @deprecated

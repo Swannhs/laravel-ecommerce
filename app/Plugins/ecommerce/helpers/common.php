@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\StoreLocator;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\StoreLocator;
+use App\Core\Media\Facades\RvMedia;
 
 if (! function_exists('array_equal')) {
     function array_equal(array $first, array $second): bool

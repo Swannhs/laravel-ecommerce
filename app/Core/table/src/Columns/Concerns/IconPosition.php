@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Columns\Concerns;
+namespace App\Core\Table\Columns\Concerns;
 
 enum IconPosition: string
 {

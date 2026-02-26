@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\AbandonedCartSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\AbandonedCartSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\AbandonedCartSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\AbandonedCartSettingRequest;
 
 class AbandonedCartSettingController extends SettingController
 {

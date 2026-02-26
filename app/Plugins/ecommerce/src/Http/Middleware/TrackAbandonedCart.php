@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Middleware;
+namespace App\Plugins\Ecommerce\Http\Middleware;
 
-use Botble\Ecommerce\Services\AbandonedCartService;
+use App\Plugins\Ecommerce\Services\AbandonedCartService;
 use Closure;
 use Illuminate\Http\Request;
 

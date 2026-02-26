@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Analytics\Http\Requests\Settings;
+namespace App\Plugins\Analytics\Http\Requests\Settings;
 
-use Botble\Analytics\Rules\AnalyticsCredentialRule;
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Analytics\Rules\AnalyticsCredentialRule;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class AnalyticsSettingRequest extends Request
 {

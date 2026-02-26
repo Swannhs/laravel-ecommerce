@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Payment\Providers;
+namespace App\Plugins\Payment\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Repositories\Eloquent\PaymentRepository;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\Payment\Supports\PaymentMethods as PaymentMethodsSupport;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Payment\Repositories\Eloquent\PaymentRepository;
+use App\Plugins\Payment\Repositories\Interfaces\PaymentInterface;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Plugins\Payment\Supports\PaymentMethods as PaymentMethodsSupport;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;

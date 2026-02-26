@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Page\Database\Traits;
+namespace App\Packages\Page\Database\Traits;
 
-use Botble\ACL\Models\User;
-use Botble\Page\Models\Page;
-use Botble\Shortcode\Facades\Shortcode;
-use Botble\Slug\Facades\SlugHelper;
+use App\Core\ACL\Models\User;
+use App\Packages\Page\Models\Page;
+use App\Packages\Shortcode\Facades\Shortcode;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Support\Arr;
 
 trait HasPageSeeder

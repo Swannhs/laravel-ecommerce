@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Page\Http\Resources;
+namespace App\Packages\Page\Http\Resources;
 
-use Botble\Media\Facades\RvMedia;
-use Botble\Page\Models\Page;
-use Botble\Shortcode\Facades\Shortcode;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Page\Models\Page;
+use App\Packages\Shortcode\Facades\Shortcode;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

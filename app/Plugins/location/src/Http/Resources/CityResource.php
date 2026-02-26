@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Location\Http\Resources;
+namespace App\Plugins\Location\Http\Resources;
 
-use Botble\Location\Models\City;
+use App\Plugins\Location\Models\City;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

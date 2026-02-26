@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Testimonial\Repositories\Caches;
+namespace App\Plugins\Testimonial\Repositories\Caches;
 
-use Botble\Testimonial\Repositories\Eloquent\TestimonialRepository;
+use App\Plugins\Testimonial\Repositories\Eloquent\TestimonialRepository;
 
 /**
  * @deprecated

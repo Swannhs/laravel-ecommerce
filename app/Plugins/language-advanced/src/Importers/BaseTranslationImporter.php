@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Importers;
+namespace App\Plugins\LanguageAdvanced\Importers;
 
-use Botble\DataSynchronize\Contracts\Importer\WithMapping;
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Language\Facades\Language as LanguageFacade;
+use App\Packages\DataSynchronize\Contracts\Importer\WithMapping;
+use App\Packages\DataSynchronize\Importer\ImportColumn;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Language\Facades\Language as LanguageFacade;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;

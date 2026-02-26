@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace App\Core\Base\Listeners;
 
-use Botble\Base\Events\PanelSectionsRendering;
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\PanelSections\System\SystemPanelSection;
+use App\Core\Base\Events\PanelSectionsRendering;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\System\SystemPanelSection;
 
 class PushDashboardMenuToSystemPanel
 {

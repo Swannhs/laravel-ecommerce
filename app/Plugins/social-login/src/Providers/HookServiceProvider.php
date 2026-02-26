@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SocialLogin\Providers;
+namespace App\Plugins\SocialLogin\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Arr;
 

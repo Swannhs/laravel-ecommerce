@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Enums\DiscountTypeOptionEnum;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Enums\DiscountTypeOptionEnum;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Models\Discount;
 use Illuminate\Support\Arr;
 
 class HandleRemoveCouponService

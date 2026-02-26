@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Theme\Typography;
+namespace App\Packages\Theme\Typography;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Support\Http\Requests\Request;
-use Botble\Theme\Events\RenderingThemeOptionSettings;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Theme\Http\Requests\UpdateOptionsRequest;
-use Botble\Theme\ThemeOption\Fields\GoogleFontsField;
-use Botble\Theme\ThemeOption\Fields\NumberField;
-use Botble\Theme\ThemeOption\ThemeOptionSection;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Support\Http\Requests\Request;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Theme\Http\Requests\UpdateOptionsRequest;
+use App\Packages\Theme\ThemeOption\Fields\GoogleFontsField;
+use App\Packages\Theme\ThemeOption\Fields\NumberField;
+use App\Packages\Theme\ThemeOption\ThemeOptionSection;
 use Illuminate\Support\Facades\Event;
 
 class Typography

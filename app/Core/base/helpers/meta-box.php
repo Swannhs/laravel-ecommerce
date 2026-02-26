@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Base\Facades\MetaBox;
+use App\Core\Base\Facades\MetaBox;
 use Illuminate\Database\Eloquent\Model;
 
 if (! function_exists('add_meta_box')) {

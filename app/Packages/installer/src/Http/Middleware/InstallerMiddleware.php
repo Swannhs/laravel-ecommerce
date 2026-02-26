@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Installer\Http\Middleware;
+namespace App\Packages\Installer\Http\Middleware;
 
-use Botble\Base\Supports\Helper;
+use App\Core\Base\Supports\Helper;
 use Illuminate\Support\Facades\File;
 
 abstract class InstallerMiddleware

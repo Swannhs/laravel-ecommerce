@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Ecommerce\Models\Invoice;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Models\Invoice;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 
 class InvoiceController extends BaseController

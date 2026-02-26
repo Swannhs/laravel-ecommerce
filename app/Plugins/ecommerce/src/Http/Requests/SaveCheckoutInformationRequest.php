@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
 use Illuminate\Support\Arr;
 

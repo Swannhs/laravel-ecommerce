@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Blog\Enums;
+namespace App\Plugins\Blog\Enums;
 
-use Botble\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Enums\BaseStatusEnum;
 
 class PostStatusEnum extends BaseStatusEnum
 {

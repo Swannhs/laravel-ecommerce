@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Location\Importers;
+namespace App\Plugins\Location\Importers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Language\Facades\Language;
-use Botble\Location\Enums\ImportType;
-use Botble\Location\Services\ImportLocationService;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Packages\DataSynchronize\Importer\ImportColumn;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Location\Enums\ImportType;
+use App\Plugins\Location\Services\ImportLocationService;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 

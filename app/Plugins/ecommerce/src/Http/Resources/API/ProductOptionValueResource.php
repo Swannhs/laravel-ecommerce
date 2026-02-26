@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources\API;
+namespace App\Plugins\Ecommerce\Http\Resources\API;
 
-use Botble\Ecommerce\Models\OptionValue;
+use App\Plugins\Ecommerce\Models\OptionValue;
 
 /**
  * @mixin OptionValue
  */
-class ProductOptionValueResource extends \Botble\Ecommerce\Http\Resources\ProductOptionValueResource
+class ProductOptionValueResource extends \App\Plugins\Ecommerce\Http\Resources\ProductOptionValueResource
 {
 }

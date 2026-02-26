@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Support\Repositories\Caches;
+namespace App\Core\Support\Repositories\Caches;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Database\Eloquent\Model;
 
 /**

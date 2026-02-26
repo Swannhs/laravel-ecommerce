@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Theme;
+namespace App\Packages\Theme;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Media\Facades\RvMedia;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Contracts\Theme as ThemeContract;
-use Botble\Theme\Exceptions\UnknownPartialFileException;
-use Botble\Theme\Exceptions\UnknownThemeException;
-use Botble\Theme\Supports\SocialLink;
-use Botble\Theme\Supports\ThemeSupport;
-use Botble\Theme\Typography\Typography;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Contracts\Theme as ThemeContract;
+use App\Packages\Theme\Exceptions\UnknownPartialFileException;
+use App\Packages\Theme\Exceptions\UnknownThemeException;
+use App\Packages\Theme\Supports\SocialLink;
+use App\Packages\Theme\Supports\ThemeSupport;
+use App\Packages\Theme\Typography\Typography;
 use Carbon\CarbonInterface;
 use Closure;
 use Illuminate\Config\Repository;

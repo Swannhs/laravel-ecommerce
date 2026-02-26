@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Imports;
+namespace App\Plugins\Ecommerce\Imports;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Carbon\Carbon;
 use DateTime;
 use Exception;

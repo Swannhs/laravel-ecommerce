@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Repositories\Interfaces;
+namespace App\Core\Media\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 interface MediaFileInterface extends RepositoryInterface

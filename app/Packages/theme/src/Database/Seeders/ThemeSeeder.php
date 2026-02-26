@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Database\Seeders;
+namespace App\Packages\Theme\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Theme\Services\ThemeService;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Packages\Theme\Services\ThemeService;
 use Illuminate\Support\Str;
 use ReflectionClass;
 

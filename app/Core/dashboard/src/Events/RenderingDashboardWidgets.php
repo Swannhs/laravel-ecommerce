@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Dashboard\Events;
+namespace App\Core\Dashboard\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class RenderingDashboardWidgets extends Event

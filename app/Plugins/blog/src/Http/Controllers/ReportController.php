@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Models\Tag;
 
 class ReportController extends BaseController
 {

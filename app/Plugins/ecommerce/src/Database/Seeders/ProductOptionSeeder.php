@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders;
+namespace App\Plugins\Ecommerce\Database\Seeders;
 
-use Botble\Ecommerce\Models\GlobalOption;
-use Botble\Ecommerce\Models\GlobalOptionValue;
+use App\Plugins\Ecommerce\Models\GlobalOption;
+use App\Plugins\Ecommerce\Models\GlobalOptionValue;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 

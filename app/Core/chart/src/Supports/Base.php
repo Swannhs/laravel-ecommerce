@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Chart\Supports;
+namespace App\Core\Chart\Supports;
 
-use Botble\Base\Facades\Assets;
+use App\Core\Base\Facades\Assets;
 use Illuminate\Support\Str;
 
 /**

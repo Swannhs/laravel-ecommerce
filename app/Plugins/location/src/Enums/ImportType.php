@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Location\Enums;
+namespace App\Plugins\Location\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 class ImportType extends Enum
 {

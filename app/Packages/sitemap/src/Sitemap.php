@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Sitemap;
+namespace App\Packages\Sitemap;
 
 use Illuminate\Cache\Repository as CacheRepository;
 use Illuminate\Config\Repository as ConfigRepository;

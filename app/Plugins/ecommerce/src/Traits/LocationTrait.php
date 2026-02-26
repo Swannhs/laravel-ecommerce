@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Traits;
+namespace App\Plugins\Ecommerce\Traits;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Location\Models\City;
-use Botble\Location\Models\Country;
-use Botble\Location\Models\State;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Models\State;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 

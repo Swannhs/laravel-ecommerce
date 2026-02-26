@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Location\Fields;
+namespace App\Plugins\Location\Fields;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\Form;
-use Botble\Base\Forms\FormField;
-use Botble\Location\Models\City;
-use Botble\Location\Models\Country;
-use Botble\Location\Models\State;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\Form;
+use App\Core\Base\Forms\FormField;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Models\State;
 use Illuminate\Support\Arr;
 use Illuminate\Support\HtmlString;
 

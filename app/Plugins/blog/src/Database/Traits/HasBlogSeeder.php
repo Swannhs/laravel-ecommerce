@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Blog\Database\Traits;
+namespace App\Plugins\Blog\Database\Traits;
 
-use Botble\ACL\Models\User;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Setting\Facades\Setting;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Core\ACL\Models\User;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Models\Tag;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;

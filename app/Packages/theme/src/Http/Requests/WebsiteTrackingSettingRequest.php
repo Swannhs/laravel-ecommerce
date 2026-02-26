@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Theme\Http\Requests;
+namespace App\Packages\Theme\Http\Requests;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
-use Botble\Theme\Rules\GoogleTrackingIdRule;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
+use App\Packages\Theme\Rules\GoogleTrackingIdRule;
 
 class WebsiteTrackingSettingRequest extends Request
 {

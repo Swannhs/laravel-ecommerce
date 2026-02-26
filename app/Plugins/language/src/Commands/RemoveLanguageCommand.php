@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Language\Commands;
+namespace App\Plugins\Language\Commands;
 
-use Botble\Base\Commands\Traits\ValidateCommandInput;
-use Botble\Language\Facades\Language as LanguageFacade;
-use Botble\Language\Models\Language as LanguageModel;
+use App\Core\Base\Commands\Traits\ValidateCommandInput;
+use App\Plugins\Language\Facades\Language as LanguageFacade;
+use App\Plugins\Language\Models\Language as LanguageModel;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;

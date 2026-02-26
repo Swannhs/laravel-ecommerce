@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Http\Requests;
+namespace App\Core\ACL\Http\Requests;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class PreferenceRequest extends Request

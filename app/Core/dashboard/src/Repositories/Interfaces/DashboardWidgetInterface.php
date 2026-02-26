@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Dashboard\Repositories\Interfaces;
+namespace App\Core\Dashboard\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface DashboardWidgetInterface extends RepositoryInterface
 {

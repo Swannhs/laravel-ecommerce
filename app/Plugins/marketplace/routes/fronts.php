@@ -1,16 +1,16 @@
 <?php
 
-use Botble\Base\Http\Middleware\RequiresJsonRequestMiddleware;
-use Botble\Marketplace\Http\Controllers\Fronts\BecomeVendorController;
-use Botble\Marketplace\Http\Controllers\Fronts\ContactStoreController;
-use Botble\Marketplace\Http\Controllers\Fronts\PublicStoreController;
-use Botble\Marketplace\Models\Store;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Middleware\RequiresJsonRequestMiddleware;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\BecomeVendorController;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\ContactStoreController;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\PublicStoreController;
+use App\Plugins\Marketplace\Models\Store;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 Route::group([
-    'namespace' => 'Botble\Marketplace\Http\Controllers\Fronts',
+    'namespace' => 'App\Plugins\Marketplace\Http\Controllers\Fronts',
 ], function (): void {
     Route::group(['middleware' => ['web', 'core']], function (): void {
         Route::post('ajax/stores/check-store-url', [PublicStoreController::class, 'checkStoreUrl'])

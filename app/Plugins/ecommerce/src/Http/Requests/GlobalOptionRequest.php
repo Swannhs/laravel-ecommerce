@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\GlobalOptionEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\GlobalOptionEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class GlobalOptionRequest extends Request

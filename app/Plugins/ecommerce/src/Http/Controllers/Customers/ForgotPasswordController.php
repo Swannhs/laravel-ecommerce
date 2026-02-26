@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\ACL\Traits\SendsPasswordResetEmails;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Forms\Fronts\Auth\ForgotPasswordForm;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\ACL\Traits\SendsPasswordResetEmails;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\ForgotPasswordForm;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Support\Facades\Password;
 

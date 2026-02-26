@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Faq\Tables;
+namespace App\Plugins\Faq\Tables;
 
-use Botble\Faq\Models\Faq;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\BulkChanges\CreatedAtBulkChange;
-use Botble\Table\BulkChanges\TextBulkChange;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\LinkableColumn;
-use Botble\Table\Columns\StatusColumn;
-use Botble\Table\HeaderActions\CreateHeaderAction;
+use App\Plugins\Faq\Models\Faq;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\EditAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\BulkChanges\CreatedAtBulkChange;
+use App\Core\Table\BulkChanges\TextBulkChange;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\LinkableColumn;
+use App\Core\Table\Columns\StatusColumn;
+use App\Core\Table\HeaderActions\CreateHeaderAction;
 use Illuminate\Database\Eloquent\Builder;
 
 class FaqTable extends TableAbstract

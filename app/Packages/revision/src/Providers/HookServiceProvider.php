@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Revision\Providers;
+namespace App\Packages\Revision\Providers;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Forms\FormTab;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Forms\FormTab;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\ServiceProvider;
 use Illuminate\Database\Eloquent\Model;
 
 class HookServiceProvider extends ServiceProvider

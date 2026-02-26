@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Events\FinishedSeederEvent;
-use Botble\Base\Events\SeederPrepared;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\MetaBox as MetaBoxFacade;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\MetaBox as MetaBoxModel;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Models\MediaFolder;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Events\FinishedSeederEvent;
+use App\Core\Base\Events\SeederPrepared;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\MetaBox as MetaBoxFacade;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\MetaBox as MetaBoxModel;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
+use App\Core\Media\Models\MediaFolder;
+use App\Core\Setting\Facades\Setting;
 use Carbon\Carbon;
 use Faker\Factory;
 use Faker\Generator;

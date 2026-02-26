@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Language\Forms\Settings;
+namespace App\Plugins\Language\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\MultiChecklistFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\RadioFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\RadioField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Language\Facades\Language;
-use Botble\Language\Http\Requests\Settings\LanguageSettingRequest;
-use Botble\Setting\Models\Setting;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\MultiChecklistFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\RadioFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\RadioField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Http\Requests\Settings\LanguageSettingRequest;
+use App\Core\Setting\Models\Setting;
 
 class LanguageSettingForm extends FormAbstract
 {

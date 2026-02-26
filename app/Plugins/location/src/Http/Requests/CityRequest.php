@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Location\Http\Requests;
+namespace App\Plugins\Location\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Rules\MediaImageRule;
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Rules\MediaImageRule;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CityRequest extends Request

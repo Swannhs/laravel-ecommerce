@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Dashboard\Models;
+namespace App\Core\Dashboard\Models;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class DashboardWidgetSetting extends BaseModel

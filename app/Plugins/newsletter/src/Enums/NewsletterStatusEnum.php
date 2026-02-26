@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Newsletter\Enums;
+namespace App\Plugins\Newsletter\Enums;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Enum;
 use Illuminate\Support\HtmlString;
 
 /**

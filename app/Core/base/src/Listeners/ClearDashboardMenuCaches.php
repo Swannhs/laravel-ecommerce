@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace App\Core\Base\Listeners;
 
-use Botble\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\DashboardMenu;
 
 class ClearDashboardMenuCaches
 {

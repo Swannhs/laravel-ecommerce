@@ -1,5 +1,5 @@
 @php
-    use Botble\Base\Enums\SystemUpdaterStepEnum;
+    use App\Core\Base\Enums\SystemUpdaterStepEnum;
 
     $changelog =
         isset($latestUpdate) && $latestUpdate && $latestUpdate->changelog

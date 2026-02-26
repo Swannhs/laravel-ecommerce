@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Events\ProductVariationCreated;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Events\ProductVariationCreated;
+use App\Plugins\Ecommerce\Models\Customer;
 use Throwable;
 
 class UpdateProductVariationInfo

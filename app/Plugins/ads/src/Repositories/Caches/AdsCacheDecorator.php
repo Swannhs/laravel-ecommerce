@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ads\Repositories\Caches;
+namespace App\Plugins\Ads\Repositories\Caches;
 
-use Botble\Ads\Repositories\Eloquent\AdsRepository;
+use App\Plugins\Ads\Repositories\Eloquent\AdsRepository;
 
 /**
  * @deprecated

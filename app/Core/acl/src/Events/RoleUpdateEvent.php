@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Events;
+namespace App\Core\ACL\Events;
 
-use Botble\ACL\Models\Role;
-use Botble\Base\Events\Event;
+use App\Core\ACL\Models\Role;
+use App\Core\Base\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 class RoleUpdateEvent extends Event

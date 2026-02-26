@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers\Settings;
+namespace App\Plugins\Blog\Http\Controllers\Settings;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Blog\Forms\Settings\BlogSettingForm;
-use Botble\Blog\Http\Requests\Settings\BlogSettingRequest;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Blog\Forms\Settings\BlogSettingForm;
+use App\Plugins\Blog\Http\Requests\Settings\BlogSettingRequest;
+use App\Core\Setting\Http\Controllers\SettingController;
 
 class BlogSettingController extends SettingController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\WebhookSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\WebhookSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\WebhookSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\WebhookSettingRequest;
 
 class WebhookSettingController extends SettingController
 {

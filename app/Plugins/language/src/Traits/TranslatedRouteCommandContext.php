@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Traits;
+namespace App\Plugins\Language\Traits;
 
-use Botble\Language\Facades\Language;
-use Botble\Language\LanguageManager;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\LanguageManager;
 
 trait TranslatedRouteCommandContext
 {

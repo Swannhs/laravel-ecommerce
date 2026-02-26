@@ -1,13 +1,13 @@
 <?php
 
-use Botble\ACL\Http\Controllers\Auth\ForgotPasswordController;
-use Botble\ACL\Http\Controllers\Auth\LoginController;
-use Botble\ACL\Http\Controllers\Auth\ResetPasswordController;
-use Botble\ACL\Http\Middleware\CheckUserUpdatePermission;
-use Botble\Base\Facades\AdminHelper;
+use App\Core\ACL\Http\Controllers\Auth\ForgotPasswordController;
+use App\Core\ACL\Http\Controllers\Auth\LoginController;
+use App\Core\ACL\Http\Controllers\Auth\ResetPasswordController;
+use App\Core\ACL\Http\Middleware\CheckUserUpdatePermission;
+use App\Core\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\ACL\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Core\ACL\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group(['middleware' => 'guest'], function (): void {
             Route::get('login', [LoginController::class, 'showLoginForm'])->name('access.login');

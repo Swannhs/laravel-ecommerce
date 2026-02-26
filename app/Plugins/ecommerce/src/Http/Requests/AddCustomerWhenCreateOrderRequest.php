@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Base\Rules\EmailRule;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\EmailRule;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class AddCustomerWhenCreateOrderRequest extends Request

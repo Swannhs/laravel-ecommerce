@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Models;
+namespace App\Plugins\Contact\Models;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Contact\Enums\CustomFieldType;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Contact\Enums\CustomFieldType;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class CustomField extends BaseModel

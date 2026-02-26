@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Menu\Providers;
+namespace App\Packages\Menu\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Menu\Commands\ClearMenuCacheCommand;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Packages\Menu\Commands\ClearMenuCacheCommand;
 
 class CommandServiceProvider extends ServiceProvider
 {

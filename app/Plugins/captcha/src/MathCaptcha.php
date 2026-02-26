@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Captcha;
+namespace App\Plugins\Captcha;
 
-use Botble\Base\Facades\Html;
-use Botble\Captcha\Events\CaptchaRendered;
-use Botble\Captcha\Events\CaptchaRendering;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Captcha\Events\CaptchaRendered;
+use App\Plugins\Captcha\Events\CaptchaRendering;
 use Exception;
 use Illuminate\Session\SessionManager;
 use Illuminate\Session\Store;

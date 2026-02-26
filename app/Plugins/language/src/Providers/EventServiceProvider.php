@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Language\Providers;
+namespace App\Plugins\Language\Providers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Installer\Events\InstallerFinished;
-use Botble\Language\Listeners\ActivatedPluginListener;
-use Botble\Language\Listeners\AddHrefLangListener;
-use Botble\Language\Listeners\CopyThemeOptions;
-use Botble\Language\Listeners\CopyThemeWidgets;
-use Botble\Language\Listeners\CreatedContentListener;
-use Botble\Language\Listeners\CreateSelectedLanguageWhenInstallationFinished;
-use Botble\Language\Listeners\DeletedContentListener;
-use Botble\Language\Listeners\ThemeRemoveListener;
-use Botble\Language\Listeners\UpdatedContentListener;
-use Botble\PluginManagement\Events\ActivatedPluginEvent;
-use Botble\Theme\Events\RenderingSingleEvent;
-use Botble\Theme\Events\ThemeRemoveEvent;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Packages\Installer\Events\InstallerFinished;
+use App\Plugins\Language\Listeners\ActivatedPluginListener;
+use App\Plugins\Language\Listeners\AddHrefLangListener;
+use App\Plugins\Language\Listeners\CopyThemeOptions;
+use App\Plugins\Language\Listeners\CopyThemeWidgets;
+use App\Plugins\Language\Listeners\CreatedContentListener;
+use App\Plugins\Language\Listeners\CreateSelectedLanguageWhenInstallationFinished;
+use App\Plugins\Language\Listeners\DeletedContentListener;
+use App\Plugins\Language\Listeners\ThemeRemoveListener;
+use App\Plugins\Language\Listeners\UpdatedContentListener;
+use App\Packages\PluginManagement\Events\ActivatedPluginEvent;
+use App\Packages\Theme\Events\RenderingSingleEvent;
+use App\Packages\Theme\Events\ThemeRemoveEvent;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

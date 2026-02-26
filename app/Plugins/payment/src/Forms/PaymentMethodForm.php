@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Payment\Forms;
+namespace App\Plugins\Payment\Forms;
 
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Payment\Enums\PaymentFeeTypeEnum;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Payment\Enums\PaymentFeeTypeEnum;
 use Illuminate\Support\HtmlString;
 
 class PaymentMethodForm extends FormAbstract

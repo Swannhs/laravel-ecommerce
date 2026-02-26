@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace App\Packages\PluginManagement\Commands;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;

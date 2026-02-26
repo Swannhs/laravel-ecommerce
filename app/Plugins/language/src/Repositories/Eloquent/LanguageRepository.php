@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Language\Repositories\Eloquent;
+namespace App\Plugins\Language\Repositories\Eloquent;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Language\Models\Language;
-use Botble\Language\Repositories\Interfaces\LanguageInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Language\Models\Language;
+use App\Plugins\Language\Repositories\Interfaces\LanguageInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 

@@ -1,6 +1,6 @@
 @php
-    /** @var \Botble\Table\Abstracts\TableAbstract $table */
-    /** @var \Botble\Table\Abstracts\TableActionAbstract[] $actions */
+    /** @var \App\Core\Table\Abstracts\TableAbstract $table */
+    /** @var \App\Core\Table\Abstracts\TableActionAbstract[] $actions */
     /** @var \Illuminate\Database\Eloquent\Model $model */
 @endphp
 

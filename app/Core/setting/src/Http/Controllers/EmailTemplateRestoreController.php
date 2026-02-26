@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Setting\Facades\Setting;
-use Botble\Setting\Http\Requests\EmailTemplateRestoreRequest;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Setting\Facades\Setting;
+use App\Core\Setting\Http\Requests\EmailTemplateRestoreRequest;
 use Illuminate\Support\Facades\File;
 
 class EmailTemplateRestoreController extends BaseController

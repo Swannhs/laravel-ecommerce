@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Enums\DiscountTargetEnum;
-use Botble\Ecommerce\Enums\DiscountTypeOptionEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\Discount;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Models\Discount as DiscountModel;
+use App\Plugins\Ecommerce\Enums\DiscountTargetEnum;
+use App\Plugins\Ecommerce\Enums\DiscountTypeOptionEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\Discount;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Models\Discount as DiscountModel;
 use Illuminate\Support\Arr;
 
 class HandleApplyPromotionsService

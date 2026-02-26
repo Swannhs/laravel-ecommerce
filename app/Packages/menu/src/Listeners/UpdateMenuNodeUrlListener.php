@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Menu\Listeners;
+namespace App\Packages\Menu\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Menu\Facades\Menu;
-use Botble\Menu\Models\MenuNode;
-use Botble\Slug\Events\UpdatedSlugEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\RepositoryHelper;
+use App\Packages\Menu\Facades\Menu;
+use App\Packages\Menu\Models\MenuNode;
+use App\Packages\Slug\Events\UpdatedSlugEvent;
 use Exception;
 
 class UpdateMenuNodeUrlListener

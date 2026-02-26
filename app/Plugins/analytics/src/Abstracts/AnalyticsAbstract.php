@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Analytics\Abstracts;
+namespace App\Plugins\Analytics\Abstracts;
 
-use Botble\Analytics\Period;
+use App\Plugins\Analytics\Period;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\Macroable;
 

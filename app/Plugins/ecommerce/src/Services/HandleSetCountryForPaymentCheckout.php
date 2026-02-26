@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Location\Models\Country;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Location\Models\Country;
 use Illuminate\Support\Arr;
 
 class HandleSetCountryForPaymentCheckout

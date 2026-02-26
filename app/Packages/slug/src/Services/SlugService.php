@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Services;
+namespace App\Packages\Slug\Services;
 
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Support\Str;
 
 class SlugService

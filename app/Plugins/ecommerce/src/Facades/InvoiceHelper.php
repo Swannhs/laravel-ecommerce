@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Ecommerce\Facades;
+namespace App\Plugins\Ecommerce\Facades;
 
-use Botble\Ecommerce\Supports\InvoiceHelper as BaseInvoiceHelper;
+use App\Plugins\Ecommerce\Supports\InvoiceHelper as BaseInvoiceHelper;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static mixed store(\Botble\Ecommerce\Models\Order $order)
- * @method static \Botble\Base\Supports\Pdf makeInvoicePDF(\Botble\Ecommerce\Models\Invoice $invoice)
- * @method static string generateInvoice(\Botble\Ecommerce\Models\Invoice $invoice)
- * @method static \Illuminate\Http\Response downloadInvoice(\Botble\Ecommerce\Models\Invoice $invoice)
- * @method static \Illuminate\Http\Response streamInvoice(\Botble\Ecommerce\Models\Invoice $invoice)
+ * @method static mixed store(\App\Plugins\Ecommerce\Models\Order $order)
+ * @method static \App\Core\Base\Supports\Pdf makeInvoicePDF(\App\Plugins\Ecommerce\Models\Invoice $invoice)
+ * @method static string generateInvoice(\App\Plugins\Ecommerce\Models\Invoice $invoice)
+ * @method static \Illuminate\Http\Response downloadInvoice(\App\Plugins\Ecommerce\Models\Invoice $invoice)
+ * @method static \Illuminate\Http\Response streamInvoice(\App\Plugins\Ecommerce\Models\Invoice $invoice)
  * @method static string getInvoiceTemplate()
  * @method static string getInvoiceTemplatePath()
  * @method static string getInvoiceTemplateCustomizedPath()
- * @method static \Botble\Ecommerce\Models\Invoice getDataForPreview()
+ * @method static \App\Plugins\Ecommerce\Models\Invoice getDataForPreview()
  * @method static array getVariables()
  * @method static string|null getCompanyCountry()
  * @method static string|null getCompanyState()
@@ -23,10 +23,10 @@ use Illuminate\Support\Facades\Facade;
  * @method static string getLanguageSupport()
  * @method static array supportedDateFormats()
  * @method static array getDefaultInvoiceTemplatesFilter()
- * @method static string getInvoiceUrl(\Botble\Ecommerce\Models\Invoice $invoice)
- * @method static string getInvoiceDownloadUrl(\Botble\Ecommerce\Models\Invoice $invoice)
+ * @method static string getInvoiceUrl(\App\Plugins\Ecommerce\Models\Invoice $invoice)
+ * @method static string getInvoiceDownloadUrl(\App\Plugins\Ecommerce\Models\Invoice $invoice)
  *
- * @see \Botble\Ecommerce\Supports\InvoiceHelper
+ * @see \App\Plugins\Ecommerce\Supports\InvoiceHelper
  */
 class InvoiceHelper extends Facade
 {

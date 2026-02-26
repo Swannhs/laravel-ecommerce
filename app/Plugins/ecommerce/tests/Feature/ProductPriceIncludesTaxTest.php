@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ProductPriceIncludesTaxTest extends BaseTestCase

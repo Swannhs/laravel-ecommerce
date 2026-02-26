@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Supports\EmailHandler as EmailHandlerSupport;
+use App\Core\Base\Supports\EmailHandler as EmailHandlerSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Botble\Base\Supports\EmailHandler setModule(string $module)
+ * @method static \App\Core\Base\Supports\EmailHandler setModule(string $module)
  * @method static string getType()
- * @method static \Botble\Base\Supports\EmailHandler setType(string $type)
+ * @method static \App\Core\Base\Supports\EmailHandler setType(string $type)
  * @method static string|null getTemplate()
- * @method static \Botble\Base\Supports\EmailHandler setTemplate(string|null $template)
+ * @method static \App\Core\Base\Supports\EmailHandler setTemplate(string|null $template)
  * @method static array getCoreVariables()
  * @method static string getCssContent()
  * @method static array getIconVariables()
- * @method static \Botble\Base\Supports\EmailHandler setVariableValue(string $variable, array|string|null $value, string|null $module = null)
+ * @method static \App\Core\Base\Supports\EmailHandler setVariableValue(string $variable, array|string|null $value, string|null $module = null)
  * @method static array getVariableValues(string|null $module = null)
- * @method static \Botble\Base\Supports\EmailHandler setVariableValues(array $data, string|null $module = null)
- * @method static \Botble\Base\Supports\EmailHandler addTemplateSettings(string $module, array|null $data, string $type = 'plugins')
- * @method static \Botble\Base\Supports\EmailHandler removeTemplateSettings(string $module, string $type = 'plugins')
+ * @method static \App\Core\Base\Supports\EmailHandler setVariableValues(array $data, string|null $module = null)
+ * @method static \App\Core\Base\Supports\EmailHandler addTemplateSettings(string $module, array|null $data, string $type = 'plugins')
+ * @method static \App\Core\Base\Supports\EmailHandler removeTemplateSettings(string $module, string $type = 'plugins')
  * @method static array getTemplates()
  * @method static array|string|null getTemplateData(string $type, string $module, string $name)
  * @method static array getFunctions()
@@ -34,7 +34,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string getContent()
  * @method static string getSubject()
  *
- * @see \Botble\Base\Supports\EmailHandler
+ * @see \App\Core\Base\Supports\EmailHandler
  */
 class EmailHandler extends Facade
 {

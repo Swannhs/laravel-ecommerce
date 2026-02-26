@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Events\OrderCompletedEvent;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductLicenseCode;
+use App\Plugins\Ecommerce\Events\OrderCompletedEvent;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductLicenseCode;
 use Illuminate\Support\Str;
 
 class GenerateLicenseCodeAfterOrderCompleted

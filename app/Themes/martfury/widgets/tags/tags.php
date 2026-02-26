@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Widget\AbstractWidget;
+use App\Packages\Widget\AbstractWidget;
 
 class TagsWidget extends AbstractWidget
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Exporters;
+namespace App\Plugins\LanguageAdvanced\Exporters;
 
-use Botble\DataSynchronize\Exporter\Exporter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;

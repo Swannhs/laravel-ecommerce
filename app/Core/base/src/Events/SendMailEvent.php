@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
 use Illuminate\Queue\SerializesModels;
 

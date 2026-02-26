@@ -1,11 +1,11 @@
 <?php
 
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Theme\Events\ThemeRoutingAfterEvent;
-use Botble\Theme\Events\ThemeRoutingBeforeEvent;
-use Botble\Theme\Facades\SiteMapManager;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Http\Controllers\PublicController;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Theme\Events\ThemeRoutingAfterEvent;
+use App\Packages\Theme\Events\ThemeRoutingBeforeEvent;
+use App\Packages\Theme\Facades\SiteMapManager;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
 Theme::registerRoutes(function (): void {

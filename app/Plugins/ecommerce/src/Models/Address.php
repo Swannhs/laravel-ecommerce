@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\Concerns\HasPhoneNumber;
-use Botble\Ecommerce\Traits\LocationTrait;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\Concerns\HasPhoneNumber;
+use App\Plugins\Ecommerce\Traits\LocationTrait;
 
 class Address extends BaseModel
 {

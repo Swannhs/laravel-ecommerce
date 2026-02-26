@@ -1,13 +1,13 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {
-    Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
         Route::group(['prefix' => 'reviews', 'as' => 'reviews.'], function (): void {
             Route::match(['GET', 'POST'], '/', [
                 'as' => 'index',
@@ -85,7 +85,7 @@ AdminHelper::registerRoutes(function (): void {
 });
 
 Theme::registerRoutes(function (): void {
-    Route::namespace('Botble\Ecommerce\Http\Controllers\Fronts')->group(function (): void {
+    Route::namespace('App\Plugins\Ecommerce\Http\Controllers\Fronts')->group(function (): void {
         Route::group(['middleware' => ['customer']], function (): void {
             Route::post('review/create', [
                 'as' => 'public.reviews.create',

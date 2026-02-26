@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
 use BackedEnum;
-use Botble\Base\Supports\Enum;
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Base\Supports\Enum;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 use Throwable;
 
 class EnumColumn extends FormattedColumn implements FormattedColumnContract

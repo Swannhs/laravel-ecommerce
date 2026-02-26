@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Repositories\Eloquent;
+namespace App\Plugins\Marketplace\Repositories\Eloquent;
 
-use Botble\Marketplace\Repositories\Interfaces\VendorInfoInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Marketplace\Repositories\Interfaces\VendorInfoInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class VendorInfoRepository extends RepositoriesAbstract implements VendorInfoInterface
 {

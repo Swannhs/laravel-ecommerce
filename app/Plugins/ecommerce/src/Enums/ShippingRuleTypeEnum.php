@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Enums;
+namespace App\Plugins\Ecommerce\Enums;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\Enum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Shipping;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\Enum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Shipping;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\HtmlString;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Database\Seeders\Traits;
+namespace App\Plugins\LanguageAdvanced\Database\Seeders\Traits;
 
-use Botble\Theme\Facades\Theme;
-use Botble\Widget\Models\Widget;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Widget\Models\Widget;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;

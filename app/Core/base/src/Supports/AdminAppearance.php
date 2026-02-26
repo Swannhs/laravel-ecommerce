@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\ACL\Contracts\HasPreferences;
-use Botble\Base\Facades\Html;
-use Botble\Setting\Facades\Setting;
+use App\Core\ACL\Contracts\HasPreferences;
+use App\Core\Base\Facades\Html;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Str;
 

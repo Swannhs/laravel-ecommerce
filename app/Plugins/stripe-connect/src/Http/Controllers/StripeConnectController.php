@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\StripeConnect\Http\Controllers;
+namespace App\Plugins\StripeConnect\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Models\Customer;
-use Botble\StripeConnect\StripeConnect;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\StripeConnect\StripeConnect;
 use Exception;
 use Stripe\Exception\ApiErrorException;
 

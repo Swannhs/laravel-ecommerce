@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
 class UpdatedAtColumn extends DateColumn
 {

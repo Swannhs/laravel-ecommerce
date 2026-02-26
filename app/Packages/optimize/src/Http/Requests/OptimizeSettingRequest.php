@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Optimize\Http\Requests;
+namespace App\Packages\Optimize\Http\Requests;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class OptimizeSettingRequest extends Request
 {

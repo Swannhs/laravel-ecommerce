@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources\API;
+namespace App\Plugins\Ecommerce\Http\Resources\API;
 
-use Botble\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Models\Discount;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Enums;
+namespace App\Plugins\Marketplace\Enums;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Enum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Enum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\HtmlString;
 use Illuminate\Validation\Rule;

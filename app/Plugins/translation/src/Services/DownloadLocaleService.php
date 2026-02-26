@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Translation\Services;
+namespace App\Plugins\Translation\Services;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\PclZip as Zip;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\PclZip as Zip;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Support\Facades\File;
 use ZipArchive;
 

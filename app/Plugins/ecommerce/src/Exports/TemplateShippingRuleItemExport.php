@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Exports;
+namespace App\Plugins\Ecommerce\Exports;
 
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Location\Models\Country;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\ShippingRule;
+use App\Plugins\Location\Models\Country;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Factories;
+namespace App\Packages\Widget\Factories;
 
-use Botble\Widget\Misc\InvalidWidgetClassException;
+use App\Packages\Widget\Misc\InvalidWidgetClassException;
 use Exception;
 use Illuminate\Support\HtmlString;
 

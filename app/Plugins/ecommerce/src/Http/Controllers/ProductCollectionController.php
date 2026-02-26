@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\ProductCollectionForm;
-use Botble\Ecommerce\Http\Requests\ProductCollectionRequest;
-use Botble\Ecommerce\Models\ProductCollection;
-use Botble\Ecommerce\Tables\ProductCollectionTable;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\ProductCollectionForm;
+use App\Plugins\Ecommerce\Http\Requests\ProductCollectionRequest;
+use App\Plugins\Ecommerce\Models\ProductCollection;
+use App\Plugins\Ecommerce\Tables\ProductCollectionTable;
 use Illuminate\Http\Request;
 
 class ProductCollectionController extends BaseController

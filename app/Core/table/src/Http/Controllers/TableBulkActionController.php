@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Http\Controllers;
+namespace App\Core\Table\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Http\Requests\DispatchBulkActionRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Http\Requests\DispatchBulkActionRequest;
 use Illuminate\Contracts\Container\BindingResolutionException;
 
 class TableBulkActionController extends TableController

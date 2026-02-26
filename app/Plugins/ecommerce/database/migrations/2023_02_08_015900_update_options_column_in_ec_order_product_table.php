@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Ecommerce\Models\OrderProduct;
-use Botble\Ecommerce\Models\OrderReturn;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ecommerce\Models\OrderProduct;
+use App\Plugins\Ecommerce\Models\OrderReturn;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Arr;

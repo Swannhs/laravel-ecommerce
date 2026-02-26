@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Ecommerce\Models\Product;
-use Botble\Language\Facades\Language;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Language\Facades\Language;
 use Illuminate\Support\Facades\DB;
 
 class AddLanguageForVariantsListener

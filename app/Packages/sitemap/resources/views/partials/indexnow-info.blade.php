@@ -1,5 +1,5 @@
 @php
-    $service = app(\Botble\Sitemap\Services\IndexNowService::class);
+    $service = app(\App\Packages\Sitemap\Services\IndexNowService::class);
     $apiKey = $service->getApiKey();
 @endphp
 

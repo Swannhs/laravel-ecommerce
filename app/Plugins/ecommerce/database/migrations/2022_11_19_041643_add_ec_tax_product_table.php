@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

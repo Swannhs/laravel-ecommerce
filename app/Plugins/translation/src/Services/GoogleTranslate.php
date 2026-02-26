@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Translation\Services;
+namespace App\Plugins\Translation\Services;
 
-use Botble\Translation\Exceptions\LargeTextException;
-use Botble\Translation\Exceptions\RateLimitException;
-use Botble\Translation\Exceptions\TranslationDecodingException;
-use Botble\Translation\Exceptions\TranslationRequestException;
-use Botble\Translation\Tokens\GoogleTokenGenerator;
-use Botble\Translation\Tokens\TokenProviderInterface;
+use App\Plugins\Translation\Exceptions\LargeTextException;
+use App\Plugins\Translation\Exceptions\RateLimitException;
+use App\Plugins\Translation\Exceptions\TranslationDecodingException;
+use App\Plugins\Translation\Exceptions\TranslationRequestException;
+use App\Plugins\Translation\Tokens\GoogleTokenGenerator;
+use App\Plugins\Translation\Tokens\TokenProviderInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use JsonException;

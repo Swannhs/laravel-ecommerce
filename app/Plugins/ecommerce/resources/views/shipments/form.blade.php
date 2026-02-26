@@ -5,6 +5,6 @@
         </x-core::card.title>
     </x-core::card.header>
     <x-core::card.body>
-        {!! Botble\Ecommerce\Forms\ShipmentInfoForm::createFromModel($shipment)->renderForm() !!}
+        {!! App\Plugins\Ecommerce\Forms\ShipmentInfoForm::createFromModel($shipment)->renderForm() !!}
     </x-core::card.body>
 </x-core::card>

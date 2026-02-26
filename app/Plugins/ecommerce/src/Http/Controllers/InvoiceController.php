@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Ecommerce\Models\Invoice;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Tables\InvoiceTable;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Models\Invoice;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Tables\InvoiceTable;
 use Illuminate\Http\Request;
 
 class InvoiceController extends BaseController

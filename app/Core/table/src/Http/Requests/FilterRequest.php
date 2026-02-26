@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\Http\Requests;
+namespace App\Core\Table\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class FilterRequest extends Request
 {

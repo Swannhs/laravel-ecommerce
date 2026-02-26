@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Blog\Widgets\Fronts;
+namespace App\Plugins\Blog\Widgets\Fronts;
 
 class RecentPosts extends Posts
 {

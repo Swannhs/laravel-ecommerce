@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Http\Middleware;
+namespace App\Plugins\Language\Http\Middleware;
 
-use Botble\Language\Facades\Language;
-use Botble\Language\LanguageNegotiator;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\LanguageNegotiator;
 use Closure;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

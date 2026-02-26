@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Listeners;
+namespace App\Plugins\Contact\Listeners;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Contact\Events\SentContactEvent;
-use Botble\Contact\Models\Contact;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Contact\Events\SentContactEvent;
+use App\Plugins\Contact\Models\Contact;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Arr;
 

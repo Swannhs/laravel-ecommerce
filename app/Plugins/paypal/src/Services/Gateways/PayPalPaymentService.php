@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\PayPal\Services\Gateways;
+namespace App\Plugins\PayPal\Services\Gateways;
 
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\PayPal\Services\Abstracts\PayPalPaymentAbstract;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Plugins\PayPal\Services\Abstracts\PayPalPaymentAbstract;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

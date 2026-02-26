@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Ecommerce\Events\ProductQuantityUpdatedEvent;
-use Botble\Ecommerce\Http\Requests\UpdateProductInventoryRequest;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Services\Products\UpdateDefaultProductService;
-use Botble\Ecommerce\Tables\ProductInventoryTable;
+use App\Core\Base\Facades\Assets;
+use App\Plugins\Ecommerce\Events\ProductQuantityUpdatedEvent;
+use App\Plugins\Ecommerce\Http\Requests\UpdateProductInventoryRequest;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Services\Products\UpdateDefaultProductService;
+use App\Plugins\Ecommerce\Tables\ProductInventoryTable;
 
 class ProductInventoryController extends BaseController
 {

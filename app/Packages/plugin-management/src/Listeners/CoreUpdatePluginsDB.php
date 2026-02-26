@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\PluginManagement\Listeners;
+namespace App\Packages\PluginManagement\Listeners;
 
 use Illuminate\Support\Facades\File;
 

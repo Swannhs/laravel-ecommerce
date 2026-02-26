@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Models\MetaBox as MetaBoxModel;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Models\MetaBox as MetaBoxModel;
 use Closure;
 use Illuminate\Database\Eloquent\Model;
 

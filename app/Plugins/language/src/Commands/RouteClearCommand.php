@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Language\Commands;
+namespace App\Plugins\Language\Commands;
 
-use Botble\Language\Facades\Language;
+use App\Plugins\Language\Facades\Language;
 use Illuminate\Foundation\Console\RouteClearCommand as BaseRouteClearCommand;
 
 class RouteClearCommand extends BaseRouteClearCommand

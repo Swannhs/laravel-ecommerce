@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Cart\Exceptions;
+namespace App\Plugins\Ecommerce\Cart\Exceptions;
 
-use Botble\Base\Contracts\Exceptions\IgnoringReport;
+use App\Core\Base\Contracts\Exceptions\IgnoringReport;
 use RuntimeException;
 
 class CartAlreadyStoredException extends RuntimeException implements IgnoringReport

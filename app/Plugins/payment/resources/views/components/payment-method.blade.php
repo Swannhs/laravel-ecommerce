@@ -28,13 +28,13 @@
         <p class="text-muted">{!! BaseHelper::clean($description ?: get_payment_setting('description', $name) ?: setting('payment_' . $name . '_description')) !!}</p>
         @php
             $feeValue = get_payment_setting('fee', $name, 0);
-            $feeType = get_payment_setting('fee_type', $name, \Botble\Payment\Enums\PaymentFeeTypeEnum::FIXED);
+            $feeType = get_payment_setting('fee_type', $name, \App\Plugins\Payment\Enums\PaymentFeeTypeEnum::FIXED);
             $orderAmount = apply_filters('payment_order_total_amount', 0);
-            $fee = \Botble\Payment\Supports\PaymentFeeHelper::calculateFee($name, $orderAmount);
+            $fee = \App\Plugins\Payment\Supports\PaymentFeeHelper::calculateFee($name, $orderAmount);
         @endphp
         @if ($feeValue > 0)
             <p class="text-warning">
-                @if ($feeType === \Botble\Payment\Enums\PaymentFeeTypeEnum::PERCENTAGE)
+                @if ($feeType === \App\Plugins\Payment\Enums\PaymentFeeTypeEnum::PERCENTAGE)
                     {{ trans('plugins/payment::payment.payment_fee') }}: {{ format_price($fee) }} ({{ $feeValue }}%)
                 @else
                     {{ trans('plugins/payment::payment.payment_fee') }}: {{ format_price($fee) }}

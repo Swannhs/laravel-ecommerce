@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Rules\MediaImageRule;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\PayoutInformationForm;
-use Botble\Marketplace\Forms\TaxInformationForm;
-use Botble\Marketplace\Forms\VendorStoreForm;
-use Botble\Marketplace\Http\Requests\Fronts\VendorStoreRequest;
-use Botble\Marketplace\Http\Requests\PayoutInformationSettingRequest;
-use Botble\Marketplace\Http\Requests\TaxInformationSettingRequest;
-use Botble\Marketplace\Models\Store;
-use Botble\Media\Facades\RvMedia;
-use Botble\Slug\Facades\SlugHelper;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Rules\MediaImageRule;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\PayoutInformationForm;
+use App\Plugins\Marketplace\Forms\TaxInformationForm;
+use App\Plugins\Marketplace\Forms\VendorStoreForm;
+use App\Plugins\Marketplace\Http\Requests\Fronts\VendorStoreRequest;
+use App\Plugins\Marketplace\Http\Requests\PayoutInformationSettingRequest;
+use App\Plugins\Marketplace\Http\Requests\TaxInformationSettingRequest;
+use App\Plugins\Marketplace\Models\Store;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Slug\Facades\SlugHelper;
 
 class SettingController extends BaseController
 {

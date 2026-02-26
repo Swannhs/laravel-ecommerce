@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Casts;
+namespace App\Core\Base\Casts;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 
 class SafeContent implements CastsAttributes

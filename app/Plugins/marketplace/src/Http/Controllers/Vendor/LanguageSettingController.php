@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Vendor;
+namespace App\Plugins\Marketplace\Http\Controllers\Vendor;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Forms\Vendor\LanguageSettingForm;
-use Botble\Marketplace\Http\Requests\Vendor\LanguageSettingRequest;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Forms\Vendor\LanguageSettingForm;
+use App\Plugins\Marketplace\Http\Requests\Vendor\LanguageSettingRequest;
 
 class LanguageSettingController extends BaseController
 {

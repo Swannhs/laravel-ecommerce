@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 use Carbon\Carbon;
 
 class DateColumn extends FormattedColumn implements FormattedColumnContract

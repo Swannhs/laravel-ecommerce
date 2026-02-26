@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\PluginManagement\Commands\Concern;
+namespace App\Packages\PluginManagement\Commands\Concern;
 
 trait HasPluginNameValidation
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\CurrencySettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\CurrencySettingRequest;
-use Botble\Ecommerce\Services\StoreCurrenciesService;
+use App\Plugins\Ecommerce\Forms\Settings\CurrencySettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\CurrencySettingRequest;
+use App\Plugins\Ecommerce\Services\StoreCurrenciesService;
 
 class CurrencySettingController extends SettingController
 {

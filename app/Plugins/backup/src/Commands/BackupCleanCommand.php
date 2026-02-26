@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Backup\Commands;
+namespace App\Plugins\Backup\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

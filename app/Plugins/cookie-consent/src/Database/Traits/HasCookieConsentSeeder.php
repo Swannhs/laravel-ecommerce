@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\CookieConsent\Database\Traits;
+namespace App\Plugins\CookieConsent\Database\Traits;
 
-use Botble\Base\Facades\Html;
+use App\Core\Base\Facades\Html;
 
 trait HasCookieConsentSeeder
 {

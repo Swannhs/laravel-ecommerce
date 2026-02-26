@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Language\Http\Middleware;
+namespace App\Plugins\Language\Http\Middleware;
 
-use Botble\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\AdminHelper;
 use Illuminate\Http\Request;
 
 class LaravelLocalizationMiddlewareBase

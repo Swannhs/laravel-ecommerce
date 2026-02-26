@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Events;
+namespace App\Plugins\Payment\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 
 class RenderedPaymentMethods extends Event
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Support\Services\Cache;
+namespace App\Core\Support\Services\Cache;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Closure;
 use DateInterval;
 use DateTimeInterface;

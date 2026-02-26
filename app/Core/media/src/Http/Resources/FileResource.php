@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Media\Http\Resources;
+namespace App\Core\Media\Http\Resources;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\File;
 

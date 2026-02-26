@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Exporters;
+namespace App\Plugins\Marketplace\Exporters;
 
-use Botble\Ecommerce\Exporters\ProductExporter as BaseProductExporter;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Ecommerce\Exporters\ProductExporter as BaseProductExporter;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 use Illuminate\Database\Eloquent\Builder;
 
 class ProductExporter extends BaseProductExporter

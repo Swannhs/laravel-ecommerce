@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\PayPalPayout\Listeners;
+namespace App\Plugins\PayPalPayout\Listeners;
 
-use Botble\AffiliatePro\Enums\PayoutPaymentMethodsEnum;
-use Botble\AffiliatePro\Enums\WithdrawalStatusEnum;
-use Botble\AffiliatePro\Events\WithdrawalApprovedEvent;
-use Botble\AffiliatePro\Events\WithdrawalRequestedEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\PayPal\Services\Gateways\PayPalPaymentService;
-use Botble\PayPalPayout\PayPalPayoutsSDK\Payouts\PayoutsPostRequest;
+use App\Plugins\AffiliatePro\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\AffiliatePro\Enums\WithdrawalStatusEnum;
+use App\Plugins\AffiliatePro\Events\WithdrawalApprovedEvent;
+use App\Plugins\AffiliatePro\Events\WithdrawalRequestedEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\PayPal\Services\Gateways\PayPalPaymentService;
+use App\Plugins\PayPalPayout\PayPalPayoutsSDK\Payouts\PayoutsPostRequest;
 use Exception;
 
 class AffiliatePayPalPayoutListener

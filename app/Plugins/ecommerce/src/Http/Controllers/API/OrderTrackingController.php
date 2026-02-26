@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\API\OrderTrackingRequest;
-use Botble\Ecommerce\Models\Order;
-use Botble\Media\Facades\RvMedia;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\API\OrderTrackingRequest;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 

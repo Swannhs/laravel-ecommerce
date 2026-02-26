@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Charts;
+namespace App\Plugins\Ecommerce\Charts;
 
-use Botble\Chart\LineChart;
-use Botble\Chart\Supports\Base;
+use App\Core\Chart\LineChart;
+use App\Core\Chart\Supports\Base;
 
 class TimeChart extends LineChart
 {

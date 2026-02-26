@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\SeoHelper\\": "src"
+            "App\\SeoHelper\\": "src"
         }
     },
     "require": {
@@ -14,10 +14,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+                "App\\SeoHelper\\Providers\\SeoHelperServiceProvider"
             ],
             "aliases": {
-                "SeoHelper": "Botble\\SeoHelper\\Facades\\SeoHelper"
+                "SeoHelper": "App\\SeoHelper\\Facades\\SeoHelper"
             }
         }
     }

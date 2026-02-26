@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources\API;
+namespace App\Plugins\Ecommerce\Http\Resources\API;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

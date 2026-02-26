@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\DataSynchronize\Http\Controllers\ExportController;
-use Botble\DataSynchronize\Http\Requests\ExportRequest;
-use Botble\Ecommerce\Exporters\ProductExporter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Packages\DataSynchronize\Http\Controllers\ExportController;
+use App\Packages\DataSynchronize\Http\Requests\ExportRequest;
+use App\Plugins\Ecommerce\Exporters\ProductExporter;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 

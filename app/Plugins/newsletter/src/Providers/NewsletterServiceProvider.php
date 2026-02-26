@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Newsletter\Providers;
+namespace App\Plugins\Newsletter\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Newsletter\Contracts\Factory;
-use Botble\Newsletter\Forms\Fronts\NewsletterForm;
-use Botble\Newsletter\Http\Requests\NewsletterRequest;
-use Botble\Newsletter\Models\Newsletter;
-use Botble\Newsletter\NewsletterManager;
-use Botble\Newsletter\Repositories\Eloquent\NewsletterRepository;
-use Botble\Newsletter\Repositories\Interfaces\NewsletterInterface;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
-use Botble\Theme\FormFrontManager;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Newsletter\Contracts\Factory;
+use App\Plugins\Newsletter\Forms\Fronts\NewsletterForm;
+use App\Plugins\Newsletter\Http\Requests\NewsletterRequest;
+use App\Plugins\Newsletter\Models\Newsletter;
+use App\Plugins\Newsletter\NewsletterManager;
+use App\Plugins\Newsletter\Repositories\Eloquent\NewsletterRepository;
+use App\Plugins\Newsletter\Repositories\Interfaces\NewsletterInterface;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
+use App\Packages\Theme\FormFrontManager;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
 class NewsletterServiceProvider extends ServiceProvider implements DeferrableProvider

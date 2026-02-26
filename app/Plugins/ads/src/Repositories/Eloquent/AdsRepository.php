@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ads\Repositories\Eloquent;
+namespace App\Plugins\Ads\Repositories\Eloquent;
 
-use Botble\Ads\Repositories\Interfaces\AdsInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ads\Repositories\Interfaces\AdsInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Collection;
 
 class AdsRepository extends RepositoriesAbstract implements AdsInterface

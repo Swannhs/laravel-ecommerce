@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Models\Withdrawal;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Models\Withdrawal;
 use Illuminate\Support\Facades\DB;
 
 class WithdrawalStatusChart extends Chart

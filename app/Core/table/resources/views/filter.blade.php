@@ -1,5 +1,5 @@
 @php
-    /** @var Botble\Table\Abstracts\TableAbstract $table */
+    /** @var App\Core\Table\Abstracts\TableAbstract $table */
 @endphp
 
 <div class="wrapper-filter">

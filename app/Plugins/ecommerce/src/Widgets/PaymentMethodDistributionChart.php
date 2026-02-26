@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
 use Illuminate\Support\Facades\DB;
 
 class PaymentMethodDistributionChart extends Chart

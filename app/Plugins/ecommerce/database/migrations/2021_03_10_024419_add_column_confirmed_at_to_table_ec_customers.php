@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Customer;
 use Carbon\Carbon;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;

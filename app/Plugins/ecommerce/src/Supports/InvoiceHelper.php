@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\Language;
-use Botble\Base\Supports\Pdf;
-use Botble\Ecommerce\Enums\InvoiceStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
-use Botble\Ecommerce\Models\Invoice;
-use Botble\Ecommerce\Models\InvoiceItem;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Location\Models\City;
-use Botble\Location\Models\State;
-use Botble\Media\Facades\RvMedia;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\Language;
+use App\Core\Base\Supports\Pdf;
+use App\Plugins\Ecommerce\Enums\InvoiceStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
+use App\Plugins\Ecommerce\Models\Invoice;
+use App\Plugins\Ecommerce\Models\InvoiceItem;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\State;
+use App\Core\Media\Facades\RvMedia;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
+use App\Packages\Theme\Facades\Theme;
 use Carbon\Carbon;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;

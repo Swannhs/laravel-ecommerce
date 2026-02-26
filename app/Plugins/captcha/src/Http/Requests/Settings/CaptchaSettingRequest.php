@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Captcha\Http\Requests\Settings;
+namespace App\Plugins\Captcha\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Captcha\Facades\Captcha;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\Captcha\Facades\Captcha;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CaptchaSettingRequest extends Request

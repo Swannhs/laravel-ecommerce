@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Events\OrderPlacedEvent;
-use Botble\Ecommerce\Services\AbandonedCartService;
+use App\Plugins\Ecommerce\Events\OrderPlacedEvent;
+use App\Plugins\Ecommerce\Services\AbandonedCartService;
 
 class MarkCartAsRecovered
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\AuditLog\Tables;
+namespace App\Plugins\AuditLog\Tables;
 
-use Botble\AuditLog\Models\AuditHistory;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\HeaderActions\HeaderAction;
+use App\Plugins\AuditLog\Models\AuditHistory;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\HeaderActions\HeaderAction;
 
 class AuditLogTable extends TableAbstract
 {

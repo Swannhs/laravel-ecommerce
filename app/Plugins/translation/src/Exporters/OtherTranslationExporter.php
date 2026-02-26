@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Translation\Exporters;
+namespace App\Plugins\Translation\Exporters;
 
-use Botble\Base\Supports\Language;
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\Translation\Services\GetGroupedTranslationsService;
+use App\Core\Base\Supports\Language;
+use App\Packages\DataSynchronize\Exporter\ExportColumn;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Plugins\Translation\Services\GetGroupedTranslationsService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 

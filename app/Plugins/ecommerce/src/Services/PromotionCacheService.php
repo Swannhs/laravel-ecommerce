@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Support\Services\Cache\Cache;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Core\Support\Services\Cache\Cache;
 
 class PromotionCacheService
 {

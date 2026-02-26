@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\Tax;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Tax;
 
 class TaxRateCalculatorService
 {

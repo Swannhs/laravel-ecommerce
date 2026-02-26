@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Forms\Fields;
+namespace App\Core\Base\Forms\Fields;
 
-use Botble\Base\Forms\FieldTypes\CheckableType;
+use App\Core\Base\Forms\FieldTypes\CheckableType;
 
 class CheckboxField extends CheckableType
 {

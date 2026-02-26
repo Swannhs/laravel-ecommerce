@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Installer\Services;
+namespace App\Packages\Installer\Services;
 
-use Botble\Base\Services\DeleteLocaleService;
-use Botble\Base\Services\DeleteUnusedTranslationFilesService;
+use App\Core\Base\Services\DeleteLocaleService;
+use App\Core\Base\Services\DeleteUnusedTranslationFilesService;
 use Illuminate\Support\Facades\File;
 
 class CleanupSystemAfterInstalledService

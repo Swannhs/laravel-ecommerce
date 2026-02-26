@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Ecommerce\Models\TaxRule;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\HeaderActions\CreateHeaderAction;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Ecommerce\Models\TaxRule;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\EditAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\HeaderActions\CreateHeaderAction;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

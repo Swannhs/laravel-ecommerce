@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Events;
+namespace App\Plugins\Ecommerce\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Ecommerce\Models\Product;
+use App\Core\Base\Events\Event;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 

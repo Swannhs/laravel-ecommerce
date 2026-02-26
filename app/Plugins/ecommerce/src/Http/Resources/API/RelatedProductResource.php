@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources\API;
+namespace App\Plugins\Ecommerce\Http\Resources\API;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\ACL\Contracts\HasPermissions;
-use Botble\Base\Events\DashboardMenuRetrieved;
-use Botble\Base\Events\DashboardMenuRetrieving;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\ACL\Contracts\HasPermissions;
+use App\Core\Base\Events\DashboardMenuRetrieved;
+use App\Core\Base\Events\DashboardMenuRetrieving;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Support\Services\Cache\Cache;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Contracts\Support\Arrayable;

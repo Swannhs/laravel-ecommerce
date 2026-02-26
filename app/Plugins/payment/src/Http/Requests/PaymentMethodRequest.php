@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Payment\Http\Requests;
+namespace App\Plugins\Payment\Http\Requests;
 
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class PaymentMethodRequest extends Request

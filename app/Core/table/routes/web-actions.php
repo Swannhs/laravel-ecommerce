@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Table\Http\Controllers\TableBulkActionController;
-use Botble\Table\Http\Controllers\TableBulkChangeController;
-use Botble\Table\Http\Controllers\TableColumnVisibilityController;
-use Botble\Table\Http\Controllers\TableFilterController;
+use App\Core\Table\Http\Controllers\TableBulkActionController;
+use App\Core\Table\Http\Controllers\TableBulkChangeController;
+use App\Core\Table\Http\Controllers\TableColumnVisibilityController;
+use App\Core\Table\Http\Controllers\TableFilterController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'tables', 'permission' => false, 'as' => 'table.'], function (): void {

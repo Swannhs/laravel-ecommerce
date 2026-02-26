@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Settings;
+namespace App\Plugins\Marketplace\Http\Controllers\Settings;
 
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Setting\Http\Controllers\SettingController as BaseSettingController;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Setting\Http\Controllers\SettingController as BaseSettingController;
 
 abstract class SettingController extends BaseSettingController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Language\Interfaces;
+namespace App\Plugins\Language\Interfaces;
 
 interface LocalizedUrlRoutable
 {

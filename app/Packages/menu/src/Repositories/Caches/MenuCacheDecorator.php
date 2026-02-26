@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Repositories\Caches;
+namespace App\Packages\Menu\Repositories\Caches;
 
-use Botble\Menu\Repositories\Eloquent\MenuRepository;
+use App\Packages\Menu\Repositories\Eloquent\MenuRepository;
 
 /**
  * @deprecated

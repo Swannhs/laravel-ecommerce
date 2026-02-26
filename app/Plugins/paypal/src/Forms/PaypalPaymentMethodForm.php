@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\PayPal\Forms;
+namespace App\Plugins\PayPal\Forms;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Payment\Concerns\Forms\HasAvailableCountriesField;
-use Botble\Payment\Forms\PaymentMethodForm;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Payment\Concerns\Forms\HasAvailableCountriesField;
+use App\Plugins\Payment\Forms\PaymentMethodForm;
 
 class PaypalPaymentMethodForm extends PaymentMethodForm
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\AuditLog\Listeners;
+namespace App\Plugins\AuditLog\Listeners;
 
-use Botble\AuditLog\AuditLog;
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Facades\BaseHelper;
+use App\Plugins\AuditLog\AuditLog;
+use App\Plugins\AuditLog\Events\AuditHandlerEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
 use Exception;
 
 class DeletedContentListener

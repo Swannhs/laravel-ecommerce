@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Faq\Contracts;
+namespace App\Plugins\Faq\Contracts;
 
-use Botble\Faq\FaqCollection;
+use App\Plugins\Faq\FaqCollection;
 
 interface Faq
 {

@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Base\Facades\Html;
-use Botble\Marketplace\Enums\StoreStatusEnum;
-use Botble\Marketplace\Models\Store;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\Actions\ViewAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\ImageColumn;
-use Botble\Table\Columns\NameColumn;
-use Botble\Table\Columns\StatusColumn;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Marketplace\Enums\StoreStatusEnum;
+use App\Plugins\Marketplace\Models\Store;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\EditAction;
+use App\Core\Table\Actions\ViewAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\ImageColumn;
+use App\Core\Table\Columns\NameColumn;
+use App\Core\Table\Columns\StatusColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

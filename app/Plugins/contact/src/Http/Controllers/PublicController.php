@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Http\Controllers;
+namespace App\Plugins\Contact\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Contact\Http\Requests\ContactRequest;
-use Botble\Contact\Services\ContactService;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Contact\Http\Requests\ContactRequest;
+use App\Plugins\Contact\Services\ContactService;
 use Illuminate\Validation\ValidationException;
 
 class PublicController extends BaseController

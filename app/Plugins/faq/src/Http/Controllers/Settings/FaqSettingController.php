@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Faq\Http\Controllers\Settings;
+namespace App\Plugins\Faq\Http\Controllers\Settings;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Faq\Forms\Settings\FaqSettingForm;
-use Botble\Faq\Http\Requests\Settings\FaqSettingRequest;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Faq\Forms\Settings\FaqSettingForm;
+use App\Plugins\Faq\Http\Requests\Settings\FaqSettingRequest;
+use App\Core\Setting\Http\Controllers\SettingController;
 
 class FaqSettingController extends SettingController
 {

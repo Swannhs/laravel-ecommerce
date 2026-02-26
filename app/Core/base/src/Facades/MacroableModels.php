@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Supports\MacroableModels as MacroableModelsSupport;
+use App\Core\Base\Supports\MacroableModels as MacroableModelsSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array modelsThatImplement(string $name)
  * @method static array macrosForModel(string $model)
  *
- * @see \Botble\Base\Supports\MacroableModels
+ * @see \App\Core\Base\Supports\MacroableModels
  */
 class MacroableModels extends Facade
 {

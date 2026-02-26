@@ -12,7 +12,7 @@
         <x-core::form.text-input
             :label="trans('plugins/ecommerce::products.sku')"
             name="sku"
-            :value="old('sku', $product ? $product->sku : (new Botble\Ecommerce\Models\Product())->generateSku())"
+            :value="old('sku', $product ? $product->sku : (new App\Plugins\Ecommerce\Models\Product())->generateSku())"
         />
 
         @if (($isVariation && !$product) || ($product && $product->is_variation && !$product->sku))
@@ -96,7 +96,7 @@
         />
     </div>
 
-    @if (Botble\Ecommerce\Facades\EcommerceHelper::isTaxEnabled())
+    @if (App\Plugins\Ecommerce\Facades\EcommerceHelper::isTaxEnabled())
         <div class="col-md-12">
             <x-core::form.on-off.checkbox
                 :label="trans('plugins/ecommerce::products.form.price_includes_tax')"
@@ -170,7 +170,7 @@
     <x-core::form.label for="stock_status">
         {{ trans('plugins/ecommerce::products.form.stock_status') }}
     </x-core::form.label>
-    @foreach (Botble\Ecommerce\Enums\StockStatusEnum::labels() as $status => $label)
+    @foreach (App\Plugins\Ecommerce\Enums\StockStatusEnum::labels() as $status => $label)
         <x-core::form.checkbox
             :label="$label"
             name="stock_status"
@@ -184,7 +184,7 @@
 
 @if (
     ! EcommerceHelper::isEnabledSupportDigitalProducts()
-    || (! EcommerceHelper::isDisabledPhysicalProduct() && !$product && ! $originalProduct && request()->input('product_type') != Botble\Ecommerce\Enums\ProductTypeEnum::DIGITAL)
+    || (! EcommerceHelper::isDisabledPhysicalProduct() && !$product && ! $originalProduct && request()->input('product_type') != App\Plugins\Ecommerce\Enums\ProductTypeEnum::DIGITAL)
     || (! EcommerceHelper::isDisabledPhysicalProduct() && $originalProduct && $originalProduct->isTypePhysical()) || ($product && $product->isTypePhysical())
 )
     <x-core::form.fieldset>
@@ -253,7 +253,7 @@
     ||
     (EcommerceHelper::isEnabledSupportDigitalProducts()
     && (
-        (!$product &&  !$originalProduct && request()->input('product_type') == Botble\Ecommerce\Enums\ProductTypeEnum::DIGITAL)
+        (!$product &&  !$originalProduct && request()->input('product_type') == App\Plugins\Ecommerce\Enums\ProductTypeEnum::DIGITAL)
         || ($originalProduct && $originalProduct->isTypeDigital()) || ($product && $product->isTypeDigital())
     ))
 )
@@ -298,7 +298,7 @@
 
             <x-slot:description>
                 <div class="btn-list mt-3 mb-3">
-                    @if($product && \Botble\Ecommerce\Http\Controllers\ProductLicenseCodeController::canAccessLicenseCodeManagement($product))
+                    @if($product && \App\Plugins\Ecommerce\Http\Controllers\ProductLicenseCodeController::canAccessLicenseCodeManagement($product))
                         <a href="{{ route('products.license-codes.index', $product->id) }}"
                            class="btn btn-sm btn-primary"
                            target="_blank">

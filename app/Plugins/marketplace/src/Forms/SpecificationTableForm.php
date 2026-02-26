@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Ecommerce\Forms\SpecificationTableForm as BaseSpecificationTableForm;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Ecommerce\Forms\SpecificationTableForm as BaseSpecificationTableForm;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 
 class SpecificationTableForm extends BaseSpecificationTableForm
 {

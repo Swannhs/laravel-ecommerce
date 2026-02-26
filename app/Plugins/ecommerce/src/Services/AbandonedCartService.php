@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Models\AbandonedCart;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Models\AbandonedCart;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;

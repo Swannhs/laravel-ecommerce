@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Widgets\Card;
-use Botble\Marketplace\Enums\RevenueTypeEnum;
-use Botble\Marketplace\Models\Revenue;
+use App\Core\Base\Widgets\Card;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
+use App\Plugins\Marketplace\Models\Revenue;
 use Carbon\CarbonPeriod;
 use Illuminate\Support\Facades\DB;
 

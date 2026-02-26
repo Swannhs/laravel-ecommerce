@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\StripeConnect\Listeners;
+namespace App\Plugins\StripeConnect\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Events\WithdrawalRequested;
-use Botble\StripeConnect\StripeConnect;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Events\WithdrawalRequested;
+use App\Plugins\StripeConnect\StripeConnect;
 use Exception;
 
 class TransferToStripeAccount

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Contact\Enums;
+namespace App\Plugins\Contact\Enums;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\Enum;
 use Illuminate\Support\HtmlString;
 
 /**

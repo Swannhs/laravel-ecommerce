@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Http\Controllers\API;
+namespace App\Plugins\Language\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Language\Facades\Language;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Language\Facades\Language;
 use Illuminate\Http\JsonResponse;
 
 class LanguageController extends BaseApiController

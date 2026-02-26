@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Support\Http\Requests\Request;
 
 class AddressRequest extends Request
 {

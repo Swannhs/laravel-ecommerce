@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Media;
+namespace App\Core\Media;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Media\Events\MediaFileRenamed;
-use Botble\Media\Events\MediaFileRenaming;
-use Botble\Media\Events\MediaFileUploaded;
-use Botble\Media\Events\MediaFolderRenamed;
-use Botble\Media\Events\MediaFolderRenaming;
-use Botble\Media\Http\Resources\FileResource;
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Models\MediaFolder;
-use Botble\Media\Services\ThumbnailService;
-use Botble\Media\Services\UploadsManager;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Media\Events\MediaFileRenamed;
+use App\Core\Media\Events\MediaFileRenaming;
+use App\Core\Media\Events\MediaFileUploaded;
+use App\Core\Media\Events\MediaFolderRenamed;
+use App\Core\Media\Events\MediaFolderRenaming;
+use App\Core\Media\Http\Resources\FileResource;
+use App\Core\Media\Models\MediaFile;
+use App\Core\Media\Models\MediaFolder;
+use App\Core\Media\Services\ThumbnailService;
+use App\Core\Media\Services\UploadsManager;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;

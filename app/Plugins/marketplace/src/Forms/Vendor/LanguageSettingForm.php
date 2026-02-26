@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Marketplace\Forms\Vendor;
+namespace App\Plugins\Marketplace\Forms\Vendor;
 
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Supports\Language;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Forms\Concerns\HasSubmitButton;
-use Botble\Marketplace\Http\Requests\Vendor\LanguageSettingRequest;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Supports\Language;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Forms\Concerns\HasSubmitButton;
+use App\Plugins\Marketplace\Http\Requests\Vendor\LanguageSettingRequest;
 use Illuminate\Support\Facades\App;
 
 class LanguageSettingForm extends FormAbstract

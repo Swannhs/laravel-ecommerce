@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Enums\CustomerStatusEnum;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\StoreStatusEnum;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Enums\CustomerStatusEnum;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\StoreStatusEnum;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 

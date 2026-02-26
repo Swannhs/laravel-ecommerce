@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\SimpleSlider\Forms;
+namespace App\Plugins\SimpleSlider\Forms;
 
-use Botble\Base\Forms\FieldOptions\DescriptionFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\SortOrderFieldOption;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
+use App\Core\Base\Forms\FieldOptions\DescriptionFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\SortOrderFieldOption;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
+use App\Plugins\SimpleSlider\Models\SimpleSliderItem;
 
 class SimpleSliderItemForm extends FormAbstract
 {

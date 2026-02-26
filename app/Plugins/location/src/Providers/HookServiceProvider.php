@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Location\Providers;
+namespace App\Plugins\Location\Providers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Forms\FormHelper;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Location\Facades\Location;
-use Botble\Location\Fields\SelectLocationField;
-use Botble\Location\Importers\LocationImporter;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Forms\FormHelper;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Location\Facades\Location;
+use App\Plugins\Location\Fields\SelectLocationField;
+use App\Plugins\Location\Importers\LocationImporter;
 
 class HookServiceProvider extends ServiceProvider
 {

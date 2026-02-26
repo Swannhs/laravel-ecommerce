@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Http\Requests\API\CalculateTaxRequest;
-use Botble\Ecommerce\Http\Resources\API\TaxCalculationResource;
-use Botble\Ecommerce\Services\Data\CalculateTaxData;
-use Botble\Ecommerce\Services\TaxCalculatorService;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Http\Requests\API\CalculateTaxRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\TaxCalculationResource;
+use App\Plugins\Ecommerce\Services\Data\CalculateTaxData;
+use App\Plugins\Ecommerce\Services\TaxCalculatorService;
 
 class TaxController extends BaseApiController
 {

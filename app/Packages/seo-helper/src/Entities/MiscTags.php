@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace App\Packages\SeoHelper\Entities;
 
-use Botble\SeoHelper\Contracts\Entities\MetaCollectionContract;
-use Botble\SeoHelper\Contracts\Entities\MiscTagsContract;
-use Botble\SeoHelper\Contracts\Entities\WebmastersContract;
+use App\Packages\SeoHelper\Contracts\Entities\MetaCollectionContract;
+use App\Packages\SeoHelper\Contracts\Entities\MiscTagsContract;
+use App\Packages\SeoHelper\Contracts\Entities\WebmastersContract;
 
 class MiscTags implements MiscTagsContract
 {

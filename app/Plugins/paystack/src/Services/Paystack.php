@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Paystack\Services;
+namespace App\Plugins\Paystack\Services;
 
-use Botble\Paystack\Exceptions\IsNullException;
-use Botble\Paystack\Exceptions\PaymentVerificationFailedException;
+use App\Plugins\Paystack\Exceptions\IsNullException;
+use App\Plugins\Paystack\Exceptions\PaymentVerificationFailedException;
 use Exception;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Config;

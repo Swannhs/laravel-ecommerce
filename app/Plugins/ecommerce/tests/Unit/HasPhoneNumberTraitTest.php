@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Unit;
+namespace App\Plugins\Ecommerce\Tests\Unit;
 
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Models\Address;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Models\Address;
+use App\Plugins\Ecommerce\Models\Customer;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class HasPhoneNumberTraitTest extends BaseTestCase

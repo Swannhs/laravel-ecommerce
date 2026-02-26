@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Repositories\Caches;
+namespace App\Plugins\Marketplace\Repositories\Caches;
 
-use Botble\Marketplace\Repositories\Eloquent\WithdrawalRepository;
+use App\Plugins\Marketplace\Repositories\Eloquent\WithdrawalRepository;
 
 /**
  * @deprecated

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Middleware;
+namespace App\Core\Base\Http\Middleware;
 
-use Botble\Base\Exceptions\DisabledInDemoModeException;
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Exceptions\DisabledInDemoModeException;
+use App\Core\Base\Facades\BaseHelper;
 use Closure;
 use Illuminate\Http\Request;
 

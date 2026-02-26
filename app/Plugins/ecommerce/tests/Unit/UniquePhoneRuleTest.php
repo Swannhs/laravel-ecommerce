@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Unit;
+namespace App\Plugins\Ecommerce\Tests\Unit;
 
-use Botble\Base\Rules\UniquePhoneRule;
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Rules\UniquePhoneRule;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Models\Customer;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Validator;
 

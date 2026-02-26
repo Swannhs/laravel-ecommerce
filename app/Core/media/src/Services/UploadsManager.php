@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Services;
+namespace App\Core\Media\Services;
 
-use Botble\Media\Facades\RvMedia;
+use App\Core\Media\Facades\RvMedia;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\UploadedFile;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Newsletter\Listeners;
+namespace App\Plugins\Newsletter\Listeners;
 
-use Botble\Newsletter\Events\SubscribeNewsletterEvent;
-use Botble\Newsletter\Facades\Newsletter;
+use App\Plugins\Newsletter\Events\SubscribeNewsletterEvent;
+use App\Plugins\Newsletter\Facades\Newsletter;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Arr;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Widget;
+namespace App\Packages\Widget;
 
-use Botble\Theme\Facades\Theme;
-use Botble\Widget\Facades\WidgetGroup as WidgetGroupFacade;
-use Botble\Widget\Forms\WidgetForm;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Widget\Facades\WidgetGroup as WidgetGroupFacade;
+use App\Packages\Widget\Forms\WidgetForm;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Support\Arr;

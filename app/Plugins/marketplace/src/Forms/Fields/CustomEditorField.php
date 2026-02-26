@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Forms\Fields;
+namespace App\Plugins\Marketplace\Forms\Fields;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Supports\Editor;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Supports\Editor;
 use Illuminate\Support\Arr;
 
 class CustomEditorField extends TextareaField

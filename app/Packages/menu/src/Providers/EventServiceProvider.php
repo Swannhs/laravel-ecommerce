@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Menu\Providers;
+namespace App\Packages\Menu\Providers;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Menu\Listeners\DeleteMenuNodeListener;
-use Botble\Menu\Listeners\UpdateMenuNodeUrlListener;
-use Botble\Slug\Events\UpdatedSlugEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Packages\Menu\Listeners\DeleteMenuNodeListener;
+use App\Packages\Menu\Listeners\UpdateMenuNodeUrlListener;
+use App\Packages\Slug\Events\UpdatedSlugEvent;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

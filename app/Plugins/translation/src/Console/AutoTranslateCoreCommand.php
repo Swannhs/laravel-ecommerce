@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace App\Plugins\Translation\Console;
 
-use Botble\Translation\AutoTranslateManager;
-use Botble\Translation\Manager;
-use Botble\Translation\Services\GetGroupedTranslationsService;
+use App\Plugins\Translation\AutoTranslateManager;
+use App\Plugins\Translation\Manager;
+use App\Plugins\Translation\Services\GetGroupedTranslationsService;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Collection;

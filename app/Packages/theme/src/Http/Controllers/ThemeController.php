@@ -1,26 +1,26 @@
 <?php
 
-namespace Botble\Theme\Http\Controllers;
+namespace App\Packages\Theme\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\Concerns\InteractsWithSettings;
-use Botble\Theme\Events\RenderingThemeOptionSettings;
-use Botble\Theme\Facades\Manager;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Theme\Forms\CustomCSSForm;
-use Botble\Theme\Forms\CustomHTMLForm;
-use Botble\Theme\Forms\CustomJSForm;
-use Botble\Theme\Forms\RobotsTxtEditorForm;
-use Botble\Theme\Http\Requests\CustomCssRequest;
-use Botble\Theme\Http\Requests\CustomHtmlRequest;
-use Botble\Theme\Http\Requests\CustomJsRequest;
-use Botble\Theme\Http\Requests\RobotsTxtRequest;
-use Botble\Theme\Http\Requests\UpdateOptionsRequest;
-use Botble\Theme\Services\ThemeService;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\Concerns\InteractsWithSettings;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
+use App\Packages\Theme\Facades\Manager;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Theme\Forms\CustomCSSForm;
+use App\Packages\Theme\Forms\CustomHTMLForm;
+use App\Packages\Theme\Forms\CustomJSForm;
+use App\Packages\Theme\Forms\RobotsTxtEditorForm;
+use App\Packages\Theme\Http\Requests\CustomCssRequest;
+use App\Packages\Theme\Http\Requests\CustomHtmlRequest;
+use App\Packages\Theme\Http\Requests\CustomJsRequest;
+use App\Packages\Theme\Http\Requests\RobotsTxtRequest;
+use App\Packages\Theme\Http\Requests\UpdateOptionsRequest;
+use App\Packages\Theme\Services\ThemeService;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

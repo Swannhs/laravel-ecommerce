@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\JsValidation\Remote;
+namespace App\Core\JsValidation\Remote;
 
-use Botble\JsValidation\Support\AccessProtectedTrait;
+use App\Core\JsValidation\Support\AccessProtectedTrait;
 use Closure;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Support\Arr;

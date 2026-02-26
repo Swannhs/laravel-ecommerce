@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Base\Facades\Html;
-use Botble\Table\Columns\Concerns\HasLink;
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Base\Facades\Html;
+use App\Core\Table\Columns\Concerns\HasLink;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 
 class EmailColumn extends FormattedColumn implements FormattedColumnContract
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Imports;
+namespace App\Plugins\Ecommerce\Imports;
 
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
 use Maatwebsite\Excel\Validators\Failure;
 
 class ValidateShippingRuleItemImport extends ShippingRuleItemImport

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Support\Providers;
+namespace App\Core\Support\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Supports\ServiceProvider;
 
 class SupportServiceProvider extends ServiceProvider
 {

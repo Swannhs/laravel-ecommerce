@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Table;
-use Botble\Ecommerce\Tables\Reports\RecentOrdersTable as BaseRecentOrdersTable;
+use App\Core\Base\Widgets\Table;
+use App\Plugins\Ecommerce\Tables\Reports\RecentOrdersTable as BaseRecentOrdersTable;
 
 class RecentOrdersTable extends Table
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Stripe\Supports;
+namespace App\Plugins\Stripe\Supports;
 
 class StripeHelper
 {

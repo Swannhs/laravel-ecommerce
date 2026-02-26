@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Middleware;
+namespace App\Core\Base\Http\Middleware;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

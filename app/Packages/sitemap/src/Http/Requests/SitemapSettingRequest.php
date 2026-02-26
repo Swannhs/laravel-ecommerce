@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Sitemap\Http\Requests;
+namespace App\Packages\Sitemap\Http\Requests;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class SitemapSettingRequest extends Request
 {

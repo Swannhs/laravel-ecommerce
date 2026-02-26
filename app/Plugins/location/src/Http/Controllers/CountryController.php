@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Location\Http\Controllers;
+namespace App\Plugins\Location\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Location\Forms\CountryForm;
-use Botble\Location\Http\Requests\CountryRequest;
-use Botble\Location\Http\Resources\CountryResource;
-use Botble\Location\Models\Country;
-use Botble\Location\Tables\CountryTable;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Location\Forms\CountryForm;
+use App\Plugins\Location\Http\Requests\CountryRequest;
+use App\Plugins\Location\Http\Resources\CountryResource;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Tables\CountryTable;
 use Illuminate\Http\Request;
 
 class CountryController extends BaseController

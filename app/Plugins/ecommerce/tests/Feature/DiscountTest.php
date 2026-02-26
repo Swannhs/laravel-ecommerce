@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Enums\DiscountTypeOptionEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Models\Discount;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Enums\DiscountTypeOptionEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Models\Discount;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class DiscountTest extends BaseTestCase

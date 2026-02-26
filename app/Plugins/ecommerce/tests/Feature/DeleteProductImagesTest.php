@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Models\Product;
-use Botble\Media\Models\MediaFile;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Core\Media\Models\MediaFile;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class DeleteProductImagesTest extends BaseTestCase

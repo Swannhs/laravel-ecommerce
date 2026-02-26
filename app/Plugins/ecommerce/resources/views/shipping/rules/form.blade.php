@@ -16,24 +16,24 @@
         {!! Form::customSelect(
             'type',
             ['' => trans('plugins/ecommerce::shipping.rule.select_type')] +
-                Botble\Ecommerce\Enums\ShippingRuleTypeEnum::availableLabels($rule ? $rule->shipping : null),
+                App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum::availableLabels($rule ? $rule->shipping : null),
             $rule ? $rule->type : '',
             ['class' => 'select-rule-type'],
-            Botble\Ecommerce\Enums\ShippingRuleTypeEnum::toSelectAttributes(),
+            App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum::toSelectAttributes(),
         ) !!}
     </x-core::form-group>
 
     <div class="rule-from-to-inputs" @style(['display: none' => $rule && !$rule->type->showFromToInputs()])>
         <x-core::form-group>
             <x-core::form.label class="rule-from-to-label">
-                {{ $rule ? $rule->type->label() : Botble\Ecommerce\Enums\ShippingRuleTypeEnum::BASED_ON_PRICE()->label() }}
+                {{ $rule ? $rule->type->label() : App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum::BASED_ON_PRICE()->label() }}
             </x-core::form.label>
 
             <div class="d-flex align-items-center gap-3">
                 <div class="w-full">
                     <div class="input-group input-group-flat">
                         <span class="input-group-text unit-item-label">
-                            {{ $rule ? $rule->type->toUnit() : Botble\Ecommerce\Enums\ShippingRuleTypeEnum::BASED_ON_PRICE()->toUnit() }}
+                            {{ $rule ? $rule->type->toUnit() : App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum::BASED_ON_PRICE()->toUnit() }}
                         </span>
 
                         <input
@@ -49,7 +49,7 @@
                 <div class="w-full">
                     <div class="input-group input-group-flat">
                         <span class="input-group-text unit-item-label">
-                            {{ $rule ? $rule->type->toUnit() : Botble\Ecommerce\Enums\ShippingRuleTypeEnum::BASED_ON_PRICE()->toUnit() }}
+                            {{ $rule ? $rule->type->toUnit() : App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum::BASED_ON_PRICE()->toUnit() }}
                         </span>
 
                         <input

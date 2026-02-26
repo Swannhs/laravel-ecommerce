@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Testimonial\Providers;
+namespace App\Plugins\Testimonial\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Testimonial\Models\Testimonial;
-use Botble\Testimonial\Repositories\Eloquent\TestimonialRepository;
-use Botble\Testimonial\Repositories\Interfaces\TestimonialInterface;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Plugins\Testimonial\Models\Testimonial;
+use App\Plugins\Testimonial\Repositories\Eloquent\TestimonialRepository;
+use App\Plugins\Testimonial\Repositories\Interfaces\TestimonialInterface;
 
 class TestimonialServiceProvider extends ServiceProvider
 {

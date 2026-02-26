@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\Ecommerce\Enums\OrderCancellationReasonEnum;
-use Botble\Ecommerce\Enums\OrderHistoryActionEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Forms\Fronts\CancelOrderForm;
-use Botble\Ecommerce\Http\Controllers\BaseController;
-use Botble\Ecommerce\Http\Requests\Fronts\CancelOrderRequest;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Ecommerce\Enums\OrderCancellationReasonEnum;
+use App\Plugins\Ecommerce\Enums\OrderHistoryActionEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Forms\Fronts\CancelOrderForm;
+use App\Plugins\Ecommerce\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\CancelOrderRequest;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\OrderHistory;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 

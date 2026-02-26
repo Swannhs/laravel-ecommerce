@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Widget\Widgets;
+namespace App\Packages\Widget\Widgets;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Theme\Supports\ThemeSupport;
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\Forms\WidgetForm;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Packages\Theme\Supports\ThemeSupport;
+use App\Packages\Widget\AbstractWidget;
+use App\Packages\Widget\Forms\WidgetForm;
 use Illuminate\Support\Collection;
 
 class SiteCopyright extends AbstractWidget

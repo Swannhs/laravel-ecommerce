@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\ACL\Forms;
+namespace App\Core\ACL\Forms;
 
-use Botble\ACL\Http\Requests\CreateUserRequest;
-use Botble\ACL\Models\Role;
-use Botble\ACL\Models\User;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\FieldOptions\PhoneNumberFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\PasswordField;
-use Botble\Base\Forms\Fields\PhoneNumberField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
+use App\Core\ACL\Http\Requests\CreateUserRequest;
+use App\Core\ACL\Models\Role;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\PhoneNumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\PasswordField;
+use App\Core\Base\Forms\Fields\PhoneNumberField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
 
 class UserForm extends FormAbstract
 {

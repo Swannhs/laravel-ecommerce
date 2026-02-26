@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace App\Plugins\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\ProductCategoryHelper;
-use Botble\Ecommerce\Http\Controllers\BaseController;
-use Botble\Ecommerce\Services\Products\GetProductService;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\ProductCategoryHelper;
+use App\Plugins\Ecommerce\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Services\Products\GetProductService;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

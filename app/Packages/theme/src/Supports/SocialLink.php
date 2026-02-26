@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace App\Packages\Theme\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Support\HtmlString;
 
 class SocialLink

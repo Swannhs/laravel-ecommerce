@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Events;
+namespace App\Plugins\Payment\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class PaymentWebhookReceived extends Event

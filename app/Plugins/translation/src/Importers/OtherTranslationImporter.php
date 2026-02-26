@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Translation\Importers;
+namespace App\Plugins\Translation\Importers;
 
-use Botble\Base\Supports\Language;
-use Botble\DataSynchronize\Contracts\Importer\WithMapping;
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Translation\Manager;
+use App\Core\Base\Supports\Language;
+use App\Packages\DataSynchronize\Contracts\Importer\WithMapping;
+use App\Packages\DataSynchronize\Importer\ImportColumn;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Translation\Manager;
 use Illuminate\Support\Facades\Auth;
 
 class OtherTranslationImporter extends Importer implements WithMapping

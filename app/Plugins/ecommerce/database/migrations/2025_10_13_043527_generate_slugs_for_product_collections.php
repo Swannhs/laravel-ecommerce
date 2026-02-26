@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\ProductCollection;
-use Botble\Slug\Models\Slug;
+use App\Plugins\Ecommerce\Models\ProductCollection;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Str;
 

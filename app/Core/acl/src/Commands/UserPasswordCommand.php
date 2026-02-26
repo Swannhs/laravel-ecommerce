@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Commands;
+namespace App\Core\ACL\Commands;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Commands\Traits\ValidateCommandInput;
-use Botble\Base\Supports\Helper;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Commands\Traits\ValidateCommandInput;
+use App\Core\Base\Supports\Helper;
 use Exception;
 use Illuminate\Console\Command;
 

@@ -62,7 +62,7 @@
 
     <div class="form-hint">
         <a
-            href="{{ $licenseURL = Botble\Base\Supports\Core::make()->getLicenseUrl() }}"
+            href="{{ $licenseURL = App\Core\Base\Supports\Core::make()->getLicenseUrl() }}"
             target="_blank"
             class="d-inline-block mt-2"
         > Need reset your license?
@@ -79,7 +79,7 @@
         A purchase code (license) is only valid for One Domain. Are you using this theme on a new domain?
         Purchase a
         <a
-            href="{{ Botble\Base\Supports\Core::make()->getLicenseUrl('/buy') }}"
+            href="{{ App\Core\Base\Supports\Core::make()->getLicenseUrl('/buy') }}"
             target="_blank"
             rel="nofollow"
         >

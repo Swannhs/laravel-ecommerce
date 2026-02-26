@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Payment\Repositories\Eloquent;
+namespace App\Plugins\Payment\Repositories\Eloquent;
 
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Payment\Repositories\Interfaces\PaymentInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class PaymentRepository extends RepositoriesAbstract implements PaymentInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Setting\Http\Controllers\SettingController as BaseSettingController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Setting\Http\Controllers\SettingController as BaseSettingController;
 
 abstract class SettingController extends BaseSettingController
 {

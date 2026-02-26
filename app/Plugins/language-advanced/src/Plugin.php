@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\LanguageAdvanced;
+namespace App\Plugins\LanguageAdvanced;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Setting\Facades\Setting;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Support\Facades\Schema;
 
 class Plugin extends PluginOperationAbstract

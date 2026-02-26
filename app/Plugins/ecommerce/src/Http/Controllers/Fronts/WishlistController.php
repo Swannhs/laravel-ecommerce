@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace App\Plugins\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\AdsTracking\GoogleTagManager;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\SharedWishlist;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Services\ProductWishlistService;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\AdsTracking\GoogleTagManager;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\SharedWishlist;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Plugins\Ecommerce\Services\ProductWishlistService;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 

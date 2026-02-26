@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Marketplace\Tables\Traits\ForVendor;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\DateColumn;
-use Botble\Table\Columns\IdColumn;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Marketplace\Tables\Traits\ForVendor;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\DateColumn;
+use App\Core\Table\Columns\IdColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

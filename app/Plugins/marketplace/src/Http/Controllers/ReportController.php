@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Widgets\Contracts\AdminWidget;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Marketplace\Tables\RecentWithdrawalsTable;
-use Botble\Marketplace\Tables\StoreRevenueTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Widgets\Contracts\AdminWidget;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Marketplace\Tables\RecentWithdrawalsTable;
+use App\Plugins\Marketplace\Tables\StoreRevenueTable;
 use Illuminate\Http\Request;
 
 class ReportController extends BaseController

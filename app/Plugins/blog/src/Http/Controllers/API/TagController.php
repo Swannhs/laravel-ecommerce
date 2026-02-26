@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers\API;
+namespace App\Plugins\Blog\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Blog\Http\Resources\TagResource;
-use Botble\Blog\Models\Tag;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Blog\Http\Resources\TagResource;
+use App\Plugins\Blog\Models\Tag;
 use Illuminate\Http\Request;
 
 class TagController extends BaseApiController

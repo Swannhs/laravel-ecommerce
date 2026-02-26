@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Setting\Forms;
+namespace App\Core\Setting\Forms;
 
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\MultiChecklistFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Supports\Helper;
-use Botble\Setting\Http\Requests\PhoneNumberSettingRequest;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\MultiChecklistFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Supports\Helper;
+use App\Core\Setting\Http\Requests\PhoneNumberSettingRequest;
 
 class PhoneNumberSettingForm extends SettingForm
 {

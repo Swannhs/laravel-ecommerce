@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Exports;
+namespace App\Plugins\Marketplace\Exports;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Table\Supports\TableExportHandler;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Table\Supports\TableExportHandler;
 use Maatwebsite\Excel\Events\AfterSheet;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
 

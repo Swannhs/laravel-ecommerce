@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Tests;
+namespace App\Core\Base\Tests;
 
-use Botble\ACL\Models\User;
+use App\Core\ACL\Models\User;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Tests\TestCase;

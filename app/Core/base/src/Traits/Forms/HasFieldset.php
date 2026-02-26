@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Traits\Forms;
+namespace App\Core\Base\Traits\Forms;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Str;
 

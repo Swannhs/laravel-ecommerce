@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Newsletter\Forms;
+namespace App\Plugins\Newsletter\Forms;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Newsletter\Facades\Newsletter as NewsletterFacade;
-use Botble\Newsletter\Http\Requests\Settings\NewsletterSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Newsletter\Facades\Newsletter as NewsletterFacade;
+use App\Plugins\Newsletter\Http\Requests\Settings\NewsletterSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 use Exception;
 use Illuminate\Support\Arr;
 

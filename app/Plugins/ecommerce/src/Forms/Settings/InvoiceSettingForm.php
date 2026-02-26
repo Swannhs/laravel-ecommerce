@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\RadioFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\GoogleFontsField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\RadioField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Ecommerce\Http\Requests\Settings\InvoiceSettingRequest;
-use Botble\Setting\Forms\SettingForm;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Forms\FieldOptions\RadioFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\GoogleFontsField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\RadioField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Settings\InvoiceSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
+use App\Packages\Theme\Facades\Theme;
 
 class InvoiceSettingForm extends SettingForm
 {

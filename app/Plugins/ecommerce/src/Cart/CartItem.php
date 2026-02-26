@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Cart;
+namespace App\Plugins\Ecommerce\Cart;
 
-use Botble\Ecommerce\Cart\Contracts\Buyable;
-use Botble\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Cart\Contracts\Buyable;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
 use Carbon\Carbon;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;

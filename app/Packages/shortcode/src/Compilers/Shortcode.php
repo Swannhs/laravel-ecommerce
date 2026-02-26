@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Shortcode\Compilers;
+namespace App\Packages\Shortcode\Compilers;
 
-use Botble\Base\Facades\Html;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\Html;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Support\Arr;
 
 class Shortcode

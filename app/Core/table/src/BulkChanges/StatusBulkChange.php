@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\BulkChanges;
+namespace App\Core\Table\BulkChanges;
 
-use Botble\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Enums\BaseStatusEnum;
 use Illuminate\Validation\Rule;
 
 class StatusBulkChange extends SelectBulkChange

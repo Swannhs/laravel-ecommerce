@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Shortcode\Compilers;
+namespace App\Packages\Shortcode\Compilers;
 
-use Botble\Shortcode\View\View;
-use Botble\Theme\Facades\Theme;
+use App\Packages\Shortcode\View\View;
+use App\Packages\Theme\Facades\Theme;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;

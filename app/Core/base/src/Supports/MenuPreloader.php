@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Menu\Models\MenuNode;
+use App\Packages\Menu\Models\MenuNode;
 use Illuminate\Support\Collection;
 
 class MenuPreloader

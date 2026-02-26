@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Services\Traits;
+namespace App\Plugins\Payment\Services\Traits;
 
-use Botble\Payment\Supports\PaymentHelper;
+use App\Plugins\Payment\Supports\PaymentHelper;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;

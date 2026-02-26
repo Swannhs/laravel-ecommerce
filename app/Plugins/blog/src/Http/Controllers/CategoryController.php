@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Requests\UpdateTreeCategoryRequest;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Blog\Forms\CategoryForm;
-use Botble\Blog\Http\Requests\CategoryRequest;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Tables\CategoryTable;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Requests\UpdateTreeCategoryRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Base\Supports\RepositoryHelper;
+use App\Plugins\Blog\Forms\CategoryForm;
+use App\Plugins\Blog\Http\Requests\CategoryRequest;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Tables\CategoryTable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

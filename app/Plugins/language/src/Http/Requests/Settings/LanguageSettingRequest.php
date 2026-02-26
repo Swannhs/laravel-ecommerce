@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Http\Requests\Settings;
+namespace App\Plugins\Language\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class LanguageSettingRequest extends Request
 {

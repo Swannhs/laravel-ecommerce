@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Facades\ProductCategoryHelper;
+use App\Plugins\Ecommerce\Facades\ProductCategoryHelper;
 use Illuminate\Support\Collection;
 
 if (! function_exists('get_product_categories')) {

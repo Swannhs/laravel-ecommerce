@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace App\Packages\Theme\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Sitemap\Sitemap;
-use Botble\Slug\Facades\SlugHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\Sitemap\Sitemap;
+use App\Packages\Slug\Facades\SlugHelper;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Response;

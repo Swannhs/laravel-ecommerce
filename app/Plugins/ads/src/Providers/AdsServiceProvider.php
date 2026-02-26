@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Ads\Providers;
+namespace App\Plugins\Ads\Providers;
 
-use Botble\Ads\Facades\AdsManager;
-use Botble\Ads\Forms\AdsForm;
-use Botble\Ads\Models\Ads;
-use Botble\Ads\Repositories\Eloquent\AdsRepository;
-use Botble\Ads\Repositories\Interfaces\AdsInterface;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
-use Botble\Shortcode\Facades\Shortcode;
-use Botble\Shortcode\Forms\ShortcodeForm;
+use App\Plugins\Ads\Facades\AdsManager;
+use App\Plugins\Ads\Forms\AdsForm;
+use App\Plugins\Ads\Models\Ads;
+use App\Plugins\Ads\Repositories\Eloquent\AdsRepository;
+use App\Plugins\Ads\Repositories\Interfaces\AdsInterface;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
+use App\Packages\Shortcode\Facades\Shortcode;
+use App\Packages\Shortcode\Forms\ShortcodeForm;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Events\RouteMatched;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Models\AdminNotification;
-use Botble\Base\Models\AdminNotificationQueryBuilder;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Models\AdminNotification;
+use App\Core\Base\Models\AdminNotificationQueryBuilder;
 use Carbon\Carbon;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Http\RedirectResponse;

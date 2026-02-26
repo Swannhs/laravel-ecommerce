@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Repositories\Caches;
+namespace App\Plugins\Payment\Repositories\Caches;
 
-use Botble\Payment\Repositories\Eloquent\PaymentRepository;
+use App\Plugins\Payment\Repositories\Eloquent\PaymentRepository;
 
 /**
  * @deprecated

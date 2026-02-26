@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Widgets\Table;
-use Botble\Marketplace\Tables\StoreRevenueTable as BaseStoreRevenueTable;
+use App\Core\Base\Widgets\Table;
+use App\Plugins\Marketplace\Tables\StoreRevenueTable as BaseStoreRevenueTable;
 
 class StoreRevenueTable extends Table
 {

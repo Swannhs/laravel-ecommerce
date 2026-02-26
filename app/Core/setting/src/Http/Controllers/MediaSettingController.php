@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
-use Botble\Setting\Forms\MediaSettingForm;
-use Botble\Setting\Http\Requests\MediaSettingRequest;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
+use App\Core\Setting\Forms\MediaSettingForm;
+use App\Core\Setting\Http\Requests\MediaSettingRequest;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Throwable;

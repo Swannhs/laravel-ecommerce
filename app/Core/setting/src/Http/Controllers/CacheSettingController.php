@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Setting\Forms\CacheSettingForm;
-use Botble\Setting\Http\Requests\CacheSettingRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Setting\Forms\CacheSettingForm;
+use App\Core\Setting\Http\Requests\CacheSettingRequest;
 
 class CacheSettingController extends SettingController
 {

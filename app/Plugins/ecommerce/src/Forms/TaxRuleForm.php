@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Forms\Concerns\HasLocationFields;
-use Botble\Ecommerce\Forms\Concerns\HasSubmitButton;
-use Botble\Ecommerce\Http\Requests\TaxRuleRequest;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Ecommerce\Models\TaxRule;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Forms\Concerns\HasLocationFields;
+use App\Plugins\Ecommerce\Forms\Concerns\HasSubmitButton;
+use App\Plugins\Ecommerce\Http\Requests\TaxRuleRequest;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Ecommerce\Models\TaxRule;
 use Illuminate\Support\Facades\Request;
 
 class TaxRuleForm extends FormAbstract

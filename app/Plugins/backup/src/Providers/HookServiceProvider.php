@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Backup\Providers;
+namespace App\Plugins\Backup\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Dashboard\Events\RenderingDashboardWidgets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Dashboard\Events\RenderingDashboardWidgets;
 
 class HookServiceProvider extends ServiceProvider
 {

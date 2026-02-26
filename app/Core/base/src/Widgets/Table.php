@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Widgets;
+namespace App\Core\Base\Widgets;
 
-use Botble\Table\TableBuilder;
+use App\Core\Table\TableBuilder;
 
 abstract class Table extends Widget
 {

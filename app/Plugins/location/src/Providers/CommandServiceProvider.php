@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Location\Providers;
+namespace App\Plugins\Location\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Location\Commands\MigrateLocationCommand;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Plugins\Location\Commands\MigrateLocationCommand;
 
 class CommandServiceProvider extends ServiceProvider
 {

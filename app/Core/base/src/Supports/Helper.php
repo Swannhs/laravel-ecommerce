@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Services\ClearCacheService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Services\ClearCacheService;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;

@@ -1,11 +1,11 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {
-    Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
         Route::group(['prefix' => 'discounts', 'as' => 'discounts.'], function (): void {
             Route::resource('', 'DiscountController')->parameters(['' => 'discount']);
 
@@ -19,7 +19,7 @@ AdminHelper::registerRoutes(function (): void {
 });
 
 Theme::registerRoutes(function (): void {
-    Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Fronts'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers\Fronts'], function (): void {
         Route::group(['prefix' => 'coupon', 'as' => 'public.coupon.'], function (): void {
             Route::post('apply', [
                 'as' => 'apply',

@@ -1,13 +1,13 @@
 <?php
 
-use Botble\Installer\Http\Controllers\AccountController;
-use Botble\Installer\Http\Controllers\EnvironmentController;
-use Botble\Installer\Http\Controllers\FinalController;
-use Botble\Installer\Http\Controllers\InstallController;
-use Botble\Installer\Http\Controllers\LicenseController;
-use Botble\Installer\Http\Controllers\RequirementController;
-use Botble\Installer\Http\Controllers\ThemeController;
-use Botble\Installer\Http\Controllers\ThemePresetController;
+use App\Packages\Installer\Http\Controllers\AccountController;
+use App\Packages\Installer\Http\Controllers\EnvironmentController;
+use App\Packages\Installer\Http\Controllers\FinalController;
+use App\Packages\Installer\Http\Controllers\InstallController;
+use App\Packages\Installer\Http\Controllers\LicenseController;
+use App\Packages\Installer\Http\Controllers\RequirementController;
+use App\Packages\Installer\Http\Controllers\ThemeController;
+use App\Packages\Installer\Http\Controllers\ThemePresetController;
 use Illuminate\Support\Facades\Route;
 
 Route::group([

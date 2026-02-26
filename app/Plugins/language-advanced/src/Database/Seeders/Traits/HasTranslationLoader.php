@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Database\Seeders\Traits;
+namespace App\Plugins\LanguageAdvanced\Database\Seeders\Traits;
 
 use Illuminate\Support\Facades\File;
 

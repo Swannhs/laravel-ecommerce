@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Language\Facades\Language;
-use Botble\Language\Models\Language as LanguageModel;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Models\Language as LanguageModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ProductSpecificationAttributeTranslation extends BaseModel

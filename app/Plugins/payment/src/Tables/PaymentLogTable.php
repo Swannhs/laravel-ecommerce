@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Payment\Tables;
+namespace App\Plugins\Payment\Tables;
 
-use Botble\Payment\Models\PaymentLog;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\ViewAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\DateTimeColumn;
-use Botble\Table\Columns\EnumColumn;
-use Botble\Table\Columns\IdColumn;
+use App\Plugins\Payment\Models\PaymentLog;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\ViewAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\DateTimeColumn;
+use App\Core\Table\Columns\EnumColumn;
+use App\Core\Table\Columns\IdColumn;
 use Illuminate\Database\Eloquent\Builder;
 
 class PaymentLogTable extends TableAbstract

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Menu\Widgets\Fronts;
+namespace App\Packages\Menu\Widgets\Fronts;
 
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Menu\Models\Menu;
-use Botble\Menu\Models\Menu as MenuModel;
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\Forms\WidgetForm;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Supports\RepositoryHelper;
+use App\Packages\Menu\Models\Menu;
+use App\Packages\Menu\Models\Menu as MenuModel;
+use App\Packages\Widget\AbstractWidget;
+use App\Packages\Widget\Forms\WidgetForm;
 
 class CustomMenu extends AbstractWidget
 {

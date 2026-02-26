@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Page\Providers;
+namespace App\Packages\Page\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Page\Models\Page;
-use Botble\Page\Repositories\Eloquent\PageRepository;
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\Shortcode\View\View;
-use Botble\Theme\Events\RenderingAdminBar;
-use Botble\Theme\Facades\AdminBar;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Page\Models\Page;
+use App\Packages\Page\Repositories\Eloquent\PageRepository;
+use App\Packages\Page\Repositories\Interfaces\PageInterface;
+use App\Packages\Shortcode\View\View;
+use App\Packages\Theme\Events\RenderingAdminBar;
+use App\Packages\Theme\Facades\AdminBar;
 use Illuminate\Support\Facades\View as ViewFacade;
 
 /**

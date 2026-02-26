@@ -1,7 +1,7 @@
 <?php
 
-use Botble\SslCommerz\Http\Controllers\SslCommerzPaymentController;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\SslCommerz\Http\Controllers\SslCommerzPaymentController;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 Theme::registerRoutes(function (): void {

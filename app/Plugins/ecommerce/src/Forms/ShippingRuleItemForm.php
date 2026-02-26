@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
-use Botble\Ecommerce\Forms\Concerns\HasLocationFields;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
-use Botble\Ecommerce\Http\Requests\ShippingRuleItemRequest;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Ecommerce\Models\ShippingRuleItem;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Forms\Concerns\HasLocationFields;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\ShippingRuleItemRequest;
+use App\Plugins\Ecommerce\Models\ShippingRule;
+use App\Plugins\Ecommerce\Models\ShippingRuleItem;
 use Illuminate\Database\Eloquent\Builder;
 
 class ShippingRuleItemForm extends FormAbstract

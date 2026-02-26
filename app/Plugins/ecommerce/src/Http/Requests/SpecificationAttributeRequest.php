@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\SpecificationAttributeFieldType;
-use Botble\Ecommerce\Models\SpecificationGroup;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\SpecificationAttributeFieldType;
+use App\Plugins\Ecommerce\Models\SpecificationGroup;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class SpecificationAttributeRequest extends Request

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\ProductSearchSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\ProductSearchSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\ProductSearchSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\ProductSearchSettingRequest;
 use Illuminate\Support\Facades\Cache;
 
 class ProductSearchSettingController extends SettingController

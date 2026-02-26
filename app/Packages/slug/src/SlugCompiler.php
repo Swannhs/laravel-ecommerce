@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug;
+namespace App\Packages\Slug;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use Carbon\Carbon;
 
 class SlugCompiler

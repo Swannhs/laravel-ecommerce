@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Media\Storage\BunnyCDN\Exceptions;
+namespace App\Core\Media\Storage\BunnyCDN\Exceptions;
 
 class DirectoryNotEmptyException extends BunnyCDNException
 {

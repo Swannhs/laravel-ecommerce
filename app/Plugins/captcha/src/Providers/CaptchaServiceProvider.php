@@ -1,27 +1,27 @@
 <?php
 
-namespace Botble\Captcha\Providers;
+namespace App\Plugins\Captcha\Providers;
 
-use Botble\ACL\Forms\Auth\ForgotPasswordForm;
-use Botble\ACL\Forms\Auth\LoginForm;
-use Botble\ACL\Forms\Auth\ResetPasswordForm;
-use Botble\ACL\Http\Requests\ForgotPasswordRequest;
-use Botble\ACL\Http\Requests\LoginRequest;
-use Botble\ACL\Http\Requests\ResetPasswordRequest;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Captcha\Captcha;
-use Botble\Captcha\CaptchaV3;
-use Botble\Captcha\Facades\Captcha as CaptchaFacade;
-use Botble\Captcha\Forms\Fields\MathCaptchaField;
-use Botble\Captcha\Forms\Fields\ReCaptchaField;
-use Botble\Captcha\MathCaptcha;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
-use Botble\Support\Http\Requests\Request;
-use Botble\Theme\FormFront;
+use App\Core\ACL\Forms\Auth\ForgotPasswordForm;
+use App\Core\ACL\Forms\Auth\LoginForm;
+use App\Core\ACL\Forms\Auth\ResetPasswordForm;
+use App\Core\ACL\Http\Requests\ForgotPasswordRequest;
+use App\Core\ACL\Http\Requests\LoginRequest;
+use App\Core\ACL\Http\Requests\ResetPasswordRequest;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Captcha\Captcha;
+use App\Plugins\Captcha\CaptchaV3;
+use App\Plugins\Captcha\Facades\Captcha as CaptchaFacade;
+use App\Plugins\Captcha\Forms\Fields\MathCaptchaField;
+use App\Plugins\Captcha\Forms\Fields\ReCaptchaField;
+use App\Plugins\Captcha\MathCaptcha;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
+use App\Core\Support\Http\Requests\Request;
+use App\Packages\Theme\FormFront;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Http\Request as IlluminateRequest;
 use Illuminate\Routing\Events\Routing;

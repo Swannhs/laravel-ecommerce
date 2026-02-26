@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Http\Controllers\Auth;
+namespace App\Core\ACL\Http\Controllers\Auth;
 
-use Botble\ACL\Forms\Auth\ForgotPasswordForm;
-use Botble\ACL\Traits\SendsPasswordResetEmails;
-use Botble\Base\Http\Controllers\BaseController;
+use App\Core\ACL\Forms\Auth\ForgotPasswordForm;
+use App\Core\ACL\Traits\SendsPasswordResetEmails;
+use App\Core\Base\Http\Controllers\BaseController;
 use Illuminate\Http\Request;
 
 class ForgotPasswordController extends BaseController

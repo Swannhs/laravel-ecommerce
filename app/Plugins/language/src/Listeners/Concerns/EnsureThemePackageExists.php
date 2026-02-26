@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Language\Listeners\Concerns;
+namespace App\Plugins\Language\Listeners\Concerns;
 
-use Botble\Theme\Theme;
+use App\Packages\Theme\Theme;
 
 trait EnsureThemePackageExists
 {

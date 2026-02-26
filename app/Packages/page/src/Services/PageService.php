@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Page\Services;
+namespace App\Packages\Page\Services;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Media\Facades\RvMedia;
-use Botble\Page\Models\Page;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Slug\Models\Slug;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\RepositoryHelper;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Page\Models\Page;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 

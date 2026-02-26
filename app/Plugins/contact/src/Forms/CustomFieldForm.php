@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Contact\Forms;
+namespace App\Plugins\Contact\Forms;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Forms\MetaBox;
-use Botble\Contact\Enums\CustomFieldType;
-use Botble\Contact\Http\Requests\CustomFieldRequest;
-use Botble\Contact\Models\CustomField;
-use Botble\Language\Facades\Language;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Forms\MetaBox;
+use App\Plugins\Contact\Enums\CustomFieldType;
+use App\Plugins\Contact\Http\Requests\CustomFieldRequest;
+use App\Plugins\Contact\Models\CustomField;
+use App\Plugins\Language\Facades\Language;
 
 class CustomFieldForm extends FormAbstract
 {

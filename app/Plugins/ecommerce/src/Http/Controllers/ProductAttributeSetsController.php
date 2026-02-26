@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\ProductAttributeSetForm;
-use Botble\Ecommerce\Http\Requests\ProductAttributeSetsRequest;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Services\ProductAttributes\StoreAttributeSetService;
-use Botble\Ecommerce\Tables\ProductAttributeSetsTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\ProductAttributeSetForm;
+use App\Plugins\Ecommerce\Http\Requests\ProductAttributeSetsRequest;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Ecommerce\Services\ProductAttributes\StoreAttributeSetService;
+use App\Plugins\Ecommerce\Tables\ProductAttributeSetsTable;
 
 class ProductAttributeSetsController extends BaseController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Dashboard\Models;
+namespace App\Core\Dashboard\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class DashboardWidget extends BaseModel

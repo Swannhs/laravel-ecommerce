@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Mollie\Http\Controllers\MollieController;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Mollie\Http\Controllers\MollieController;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Support\Facades\Route;
 

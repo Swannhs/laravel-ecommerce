@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Tables\Formatters\PriceFormatter;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\ViewAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\IdColumn;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Tables\Formatters\PriceFormatter;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\ViewAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\IdColumn;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Backup\Supports;
+namespace App\Plugins\Backup\Supports;
 
-use Botble\Backup\Supports\MySql\MySqlDump;
-use Botble\Backup\Supports\PgSql\Backup as PgSqlBackup;
-use Botble\Backup\Supports\PgSql\Restore as PgSqlRestore;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Database;
-use Botble\Base\Supports\Zipper;
+use App\Plugins\Backup\Supports\MySql\MySqlDump;
+use App\Plugins\Backup\Supports\PgSql\Backup as PgSqlBackup;
+use App\Plugins\Backup\Supports\PgSql\Restore as PgSqlRestore;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Database;
+use App\Core\Base\Supports\Zipper;
 use Carbon\Carbon;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Arr;

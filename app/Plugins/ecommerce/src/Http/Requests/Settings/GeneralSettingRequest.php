@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\Settings;
+namespace App\Plugins\Ecommerce\Http\Requests\Settings;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Rules\EmailRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Support\Http\Requests\Request;
 
 class GeneralSettingRequest extends Request
 {

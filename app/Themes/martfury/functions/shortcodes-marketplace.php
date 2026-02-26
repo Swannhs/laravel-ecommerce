@@ -1,16 +1,16 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\TagFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\TagField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Marketplace\Models\Store;
-use Botble\Shortcode\Compilers\Shortcode;
-use Botble\Shortcode\Forms\ShortcodeForm;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\TagFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\TagField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Marketplace\Models\Store;
+use App\Packages\Shortcode\Compilers\Shortcode;
+use App\Packages\Shortcode\Forms\ShortcodeForm;
+use App\Packages\Theme\Facades\Theme;
 
 if (is_plugin_active('marketplace')) {
     Assets::addStylesDirectly('vendor/core/core/base/libraries/tagify/tagify.css');

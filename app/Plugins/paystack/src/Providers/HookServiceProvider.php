@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Paystack\Providers;
+namespace App\Plugins\Paystack\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\Paystack\Forms\PaystackPaymentMethodForm;
-use Botble\Paystack\Services\Gateways\PaystackPaymentService;
-use Botble\Paystack\Services\Paystack;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Plugins\Paystack\Forms\PaystackPaymentMethodForm;
+use App\Plugins\Paystack\Services\Gateways\PaystackPaymentService;
+use App\Plugins\Paystack\Services\Paystack;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;

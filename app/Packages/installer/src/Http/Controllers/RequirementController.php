@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers;
+namespace App\Packages\Installer\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Installer\Supports\RequirementsChecker;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Packages\Installer\Supports\RequirementsChecker;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

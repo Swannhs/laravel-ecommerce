@@ -16,7 +16,7 @@
 
                     $productIds = $orderProducts->pluck('product_id')->filter()->all();
                     if (!empty($productIds)) {
-                        $productsWithRelations = \Botble\Ecommerce\Models\Product::query()
+                        $productsWithRelations = \App\Plugins\Ecommerce\Models\Product::query()
                             ->whereIn('id', $productIds)
                             ->with(['brand', 'categories', 'variationInfo.configurableProduct.brand', 'variationInfo.configurableProduct.categories'])
                             ->get()

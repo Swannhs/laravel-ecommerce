@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Models\MetaBox;
+use App\Core\Base\Models\MetaBox;
 
 class MetadataCache
 {

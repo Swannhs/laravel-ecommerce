@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Chunks\Storage;
+namespace App\Core\Media\Chunks\Storage;
 
-use Botble\Media\Chunks\ChunkFile;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Media\Chunks\ChunkFile;
+use App\Core\Media\Facades\RvMedia;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Filesystem\FilesystemAdapter;

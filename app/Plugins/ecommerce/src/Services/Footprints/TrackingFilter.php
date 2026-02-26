@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Footprints;
+namespace App\Plugins\Ecommerce\Services\Footprints;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

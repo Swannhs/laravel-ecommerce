@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\AdsTracking;
+namespace App\Plugins\Ecommerce\AdsTracking;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\SeoHelper\Facades\SeoHelper;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Packages\SeoHelper\Facades\SeoHelper;
 
 class FacebookPixel
 {

@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\WithdrawalFeeTypeEnum;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Events\WithdrawalRequested;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\VendorWithdrawalForm;
-use Botble\Marketplace\Http\Requests\Fronts\VendorEditWithdrawalRequest;
-use Botble\Marketplace\Http\Requests\Fronts\VendorWithdrawalRequest;
-use Botble\Marketplace\Models\VendorInfo;
-use Botble\Marketplace\Models\Withdrawal;
-use Botble\Marketplace\Tables\VendorWithdrawalTable;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\WithdrawalFeeTypeEnum;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Events\WithdrawalRequested;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\VendorWithdrawalForm;
+use App\Plugins\Marketplace\Http\Requests\Fronts\VendorEditWithdrawalRequest;
+use App\Plugins\Marketplace\Http\Requests\Fronts\VendorWithdrawalRequest;
+use App\Plugins\Marketplace\Models\VendorInfo;
+use App\Plugins\Marketplace\Models\Withdrawal;
+use App\Plugins\Marketplace\Tables\VendorWithdrawalTable;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use Throwable;

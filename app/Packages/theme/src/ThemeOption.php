@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Theme;
+namespace App\Packages\Theme;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Form;
-use Botble\Language\Facades\Language;
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\ThemeOption\ThemeOptionField;
-use Botble\Theme\ThemeOption\ThemeOptionSection;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Form;
+use App\Plugins\Language\Facades\Language;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\ThemeOption\ThemeOptionField;
+use App\Packages\Theme\ThemeOption\ThemeOptionSection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Traits\Conditionable;
@@ -147,7 +147,7 @@ class ThemeOption
     }
 
     /**
-     * @param  \Botble\Theme\ThemeOption\ThemeOptionSection[]|array  $sections
+     * @param  \App\Packages\Theme\ThemeOption\ThemeOptionSection[]|array  $sections
      */
     public function setSections(array $sections = []): self
     {
@@ -228,7 +228,7 @@ class ThemeOption
     }
 
     /**
-     * @param  \Botble\Theme\ThemeOption\ThemeOptionField[]|array  $fields
+     * @param  \App\Packages\Theme\ThemeOption\ThemeOptionField[]|array  $fields
      */
     public function processFieldsArray(string $sectionId = '', array $fields = []): void
     {

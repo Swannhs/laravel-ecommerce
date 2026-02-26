@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Captcha\Http\Controllers\Settings;
+namespace App\Plugins\Captcha\Http\Controllers\Settings;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Captcha\Forms\CaptchaSettingForm;
-use Botble\Captcha\Http\Requests\Settings\CaptchaSettingRequest;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Captcha\Forms\CaptchaSettingForm;
+use App\Plugins\Captcha\Http\Requests\Settings\CaptchaSettingRequest;
+use App\Core\Setting\Http\Controllers\SettingController;
 
 class CaptchaSettingController extends SettingController
 {

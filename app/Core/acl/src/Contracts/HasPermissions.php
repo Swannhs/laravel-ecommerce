@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\ACL\Contracts;
+namespace App\Core\ACL\Contracts;
 
 interface HasPermissions
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\AdminNotificationEvent;
-use Botble\Base\Supports\AdminNotificationItem;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Events\ShippingStatusChanged;
-use Botble\Ecommerce\Facades\OrderHelper;
+use App\Core\Base\Events\AdminNotificationEvent;
+use App\Core\Base\Supports\AdminNotificationItem;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Events\ShippingStatusChanged;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
 
 class SendShippingStatusChangedNotification
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Language;
+namespace App\Plugins\Language;
 
 use Illuminate\Http\Request;
 use Locale;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Auth;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Auth;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\FormFront;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\FormFront;
 
 abstract class AuthForm extends FormFront
 {

@@ -2,7 +2,7 @@
     <x-plugins-payment::payment-method
         :name="PAYPAL_PAYMENT_METHOD_NAME"
         paymentName="PayPal"
-        :supportedCurrencies="(new Botble\PayPal\Services\Gateways\PayPalPaymentService)->supportedCurrencyCodes()"
+        :supportedCurrencies="(new App\Plugins\PayPal\Services\Gateways\PayPalPaymentService)->supportedCurrencyCodes()"
     >
         <x-slot name="currencyNotSupportedMessage">
             <p class="mt-1 mb-0">

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Chart\Providers;
+namespace App\Core\Chart\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
 
 class ChartServiceProvider extends ServiceProvider
 {

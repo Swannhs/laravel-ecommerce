@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Blog\Models;
+namespace App\Plugins\Blog\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Contracts\HasTreeCategory as HasTreeCategoryContract;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\Html;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\HasTreeCategory;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Contracts\HasTreeCategory as HasTreeCategoryContract;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Traits\HasTreeCategory;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;

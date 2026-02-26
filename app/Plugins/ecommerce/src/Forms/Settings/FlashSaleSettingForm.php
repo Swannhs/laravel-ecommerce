@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Ecommerce\Facades\FlashSale;
-use Botble\Ecommerce\Http\Requests\Settings\FlashSaleSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Plugins\Ecommerce\Facades\FlashSale;
+use App\Plugins\Ecommerce\Http\Requests\Settings\FlashSaleSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class FlashSaleSettingForm extends SettingForm
 {

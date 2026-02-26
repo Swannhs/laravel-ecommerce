@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
-use Botble\Ecommerce\Models\ProductAttributeSet;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

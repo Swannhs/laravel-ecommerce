@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Newsletter\Http\Controllers;
+namespace App\Plugins\Newsletter\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Newsletter\Models\Newsletter;
-use Botble\Newsletter\Tables\NewsletterTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Newsletter\Models\Newsletter;
+use App\Plugins\Newsletter\Tables\NewsletterTable;
 
 class NewsletterController extends BaseController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\OrderHistoryInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\OrderHistoryInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class OrderHistoryRepository extends RepositoriesAbstract implements OrderHistoryInterface
 {

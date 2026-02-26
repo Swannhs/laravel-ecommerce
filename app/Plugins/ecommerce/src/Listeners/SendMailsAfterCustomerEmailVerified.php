@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Events\CustomerEmailVerified;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Events\CustomerEmailVerified;
 
 class SendMailsAfterCustomerEmailVerified
 {

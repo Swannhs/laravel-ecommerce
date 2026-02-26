@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Facades\Currency as CurrencyFacade;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Facades\Currency as CurrencyFacade;
 use Illuminate\Http\JsonResponse;
 
 class CurrencyController extends BaseApiController

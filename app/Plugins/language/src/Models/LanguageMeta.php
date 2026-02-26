@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Models;
+namespace App\Plugins\Language\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Language\Facades\Language as LanguageFacade;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Language\Facades\Language as LanguageFacade;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class LanguageMeta extends BaseModel

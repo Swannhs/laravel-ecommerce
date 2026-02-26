@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\PayPal\Services\Abstracts;
+namespace App\Plugins\PayPal\Services\Abstracts;
 
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Services\Traits\PaymentErrorTrait;
-use Botble\PayPal\Services\Core\PayPalHttpClient;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Payment\Services\Traits\PaymentErrorTrait;
+use App\Plugins\PayPal\Services\Core\PayPalHttpClient;
+use App\Packages\Theme\Facades\Theme;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

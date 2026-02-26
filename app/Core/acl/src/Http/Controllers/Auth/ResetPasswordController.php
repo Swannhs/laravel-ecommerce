@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Http\Controllers\Auth;
+namespace App\Core\ACL\Http\Controllers\Auth;
 
-use Botble\ACL\Forms\Auth\ResetPasswordForm;
-use Botble\ACL\Traits\ResetsPasswords;
-use Botble\Base\Http\Controllers\BaseController;
+use App\Core\ACL\Forms\Auth\ResetPasswordForm;
+use App\Core\ACL\Traits\ResetsPasswords;
+use App\Core\Base\Http\Controllers\BaseController;
 use Illuminate\Http\Request;
 
 class ResetPasswordController extends BaseController

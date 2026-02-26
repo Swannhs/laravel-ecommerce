@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\AdminNotificationEvent;
-use Botble\Base\Supports\AdminNotificationItem;
-use Botble\Ecommerce\Events\OrderCreated;
-use Botble\Ecommerce\Events\OrderPlacedEvent;
+use App\Core\Base\Events\AdminNotificationEvent;
+use App\Core\Base\Supports\AdminNotificationItem;
+use App\Plugins\Ecommerce\Events\OrderCreated;
+use App\Plugins\Ecommerce\Events\OrderPlacedEvent;
 
 class OrderCreatedNotification
 {

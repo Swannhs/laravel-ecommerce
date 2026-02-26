@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace App\Core\ACL\Providers;
 
-use Botble\ACL\Commands\UserCreateCommand;
-use Botble\ACL\Commands\UserPasswordCommand;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\ACL\Commands\UserCreateCommand;
+use App\Core\ACL\Commands\UserPasswordCommand;
+use App\Core\Base\Supports\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
 {

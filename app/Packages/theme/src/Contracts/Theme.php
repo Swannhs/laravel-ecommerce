@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Contracts;
+namespace App\Packages\Theme\Contracts;
 
 interface Theme
 {

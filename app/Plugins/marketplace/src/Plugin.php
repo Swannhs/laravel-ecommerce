@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace;
+namespace App\Plugins\Marketplace;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Setting\Facades\Setting;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 

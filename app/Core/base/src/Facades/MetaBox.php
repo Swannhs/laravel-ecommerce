@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Supports\MetaBox as MetaBoxSupport;
+use App\Core\Base\Supports\MetaBox as MetaBoxSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool deleteMetaData(\Illuminate\Database\Eloquent\Model $object, string $key)
  * @method static array getMetaBoxes()
  *
- * @see \Botble\Base\Supports\MetaBox
+ * @see \App\Core\Base\Supports\MetaBox
  */
 class MetaBox extends Facade
 {

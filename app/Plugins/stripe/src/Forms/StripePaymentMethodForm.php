@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Stripe\Forms;
+namespace App\Plugins\Stripe\Forms;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Payment\Concerns\Forms\HasAvailableCountriesField;
-use Botble\Payment\Forms\PaymentMethodForm;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Payment\Concerns\Forms\HasAvailableCountriesField;
+use App\Plugins\Payment\Forms\PaymentMethodForm;
 
 class StripePaymentMethodForm extends PaymentMethodForm
 {

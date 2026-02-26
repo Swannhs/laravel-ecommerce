@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Shipping;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Shipping;
+use App\Plugins\Ecommerce\Models\ShippingRule;
+use App\Core\Support\Services\Cache\Cache;
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;

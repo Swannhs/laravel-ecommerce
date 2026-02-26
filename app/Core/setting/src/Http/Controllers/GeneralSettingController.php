@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Exceptions\LicenseInvalidException;
-use Botble\Base\Exceptions\LicenseIsAlreadyActivatedException;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Core;
-use Botble\Base\Supports\Language;
-use Botble\Setting\Facades\Setting;
-use Botble\Setting\Forms\GeneralSettingForm;
-use Botble\Setting\Http\Requests\GeneralSettingRequest;
-use Botble\Setting\Http\Requests\LicenseSettingRequest;
-use Botble\Setting\Models\Setting as SettingModel;
+use App\Core\Base\Exceptions\LicenseInvalidException;
+use App\Core\Base\Exceptions\LicenseIsAlreadyActivatedException;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Core;
+use App\Core\Base\Supports\Language;
+use App\Core\Setting\Facades\Setting;
+use App\Core\Setting\Forms\GeneralSettingForm;
+use App\Core\Setting\Http\Requests\GeneralSettingRequest;
+use App\Core\Setting\Http\Requests\LicenseSettingRequest;
+use App\Core\Setting\Models\Setting as SettingModel;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts;
+namespace App\Plugins\Ecommerce\Forms\Fronts;
 
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Fronts\OrderTrackingRequest;
-use Botble\Theme\FormFront;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\OrderTrackingRequest;
+use App\Packages\Theme\FormFront;
 
 class OrderTrackingForm extends FormFront
 {

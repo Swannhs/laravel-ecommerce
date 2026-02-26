@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\PanelSections;
+namespace App\Core\Setting\PanelSections;
 
-use Botble\Base\PanelSections\PanelSection;
+use App\Core\Base\PanelSections\PanelSection;
 
 class SettingOthersPanelSection extends PanelSection
 {

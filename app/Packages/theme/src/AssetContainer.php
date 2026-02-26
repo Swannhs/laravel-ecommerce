@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme;
+namespace App\Packages\Theme;
 
-use Botble\Base\Facades\Html;
-use Botble\Theme\Facades\Theme as ThemeFacade;
+use App\Core\Base\Facades\Html;
+use App\Packages\Theme\Facades\Theme as ThemeFacade;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;

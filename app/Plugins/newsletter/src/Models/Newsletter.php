@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Newsletter\Models;
+namespace App\Plugins\Newsletter\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Models\BaseModel;
-use Botble\Newsletter\Enums\NewsletterStatusEnum;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Newsletter\Enums\NewsletterStatusEnum;
 
 class Newsletter extends BaseModel
 {

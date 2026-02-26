@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\Abstracts\Concerns;
+namespace App\Core\Table\Abstracts\Concerns;
 
-use Botble\Table\HeaderActions\HeaderAction;
+use App\Core\Table\HeaderActions\HeaderAction;
 
 trait HasHeaderActions
 {

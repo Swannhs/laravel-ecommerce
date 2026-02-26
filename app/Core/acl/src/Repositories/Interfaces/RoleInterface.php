@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Repositories\Interfaces;
+namespace App\Core\ACL\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface RoleInterface extends RepositoryInterface
 {

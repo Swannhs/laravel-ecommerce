@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Mollie;
+namespace App\Plugins\Mollie;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
 
 class Plugin extends PluginOperationAbstract
 {

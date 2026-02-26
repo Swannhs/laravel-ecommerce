@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace App\Core\Base\Listeners;
 
-use Botble\Base\Events\SendMailEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\EmailAbstract;
+use App\Core\Base\Events\SendMailEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\EmailAbstract;
 use Exception;
 use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Contracts\Queue\ShouldQueue;

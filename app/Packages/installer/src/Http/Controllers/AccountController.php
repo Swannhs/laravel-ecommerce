@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers;
+namespace App\Packages\Installer\Http\Controllers;
 
-use Botble\ACL\Models\User;
-use Botble\ACL\Services\ActivateUserService;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Installer\Http\Requests\SaveAccountRequest;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Services\ActivateUserService;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Packages\Installer\Http\Requests\SaveAccountRequest;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Contracts\View\View;

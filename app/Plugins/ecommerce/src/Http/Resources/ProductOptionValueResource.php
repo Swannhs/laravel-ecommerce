@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources;
+namespace App\Plugins\Ecommerce\Http\Resources;
 
-use Botble\Ecommerce\Models\OptionValue;
+use App\Plugins\Ecommerce\Models\OptionValue;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

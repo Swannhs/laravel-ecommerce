@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Setting\Http\Requests;
+namespace App\Core\Setting\Http\Requests;
 
-use Botble\Base\Facades\AdminAppearance;
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Rules\GoogleFontsRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\AdminAppearance;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Rules\GoogleFontsRule;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class AdminAppearanceRequest extends Request

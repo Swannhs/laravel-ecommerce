@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Models\BaseModel;
-use Botble\Marketplace\Forms\Concerns\HasSubmitButton;
-use Botble\Marketplace\Http\Requests\TaxInformationSettingRequest;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Marketplace\Forms\Concerns\HasSubmitButton;
+use App\Plugins\Marketplace\Http\Requests\TaxInformationSettingRequest;
 use Illuminate\Support\Arr;
 
 class TaxInformationForm extends FormAbstract

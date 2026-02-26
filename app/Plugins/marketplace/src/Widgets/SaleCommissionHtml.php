@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Widgets\Html;
-use Botble\Marketplace\Enums\RevenueTypeEnum;
-use Botble\Marketplace\Models\Revenue;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Widgets\Html;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
+use App\Plugins\Marketplace\Models\Revenue;
 use Carbon\CarbonPeriod;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;

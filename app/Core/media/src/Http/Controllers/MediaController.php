@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Media\Http\Controllers;
+namespace App\Core\Media\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Http\Requests\MediaListRequest;
-use Botble\Media\Http\Resources\FileResource;
-use Botble\Media\Http\Resources\FolderResource;
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Models\MediaFolder;
-use Botble\Media\Models\MediaSetting;
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
-use Botble\Media\Repositories\Interfaces\MediaFolderInterface;
-use Botble\Media\Services\ThumbnailService;
-use Botble\Media\Services\UploadsManager;
-use Botble\Media\Supports\Zipper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Http\Requests\MediaListRequest;
+use App\Core\Media\Http\Resources\FileResource;
+use App\Core\Media\Http\Resources\FolderResource;
+use App\Core\Media\Models\MediaFile;
+use App\Core\Media\Models\MediaFolder;
+use App\Core\Media\Models\MediaSetting;
+use App\Core\Media\Repositories\Interfaces\MediaFileInterface;
+use App\Core\Media\Repositories\Interfaces\MediaFolderInterface;
+use App\Core\Media\Services\ThumbnailService;
+use App\Core\Media\Services\UploadsManager;
+use App\Core\Media\Supports\Zipper;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;

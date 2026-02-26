@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers\Concerns;
+namespace App\Core\Setting\Http\Controllers\Concerns;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Support\Arr;
 
 trait InteractsWithSettings

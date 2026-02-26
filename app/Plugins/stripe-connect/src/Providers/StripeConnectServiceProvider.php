@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\StripeConnect\Providers;
+namespace App\Plugins\StripeConnect\Providers;
 
-use Botble\AffiliatePro\Enums\PayoutPaymentMethodsEnum as AffiliatePayoutPaymentMethodsEnum;
-use Botble\AffiliatePro\Facades\AffiliateHelper;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\PayoutInformationForm;
+use App\Plugins\AffiliatePro\Enums\PayoutPaymentMethodsEnum as AffiliatePayoutPaymentMethodsEnum;
+use App\Plugins\AffiliatePro\Facades\AffiliateHelper;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\PayoutInformationForm;
 use Illuminate\Support\Arr;
 
 class StripeConnectServiceProvider extends ServiceProvider

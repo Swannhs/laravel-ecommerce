@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Widget\Models;
+namespace App\Packages\Widget\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Language\Facades\Language;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Language\Facades\Language;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class Widget extends BaseModel

@@ -1,31 +1,31 @@
 <?php
 
-use Botble\Ads\Facades\AdsManager;
-use Botble\Ads\Repositories\Interfaces\AdsInterface;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FieldOptions\CoreIconFieldOption;
-use Botble\Base\Forms\FieldOptions\DatePickerFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\CoreIconField;
-use Botble\Base\Forms\Fields\DatetimeField;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\FlashSale;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Faq\Models\FaqCategory;
-use Botble\Shortcode\Compilers\Shortcode;
-use Botble\Shortcode\Forms\ShortcodeForm;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Supports\ThemeSupport;
+use App\Plugins\Ads\Facades\AdsManager;
+use App\Plugins\Ads\Repositories\Interfaces\AdsInterface;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Forms\FieldOptions\CoreIconFieldOption;
+use App\Core\Base\Forms\FieldOptions\DatePickerFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\CoreIconField;
+use App\Core\Base\Forms\Fields\DatetimeField;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\FlashSale;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Plugins\Faq\Models\FaqCategory;
+use App\Packages\Shortcode\Compilers\Shortcode;
+use App\Packages\Shortcode\Forms\ShortcodeForm;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Supports\ThemeSupport;
 
 app()->booted(function (): void {
     ThemeSupport::registerGoogleMapsShortcode();

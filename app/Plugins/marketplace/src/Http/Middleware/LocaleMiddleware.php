@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Http\Middleware;
+namespace App\Plugins\Marketplace\Http\Middleware;
 
-use Botble\Base\Supports\Language;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Supports\Language;
+use App\Plugins\Ecommerce\Models\Customer;
 use Closure;
 use Illuminate\Http\Request;
 

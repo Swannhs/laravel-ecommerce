@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests;
+namespace App\Plugins\Marketplace\Http\Requests;
 
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Support\Arr;
 
 class PayoutInformationSettingRequest extends Request

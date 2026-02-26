@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Newsletter\Forms\Fronts;
+namespace App\Plugins\Newsletter\Forms\Fronts;
 
-use Botble\Base\Forms\FieldOptions\ButtonFieldOption;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Newsletter\Http\Requests\NewsletterRequest;
-use Botble\Newsletter\Models\Newsletter;
-use Botble\Theme\FormFront;
+use App\Core\Base\Forms\FieldOptions\ButtonFieldOption;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Plugins\Newsletter\Http\Requests\NewsletterRequest;
+use App\Plugins\Newsletter\Models\Newsletter;
+use App\Packages\Theme\FormFront;
 
 class NewsletterForm extends FormFront
 {

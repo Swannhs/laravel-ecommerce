@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Repositories\Eloquent;
+namespace App\Core\Base\Repositories\Eloquent;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Base\Models\MetaBox;
-use Botble\Base\Repositories\Interfaces\MetaBoxInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Models\MetaBox;
+use App\Core\Base\Repositories\Interfaces\MetaBoxInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 

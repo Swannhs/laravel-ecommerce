@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Ecommerce\Models\Shipment;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Ecommerce\Models\Shipment;
 use Illuminate\Support\Facades\DB;
 
 class ShippingMethodUsageChart extends Chart

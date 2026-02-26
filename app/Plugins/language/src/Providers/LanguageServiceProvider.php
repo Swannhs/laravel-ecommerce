@@ -1,25 +1,25 @@
 <?php
 
-namespace Botble\Language\Providers;
+namespace App\Plugins\Language\Providers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Language\Facades\Language;
-use Botble\Language\Http\Middleware\ApiLanguageMiddleware;
-use Botble\Language\Http\Middleware\LocaleSessionRedirect;
-use Botble\Language\Http\Middleware\LocalizationRedirectFilter;
-use Botble\Language\Http\Middleware\LocalizationRoutes;
-use Botble\Language\Models\Language as LanguageModel;
-use Botble\Language\Models\LanguageMeta;
-use Botble\Language\Repositories\Eloquent\LanguageMetaRepository;
-use Botble\Language\Repositories\Eloquent\LanguageRepository;
-use Botble\Language\Repositories\Interfaces\LanguageInterface;
-use Botble\Language\Repositories\Interfaces\LanguageMetaInterface;
-use Botble\Setting\PanelSections\SettingCommonPanelSection;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Http\Middleware\ApiLanguageMiddleware;
+use App\Plugins\Language\Http\Middleware\LocaleSessionRedirect;
+use App\Plugins\Language\Http\Middleware\LocalizationRedirectFilter;
+use App\Plugins\Language\Http\Middleware\LocalizationRoutes;
+use App\Plugins\Language\Models\Language as LanguageModel;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Plugins\Language\Repositories\Eloquent\LanguageMetaRepository;
+use App\Plugins\Language\Repositories\Eloquent\LanguageRepository;
+use App\Plugins\Language\Repositories\Interfaces\LanguageInterface;
+use App\Plugins\Language\Repositories\Interfaces\LanguageMetaInterface;
+use App\Core\Setting\PanelSections\SettingCommonPanelSection;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Arr;

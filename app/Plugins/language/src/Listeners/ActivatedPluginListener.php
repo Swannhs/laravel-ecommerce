@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Listeners;
+namespace App\Plugins\Language\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Language\Plugin;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Language\Plugin;
 use Exception;
 
 class ActivatedPluginListener

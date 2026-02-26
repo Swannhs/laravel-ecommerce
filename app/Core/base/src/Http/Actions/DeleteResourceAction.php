@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Actions;
+namespace App\Core\Base\Http\Actions;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Closure;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Database\Eloquent\Model;

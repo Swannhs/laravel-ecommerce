@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Enums;
+namespace App\Plugins\Payment\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 /**
  * @method static PaymentMethodEnum COD()

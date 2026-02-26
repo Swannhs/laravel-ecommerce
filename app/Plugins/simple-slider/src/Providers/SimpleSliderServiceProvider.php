@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\SimpleSlider\Providers;
+namespace App\Plugins\SimpleSlider\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Language\Facades\Language;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
-use Botble\SimpleSlider\Repositories\Eloquent\SimpleSliderItemRepository;
-use Botble\SimpleSlider\Repositories\Eloquent\SimpleSliderRepository;
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\SimpleSlider\Models\SimpleSlider;
+use App\Plugins\SimpleSlider\Models\SimpleSliderItem;
+use App\Plugins\SimpleSlider\Repositories\Eloquent\SimpleSliderItemRepository;
+use App\Plugins\SimpleSlider\Repositories\Eloquent\SimpleSliderRepository;
+use App\Plugins\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
+use App\Plugins\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
 class SimpleSliderServiceProvider extends ServiceProvider implements DeferrableProvider

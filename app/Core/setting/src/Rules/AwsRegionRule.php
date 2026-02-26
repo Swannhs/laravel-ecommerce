@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Setting\Rules;
+namespace App\Core\Setting\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

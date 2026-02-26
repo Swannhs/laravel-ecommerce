@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Ecommerce\Facades\Currency as CurrencyFacade;
-use Botble\Ecommerce\Models\Currency;
-use Botble\Ecommerce\Supports\CurrencySupport;
+use App\Plugins\Ecommerce\Facades\Currency as CurrencyFacade;
+use App\Plugins\Ecommerce\Models\Currency;
+use App\Plugins\Ecommerce\Supports\CurrencySupport;
 use Illuminate\Support\Collection;
 
 if (! function_exists('format_price')) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics\Exceptions;
+namespace App\Plugins\Analytics\Exceptions;
 
 use DateTimeInterface;
 use Exception;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SimpleSlider\Support;
+namespace App\Plugins\SimpleSlider\Support;
 
-use Botble\SimpleSlider\Forms\SimpleSliderItemForm;
+use App\Plugins\SimpleSlider\Forms\SimpleSliderItemForm;
 
 class SimpleSliderSupport
 {

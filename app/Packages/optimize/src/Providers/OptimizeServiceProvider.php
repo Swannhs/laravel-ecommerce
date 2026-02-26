@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Optimize\Providers;
+namespace App\Packages\Optimize\Providers;
 
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Optimize\Facades\OptimizerHelper;
-use Botble\Optimize\Http\Middleware\CollapseWhitespace;
-use Botble\Optimize\Http\Middleware\DeferJavascript;
-use Botble\Optimize\Http\Middleware\ElideAttributes;
-use Botble\Optimize\Http\Middleware\InlineCss;
-use Botble\Optimize\Http\Middleware\InsertDNSPrefetch;
-use Botble\Optimize\Http\Middleware\RemoveComments;
-use Botble\Optimize\Http\Middleware\RemoveQuotes;
-use Botble\Setting\PanelSections\SettingCommonPanelSection;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Optimize\Facades\OptimizerHelper;
+use App\Packages\Optimize\Http\Middleware\CollapseWhitespace;
+use App\Packages\Optimize\Http\Middleware\DeferJavascript;
+use App\Packages\Optimize\Http\Middleware\ElideAttributes;
+use App\Packages\Optimize\Http\Middleware\InlineCss;
+use App\Packages\Optimize\Http\Middleware\InsertDNSPrefetch;
+use App\Packages\Optimize\Http\Middleware\RemoveComments;
+use App\Packages\Optimize\Http\Middleware\RemoveQuotes;
+use App\Core\Setting\PanelSections\SettingCommonPanelSection;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Routing\Router;

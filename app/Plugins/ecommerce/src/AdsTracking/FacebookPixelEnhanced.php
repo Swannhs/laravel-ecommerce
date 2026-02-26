@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\AdsTracking;
+namespace App\Plugins\Ecommerce\AdsTracking;
 
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
 use Illuminate\Support\Facades\Log;
 use Throwable;
 

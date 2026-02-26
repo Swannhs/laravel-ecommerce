@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Enums;
+namespace App\Plugins\Ecommerce\Enums;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Enum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Enum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
 use Illuminate\Support\HtmlString;
 
 /**

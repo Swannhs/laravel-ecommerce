@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Forms\Concerns;
+namespace App\Plugins\Marketplace\Forms\Concerns;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 
 trait HasSubmitButton
 {

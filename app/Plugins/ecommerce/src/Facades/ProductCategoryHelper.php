@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Facades;
+namespace App\Plugins\Ecommerce\Facades;
 
-use Botble\Ecommerce\Supports\ProductCategoryHelper as BaseProductCategoryHelper;
+use App\Plugins\Ecommerce\Supports\ProductCategoryHelper as BaseProductCategoryHelper;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Illuminate\Support\Collection getProductCategoriesWithUrl(array $categoryIds = [], array $condition = [], int|null $limit = null)
  * @method static \Illuminate\Database\Query\Builder applyQuery(\Illuminate\Database\Query\Builder $query)
  *
- * @see \Botble\Ecommerce\Supports\ProductCategoryHelper
+ * @see \App\Plugins\Ecommerce\Supports\ProductCategoryHelper
  */
 class ProductCategoryHelper extends Facade
 {

@@ -1,38 +1,38 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace App\Core\Base\Providers;
 
-use Botble\Base\Contracts\GlobalSearchableManager as GlobalSearchableManagerContract;
-use Botble\Base\Contracts\PanelSections\Manager;
-use Botble\Base\Exceptions\Handler;
-use Botble\Base\Facades\AdminAppearance;
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Breadcrumb as BreadcrumbFacade;
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\PageTitle;
-use Botble\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
-use Botble\Base\GlobalSearch\GlobalSearchableManager;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\PanelSections\Manager as PanelSectionManager;
-use Botble\Base\PanelSections\System\SystemPanelSection;
-use Botble\Base\Repositories\Eloquent\MetaBoxRepository;
-use Botble\Base\Repositories\Interfaces\MetaBoxInterface;
-use Botble\Base\Supports\Action;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Base\Supports\CustomResourceRegistrar;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\Database\Blueprint;
-use Botble\Base\Supports\EmailHandler;
-use Botble\Base\Supports\Filter;
-use Botble\Base\Supports\GoogleFonts;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Base\Widgets\AdminWidget;
-use Botble\Base\Widgets\Contracts\AdminWidget as AdminWidgetContract;
-use Botble\Setting\Providers\SettingServiceProvider;
-use Botble\Setting\Supports\SettingStore;
+use App\Core\Base\Contracts\GlobalSearchableManager as GlobalSearchableManagerContract;
+use App\Core\Base\Contracts\PanelSections\Manager;
+use App\Core\Base\Exceptions\Handler;
+use App\Core\Base\Facades\AdminAppearance;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Breadcrumb as BreadcrumbFacade;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\PageTitle;
+use App\Core\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
+use App\Core\Base\GlobalSearch\GlobalSearchableManager;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\PanelSections\Manager as PanelSectionManager;
+use App\Core\Base\PanelSections\System\SystemPanelSection;
+use App\Core\Base\Repositories\Eloquent\MetaBoxRepository;
+use App\Core\Base\Repositories\Interfaces\MetaBoxInterface;
+use App\Core\Base\Supports\Action;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Base\Supports\CustomResourceRegistrar;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\Database\Blueprint;
+use App\Core\Base\Supports\EmailHandler;
+use App\Core\Base\Supports\Filter;
+use App\Core\Base\Supports\GoogleFonts;
+use App\Core\Base\Supports\Helper;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Base\Widgets\AdminWidget;
+use App\Core\Base\Widgets\Contracts\AdminWidget as AdminWidgetContract;
+use App\Core\Setting\Providers\SettingServiceProvider;
+use App\Core\Setting\Supports\SettingStore;
 use DateTimeZone;
 use Illuminate\Config\Repository;
 use Illuminate\Contracts\Debug\ExceptionHandler;
@@ -417,6 +417,14 @@ class BaseServiceProvider extends ServiceProvider
     protected function prepareAliasesIfMissing(): void
     {
         $aliasLoader = AliasLoader::getInstance();
+
+        if (! class_exists('Arr')) {
+            $aliasLoader->alias('Arr', Arr::class);
+        }
+
+        if (! class_exists('Str')) {
+            $aliasLoader->alias('Str', Str::class);
+        }
 
         if (! class_exists('BaseHelper')) {
             $aliasLoader->alias('BaseHelper', BaseHelper::class);

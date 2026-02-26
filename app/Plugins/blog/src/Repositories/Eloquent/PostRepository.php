@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Repositories\Eloquent;
+namespace App\Plugins\Blog\Repositories\Eloquent;
 
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Language\Facades\Language;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Repositories\Interfaces\PostInterface;
+use App\Plugins\Language\Facades\Language;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Exception;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;

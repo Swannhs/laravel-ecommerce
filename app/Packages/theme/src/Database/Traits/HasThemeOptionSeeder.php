@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Database\Traits;
+namespace App\Packages\Theme\Database\Traits;
 
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Facades\ThemeOption;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Facades\ThemeOption;
 
 trait HasThemeOptionSeeder
 {

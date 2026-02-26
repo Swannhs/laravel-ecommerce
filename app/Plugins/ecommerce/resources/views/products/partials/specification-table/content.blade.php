@@ -1,5 +1,5 @@
 @php
-    use Botble\Ecommerce\Models\ProductSpecificationAttributeTranslation;
+    use App\Plugins\Ecommerce\Models\ProductSpecificationAttributeTranslation;
 @endphp
 
 <p class="text-secondary mb-0 p-3">

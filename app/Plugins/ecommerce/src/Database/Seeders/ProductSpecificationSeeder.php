@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders;
+namespace App\Plugins\Ecommerce\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Enums\SpecificationAttributeFieldType;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\SpecificationAttribute;
-use Botble\Ecommerce\Models\SpecificationGroup;
-use Botble\Ecommerce\Models\SpecificationTable;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Enums\SpecificationAttributeFieldType;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\SpecificationAttribute;
+use App\Plugins\Ecommerce\Models\SpecificationGroup;
+use App\Plugins\Ecommerce\Models\SpecificationTable;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 

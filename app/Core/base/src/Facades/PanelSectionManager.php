@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Contracts\PanelSections\Manager;
+use App\Core\Base\Contracts\PanelSections\Manager;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -28,8 +28,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static string toHtml()
  * @method static string render()
  *
- * @see \Botble\Base\Contracts\PanelSections\Manager
- * @see \Botble\Base\PanelSections\Manager
+ * @see \App\Core\Base\Contracts\PanelSections\Manager
+ * @see \App\Core\Base\PanelSections\Manager
  */
 class PanelSectionManager extends Facade
 {

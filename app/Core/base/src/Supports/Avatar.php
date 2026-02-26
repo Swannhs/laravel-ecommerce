@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Media\Facades\RvMedia;
+use App\Core\Media\Facades\RvMedia;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
@@ -190,7 +190,7 @@ class Avatar
             );
         } else {
             try {
-                $favicon = app('Botble\Base\Helpers\AdminHelper')->getAdminFavicon();
+                $favicon = app('App\Core\Base\Helpers\AdminHelper')->getAdminFavicon();
 
                 if ($favicon) {
                     $favicon = Storage::path($favicon);

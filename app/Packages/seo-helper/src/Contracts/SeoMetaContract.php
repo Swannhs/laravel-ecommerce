@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\SeoHelper\Contracts;
+namespace App\Packages\SeoHelper\Contracts;
 
-use Botble\SeoHelper\Contracts\Entities\AnalyticsContract;
-use Botble\SeoHelper\Contracts\Entities\DescriptionContract;
-use Botble\SeoHelper\Contracts\Entities\MiscTagsContract;
-use Botble\SeoHelper\Contracts\Entities\TitleContract;
-use Botble\SeoHelper\Contracts\Entities\WebmastersContract;
+use App\Packages\SeoHelper\Contracts\Entities\AnalyticsContract;
+use App\Packages\SeoHelper\Contracts\Entities\DescriptionContract;
+use App\Packages\SeoHelper\Contracts\Entities\MiscTagsContract;
+use App\Packages\SeoHelper\Contracts\Entities\TitleContract;
+use App\Packages\SeoHelper\Contracts\Entities\WebmastersContract;
 
 interface SeoMetaContract extends RenderableContract
 {

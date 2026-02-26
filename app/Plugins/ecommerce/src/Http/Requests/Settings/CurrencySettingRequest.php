@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\Settings;
+namespace App\Plugins\Ecommerce\Http\Requests\Settings;
 
-use Botble\Ecommerce\Facades\Currency;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Facades\Currency;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CurrencySettingRequest extends Request

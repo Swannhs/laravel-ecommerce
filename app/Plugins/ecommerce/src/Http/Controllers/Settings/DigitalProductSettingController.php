@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\DigitalProductSettingFom;
-use Botble\Ecommerce\Http\Requests\Settings\DigitalProductSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\DigitalProductSettingFom;
+use App\Plugins\Ecommerce\Http\Requests\Settings\DigitalProductSettingRequest;
 
 class DigitalProductSettingController extends SettingController
 {

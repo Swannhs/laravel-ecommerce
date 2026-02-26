@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\SharedWishlist;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\SharedWishlist;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Str;

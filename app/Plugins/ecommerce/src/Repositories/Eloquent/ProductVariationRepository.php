@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ProductVariationRepository extends RepositoriesAbstract implements ProductVariationInterface
 {

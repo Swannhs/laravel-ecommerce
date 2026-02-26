@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Events\AbandonedCartReminderEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Events\AbandonedCartReminderEvent;
 use Exception;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\URL;

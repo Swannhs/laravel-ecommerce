@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ads\Http\Controllers;
+namespace App\Plugins\Ads\Http\Controllers;
 
-use Botble\Ads\Forms\AdsForm;
-use Botble\Ads\Http\Requests\AdsRequest;
-use Botble\Ads\Models\Ads;
-use Botble\Ads\Tables\AdsTable;
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Facades\PageTitle;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Ads\Forms\AdsForm;
+use App\Plugins\Ads\Http\Requests\AdsRequest;
+use App\Plugins\Ads\Models\Ads;
+use App\Plugins\Ads\Tables\AdsTable;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Facades\PageTitle;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Http\Request;
 
 class AdsController extends BaseController

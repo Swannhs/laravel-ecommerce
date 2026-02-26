@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Supports\Breadcrumb;
+use App\Core\Base\Supports\Breadcrumb;
 
 class BaseSystemController extends BaseController
 {

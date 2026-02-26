@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Supports\PageTitle as PageTitleSupport;
+use App\Core\Base\Supports\PageTitle as PageTitleSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void setTitle(string $title)
  * @method static string|null getTitle(bool $withSiteName = true)
  *
- * @see \Botble\Base\Supports\PageTitle
+ * @see \App\Core\Base\Supports\PageTitle
  */
 class PageTitle extends Facade
 {

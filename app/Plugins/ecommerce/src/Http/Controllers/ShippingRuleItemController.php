@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Exports\TemplateShippingRuleItemExport;
-use Botble\Ecommerce\Forms\ShippingRuleItemForm;
-use Botble\Ecommerce\Http\Requests\ShippingRuleItemImportRequest;
-use Botble\Ecommerce\Http\Requests\ShippingRuleItemRequest;
-use Botble\Ecommerce\Imports\ShippingRuleItemImport;
-use Botble\Ecommerce\Imports\ValidateShippingRuleItemImport;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Ecommerce\Models\ShippingRuleItem;
-use Botble\Ecommerce\Services\HandleShippingFeeService;
-use Botble\Ecommerce\Tables\ShippingRuleItemTable;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Exports\TemplateShippingRuleItemExport;
+use App\Plugins\Ecommerce\Forms\ShippingRuleItemForm;
+use App\Plugins\Ecommerce\Http\Requests\ShippingRuleItemImportRequest;
+use App\Plugins\Ecommerce\Http\Requests\ShippingRuleItemRequest;
+use App\Plugins\Ecommerce\Imports\ShippingRuleItemImport;
+use App\Plugins\Ecommerce\Imports\ValidateShippingRuleItemImport;
+use App\Plugins\Ecommerce\Models\ShippingRule;
+use App\Plugins\Ecommerce\Models\ShippingRuleItem;
+use App\Plugins\Ecommerce\Services\HandleShippingFeeService;
+use App\Plugins\Ecommerce\Tables\ShippingRuleItemTable;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Forms;
+namespace App\Core\Base\Forms;
 
-use Botble\Base\Supports\Builders\HasAttributes;
-use Botble\Base\Supports\Builders\HasLabel;
-use Botble\Base\Traits\FieldOptions\HasCollapsibleField;
-use Botble\Base\Traits\Forms\CanSpanColumns;
+use App\Core\Base\Supports\Builders\HasAttributes;
+use App\Core\Base\Supports\Builders\HasLabel;
+use App\Core\Base\Traits\FieldOptions\HasCollapsibleField;
+use App\Core\Base\Traits\Forms\CanSpanColumns;
 use Closure;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Traits\Conditionable;

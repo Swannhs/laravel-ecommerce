@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace App\Plugins\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Fronts\ReviewRequest;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\Review;
-use Botble\Ecommerce\Traits\CheckReviewConditionTrait;
-use Botble\Media\Facades\RvMedia;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\ReviewRequest;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Traits\CheckReviewConditionTrait;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Settings;
+namespace App\Plugins\Marketplace\Http\Controllers\Settings;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\Helper;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\Settings\MarketplaceSettingForm;
-use Botble\Marketplace\Http\Requests\MarketPlaceSettingFormRequest;
-use Botble\Marketplace\Models\Store;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\Helper;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\Settings\MarketplaceSettingForm;
+use App\Plugins\Marketplace\Http\Requests\MarketPlaceSettingFormRequest;
+use App\Plugins\Marketplace\Models\Store;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Support\Arr;
 
 class MarketplaceSettingController extends SettingController

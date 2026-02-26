@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SocialLogin\Http\Controllers;
+namespace App\Plugins\SocialLogin\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Media\Facades\RvMedia;
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\SocialLogin\Services\SocialLoginService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Media\Facades\RvMedia;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Plugins\SocialLogin\Services\SocialLoginService;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Auth\Events\Registered;

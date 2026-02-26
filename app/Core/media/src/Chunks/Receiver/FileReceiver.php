@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Media\Chunks\Receiver;
+namespace App\Core\Media\Chunks\Receiver;
 
-use Botble\Media\Chunks\Exceptions\UploadFailedException;
-use Botble\Media\Chunks\Handler\AbstractHandler;
-use Botble\Media\Chunks\Save\AbstractSave;
-use Botble\Media\Chunks\Storage\ChunkStorage;
+use App\Core\Media\Chunks\Exceptions\UploadFailedException;
+use App\Core\Media\Chunks\Handler\AbstractHandler;
+use App\Core\Media\Chunks\Save\AbstractSave;
+use App\Core\Media\Chunks\Storage\ChunkStorage;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 

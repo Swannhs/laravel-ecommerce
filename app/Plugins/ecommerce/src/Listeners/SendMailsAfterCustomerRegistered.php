@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Customer;
 use Illuminate\Auth\Events\Registered;
 
 class SendMailsAfterCustomerRegistered

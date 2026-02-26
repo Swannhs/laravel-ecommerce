@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\API;
+namespace App\Plugins\Ecommerce\Http\Requests\API;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Models\Address;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Models\Address;
+use App\Core\Support\Http\Requests\Request;
 
 class UpdateAddressRequest extends Request
 {

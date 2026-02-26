@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Events\OrderCompletedEvent;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Events\OrderCompletedEvent;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendDigitalProductEmailAfterOrderCompleted implements ShouldQueue

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace App\Packages\PluginManagement\Commands;
 
 use Illuminate\Foundation\Console\ClearCompiledCommand as BaseClearCompiledCommand;
 

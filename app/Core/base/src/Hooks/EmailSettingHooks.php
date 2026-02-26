@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Hooks;
+namespace App\Core\Base\Hooks;
 
-use Botble\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\EmailHandler;
 
 class EmailSettingHooks
 {

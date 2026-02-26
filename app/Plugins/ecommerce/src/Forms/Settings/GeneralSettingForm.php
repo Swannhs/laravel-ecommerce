@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\RepeaterFieldOption;
-use Botble\Base\Forms\Fields\RepeaterField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\Concerns\HasLocationFields;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
-use Botble\Ecommerce\Http\Requests\Settings\GeneralSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Forms\FieldOptions\RepeaterFieldOption;
+use App\Core\Base\Forms\Fields\RepeaterField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\Concerns\HasLocationFields;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\Settings\GeneralSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class GeneralSettingForm extends SettingForm
 {

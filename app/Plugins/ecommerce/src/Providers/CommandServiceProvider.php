@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Providers;
+namespace App\Plugins\Ecommerce\Providers;
 
-use Botble\Ecommerce\Commands\CancelExpiredDeletionRequests;
-use Botble\Ecommerce\Commands\CheckAbandonedCartsCommand;
-use Botble\Ecommerce\Commands\SendAbandonedCartsEmailCommand;
-use Botble\Ecommerce\Models\SharedWishlist;
+use App\Plugins\Ecommerce\Commands\CancelExpiredDeletionRequests;
+use App\Plugins\Ecommerce\Commands\CheckAbandonedCartsCommand;
+use App\Plugins\Ecommerce\Commands\SendAbandonedCartsEmailCommand;
+use App\Plugins\Ecommerce\Models\SharedWishlist;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider;
 

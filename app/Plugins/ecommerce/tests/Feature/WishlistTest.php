@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\Wishlist;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Wishlist;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class WishlistTest extends BaseTestCase

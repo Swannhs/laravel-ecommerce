@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Observers;
+namespace App\Plugins\Marketplace\Observers;
 
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Support\Facades\Cache;
 
 class ProductObserver

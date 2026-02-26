@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Events\OrderCancelledEvent;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Events\OrderCancelledEvent;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 
 class OrderCancelledEmailNotification
 {

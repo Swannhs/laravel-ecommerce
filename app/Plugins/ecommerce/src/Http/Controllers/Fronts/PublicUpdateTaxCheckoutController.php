@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace App\Plugins\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Services\HandleCheckoutOrderData;
-use Botble\Ecommerce\Services\HandleTaxService;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Services\HandleCheckoutOrderData;
+use App\Plugins\Ecommerce\Services\HandleTaxService;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 

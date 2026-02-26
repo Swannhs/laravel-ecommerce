@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Page\Http\Requests;
+namespace App\Packages\Page\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Rules\MediaImageRule;
-use Botble\Page\Supports\Template;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Rules\MediaImageRule;
+use App\Packages\Page\Supports\Template;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class PageRequest extends Request

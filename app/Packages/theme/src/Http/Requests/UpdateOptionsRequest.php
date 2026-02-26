@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Http\Requests;
+namespace App\Packages\Theme\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class UpdateOptionsRequest extends Request
 {

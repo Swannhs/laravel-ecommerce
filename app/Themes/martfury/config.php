@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Shortcode\View\View;
-use Botble\Theme\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Packages\Shortcode\View\View;
+use App\Packages\Theme\Theme;
 
 return [
 

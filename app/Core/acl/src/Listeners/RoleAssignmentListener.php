@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Listeners;
+namespace App\Core\ACL\Listeners;
 
-use Botble\ACL\Events\RoleAssignmentEvent;
+use App\Core\ACL\Events\RoleAssignmentEvent;
 
 class RoleAssignmentListener
 {

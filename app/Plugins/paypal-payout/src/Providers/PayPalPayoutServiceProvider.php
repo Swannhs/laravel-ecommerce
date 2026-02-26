@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\PayPalPayout\Providers;
+namespace App\Plugins\PayPalPayout\Providers;
 
-use Botble\AffiliatePro\Events\WithdrawalRequestedEvent as AffiliateWithdrawalRequestedEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Marketplace\Models\Withdrawal;
-use Botble\PayPalPayout\Listeners\AffiliatePayPalPayoutListener;
+use App\Plugins\AffiliatePro\Events\WithdrawalRequestedEvent as AffiliateWithdrawalRequestedEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\Marketplace\Models\Withdrawal;
+use App\Plugins\PayPalPayout\Listeners\AffiliatePayPalPayoutListener;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
@@ -41,7 +41,7 @@ class PayPalPayoutServiceProvider extends ServiceProvider
                     $data->getKey() &&
                     (
                         (is_plugin_active('marketplace') && $data instanceof Withdrawal && $data->payment_channel == PayoutPaymentMethodsEnum::PAYPAL) ||
-                        (is_plugin_active('affiliate-pro') && $data instanceof \Botble\AffiliatePro\Models\Withdrawal && $data->payment_channel == \Botble\AffiliatePro\Enums\PayoutPaymentMethodsEnum::PAYPAL)
+                        (is_plugin_active('affiliate-pro') && $data instanceof \App\Plugins\AffiliatePro\Models\Withdrawal && $data->payment_channel == \App\Plugins\AffiliatePro\Enums\PayoutPaymentMethodsEnum::PAYPAL)
                     )
                 ) {
                     Assets::addScriptsDirectly('vendor/core/plugins/paypal-payout/js/paypal-payout.js');

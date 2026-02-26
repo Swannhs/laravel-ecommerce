@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\AuditLog\Commands;
+namespace App\Plugins\AuditLog\Commands;
 
-use Botble\AuditLog\Models\AuditHistory;
+use App\Plugins\AuditLog\Models\AuditHistory;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Events;
+namespace App\Packages\Widget\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class RenderingWidgetSettings extends Event

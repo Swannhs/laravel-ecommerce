@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Mollie\Http\Controllers;
+namespace App\Plugins\Mollie\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Supports\PaymentHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Payment\Supports\PaymentHelper;
 use Exception;
 use Illuminate\Http\Request;
 use Mollie\Api\Exceptions\ApiException;

@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Supports\Renderable;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\Concerns\Blurrable;
-use Botble\Table\Columns\Concerns\Copyable;
-use Botble\Table\Columns\Concerns\HasColor;
-use Botble\Table\Columns\Concerns\HasEmptyState;
-use Botble\Table\Columns\Concerns\HasIcon;
-use Botble\Table\Columns\Concerns\Maskable;
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Supports\Renderable;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\Concerns\Blurrable;
+use App\Core\Table\Columns\Concerns\Copyable;
+use App\Core\Table\Columns\Concerns\HasColor;
+use App\Core\Table\Columns\Concerns\HasEmptyState;
+use App\Core\Table\Columns\Concerns\HasIcon;
+use App\Core\Table\Columns\Concerns\Maskable;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 use Closure;
 use Illuminate\Support\Str;
 use stdClass;

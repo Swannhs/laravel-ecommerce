@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Installer\Http\Requests;
+namespace App\Packages\Installer\Http\Requests;
 
-use Botble\Installer\InstallerStep\InstallerStep;
-use Botble\Support\Http\Requests\Request;
+use App\Packages\Installer\InstallerStep\InstallerStep;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class ChooseThemeRequest extends Request

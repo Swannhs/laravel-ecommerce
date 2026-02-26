@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Base\Services\CleanDatabaseService;
+use App\Core\Base\Services\CleanDatabaseService;
 use Exception;
 use Illuminate\Console\Command;
 

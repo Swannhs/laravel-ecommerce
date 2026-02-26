@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Installer\Providers;
+namespace App\Packages\Installer\Providers;
 
-use Botble\Base\Events\FinishedSeederEvent;
-use Botble\Base\Events\UpdatedEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Installer\Http\Middleware\CheckIfInstalledMiddleware;
-use Botble\Installer\Http\Middleware\CheckIfInstallingMiddleware;
-use Botble\Installer\Http\Middleware\RedirectIfNotInstalledMiddleware;
+use App\Core\Base\Events\FinishedSeederEvent;
+use App\Core\Base\Events\UpdatedEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Installer\Http\Middleware\CheckIfInstalledMiddleware;
+use App\Packages\Installer\Http\Middleware\CheckIfInstallingMiddleware;
+use App\Packages\Installer\Http\Middleware\RedirectIfNotInstalledMiddleware;
 use Carbon\Carbon;
 use Illuminate\Routing\Events\RouteMatched;
 

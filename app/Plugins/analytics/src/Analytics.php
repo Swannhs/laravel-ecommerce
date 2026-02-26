@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Analytics;
+namespace App\Plugins\Analytics;
 
-use Botble\Analytics\Abstracts\AnalyticsAbstract;
-use Botble\Analytics\Abstracts\AnalyticsContract;
-use Botble\Analytics\Exceptions\InvalidConfiguration;
-use Botble\Analytics\Traits\DateRangeTrait;
-use Botble\Analytics\Traits\DimensionTrait;
-use Botble\Analytics\Traits\FilterByDimensionTrait;
-use Botble\Analytics\Traits\FilterByMetricTrait;
-use Botble\Analytics\Traits\MetricAggregationTrait;
-use Botble\Analytics\Traits\MetricTrait;
-use Botble\Analytics\Traits\OrderByDimensionTrait;
-use Botble\Analytics\Traits\OrderByMetricTrait;
-use Botble\Analytics\Traits\ResponseTrait;
-use Botble\Analytics\Traits\RowOperationTrait;
+use App\Plugins\Analytics\Abstracts\AnalyticsAbstract;
+use App\Plugins\Analytics\Abstracts\AnalyticsContract;
+use App\Plugins\Analytics\Exceptions\InvalidConfiguration;
+use App\Plugins\Analytics\Traits\DateRangeTrait;
+use App\Plugins\Analytics\Traits\DimensionTrait;
+use App\Plugins\Analytics\Traits\FilterByDimensionTrait;
+use App\Plugins\Analytics\Traits\FilterByMetricTrait;
+use App\Plugins\Analytics\Traits\MetricAggregationTrait;
+use App\Plugins\Analytics\Traits\MetricTrait;
+use App\Plugins\Analytics\Traits\OrderByDimensionTrait;
+use App\Plugins\Analytics\Traits\OrderByMetricTrait;
+use App\Plugins\Analytics\Traits\ResponseTrait;
+use App\Plugins\Analytics\Traits\RowOperationTrait;
 use Google\Analytics\Data\V1beta\Client\BetaAnalyticsDataClient;
 use Google\Analytics\Data\V1beta\RunReportRequest;
 use Illuminate\Support\Collection;

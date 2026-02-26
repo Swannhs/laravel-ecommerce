@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests;
+namespace App\Plugins\Marketplace\Http\Requests;
 
-use Botble\Marketplace\Enums\RevenueTypeEnum;
-use Botble\Marketplace\Models\Store;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
+use App\Plugins\Marketplace\Models\Store;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class StoreRevenueRequest extends Request

@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Forms\FieldOptions\DatePickerFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\Fields\DatePickerField;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\MediaImagesField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
-use Botble\Ecommerce\Http\Requests\ReviewRequest;
-use Botble\Ecommerce\Models\Review;
+use App\Core\Base\Forms\FieldOptions\DatePickerFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\Fields\DatePickerField;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\MediaImagesField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\ReviewRequest;
+use App\Plugins\Ecommerce\Models\Review;
 use Carbon\Carbon;
 
 class ReviewForm extends FormAbstract

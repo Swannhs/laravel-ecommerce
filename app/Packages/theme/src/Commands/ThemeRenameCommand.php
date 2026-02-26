@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Theme\Commands;
+namespace App\Packages\Theme\Commands;
 
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Commands\Traits\ThemeTrait;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Theme\Services\ThemeService;
-use Botble\Widget\Models\Widget;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Commands\Traits\ThemeTrait;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Theme\Services\ThemeService;
+use App\Packages\Widget\Models\Widget;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Filesystem\Filesystem as File;

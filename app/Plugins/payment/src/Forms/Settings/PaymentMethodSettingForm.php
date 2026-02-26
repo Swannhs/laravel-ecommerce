@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Payment\Forms\Settings;
+namespace App\Plugins\Payment\Forms\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Http\Requests\Settings\PaymentMethodSettingRequest;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Http\Requests\Settings\PaymentMethodSettingRequest;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Core\Setting\Forms\SettingForm;
 
 class PaymentMethodSettingForm extends SettingForm
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Http\Requests;
+namespace App\Packages\Menu\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class MenuNodeRequest extends Request
 {

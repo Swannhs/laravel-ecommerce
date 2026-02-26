@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Translation\Tables;
+namespace App\Plugins\Translation\Tables;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\Language;
-use Botble\DataSynchronize\Table\HeaderActions\ExportHeaderAction;
-use Botble\DataSynchronize\Table\HeaderActions\ImportHeaderAction;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\Column;
-use Botble\Translation\Manager;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\Language;
+use App\Packages\DataSynchronize\Table\HeaderActions\ExportHeaderAction;
+use App\Packages\DataSynchronize\Table\HeaderActions\ImportHeaderAction;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\Column;
+use App\Plugins\Translation\Manager;
 use Illuminate\Support\Arr;
 
 class ThemeTranslationTable extends TableAbstract

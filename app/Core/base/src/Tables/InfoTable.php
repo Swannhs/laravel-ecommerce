@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Tables;
+namespace App\Core\Base\Tables;
 
-use Botble\Base\Supports\SystemManagement;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\FormattedColumn;
+use App\Core\Base\Supports\SystemManagement;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\FormattedColumn;
 
 class InfoTable extends TableAbstract
 {

@@ -1,13 +1,13 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Translation\Http\Controllers\ExportOtherTranslationController;
-use Botble\Translation\Http\Controllers\ExportThemeTranslationController;
-use Botble\Translation\Http\Controllers\ImportOtherTranslationController;
-use Botble\Translation\Http\Controllers\ImportThemeTranslationController;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Translation\Http\Controllers\ExportOtherTranslationController;
+use App\Plugins\Translation\Http\Controllers\ExportThemeTranslationController;
+use App\Plugins\Translation\Http\Controllers\ImportOtherTranslationController;
+use App\Plugins\Translation\Http\Controllers\ImportThemeTranslationController;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\Translation\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Plugins\Translation\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group(['prefix' => 'translations'], function (): void {
             Route::group(['prefix' => 'locales', 'permission' => 'translations.locales'], function (): void {

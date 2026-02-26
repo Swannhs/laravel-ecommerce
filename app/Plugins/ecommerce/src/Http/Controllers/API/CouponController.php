@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Http\Requests\API\ApplyCouponRequest;
-use Botble\Ecommerce\Http\Resources\API\CouponResource;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Services\HandleApplyCouponService;
-use Botble\Ecommerce\Services\HandleRemoveCouponService;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Http\Requests\API\ApplyCouponRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\CouponResource;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Services\HandleApplyCouponService;
+use App\Plugins\Ecommerce\Services\HandleRemoveCouponService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Tables\Traits;
+namespace App\Plugins\Marketplace\Tables\Traits;
 
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 
 trait ForVendor
 {

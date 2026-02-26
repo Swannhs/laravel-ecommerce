@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Newsletter\Http\Requests\Settings;
+namespace App\Plugins\Newsletter\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class NewsletterSettingRequest extends Request
 {

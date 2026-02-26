@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Services\Products\ProductCrossSalePriceService;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Services\Products\ProductCrossSalePriceService;
 
 class HandleApplyProductCrossSaleService
 {

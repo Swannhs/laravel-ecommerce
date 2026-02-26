@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\OrderReturnStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class UpdateOrderReturnRequest extends Request

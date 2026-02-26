@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Models;
+namespace App\Core\ACL\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Support\Services\Cache\Cache;
 use Illuminate\Support\Facades\Auth;
 
 class UserMeta extends BaseModel

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Language\Database\Seeders;
+namespace App\Plugins\Language\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Language\Models\Language;
-use Botble\Language\Models\LanguageMeta;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Language\Models\Language;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 

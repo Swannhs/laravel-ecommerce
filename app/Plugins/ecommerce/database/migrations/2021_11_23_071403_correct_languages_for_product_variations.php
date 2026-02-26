@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Language\Facades\Language;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Language\Facades\Language;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 

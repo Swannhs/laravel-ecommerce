@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Theme\Commands;
+namespace App\Packages\Theme\Commands;
 
-use Botble\Language\Facades\Language;
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Events\RenderingThemeOptionSettings;
-use Botble\Theme\Facades\ThemeOption;
+use App\Plugins\Language\Facades\Language;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
+use App\Packages\Theme\Facades\ThemeOption;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

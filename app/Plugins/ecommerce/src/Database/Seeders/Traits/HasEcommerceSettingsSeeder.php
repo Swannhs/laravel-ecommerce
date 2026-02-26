@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders\Traits;
+namespace App\Plugins\Ecommerce\Database\Seeders\Traits;
 
-use Botble\Media\Facades\RvMedia;
-use Botble\Setting\Facades\Setting;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Support\Facades\File;
 
 trait HasEcommerceSettingsSeeder

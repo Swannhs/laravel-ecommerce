@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Razorpay\Providers;
+namespace App\Plugins\Razorpay\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Media\Facades\RvMedia;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\Razorpay\Forms\RazorpayPaymentMethodForm;
-use Botble\Razorpay\Services\Gateways\RazorpayPaymentService;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Media\Facades\RvMedia;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Plugins\Razorpay\Forms\RazorpayPaymentMethodForm;
+use App\Plugins\Razorpay\Services\Gateways\RazorpayPaymentService;
+use App\Packages\Theme\Facades\Theme;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

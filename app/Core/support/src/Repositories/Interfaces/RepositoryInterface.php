@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Support\Repositories\Interfaces;
+namespace App\Core\Support\Repositories\Interfaces;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseQueryBuilder;
 use Illuminate\Database\Eloquent\Model;
 
 /**

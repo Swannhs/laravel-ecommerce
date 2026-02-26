@@ -2,7 +2,7 @@
 
 return [
     'schema_supported' => [
-        'Botble\Page\Models\Page',
-        'Botble\Blog\Models\Post',
+        'App\Packages\Page\Models\Page',
+        'App\Plugins\Blog\Models\Post',
     ],
 ];

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Tables\Formatters;
+namespace App\Plugins\Ecommerce\Tables\Formatters;
 
-use Botble\Base\Facades\Html;
-use Botble\Media\Facades\RvMedia;
-use Botble\Table\Formatter;
+use App\Core\Base\Facades\Html;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Table\Formatter;
 use Illuminate\Database\Eloquent\Model;
 
 class ReviewImagesFormatter implements Formatter

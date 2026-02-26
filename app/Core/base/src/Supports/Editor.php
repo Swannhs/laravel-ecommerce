@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Events\EditorAssetRegistered;
-use Botble\Base\Events\EditorAssetRegistering;
-use Botble\Base\Events\EditorRendered;
-use Botble\Base\Events\EditorRendering;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Events\EditorAssetRegistered;
+use App\Core\Base\Events\EditorAssetRegistering;
+use App\Core\Base\Events\EditorRendered;
+use App\Core\Base\Events\EditorRendering;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 

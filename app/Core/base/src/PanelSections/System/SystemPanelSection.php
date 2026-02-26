@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\PanelSections\System;
+namespace App\Core\Base\PanelSections\System;
 
-use Botble\Base\PanelSections\PanelSection;
-use Botble\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\PanelSection;
+use App\Core\Base\PanelSections\PanelSectionItem;
 
 class SystemPanelSection extends PanelSection
 {

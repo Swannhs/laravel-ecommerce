@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Log;
 
 if (! function_exists('render_product_options')) {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Repositories\Caches;
+namespace App\Packages\Widget\Repositories\Caches;
 
-use Botble\Widget\Repositories\Eloquent\WidgetRepository;
+use App\Packages\Widget\Repositories\Eloquent\WidgetRepository;
 
 /**
  * @deprecated

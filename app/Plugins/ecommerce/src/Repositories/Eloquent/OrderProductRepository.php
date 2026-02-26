@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\OrderProductInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\OrderProductInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class OrderProductRepository extends RepositoriesAbstract implements OrderProductInterface
 {

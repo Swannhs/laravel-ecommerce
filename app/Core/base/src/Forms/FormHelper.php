@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Forms;
+namespace App\Core\Base\Forms;
 
 use Illuminate\Contracts\View\Factory as View;
 use Illuminate\Translation\Translator;

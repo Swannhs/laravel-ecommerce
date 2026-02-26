@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Menu\Repositories\Interfaces\MenuInterface;
-use Botble\Widget\AbstractWidget;
+use App\Packages\Menu\Repositories\Interfaces\MenuInterface;
+use App\Packages\Widget\AbstractWidget;
 
 class CustomMenuWidget extends AbstractWidget
 {

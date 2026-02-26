@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Backup\Supports\PgSql;
+namespace App\Plugins\Backup\Supports\PgSql;
 
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\Process\Process;

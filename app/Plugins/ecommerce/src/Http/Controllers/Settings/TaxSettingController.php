@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\TaxSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\TaxSettingRequest;
-use Botble\Ecommerce\Tables\TaxTable;
+use App\Plugins\Ecommerce\Forms\Settings\TaxSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\TaxSettingRequest;
+use App\Plugins\Ecommerce\Tables\TaxTable;
 use Illuminate\Http\Request;
 
 class TaxSettingController extends SettingController

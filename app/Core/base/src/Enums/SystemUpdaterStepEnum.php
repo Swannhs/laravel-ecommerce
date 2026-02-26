@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Enums;
+namespace App\Core\Base\Enums;
 
 use BadMethodCallException;
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Str;
 use InvalidArgumentException;

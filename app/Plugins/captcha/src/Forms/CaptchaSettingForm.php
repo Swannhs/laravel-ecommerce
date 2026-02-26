@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Captcha\Forms;
+namespace App\Plugins\Captcha\Forms;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\RadioFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\RadioField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Captcha\Facades\Captcha;
-use Botble\Captcha\Http\Requests\Settings\CaptchaSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\RadioFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\RadioField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Captcha\Facades\Captcha;
+use App\Plugins\Captcha\Http\Requests\Settings\CaptchaSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class CaptchaSettingForm extends SettingForm
 {

@@ -1,4 +1,4 @@
-@php use Botble\Base\Facades\Assets; @endphp
+@php use App\Core\Base\Facades\Assets; @endphp
 @props([
     'id' => null,
     'label' => null,

@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Translation\Providers;
+namespace App\Plugins\Translation\Providers;
 
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\DataSynchronize\PanelSections\ExportPanelSection;
-use Botble\DataSynchronize\PanelSections\ImportPanelSection;
-use Botble\Translation\Console\AutoTranslateCoreCommand;
-use Botble\Translation\Console\AutoTranslateThemeCommand;
-use Botble\Translation\Console\CheckMissingTranslationCommand;
-use Botble\Translation\Console\CleanupTranslationsCommand;
-use Botble\Translation\Console\DownloadLocaleCommand;
-use Botble\Translation\Console\FindTranslationsByPathCommand;
-use Botble\Translation\Console\RemoveLocaleCommand;
-use Botble\Translation\Console\RemoveUnusedTranslationsCommand;
-use Botble\Translation\Console\UpdateThemeTranslationCommand;
-use Botble\Translation\PanelSections\LocalizationPanelSection;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\DataSynchronize\PanelSections\ExportPanelSection;
+use App\Packages\DataSynchronize\PanelSections\ImportPanelSection;
+use App\Plugins\Translation\Console\AutoTranslateCoreCommand;
+use App\Plugins\Translation\Console\AutoTranslateThemeCommand;
+use App\Plugins\Translation\Console\CheckMissingTranslationCommand;
+use App\Plugins\Translation\Console\CleanupTranslationsCommand;
+use App\Plugins\Translation\Console\DownloadLocaleCommand;
+use App\Plugins\Translation\Console\FindTranslationsByPathCommand;
+use App\Plugins\Translation\Console\RemoveLocaleCommand;
+use App\Plugins\Translation\Console\RemoveUnusedTranslationsCommand;
+use App\Plugins\Translation\Console\UpdateThemeTranslationCommand;
+use App\Plugins\Translation\PanelSections\LocalizationPanelSection;
 
 class TranslationServiceProvider extends ServiceProvider
 {

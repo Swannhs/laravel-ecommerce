@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Revision\\": "src"
+            "App\\Revision\\": "src"
         }
     },
     "require": {
@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Revision\\Providers\\RevisionServiceProvider"
+                "App\\Revision\\Providers\\RevisionServiceProvider"
             ]
         }
     }

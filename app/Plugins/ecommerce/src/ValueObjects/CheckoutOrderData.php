@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\ValueObjects;
+namespace App\Plugins\Ecommerce\ValueObjects;
 
 class CheckoutOrderData
 {

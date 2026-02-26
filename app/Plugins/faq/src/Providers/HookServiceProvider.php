@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Faq\Providers;
+namespace App\Plugins\Faq\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Faq\Contracts\Faq as FaqContract;
-use Botble\Faq\FaqCollection;
-use Botble\Faq\FaqItem;
-use Botble\Faq\FaqSupport;
-use Botble\Faq\Models\Faq;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Plugins\Faq\Contracts\Faq as FaqContract;
+use App\Plugins\Faq\FaqCollection;
+use App\Plugins\Faq\FaqItem;
+use App\Plugins\Faq\FaqSupport;
+use App\Plugins\Faq\Models\Faq;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 

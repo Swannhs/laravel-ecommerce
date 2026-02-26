@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme;
+namespace App\Packages\Theme;
 
 use Illuminate\Support\Facades\URL;
 

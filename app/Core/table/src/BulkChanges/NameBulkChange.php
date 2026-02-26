@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\BulkChanges;
+namespace App\Core\Table\BulkChanges;
 
 class NameBulkChange extends TextBulkChange
 {

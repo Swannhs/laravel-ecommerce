@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Core\Media\Facades\RvMedia;
 
 class ProductImageService
 {

@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Services\Products\GetProductService;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\ContactStoreForm;
-use Botble\Marketplace\Http\Requests\Fronts\CheckStoreUrlRequest;
-use Botble\Marketplace\Models\Store;
-use Botble\Media\Facades\RvMedia;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\SeoHelper\SeoOpenGraph;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Services\Products\GetProductService;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\ContactStoreForm;
+use App\Plugins\Marketplace\Http\Requests\Fronts\CheckStoreUrlRequest;
+use App\Plugins\Marketplace\Models\Store;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\SeoHelper\SeoOpenGraph;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;

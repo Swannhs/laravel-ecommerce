@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Widgets\Table;
-use Botble\Marketplace\Tables\RecentWithdrawalsTable as BaseRecentWithdrawalsTable;
+use App\Core\Base\Widgets\Table;
+use App\Plugins\Marketplace\Tables\RecentWithdrawalsTable as BaseRecentWithdrawalsTable;
 
 class RecentWithdrawalsTable extends Table
 {

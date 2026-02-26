@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Widgets;
+namespace App\Core\Base\Widgets;
 
 abstract class Card extends Widget
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Listeners;
+namespace App\Plugins\LanguageAdvanced\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\LanguageAdvanced\Plugin;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\LanguageAdvanced\Plugin;
 use Exception;
 
 class PriorityLanguageAdvancedPluginListener

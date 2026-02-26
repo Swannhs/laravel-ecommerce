@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Page\Models\Page;
+use App\Packages\Page\Models\Page;
 
 return [
     'supported' => [

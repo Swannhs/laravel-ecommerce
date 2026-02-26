@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\DataSynchronize\Http\Controllers\ExportController;
-use Botble\Ecommerce\Exporters\ProductInventoryExporter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Packages\DataSynchronize\Http\Controllers\ExportController;
+use App\Plugins\Ecommerce\Exporters\ProductInventoryExporter;
 
 class ExportProductInventoryController extends ExportController
 {

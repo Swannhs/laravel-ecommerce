@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Enums\SystemUpdaterStepEnum;
-use Botble\Base\Events\UpdatedEvent;
-use Botble\Base\Events\UpdatingEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Services\CleanDatabaseService;
-use Botble\Base\Supports\Core;
-use Botble\Base\Supports\MembershipAuthorization;
-use Botble\Base\Supports\SystemManagement;
+use App\Core\Base\Enums\SystemUpdaterStepEnum;
+use App\Core\Base\Events\UpdatedEvent;
+use App\Core\Base\Events\UpdatingEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Services\CleanDatabaseService;
+use App\Core\Base\Supports\Core;
+use App\Core\Base\Supports\MembershipAuthorization;
+use App\Core\Base\Supports\SystemManagement;
 use Exception;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Client\ConnectionException;

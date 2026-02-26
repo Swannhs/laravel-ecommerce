@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\Fronts;
+namespace App\Plugins\Marketplace\Http\Requests\Fronts;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class VendorEditWithdrawalRequest extends Request
 {

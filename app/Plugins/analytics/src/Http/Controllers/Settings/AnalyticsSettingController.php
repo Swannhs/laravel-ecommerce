@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Analytics\Http\Controllers\Settings;
+namespace App\Plugins\Analytics\Http\Controllers\Settings;
 
-use Botble\Analytics\Forms\AnalyticsSettingForm;
-use Botble\Analytics\Http\Requests\Settings\AnalyticsSettingRequest;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Plugins\Analytics\Forms\AnalyticsSettingForm;
+use App\Plugins\Analytics\Http\Requests\Settings\AnalyticsSettingRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\SettingController;
 
 class AnalyticsSettingController extends SettingController
 {

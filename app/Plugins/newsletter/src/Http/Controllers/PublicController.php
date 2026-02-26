@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Newsletter\Http\Controllers;
+namespace App\Plugins\Newsletter\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\Fields\CheckboxField;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Newsletter\Enums\NewsletterStatusEnum;
-use Botble\Newsletter\Events\SubscribeNewsletterEvent;
-use Botble\Newsletter\Events\UnsubscribeNewsletterEvent;
-use Botble\Newsletter\Forms\Fronts\NewsletterForm;
-use Botble\Newsletter\Http\Requests\NewsletterRequest;
-use Botble\Newsletter\Models\Newsletter;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\Fields\CheckboxField;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Newsletter\Enums\NewsletterStatusEnum;
+use App\Plugins\Newsletter\Events\SubscribeNewsletterEvent;
+use App\Plugins\Newsletter\Events\UnsubscribeNewsletterEvent;
+use App\Plugins\Newsletter\Forms\Fronts\NewsletterForm;
+use App\Plugins\Newsletter\Http\Requests\NewsletterRequest;
+use App\Plugins\Newsletter\Models\Newsletter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 

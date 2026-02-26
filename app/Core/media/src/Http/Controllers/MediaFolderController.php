@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Media\Http\Controllers;
+namespace App\Core\Media\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Http\Requests\MediaFolderRequest;
-use Botble\Media\Models\MediaFolder;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Http\Requests\MediaFolderRequest;
+use App\Core\Media\Models\MediaFolder;
 use Exception;
 use Illuminate\Support\Facades\Auth;
 

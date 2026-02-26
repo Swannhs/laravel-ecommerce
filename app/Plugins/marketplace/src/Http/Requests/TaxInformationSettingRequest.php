@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests;
+namespace App\Plugins\Marketplace\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class TaxInformationSettingRequest extends Request
 {

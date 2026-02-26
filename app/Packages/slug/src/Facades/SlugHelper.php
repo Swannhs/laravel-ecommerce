@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Slug\Facades;
+namespace App\Packages\Slug\Facades;
 
-use Botble\Slug\SlugHelper as BaseSlugHelper;
+use App\Packages\Slug\SlugHelper as BaseSlugHelper;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Botble\Slug\SlugHelper registerModule(array|string $model, \Closure|string|null $name = null)
+ * @method static \App\Packages\Slug\SlugHelper registerModule(array|string $model, \Closure|string|null $name = null)
  * @method static static registering(\Closure $callback)
- * @method static \Botble\Slug\SlugHelper removeModule(array|string $model)
+ * @method static \App\Packages\Slug\SlugHelper removeModule(array|string $model)
  * @method static array supportedModels()
- * @method static \Botble\Slug\SlugHelper setPrefix(string $model, string|null $prefix, bool $canEmptyPrefix = false)
- * @method static \Botble\Slug\SlugHelper setColumnUsedForSlugGenerator(string $model, string $column)
+ * @method static \App\Packages\Slug\SlugHelper setPrefix(string $model, string|null $prefix, bool $canEmptyPrefix = false)
+ * @method static \App\Packages\Slug\SlugHelper setColumnUsedForSlugGenerator(string $model, string $column)
  * @method static bool isSupportedModel(string $model)
- * @method static \Botble\Slug\SlugHelper disablePreview(array|string $model)
+ * @method static \App\Packages\Slug\SlugHelper disablePreview(array|string $model)
  * @method static bool canPreview(string $model)
- * @method static \Botble\Base\Contracts\BaseModel|\Botble\Slug\Models\Slug createSlug(\Botble\Base\Contracts\BaseModel $model, string|null $name = null)
+ * @method static \App\Core\Base\Contracts\BaseModel|\App\Packages\Slug\Models\Slug createSlug(\App\Core\Base\Contracts\BaseModel $model, string|null $name = null)
  * @method static mixed getSlug(string|null $key, string|null $prefix = null, string|null $model = null, $referenceId = null)
  * @method static string|null getPrefix(string $model, string $default = '', bool $translate = true)
  * @method static string getHelperTextForPrefix(string $model, string $default = '/', bool $translate = true)
@@ -26,11 +26,11 @@ use Illuminate\Support\Facades\Facade;
  * @method static string|null getPublicSingleEndingURL()
  * @method static string getSettingKey(string $key)
  * @method static array getCanEmptyPrefixes()
- * @method static \Botble\Slug\SlugCompiler getTranslator()
+ * @method static \App\Packages\Slug\SlugCompiler getTranslator()
  * @method static array getSlugPrefixes()
  * @method static array getAllPrefixes()
  *
- * @see \Botble\Slug\SlugHelper
+ * @see \App\Packages\Slug\SlugHelper
  */
 class SlugHelper extends Facade
 {

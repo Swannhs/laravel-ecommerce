@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Setting\Http\Requests\EmailTemplateChangeStatusRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Setting\Http\Requests\EmailTemplateChangeStatusRequest;
 
 class EmailTemplateStatusController extends SettingController
 {

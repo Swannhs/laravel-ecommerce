@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Enums\BaseStatusEnum;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

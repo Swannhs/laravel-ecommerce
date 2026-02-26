@@ -2,7 +2,7 @@
     <x-plugins-payment::payment-method
         :name="STRIPE_PAYMENT_METHOD_NAME"
         paymentName="Stripe"
-        :supportedCurrencies="(new Botble\Stripe\Services\Gateways\StripePaymentService)->supportedCurrencyCodes()"
+        :supportedCurrencies="(new App\Plugins\Stripe\Services\Gateways\StripePaymentService)->supportedCurrencyCodes()"
     >
         @if (get_payment_setting('payment_type', STRIPE_PAYMENT_METHOD_NAME, 'stripe_api_charge') == 'stripe_api_charge')
             <div class="card-checkout" style="max-width: 350px">

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Payment\Forms;
+namespace App\Plugins\Payment\Forms;
 
-use Botble\Base\Forms\FieldOptions\EditorFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\EditorField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Payment\Concerns\Forms\HasAvailableCountriesField;
-use Botble\Payment\Enums\PaymentMethodEnum;
+use App\Core\Base\Forms\FieldOptions\EditorFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\EditorField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Payment\Concerns\Forms\HasAvailableCountriesField;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
 
 class CODPaymentMethodForm extends PaymentMethodForm
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\GetStarted\Http\Controllers;
+namespace App\Packages\GetStarted\Http\Controllers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\GetStarted\Http\Requests\GetStartedRequest;
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Facades\ThemeOption;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Packages\GetStarted\Http\Requests\GetStartedRequest;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Facades\ThemeOption;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 

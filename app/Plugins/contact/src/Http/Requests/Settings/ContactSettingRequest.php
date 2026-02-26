@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Http\Requests\Settings;
+namespace App\Plugins\Contact\Http\Requests\Settings;
 
-use Botble\Base\Rules\EmailRule;
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class ContactSettingRequest extends Request
 {

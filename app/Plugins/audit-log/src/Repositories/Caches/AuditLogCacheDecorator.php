@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\AuditLog\Repositories\Caches;
+namespace App\Plugins\AuditLog\Repositories\Caches;
 
-use Botble\AuditLog\Repositories\Eloquent\AuditLogRepository;
+use App\Plugins\AuditLog\Repositories\Eloquent\AuditLogRepository;
 
 /**
  * @deprecated

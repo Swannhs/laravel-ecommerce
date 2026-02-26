@@ -1,32 +1,32 @@
 <?php
 
-use Botble\Ecommerce\Http\Controllers\API\AccountDeletionController;
-use Botble\Ecommerce\Http\Controllers\API\AddressController;
-use Botble\Ecommerce\Http\Controllers\API\BrandController;
-use Botble\Ecommerce\Http\Controllers\API\CartController;
-use Botble\Ecommerce\Http\Controllers\API\CheckoutController;
-use Botble\Ecommerce\Http\Controllers\API\CompareController;
-use Botble\Ecommerce\Http\Controllers\API\CountryController;
-use Botble\Ecommerce\Http\Controllers\API\CouponController;
-use Botble\Ecommerce\Http\Controllers\API\CurrencyController;
-use Botble\Ecommerce\Http\Controllers\API\DownloadController;
-use Botble\Ecommerce\Http\Controllers\API\FilterController;
-use Botble\Ecommerce\Http\Controllers\API\FlashSaleController;
-use Botble\Ecommerce\Http\Controllers\API\OrderController;
-use Botble\Ecommerce\Http\Controllers\API\OrderReturnController;
-use Botble\Ecommerce\Http\Controllers\API\OrderTrackingController;
-use Botble\Ecommerce\Http\Controllers\API\ProductCategoryController;
-use Botble\Ecommerce\Http\Controllers\API\ProductController;
-use Botble\Ecommerce\Http\Controllers\API\ReviewController;
-use Botble\Ecommerce\Http\Controllers\API\TaxController;
-use Botble\Ecommerce\Http\Controllers\API\WishlistController;
-use Botble\Ecommerce\Http\Middleware\ApiCurrencyMiddleware;
+use App\Plugins\Ecommerce\Http\Controllers\API\AccountDeletionController;
+use App\Plugins\Ecommerce\Http\Controllers\API\AddressController;
+use App\Plugins\Ecommerce\Http\Controllers\API\BrandController;
+use App\Plugins\Ecommerce\Http\Controllers\API\CartController;
+use App\Plugins\Ecommerce\Http\Controllers\API\CheckoutController;
+use App\Plugins\Ecommerce\Http\Controllers\API\CompareController;
+use App\Plugins\Ecommerce\Http\Controllers\API\CountryController;
+use App\Plugins\Ecommerce\Http\Controllers\API\CouponController;
+use App\Plugins\Ecommerce\Http\Controllers\API\CurrencyController;
+use App\Plugins\Ecommerce\Http\Controllers\API\DownloadController;
+use App\Plugins\Ecommerce\Http\Controllers\API\FilterController;
+use App\Plugins\Ecommerce\Http\Controllers\API\FlashSaleController;
+use App\Plugins\Ecommerce\Http\Controllers\API\OrderController;
+use App\Plugins\Ecommerce\Http\Controllers\API\OrderReturnController;
+use App\Plugins\Ecommerce\Http\Controllers\API\OrderTrackingController;
+use App\Plugins\Ecommerce\Http\Controllers\API\ProductCategoryController;
+use App\Plugins\Ecommerce\Http\Controllers\API\ProductController;
+use App\Plugins\Ecommerce\Http\Controllers\API\ReviewController;
+use App\Plugins\Ecommerce\Http\Controllers\API\TaxController;
+use App\Plugins\Ecommerce\Http\Controllers\API\WishlistController;
+use App\Plugins\Ecommerce\Http\Middleware\ApiCurrencyMiddleware;
 use Illuminate\Support\Facades\Route;
 
 Route::group([
     'middleware' => ['api', ApiCurrencyMiddleware::class, 'api.language.ecommerce'],
     'prefix' => 'api/v1/ecommerce/',
-    'namespace' => 'Botble\Ecommerce\Http\Controllers\API',
+    'namespace' => 'App\Plugins\Ecommerce\Http\Controllers\API',
 ], function (): void {
     // Public routes that use token-based security
     Route::get('download/{token}/{order_id}', [DownloadController::class, 'downloadFile'])->name('api.ecommerce.download.download-file');

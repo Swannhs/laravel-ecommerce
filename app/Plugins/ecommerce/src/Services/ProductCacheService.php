@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Language\Facades\Language;
-use Botble\Support\Services\Cache\Cache;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Language\Facades\Language;
+use App\Core\Support\Services\Cache\Cache;
 
 class ProductCacheService
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Widgets\Contracts\AdminWidget;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Tables\Reports\RecentOrdersTable;
-use Botble\Ecommerce\Tables\Reports\TopSellingProductsTable;
-use Botble\Ecommerce\Tables\Reports\TrendingProductsTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Widgets\Contracts\AdminWidget;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Tables\Reports\RecentOrdersTable;
+use App\Plugins\Ecommerce\Tables\Reports\TopSellingProductsTable;
+use App\Plugins\Ecommerce\Tables\Reports\TrendingProductsTable;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

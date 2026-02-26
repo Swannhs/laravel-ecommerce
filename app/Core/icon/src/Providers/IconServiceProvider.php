@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Icon\Providers;
+namespace App\Core\Icon\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Icon\Commands\IconUpdateCommand;
-use Botble\Icon\Facades\Icon as IconFacade;
-use Botble\Icon\IconManager;
-use Botble\Icon\View\Components\Icon;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Icon\Commands\IconUpdateCommand;
+use App\Core\Icon\Facades\Icon as IconFacade;
+use App\Core\Icon\IconManager;
+use App\Core\Icon\View\Components\Icon;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Blade;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Table\Abstracts\Concerns;
+namespace App\Core\Table\Abstracts\Concerns;
 
-use Botble\ACL\Models\User;
-use Botble\Table\Columns\Column;
+use App\Core\ACL\Models\User;
+use App\Core\Table\Columns\Column;
 use Illuminate\Support\Str;
 
 trait HasColumnVisibility

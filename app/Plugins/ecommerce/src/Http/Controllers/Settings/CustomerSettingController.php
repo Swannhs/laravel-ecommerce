@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Base\Exceptions\DisabledInDemoModeException;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Forms\Settings\CustomerSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\CustomerSettingRequest;
+use App\Core\Base\Exceptions\DisabledInDemoModeException;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Forms\Settings\CustomerSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\CustomerSettingRequest;
 
 class CustomerSettingController extends SettingController
 {

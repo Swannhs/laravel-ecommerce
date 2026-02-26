@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Faq\Forms;
+namespace App\Plugins\Faq\Forms;
 
-use Botble\Base\Forms\FieldOptions\EditorFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\Fields\EditorField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Faq\Http\Requests\FaqRequest;
-use Botble\Faq\Models\Faq;
-use Botble\Faq\Models\FaqCategory;
+use App\Core\Base\Forms\FieldOptions\EditorFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\Fields\EditorField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Faq\Http\Requests\FaqRequest;
+use App\Plugins\Faq\Models\Faq;
+use App\Plugins\Faq\Models\FaqCategory;
 
 class FaqForm extends FormAbstract
 {

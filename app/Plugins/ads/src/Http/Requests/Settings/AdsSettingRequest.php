@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ads\Http\Requests\Settings;
+namespace App\Plugins\Ads\Http\Requests\Settings;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Validator;
 
 class AdsSettingRequest extends Request

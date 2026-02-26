@@ -1,19 +1,19 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Http\Middleware\DisableInDemoModeMiddleware;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Controllers\Customers\ExportCustomerController;
-use Botble\Ecommerce\Http\Controllers\Customers\ImportCustomerController;
-use Botble\Ecommerce\Http\Controllers\Customers\OrderController;
-use Botble\Ecommerce\Http\Controllers\Customers\UploadProofController;
-use Botble\Ecommerce\Http\Controllers\Fronts\AccountDeletionController;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Http\Middleware\DisableInDemoModeMiddleware;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Controllers\Customers\ExportCustomerController;
+use App\Plugins\Ecommerce\Http\Controllers\Customers\ImportCustomerController;
+use App\Plugins\Ecommerce\Http\Controllers\Customers\OrderController;
+use App\Plugins\Ecommerce\Http\Controllers\Customers\UploadProofController;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\AccountDeletionController;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(
     function (): void {
-        Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Customers'], function (): void {
+        Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers\Customers'], function (): void {
             Route::group(['prefix' => 'customers', 'as' => 'customers.'], function (): void {
                 Route::resource('', 'CustomerController')->parameters(['' => 'customer']);
 
@@ -102,7 +102,7 @@ AdminHelper::registerRoutes(
 
 Theme::registerRoutes(function (): void {
     Route::group([
-        'namespace' => 'Botble\Ecommerce\Http\Controllers\Customers',
+        'namespace' => 'App\Plugins\Ecommerce\Http\Controllers\Customers',
         'middleware' => ['customer.guest'],
         'as' => 'customer.',
     ], function (): void {
@@ -127,7 +127,7 @@ Theme::registerRoutes(function (): void {
     });
 
     Route::group([
-        'namespace' => 'Botble\Ecommerce\Http\Controllers\Customers',
+        'namespace' => 'App\Plugins\Ecommerce\Http\Controllers\Customers',
         'middleware' => [
             'web',
             'core',
@@ -142,7 +142,7 @@ Theme::registerRoutes(function (): void {
     });
 
     Route::middleware('customer')
-        ->namespace('Botble\Ecommerce\Http\Controllers\Customers')
+        ->namespace('App\Plugins\Ecommerce\Http\Controllers\Customers')
         ->name('customer.')
         ->group(function (): void {
             Route::get('logout', 'LoginController@logout')->name('logout');
@@ -288,7 +288,7 @@ Theme::registerRoutes(function (): void {
             ]);
         });
 
-    Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Customers', 'as' => 'public.'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers\Customers', 'as' => 'public.'], function (): void {
         Route::get('digital-products/download/{id}', [
             'as' => 'digital-products.download',
             'uses' => 'PublicController@getDownload',

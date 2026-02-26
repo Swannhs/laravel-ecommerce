@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Location\Repositories\Eloquent;
+namespace App\Plugins\Location\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Language\Facades\Language;
-use Botble\Location\Repositories\Interfaces\CityInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Location\Repositories\Interfaces\CityInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Query\JoinClause;

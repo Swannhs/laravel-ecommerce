@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Support\Repositories\Eloquent;
+namespace App\Core\Support\Repositories\Eloquent;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Supports\RepositoryHelper;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

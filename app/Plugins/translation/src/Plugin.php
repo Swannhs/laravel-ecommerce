@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Translation;
+namespace App\Plugins\Translation;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
 
 class Plugin extends PluginOperationAbstract
 {

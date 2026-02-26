@@ -127,7 +127,7 @@
             <div class="col">
                 <x-core::form.select
                     :label="trans('plugins/ecommerce::products.cross_sell_price_type.title')"
-                    :options="\Botble\Ecommerce\Enums\CrossSellPriceType::labels()"
+                    :options="\App\Plugins\Ecommerce\Enums\CrossSellPriceType::labels()"
                     name="cross_sale_products[__id__][price_type]"
                 />
             </div>

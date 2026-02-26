@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\ACL\Http\Controllers;
+namespace App\Core\ACL\Http\Controllers;
 
-use Botble\ACL\Events\RoleAssignmentEvent;
-use Botble\ACL\Events\RoleUpdateEvent;
-use Botble\ACL\Forms\RoleForm;
-use Botble\ACL\Http\Requests\AssignRoleRequest;
-use Botble\ACL\Http\Requests\RoleCreateRequest;
-use Botble\ACL\Models\Role;
-use Botble\ACL\Models\User;
-use Botble\ACL\Tables\RoleTable;
-use Botble\Base\Http\Controllers\BaseSystemController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Base\Supports\Helper;
+use App\Core\ACL\Events\RoleAssignmentEvent;
+use App\Core\ACL\Events\RoleUpdateEvent;
+use App\Core\ACL\Forms\RoleForm;
+use App\Core\ACL\Http\Requests\AssignRoleRequest;
+use App\Core\ACL\Http\Requests\RoleCreateRequest;
+use App\Core\ACL\Models\Role;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Tables\RoleTable;
+use App\Core\Base\Http\Controllers\BaseSystemController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Base\Supports\Helper;
 
 class RoleController extends BaseSystemController
 {

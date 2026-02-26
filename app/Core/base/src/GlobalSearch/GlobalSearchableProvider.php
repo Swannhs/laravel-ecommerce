@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\GlobalSearch;
+namespace App\Core\Base\GlobalSearch;
 
-use Botble\Base\Contracts\GlobalSearchableProvider as GlobalSearchableProviderContract;
+use App\Core\Base\Contracts\GlobalSearchableProvider as GlobalSearchableProviderContract;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use LogicException;

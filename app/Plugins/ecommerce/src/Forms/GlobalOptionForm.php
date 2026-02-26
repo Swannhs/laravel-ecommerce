@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Enums\GlobalOptionEnum;
-use Botble\Ecommerce\Http\Requests\GlobalOptionRequest;
-use Botble\Ecommerce\Models\GlobalOption;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Enums\GlobalOptionEnum;
+use App\Plugins\Ecommerce\Http\Requests\GlobalOptionRequest;
+use App\Plugins\Ecommerce\Models\GlobalOption;
 
 class GlobalOptionForm extends FormAbstract
 {

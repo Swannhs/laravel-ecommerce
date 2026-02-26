@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Auth;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Auth;
 
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\PasswordField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
-use Botble\Ecommerce\Http\Requests\Fronts\Auth\ResetPasswordRequest;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\PasswordField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\Auth\ResetPasswordRequest;
 
 class ResetPasswordForm extends AuthForm
 {

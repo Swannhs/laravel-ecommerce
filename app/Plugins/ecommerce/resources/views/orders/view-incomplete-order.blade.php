@@ -177,10 +177,10 @@
                                                 href="{{ route('payment.show', $order->payment->id) }}"
                                                 target="_blank"
                                             >
-                                                <span>{{ format_price($order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
+                                                <span>{{ format_price($order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
                                             </a>
                                         @else
-                                            <span>{{ format_price(is_plugin_active('payment') && $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
+                                            <span>{{ format_price(is_plugin_active('payment') && $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
                                         @endif
                                     </x-core::table.body.cell>
                                 </x-core::table.body.row>
@@ -373,13 +373,13 @@
             <x-core::form.select
                 name="payment_method"
                 :label="trans('plugins/ecommerce::order.payment_method')"
-                :options="\Botble\Payment\Enums\PaymentMethodEnum::labels()"
+                :options="\App\Plugins\Payment\Enums\PaymentMethodEnum::labels()"
             />
 
             <x-core::form.select
                 name="payment_status"
                 :label="trans('plugins/ecommerce::order.payment_status_label')"
-                :options="\Botble\Payment\Enums\PaymentStatusEnum::labels()"
+                :options="\App\Plugins\Payment\Enums\PaymentStatusEnum::labels()"
             />
 
             <x-core::form.text-input

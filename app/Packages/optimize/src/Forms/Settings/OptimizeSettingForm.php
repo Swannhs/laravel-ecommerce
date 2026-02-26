@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Optimize\Forms\Settings;
+namespace App\Packages\Optimize\Forms\Settings;
 
-use Botble\Optimize\Http\Requests\OptimizeSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Packages\Optimize\Http\Requests\OptimizeSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class OptimizeSettingForm extends SettingForm
 {

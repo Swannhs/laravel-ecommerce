@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Listeners;
+namespace App\Plugins\LanguageAdvanced\Listeners;
 
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Models\BaseModel;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Support\Services\Cache\Cache;
 
 class ClearCacheAfterUpdateData
 {

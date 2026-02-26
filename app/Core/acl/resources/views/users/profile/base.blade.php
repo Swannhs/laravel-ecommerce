@@ -78,7 +78,7 @@
 
 @if ($canChangeProfile)
     @push('footer')
-        {!! JsValidator::formRequest(Botble\ACL\Http\Requests\UpdateProfileRequest::class, '#profile-form') !!}
-        {!! JsValidator::formRequest(Botble\ACL\Http\Requests\UpdatePasswordRequest::class, '#password-form') !!}
+        {!! JsValidator::formRequest(App\Core\ACL\Http\Requests\UpdateProfileRequest::class, '#profile-form') !!}
+        {!! JsValidator::formRequest(App\Core\ACL\Http\Requests\UpdatePasswordRequest::class, '#password-form') !!}
     @endpush
 @endif

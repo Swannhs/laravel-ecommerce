@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Supports;
+namespace App\Core\Table\Supports;
 
 use Illuminate\Support\HtmlString;
 use Yajra\DataTables\Html\Builder as BaseBuilder;

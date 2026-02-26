@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Fronts\UploadProofRequest;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Order;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\UploadProofRequest;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Support\Facades\Storage;
 
 class UploadProofController extends BaseController

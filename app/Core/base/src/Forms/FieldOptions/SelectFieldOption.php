@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Forms\FieldOptions;
+namespace App\Core\Base\Forms\FieldOptions;
 
-use Botble\Base\Forms\FormFieldOptions;
+use App\Core\Base\Forms\FormFieldOptions;
 use Closure;
 use Illuminate\Support\Collection;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Auth;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Auth;
 
-use Botble\Base\Forms\FieldOptions\ButtonFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\PasswordField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\UpdatePasswordRequest;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Forms\FieldOptions\ButtonFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\PasswordField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Http\Requests\UpdatePasswordRequest;
+use App\Plugins\Ecommerce\Models\Customer;
 
 class ChangePasswordForm extends FormAbstract
 {

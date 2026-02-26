@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Translation;
+namespace App\Plugins\Translation;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Support\Facades\File;
 use Throwable;
 

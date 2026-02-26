@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Enums\DeletionRequestStatusEnum;
-use Botble\Ecommerce\Http\Requests\API\AccountDeletionRequest;
-use Botble\Ecommerce\Http\Requests\API\VerifyAccountDeletionRequest;
-use Botble\Ecommerce\Jobs\CustomerDeleteAccountJob;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\CustomerDeletionRequest;
-use Botble\Ecommerce\Notifications\SendVerificationCodeNotification;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Enums\DeletionRequestStatusEnum;
+use App\Plugins\Ecommerce\Http\Requests\API\AccountDeletionRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\VerifyAccountDeletionRequest;
+use App\Plugins\Ecommerce\Jobs\CustomerDeleteAccountJob;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\CustomerDeletionRequest;
+use App\Plugins\Ecommerce\Notifications\SendVerificationCodeNotification;
 use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Str;

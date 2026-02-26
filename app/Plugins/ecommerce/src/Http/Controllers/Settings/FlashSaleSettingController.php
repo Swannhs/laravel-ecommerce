@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\FlashSaleSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\FlashSaleSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\FlashSaleSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\FlashSaleSettingRequest;
 
 class FlashSaleSettingController extends SettingController
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Marketplace\Services;
+namespace App\Plugins\Marketplace\Services;
 
-use Botble\Base\Supports\Pdf;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Supports\TwigExtension;
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Models\Withdrawal;
-use Botble\Media\Facades\RvMedia;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Supports\Pdf;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Supports\TwigExtension;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Models\Withdrawal;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Response;
 use Illuminate\Support\Carbon;
 

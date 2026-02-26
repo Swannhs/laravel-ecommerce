@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Menu\Models;
+namespace App\Packages\Menu\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\Concerns\HasSlug;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\Concerns\HasSlug;
+use App\Core\Support\Services\Cache\Cache;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Menu extends BaseModel

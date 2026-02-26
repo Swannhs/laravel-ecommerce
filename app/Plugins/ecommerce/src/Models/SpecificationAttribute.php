@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\SpecificationAttributeFieldType;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\SpecificationAttributeFieldType;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 

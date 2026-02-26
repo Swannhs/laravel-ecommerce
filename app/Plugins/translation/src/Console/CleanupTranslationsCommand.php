@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace App\Plugins\Translation\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;

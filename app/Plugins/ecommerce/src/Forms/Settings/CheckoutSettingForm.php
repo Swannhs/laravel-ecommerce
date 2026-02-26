@@ -1,28 +1,28 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\LabelFieldOption;
-use Botble\Base\Forms\FieldOptions\MultiChecklistFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\RadioFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\LabelField;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Supports\Helper;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Settings\CheckoutSettingRequest;
-use Botble\Language\Forms\Fields\LanguageSwitcherField;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\LabelFieldOption;
+use App\Core\Base\Forms\FieldOptions\MultiChecklistFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\RadioFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\LabelField;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Supports\Helper;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Settings\CheckoutSettingRequest;
+use App\Plugins\Language\Forms\Fields\LanguageSwitcherField;
+use App\Core\Setting\Forms\SettingForm;
 
 class CheckoutSettingForm extends SettingForm
 {

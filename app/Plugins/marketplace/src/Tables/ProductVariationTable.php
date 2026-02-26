@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Base\Facades\Form;
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Tables\ProductVariationTable as EcommerceProductVariationTable;
+use App\Core\Base\Facades\Form;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Tables\ProductVariationTable as EcommerceProductVariationTable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

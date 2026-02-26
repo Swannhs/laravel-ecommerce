@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\MetaBox;
-use Botble\Ecommerce\Models\Product;
-use Botble\Faq\FaqSupport;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\MetaBox;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Faq\FaqSupport;
 
 class SaveProductFaqListener
 {

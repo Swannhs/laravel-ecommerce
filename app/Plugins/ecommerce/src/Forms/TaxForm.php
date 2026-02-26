@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\TaxRequest;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Ecommerce\Tables\TaxRuleTable;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Http\Requests\TaxRequest;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Ecommerce\Tables\TaxRuleTable;
 
 class TaxForm extends FormAbstract
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\GetStarted\Http\Requests;
+namespace App\Packages\GetStarted\Http\Requests;
 
-use Botble\Base\Rules\EmailRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Support\Http\Requests\Request;
 
 class GetStartedRequest extends Request
 {

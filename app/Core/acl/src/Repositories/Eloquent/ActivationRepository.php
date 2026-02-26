@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\ACL\Repositories\Eloquent;
+namespace App\Core\ACL\Repositories\Eloquent;
 
-use Botble\ACL\Models\Activation;
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\Base\Models\BaseModel;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\ACL\Models\Activation;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Repositories\Interfaces\ActivationInterface;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;

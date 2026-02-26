@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Installer\Http\Requests;
+namespace App\Packages\Installer\Http\Requests;
 
-use Botble\ACL\Http\Requests\CreateUserRequest;
+use App\Core\ACL\Http\Requests\CreateUserRequest;
 
 class SaveAccountRequest extends CreateUserRequest
 {

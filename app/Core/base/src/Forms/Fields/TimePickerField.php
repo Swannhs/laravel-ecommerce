@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Forms\Fields;
+namespace App\Core\Base\Forms\Fields;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FormField;
 
 class TimePickerField extends FormField
 {

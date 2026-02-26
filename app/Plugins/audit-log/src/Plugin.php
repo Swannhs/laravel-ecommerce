@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\AuditLog;
+namespace App\Plugins\AuditLog;
 
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Widget\Models\Widget;
+use App\Core\Dashboard\Models\DashboardWidget;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Packages\Widget\Models\Widget;
 use Illuminate\Support\Facades\Schema;
 
 class Plugin extends PluginOperationAbstract

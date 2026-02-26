@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\Http\Traits;
+namespace App\Core\Setting\Http\Traits;
 
-use Botble\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\EmailHandler;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

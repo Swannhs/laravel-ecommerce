@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Newsletter\Facades;
+namespace App\Plugins\Newsletter\Facades;
 
-use Botble\Newsletter\Contracts\Factory;
+use App\Plugins\Newsletter\Contracts\Factory;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @method static string getDefaultDriver()
  * @method static void registerNewsletterPopup(bool $keepHtmlDomOnClose = false)
  * @method static mixed driver(string|null $driver = null)
- * @method static \Botble\Newsletter\NewsletterManager extend(string $driver, \Closure $callback)
+ * @method static \App\Plugins\Newsletter\NewsletterManager extend(string $driver, \Closure $callback)
  * @method static array getDrivers()
  * @method static \Illuminate\Contracts\Container\Container getContainer()
- * @method static \Botble\Newsletter\NewsletterManager setContainer(\Illuminate\Contracts\Container\Container $container)
- * @method static \Botble\Newsletter\NewsletterManager forgetDrivers()
+ * @method static \App\Plugins\Newsletter\NewsletterManager setContainer(\Illuminate\Contracts\Container\Container $container)
+ * @method static \App\Plugins\Newsletter\NewsletterManager forgetDrivers()
  *
- * @see \Botble\Newsletter\NewsletterManager
+ * @see \App\Plugins\Newsletter\NewsletterManager
  */
 class Newsletter extends Facade
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Botble\LanguageAdvanced\Plugin;
+use App\Plugins\LanguageAdvanced\Plugin;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

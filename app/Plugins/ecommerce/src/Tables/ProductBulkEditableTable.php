@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\ImageColumn;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\ImageColumn;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Arr;
 

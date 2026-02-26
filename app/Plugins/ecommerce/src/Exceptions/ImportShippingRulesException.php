@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Exceptions;
+namespace App\Plugins\Ecommerce\Exceptions;
 
-use Botble\Base\Contracts\Exceptions\IgnoringReport;
+use App\Core\Base\Contracts\Exceptions\IgnoringReport;
 use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 
 class ImportShippingRulesException extends BadRequestException implements IgnoringReport

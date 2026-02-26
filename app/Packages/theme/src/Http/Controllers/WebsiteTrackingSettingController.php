@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Theme\Http\Controllers;
+namespace App\Packages\Theme\Http\Controllers;
 
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\Theme\Forms\Settings\WebsiteTrackingSettingForm;
-use Botble\Theme\Http\Requests\WebsiteTrackingSettingRequest;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Packages\Theme\Forms\Settings\WebsiteTrackingSettingForm;
+use App\Packages\Theme\Http\Requests\WebsiteTrackingSettingRequest;
 
 class WebsiteTrackingSettingController extends SettingController
 {

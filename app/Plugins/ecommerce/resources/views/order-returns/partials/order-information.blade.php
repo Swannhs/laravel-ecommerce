@@ -97,8 +97,8 @@
 </x-core::card>
 
 @if (! in_array($returnRequest->return_status, [
-    Botble\Ecommerce\Enums\OrderReturnStatusEnum::COMPLETED,
-    Botble\Ecommerce\Enums\OrderReturnStatusEnum::CANCELED,
+    App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum::COMPLETED,
+    App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum::CANCELED,
 ]))
     <x-core::card>
         <x-core::card.header>
@@ -107,7 +107,7 @@
             </x-core::card.title>
         </x-core::card.header>
         <x-core::card.body>
-            @if ($returnRequest->return_status != Botble\Ecommerce\Enums\OrderReturnStatusEnum::PROCESSING)
+            @if ($returnRequest->return_status != App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum::PROCESSING)
                 <x-core::button
                     type="button"
                     color="primary"
@@ -152,9 +152,9 @@
         </p>
 
         {!!
-            \Botble\Ecommerce\Forms\ModerateOrderReturnForm::create()
+            \App\Plugins\Ecommerce\Forms\ModerateOrderReturnForm::create()
                 ->setUrl(route($orderReturnEditRouteName, $returnRequest->getKey()))
-                ->addHiddenStatus(Botble\Ecommerce\Enums\OrderReturnStatusEnum::PROCESSING)
+                ->addHiddenStatus(App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum::PROCESSING)
                 ->addSubmitButton(trans('plugins/ecommerce::order.order_return_moderation.approve_button'), 'primary')
                 ->renderForm()
         !!}
@@ -170,9 +170,9 @@
         </p>
 
         {!!
-            \Botble\Ecommerce\Forms\ModerateOrderReturnForm::create()
+            \App\Plugins\Ecommerce\Forms\ModerateOrderReturnForm::create()
                 ->setUrl(route($orderReturnEditRouteName, $returnRequest->getKey()))
-                ->addHiddenStatus(Botble\Ecommerce\Enums\OrderReturnStatusEnum::CANCELED)
+                ->addHiddenStatus(App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum::CANCELED)
                 ->addSubmitButton(trans('plugins/ecommerce::order.order_return_moderation.reject_button'), 'danger')
                 ->renderForm()
         !!}
@@ -188,9 +188,9 @@
         </p>
 
             {!!
-                \Botble\Ecommerce\Forms\ModerateOrderReturnForm::create()
+                \App\Plugins\Ecommerce\Forms\ModerateOrderReturnForm::create()
                     ->setUrl(route($orderReturnEditRouteName, $returnRequest->getKey()))
-                    ->addHiddenStatus(Botble\Ecommerce\Enums\OrderReturnStatusEnum::COMPLETED)
+                    ->addHiddenStatus(App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum::COMPLETED)
                     ->addSubmitButton(trans('plugins/ecommerce::order.order_return_moderation.mark_as_completed_button'), 'success')
                     ->renderForm()
             !!}

@@ -102,7 +102,7 @@
                     {{ trans('plugins/ecommerce::order.total_amount_can_be_refunded') }}
                 </x-core::table.body.cell>
                 <x-core::table.body.cell>
-                    @if (!is_plugin_active('payment') || $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                    @if (!is_plugin_active('payment') || $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::PENDING)
                         <span>{{ format_price(0) }}</span>
                     @else
                         <span>{{ format_price($order->payment->amount - $order->payment->refunded_amount) }}</span>
@@ -114,7 +114,7 @@
 
     @if (
         is_plugin_active('payment')
-        && $order->payment->status !== Botble\Payment\Enums\PaymentStatusEnum::PENDING
+        && $order->payment->status !== App\Plugins\Payment\Enums\PaymentStatusEnum::PENDING
         && $order->payment->amount - $order->payment->refunded_amount > 0
     )
         <div class="d-flex justify-content-between align-items-center my-3">

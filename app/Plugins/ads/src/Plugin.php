@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ads;
+namespace App\Plugins\Ads;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
 use Illuminate\Support\Facades\Schema;
 
 class Plugin extends PluginOperationAbstract

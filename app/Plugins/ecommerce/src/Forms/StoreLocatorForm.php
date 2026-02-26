@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\Fields\CheckboxField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Forms\Concerns\HasLocationFields;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
-use Botble\Ecommerce\Http\Requests\StoreLocatorRequest;
-use Botble\Ecommerce\Models\StoreLocator;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\Fields\CheckboxField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Forms\Concerns\HasLocationFields;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\StoreLocatorRequest;
+use App\Plugins\Ecommerce\Models\StoreLocator;
 
 class StoreLocatorForm extends FormAbstract
 {

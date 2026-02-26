@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\PluginManagement\Listeners;
+namespace App\Packages\PluginManagement\Listeners;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\PluginManagement\PluginManifest;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\PluginManagement\PluginManifest;
 use Exception;
 use Illuminate\Support\Facades\File;
 

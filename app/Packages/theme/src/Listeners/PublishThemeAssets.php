@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Listeners;
+namespace App\Packages\Theme\Listeners;
 
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Services\ThemeService;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Services\ThemeService;
 use Illuminate\Support\Facades\File;
 
 class PublishThemeAssets

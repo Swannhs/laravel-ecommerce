@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Base\Supports\Language;
-use Botble\Ecommerce\Models\Currency;
-use Botble\Ecommerce\Services\ExchangeRates\ExchangeRateInterface;
+use App\Core\Base\Supports\Language;
+use App\Plugins\Ecommerce\Models\Currency;
+use App\Plugins\Ecommerce\Services\ExchangeRates\ExchangeRateInterface;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;

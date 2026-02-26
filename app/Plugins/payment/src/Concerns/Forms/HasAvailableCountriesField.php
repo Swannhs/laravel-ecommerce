@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Payment\Concerns\Forms;
+namespace App\Plugins\Payment\Concerns\Forms;
 
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\LabelFieldOption;
-use Botble\Base\Forms\FieldOptions\MultiChecklistFieldOption;
-use Botble\Base\Forms\Fields\LabelField;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Supports\Helper;
-use Botble\Payment\Supports\PaymentHelper;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\LabelFieldOption;
+use App\Core\Base\Forms\FieldOptions\MultiChecklistFieldOption;
+use App\Core\Base\Forms\Fields\LabelField;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Supports\Helper;
+use App\Plugins\Payment\Supports\PaymentHelper;
 
 trait HasAvailableCountriesField
 {

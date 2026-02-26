@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
+use App\Core\Support\Http\Requests\Request;
 
 class EditAccountRequest extends Request
 {

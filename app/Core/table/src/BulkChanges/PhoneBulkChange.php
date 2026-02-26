@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Table\BulkChanges;
+namespace App\Core\Table\BulkChanges;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Table\Abstracts\TableBulkChangeAbstract;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Table\Abstracts\TableBulkChangeAbstract;
 
 class PhoneBulkChange extends TableBulkChangeAbstract
 {

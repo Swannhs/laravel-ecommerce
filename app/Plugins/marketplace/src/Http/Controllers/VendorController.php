@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Marketplace\Models\Vendor;
-use Botble\Marketplace\Tables\VendorTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Marketplace\Models\Vendor;
+use App\Plugins\Marketplace\Tables\VendorTable;
 use Illuminate\Support\Facades\Storage;
 
 class VendorController extends BaseController

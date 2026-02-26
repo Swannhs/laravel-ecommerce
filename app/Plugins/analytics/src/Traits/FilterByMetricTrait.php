@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics\Traits;
+namespace App\Plugins\Analytics\Traits;
 
 use Google\Analytics\Data\V1beta\Filter;
 use Google\Analytics\Data\V1beta\Filter\BetweenFilter;

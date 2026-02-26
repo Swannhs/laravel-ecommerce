@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Unit;
+namespace App\Plugins\Ecommerce\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 

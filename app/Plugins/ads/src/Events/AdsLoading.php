@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ads\Events;
+namespace App\Plugins\Ads\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

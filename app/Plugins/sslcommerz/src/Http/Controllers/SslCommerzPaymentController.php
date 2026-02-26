@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\SslCommerz\Http\Controllers;
+namespace App\Plugins\SslCommerz\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\SslCommerz\Http\Requests\PaymentRequest;
-use Botble\SslCommerz\Library\SslCommerz\SslCommerzNotification;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Plugins\SslCommerz\Http\Requests\PaymentRequest;
+use App\Plugins\SslCommerz\Library\SslCommerz\SslCommerzNotification;
 
 class SslCommerzPaymentController extends BaseController
 {

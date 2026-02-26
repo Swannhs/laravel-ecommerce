@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Listeners;
+namespace App\Plugins\LanguageAdvanced\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Language\Facades\Language;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
 use Illuminate\Support\Facades\DB;
 
 class AddDefaultTranslations

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Models\Currency;
+use App\Plugins\Ecommerce\Models\Currency;
 
 class StoreCurrenciesService
 {

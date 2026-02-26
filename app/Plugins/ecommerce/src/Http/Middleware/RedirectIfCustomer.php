@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Middleware;
+namespace App\Plugins\Ecommerce\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

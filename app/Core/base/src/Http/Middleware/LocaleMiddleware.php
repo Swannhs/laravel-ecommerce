@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Middleware;
+namespace App\Core\Base\Http\Middleware;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Supports\Language;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Supports\Language;
 use Closure;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;

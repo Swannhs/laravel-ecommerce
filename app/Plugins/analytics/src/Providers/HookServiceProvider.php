@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Analytics\Providers;
+namespace App\Plugins\Analytics\Providers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Dashboard\Events\RenderingDashboardWidgets;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
-use Botble\PluginManagement\Events\RenderingPluginListingPage;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Dashboard\Events\RenderingDashboardWidgets;
+use App\Core\Dashboard\Supports\DashboardWidgetInstance;
+use App\Packages\PluginManagement\Events\RenderingPluginListingPage;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;

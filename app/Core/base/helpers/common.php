@@ -1,13 +1,13 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\Html;
-use Botble\Base\Facades\PageTitle;
-use Botble\Base\Supports\Core;
-use Botble\Base\Supports\DashboardMenu as DashboardMenuSupport;
-use Botble\Base\Supports\Editor;
-use Botble\Base\Supports\PageTitle as PageTitleSupport;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Facades\PageTitle;
+use App\Core\Base\Supports\Core;
+use App\Core\Base\Supports\DashboardMenu as DashboardMenuSupport;
+use App\Core\Base\Supports\Editor;
+use App\Core\Base\Supports\PageTitle as PageTitleSupport;
 
 if (! function_exists('language_flag')) {
     function language_flag(?string $flag, ?string $name = null, int $width = 16): string

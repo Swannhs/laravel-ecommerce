@@ -61,7 +61,7 @@
                             <input class="form-control" name="email" type="email" placeholder="{{ __('Email Address') }}" required>
                         </div>
 
-                        {!! apply_filters('form_extra_fields_render', null, \Botble\Newsletter\Forms\Fronts\NewsletterForm::class) !!}
+                        {!! apply_filters('form_extra_fields_render', null, \App\Plugins\Newsletter\Forms\Fronts\NewsletterForm::class) !!}
 
                         <div class="mb-3">
                             <button class="ps-btn" type="submit" >{{ __('Subscribe') }}</button>

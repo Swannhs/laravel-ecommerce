@@ -1,6 +1,6 @@
 <?php
 
-use Botble\PluginManagement\Services\PluginService;
+use App\Packages\PluginManagement\Services\PluginService;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

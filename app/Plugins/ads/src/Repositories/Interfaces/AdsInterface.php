@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ads\Repositories\Interfaces;
+namespace App\Plugins\Ads\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 interface AdsInterface extends RepositoryInterface

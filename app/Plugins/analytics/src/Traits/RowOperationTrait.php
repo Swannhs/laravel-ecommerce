@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics\Traits;
+namespace App\Plugins\Analytics\Traits;
 
 trait RowOperationTrait
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Enums\ShippingRuleTypeEnum;
-use Botble\Ecommerce\Http\Requests\AddShippingRegionRequest;
-use Botble\Ecommerce\Http\Requests\ShippingRuleRequest;
-use Botble\Ecommerce\Models\Shipping;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Ecommerce\Models\ShippingRuleItem;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Enums\ShippingRuleTypeEnum;
+use App\Plugins\Ecommerce\Http\Requests\AddShippingRegionRequest;
+use App\Plugins\Ecommerce\Http\Requests\ShippingRuleRequest;
+use App\Plugins\Ecommerce\Models\Shipping;
+use App\Plugins\Ecommerce\Models\ShippingRule;
+use App\Plugins\Ecommerce\Models\ShippingRuleItem;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

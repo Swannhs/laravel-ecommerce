@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace App\Core\Base\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Hooks\EmailSettingHooks;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Setting\Supports\SettingStore;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Hooks\EmailSettingHooks;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Setting\Supports\SettingStore;
 use Illuminate\Mail\MailManager;
 
 class MailConfigServiceProvider extends ServiceProvider

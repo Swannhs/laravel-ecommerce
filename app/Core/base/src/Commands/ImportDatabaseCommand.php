@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Services\ClearCacheService;
-use Botble\Base\Supports\Database;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Services\ClearCacheService;
+use App\Core\Base\Supports\Database;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;

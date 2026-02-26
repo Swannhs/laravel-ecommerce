@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace App\Packages\Theme\Supports;
 
-use Botble\Media\Facades\RvMedia;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

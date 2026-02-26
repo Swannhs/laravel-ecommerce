@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace App\Plugins\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Services\Products\GetProductBySlugService;
-use Botble\Ecommerce\Services\Products\GetProductWithCrossSalesBySlugService;
-use Botble\Ecommerce\Services\Products\ProductCrossSalePriceService;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Services\Products\GetProductBySlugService;
+use App\Plugins\Ecommerce\Services\Products\GetProductWithCrossSalesBySlugService;
+use App\Plugins\Ecommerce\Services\Products\ProductCrossSalePriceService;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 
 class QuickShopController extends BaseController

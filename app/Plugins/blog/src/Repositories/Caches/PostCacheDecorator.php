@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Blog\Repositories\Caches;
+namespace App\Plugins\Blog\Repositories\Caches;
 
-use Botble\Blog\Repositories\Eloquent\PostRepository;
+use App\Plugins\Blog\Repositories\Eloquent\PostRepository;
 
 /**
  * @deprecated

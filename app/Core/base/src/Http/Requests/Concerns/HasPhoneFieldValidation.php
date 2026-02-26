@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Http\Requests\Concerns;
+namespace App\Core\Base\Http\Requests\Concerns;
 
 trait HasPhoneFieldValidation
 {

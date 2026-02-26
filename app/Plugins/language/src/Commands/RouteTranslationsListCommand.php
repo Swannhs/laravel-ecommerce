@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Commands;
+namespace App\Plugins\Language\Commands;
 
-use Botble\Language\LanguageManager;
-use Botble\Language\Traits\TranslatedRouteCommandContext;
+use App\Plugins\Language\LanguageManager;
+use App\Plugins\Language\Traits\TranslatedRouteCommandContext;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Foundation\Console\RouteListCommand;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Services;
+namespace App\Core\ACL\Services;
 
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Repositories\Interfaces\ActivationInterface;
 
 class ActivateUserService
 {

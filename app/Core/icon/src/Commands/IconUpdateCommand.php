@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Icon\Commands;
+namespace App\Core\Icon\Commands;
 
-use Botble\Icon\Facades\Icon;
+use App\Core\Icon\Facades\Icon;
 use Carbon\Carbon;
 use GuzzleHttp\Psr7\Utils as Psr7Utils;
 use Illuminate\Console\Command;

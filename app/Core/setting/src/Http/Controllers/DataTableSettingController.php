@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Setting\Forms\DataTableSettingForm;
-use Botble\Setting\Http\Requests\DataTableSettingRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Setting\Forms\DataTableSettingForm;
+use App\Core\Setting\Http\Requests\DataTableSettingRequest;
 
 class DataTableSettingController extends SettingController
 {

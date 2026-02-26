@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Commands;
+namespace App\Packages\Theme\Commands;
 
-use Botble\Theme\Facades\Manager as ThemeManager;
+use App\Packages\Theme\Facades\Manager as ThemeManager;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

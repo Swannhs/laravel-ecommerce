@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Middleware;
+namespace App\Plugins\Ecommerce\Http\Middleware;
 
-use Botble\Language\Facades\Language;
+use App\Plugins\Language\Facades\Language;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;

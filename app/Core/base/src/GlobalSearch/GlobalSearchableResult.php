@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\GlobalSearch;
+namespace App\Core\Base\GlobalSearch;
 
-use Botble\Base\Contracts\GlobalSearchableResult as GlobalSearchableResultContract;
+use App\Core\Base\Contracts\GlobalSearchableResult as GlobalSearchableResultContract;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use JsonSerializable;

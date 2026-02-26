@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table;
+namespace App\Core\Table;
 
 use Yajra\DataTables\QueryDataTable as BaseQueryDataTable;
 

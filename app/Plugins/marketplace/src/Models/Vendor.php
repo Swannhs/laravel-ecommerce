@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Marketplace\Models;
+namespace App\Plugins\Marketplace\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Enums\CustomerStatusEnum;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\StoreStatusEnum;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Enums\CustomerStatusEnum;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\StoreStatusEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;

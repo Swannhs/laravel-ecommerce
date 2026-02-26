@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
-use Botble\Base\Contracts\PanelSections\PanelSectionItem;
+use App\Core\Base\Contracts\PanelSections\PanelSectionItem;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class PanelSectionItemRendering

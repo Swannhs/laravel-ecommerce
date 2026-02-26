@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SeoHelper\Helpers;
+namespace App\Packages\SeoHelper\Helpers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\SeoHelper\Contracts\Helpers\MetaContract;
-use Botble\SeoHelper\Exceptions\InvalidArgumentException;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\SeoHelper\Contracts\Helpers\MetaContract;
+use App\Packages\SeoHelper\Exceptions\InvalidArgumentException;
 use Illuminate\Support\Str;
 
 class Meta implements MetaContract

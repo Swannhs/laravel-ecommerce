@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Enums\GlobalOptionEnum;
-use Botble\Ecommerce\Forms\GlobalOptionForm;
-use Botble\Ecommerce\Http\Requests\GlobalOptionRequest;
-use Botble\Ecommerce\Models\GlobalOption;
-use Botble\Ecommerce\Models\GlobalOptionValue;
-use Botble\Ecommerce\Tables\GlobalOptionTable;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Enums\GlobalOptionEnum;
+use App\Plugins\Ecommerce\Forms\GlobalOptionForm;
+use App\Plugins\Ecommerce\Http\Requests\GlobalOptionRequest;
+use App\Plugins\Ecommerce\Models\GlobalOption;
+use App\Plugins\Ecommerce\Models\GlobalOptionValue;
+use App\Plugins\Ecommerce\Tables\GlobalOptionTable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

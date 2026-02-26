@@ -1,6 +1,6 @@
 <?php
 
-use Botble\SimpleSlider\Support\SimpleSliderSupport;
+use App\Plugins\SimpleSlider\Support\SimpleSliderSupport;
 
 app()->booted(function (): void {
     if (is_plugin_active('simple-slider')) {

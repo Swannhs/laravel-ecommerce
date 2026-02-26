@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Location\Fields\Options;
+namespace App\Plugins\Location\Fields\Options;
 
-use Botble\Base\Forms\FormFieldOptions;
+use App\Core\Base\Forms\FormFieldOptions;
 
 class SelectLocationFieldOption extends FormFieldOptions
 {

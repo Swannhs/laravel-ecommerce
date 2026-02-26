@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\Console\Attribute\AsCommand;

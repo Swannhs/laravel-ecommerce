@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Ecommerce\Forms\SpecificationGroupForm as BaseSpecificationGroupForm;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Ecommerce\Forms\SpecificationGroupForm as BaseSpecificationGroupForm;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 
 class SpecificationGroupForm extends BaseSpecificationGroupForm
 {

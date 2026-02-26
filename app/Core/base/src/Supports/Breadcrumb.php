@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\DashboardMenu as DashboardMenuFacade;
-use Botble\Base\Facades\PageTitle as PageTitleFacade;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\DashboardMenu as DashboardMenuFacade;
+use App\Core\Base\Facades\PageTitle as PageTitleFacade;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\URL;

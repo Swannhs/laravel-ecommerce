@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Page\Listeners;
+namespace App\Packages\Page\Listeners;
 
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Page\Models\Page;
-use Botble\Theme\Events\RenderingSiteMapEvent;
-use Botble\Theme\Facades\SiteMapManager;
+use App\Core\Base\Supports\RepositoryHelper;
+use App\Packages\Page\Models\Page;
+use App\Packages\Theme\Events\RenderingSiteMapEvent;
+use App\Packages\Theme\Facades\SiteMapManager;
 
 class RenderingSiteMapListener
 {

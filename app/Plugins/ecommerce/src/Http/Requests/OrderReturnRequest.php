@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\OrderReturnReasonEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\OrderReturnReasonEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class OrderReturnRequest extends Request

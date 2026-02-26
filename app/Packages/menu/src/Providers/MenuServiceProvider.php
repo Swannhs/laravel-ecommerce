@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Menu\Providers;
+namespace App\Packages\Menu\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Menu\Facades\Menu;
-use Botble\Menu\Models\Menu as MenuModel;
-use Botble\Menu\Models\MenuLocation;
-use Botble\Menu\Models\MenuNode;
-use Botble\Menu\Repositories\Eloquent\MenuLocationRepository;
-use Botble\Menu\Repositories\Eloquent\MenuNodeRepository;
-use Botble\Menu\Repositories\Eloquent\MenuRepository;
-use Botble\Menu\Repositories\Interfaces\MenuInterface;
-use Botble\Menu\Repositories\Interfaces\MenuLocationInterface;
-use Botble\Menu\Repositories\Interfaces\MenuNodeInterface;
-use Botble\Theme\Events\RenderingAdminBar;
-use Botble\Theme\Facades\AdminBar;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Menu\Facades\Menu;
+use App\Packages\Menu\Models\Menu as MenuModel;
+use App\Packages\Menu\Models\MenuLocation;
+use App\Packages\Menu\Models\MenuNode;
+use App\Packages\Menu\Repositories\Eloquent\MenuLocationRepository;
+use App\Packages\Menu\Repositories\Eloquent\MenuNodeRepository;
+use App\Packages\Menu\Repositories\Eloquent\MenuRepository;
+use App\Packages\Menu\Repositories\Interfaces\MenuInterface;
+use App\Packages\Menu\Repositories\Interfaces\MenuLocationInterface;
+use App\Packages\Menu\Repositories\Interfaces\MenuNodeInterface;
+use App\Packages\Theme\Events\RenderingAdminBar;
+use App\Packages\Theme\Facades\AdminBar;
 
 class MenuServiceProvider extends ServiceProvider
 {

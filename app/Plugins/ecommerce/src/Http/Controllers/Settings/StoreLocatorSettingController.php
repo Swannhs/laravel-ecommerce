@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Ecommerce\Models\StoreLocator;
+use App\Core\Base\Facades\Assets;
+use App\Plugins\Ecommerce\Models\StoreLocator;
 
 class StoreLocatorSettingController extends SettingController
 {

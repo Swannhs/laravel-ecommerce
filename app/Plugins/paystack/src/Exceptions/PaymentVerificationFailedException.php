@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Paystack\Exceptions;
+namespace App\Plugins\Paystack\Exceptions;
 
 use Exception;
 

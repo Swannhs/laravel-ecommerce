@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Faq;
+namespace App\Plugins\Faq;
 
-use Botble\Faq\Models\Faq;
+use App\Plugins\Faq\Models\Faq;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
 

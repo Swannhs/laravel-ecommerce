@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\PanelSections;
+namespace App\Plugins\Ecommerce\PanelSections;
 
-use Botble\Base\PanelSections\PanelSection;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Base\PanelSections\PanelSection;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
 
 class SettingEcommercePanelSection extends PanelSection
 {

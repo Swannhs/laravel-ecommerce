@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Illuminate\View\View;
 
 class RenderProductAttributesViewOnlySupport

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
 use Illuminate\Contracts\View\View;
 

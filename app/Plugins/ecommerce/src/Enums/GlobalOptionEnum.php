@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Enums;
+namespace App\Plugins\Ecommerce\Enums;
 
-use Botble\Base\Supports\Enum;
-use Botble\Ecommerce\Option\OptionType\Checkbox;
-use Botble\Ecommerce\Option\OptionType\Dropdown;
-use Botble\Ecommerce\Option\OptionType\Field;
-use Botble\Ecommerce\Option\OptionType\RadioButton;
+use App\Core\Base\Supports\Enum;
+use App\Plugins\Ecommerce\Option\OptionType\Checkbox;
+use App\Plugins\Ecommerce\Option\OptionType\Dropdown;
+use App\Plugins\Ecommerce\Option\OptionType\Field;
+use App\Plugins\Ecommerce\Option\OptionType\RadioButton;
 
 class GlobalOptionEnum extends Enum
 {

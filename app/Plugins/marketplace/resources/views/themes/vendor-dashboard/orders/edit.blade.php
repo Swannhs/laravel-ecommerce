@@ -63,7 +63,7 @@
                         @endif
                     </div>
 
-                    @if ($order->status == Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                    @if ($order->status == App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                         <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
                             <div class="d-flex align-items-start gap-1">
                                 <x-core::icon name="ti ti-circle-off" />
@@ -80,7 +80,7 @@
                         </div>
                     @endif
 
-                    @if ($order->status == Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED && !$order->shipment->id)
+                    @if ($order->status == App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED && !$order->shipment->id)
                         <div class="p-3 d-flex justify-content-between align-items-center">
                             <div class="text-uppercase">
                                 <x-core::icon name="ti ti-check" class="text-success" />
@@ -380,7 +380,7 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h4>{{ trans('plugins/ecommerce::order.shipping_info') }}</h4>
 
-                                    @if ($order->status != Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                                    @if ($order->status != App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                                         <a
                                             class="btn-trigger-update-shipping-address btn-action text-decoration-none"
                                             href="#"
@@ -445,7 +445,7 @@
     </div>
 @endsection
 
-@pushif ($order->status != Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED, 'footer')
+@pushif ($order->status != App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED, 'footer')
     @include('plugins/ecommerce::orders.edit.modal', [
         'updateShippingAddressRoute' => 'marketplace.vendor.orders.update-shipping-address',
     ])

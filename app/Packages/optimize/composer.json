@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Optimize\\": "src"
+            "App\\Optimize\\": "src"
         }
     },
     "require": {
@@ -13,10 +13,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Optimize\\Providers\\OptimizeServiceProvider"
+                "App\\Optimize\\Providers\\OptimizeServiceProvider"
             ],
             "aliases": {
-                "OptimizerHelper": "Botble\\Optimize\\Facades\\OptimizerHelper"
+                "OptimizerHelper": "App\\Optimize\\Facades\\OptimizerHelper"
             }
         }
     }

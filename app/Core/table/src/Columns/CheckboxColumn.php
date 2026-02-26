@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Facades\Form;
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Facades\Form;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 
 class CheckboxColumn extends FormattedColumn implements FormattedColumnContract
 {

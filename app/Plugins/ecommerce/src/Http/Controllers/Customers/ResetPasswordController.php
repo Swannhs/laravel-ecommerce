@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\ACL\Traits\ResetsPasswords;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Forms\Fronts\Auth\ResetPasswordForm;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\ACL\Traits\ResetsPasswords;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\ResetPasswordForm;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;

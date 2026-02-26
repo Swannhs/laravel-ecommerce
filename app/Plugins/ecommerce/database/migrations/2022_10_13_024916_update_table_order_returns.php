@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\OrderReturn;
-use Botble\Ecommerce\Models\OrderReturnItem;
+use App\Plugins\Ecommerce\Models\OrderReturn;
+use App\Plugins\Ecommerce\Models\OrderReturnItem;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\ACL\Forms;
+namespace App\Core\ACL\Forms;
 
-use Botble\ACL\Http\Requests\UpdatePasswordRequest;
-use Botble\ACL\Models\User;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\PasswordField;
-use Botble\Base\Forms\FormAbstract;
+use App\Core\ACL\Http\Requests\UpdatePasswordRequest;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\PasswordField;
+use App\Core\Base\Forms\FormAbstract;
 
 class PasswordForm extends FormAbstract
 {

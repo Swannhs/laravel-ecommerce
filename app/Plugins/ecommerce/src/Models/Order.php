@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\OrderAddressTypeEnum;
-use Botble\Ecommerce\Enums\OrderCancellationReasonEnum;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Events\ProductQuantityUpdatedEvent;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\OrderAddressTypeEnum;
+use App\Plugins\Ecommerce\Enums\OrderCancellationReasonEnum;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Events\ProductQuantityUpdatedEvent;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Illuminate\Database\Eloquent\Casts\Attribute;

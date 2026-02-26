@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Marketplace\Enums\WithdrawalFeeTypeEnum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Http\Requests\Fronts\VendorEditWithdrawalRequest;
-use Botble\Marketplace\Http\Requests\Fronts\VendorWithdrawalRequest;
-use Botble\Marketplace\Models\Withdrawal;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextareaFieldOption;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Marketplace\Enums\WithdrawalFeeTypeEnum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Http\Requests\Fronts\VendorEditWithdrawalRequest;
+use App\Plugins\Marketplace\Http\Requests\Fronts\VendorWithdrawalRequest;
+use App\Plugins\Marketplace\Models\Withdrawal;
 
 class VendorWithdrawalForm extends FormAbstract
 {

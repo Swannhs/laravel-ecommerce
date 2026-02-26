@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Events\OrderCreated;
-use Botble\Ecommerce\Events\OrderPlacedEvent;
-use Botble\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Events\OrderCreated;
+use App\Plugins\Ecommerce\Events\OrderPlacedEvent;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class GenerateInvoiceListener implements ShouldQueue

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SimpleSlider\Repositories\Caches;
+namespace App\Plugins\SimpleSlider\Repositories\Caches;
 
-use Botble\SimpleSlider\Repositories\Eloquent\SimpleSliderItemRepository;
+use App\Plugins\SimpleSlider\Repositories\Eloquent\SimpleSliderItemRepository;
 
 /**
  * @deprecated

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Card;
-use Botble\Ecommerce\Models\Product;
+use App\Core\Base\Widgets\Card;
+use App\Plugins\Ecommerce\Models\Product;
 use Carbon\CarbonPeriod;
 
 class NewProductCard extends Card

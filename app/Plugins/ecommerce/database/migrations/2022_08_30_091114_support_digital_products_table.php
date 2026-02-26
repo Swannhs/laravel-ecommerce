@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

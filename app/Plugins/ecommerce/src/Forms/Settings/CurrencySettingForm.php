@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Ecommerce\Http\Requests\Settings\CurrencySettingRequest;
-use Botble\Ecommerce\Models\Currency;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Plugins\Ecommerce\Http\Requests\Settings\CurrencySettingRequest;
+use App\Plugins\Ecommerce\Models\Currency;
+use App\Core\Setting\Forms\SettingForm;
 
 class CurrencySettingForm extends SettingForm
 {

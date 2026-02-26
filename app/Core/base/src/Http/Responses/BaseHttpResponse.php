@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Responses;
+namespace App\Core\Base\Http\Responses;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;

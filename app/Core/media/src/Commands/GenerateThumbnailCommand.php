@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Commands;
+namespace App\Core\Media\Commands;
 
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Models\Concerns;
+namespace App\Core\Base\Models\Concerns;
 
 use Illuminate\Database\Eloquent\Builder;
 

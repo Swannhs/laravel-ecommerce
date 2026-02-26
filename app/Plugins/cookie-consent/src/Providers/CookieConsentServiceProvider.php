@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\CookieConsent\Providers;
+namespace App\Plugins\CookieConsent\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Theme\Events\RenderingThemeOptionSettings;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
 use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Routing\Events\RouteMatched;

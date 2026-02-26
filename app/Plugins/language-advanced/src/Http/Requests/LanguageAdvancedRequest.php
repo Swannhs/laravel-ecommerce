@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Http\Requests;
+namespace App\Plugins\LanguageAdvanced\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class LanguageAdvancedRequest extends Request
 {

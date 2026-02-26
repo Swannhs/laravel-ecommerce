@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Icon\Facades\Icon;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Icon\Facades\Icon;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;

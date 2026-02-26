@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 
 class IdColumn extends FormattedColumn implements FormattedColumnContract
 {

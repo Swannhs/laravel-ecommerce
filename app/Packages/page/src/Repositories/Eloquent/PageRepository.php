@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Page\Repositories\Eloquent;
+namespace App\Packages\Page\Repositories\Eloquent;
 
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Packages\Page\Repositories\Interfaces\PageInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 

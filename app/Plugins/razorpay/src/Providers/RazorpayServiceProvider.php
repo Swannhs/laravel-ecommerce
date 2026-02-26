@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Razorpay\Providers;
+namespace App\Plugins\Razorpay\Providers;
 
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 

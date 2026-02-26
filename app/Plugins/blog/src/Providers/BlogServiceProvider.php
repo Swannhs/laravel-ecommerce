@@ -1,36 +1,36 @@
 <?php
 
-namespace Botble\Blog\Providers;
+namespace App\Plugins\Blog\Providers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Blog\Repositories\Eloquent\CategoryRepository;
-use Botble\Blog\Repositories\Eloquent\PostRepository;
-use Botble\Blog\Repositories\Eloquent\TagRepository;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Blog\Repositories\Interfaces\TagInterface;
-use Botble\DataSynchronize\PanelSections\ExportPanelSection;
-use Botble\DataSynchronize\PanelSections\ImportPanelSection;
-use Botble\Language\Facades\Language;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\PluginManagement\Events\DeactivatedPlugin;
-use Botble\PluginManagement\Events\RemovedPlugin;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
-use Botble\Shortcode\View\View;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
-use Botble\Theme\Events\ThemeRoutingBeforeEvent;
-use Botble\Theme\Facades\SiteMapManager;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Models\Tag;
+use App\Plugins\Blog\Repositories\Eloquent\CategoryRepository;
+use App\Plugins\Blog\Repositories\Eloquent\PostRepository;
+use App\Plugins\Blog\Repositories\Eloquent\TagRepository;
+use App\Plugins\Blog\Repositories\Interfaces\CategoryInterface;
+use App\Plugins\Blog\Repositories\Interfaces\PostInterface;
+use App\Plugins\Blog\Repositories\Interfaces\TagInterface;
+use App\Packages\DataSynchronize\PanelSections\ExportPanelSection;
+use App\Packages\DataSynchronize\PanelSections\ImportPanelSection;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Packages\PluginManagement\Events\DeactivatedPlugin;
+use App\Packages\PluginManagement\Events\RemovedPlugin;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
+use App\Packages\Shortcode\View\View;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Theme\Events\ThemeRoutingBeforeEvent;
+use App\Packages\Theme\Facades\SiteMapManager;
 
 /**
  * @since 02/07/2016 09:50 AM
@@ -230,7 +230,7 @@ class BlogServiceProvider extends ServiceProvider
             [DeactivatedPlugin::class, RemovedPlugin::class],
             function (DeactivatedPlugin|RemovedPlugin $event): void {
                 if ($event->plugin === 'member') {
-                    Post::query()->where('author_type', 'Botble\Member\Models\Member')->update([
+                    Post::query()->where('author_type', 'App\Plugins\Member\Models\Member')->update([
                         'author_id' => null,
                         'author_type' => User::class,
                     ]);

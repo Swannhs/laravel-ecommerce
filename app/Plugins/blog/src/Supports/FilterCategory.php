@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Blog\Supports;
+namespace App\Plugins\Blog\Supports;
 
 class FilterCategory
 {

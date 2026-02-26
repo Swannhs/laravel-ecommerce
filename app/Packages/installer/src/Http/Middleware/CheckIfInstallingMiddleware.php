@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Installer\Http\Middleware;
+namespace App\Packages\Installer\Http\Middleware;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Carbon\Carbon;
 use Closure;
 use Exception;

@@ -80,13 +80,13 @@
 
 @if (
     auth()->user()->hasPermission( 'ecommerce.shipments.edit')
-    && $shipment->status != Botble\Ecommerce\Enums\ShippingStatusEnum::CANCELED
-    && $order->status != Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED
+    && $shipment->status != App\Plugins\Ecommerce\Enums\ShippingStatusEnum::CANCELED
+    && $order->status != App\Plugins\Ecommerce\Enums\OrderStatusEnum::CANCELED
 )
     <x-core::card.footer class="shipment-actions-wrapper btn-list">
         @if (in_array($shipment->status, [
-            Botble\Ecommerce\Enums\ShippingStatusEnum::NOT_APPROVED,
-            Botble\Ecommerce\Enums\ShippingStatusEnum::APPROVED,
+            App\Plugins\Ecommerce\Enums\ShippingStatusEnum::NOT_APPROVED,
+            App\Plugins\Ecommerce\Enums\ShippingStatusEnum::APPROVED,
         ]))
             <x-core::button
                 type="button"

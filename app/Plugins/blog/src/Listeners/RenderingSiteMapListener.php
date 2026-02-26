@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Listeners;
+namespace App\Plugins\Blog\Listeners;
 
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Theme\Events\RenderingSiteMapEvent;
-use Botble\Theme\Facades\SiteMapManager;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Models\Tag;
+use App\Packages\Theme\Events\RenderingSiteMapEvent;
+use App\Packages\Theme\Facades\SiteMapManager;
 use Illuminate\Support\Arr;
 
 class RenderingSiteMapListener

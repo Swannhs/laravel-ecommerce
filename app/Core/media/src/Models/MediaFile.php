@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Media\Models;
+namespace App\Core\Media\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

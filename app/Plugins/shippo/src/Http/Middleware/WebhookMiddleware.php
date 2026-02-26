@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shippo\Http\Middleware;
+namespace App\Plugins\Shippo\Http\Middleware;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Closure;
 
 class WebhookMiddleware

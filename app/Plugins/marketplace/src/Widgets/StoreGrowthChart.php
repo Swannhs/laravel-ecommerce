@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Ecommerce\Widgets\Traits\HasCategory;
-use Botble\Marketplace\Models\Store;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Ecommerce\Widgets\Traits\HasCategory;
+use App\Plugins\Marketplace\Models\Store;
 
 class StoreGrowthChart extends Chart
 {

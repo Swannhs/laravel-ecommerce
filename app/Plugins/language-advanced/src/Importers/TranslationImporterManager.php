@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Importers;
+namespace App\Plugins\LanguageAdvanced\Importers;
 
-use Botble\DataSynchronize\Importer\Importer;
+use App\Packages\DataSynchronize\Importer\Importer;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;

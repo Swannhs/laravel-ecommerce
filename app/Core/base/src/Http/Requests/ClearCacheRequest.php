@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Requests;
+namespace App\Core\Base\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class ClearCacheRequest extends Request

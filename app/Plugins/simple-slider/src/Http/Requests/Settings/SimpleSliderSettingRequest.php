@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Requests\Settings;
+namespace App\Plugins\SimpleSlider\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 
 class SimpleSliderSettingRequest extends Request
 {

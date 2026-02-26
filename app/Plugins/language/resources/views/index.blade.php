@@ -20,7 +20,7 @@
                     >{{ trans('plugins/language::language.settings') }}
                     </a>
                 </li>
-                {!! apply_filters(BASE_FILTER_REGISTER_CONTENT_TABS, null, new Botble\Language\Models\Language()) !!}
+                {!! apply_filters(BASE_FILTER_REGISTER_CONTENT_TABS, null, new App\Plugins\Language\Models\Language()) !!}
             </ul>
         </x-core::card.header>
         <x-core::card.body>
@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             @php
-                                do_action(BASE_ACTION_META_BOXES, 'top', new Botble\Language\Models\Language());
+                                do_action(BASE_ACTION_META_BOXES, 'top', new App\Plugins\Language\Models\Language());
                             @endphp
 
                             <input
@@ -134,7 +134,7 @@
                             </x-core::button>
 
                             @php
-                                do_action(BASE_ACTION_META_BOXES, 'advanced', new Botble\Language\Models\Language());
+                                do_action(BASE_ACTION_META_BOXES, 'advanced', new App\Plugins\Language\Models\Language());
                             @endphp
                         </div>
                         <div class="col-md-7">

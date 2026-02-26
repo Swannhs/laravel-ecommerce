@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\ProductTagInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductTagInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ProductTagRepository extends RepositoriesAbstract implements ProductTagInterface
 {

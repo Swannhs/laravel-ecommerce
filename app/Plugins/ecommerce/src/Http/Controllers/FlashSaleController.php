@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Facades\FlashSale as FlashSaleFacade;
-use Botble\Ecommerce\Forms\FlashSaleForm;
-use Botble\Ecommerce\Http\Requests\FlashSaleRequest;
-use Botble\Ecommerce\Models\FlashSale;
-use Botble\Ecommerce\Tables\FlashSaleTable;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Facades\FlashSale as FlashSaleFacade;
+use App\Plugins\Ecommerce\Forms\FlashSaleForm;
+use App\Plugins\Ecommerce\Http\Requests\FlashSaleRequest;
+use App\Plugins\Ecommerce\Models\FlashSale;
+use App\Plugins\Ecommerce\Tables\FlashSaleTable;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

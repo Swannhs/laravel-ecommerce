@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Exporters;
+namespace App\Plugins\Ecommerce\Exporters;
 
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\ExportCounter;
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\Ecommerce\Enums\ProductTypeEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Language\Facades\Language;
-use Botble\Media\Facades\RvMedia;
+use App\Packages\DataSynchronize\Exporter\ExportColumn;
+use App\Packages\DataSynchronize\Exporter\ExportCounter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Language\Facades\Language;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;

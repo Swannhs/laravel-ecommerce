@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Paystack\Http\Controllers;
+namespace App\Plugins\Paystack\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\Paystack\Services\Paystack;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Plugins\Paystack\Services\Paystack;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Newsletter\Contracts;
+namespace App\Plugins\Newsletter\Contracts;
 
 interface Provider
 {

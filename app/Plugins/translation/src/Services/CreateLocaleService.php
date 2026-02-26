@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Translation\Services;
+namespace App\Plugins\Translation\Services;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Theme\Facades\Theme;
-use Botble\Translation\Manager;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\Theme\Facades\Theme;
+use App\Plugins\Translation\Manager;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 

@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Page\Http\Controllers;
+namespace App\Packages\Page\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Page\Forms\PageForm;
-use Botble\Page\Http\Requests\PageRequest;
-use Botble\Page\Models\Page;
-use Botble\Page\Services\PageService;
-use Botble\Page\Services\ShortcodeParserService;
-use Botble\Page\Tables\PageTable;
-use Botble\Shortcode\Facades\Shortcode;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Packages\Page\Forms\PageForm;
+use App\Packages\Page\Http\Requests\PageRequest;
+use App\Packages\Page\Models\Page;
+use App\Packages\Page\Services\PageService;
+use App\Packages\Page\Services\ShortcodeParserService;
+use App\Packages\Page\Tables\PageTable;
+use App\Packages\Shortcode\Facades\Shortcode;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Http\Request;
 
 class PageController extends BaseController

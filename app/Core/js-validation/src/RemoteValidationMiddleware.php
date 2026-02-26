@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\JsValidation;
+namespace App\Core\JsValidation;
 
-use Botble\JsValidation\Remote\Resolver;
-use Botble\JsValidation\Remote\Validator as RemoteValidator;
+use App\Core\JsValidation\Remote\Resolver;
+use App\Core\JsValidation\Remote\Validator as RemoteValidator;
 use Closure;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;

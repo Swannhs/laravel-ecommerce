@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fields;
+namespace App\Plugins\Ecommerce\Forms\Fields;
 
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Forms\FormField;
 
 /**
  * @deprecated

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Supports\DashboardMenu as DashboardMenuSupport;
+use App\Core\Base\Supports\DashboardMenu as DashboardMenuSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -23,11 +23,11 @@ use Illuminate\Support\Facades\Facade;
  * @method static void clearCachesForCurrentUser()
  * @method static void clearCaches()
  * @method static bool hasCache()
- * @method static \Botble\Base\Supports\DashboardMenu|mixed when(\Closure|mixed|null $value = null, callable|null $callback = null, callable|null $default = null)
- * @method static \Botble\Base\Supports\DashboardMenu|mixed unless(\Closure|mixed|null $value = null, callable|null $callback = null, callable|null $default = null)
- * @method static \Botble\Base\Supports\DashboardMenu|\Illuminate\Support\HigherOrderTapProxy tap(callable|null $callback = null)
+ * @method static \App\Core\Base\Supports\DashboardMenu|mixed when(\Closure|mixed|null $value = null, callable|null $callback = null, callable|null $default = null)
+ * @method static \App\Core\Base\Supports\DashboardMenu|mixed unless(\Closure|mixed|null $value = null, callable|null $callback = null, callable|null $default = null)
+ * @method static \App\Core\Base\Supports\DashboardMenu|\Illuminate\Support\HigherOrderTapProxy tap(callable|null $callback = null)
  *
- * @see \Botble\Base\Supports\DashboardMenu
+ * @see \App\Core\Base\Supports\DashboardMenu
  */
 class DashboardMenu extends Facade
 {

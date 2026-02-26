@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Icon;
+namespace App\Core\Icon;
 
-use Botble\Icon\Exceptions\SvgNotFoundException;
+use App\Core\Icon\Exceptions\SvgNotFoundException;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;

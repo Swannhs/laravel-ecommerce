@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shortcode\Forms\Fields;
+namespace App\Packages\Shortcode\Forms\Fields;
 
-use Botble\Base\Forms\Fields\ColorField;
+use App\Core\Base\Forms\Fields\ColorField;
 
 class ShortcodeColorField extends ColorField
 {

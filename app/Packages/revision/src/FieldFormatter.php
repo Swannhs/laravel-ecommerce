@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Revision;
+namespace App\Packages\Revision;
 
 class FieldFormatter
 {

@@ -1,26 +1,26 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace App\Core\ACL\Providers;
 
-use Botble\ACL\Http\Middleware\Authenticate;
-use Botble\ACL\Http\Middleware\RedirectIfAuthenticated;
-use Botble\ACL\Models\Activation;
-use Botble\ACL\Models\Role;
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Eloquent\ActivationRepository;
-use Botble\ACL\Repositories\Eloquent\RoleRepository;
-use Botble\ACL\Repositories\Eloquent\UserRepository;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\ACL\Repositories\Interfaces\RoleInterface;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\PanelSections\System\SystemPanelSection;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Media\Facades\RvMedia;
+use App\Core\ACL\Http\Middleware\Authenticate;
+use App\Core\ACL\Http\Middleware\RedirectIfAuthenticated;
+use App\Core\ACL\Models\Activation;
+use App\Core\ACL\Models\Role;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Repositories\Eloquent\ActivationRepository;
+use App\Core\ACL\Repositories\Eloquent\RoleRepository;
+use App\Core\ACL\Repositories\Eloquent\UserRepository;
+use App\Core\ACL\Repositories\Interfaces\ActivationInterface;
+use App\Core\ACL\Repositories\Interfaces\RoleInterface;
+use App\Core\ACL\Repositories\Interfaces\UserInterface;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\System\SystemPanelSection;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Media\Facades\RvMedia;
 use Exception;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Arr;

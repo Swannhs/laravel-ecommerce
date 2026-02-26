@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders\Traits;
+namespace App\Plugins\Ecommerce\Database\Seeders\Traits;
 
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Slug\Facades\SlugHelper;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 

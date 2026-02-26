@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Ecommerce\Enums\DiscountTargetEnum;
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Repositories\Interfaces\DiscountInterface;
+use App\Plugins\Ecommerce\Enums\DiscountTargetEnum;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Repositories\Interfaces\DiscountInterface;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;

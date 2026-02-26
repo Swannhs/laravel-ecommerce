@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SslCommerz\Services\Abstracts;
+namespace App\Plugins\SslCommerz\Services\Abstracts;
 
-use Botble\Payment\Services\Traits\PaymentErrorTrait;
-use Botble\SslCommerz\Services\SslCommerz;
-use Botble\Support\Services\ProduceServiceInterface;
+use App\Plugins\Payment\Services\Traits\PaymentErrorTrait;
+use App\Plugins\SslCommerz\Services\SslCommerz;
+use App\Core\Support\Services\ProduceServiceInterface;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

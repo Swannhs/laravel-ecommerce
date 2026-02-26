@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Icon;
+namespace App\Core\Icon;
 
 abstract class IconDriver
 {

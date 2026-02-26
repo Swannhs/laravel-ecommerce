@@ -1,14 +1,14 @@
 <?php
 
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Models\ProductVariationItem;
-use Botble\Ecommerce\Supports\RenderProductAttributeSetsOnSearchPageSupport;
-use Botble\Ecommerce\Supports\RenderProductSwatchesSupport;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Models\ProductVariationItem;
+use App\Plugins\Ecommerce\Supports\RenderProductAttributeSetsOnSearchPageSupport;
+use App\Plugins\Ecommerce\Supports\RenderProductSwatchesSupport;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 

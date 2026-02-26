@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Helpers\BaseHelper as BaseHelperSupport;
+use App\Core\Base\Helpers\BaseHelper as BaseHelperSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -35,8 +35,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Illuminate\Support\HtmlString html(array|string|null $dirty, array|string|null $config = null)
  * @method static string hexToRgba(string $color, float $opacity = 1)
  * @method static array hexToRgb(string $color)
- * @method static \Botble\Base\Helpers\BaseHelper iniSet(string $key, string|int|null $value)
- * @method static \Botble\Base\Helpers\BaseHelper maximumExecutionTimeAndMemoryLimit()
+ * @method static \App\Core\Base\Helpers\BaseHelper iniSet(string $key, string|int|null $value)
+ * @method static \App\Core\Base\Helpers\BaseHelper maximumExecutionTimeAndMemoryLimit()
  * @method static array|string|null removeSpecialCharacters(string|null $string)
  * @method static string getInputValueFromQueryString(string $name)
  * @method static string|null cleanShortcodes(string|null $content)
@@ -56,7 +56,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array getFonts()
  * @method static bool isAdminRequest()
  *
- * @see \Botble\Base\Helpers\BaseHelper
+ * @see \App\Core\Base\Helpers\BaseHelper
  */
 class BaseHelper extends Facade
 {

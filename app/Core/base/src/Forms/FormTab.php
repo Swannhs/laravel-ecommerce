@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Forms;
+namespace App\Core\Base\Forms;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str;

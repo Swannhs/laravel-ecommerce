@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Razorpay\Services\Gateways;
+namespace App\Plugins\Razorpay\Services\Gateways;
 
-use Botble\Razorpay\Services\Abstracts\RazorpayPaymentAbstract;
+use App\Plugins\Razorpay\Services\Abstracts\RazorpayPaymentAbstract;
 use Illuminate\Http\Request;
 use JetBrains\PhpStorm\NoReturn;
 

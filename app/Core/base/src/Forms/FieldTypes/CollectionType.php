@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Forms\FieldTypes;
+namespace App\Core\Base\Forms\FieldTypes;
 
-use Botble\Base\Traits\Forms\CanSpanColumns;
+use App\Core\Base\Traits\Forms\CanSpanColumns;
 
 class CollectionType extends \Kris\LaravelFormBuilder\Fields\CollectionType
 {

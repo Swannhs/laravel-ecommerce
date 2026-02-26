@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Language\Models;
+namespace App\Plugins\Language\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Models\BaseModel;
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Widget\Models\Widget;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Widget\Models\Widget;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Language extends BaseModel

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SslCommerz\Http\Requests;
+namespace App\Plugins\SslCommerz\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class PaymentRequest extends Request
 {

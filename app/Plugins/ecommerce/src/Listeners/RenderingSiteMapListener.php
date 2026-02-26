@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductTag;
-use Botble\Theme\Events\RenderingSiteMapEvent;
-use Botble\Theme\Facades\SiteMapManager;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Brand;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Models\ProductTag;
+use App\Packages\Theme\Events\RenderingSiteMapEvent;
+use App\Packages\Theme\Facades\SiteMapManager;
 use Illuminate\Support\Arr;
 
 class RenderingSiteMapListener

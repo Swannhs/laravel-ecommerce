@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme;
+namespace App\Packages\Theme;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Support\Facades\App;
 use LogicException;
 

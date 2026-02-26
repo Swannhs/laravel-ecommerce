@@ -377,7 +377,7 @@
                 <x-core::card.body>
                     @if (is_plugin_active('ecommerce'))
                         @php
-                            $reviews = \Botble\Ecommerce\Models\Review::query()
+                            $reviews = \App\Plugins\Ecommerce\Models\Review::query()
                                 ->whereHas('product', function($query) use ($user) {
                                     $query->where('store_id', $user->store->id);
                                 })
@@ -557,7 +557,7 @@
                                 <span class="text-muted">{{ trans('plugins/marketplace::marketplace.low_stock') }}</span>
                             </div>
                             <div>
-                                <a href="{{ route('marketplace.vendor.products.index', ['filter_table_id' => 'table-marketplace-vendor-products', 'class' => 'Botble\Ecommerce\Models\Product', 'filter_columns' => ['quantity' => '1-5']]) }}" class="btn btn-sm btn-outline-warning">
+                                <a href="{{ route('marketplace.vendor.products.index', ['filter_table_id' => 'table-marketplace-vendor-products', 'class' => 'App\Plugins\Ecommerce\Models\Product', 'filter_columns' => ['quantity' => '1-5']]) }}" class="btn btn-sm btn-outline-warning">
                                     {{ trans('core/base::tables.view') }}
                                 </a>
                             </div>
@@ -574,7 +574,7 @@
                                 <span class="text-muted">{{ trans('plugins/marketplace::marketplace.out_of_stock') }}</span>
                             </div>
                             <div>
-                                <a href="{{ route('marketplace.vendor.products.index', ['filter_table_id' => 'table-marketplace-vendor-products', 'class' => 'Botble\Ecommerce\Models\Product', 'filter_columns' => ['quantity' => '0']]) }}" class="btn btn-sm btn-outline-danger">
+                                <a href="{{ route('marketplace.vendor.products.index', ['filter_table_id' => 'table-marketplace-vendor-products', 'class' => 'App\Plugins\Ecommerce\Models\Product', 'filter_columns' => ['quantity' => '0']]) }}" class="btn btn-sm btn-outline-danger">
                                     {{ trans('core/base::tables.view') }}
                                 </a>
                             </div>

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Setting\Http\Requests;
+namespace App\Core\Setting\Http\Requests;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Media\Facades\RvMedia;
-use Botble\Setting\Rules\AwsRegionRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Setting\Rules\AwsRegionRule;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class MediaSettingRequest extends Request

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
-use Botble\Base\Widgets\Contracts\AdminWidget;
+use App\Core\Base\Widgets\Contracts\AdminWidget;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class RenderingAdminWidgetEvent

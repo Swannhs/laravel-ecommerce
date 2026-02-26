@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\ProductLabelInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductLabelInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ProductLabelRepository extends RepositoriesAbstract implements ProductLabelInterface
 {

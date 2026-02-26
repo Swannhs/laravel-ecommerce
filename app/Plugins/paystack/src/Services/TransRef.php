@@ -11,7 +11,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Botble\Paystack\Services;
+namespace App\Plugins\Paystack\Services;
 
 class TransRef
 {

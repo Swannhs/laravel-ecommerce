@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Auth;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Auth;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\PasswordField;
-use Botble\Base\Forms\Fields\PhoneNumberField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\PhoneNumberFieldOption;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
-use Botble\Ecommerce\Http\Requests\RegisterRequest;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\PasswordField;
+use App\Core\Base\Forms\Fields\PhoneNumberField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\PhoneNumberFieldOption;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\RegisterRequest;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Packages\Theme\Facades\Theme;
 
 class RegisterForm extends AuthForm
 {

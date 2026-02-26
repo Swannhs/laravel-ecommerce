@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Enums\ProductTypeEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Resources\API\DigitalProductResource;
-use Botble\Ecommerce\Models\OrderProduct;
-use Botble\Ecommerce\Models\Product;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Supports\Zipper;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Resources\API\DigitalProductResource;
+use App\Plugins\Ecommerce\Models\OrderProduct;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Supports\Zipper;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

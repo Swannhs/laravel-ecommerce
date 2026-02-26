@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Location\Repositories\Caches;
+namespace App\Plugins\Location\Repositories\Caches;
 
-use Botble\Location\Repositories\Eloquent\CountryRepository;
+use App\Plugins\Location\Repositories\Eloquent\CountryRepository;
 
 /**
  * @deprecated

@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Menu\Models\MenuNode;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Packages\Menu\Models\MenuNode;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\DB;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Payment\Models;
+namespace App\Plugins\Payment\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Facades\Html;
-use Botble\Base\Models\BaseModel;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Facades\Log;

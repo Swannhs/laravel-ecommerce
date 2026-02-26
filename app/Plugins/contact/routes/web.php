@@ -1,11 +1,11 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Contact\Http\Controllers\CustomFieldController;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Contact\Http\Controllers\CustomFieldController;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\Contact\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Plugins\Contact\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group(['prefix' => 'contacts', 'as' => 'contacts.'], function (): void {
             Route::resource('', 'ContactController')->except(['create', 'store'])->parameters(['' => 'contact']);

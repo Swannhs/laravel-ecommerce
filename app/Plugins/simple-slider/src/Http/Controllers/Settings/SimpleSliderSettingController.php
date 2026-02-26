@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Controllers\Settings;
+namespace App\Plugins\SimpleSlider\Http\Controllers\Settings;
 
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\SimpleSlider\Forms\Settings\SimpleSliderSettingForm;
-use Botble\SimpleSlider\Http\Requests\Settings\SimpleSliderSettingRequest;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Plugins\SimpleSlider\Forms\Settings\SimpleSliderSettingForm;
+use App\Plugins\SimpleSlider\Http\Requests\Settings\SimpleSliderSettingRequest;
 
 class SimpleSliderSettingController extends SettingController
 {

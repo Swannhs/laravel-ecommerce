@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Blog\Forms;
+namespace App\Plugins\Blog\Forms;
 
-use Botble\Base\Forms\FieldOptions\CoreIconFieldOption;
-use Botble\Base\Forms\FieldOptions\DescriptionFieldOption;
-use Botble\Base\Forms\FieldOptions\HiddenFieldOption;
-use Botble\Base\Forms\FieldOptions\IsDefaultFieldOption;
-use Botble\Base\Forms\FieldOptions\IsFeaturedFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\CoreIconField;
-use Botble\Base\Forms\Fields\HiddenField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Blog\Http\Requests\CategoryRequest;
-use Botble\Blog\Models\Category;
+use App\Core\Base\Forms\FieldOptions\CoreIconFieldOption;
+use App\Core\Base\Forms\FieldOptions\DescriptionFieldOption;
+use App\Core\Base\Forms\FieldOptions\HiddenFieldOption;
+use App\Core\Base\Forms\FieldOptions\IsDefaultFieldOption;
+use App\Core\Base\Forms\FieldOptions\IsFeaturedFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\CoreIconField;
+use App\Core\Base\Forms\Fields\HiddenField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Blog\Http\Requests\CategoryRequest;
+use App\Plugins\Blog\Models\Category;
 
 class CategoryForm extends FormAbstract
 {

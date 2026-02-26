@@ -101,7 +101,7 @@
         </div>
 
         @php
-            $url = route(app(\Botble\Shippo\Shippo::class)->getRoutePrefixByFactor() . 'shippo.transactions.create', $shipment->id);
+            $url = route(app(\App\Plugins\Shippo\Shippo::class)->getRoutePrefixByFactor() . 'shippo.transactions.create', $shipment->id);
             $isShowButton = true;
             if (is_in_admin(true) && Auth::check() && ! Auth::user()->hasPermission('ecommerce.shipments.edit')) {
                 $isShowButton = false;
@@ -115,7 +115,7 @@
                     data-url="{{ $url }}"
                     type="button"
                 >
-                    {{ Botble\Ecommerce\Enums\ShippingStatusEnum::READY_TO_BE_SHIPPED_OUT()->label() }}
+                    {{ App\Plugins\Ecommerce\Enums\ShippingStatusEnum::READY_TO_BE_SHIPPED_OUT()->label() }}
                 </button>
             </div>
 
@@ -129,7 +129,7 @@
                     </div>
                     <button
                         class="btn btn-primary get-new-rates"
-                        data-url="{{ route(app(\Botble\Shippo\Shippo::class)->getRoutePrefixByFactor() . 'shippo.rates', $shipment->id) }}"
+                        data-url="{{ route(app(\App\Plugins\Shippo\Shippo::class)->getRoutePrefixByFactor() . 'shippo.rates', $shipment->id) }}"
                         type="button"
                     >
                         {{ trans('plugins/shippo::shippo.recheck_rate') }}

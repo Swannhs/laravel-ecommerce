@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Contact\Providers;
+namespace App\Plugins\Contact\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Contact\Forms\Fronts\ContactForm;
-use Botble\Contact\Forms\ShortcodeContactAdminConfigForm;
-use Botble\Contact\Http\Requests\ContactRequest;
-use Botble\Contact\Models\Contact;
-use Botble\Contact\Models\CustomField;
-use Botble\Shortcode\Compilers\Shortcode;
-use Botble\Shortcode\Facades\Shortcode as ShortcodeFacade;
-use Botble\Support\Services\Cache\Cache;
-use Botble\Theme\FormFrontManager;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Plugins\Contact\Enums\ContactStatusEnum;
+use App\Plugins\Contact\Forms\Fronts\ContactForm;
+use App\Plugins\Contact\Forms\ShortcodeContactAdminConfigForm;
+use App\Plugins\Contact\Http\Requests\ContactRequest;
+use App\Plugins\Contact\Models\Contact;
+use App\Plugins\Contact\Models\CustomField;
+use App\Packages\Shortcode\Compilers\Shortcode;
+use App\Packages\Shortcode\Facades\Shortcode as ShortcodeFacade;
+use App\Core\Support\Services\Cache\Cache;
+use App\Packages\Theme\FormFrontManager;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 

@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Controllers\Fronts\CompareController;
-use Botble\Ecommerce\Http\Middleware\CheckCompareEnabledMiddleware;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\CompareController;
+use App\Plugins\Ecommerce\Http\Middleware\CheckCompareEnabledMiddleware;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 Theme::registerRoutes(function (): void {

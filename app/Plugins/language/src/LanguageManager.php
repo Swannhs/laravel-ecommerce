@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Language;
+namespace App\Plugins\Language;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Language\Models\Language;
-use Botble\Language\Models\LanguageMeta;
-use Botble\Support\Services\Cache\Cache;
-use Botble\Table\Columns\Column;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Language\Models\Language;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Core\Support\Services\Cache\Cache;
+use App\Core\Table\Columns\Column;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\UrlGenerator;

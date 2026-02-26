@@ -1,14 +1,14 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Enums\DiscountTargetEnum;
-use Botble\Ecommerce\Enums\DiscountTypeOptionEnum;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Models\DiscountCustomer;
-use Botble\Ecommerce\Models\DiscountProduct;
-use Botble\Ecommerce\Models\DiscountProductCollection;
-use Botble\Ecommerce\Models\Product;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Enums\DiscountTargetEnum;
+use App\Plugins\Ecommerce\Enums\DiscountTypeOptionEnum;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Models\DiscountCustomer;
+use App\Plugins\Ecommerce\Models\DiscountProduct;
+use App\Plugins\Ecommerce\Models\DiscountProductCollection;
+use App\Plugins\Ecommerce\Models\Product;
 
 if (! function_exists('get_discount_description')) {
     function get_discount_description(Discount $discount): string

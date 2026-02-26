@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Menu\Repositories\Interfaces;
+namespace App\Packages\Menu\Repositories\Interfaces;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface MenuInterface extends RepositoryInterface
 {

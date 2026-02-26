@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Forms\FieldOptions;
+namespace App\Core\Base\Forms\FieldOptions;
 
-use Botble\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Enums\BaseStatusEnum;
 
 class StatusFieldOption extends SelectFieldOption
 {

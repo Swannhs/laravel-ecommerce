@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Order;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class OrderTest extends BaseTestCase

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Slug\Events\UpdatedSlugEvent;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Packages\Slug\Events\UpdatedSlugEvent;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Controllers;
+namespace App\Plugins\SimpleSlider\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\SimpleSlider\Forms\SimpleSliderForm;
-use Botble\SimpleSlider\Http\Requests\SimpleSliderRequest;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
-use Botble\SimpleSlider\Tables\SimpleSliderTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\SimpleSlider\Forms\SimpleSliderForm;
+use App\Plugins\SimpleSlider\Http\Requests\SimpleSliderRequest;
+use App\Plugins\SimpleSlider\Models\SimpleSlider;
+use App\Plugins\SimpleSlider\Models\SimpleSliderItem;
+use App\Plugins\SimpleSlider\Tables\SimpleSliderTable;
 use Illuminate\Http\Request;
 
 class SimpleSliderController extends BaseController

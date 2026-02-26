@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SslCommerz\Library\SslCommerz;
+namespace App\Plugins\SslCommerz\Library\SslCommerz;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Support\Arr;
 use stdClass;
 

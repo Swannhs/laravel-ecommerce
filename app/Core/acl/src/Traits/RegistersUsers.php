@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\ACL\Traits;
+namespace App\Core\ACL\Traits;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;

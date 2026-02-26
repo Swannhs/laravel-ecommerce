@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Marketplace\Models\Store;
-use Botble\Theme\Events\RenderingSiteMapEvent;
-use Botble\Theme\Facades\SiteMapManager;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Marketplace\Models\Store;
+use App\Packages\Theme\Events\RenderingSiteMapEvent;
+use App\Packages\Theme\Facades\SiteMapManager;
 
 class RenderingSiteMapListener
 {

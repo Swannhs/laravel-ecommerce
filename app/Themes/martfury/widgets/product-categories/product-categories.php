@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Facades\ProductCategoryHelper;
-use Botble\Widget\AbstractWidget;
+use App\Plugins\Ecommerce\Facades\ProductCategoryHelper;
+use App\Packages\Widget\AbstractWidget;
 use Illuminate\Support\Collection;
 
 class ProductCategoriesWidget extends AbstractWidget

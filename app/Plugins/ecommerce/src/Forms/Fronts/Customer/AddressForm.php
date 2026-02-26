@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Customer;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Customer;
 
-use Botble\Base\Forms\FieldOptions\ButtonFieldOption;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\FieldOptions\PhoneNumberFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\CheckboxField;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\PhoneNumberField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\Concerns\HasLocationFields;
-use Botble\Ecommerce\Http\Requests\AddressRequest;
-use Botble\Ecommerce\Models\Address;
-use Botble\Theme\FormFront;
+use App\Core\Base\Forms\FieldOptions\ButtonFieldOption;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\PhoneNumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\CheckboxField;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\PhoneNumberField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\Concerns\HasLocationFields;
+use App\Plugins\Ecommerce\Http\Requests\AddressRequest;
+use App\Plugins\Ecommerce\Models\Address;
+use App\Packages\Theme\FormFront;
 
 class AddressForm extends FormFront
 {

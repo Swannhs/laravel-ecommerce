@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\InvoiceInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\InvoiceInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class InvoiceRepository extends RepositoriesAbstract implements InvoiceInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Table\Providers;
+namespace App\Core\Table\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Table\ApiResourceDataTable;
-use Botble\Table\CollectionDataTable;
-use Botble\Table\EloquentDataTable;
-use Botble\Table\QueryDataTable;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Table\ApiResourceDataTable;
+use App\Core\Table\CollectionDataTable;
+use App\Core\Table\EloquentDataTable;
+use App\Core\Table\QueryDataTable;
 
 class TableServiceProvider extends ServiceProvider
 {

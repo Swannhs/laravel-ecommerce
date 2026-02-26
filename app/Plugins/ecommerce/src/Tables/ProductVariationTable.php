@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Base\Facades\Form;
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Enums\ProductTypeEnum;
-use Botble\Ecommerce\Enums\StockStatusEnum;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\CheckboxColumn;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\ImageColumn;
-use Botble\Table\EloquentDataTable;
+use App\Core\Base\Facades\Form;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Enums\StockStatusEnum;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\CheckboxColumn;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\ImageColumn;
+use App\Core\Table\EloquentDataTable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\Relation;

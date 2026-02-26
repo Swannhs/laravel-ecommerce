@@ -9,7 +9,7 @@
             <x-core::form.select
                 :label="trans('plugins/ecommerce::shipping.status')"
                 name="status"
-                :options="Botble\Ecommerce\Enums\ShippingCodStatusEnum::labels()"
+                :options="App\Plugins\Ecommerce\Enums\ShippingCodStatusEnum::labels()"
                 :value="$shipment->cod_status"
             />
         </x-core::form>

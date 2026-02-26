@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shortcode\Events;
+namespace App\Packages\Shortcode\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class ShortcodeAdminConfigRendering extends Event

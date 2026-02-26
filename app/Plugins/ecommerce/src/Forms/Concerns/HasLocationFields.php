@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Concerns;
+namespace App\Plugins\Ecommerce\Forms\Concerns;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\InputFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\InputFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Arr;
 
 trait HasLocationFields

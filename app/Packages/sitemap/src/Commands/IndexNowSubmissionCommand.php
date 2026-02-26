@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Sitemap\Commands;
+namespace App\Packages\Sitemap\Commands;
 
-use Botble\Sitemap\Services\IndexNowService;
+use App\Packages\Sitemap\Services\IndexNowService;
 use Illuminate\Console\Command;
 
 class IndexNowSubmissionCommand extends Command

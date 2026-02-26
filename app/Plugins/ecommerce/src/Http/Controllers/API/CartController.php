@@ -1,25 +1,25 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\AdsTracking\FacebookPixel;
-use Botble\Ecommerce\AdsTracking\GoogleTagManager;
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Http\Requests\API\AddCartRequest;
-use Botble\Ecommerce\Http\Requests\API\CartRefreshRequest;
-use Botble\Ecommerce\Http\Requests\API\DeleteCartRequest;
-use Botble\Ecommerce\Http\Requests\API\UpdateCartRequest;
-use Botble\Ecommerce\Http\Resources\API\CartItemResource;
-use Botble\Ecommerce\Http\Resources\API\ProductCartResource;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Services\HandleApplyCouponService;
-use Botble\Ecommerce\Services\HandleApplyPromotionsService;
-use Botble\Media\Facades\RvMedia;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\AdsTracking\FacebookPixel;
+use App\Plugins\Ecommerce\AdsTracking\GoogleTagManager;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Http\Requests\API\AddCartRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\CartRefreshRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\DeleteCartRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\UpdateCartRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\CartItemResource;
+use App\Plugins\Ecommerce\Http\Resources\API\ProductCartResource;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Services\HandleApplyCouponService;
+use App\Plugins\Ecommerce\Services\HandleApplyPromotionsService;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

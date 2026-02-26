@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Listeners;
+namespace App\Plugins\LanguageAdvanced\Listeners;
 
-use Botble\Slug\Events\UpdatedPermalinkSettings;
-use Botble\Slug\Models\Slug;
+use App\Packages\Slug\Events\UpdatedPermalinkSettings;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Support\Facades\DB;
 
 class UpdatePermalinkSettingsForEachLanguage

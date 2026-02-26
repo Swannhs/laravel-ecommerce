@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Settings\DigitalProductSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Settings\DigitalProductSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class DigitalProductSettingFom extends SettingForm
 {

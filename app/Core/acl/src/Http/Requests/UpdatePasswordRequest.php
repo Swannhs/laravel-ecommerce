@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Http\Requests;
+namespace App\Core\ACL\Http\Requests;
 
-use Botble\ACL\Models\User;
-use Botble\Support\Http\Requests\Request;
+use App\Core\ACL\Models\User;
+use App\Core\Support\Http\Requests\Request;
 
 class UpdatePasswordRequest extends Request
 {

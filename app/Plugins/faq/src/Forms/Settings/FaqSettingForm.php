@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Faq\Forms\Settings;
+namespace App\Plugins\Faq\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Faq\Http\Requests\Settings\FaqSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Plugins\Faq\Http\Requests\Settings\FaqSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class FaqSettingForm extends SettingForm
 {

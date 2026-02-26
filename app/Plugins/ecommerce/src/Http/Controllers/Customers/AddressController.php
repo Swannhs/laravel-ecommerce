@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Forms\Fronts\Customer\AddressForm;
-use Botble\Ecommerce\Http\Requests\CreateAddressFromAdminRequest;
-use Botble\Ecommerce\Models\Address;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Forms\Fronts\Customer\AddressForm;
+use App\Plugins\Ecommerce\Http\Requests\CreateAddressFromAdminRequest;
+use App\Plugins\Ecommerce\Models\Address;
 
 class AddressController extends BaseController
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shippo\Providers;
+namespace App\Plugins\Shippo\Providers;
 
-use Botble\Shippo\Commands\InitShippoCommand;
+use App\Plugins\Shippo\Commands\InitShippoCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider

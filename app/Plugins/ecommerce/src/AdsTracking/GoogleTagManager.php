@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\AdsTracking;
+namespace App\Plugins\Ecommerce\AdsTracking;
 
-use Botble\Ecommerce\Cart\CartItem;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\SeoHelper\Facades\SeoHelper;
+use App\Plugins\Ecommerce\Cart\CartItem;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Brand;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Packages\SeoHelper\Facades\SeoHelper;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 

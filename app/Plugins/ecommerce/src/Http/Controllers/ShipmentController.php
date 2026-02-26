@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Enums\OrderHistoryActionEnum;
-use Botble\Ecommerce\Enums\ShippingCodStatusEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Events\ShippingStatusChanged;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Http\Requests\UpdateShipmentCodStatusRequest;
-use Botble\Ecommerce\Http\Requests\UpdateShipmentStatusRequest;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Ecommerce\Models\ShipmentHistory;
-use Botble\Ecommerce\Tables\ShipmentTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Enums\OrderHistoryActionEnum;
+use App\Plugins\Ecommerce\Enums\ShippingCodStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Events\ShippingStatusChanged;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Http\Requests\UpdateShipmentCodStatusRequest;
+use App\Plugins\Ecommerce\Http\Requests\UpdateShipmentStatusRequest;
+use App\Plugins\Ecommerce\Models\OrderHistory;
+use App\Plugins\Ecommerce\Models\Shipment;
+use App\Plugins\Ecommerce\Models\ShipmentHistory;
+use App\Plugins\Ecommerce\Tables\ShipmentTable;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

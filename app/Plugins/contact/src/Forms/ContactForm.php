@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Contact\Forms;
+namespace App\Plugins\Contact\Forms;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Contact\Http\Requests\EditContactRequest;
-use Botble\Contact\Models\Contact;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Contact\Enums\ContactStatusEnum;
+use App\Plugins\Contact\Http\Requests\EditContactRequest;
+use App\Plugins\Contact\Models\Contact;
 
 class ContactForm extends FormAbstract
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Resources\API\FlashSaleProductResource;
-use Botble\Ecommerce\Models\FlashSale;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Resources\API\FlashSaleProductResource;
+use App\Plugins\Ecommerce\Models\FlashSale;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;

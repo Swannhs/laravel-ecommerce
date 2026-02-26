@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Captcha\Forms\Fields;
+namespace App\Plugins\Captcha\Forms\Fields;
 
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Forms\FormField;
 
 class ReCaptchaField extends FormField
 {

@@ -1,12 +1,12 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Marketplace\Http\Controllers\VendorBlockedController;
-use Botble\Marketplace\Http\Controllers\WithdrawalInvoiceController;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Marketplace\Http\Controllers\VendorBlockedController;
+use App\Plugins\Marketplace\Http\Controllers\WithdrawalInvoiceController;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {
-    Route::group(['namespace' => 'Botble\Marketplace\Http\Controllers'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Marketplace\Http\Controllers'], function (): void {
         Route::group(['prefix' => 'marketplaces', 'as' => 'marketplace.'], function (): void {
             Route::group(['prefix' => 'stores', 'as' => 'store.'], function (): void {
                 Route::resource('', 'StoreController')->parameters(['' => 'store']);

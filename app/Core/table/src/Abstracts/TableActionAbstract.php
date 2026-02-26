@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Table\Abstracts;
+namespace App\Core\Table\Abstracts;
 
-use Botble\Base\Supports\Builders\HasLabel;
-use Botble\Base\Supports\Builders\HasPermissions;
-use Botble\Base\Supports\Renderable;
-use Botble\Table\Abstracts\Concerns\HasConfirmation;
-use Botble\Table\Abstracts\Concerns\HasPriority;
+use App\Core\Base\Supports\Builders\HasLabel;
+use App\Core\Base\Supports\Builders\HasPermissions;
+use App\Core\Base\Supports\Renderable;
+use App\Core\Table\Abstracts\Concerns\HasConfirmation;
+use App\Core\Table\Abstracts\Concerns\HasPriority;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Traits\Conditionable;
 use Stringable;

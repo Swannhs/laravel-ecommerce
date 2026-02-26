@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Assets\Assets as BaseAssets;
-use Botble\Assets\HtmlBuilder;
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Facades\BaseHelper;
+use App\Packages\Assets\Assets as BaseAssets;
+use App\Packages\Assets\HtmlBuilder;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Config\Repository;
 
 /**

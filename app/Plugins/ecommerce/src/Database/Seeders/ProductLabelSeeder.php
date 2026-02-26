@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders;
+namespace App\Plugins\Ecommerce\Database\Seeders;
 
-use Botble\Ecommerce\Models\ProductLabel;
+use App\Plugins\Ecommerce\Models\ProductLabel;
 use Illuminate\Database\Seeder;
 
 class ProductLabelSeeder extends Seeder

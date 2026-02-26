@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Sitemap\Providers;
+namespace App\Packages\Sitemap\Providers;
 
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Setting\PanelSections\SettingCommonPanelSection;
-use Botble\Sitemap\Commands\IndexNowSubmissionCommand;
-use Botble\Sitemap\Services\IndexNowService;
-use Botble\Sitemap\Sitemap;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Setting\PanelSections\SettingCommonPanelSection;
+use App\Packages\Sitemap\Commands\IndexNowSubmissionCommand;
+use App\Packages\Sitemap\Services\IndexNowService;
+use App\Packages\Sitemap\Sitemap;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Contracts\Routing\ResponseFactory;

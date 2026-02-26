@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Ecommerce\Models\Review;
-use Botble\Ecommerce\Tables\Formatters\ReviewImagesFormatter;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\ViewAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\LinkableColumn;
-use Botble\Table\Columns\StatusColumn;
-use Botble\Table\HeaderActions\CreateHeaderAction;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Tables\Formatters\ReviewImagesFormatter;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\ViewAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\LinkableColumn;
+use App\Core\Table\Columns\StatusColumn;
+use App\Core\Table\HeaderActions\CreateHeaderAction;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;

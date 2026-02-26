@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Entities\Twitter;
+namespace App\Packages\SeoHelper\Entities\Twitter;
 
-use Botble\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
+use App\Packages\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
 
 class MetaCollection extends BaseMetaCollection
 {

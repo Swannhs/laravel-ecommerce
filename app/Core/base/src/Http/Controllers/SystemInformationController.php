@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Core;
-use Botble\Base\Supports\SystemManagement;
-use Botble\Base\Tables\InfoTable;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Core;
+use App\Core\Base\Supports\SystemManagement;
+use App\Core\Base\Tables\InfoTable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

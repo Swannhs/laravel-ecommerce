@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Http\Requests;
+namespace App\Plugins\Blog\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class TagRequest extends Request

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Dashboard\Repositories\Eloquent;
+namespace App\Core\Dashboard\Repositories\Eloquent;
 
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Auth;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Middleware;
+namespace App\Plugins\Ecommerce\Http\Middleware;
 
-use Botble\Ecommerce\Facades\Currency as CurrencyFacade;
-use Botble\Ecommerce\Models\Currency;
+use App\Plugins\Ecommerce\Facades\Currency as CurrencyFacade;
+use App\Plugins\Ecommerce\Models\Currency;
 use Closure;
 use Illuminate\Http\Request;
 

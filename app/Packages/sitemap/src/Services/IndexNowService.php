@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Sitemap\Services;
+namespace App\Packages\Sitemap\Services;
 
 use Exception;
 use Illuminate\Http\Client\ConnectionException;

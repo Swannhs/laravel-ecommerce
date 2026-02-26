@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Widget\Facades\Widget;
-use Botble\Widget\Facades\WidgetGroup;
-use Botble\Widget\Factories\WidgetFactory;
-use Botble\Widget\WidgetGroupCollection;
+use App\Packages\Widget\Facades\Widget;
+use App\Packages\Widget\Facades\WidgetGroup;
+use App\Packages\Widget\Factories\WidgetFactory;
+use App\Packages\Widget\WidgetGroupCollection;
 
 if (! function_exists('register_widget')) {
     function register_widget(string $widgetId): WidgetFactory

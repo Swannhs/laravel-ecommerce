@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Listeners;
+namespace App\Core\ACL\Listeners;
 
-use Botble\ACL\Models\User;
+use App\Core\ACL\Models\User;
 use Carbon\Carbon;
 use Illuminate\Auth\Events\Login;
 

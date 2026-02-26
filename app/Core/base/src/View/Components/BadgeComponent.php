@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\View\Components;
+namespace App\Core\Base\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;

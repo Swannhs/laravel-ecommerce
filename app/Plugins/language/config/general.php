@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Menu\Models\Menu;
-use Botble\Menu\Models\MenuNode;
-use Botble\Page\Models\Page;
+use App\Packages\Menu\Models\Menu;
+use App\Packages\Menu\Models\MenuNode;
+use App\Packages\Page\Models\Page;
 
 return [
     'supported' => [

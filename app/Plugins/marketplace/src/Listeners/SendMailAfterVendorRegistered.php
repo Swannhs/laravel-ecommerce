@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Models\Customer;
 use Illuminate\Auth\Events\Registered;
 
 class SendMailAfterVendorRegistered

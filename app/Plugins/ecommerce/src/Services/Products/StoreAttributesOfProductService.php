@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductAttribute;
-use Botble\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductAttribute;
+use App\Plugins\Ecommerce\Models\ProductVariation;
 
 class StoreAttributesOfProductService
 {

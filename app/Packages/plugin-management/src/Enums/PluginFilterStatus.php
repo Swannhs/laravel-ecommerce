@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Enums;
+namespace App\Packages\PluginManagement\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 class PluginFilterStatus extends Enum
 {

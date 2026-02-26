@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Marketplace\Enums\RevenueTypeEnum;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Models\Revenue;
-use Botble\Marketplace\Models\Withdrawal;
-use Botble\Media\Chunks\Exceptions\UploadMissingFileException;
-use Botble\Media\Chunks\Handler\DropZoneUploadHandler;
-use Botble\Media\Chunks\Receiver\FileReceiver;
-use Botble\Media\Facades\RvMedia;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Models\Revenue;
+use App\Plugins\Marketplace\Models\Withdrawal;
+use App\Core\Media\Chunks\Exceptions\UploadMissingFileException;
+use App\Core\Media\Chunks\Handler\DropZoneUploadHandler;
+use App\Core\Media\Chunks\Receiver\FileReceiver;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\Theme\Facades\Theme;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Enums\OrderCancellationReasonEnum;
-use Botble\Ecommerce\Enums\OrderHistoryActionEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\InvoiceHelper;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Http\Requests\Fronts\CancelOrderRequest;
-use Botble\Ecommerce\Http\Requests\Fronts\UploadProofRequest;
-use Botble\Ecommerce\Http\Resources\API\OrderDetailResource;
-use Botble\Ecommerce\Http\Resources\API\OrderResource;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderHistory;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Enums\OrderCancellationReasonEnum;
+use App\Plugins\Ecommerce\Enums\OrderHistoryActionEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\InvoiceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\CancelOrderRequest;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\UploadProofRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\OrderDetailResource;
+use App\Plugins\Ecommerce\Http\Resources\API\OrderResource;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\OrderHistory;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

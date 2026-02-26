@@ -65,7 +65,7 @@
             <div class="col">
                 <x-core::form.select
                     :label="trans('plugins/ecommerce::products.cross_sell_price_type.title')"
-                    :options="\Botble\Ecommerce\Enums\CrossSellPriceType::labels()"
+                    :options="\App\Plugins\Ecommerce\Enums\CrossSellPriceType::labels()"
                     :value="$product->pivot->price_type"
                     name="cross_sale_products[{{ $product->id }}][price_type]"
                 />
@@ -150,7 +150,7 @@
                             <div class="col">
                                 <x-core::form.select
                                     :label="trans('plugins/ecommerce::products.cross_sell_price_type.title')"
-                                    :options="\Botble\Ecommerce\Enums\CrossSellPriceType::labels()"
+                                    :options="\App\Plugins\Ecommerce\Enums\CrossSellPriceType::labels()"
                                     :value="$variationProduct->product?->pivot?->price_type"
                                     name="cross_sale_products[{{ $variationProduct->product->id }}][price_type]"
                                 />

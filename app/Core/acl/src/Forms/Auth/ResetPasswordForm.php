@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Forms\Auth;
+namespace App\Core\ACL\Forms\Auth;
 
-use Botble\ACL\Http\Requests\ResetPasswordRequest;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\ACL\Http\Requests\ResetPasswordRequest;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
 
 class ResetPasswordForm extends AuthForm
 {

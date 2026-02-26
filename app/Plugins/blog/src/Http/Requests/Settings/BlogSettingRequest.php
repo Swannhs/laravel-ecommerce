@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Http\Requests\Settings;
+namespace App\Plugins\Blog\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class BlogSettingRequest extends Request

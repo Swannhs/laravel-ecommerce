@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Repositories\Interfaces;
+namespace App\Plugins\Payment\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface PaymentInterface extends RepositoryInterface
 {

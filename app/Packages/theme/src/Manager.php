@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Theme;
+namespace App\Packages\Theme;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Theme\Facades\Theme as ThemeFacade;
-use Botble\Theme\Services\ThemeService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\Theme\Facades\Theme as ThemeFacade;
+use App\Packages\Theme\Services\ThemeService;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;

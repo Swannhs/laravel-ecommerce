@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Ecommerce\Cart;
+namespace App\Plugins\Ecommerce\Cart;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Cart\Contracts\Buyable;
-use Botble\Ecommerce\Cart\Exceptions\CartAlreadyStoredException;
-use Botble\Ecommerce\Cart\Exceptions\UnknownModelException;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Services\HandleApplyProductCrossSaleService;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Cart\Contracts\Buyable;
+use App\Plugins\Ecommerce\Cart\Exceptions\CartAlreadyStoredException;
+use App\Plugins\Ecommerce\Cart\Exceptions\UnknownModelException;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Plugins\Ecommerce\Services\HandleApplyProductCrossSaleService;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Closure;

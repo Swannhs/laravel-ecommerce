@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SocialLogin\Console;
+namespace App\Plugins\SocialLogin\Console;
 
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\SocialLogin\Models\SocialLogin;
-use Botble\SocialLogin\Services\SocialLoginService;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Plugins\SocialLogin\Models\SocialLogin;
+use App\Plugins\SocialLogin\Services\SocialLoginService;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 

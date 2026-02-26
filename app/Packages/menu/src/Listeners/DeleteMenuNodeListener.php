@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Menu\Listeners;
+namespace App\Packages\Menu\Listeners;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Menu\Facades\Menu;
-use Botble\Menu\Models\MenuNode;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Packages\Menu\Facades\Menu;
+use App\Packages\Menu\Models\MenuNode;
 
 class DeleteMenuNodeListener
 {

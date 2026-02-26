@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders;
+namespace App\Plugins\Ecommerce\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Currency;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\Currency;
 
 class CurrencySeeder extends BaseSeeder
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Rules;
+namespace App\Plugins\Ecommerce\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

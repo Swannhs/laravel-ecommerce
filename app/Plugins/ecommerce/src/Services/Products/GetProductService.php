@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;

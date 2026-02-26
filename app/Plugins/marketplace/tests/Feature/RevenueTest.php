@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Tests\Feature;
+namespace App\Plugins\Marketplace\Tests\Feature;
 
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\RevenueTypeEnum;
-use Botble\Marketplace\Models\Revenue;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
+use App\Plugins\Marketplace\Models\Revenue;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class RevenueTest extends BaseTestCase

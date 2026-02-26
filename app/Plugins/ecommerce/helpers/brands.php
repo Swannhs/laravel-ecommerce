@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Models\Brand;
+use App\Plugins\Ecommerce\Models\Brand;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 

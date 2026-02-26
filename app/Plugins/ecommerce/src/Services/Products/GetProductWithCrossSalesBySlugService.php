@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Product;
 
 class GetProductWithCrossSalesBySlugService
 {

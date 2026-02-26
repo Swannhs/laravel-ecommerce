@@ -1,26 +1,26 @@
 <?php
 
-namespace Botble\Theme\Providers;
+namespace App\Packages\Theme\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\DashboardMenu as DashboardMenuSupport;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Setting\PanelSections\SettingCommonPanelSection;
-use Botble\Theme\Commands\ThemeActivateCommand;
-use Botble\Theme\Commands\ThemeAssetsPublishCommand;
-use Botble\Theme\Commands\ThemeAssetsRemoveCommand;
-use Botble\Theme\Commands\ThemeClearCacheCommand;
-use Botble\Theme\Commands\ThemeOptionCheckMissingCommand;
-use Botble\Theme\Commands\ThemeRemoveCommand;
-use Botble\Theme\Commands\ThemeRenameCommand;
-use Botble\Theme\Contracts\Theme as ThemeContract;
-use Botble\Theme\Events\RenderingAdminBar;
-use Botble\Theme\Manager;
-use Botble\Theme\Theme;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\DashboardMenu as DashboardMenuSupport;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Setting\PanelSections\SettingCommonPanelSection;
+use App\Packages\Theme\Commands\ThemeActivateCommand;
+use App\Packages\Theme\Commands\ThemeAssetsPublishCommand;
+use App\Packages\Theme\Commands\ThemeAssetsRemoveCommand;
+use App\Packages\Theme\Commands\ThemeClearCacheCommand;
+use App\Packages\Theme\Commands\ThemeOptionCheckMissingCommand;
+use App\Packages\Theme\Commands\ThemeRemoveCommand;
+use App\Packages\Theme\Commands\ThemeRenameCommand;
+use App\Packages\Theme\Contracts\Theme as ThemeContract;
+use App\Packages\Theme\Events\RenderingAdminBar;
+use App\Packages\Theme\Manager;
+use App\Packages\Theme\Theme;
 
 class ThemeServiceProvider extends ServiceProvider
 {

@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\Fronts\BecomeVendorForm;
-use Botble\Marketplace\Http\Controllers\BaseController;
-use Botble\Marketplace\Http\Requests\Fronts\BecomeVendorRequest;
-use Botble\Marketplace\Models\Store;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\Fronts\BecomeVendorForm;
+use App\Plugins\Marketplace\Http\Controllers\BaseController;
+use App\Plugins\Marketplace\Http\Requests\Fronts\BecomeVendorRequest;
+use App\Plugins\Marketplace\Models\Store;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Theme\Facades\Theme;
 use Closure;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;

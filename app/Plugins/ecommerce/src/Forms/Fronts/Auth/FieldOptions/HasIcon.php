@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 
 trait HasIcon
 {

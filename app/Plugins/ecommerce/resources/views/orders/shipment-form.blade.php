@@ -99,8 +99,8 @@
 
         @if (
             is_plugin_active('payment')
-            && $order->payment->payment_channel == Botble\Payment\Enums\PaymentMethodEnum::COD
-            && $order->payment->status !== Botble\Payment\Enums\PaymentStatusEnum::COMPLETED
+            && $order->payment->payment_channel == App\Plugins\Payment\Enums\PaymentMethodEnum::COD
+            && $order->payment->status !== App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED
         )
             <div class="col-md-6">
                 <x-core::form.text-input

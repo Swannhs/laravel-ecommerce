@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Avatar;
-use Botble\Ecommerce\Enums\OrderAddressTypeEnum;
-use Botble\Ecommerce\Traits\LocationTrait;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\Avatar;
+use App\Plugins\Ecommerce\Enums\OrderAddressTypeEnum;
+use App\Plugins\Ecommerce\Traits\LocationTrait;
+use App\Core\Media\Facades\RvMedia;
 use Exception;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

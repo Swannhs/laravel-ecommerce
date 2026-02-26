@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Facades\FlashSale;
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Facades\FlashSale;
+use App\Plugins\Ecommerce\Models\Product;
 use Closure;
 
 class ProductFlashSalePriceService extends ProductPriceHandlerService

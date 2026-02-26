@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports\Database;
+namespace App\Core\Base\Supports\Database;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use Closure;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Blueprint as IlluminateBlueprint;

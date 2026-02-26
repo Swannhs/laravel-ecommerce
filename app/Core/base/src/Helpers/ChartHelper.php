@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Helpers;
+namespace App\Core\Base\Helpers;
 
 use Carbon\Carbon;
 use Exception;

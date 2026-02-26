@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\PageTitle;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\TaxRuleForm;
-use Botble\Ecommerce\Http\Requests\TaxRuleRequest;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Ecommerce\Models\TaxRule;
-use Botble\Ecommerce\Tables\TaxRuleTable;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\PageTitle;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\TaxRuleForm;
+use App\Plugins\Ecommerce\Http\Requests\TaxRuleRequest;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Ecommerce\Models\TaxRule;
+use App\Plugins\Ecommerce\Tables\TaxRuleTable;
 use Illuminate\Http\Request;
 
 class TaxRuleController extends BaseController

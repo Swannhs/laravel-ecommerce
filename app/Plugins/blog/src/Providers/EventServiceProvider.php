@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Providers;
+namespace App\Plugins\Blog\Providers;
 
-use Botble\Blog\Listeners\RenderingSiteMapListener;
-use Botble\Theme\Events\RenderingSiteMapEvent;
+use App\Plugins\Blog\Listeners\RenderingSiteMapListener;
+use App\Packages\Theme\Events\RenderingSiteMapEvent;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

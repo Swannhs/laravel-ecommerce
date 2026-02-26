@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\ACL\Services;
+namespace App\Core\ACL\Services;
 
-use Botble\ACL\Events\RoleAssignmentEvent;
-use Botble\ACL\Models\Role;
-use Botble\ACL\Models\User;
-use Botble\Support\Services\ProduceServiceInterface;
+use App\Core\ACL\Events\RoleAssignmentEvent;
+use App\Core\ACL\Models\Role;
+use App\Core\ACL\Models\User;
+use App\Core\Support\Services\ProduceServiceInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 

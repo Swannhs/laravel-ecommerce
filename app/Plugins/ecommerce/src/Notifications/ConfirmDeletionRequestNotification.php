@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Notifications;
+namespace App\Plugins\Ecommerce\Notifications;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Models\CustomerDeletionRequest;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Models\CustomerDeletionRequest;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;

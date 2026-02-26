@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Events\OrderPlacedEvent;
-use Botble\Ecommerce\Facades\Discount;
+use App\Plugins\Ecommerce\Events\OrderPlacedEvent;
+use App\Plugins\Ecommerce\Facades\Discount;
 
 class HandleDiscountUsageOnOrderCompletion
 {

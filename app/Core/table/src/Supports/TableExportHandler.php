@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Supports;
+namespace App\Core\Table\Supports;
 
 use Maatwebsite\Excel\Concerns\WithEvents;
 use Maatwebsite\Excel\Events\AfterSheet;

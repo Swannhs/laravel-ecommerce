@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Http\Requests\Fronts\ContactStoreRequest;
-use Botble\Marketplace\Models\Message;
-use Botble\Marketplace\Models\Store;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Http\Requests\Fronts\ContactStoreRequest;
+use App\Plugins\Marketplace\Models\Message;
+use App\Plugins\Marketplace\Models\Store;
 
 class ContactStoreController extends BaseController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ads\Database\Factories;
+namespace App\Plugins\Ads\Database\Factories;
 
-use Botble\Ads\Models\Ads;
-use Botble\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ads\Models\Ads;
+use App\Core\Base\Enums\BaseStatusEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

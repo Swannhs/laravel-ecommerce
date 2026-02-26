@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\GlobalSearch\Providers;
+namespace App\Core\Base\GlobalSearch\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\GlobalSearch\GlobalSearchableProvider;
-use Botble\Base\GlobalSearch\GlobalSearchableResult;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\GlobalSearch\GlobalSearchableProvider;
+use App\Core\Base\GlobalSearch\GlobalSearchableResult;
 use Illuminate\Support\Collection;
 
 class DashboardMenuProvider extends GlobalSearchableProvider

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Location\Events;
+namespace App\Plugins\Location\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 class DownloadedCities extends Event

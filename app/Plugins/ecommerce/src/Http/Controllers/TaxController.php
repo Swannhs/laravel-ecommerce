@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\TaxForm;
-use Botble\Ecommerce\Http\Controllers\Settings\SettingController;
-use Botble\Ecommerce\Http\Requests\TaxRequest;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Ecommerce\Tables\TaxTable;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\TaxForm;
+use App\Plugins\Ecommerce\Http\Controllers\Settings\SettingController;
+use App\Plugins\Ecommerce\Http\Requests\TaxRequest;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Ecommerce\Tables\TaxTable;
 
 class TaxController extends SettingController
 {

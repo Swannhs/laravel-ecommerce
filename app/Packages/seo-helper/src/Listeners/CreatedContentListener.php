@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SeoHelper\Listeners;
+namespace App\Packages\SeoHelper\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\SeoHelper\Facades\SeoHelper;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\SeoHelper\Facades\SeoHelper;
 use Exception;
 
 class CreatedContentListener

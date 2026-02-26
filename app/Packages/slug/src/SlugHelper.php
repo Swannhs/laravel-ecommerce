@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Slug;
+namespace App\Packages\Slug;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Page\Models\Page;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Contracts\BaseModel;
+use App\Packages\Page\Models\Page;
+use App\Packages\Slug\Models\Slug;
 use Closure;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

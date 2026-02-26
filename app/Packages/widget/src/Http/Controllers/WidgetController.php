@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Widget\Http\Controllers;
+namespace App\Packages\Widget\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Widget\Events\RenderingWidgetSettings;
-use Botble\Widget\Facades\WidgetGroup;
-use Botble\Widget\Models\Widget;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Packages\Widget\Events\RenderingWidgetSettings;
+use App\Packages\Widget\Facades\WidgetGroup;
+use App\Packages\Widget\Models\Widget;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

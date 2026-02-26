@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Translation\Tables;
+namespace App\Plugins\Translation\Tables;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\Language;
-use Botble\DataSynchronize\Table\HeaderActions\ExportHeaderAction;
-use Botble\DataSynchronize\Table\HeaderActions\ImportHeaderAction;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\BulkChanges\SelectBulkChange;
-use Botble\Table\CollectionDataTable;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Translation\Services\GetGroupedTranslationsService;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\Language;
+use App\Packages\DataSynchronize\Table\HeaderActions\ExportHeaderAction;
+use App\Packages\DataSynchronize\Table\HeaderActions\ImportHeaderAction;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\BulkChanges\SelectBulkChange;
+use App\Core\Table\CollectionDataTable;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Plugins\Translation\Services\GetGroupedTranslationsService;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

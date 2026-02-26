@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Repositories\Interfaces;
+namespace App\Core\Base\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface MetaBoxInterface extends RepositoryInterface
 {

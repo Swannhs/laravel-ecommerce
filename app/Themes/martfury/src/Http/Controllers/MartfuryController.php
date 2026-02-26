@@ -2,18 +2,18 @@
 
 namespace Theme\Martfury\Http\Controllers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Services\Products\GetProductService;
-use Botble\Newsletter\Forms\Fronts\NewsletterForm;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Http\Controllers\PublicController;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Plugins\Ecommerce\Services\Products\GetProductService;
+use App\Plugins\Newsletter\Forms\Fronts\NewsletterForm;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Http\Controllers\PublicController;
 use Illuminate\Http\Request;
 use Theme\Martfury\Http\Requests\SendDownloadAppLinksRequest;
 

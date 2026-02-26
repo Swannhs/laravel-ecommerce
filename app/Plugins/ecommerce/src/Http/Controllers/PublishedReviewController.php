@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Models\Review;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Models\Review;
 
 class PublishedReviewController extends BaseController
 {

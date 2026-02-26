@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Language\Listeners;
+namespace App\Plugins\Language\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Language\Listeners\Concerns\EnsureThemePackageExists;
-use Botble\Language\Models\Language;
-use Botble\Setting\Models\Setting;
-use Botble\Theme\Events\RenderingThemeOptionSettings;
-use Botble\Theme\Facades\ThemeOption;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Plugins\Language\Listeners\Concerns\EnsureThemePackageExists;
+use App\Plugins\Language\Models\Language;
+use App\Core\Setting\Models\Setting;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
+use App\Packages\Theme\Facades\ThemeOption;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Str;

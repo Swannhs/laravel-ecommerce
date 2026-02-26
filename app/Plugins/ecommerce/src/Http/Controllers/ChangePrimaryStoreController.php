@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Http\Requests\UpdatePrimaryStoreRequest;
-use Botble\Ecommerce\Models\StoreLocator;
-use Botble\Setting\Supports\SettingStore;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Http\Requests\UpdatePrimaryStoreRequest;
+use App\Plugins\Ecommerce\Models\StoreLocator;
+use App\Core\Setting\Supports\SettingStore;
 
 class ChangePrimaryStoreController extends BaseController
 {

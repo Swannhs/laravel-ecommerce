@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Sitemap\Jobs;
+namespace App\Packages\Sitemap\Jobs;
 
-use Botble\Sitemap\Services\IndexNowService;
+use App\Packages\Sitemap\Services\IndexNowService;
 use Exception;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

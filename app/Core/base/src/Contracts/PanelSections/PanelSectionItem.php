@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Contracts\PanelSections;
+namespace App\Core\Base\Contracts\PanelSections;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;

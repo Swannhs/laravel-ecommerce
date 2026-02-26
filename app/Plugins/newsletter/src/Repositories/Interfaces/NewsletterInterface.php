@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Newsletter\Repositories\Interfaces;
+namespace App\Plugins\Newsletter\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface NewsletterInterface extends RepositoryInterface
 {

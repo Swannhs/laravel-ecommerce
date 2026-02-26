@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Location\Http\Requests;
+namespace App\Plugins\Location\Http\Requests;
 
-use Botble\Location\Facades\Location;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Location\Facades\Location;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class ImportLocationRequest extends Request

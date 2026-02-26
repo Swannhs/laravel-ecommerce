@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Rules;
+namespace App\Core\Base\Rules;
 
-use Botble\Base\Models\Concerns\HasPhoneNumber;
+use App\Core\Base\Models\Concerns\HasPhoneNumber;
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Database\Eloquent\Model;

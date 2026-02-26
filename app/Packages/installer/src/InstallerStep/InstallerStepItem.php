@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Installer\InstallerStep;
+namespace App\Packages\Installer\InstallerStep;
 
 use Closure;
 

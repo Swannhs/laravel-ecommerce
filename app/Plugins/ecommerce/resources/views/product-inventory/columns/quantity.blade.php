@@ -21,7 +21,7 @@
         data-target-value="0"
         @style(['display: none;' => $product->with_storehouse_management, 'min-width: 120px;' => true])
     >
-        @foreach (Botble\Ecommerce\Enums\StockStatusEnum::labels() as $status => $label)
+        @foreach (App\Plugins\Ecommerce\Enums\StockStatusEnum::labels() as $status => $label)
             <option value="{{ $status }}" @selected(($product->stock_status ?: 'in_stock') == $status)>{{ $label }}</option>
         @endforeach
     </x-core::form.select>

@@ -10,7 +10,7 @@
                 ->modify(
                     'submit',
                     'submit',
-                    Botble\Base\Forms\FieldOptions\ButtonFieldOption::make()
+                    App\Core\Base\Forms\FieldOptions\ButtonFieldOption::make()
                         ->cssClass('ps-btn')
                         ->label(__('Send message'))
                         ->wrapperAttributes(['class' => 'form-group submit'])

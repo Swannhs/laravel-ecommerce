@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Base\Helpers;
+namespace App\Core\Base\Helpers;
 
-use Botble\Base\Facades\AdminAppearance;
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\GoogleFonts;
-use Botble\Base\Supports\HTMLPurifier\URIScheme\ViberURIScheme;
-use Botble\Base\View\Components\BadgeComponent;
-use Botble\Icon\Facades\Icon as IconFacade;
-use Botble\Icon\View\Components\Icon;
+use App\Core\Base\Facades\AdminAppearance;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\GoogleFonts;
+use App\Core\Base\Supports\HTMLPurifier\URIScheme\ViberURIScheme;
+use App\Core\Base\View\Components\BadgeComponent;
+use App\Core\Icon\Facades\Icon as IconFacade;
+use App\Core\Icon\View\Components\Icon;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use HTMLPurifier_URISchemeRegistry;

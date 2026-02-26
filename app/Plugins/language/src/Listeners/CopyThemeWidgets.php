@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Language\Listeners;
+namespace App\Plugins\Language\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Language\Listeners\Concerns\EnsureThemePackageExists;
-use Botble\Language\Models\Language;
-use Botble\Widget\Models\Widget;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Plugins\Language\Listeners\Concerns\EnsureThemePackageExists;
+use App\Plugins\Language\Models\Language;
+use App\Packages\Widget\Models\Widget;
 
 class CopyThemeWidgets
 {

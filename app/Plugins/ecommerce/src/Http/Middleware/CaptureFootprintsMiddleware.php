@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Middleware;
+namespace App\Plugins\Ecommerce\Http\Middleware;
 
-use Botble\Ecommerce\Services\Footprints\TrackingFilterInterface;
+use App\Plugins\Ecommerce\Services\Footprints\TrackingFilterInterface;
 
-use Botble\Ecommerce\Services\Footprints\TrackingLoggerInterface;
+use App\Plugins\Ecommerce\Services\Footprints\TrackingLoggerInterface;
 use Closure;
 use Illuminate\Http\Request;
 

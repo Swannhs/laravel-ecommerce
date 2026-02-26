@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Analytics\Http\Controllers;
+namespace App\Plugins\Analytics\Http\Controllers;
 
-use Botble\Analytics\Exceptions\InvalidConfiguration;
-use Botble\Analytics\Facades\Analytics;
-use Botble\Analytics\Http\Requests\AnalyticsRequest;
-use Botble\Analytics\Period;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use App\Plugins\Analytics\Exceptions\InvalidConfiguration;
+use App\Plugins\Analytics\Facades\Analytics;
+use App\Plugins\Analytics\Http\Requests\AnalyticsRequest;
+use App\Plugins\Analytics\Period;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Dashboard\Supports\DashboardWidgetInstance;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

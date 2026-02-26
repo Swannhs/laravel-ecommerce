@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Forms\Fields;
+namespace App\Core\Base\Forms\Fields;
 
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Forms\FormField;
 
 class DateField extends FormField
 {

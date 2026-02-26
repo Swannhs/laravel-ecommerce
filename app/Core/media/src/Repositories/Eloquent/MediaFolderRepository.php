@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Media\Repositories\Eloquent;
+namespace App\Core\Media\Repositories\Eloquent;
 
-use Botble\Media\Models\MediaFolder;
-use Botble\Media\Repositories\Interfaces\MediaFolderInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Media\Models\MediaFolder;
+use App\Core\Media\Repositories\Interfaces\MediaFolderInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Database\Query\Builder;
 
 /**

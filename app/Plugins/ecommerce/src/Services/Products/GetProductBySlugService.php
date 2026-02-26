@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Models\Product;
-use Botble\Slug\Facades\SlugHelper;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Packages\Slug\Facades\SlugHelper;
 
 class GetProductBySlugService
 {

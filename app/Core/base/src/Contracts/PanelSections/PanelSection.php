@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Contracts\PanelSections;
+namespace App\Core\Base\Contracts\PanelSections;
 
 use Closure;
 use Illuminate\Contracts\Support\Htmlable;

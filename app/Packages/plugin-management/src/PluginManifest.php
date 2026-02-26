@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement;
+namespace App\Packages\PluginManagement;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Throwable;

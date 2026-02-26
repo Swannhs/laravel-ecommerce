@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\AdminNotificationEvent;
-use Botble\Base\Supports\AdminNotificationItem;
-use Botble\Ecommerce\Events\OrderPaymentConfirmedEvent;
+use App\Core\Base\Events\AdminNotificationEvent;
+use App\Core\Base\Supports\AdminNotificationItem;
+use App\Plugins\Ecommerce\Events\OrderPaymentConfirmedEvent;
 
 class OrderPaymentConfirmedNotification
 {

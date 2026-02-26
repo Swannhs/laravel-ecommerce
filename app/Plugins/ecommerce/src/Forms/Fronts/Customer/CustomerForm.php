@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Customer;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Customer;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\ButtonFieldOption;
-use Botble\Base\Forms\FieldOptions\EmailFieldOption;
-use Botble\Base\Forms\FieldOptions\InputFieldOption;
-use Botble\Base\Forms\FieldOptions\PhoneNumberFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\PhoneNumberField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Ecommerce\Http\Requests\EditAccountRequest;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Theme\FormFront;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\ButtonFieldOption;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\InputFieldOption;
+use App\Core\Base\Forms\FieldOptions\PhoneNumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\PhoneNumberField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Ecommerce\Http\Requests\EditAccountRequest;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Packages\Theme\FormFront;
 use Illuminate\Support\Facades\App;
 
 class CustomerForm extends FormFront

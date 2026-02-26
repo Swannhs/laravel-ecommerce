@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Ecommerce\Models\Review;
-use Botble\Ecommerce\Tables\Formatters\ReviewImagesFormatter;
-use Botble\Marketplace\Tables\Traits\ForVendor;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\IdColumn;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Plugins\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Tables\Formatters\ReviewImagesFormatter;
+use App\Plugins\Marketplace\Tables\Traits\ForVendor;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\IdColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;

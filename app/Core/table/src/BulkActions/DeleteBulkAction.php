@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Table\BulkActions;
+namespace App\Core\Table\BulkActions;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Exceptions\DisabledInDemoModeException;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Table\Abstracts\TableBulkActionAbstract;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Exceptions\DisabledInDemoModeException;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Table\Abstracts\TableBulkActionAbstract;
 use Illuminate\Database\Eloquent\Model;
 
 class DeleteBulkAction extends TableBulkActionAbstract

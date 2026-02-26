@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Shortcode\Http\Controllers;
+namespace App\Packages\Shortcode\Http\Controllers;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Shortcode\Events\ShortcodeAdminConfigRendering;
-use Botble\Shortcode\Facades\Shortcode;
-use Botble\Shortcode\Forms\ShortcodeForm;
-use Botble\Shortcode\Http\Requests\GetShortcodeDataRequest;
-use Botble\Shortcode\Http\Requests\RenderBlockUiRequest;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Packages\Shortcode\Events\ShortcodeAdminConfigRendering;
+use App\Packages\Shortcode\Facades\Shortcode;
+use App\Packages\Shortcode\Forms\ShortcodeForm;
+use App\Packages\Shortcode\Http\Requests\GetShortcodeDataRequest;
+use App\Packages\Shortcode\Http\Requests\RenderBlockUiRequest;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Support\Arr;

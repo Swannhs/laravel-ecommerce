@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Models;
+namespace App\Plugins\Marketplace\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Models\Customer;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Message extends BaseModel

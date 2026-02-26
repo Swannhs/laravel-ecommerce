@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SocialLogin\Http\Requests\Settings;
+namespace App\Plugins\SocialLogin\Http\Requests\Settings;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class SocialLoginSettingRequest extends Request

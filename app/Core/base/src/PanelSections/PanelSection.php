@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Base\PanelSections;
+namespace App\Core\Base\PanelSections;
 
-use Botble\ACL\Contracts\HasPermissions;
-use Botble\Base\Contracts\PanelSections\PanelSection as PanelSectionContract;
-use Botble\Base\Contracts\PanelSections\PanelSectionItem as PanelSectionItemContract;
-use Botble\Base\Events\PanelSectionItemsRendered;
-use Botble\Base\Events\PanelSectionItemsRendering;
-use Botble\Base\Events\PanelSectionRendered;
-use Botble\Base\Events\PanelSectionRendering;
-use Botble\Base\Facades\PanelSectionManager;
+use App\Core\ACL\Contracts\HasPermissions;
+use App\Core\Base\Contracts\PanelSections\PanelSection as PanelSectionContract;
+use App\Core\Base\Contracts\PanelSections\PanelSectionItem as PanelSectionItemContract;
+use App\Core\Base\Events\PanelSectionItemsRendered;
+use App\Core\Base\Events\PanelSectionItemsRendering;
+use App\Core\Base\Events\PanelSectionRendered;
+use App\Core\Base\Events\PanelSectionRendering;
+use App\Core\Base\Facades\PanelSectionManager;
 use Closure;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;

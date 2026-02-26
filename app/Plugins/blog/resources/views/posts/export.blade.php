@@ -2,8 +2,8 @@
 
 @section('export_extra_filters_after')
     @php
-        use Botble\Base\Enums\BaseStatusEnum;
-        use Botble\Blog\Models\Category;
+        use App\Core\Base\Enums\BaseStatusEnum;
+        use App\Plugins\Blog\Models\Category;
 
         $statuses = BaseStatusEnum::labels();
         $categories = Category::query()->pluck('name', 'id')->toArray();

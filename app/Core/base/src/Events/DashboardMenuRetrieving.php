@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
-use Botble\Base\Supports\DashboardMenu;
+use App\Core\Base\Supports\DashboardMenu;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class DashboardMenuRetrieving

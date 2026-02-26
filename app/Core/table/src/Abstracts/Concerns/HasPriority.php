@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Abstracts\Concerns;
+namespace App\Core\Table\Abstracts\Concerns;
 
 trait HasPriority
 {

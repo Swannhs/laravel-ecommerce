@@ -1,23 +1,23 @@
 <?php
 
-use Botble\Base\Http\Middleware\DisableInDemoModeMiddleware;
-use Botble\DataSynchronize\Http\Controllers\UploadController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Controllers\PrintShippingLabelController;
-use Botble\Ecommerce\Http\Controllers\ProductTagController;
-use Botble\Ecommerce\Http\Middleware\CheckProductSpecificationEnabledMiddleware;
-use Botble\Marketplace\Http\Controllers\Fronts\ExportProductController;
-use Botble\Marketplace\Http\Controllers\Fronts\ImportProductController;
-use Botble\Marketplace\Http\Controllers\Fronts\MessageController;
-use Botble\Marketplace\Http\Controllers\Fronts\SpecificationAttributeController;
-use Botble\Marketplace\Http\Controllers\Fronts\SpecificationGroupController;
-use Botble\Marketplace\Http\Controllers\Fronts\SpecificationTableController;
-use Botble\Marketplace\Http\Controllers\Vendor\LanguageSettingController;
-use Botble\Marketplace\Http\Middleware\LocaleMiddleware;
+use App\Core\Base\Http\Middleware\DisableInDemoModeMiddleware;
+use App\Packages\DataSynchronize\Http\Controllers\UploadController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Controllers\PrintShippingLabelController;
+use App\Plugins\Ecommerce\Http\Controllers\ProductTagController;
+use App\Plugins\Ecommerce\Http\Middleware\CheckProductSpecificationEnabledMiddleware;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\ExportProductController;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\ImportProductController;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\MessageController;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\SpecificationAttributeController;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\SpecificationGroupController;
+use App\Plugins\Marketplace\Http\Controllers\Fronts\SpecificationTableController;
+use App\Plugins\Marketplace\Http\Controllers\Vendor\LanguageSettingController;
+use App\Plugins\Marketplace\Http\Middleware\LocaleMiddleware;
 use Illuminate\Support\Facades\Route;
 
 Route::group([
-    'namespace' => 'Botble\Marketplace\Http\Controllers\Fronts',
+    'namespace' => 'App\Plugins\Marketplace\Http\Controllers\Fronts',
     'prefix' => config('plugins.marketplace.general.vendor_panel_dir', 'vendor'),
     'as' => 'marketplace.vendor.',
     'middleware' => ['web', 'core', 'vendor', LocaleMiddleware::class],

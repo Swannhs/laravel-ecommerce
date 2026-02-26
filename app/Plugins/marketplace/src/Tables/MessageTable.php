@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Marketplace\Tables;
+namespace App\Plugins\Marketplace\Tables;
 
-use Botble\Marketplace\Models\Message;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\Action;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\ViewAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\BulkChanges\CreatedAtBulkChange;
-use Botble\Table\BulkChanges\EmailBulkChange;
-use Botble\Table\BulkChanges\NameBulkChange;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\EmailColumn;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\NameColumn;
+use App\Plugins\Marketplace\Models\Message;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\Action;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\ViewAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\BulkChanges\CreatedAtBulkChange;
+use App\Core\Table\BulkChanges\EmailBulkChange;
+use App\Core\Table\BulkChanges\NameBulkChange;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\EmailColumn;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\NameColumn;
 use Illuminate\Database\Eloquent\Builder;
 
 class MessageTable extends TableAbstract

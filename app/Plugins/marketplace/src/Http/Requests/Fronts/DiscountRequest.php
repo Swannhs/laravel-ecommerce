@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\Fronts;
+namespace App\Plugins\Marketplace\Http\Requests\Fronts;
 
-use Botble\Ecommerce\Http\Requests\DiscountRequest as BaseDiscountRequest;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Ecommerce\Http\Requests\DiscountRequest as BaseDiscountRequest;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 use Illuminate\Validation\Rule;
 
 class DiscountRequest extends BaseDiscountRequest

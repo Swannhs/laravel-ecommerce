@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SocialLogin\Services;
+namespace App\Plugins\SocialLogin\Services;
 
-use Botble\SocialLogin\Models\SocialLogin;
+use App\Plugins\SocialLogin\Models\SocialLogin;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;

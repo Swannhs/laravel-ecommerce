@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Marketplace\Importers;
+namespace App\Plugins\Marketplace\Importers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Importers\ProductImporter as BaseProductImporter;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Product;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Importers\ProductImporter as BaseProductImporter;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 

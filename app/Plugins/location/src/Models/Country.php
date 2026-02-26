@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Location\Models;
+namespace App\Plugins\Location\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Country extends BaseModel

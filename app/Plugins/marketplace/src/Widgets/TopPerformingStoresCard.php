@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Widgets\Card;
-use Botble\Marketplace\Models\Store;
+use App\Core\Base\Widgets\Card;
+use App\Plugins\Marketplace\Models\Store;
 use Illuminate\Support\Facades\DB;
 
 class TopPerformingStoresCard extends Card

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Base\Events\RenderingAdminWidgetEvent;
-use Botble\Marketplace\Widgets\AverageCommissionCard;
-use Botble\Marketplace\Widgets\ProductDistributionChart;
-use Botble\Marketplace\Widgets\RecentWithdrawalsTable;
-use Botble\Marketplace\Widgets\SaleCommissionHtml;
-use Botble\Marketplace\Widgets\StoreGrowthChart;
-use Botble\Marketplace\Widgets\StoreRevenueTable;
-use Botble\Marketplace\Widgets\TopPerformingStoresCard;
-use Botble\Marketplace\Widgets\WithdrawalStatusChart;
+use App\Core\Base\Events\RenderingAdminWidgetEvent;
+use App\Plugins\Marketplace\Widgets\AverageCommissionCard;
+use App\Plugins\Marketplace\Widgets\ProductDistributionChart;
+use App\Plugins\Marketplace\Widgets\RecentWithdrawalsTable;
+use App\Plugins\Marketplace\Widgets\SaleCommissionHtml;
+use App\Plugins\Marketplace\Widgets\StoreGrowthChart;
+use App\Plugins\Marketplace\Widgets\StoreRevenueTable;
+use App\Plugins\Marketplace\Widgets\TopPerformingStoresCard;
+use App\Plugins\Marketplace\Widgets\WithdrawalStatusChart;
 
 class RegisterMarketplaceWidget
 {

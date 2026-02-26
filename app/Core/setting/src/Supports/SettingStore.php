@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Setting\Supports;
+namespace App\Core\Setting\Supports;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;

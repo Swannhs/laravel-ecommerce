@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 
 class YesNoColumn extends FormattedColumn implements FormattedColumnContract
 {

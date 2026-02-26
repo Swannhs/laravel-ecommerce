@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace App\Plugins\Ecommerce\Tables;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;

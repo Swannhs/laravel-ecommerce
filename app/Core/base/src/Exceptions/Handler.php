@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Exceptions;
+namespace App\Core\Base\Exceptions;
 
-use Botble\Base\Contracts\Exceptions\IgnoringReport;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Contracts\Exceptions\IgnoringReport;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Media\Facades\RvMedia;
 use Carbon\Carbon;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Contracts\Container\Container;

@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Language\Facades\Language;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\PayoutInformationForm;
-use Botble\Marketplace\Forms\StoreForm;
-use Botble\Marketplace\Forms\TaxInformationForm;
-use Botble\Marketplace\Http\Requests\PayoutInformationSettingRequest;
-use Botble\Marketplace\Http\Requests\StoreRequest;
-use Botble\Marketplace\Http\Requests\TaxInformationSettingRequest;
-use Botble\Marketplace\Models\Store;
-use Botble\Marketplace\Tables\StoreTable;
+use App\Core\Base\Events\BeforeEditContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\PayoutInformationForm;
+use App\Plugins\Marketplace\Forms\StoreForm;
+use App\Plugins\Marketplace\Forms\TaxInformationForm;
+use App\Plugins\Marketplace\Http\Requests\PayoutInformationSettingRequest;
+use App\Plugins\Marketplace\Http\Requests\StoreRequest;
+use App\Plugins\Marketplace\Http\Requests\TaxInformationSettingRequest;
+use App\Plugins\Marketplace\Models\Store;
+use App\Plugins\Marketplace\Tables\StoreTable;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

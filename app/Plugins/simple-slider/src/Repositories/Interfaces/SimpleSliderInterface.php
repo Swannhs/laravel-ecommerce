@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SimpleSlider\Repositories\Interfaces;
+namespace App\Plugins\SimpleSlider\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface SimpleSliderInterface extends RepositoryInterface
 {

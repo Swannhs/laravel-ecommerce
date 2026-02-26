@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Paystack\Services\Abstracts;
+namespace App\Plugins\Paystack\Services\Abstracts;
 
-use Botble\Payment\Services\Traits\PaymentErrorTrait;
-use Botble\Paystack\Services\Paystack;
-use Botble\Support\Services\ProduceServiceInterface;
+use App\Plugins\Payment\Services\Traits\PaymentErrorTrait;
+use App\Plugins\Paystack\Services\Paystack;
+use App\Core\Support\Services\ProduceServiceInterface;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

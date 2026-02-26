@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\SeoHelper;
+namespace App\Packages\SeoHelper;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\SeoHelper\Contracts\Entities\AnalyticsContract;
-use Botble\SeoHelper\Contracts\Entities\DescriptionContract;
-use Botble\SeoHelper\Contracts\Entities\MiscTagsContract;
-use Botble\SeoHelper\Contracts\Entities\TitleContract;
-use Botble\SeoHelper\Contracts\Entities\WebmastersContract;
-use Botble\SeoHelper\Contracts\SeoMetaContract;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\SeoHelper\Contracts\Entities\AnalyticsContract;
+use App\Packages\SeoHelper\Contracts\Entities\DescriptionContract;
+use App\Packages\SeoHelper\Contracts\Entities\MiscTagsContract;
+use App\Packages\SeoHelper\Contracts\Entities\TitleContract;
+use App\Packages\SeoHelper\Contracts\Entities\WebmastersContract;
+use App\Packages\SeoHelper\Contracts\SeoMetaContract;
 
 class SeoMeta implements SeoMetaContract
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace App\Core\Base\Providers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Media\Facades\RvMedia;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\Facades\Auth;
 

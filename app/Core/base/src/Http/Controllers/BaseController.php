@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Http\Controllers\Concerns\HasBreadcrumb;
-use Botble\Base\Http\Controllers\Concerns\HasHttpResponse;
-use Botble\Base\Http\Controllers\Concerns\HasPageTitle;
+use App\Core\Base\Http\Controllers\Concerns\HasBreadcrumb;
+use App\Core\Base\Http\Controllers\Concerns\HasHttpResponse;
+use App\Core\Base\Http\Controllers\Concerns\HasPageTitle;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;

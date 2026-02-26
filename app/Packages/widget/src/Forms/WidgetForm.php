@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Widget\Forms;
+namespace App\Packages\Widget\Forms;
 
-use Botble\Base\Forms\FieldOptions\AlertFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\AlertField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Models\BaseModel;
-use Botble\Widget\AbstractWidget;
+use App\Core\Base\Forms\FieldOptions\AlertFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\AlertField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Packages\Widget\AbstractWidget;
 
 class WidgetForm extends FormAbstract
 {

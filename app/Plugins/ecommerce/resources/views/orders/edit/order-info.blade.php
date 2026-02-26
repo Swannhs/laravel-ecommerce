@@ -71,7 +71,7 @@
             </x-core::table.body.cell>
             <x-core::table.body.cell>
                 @if (is_plugin_active('payment') && $order->payment->id)
-                    <span @class(['text-warning' => $order->payment->status != Botble\Payment\Enums\PaymentStatusEnum::COMPLETED]) class="text-warning">
+                    <span @class(['text-warning' => $order->payment->status != App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED]) class="text-warning">
                 {{ format_price($order->amount) }}
             </span>
                 @else
@@ -90,10 +90,10 @@
                             href="{{ route('payment.show', $order->payment->id) }}"
                             target="_blank"
                         >
-                            <span>{{ format_price($order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
+                            <span>{{ format_price($order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
                         </a>
                     @else
-                        <span>{{ format_price($order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
+                        <span>{{ format_price($order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
                     @endif
                 </x-core::table.body.cell>
             </x-core::table.body.row>
@@ -145,7 +145,7 @@
             </td>
         </x-core::table.body.row>
 
-        @if (is_plugin_active('payment') && $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::REFUNDED)
+        @if (is_plugin_active('payment') && $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::REFUNDED)
             <x-core::table.body.row class="hidden">
                 <x-core::table.body.cell>
                     {{ trans('plugins/ecommerce::order.refunded_amount') }}
@@ -160,7 +160,7 @@
                 {{ trans('plugins/ecommerce::order.amount_received') }}
             </x-core::table.body.cell>
             <x-core::table.body.cell>
-                {{ format_price(is_plugin_active('payment') && $order->payment->status == Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->amount : 0) }}
+                {{ format_price(is_plugin_active('payment') && $order->payment->status == App\Plugins\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->amount : 0) }}
             </x-core::table.body.cell>
         </x-core::table.body.row>
     </x-core::table.body>

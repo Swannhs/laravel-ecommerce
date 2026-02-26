@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Tests\Feature;
+namespace App\Plugins\Ecommerce\Tests\Feature;
 
-use Botble\ACL\Models\User;
-use Botble\ACL\Services\ActivateUserService;
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Setting\Facades\Setting;
+use App\Core\ACL\Models\User;
+use App\Core\ACL\Services\ActivateUserService;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Faq\Repositories\Interfaces;
+namespace App\Plugins\Faq\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface FaqInterface extends RepositoryInterface
 {

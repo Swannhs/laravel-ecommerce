@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Table\Http\Controllers;
+namespace App\Core\Table\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Table\TableBuilder;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Table\TableBuilder;
 
 class TableController extends BaseController
 {

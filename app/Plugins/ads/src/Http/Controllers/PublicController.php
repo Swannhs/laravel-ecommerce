@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ads\Http\Controllers;
+namespace App\Plugins\Ads\Http\Controllers;
 
-use Botble\Ads\Models\Ads;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ads\Models\Ads;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 

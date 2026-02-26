@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Facades;
+namespace App\Plugins\Marketplace\Facades;
 
-use Botble\Marketplace\Supports\MarketplaceHelper as MarketplaceHelperSupport;
+use App\Plugins\Marketplace\Supports\MarketplaceHelper as MarketplaceHelperSupport;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool hideStoreAddress()
  * @method static bool allowVendorManageShipping()
  * @method static mixed sendMailToVendorAfterProcessingOrder($orders)
- * @method static \Botble\Base\Supports\EmailHandler setEmailVendorVariables(\Botble\Ecommerce\Models\Order $order)
+ * @method static \App\Core\Base\Supports\EmailHandler setEmailVendorVariables(\App\Plugins\Ecommerce\Models\Order $order)
  * @method static bool isCommissionCategoryFeeBasedEnabled()
  * @method static float maxFilesizeUploadByVendor()
  * @method static int maxProductImagesUploadByVendor()
@@ -33,7 +33,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool isChargeShippingPerVendor()
  * @method static \Illuminate\Support\Collection getCategoriesForVendor(string|int $storeId)
  *
- * @see \Botble\Marketplace\Supports\MarketplaceHelper
+ * @see \App\Plugins\Marketplace\Supports\MarketplaceHelper
  */
 class MarketplaceHelper extends Facade
 {

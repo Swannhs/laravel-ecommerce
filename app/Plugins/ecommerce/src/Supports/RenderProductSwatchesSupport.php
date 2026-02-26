@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Models\ProductVariationItem;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper as EcommerceHelperFacade;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Models\ProductVariationItem;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Models;
+namespace App\Core\Base\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Support\Services\Cache\Cache;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Database\Query\Builder;

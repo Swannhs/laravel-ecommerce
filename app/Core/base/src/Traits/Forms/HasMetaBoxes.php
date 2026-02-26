@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Traits\Forms;
+namespace App\Core\Base\Traits\Forms;
 
-use Botble\Base\Forms\MetaBox;
+use App\Core\Base\Forms\MetaBox;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Arr;

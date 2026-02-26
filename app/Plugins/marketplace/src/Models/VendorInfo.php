@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Models;
+namespace App\Plugins\Marketplace\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 use Exception;
 use Illuminate\Support\Facades\Hash;
 

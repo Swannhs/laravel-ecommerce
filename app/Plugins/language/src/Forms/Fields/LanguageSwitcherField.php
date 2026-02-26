@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Language\Forms\Fields;
+namespace App\Plugins\Language\Forms\Fields;
 
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Forms\FormField;
 
 class LanguageSwitcherField extends FormField
 {

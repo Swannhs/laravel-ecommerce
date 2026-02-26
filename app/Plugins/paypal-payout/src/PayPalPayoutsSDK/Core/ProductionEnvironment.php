@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\PayPalPayout\PayPalPayoutsSDK\Core;
+namespace App\Plugins\PayPalPayout\PayPalPayoutsSDK\Core;
 
 class ProductionEnvironment extends PayPalEnvironment
 {

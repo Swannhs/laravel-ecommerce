@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Requests\UpdateTreeCategoryRequest;
-use Botble\Ecommerce\Forms\ProductCategoryForm;
-use Botble\Ecommerce\Http\Requests\ProductCategoryRequest;
-use Botble\Ecommerce\Http\Resources\ProductCategoryResource;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Tables\ProductCategoryTable;
-use Botble\Support\Services\Cache\Cache as CacheService;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Requests\UpdateTreeCategoryRequest;
+use App\Plugins\Ecommerce\Forms\ProductCategoryForm;
+use App\Plugins\Ecommerce\Http\Requests\ProductCategoryRequest;
+use App\Plugins\Ecommerce\Http\Resources\ProductCategoryResource;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Tables\ProductCategoryTable;
+use App\Core\Support\Services\Cache\Cache as CacheService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\OrderReturnReasonEnum;
-use Botble\Ecommerce\Enums\OrderReturnStatusEnum;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\OrderReturnReasonEnum;
+use App\Plugins\Ecommerce\Enums\OrderReturnStatusEnum;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;

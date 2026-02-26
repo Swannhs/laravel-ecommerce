@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace App\Plugins\AuditLog\Providers;
 
-use Botble\AuditLog\Models\AuditHistory;
-use Botble\AuditLog\Repositories\Eloquent\AuditLogRepository;
-use Botble\AuditLog\Repositories\Interfaces\AuditLogInterface;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\PanelSections\System\SystemPanelSection;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\AuditLog\Models\AuditHistory;
+use App\Plugins\AuditLog\Repositories\Eloquent\AuditLogRepository;
+use App\Plugins\AuditLog\Repositories\Interfaces\AuditLogInterface;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\System\SystemPanelSection;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Database\Console\PruneCommand;

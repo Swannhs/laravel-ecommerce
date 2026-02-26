@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\PanelSections;
+namespace App\Core\Base\PanelSections;
 
-use Botble\ACL\Contracts\HasPermissions;
-use Botble\Base\Contracts\PanelSections\PanelSectionItem as PanelSectionItemContract;
-use Botble\Base\Events\PanelSectionItemRendered;
-use Botble\Base\Events\PanelSectionItemRendering;
+use App\Core\ACL\Contracts\HasPermissions;
+use App\Core\Base\Contracts\PanelSections\PanelSectionItem as PanelSectionItemContract;
+use App\Core\Base\Events\PanelSectionItemRendered;
+use App\Core\Base\Events\PanelSectionItemRendering;
 
 class PanelSectionItem implements PanelSectionItemContract
 {

@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Payment\Http\Controllers\PaymentLogController;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Payment\Http\Controllers\PaymentLogController;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {
@@ -11,7 +11,7 @@ AdminHelper::registerRoutes(function (): void {
         Route::delete('{paymentLog}', [PaymentLogController::class, 'destroy'])->name('destroy');
     });
 
-    Route::group(['namespace' => 'Botble\Payment\Http\Controllers'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Payment\Http\Controllers'], function (): void {
         Route::group(['prefix' => 'payments/methods', 'permission' => 'payments.settings'], function (): void {
             Route::get('', [
                 'as' => 'payments.methods',

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Jobs;
+namespace App\Plugins\Ecommerce\Jobs;
 
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Events\AccountDeletedEvent;
-use Botble\Ecommerce\Events\AccountDeletingEvent;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\CustomerDeletionRequest;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Events\AccountDeletedEvent;
+use App\Plugins\Ecommerce\Events\AccountDeletingEvent;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\CustomerDeletionRequest;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

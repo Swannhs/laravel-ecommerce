@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests;
+namespace App\Plugins\Marketplace\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Rules\EmailRule;
-use Botble\Base\Rules\MediaImageRule;
-use Botble\Marketplace\Models\Store;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Base\Rules\MediaImageRule;
+use App\Plugins\Marketplace\Models\Store;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class StoreRequest extends Request

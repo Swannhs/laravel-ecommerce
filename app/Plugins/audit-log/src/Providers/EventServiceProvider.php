@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace App\Plugins\AuditLog\Providers;
 
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\AuditLog\Listeners\AuditHandlerListener;
-use Botble\AuditLog\Listeners\CreatedContentListener;
-use Botble\AuditLog\Listeners\CustomerLoginListener;
-use Botble\AuditLog\Listeners\CustomerLogoutListener;
-use Botble\AuditLog\Listeners\CustomerRegistrationListener;
-use Botble\AuditLog\Listeners\DeletedContentListener;
-use Botble\AuditLog\Listeners\LoginListener;
-use Botble\AuditLog\Listeners\UpdatedContentListener;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
+use App\Plugins\AuditLog\Events\AuditHandlerEvent;
+use App\Plugins\AuditLog\Listeners\AuditHandlerListener;
+use App\Plugins\AuditLog\Listeners\CreatedContentListener;
+use App\Plugins\AuditLog\Listeners\CustomerLoginListener;
+use App\Plugins\AuditLog\Listeners\CustomerLogoutListener;
+use App\Plugins\AuditLog\Listeners\CustomerRegistrationListener;
+use App\Plugins\AuditLog\Listeners\DeletedContentListener;
+use App\Plugins\AuditLog\Listeners\LoginListener;
+use App\Plugins\AuditLog\Listeners\UpdatedContentListener;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Auth\Events\Registered;

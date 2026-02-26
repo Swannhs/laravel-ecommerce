@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Stripe\Services\Abstracts;
+namespace App\Plugins\Stripe\Services\Abstracts;
 
-use Botble\Payment\Services\Traits\PaymentErrorTrait;
-use Botble\Stripe\Supports\StripeHelper;
+use App\Plugins\Payment\Services\Traits\PaymentErrorTrait;
+use App\Plugins\Stripe\Supports\StripeHelper;
 use Exception;
 use Stripe\Charge;
 use Stripe\Exception\ApiConnectionException;

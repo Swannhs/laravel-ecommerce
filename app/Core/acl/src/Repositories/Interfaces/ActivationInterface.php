@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Repositories\Interfaces;
+namespace App\Core\ACL\Repositories\Interfaces;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Models\BaseModel;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Model;
 
 interface ActivationInterface

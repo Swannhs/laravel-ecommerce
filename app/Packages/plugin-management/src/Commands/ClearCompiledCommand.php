@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace App\Packages\PluginManagement\Commands;
 
-use Botble\PluginManagement\PluginManifest;
+use App\Packages\PluginManagement\PluginManifest;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Console\Attribute\AsCommand;

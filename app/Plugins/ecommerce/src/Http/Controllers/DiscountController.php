@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Http\Requests\DiscountRequest;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Tables\DiscountTable;
-use Botble\JsValidation\Facades\JsValidator;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Http\Requests\DiscountRequest;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Tables\DiscountTable;
+use App\Core\JsValidation\Facades\JsValidator;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

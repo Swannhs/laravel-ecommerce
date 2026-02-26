@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Contact\Models;
+namespace App\Plugins\Contact\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Avatar;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Media\Facades\RvMedia;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\Avatar;
+use App\Plugins\Contact\Enums\ContactStatusEnum;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Support\Services\Cache\Cache;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Throwable;

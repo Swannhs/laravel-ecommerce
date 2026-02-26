@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace App\Packages\Theme\Supports;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Throwable;
 
 class GoogleTagManagerEnhanced

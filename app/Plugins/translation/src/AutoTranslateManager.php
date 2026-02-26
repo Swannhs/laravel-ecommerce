@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Translation;
+namespace App\Plugins\Translation;
 
-use Botble\Translation\Exceptions\TranslationRequestException;
-use Botble\Translation\Services\GoogleTranslate;
+use App\Plugins\Translation\Exceptions\TranslationRequestException;
+use App\Plugins\Translation\Services\GoogleTranslate;
 use Illuminate\Support\Str;
 use Throwable;
 

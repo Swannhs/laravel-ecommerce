@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Setting\Http\Traits\GetEmailTemplateDataTrait;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Setting\Http\Traits\GetEmailTemplateDataTrait;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 

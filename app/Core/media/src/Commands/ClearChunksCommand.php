@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Commands;
+namespace App\Core\Media\Commands;
 
-use Botble\Media\Chunks\Storage\ChunkStorage;
+use App\Core\Media\Chunks\Storage\ChunkStorage;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;

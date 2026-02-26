@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Captcha\Facades;
+namespace App\Plugins\Captcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string formSettingKey(string $form, string $key)
  * @method static mixed|null formSetting(string $form, string $key, mixed|null $default = false)
  *
- * @see \Botble\Captcha\Contracts\Captcha
+ * @see \App\Plugins\Captcha\Contracts\Captcha
  */
 class Captcha extends Facade
 {

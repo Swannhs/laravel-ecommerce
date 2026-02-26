@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Widgets;
+namespace App\Plugins\Marketplace\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Marketplace\Models\Store;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Marketplace\Models\Store;
 use Illuminate\Support\Facades\DB;
 
 class ProductDistributionChart extends Chart

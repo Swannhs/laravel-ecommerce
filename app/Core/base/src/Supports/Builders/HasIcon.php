@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports\Builders;
+namespace App\Core\Base\Supports\Builders;
 
 use Closure;
 
@@ -11,7 +11,7 @@ trait HasIcon
     protected bool $iconOnly = true;
 
     /**
-     * @param \Closure(\Botble\Base\Models\BaseModel $model): string|string $icon
+     * @param \Closure(\App\Core\Base\Models\BaseModel $model): string|string $icon
      */
     public function icon(Closure|string $icon): static
     {

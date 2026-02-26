@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Location\Repositories\Interfaces;
+namespace App\Plugins\Location\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 interface CityInterface extends RepositoryInterface

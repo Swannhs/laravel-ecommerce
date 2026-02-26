@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Sitemap\Http\Controllers;
+namespace App\Packages\Sitemap\Http\Controllers;
 
-use Botble\Base\Services\ClearCacheService;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\Sitemap\Events\SitemapUpdatedEvent;
-use Botble\Sitemap\Forms\Settings\SitemapSettingForm;
-use Botble\Sitemap\Http\Requests\SitemapSettingRequest;
-use Botble\Sitemap\Services\IndexNowService;
+use App\Core\Base\Services\ClearCacheService;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Packages\Sitemap\Events\SitemapUpdatedEvent;
+use App\Packages\Sitemap\Forms\Settings\SitemapSettingForm;
+use App\Packages\Sitemap\Http\Requests\SitemapSettingRequest;
+use App\Packages\Sitemap\Services\IndexNowService;
 use Exception;
 use Illuminate\Http\JsonResponse;
 

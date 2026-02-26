@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Repositories\Caches;
+namespace App\Core\Base\Repositories\Caches;
 
-use Botble\Base\Repositories\Eloquent\MetaBoxRepository;
+use App\Core\Base\Repositories\Eloquent\MetaBoxRepository;
 
 /**
  * @deprecated

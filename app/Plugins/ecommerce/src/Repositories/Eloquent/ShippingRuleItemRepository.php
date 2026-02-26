@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\ShippingRuleItemInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ShippingRuleItemInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ShippingRuleItemRepository extends RepositoriesAbstract implements ShippingRuleItemInterface
 {

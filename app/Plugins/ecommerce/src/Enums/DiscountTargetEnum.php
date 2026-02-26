@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Enums;
+namespace App\Plugins\Ecommerce\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 /**
  * @method static DiscountTargetEnum ALL_ORDERS()

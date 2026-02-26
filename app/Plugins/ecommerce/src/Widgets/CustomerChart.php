@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Widgets\Traits\HasCategory;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Widgets\Traits\HasCategory;
 
 class CustomerChart extends Chart
 {

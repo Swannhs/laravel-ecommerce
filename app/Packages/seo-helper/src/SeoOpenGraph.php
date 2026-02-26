@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\SeoHelper;
+namespace App\Packages\SeoHelper;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Media\Facades\RvMedia;
-use Botble\SeoHelper\Contracts\Entities\OpenGraphContract;
-use Botble\SeoHelper\Contracts\SeoOpenGraphContract;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Media\Facades\RvMedia;
+use App\Packages\SeoHelper\Contracts\Entities\OpenGraphContract;
+use App\Packages\SeoHelper\Contracts\SeoOpenGraphContract;
+use App\Packages\Theme\Facades\Theme;
 
 class SeoOpenGraph implements SeoOpenGraphContract
 {

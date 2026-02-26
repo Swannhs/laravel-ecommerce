@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\ACL\Forms;
+namespace App\Core\ACL\Forms;
 
-use Botble\ACL\Http\Requests\PreferenceRequest;
-use Botble\ACL\Models\User;
-use Botble\Base\Facades\AdminAppearance;
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Forms\FieldOptions\RadioFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\RadioField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\FormAbstract;
+use App\Core\ACL\Http\Requests\PreferenceRequest;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Facades\AdminAppearance;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Forms\FieldOptions\RadioFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\RadioField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\FormAbstract;
 
 class PreferenceForm extends FormAbstract
 {

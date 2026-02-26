@@ -1,31 +1,31 @@
 <?php
 
-namespace Botble\Table\Abstracts;
+namespace App\Core\Table\Abstracts;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Contracts\BaseModel as BaseModelContract;
-use Botble\Base\Contracts\Builders\Extensible as ExtensibleContract;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\Form;
-use Botble\Base\Facades\Html;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Builders\Extensible;
-use Botble\Base\Supports\Builders\RenderingExtensible;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
-use Botble\Table\Abstracts\Concerns\DeprecatedFunctions;
-use Botble\Table\Abstracts\Concerns\HasActions;
-use Botble\Table\Abstracts\Concerns\HasBulkActions;
-use Botble\Table\Abstracts\Concerns\HasColumnVisibility;
-use Botble\Table\Abstracts\Concerns\HasFilters;
-use Botble\Table\Abstracts\Concerns\HasHeaderActions;
-use Botble\Table\Columns\CheckboxColumn;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\RowActionsColumn;
-use Botble\Table\Contracts\FormattedColumn;
-use Botble\Table\HeaderActions\HeaderAction;
-use Botble\Table\Supports\Builder as CustomTableBuilder;
-use Botble\Table\Supports\TableExportHandler;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Contracts\BaseModel as BaseModelContract;
+use App\Core\Base\Contracts\Builders\Extensible as ExtensibleContract;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\Form;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\Builders\Extensible;
+use App\Core\Base\Supports\Builders\RenderingExtensible;
+use App\Core\Support\Repositories\Caches\CacheAbstractDecorator;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Table\Abstracts\Concerns\DeprecatedFunctions;
+use App\Core\Table\Abstracts\Concerns\HasActions;
+use App\Core\Table\Abstracts\Concerns\HasBulkActions;
+use App\Core\Table\Abstracts\Concerns\HasColumnVisibility;
+use App\Core\Table\Abstracts\Concerns\HasFilters;
+use App\Core\Table\Abstracts\Concerns\HasHeaderActions;
+use App\Core\Table\Columns\CheckboxColumn;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\RowActionsColumn;
+use App\Core\Table\Contracts\FormattedColumn;
+use App\Core\Table\HeaderActions\HeaderAction;
+use App\Core\Table\Supports\Builder as CustomTableBuilder;
+use App\Core\Table\Supports\TableExportHandler;
 use Closure;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Contracts\View\Factory;
@@ -104,7 +104,7 @@ abstract class TableAbstract extends DataTable implements ExtensibleContract
     protected Closure $onAjaxCallback;
 
     /**
-     * @var \Botble\Table\Columns\Column[]
+     * @var \App\Core\Table\Columns\Column[]
      */
     protected array $columns = [];
 
@@ -429,7 +429,7 @@ abstract class TableAbstract extends DataTable implements ExtensibleContract
     }
 
     /**
-     * @param  \Botble\Table\Columns\Column[]  $columns
+     * @param  \App\Core\Table\Columns\Column[]  $columns
      */
     public function addColumns(Closure|callable|array $columns): static
     {

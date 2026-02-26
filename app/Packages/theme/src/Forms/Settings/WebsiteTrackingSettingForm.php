@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Theme\Forms\Settings;
+namespace App\Packages\Theme\Forms\Settings;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\CodeEditorFieldOption;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\RadioFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\CodeEditorField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\RadioField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Setting\Forms\SettingForm;
-use Botble\Theme\Http\Requests\WebsiteTrackingSettingRequest;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\CodeEditorFieldOption;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\RadioFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\CodeEditorField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\RadioField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Setting\Forms\SettingForm;
+use App\Packages\Theme\Http\Requests\WebsiteTrackingSettingRequest;
 
 class WebsiteTrackingSettingForm extends SettingForm
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Commands;
+namespace App\Plugins\Ecommerce\Commands;
 
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Throwable;

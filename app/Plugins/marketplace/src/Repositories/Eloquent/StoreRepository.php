@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Repositories\Eloquent;
+namespace App\Plugins\Marketplace\Repositories\Eloquent;
 
-use Botble\Marketplace\Models\Store;
-use Botble\Marketplace\Repositories\Interfaces\StoreInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Marketplace\Models\Store;
+use App\Plugins\Marketplace\Repositories\Interfaces\StoreInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class StoreRepository extends RepositoriesAbstract implements StoreInterface
 {

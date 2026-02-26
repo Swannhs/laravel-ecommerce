@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Http\Requests\API\AddWishlistRequest;
-use Botble\Ecommerce\Http\Requests\API\DeleteWishlistRequest;
-use Botble\Ecommerce\Http\Resources\API\WishlistItemResource;
-use Botble\Ecommerce\Models\Product;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Http\Requests\API\AddWishlistRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\DeleteWishlistRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\WishlistItemResource;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Str;
 

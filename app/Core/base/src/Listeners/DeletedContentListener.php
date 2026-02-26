@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace App\Core\Base\Listeners;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\MetaBox;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\MetaBox;
 use Exception;
 
 class DeletedContentListener

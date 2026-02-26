@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Exporters;
+namespace App\Plugins\Ecommerce\Exporters;
 
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\ExportCounter;
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderProduct;
+use App\Packages\DataSynchronize\Exporter\ExportColumn;
+use App\Packages\DataSynchronize\Exporter\ExportCounter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\OrderProduct;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Translation\Http\Controllers;
+namespace App\Plugins\Translation\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Translation\Manager;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Translation\Manager;
 
 class ReImportThemeTranslationController extends BaseController
 {

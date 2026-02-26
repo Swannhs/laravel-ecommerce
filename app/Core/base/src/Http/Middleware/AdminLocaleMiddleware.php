@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Middleware;
+namespace App\Core\Base\Http\Middleware;
 
-use Botble\Base\Facades\AdminAppearance;
-use Botble\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\AdminAppearance;
+use App\Core\Base\Facades\AdminHelper;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

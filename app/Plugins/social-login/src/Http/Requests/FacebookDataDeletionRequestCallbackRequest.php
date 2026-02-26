@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SocialLogin\Http\Requests;
+namespace App\Plugins\SocialLogin\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class FacebookDataDeletionRequestCallbackRequest extends Request
 {

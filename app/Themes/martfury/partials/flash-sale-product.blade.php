@@ -62,7 +62,7 @@
         @endif
         <div class="ps-product__progress-bar ps-progress" data-value="{{ $product->pivot->quantity > 0 ? ($product->pivot->sold / $product->pivot->quantity) * 100 : 0 }}">
             <div class="ps-progress__value"><span style="width: {{ $product->pivot->quantity > 0 ? ($product->pivot->sold / $product->pivot->quantity) * 100 : 0 }}%"></span></div>
-            @if (Botble\Ecommerce\Facades\FlashSale::isShowSaleCountLeft())
+            @if (App\Plugins\Ecommerce\Facades\FlashSale::isShowSaleCountLeft())
                 @if ($product->pivot->quantity > $product->pivot->sold)
                     <p>{{ __('Sold') }}: {{ (int)$product->pivot->sold }}</p>
                 @else

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Analytics\Exceptions;
+namespace App\Plugins\Analytics\Exceptions;
 
-use Botble\Base\Facades\Html;
+use App\Core\Base\Facades\Html;
 use Exception;
 
 class InvalidConfiguration extends Exception

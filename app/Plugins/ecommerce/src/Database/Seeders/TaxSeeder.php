@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders;
+namespace App\Plugins\Ecommerce\Database\Seeders;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Tax;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\Tax;
 
 class TaxSeeder extends BaseSeeder
 {

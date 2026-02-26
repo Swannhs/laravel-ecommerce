@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Concerns;
+namespace App\Core\ACL\Concerns;
 
-use Botble\ACL\Models\UserMeta;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\ACL\Models\UserMeta;
+use App\Core\Support\Services\Cache\Cache;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 

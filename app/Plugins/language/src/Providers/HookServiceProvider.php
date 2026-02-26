@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Language\Providers;
+namespace App\Plugins\Language\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Language\Facades\Language;
-use Botble\Language\Models\Language as LanguageModel;
-use Botble\Language\Models\LanguageMeta;
-use Botble\Menu\Models\Menu;
-use Botble\Setting\Forms\GeneralSettingForm;
-use Botble\Table\CollectionDataTable;
-use Botble\Table\EloquentDataTable;
-use Botble\Theme\Events\RenderingThemeOptionSettings;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Models\Language as LanguageModel;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Packages\Menu\Models\Menu;
+use App\Core\Setting\Forms\GeneralSettingForm;
+use App\Core\Table\CollectionDataTable;
+use App\Core\Table\EloquentDataTable;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;

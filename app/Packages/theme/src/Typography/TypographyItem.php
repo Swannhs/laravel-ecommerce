@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Typography;
+namespace App\Packages\Theme\Typography;
 
 class TypographyItem
 {

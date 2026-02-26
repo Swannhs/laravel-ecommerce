@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\Fronts;
+namespace App\Plugins\Marketplace\Http\Requests\Fronts;
 
-use Botble\Marketplace\Enums\WithdrawalFeeTypeEnum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Marketplace\Enums\WithdrawalFeeTypeEnum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Support\Http\Requests\Request;
 
 class VendorWithdrawalRequest extends Request
 {

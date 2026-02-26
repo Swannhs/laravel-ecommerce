@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Database\Seeders\Traits;
+namespace App\Plugins\LanguageAdvanced\Database\Seeders\Traits;
 
-use Botble\Page\Models\Page;
+use App\Packages\Page\Models\Page;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;

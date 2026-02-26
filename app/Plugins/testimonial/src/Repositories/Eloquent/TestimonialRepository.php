@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Testimonial\Repositories\Eloquent;
+namespace App\Plugins\Testimonial\Repositories\Eloquent;
 
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
-use Botble\Testimonial\Repositories\Interfaces\TestimonialInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Testimonial\Repositories\Interfaces\TestimonialInterface;
 
 class TestimonialRepository extends RepositoriesAbstract implements TestimonialInterface
 {

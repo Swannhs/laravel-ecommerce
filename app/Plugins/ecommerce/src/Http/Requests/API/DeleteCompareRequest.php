@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\API;
+namespace App\Plugins\Ecommerce\Http\Requests\API;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class DeleteCompareRequest extends Request
 {

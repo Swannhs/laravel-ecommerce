@@ -1,5 +1,5 @@
 @php
-    /** @var Botble\Table\Actions\Action $action */
+    /** @var App\Core\Table\Actions\Action $action */
 @endphp
 
 <{{ $action->getType() }} @include('core/table::actions.includes.action-attributes')>

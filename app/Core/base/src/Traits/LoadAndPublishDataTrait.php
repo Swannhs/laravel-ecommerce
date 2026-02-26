@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Traits;
+namespace App\Core\Base\Traits;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Supports\Helper;
+use App\Core\Base\Supports\ServiceProvider;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use ReflectionClass;

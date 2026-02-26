@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Dashboard\Providers;
+namespace App\Core\Dashboard\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\Dashboard\Models\DashboardWidgetSetting;
-use Botble\Dashboard\Repositories\Eloquent\DashboardWidgetRepository;
-use Botble\Dashboard\Repositories\Eloquent\DashboardWidgetSettingRepository;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Dashboard\Models\DashboardWidget;
+use App\Core\Dashboard\Models\DashboardWidgetSetting;
+use App\Core\Dashboard\Repositories\Eloquent\DashboardWidgetRepository;
+use App\Core\Dashboard\Repositories\Eloquent\DashboardWidgetSettingRepository;
+use App\Core\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use App\Core\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
 
 /**
  * @since 02/07/2016 09:50 AM

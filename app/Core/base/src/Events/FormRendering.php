@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
-use Botble\Base\Forms\FormAbstract;
+use App\Core\Base\Forms\FormAbstract;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class FormRendering

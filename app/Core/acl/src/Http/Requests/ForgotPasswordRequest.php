@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Http\Requests;
+namespace App\Core\ACL\Http\Requests;
 
-use Botble\Base\Rules\EmailRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Support\Http\Requests\Request;
 
 class ForgotPasswordRequest extends Request
 {

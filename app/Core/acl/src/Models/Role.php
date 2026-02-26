@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\ACL\Models;
+namespace App\Core\ACL\Models;
 
-use Botble\ACL\Traits\PermissionTrait;
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\Concerns\HasSlug;
-use Botble\Base\Supports\Helper;
+use App\Core\ACL\Traits\PermissionTrait;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\Concerns\HasSlug;
+use App\Core\Base\Supports\Helper;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 

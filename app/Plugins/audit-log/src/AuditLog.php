@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\AuditLog;
+namespace App\Plugins\AuditLog;
 
 use Illuminate\Database\Eloquent\Model;
 

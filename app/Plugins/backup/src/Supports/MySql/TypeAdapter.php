@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Backup\Supports\MySql;
+namespace App\Plugins\Backup\Supports\MySql;
 
 /**
  * Enum with all available TypeAdapter implementations.

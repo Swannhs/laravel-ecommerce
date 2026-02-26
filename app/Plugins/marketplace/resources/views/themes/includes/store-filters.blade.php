@@ -2,8 +2,8 @@
     $currentMainFilterUrl = $store->url;
     $showCategoriesFilter = false;
     
-    if (\Botble\Marketplace\Facades\MarketplaceHelper::isEnabledVendorCategoriesFilter()) {
-        $categories = \Botble\Marketplace\Facades\MarketplaceHelper::getCategoriesForVendor($store->id);
+    if (\App\Plugins\Marketplace\Facades\MarketplaceHelper::isEnabledVendorCategoriesFilter()) {
+        $categories = \App\Plugins\Marketplace\Facades\MarketplaceHelper::getCategoriesForVendor($store->id);
         $showCategoriesFilter = $categories->isNotEmpty();
     }
     

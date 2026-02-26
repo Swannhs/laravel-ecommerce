@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Newsletter;
+namespace App\Plugins\Newsletter;
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Media\Facades\RvMedia;
-use Botble\Newsletter\Contracts\Factory;
-use Botble\Newsletter\Drivers\MailChimp;
-use Botble\Newsletter\Drivers\SendGrid;
-use Botble\Theme\Events\RenderingThemeOptionSettings;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Facades\ThemeOption;
-use Botble\Theme\ThemeOption\Fields\MediaImageField;
-use Botble\Theme\ThemeOption\Fields\MultiCheckListField;
-use Botble\Theme\ThemeOption\Fields\NumberField;
-use Botble\Theme\ThemeOption\Fields\TextareaField;
-use Botble\Theme\ThemeOption\Fields\TextField;
-use Botble\Theme\ThemeOption\Fields\ToggleField;
-use Botble\Theme\ThemeOption\ThemeOptionSection;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Media\Facades\RvMedia;
+use App\Plugins\Newsletter\Contracts\Factory;
+use App\Plugins\Newsletter\Drivers\MailChimp;
+use App\Plugins\Newsletter\Drivers\SendGrid;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\ThemeOption;
+use App\Packages\Theme\ThemeOption\Fields\MediaImageField;
+use App\Packages\Theme\ThemeOption\Fields\MultiCheckListField;
+use App\Packages\Theme\ThemeOption\Fields\NumberField;
+use App\Packages\Theme\ThemeOption\Fields\TextareaField;
+use App\Packages\Theme\ThemeOption\Fields\TextField;
+use App\Packages\Theme\ThemeOption\Fields\ToggleField;
+use App\Packages\Theme\ThemeOption\ThemeOptionSection;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Manager;

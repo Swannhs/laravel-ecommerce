@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Database\Seeders\Traits;
+namespace App\Plugins\LanguageAdvanced\Database\Seeders\Traits;
 
-use Botble\Language\Facades\Language as LanguageFacade;
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Facades\ThemeOption;
+use App\Plugins\Language\Facades\Language as LanguageFacade;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Facades\ThemeOption;
 use Illuminate\Support\Facades\File;
 
 trait HasThemeOptionSeeder

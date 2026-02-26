@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\StripeConnect\Listeners;
+namespace App\Plugins\StripeConnect\Listeners;
 
-use Botble\AffiliatePro\Enums\PayoutPaymentMethodsEnum;
-use Botble\AffiliatePro\Enums\WithdrawalStatusEnum;
-use Botble\AffiliatePro\Events\WithdrawalApprovedEvent;
-use Botble\AffiliatePro\Events\WithdrawalRejectedEvent;
-use Botble\AffiliatePro\Events\WithdrawalRequestedEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\StripeConnect\StripeConnect;
+use App\Plugins\AffiliatePro\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\AffiliatePro\Enums\WithdrawalStatusEnum;
+use App\Plugins\AffiliatePro\Events\WithdrawalApprovedEvent;
+use App\Plugins\AffiliatePro\Events\WithdrawalRejectedEvent;
+use App\Plugins\AffiliatePro\Events\WithdrawalRequestedEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\StripeConnect\StripeConnect;
 use Exception;
 
 class AffiliateStripeConnectListener

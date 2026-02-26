@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Http\Controllers;
+namespace App\Plugins\LanguageAdvanced\Http\Controllers;
 
-use Botble\DataSynchronize\Http\Controllers\ImportController;
-use Botble\DataSynchronize\Http\Requests\DownloadTemplateRequest;
-use Botble\DataSynchronize\Http\Requests\ImportRequest;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\LanguageAdvanced\Importers\TranslationImporterManager;
+use App\Packages\DataSynchronize\Http\Controllers\ImportController;
+use App\Packages\DataSynchronize\Http\Requests\DownloadTemplateRequest;
+use App\Packages\DataSynchronize\Http\Requests\ImportRequest;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\LanguageAdvanced\Importers\TranslationImporterManager;
 
 class TranslationImportController extends ImportController
 {

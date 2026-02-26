@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Enums\OrderReturnReasonEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Enums\OrderReturnReasonEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class OrderReturnItem extends BaseModel

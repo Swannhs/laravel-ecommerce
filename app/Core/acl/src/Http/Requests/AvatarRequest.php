@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Http\Requests;
+namespace App\Core\ACL\Http\Requests;
 
-use Botble\Media\Facades\RvMedia;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Support\Http\Requests\Request;
 
 class AvatarRequest extends Request
 {

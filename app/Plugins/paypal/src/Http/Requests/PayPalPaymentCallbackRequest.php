@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PayPal\Http\Requests;
+namespace App\Plugins\PayPal\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class PayPalPaymentCallbackRequest extends Request
 {

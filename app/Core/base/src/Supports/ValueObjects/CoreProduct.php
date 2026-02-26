@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports\ValueObjects;
+namespace App\Core\Base\Supports\ValueObjects;
 
-use Botble\Base\Supports\Core;
+use App\Core\Base\Supports\Core;
 use Carbon\CarbonInterface;
 
 class CoreProduct

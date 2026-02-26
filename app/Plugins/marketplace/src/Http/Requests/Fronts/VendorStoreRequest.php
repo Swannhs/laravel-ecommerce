@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\Fronts;
+namespace App\Plugins\Marketplace\Http\Requests\Fronts;
 
-use Botble\Base\Rules\EmailRule;
-use Botble\Base\Rules\MediaImageRule;
-use Botble\Marketplace\Http\Requests\StoreRequest;
-use Botble\Marketplace\Models\Store;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Base\Rules\MediaImageRule;
+use App\Plugins\Marketplace\Http\Requests\StoreRequest;
+use App\Plugins\Marketplace\Models\Store;
 use Illuminate\Validation\Rule;
 
 class VendorStoreRequest extends StoreRequest

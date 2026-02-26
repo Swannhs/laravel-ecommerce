@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\AuditLog\Models;
+namespace App\Plugins\AuditLog\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Setting\Enums\DataRetentionPeriod;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Core\Setting\Enums\DataRetentionPeriod;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Database\Eloquent\Relations\MorphTo;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\Fronts;
+namespace App\Plugins\Marketplace\Http\Requests\Fronts;
 
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class UpdateShippingStatusRequest extends Request

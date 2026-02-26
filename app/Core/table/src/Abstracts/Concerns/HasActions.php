@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Table\Abstracts\Concerns;
+namespace App\Core\Table\Abstracts\Concerns;
 
-use Botble\Table\Abstracts\TableActionAbstract;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\RowActionsColumn;
+use App\Core\Table\Abstracts\TableActionAbstract;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\RowActionsColumn;
 use Closure;
 use Illuminate\Database\Eloquent\Model;
 use LogicException;
@@ -12,7 +12,7 @@ use LogicException;
 trait HasActions
 {
     /**
-     * @var \Botble\Table\Abstracts\TableActionAbstract[] $actions
+     * @var \App\Core\Table\Abstracts\TableActionAbstract[] $actions
      */
     protected array $rowActions = [];
 
@@ -49,7 +49,7 @@ trait HasActions
     }
 
     /**
-     * @param \Botble\Table\Abstracts\TableActionAbstract[] $actions
+     * @param \App\Core\Table\Abstracts\TableActionAbstract[] $actions
      */
     public function addActions(Closure|callable|array $actions): static
     {
@@ -94,7 +94,7 @@ trait HasActions
     }
 
     /**
-     * @param \Closure(\Botble\Table\Abstracts\TableActionAbstract $action): \Botble\Table\Abstracts\TableActionAbstract $callback
+     * @param \Closure(\App\Core\Table\Abstracts\TableActionAbstract $action): \App\Core\Table\Abstracts\TableActionAbstract $callback
      */
     public function editAction(string $name, Closure $callback): static
     {

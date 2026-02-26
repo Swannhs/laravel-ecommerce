@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ads\Supports;
+namespace App\Plugins\Ads\Supports;
 
-use Botble\Ads\Events\AdsLoading;
-use Botble\Ads\Models\Ads;
-use Botble\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ads\Events\AdsLoading;
+use App\Plugins\Ads\Models\Ads;
+use App\Core\Base\Enums\BaseStatusEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Ecommerce\Enums\ShippingCodStatusEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Events\OrderCreated;
-use Botble\Ecommerce\Events\OrderPlacedEvent;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingCodStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Events\OrderCreated;
+use App\Plugins\Ecommerce\Events\OrderPlacedEvent;
+use App\Plugins\Ecommerce\Models\Shipment;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
 use Illuminate\Support\Arr;
 
 class OrderCreatedEmailNotification

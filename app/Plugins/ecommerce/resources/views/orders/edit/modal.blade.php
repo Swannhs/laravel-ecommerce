@@ -36,7 +36,7 @@
         <label class="form-label required" for="cancellation_reason">{{ trans('plugins/ecommerce::order.order_cancellation_reason') }}</label>
         <select class="form-select" name="cancellation_reason" id="cancellation_reason" required>
             <option value="">{{ trans('plugins/ecommerce::order.select_cancellation_reason') }}</option>
-            @foreach (\Botble\Ecommerce\Enums\OrderCancellationReasonEnum::labels() as $value => $label)
+            @foreach (\App\Plugins\Ecommerce\Enums\OrderCancellationReasonEnum::labels() as $value => $label)
                 <option value="{{ $value }}">{{ $label }}</option>
             @endforeach
         </select>

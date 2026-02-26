@@ -1,6 +1,6 @@
 @php
-    use Botble\Payment\Enums\PaymentMethodEnum;
-    use Botble\Payment\Models\Payment;
+    use App\Plugins\Payment\Enums\PaymentMethodEnum;
+    use App\Plugins\Payment\Models\Payment;
 @endphp
 
 @extends(BaseHelper::getAdminMasterLayoutTemplate())

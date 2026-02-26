@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\BrandForm;
-use Botble\Ecommerce\Http\Requests\BrandRequest;
-use Botble\Ecommerce\Http\Resources\BrandResource;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Tables\BrandTable;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\BrandForm;
+use App\Plugins\Ecommerce\Http\Requests\BrandRequest;
+use App\Plugins\Ecommerce\Http\Resources\BrandResource;
+use App\Plugins\Ecommerce\Models\Brand;
+use App\Plugins\Ecommerce\Tables\BrandTable;
 use Illuminate\Http\Request;
 
 class BrandController extends BaseController

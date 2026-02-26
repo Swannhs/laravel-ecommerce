@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Widget\Models\Widget;
+use App\Packages\Widget\Models\Widget;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

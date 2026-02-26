@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Forms;
+namespace App\Core\Setting\Forms;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Setting\Models\Setting;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Setting\Models\Setting;
 use LogicException;
 
 abstract class SettingForm extends FormAbstract

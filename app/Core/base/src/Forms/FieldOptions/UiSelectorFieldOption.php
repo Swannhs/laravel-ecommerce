@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Forms\FieldOptions;
+namespace App\Core\Base\Forms\FieldOptions;
 
-use Botble\Base\Traits\FieldOptions\HasAspectRatio;
-use Botble\Base\Traits\FieldOptions\HasNumberItemsPerRow;
+use App\Core\Base\Traits\FieldOptions\HasAspectRatio;
+use App\Core\Base\Traits\FieldOptions\HasNumberItemsPerRow;
 
 class UiSelectorFieldOption extends SelectFieldOption
 {

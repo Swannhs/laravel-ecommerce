@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Requests\EmailTemplateRequest;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Requests\EmailTemplateRequest;
 use Illuminate\Contracts\View\View;
 use Throwable;
 

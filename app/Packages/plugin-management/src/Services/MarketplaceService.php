@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\PluginManagement\Services;
+namespace App\Packages\PluginManagement\Services;
 
-use Botble\Base\Exceptions\RequiresLicenseActivatedException;
-use Botble\Base\Supports\Core;
-use Botble\Base\Supports\Zipper;
+use App\Core\Base\Exceptions\RequiresLicenseActivatedException;
+use App\Core\Base\Supports\Core;
+use App\Core\Base\Supports\Zipper;
 use Exception;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;

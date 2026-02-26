@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Facades;
+namespace App\Plugins\Ecommerce\Facades;
 
-use Botble\Ecommerce\Supports\EcommerceHelper as BaseEcommerceHelper;
+use App\Plugins\Ecommerce\Supports\EcommerceHelper as BaseEcommerceHelper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Facade;
 
@@ -45,7 +45,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool isEnabledCrossSaleProducts()
  * @method static bool isEnabledRelatedProducts()
  * @method static string getPhoneValidationRule()
- * @method static \Illuminate\Pagination\LengthAwarePaginator getProductReviews(\Botble\Ecommerce\Models\Product $product, int $star = 0, int $perPage = 10, string $search = '', string $sortBy = 'newest')
+ * @method static \Illuminate\Pagination\LengthAwarePaginator getProductReviews(\App\Plugins\Ecommerce\Models\Product $product, int $star = 0, int $perPage = 10, string $search = '', string $sortBy = 'newest')
  * @method static string getThousandSeparatorForInputMask()
  * @method static string getDecimalSeparatorForInputMask()
  * @method static array withReviewsParams()
@@ -58,8 +58,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static array getCustomerAddressValidationRules(string|null $prefix = '')
  * @method static bool isEnabledCustomerRecentlyViewedProducts()
  * @method static int maxCustomerRecentlyViewedProducts()
- * @method static \Botble\Ecommerce\Supports\EcommerceHelper handleCustomerRecentlyViewedProduct(\Botble\Ecommerce\Models\Product $product)
- * @method static array getProductVariationInfo(\Botble\Ecommerce\Models\Product $product, array $params = [])
+ * @method static \App\Plugins\Ecommerce\Supports\EcommerceHelper handleCustomerRecentlyViewedProduct(\App\Plugins\Ecommerce\Models\Product $product)
+ * @method static array getProductVariationInfo(\App\Plugins\Ecommerce\Models\Product $product, array $params = [])
  * @method static array getProductsSearchBy()
  * @method static int|float validateOrderWeight(int|float $weight)
  * @method static bool isFacebookPixelEnabled()
@@ -94,7 +94,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool isEnabledFilterProductsByAttributes()
  * @method static \Illuminate\Support\Collection brandsForFilter(array $categoryIds = [])
  * @method static \Illuminate\Support\Collection tagsForFilter(array $categoryIds = [])
- * @method static array dataForFilter(\Botble\Ecommerce\Models\ProductCategory|null $category, bool $currentCategoryOnly = false)
+ * @method static array dataForFilter(\App\Plugins\Ecommerce\Models\ProductCategory|null $category, bool $currentCategoryOnly = false)
  * @method static array dataPriceRangesForFilter()
  * @method static bool isPriceRangesChecked(float $fromPrice, float $toPrice)
  * @method static array dataPriceRanges(int $stepPrice = 1000, int $stepCount = 10)
@@ -105,7 +105,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void registerThemeAssets()
  * @method static array|string|null getDefaultPageSlug(string|null $key = null)
  * @method static string|null getPageSlug(string $key)
- * @method static string jsAttributes(string $action, \Botble\Ecommerce\Models\Product $product, array $additional = [])
+ * @method static string jsAttributes(string $action, \App\Plugins\Ecommerce\Models\Product $product, array $additional = [])
  * @method static string getAdminPrefix()
  * @method static \Illuminate\Routing\RouteRegistrar registerRoutes(\Closure|callable $closure, array $middleware = [])
  * @method static \Illuminate\Routing\RouteRegistrar registerFallbackRoutes(string $prefix)
@@ -133,7 +133,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static float roundPrice(float $price, $currency = null)
  * @method static array getAdminNotificationEmails()
  *
- * @see \Botble\Ecommerce\Supports\EcommerceHelper
+ * @see \App\Plugins\Ecommerce\Supports\EcommerceHelper
  */
 class EcommerceHelper extends Facade
 {

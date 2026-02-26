@@ -1,30 +1,30 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\RenderingAdminWidgetEvent;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Widgets\AverageOrderValueCard;
-use Botble\Ecommerce\Widgets\ConversionRateCard;
-use Botble\Ecommerce\Widgets\CustomerChart;
-use Botble\Ecommerce\Widgets\CustomerRetentionChart;
-use Botble\Ecommerce\Widgets\ExpensesCard;
-use Botble\Ecommerce\Widgets\NewCustomerCard;
-use Botble\Ecommerce\Widgets\NewOrderCard;
-use Botble\Ecommerce\Widgets\NewProductCard;
-use Botble\Ecommerce\Widgets\OrderChart;
-use Botble\Ecommerce\Widgets\OrderStatusDistributionChart;
-use Botble\Ecommerce\Widgets\PaymentMethodDistributionChart;
-use Botble\Ecommerce\Widgets\ProductCategoryDistributionChart;
-use Botble\Ecommerce\Widgets\ProductReviewsSummaryCard;
-use Botble\Ecommerce\Widgets\ProfitCard;
-use Botble\Ecommerce\Widgets\RecentOrdersTable;
-use Botble\Ecommerce\Widgets\ReportGeneralHtml;
-use Botble\Ecommerce\Widgets\RevenueCard;
-use Botble\Ecommerce\Widgets\ShippingMethodUsageChart;
-use Botble\Ecommerce\Widgets\TaxCollectionSummaryCard;
-use Botble\Ecommerce\Widgets\TopSellingProductsTable;
-use Botble\Ecommerce\Widgets\TrendingProductsTable;
+use App\Core\Base\Events\RenderingAdminWidgetEvent;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Widgets\AverageOrderValueCard;
+use App\Plugins\Ecommerce\Widgets\ConversionRateCard;
+use App\Plugins\Ecommerce\Widgets\CustomerChart;
+use App\Plugins\Ecommerce\Widgets\CustomerRetentionChart;
+use App\Plugins\Ecommerce\Widgets\ExpensesCard;
+use App\Plugins\Ecommerce\Widgets\NewCustomerCard;
+use App\Plugins\Ecommerce\Widgets\NewOrderCard;
+use App\Plugins\Ecommerce\Widgets\NewProductCard;
+use App\Plugins\Ecommerce\Widgets\OrderChart;
+use App\Plugins\Ecommerce\Widgets\OrderStatusDistributionChart;
+use App\Plugins\Ecommerce\Widgets\PaymentMethodDistributionChart;
+use App\Plugins\Ecommerce\Widgets\ProductCategoryDistributionChart;
+use App\Plugins\Ecommerce\Widgets\ProductReviewsSummaryCard;
+use App\Plugins\Ecommerce\Widgets\ProfitCard;
+use App\Plugins\Ecommerce\Widgets\RecentOrdersTable;
+use App\Plugins\Ecommerce\Widgets\ReportGeneralHtml;
+use App\Plugins\Ecommerce\Widgets\RevenueCard;
+use App\Plugins\Ecommerce\Widgets\ShippingMethodUsageChart;
+use App\Plugins\Ecommerce\Widgets\TaxCollectionSummaryCard;
+use App\Plugins\Ecommerce\Widgets\TopSellingProductsTable;
+use App\Plugins\Ecommerce\Widgets\TrendingProductsTable;
 use Illuminate\Support\Facades\Auth;
 
 class RegisterEcommerceWidget

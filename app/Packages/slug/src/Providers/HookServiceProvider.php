@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace App\Packages\Slug\Providers;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Forms\Fields\PermalinkField;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\FormFront;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Forms\Fields\PermalinkField;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\FormFront;
 
 class HookServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Forms\FieldOptions;
+namespace App\Core\Base\Forms\FieldOptions;
 
 class CoreIconFieldOption extends TextFieldOption
 {

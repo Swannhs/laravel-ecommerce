@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Razorpay\Http\Controllers\RazorpayController;
-use Botble\Theme\Facades\Theme;
+use App\Plugins\Razorpay\Http\Controllers\RazorpayController;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Support\Facades\Route;
 

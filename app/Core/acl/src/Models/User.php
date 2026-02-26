@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\ACL\Models;
+namespace App\Core\ACL\Models;
 
-use Botble\ACL\Concerns\HasPreferences;
-use Botble\ACL\Contracts\HasPermissions as HasPermissionsContract;
-use Botble\ACL\Contracts\HasPreferences as HasPreferencesContract;
-use Botble\ACL\Notifications\ResetPasswordNotification;
-use Botble\ACL\Traits\PermissionTrait;
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Avatar;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
+use App\Core\ACL\Concerns\HasPreferences;
+use App\Core\ACL\Contracts\HasPermissions as HasPermissionsContract;
+use App\Core\ACL\Contracts\HasPreferences as HasPreferencesContract;
+use App\Core\ACL\Notifications\ResetPasswordNotification;
+use App\Core\ACL\Traits\PermissionTrait;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\Avatar;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;

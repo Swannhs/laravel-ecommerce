@@ -1,25 +1,25 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace App\Plugins\Ecommerce\Services\Products;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Enums\CrossSellPriceType;
-use Botble\Ecommerce\Enums\ProductLicenseCodeStatusEnum;
-use Botble\Ecommerce\Enums\ProductTypeEnum;
-use Botble\Ecommerce\Events\ProductFileUpdatedEvent;
-use Botble\Ecommerce\Events\ProductQuantityUpdatedEvent;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Option;
-use Botble\Ecommerce\Models\OptionValue;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductFile;
-use Botble\Ecommerce\Models\ProductSpecificationAttributeTranslation;
-use Botble\Ecommerce\Models\SpecificationAttribute;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Services\UploadsManager;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Enums\CrossSellPriceType;
+use App\Plugins\Ecommerce\Enums\ProductLicenseCodeStatusEnum;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Events\ProductFileUpdatedEvent;
+use App\Plugins\Ecommerce\Events\ProductQuantityUpdatedEvent;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Option;
+use App\Plugins\Ecommerce\Models\OptionValue;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductFile;
+use App\Plugins\Ecommerce\Models\ProductSpecificationAttributeTranslation;
+use App\Plugins\Ecommerce\Models\SpecificationAttribute;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
+use App\Core\Media\Services\UploadsManager;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;

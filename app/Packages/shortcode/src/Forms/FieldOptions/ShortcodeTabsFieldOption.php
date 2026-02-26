@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Shortcode\Forms\FieldOptions;
+namespace App\Packages\Shortcode\Forms\FieldOptions;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Forms\FormFieldOptions;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Forms\FormFieldOptions;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;
 

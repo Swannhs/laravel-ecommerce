@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Widget\Widgets\ValueObjects;
+namespace App\Packages\Widget\Widgets\ValueObjects;
 
 class CoreSimpleMenuItem
 {

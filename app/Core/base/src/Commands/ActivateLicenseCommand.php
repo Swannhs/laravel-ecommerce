@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Base\Commands\Traits\ValidateCommandInput;
-use Botble\Base\Exceptions\LicenseIsAlreadyActivatedException;
-use Botble\Base\Supports\Core;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Commands\Traits\ValidateCommandInput;
+use App\Core\Base\Exceptions\LicenseIsAlreadyActivatedException;
+use App\Core\Base\Supports\Core;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Validator;
 

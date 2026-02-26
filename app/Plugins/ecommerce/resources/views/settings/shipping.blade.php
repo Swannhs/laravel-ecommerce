@@ -129,7 +129,7 @@
         button-id="add-shipping-region-button"
         :button-label="trans('plugins/ecommerce::shipping.save')"
     >
-        {!! Botble\Ecommerce\Forms\AddShippingRegionForm::create()->renderForm() !!}
+        {!! App\Plugins\Ecommerce\Forms\AddShippingRegionForm::create()->renderForm() !!}
     </x-core::modal>
 
     <x-core::modal

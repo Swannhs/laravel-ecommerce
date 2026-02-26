@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\PayPal\Providers;
+namespace App\Plugins\PayPal\Providers;
 
-use Botble\Base\Facades\Html;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Facades\PaymentMethods;
-use Botble\PayPal\Forms\PaypalPaymentMethodForm;
-use Botble\PayPal\Services\Gateways\PayPalPaymentService;
+use App\Core\Base\Facades\Html;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Facades\PaymentMethods;
+use App\Plugins\PayPal\Forms\PaypalPaymentMethodForm;
+use App\Plugins\PayPal\Services\Gateways\PayPalPaymentService;
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 

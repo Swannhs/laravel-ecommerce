@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
-use Botble\Ecommerce\Http\Requests\Settings\WebhookSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\TextFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\Settings\WebhookSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class WebhookSettingForm extends SettingForm
 {

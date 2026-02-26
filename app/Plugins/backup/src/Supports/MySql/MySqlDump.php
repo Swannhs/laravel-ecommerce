@@ -13,7 +13,7 @@
  * @see     https://github.com/ifsnop/mysqldump-php
  */
 
-namespace Botble\Backup\Supports\MySql;
+namespace App\Plugins\Backup\Supports\MySql;
 
 use Exception;
 use PDO;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Sitemap\Events;
+namespace App\Packages\Sitemap\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 
 class SitemapUpdatedEvent extends Event
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\PluginManagement\Http\Controllers;
+namespace App\Packages\PluginManagement\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\PluginManagement\Services\MarketplaceService;
-use Botble\PluginManagement\Services\PluginService;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Packages\PluginManagement\Services\MarketplaceService;
+use App\Packages\PluginManagement\Services\PluginService;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;

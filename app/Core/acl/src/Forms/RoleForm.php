@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\ACL\Forms;
+namespace App\Core\ACL\Forms;
 
-use Botble\ACL\Http\Requests\RoleCreateRequest;
-use Botble\ACL\Models\Role;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\DescriptionFieldOption;
-use Botble\Base\Forms\FieldOptions\IsDefaultFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
+use App\Core\ACL\Http\Requests\RoleCreateRequest;
+use App\Core\ACL\Models\Role;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\DescriptionFieldOption;
+use App\Core\Base\Forms\FieldOptions\IsDefaultFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
 use Illuminate\Support\Arr;
 
 class RoleForm extends FormAbstract

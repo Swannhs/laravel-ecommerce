@@ -52,7 +52,7 @@
                                     class="node-content"
                                     id="menu-node-create-form"
                                 >
-                                    {!! Botble\Menu\Forms\MenuNodeForm::create()->renderForm([], false, true, false) !!}
+                                    {!! App\Packages\Menu\Forms\MenuNodeForm::create()->renderForm([], false, true, false) !!}
                                 </div>
                             </div>
                         </x-core::card.body>

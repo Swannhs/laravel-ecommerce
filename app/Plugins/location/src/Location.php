@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Location;
+namespace App\Plugins\Location;
 
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Supports\Zipper;
-use Botble\Language\Facades\Language;
-use Botble\Location\Events\DownloadedCities;
-use Botble\Location\Events\DownloadedCountry;
-use Botble\Location\Events\DownloadedStates;
-use Botble\Location\Models\City;
-use Botble\Location\Models\Country;
-use Botble\Location\Models\State;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Supports\Helper;
+use App\Core\Base\Supports\Zipper;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Location\Events\DownloadedCities;
+use App\Plugins\Location\Events\DownloadedCountry;
+use App\Plugins\Location\Events\DownloadedStates;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Models\State;
 use Carbon\Carbon;
 use GuzzleHttp\Psr7\Utils;
 use Illuminate\Database\Eloquent\Builder;

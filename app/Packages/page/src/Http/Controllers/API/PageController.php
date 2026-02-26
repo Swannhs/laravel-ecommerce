@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Page\Http\Controllers\API;
+namespace App\Packages\Page\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Page\Http\Resources\ListPageResource;
-use Botble\Page\Http\Resources\PageResource;
-use Botble\Page\Models\Page;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Packages\Page\Http\Resources\ListPageResource;
+use App\Packages\Page\Http\Resources\PageResource;
+use App\Packages\Page\Models\Page;
 use Illuminate\Http\Request;
 
 class PageController extends BaseApiController

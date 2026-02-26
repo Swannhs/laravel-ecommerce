@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Helpers;
+namespace App\Core\Base\Helpers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Language;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Language;
+use App\Core\Media\Facades\RvMedia;
 use Closure;
 use Illuminate\Routing\RouteRegistrar;
 use Illuminate\Support\Facades\Auth;

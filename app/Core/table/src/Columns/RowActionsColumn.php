@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 
 class RowActionsColumn extends FormattedColumn implements FormattedColumnContract
 {
     /**
-     * @var \Botble\Table\Abstracts\TableActionAbstract[] $actions
+     * @var \App\Core\Table\Abstracts\TableActionAbstract[] $actions
      */
     protected array $rowActions = [];
 

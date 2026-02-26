@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Menu\Database\Traits;
+namespace App\Packages\Menu\Database\Traits;
 
-use Botble\Language\Models\LanguageMeta;
-use Botble\Menu\Facades\Menu;
-use Botble\Menu\Models\Menu as MenuModel;
-use Botble\Menu\Models\MenuLocation;
-use Botble\Menu\Models\MenuNode;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Packages\Menu\Facades\Menu;
+use App\Packages\Menu\Models\Menu as MenuModel;
+use App\Packages\Menu\Models\MenuLocation;
+use App\Packages\Menu\Models\MenuNode;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

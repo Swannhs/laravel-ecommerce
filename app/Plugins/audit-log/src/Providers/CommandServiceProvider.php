@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace App\Plugins\AuditLog\Providers;
 
-use Botble\AuditLog\Commands\ActivityLogClearCommand;
-use Botble\AuditLog\Commands\CleanOldLogsCommand;
-use Botble\Base\Supports\ServiceProvider;
+use App\Plugins\AuditLog\Commands\ActivityLogClearCommand;
+use App\Plugins\AuditLog\Commands\CleanOldLogsCommand;
+use App\Core\Base\Supports\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
 {

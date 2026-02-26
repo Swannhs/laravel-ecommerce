@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\Html;
-use Botble\Table\Contracts\FormattedColumn as FormattedColumnContract;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\Html;
+use App\Core\Table\Contracts\FormattedColumn as FormattedColumnContract;
 use Closure;
 
 class LinkableColumn extends FormattedColumn implements FormattedColumnContract

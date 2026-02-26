@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Page\Tables;
+namespace App\Packages\Page\Tables;
 
-use Botble\Page\Models\Page;
-use Botble\Page\Supports\Template;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\BulkChanges\CreatedAtBulkChange;
-use Botble\Table\BulkChanges\NameBulkChange;
-use Botble\Table\BulkChanges\SelectBulkChange;
-use Botble\Table\BulkChanges\StatusBulkChange;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\NameColumn;
-use Botble\Table\Columns\StatusColumn;
-use Botble\Table\HeaderActions\CreateHeaderAction;
+use App\Packages\Page\Models\Page;
+use App\Packages\Page\Supports\Template;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\EditAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\BulkChanges\CreatedAtBulkChange;
+use App\Core\Table\BulkChanges\NameBulkChange;
+use App\Core\Table\BulkChanges\SelectBulkChange;
+use App\Core\Table\BulkChanges\StatusBulkChange;
+use App\Core\Table\Columns\CreatedAtColumn;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\NameColumn;
+use App\Core\Table\Columns\StatusColumn;
+use App\Core\Table\HeaderActions\CreateHeaderAction;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 

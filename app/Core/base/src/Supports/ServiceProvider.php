@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 

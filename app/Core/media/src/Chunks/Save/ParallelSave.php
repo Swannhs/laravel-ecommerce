@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Media\Chunks\Save;
+namespace App\Core\Media\Chunks\Save;
 
-use Botble\Media\Chunks\ChunkFile;
-use Botble\Media\Chunks\Exceptions\ChunkSaveException;
-use Botble\Media\Chunks\Exceptions\MissingChunkFilesException;
-use Botble\Media\Chunks\FileMerger;
-use Botble\Media\Chunks\Handler\AbstractHandler;
-use Botble\Media\Chunks\Storage\ChunkStorage;
+use App\Core\Media\Chunks\ChunkFile;
+use App\Core\Media\Chunks\Exceptions\ChunkSaveException;
+use App\Core\Media\Chunks\Exceptions\MissingChunkFilesException;
+use App\Core\Media\Chunks\FileMerger;
+use App\Core\Media\Chunks\Handler\AbstractHandler;
+use App\Core\Media\Chunks\Storage\ChunkStorage;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;

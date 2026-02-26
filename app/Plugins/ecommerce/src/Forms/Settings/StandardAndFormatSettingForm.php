@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\LabelFieldOption;
-use Botble\Base\Forms\Fields\LabelField;
-use Botble\Ecommerce\Http\Requests\Settings\StandardAndFormatSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\LabelFieldOption;
+use App\Core\Base\Forms\Fields\LabelField;
+use App\Plugins\Ecommerce\Http\Requests\Settings\StandardAndFormatSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class StandardAndFormatSettingForm extends SettingForm
 {

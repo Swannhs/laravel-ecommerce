@@ -1,10 +1,10 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {
-    Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
         Route::group([
             'prefix' => 'shipping-methods',
             'permission' => 'ecommerce.settings.shipping',

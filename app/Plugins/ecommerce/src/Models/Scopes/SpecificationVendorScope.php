@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Models\Scopes;
+namespace App\Plugins\Ecommerce\Models\Scopes;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

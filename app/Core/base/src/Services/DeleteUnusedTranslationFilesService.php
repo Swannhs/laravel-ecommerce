@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Services;
+namespace App\Core\Base\Services;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Support\Facades\File;
 
 class DeleteUnusedTranslationFilesService

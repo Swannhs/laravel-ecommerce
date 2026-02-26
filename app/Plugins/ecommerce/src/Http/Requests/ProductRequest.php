@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Rules\MediaImageRule;
-use Botble\Ecommerce\Enums\CrossSellPriceType;
-use Botble\Ecommerce\Enums\GlobalOptionEnum;
-use Botble\Ecommerce\Enums\ProductTypeEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductCollection;
-use Botble\Ecommerce\Models\SpecificationTable;
-use Botble\Media\Facades\RvMedia;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Rules\MediaImageRule;
+use App\Plugins\Ecommerce\Enums\CrossSellPriceType;
+use App\Plugins\Ecommerce\Enums\GlobalOptionEnum;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Models\ProductCollection;
+use App\Plugins\Ecommerce\Models\SpecificationTable;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Support\Http\Requests\Request;
 use Carbon\Carbon;
 use Illuminate\Validation\Rule;
 

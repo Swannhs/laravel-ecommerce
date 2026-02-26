@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Media\Repositories\Eloquent;
+namespace App\Core\Media\Repositories\Eloquent;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Models\MediaFolder;
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
+use App\Core\Media\Models\MediaFolder;
+use App\Core\Media\Repositories\Interfaces\MediaFileInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Exception;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Collection;

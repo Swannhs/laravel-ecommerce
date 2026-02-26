@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Http\Requests;
+namespace App\Core\Setting\Http\Requests;
 
-use Botble\Base\Rules\EmailRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class EmailTemplateSettingRequest extends Request

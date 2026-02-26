@@ -1,12 +1,12 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Blog\Http\Controllers\ExportPostController;
-use Botble\Blog\Http\Controllers\ImportPostController;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Blog\Http\Controllers\ExportPostController;
+use App\Plugins\Blog\Http\Controllers\ImportPostController;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\Blog\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Plugins\Blog\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group(['prefix' => 'blog'], function (): void {
             Route::get('reports', [

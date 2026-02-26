@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Models;
+namespace App\Packages\Menu\Models;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class MenuLocation extends BaseModel

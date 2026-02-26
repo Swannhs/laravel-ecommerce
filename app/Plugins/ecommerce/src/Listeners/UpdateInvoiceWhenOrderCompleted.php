@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Enums\InvoiceStatusEnum;
-use Botble\Ecommerce\Events\OrderCompletedEvent;
+use App\Plugins\Ecommerce\Enums\InvoiceStatusEnum;
+use App\Plugins\Ecommerce\Events\OrderCompletedEvent;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class UpdateInvoiceWhenOrderCompleted implements ShouldQueue

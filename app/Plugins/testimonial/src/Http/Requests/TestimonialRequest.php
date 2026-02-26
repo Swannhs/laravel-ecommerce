@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Testimonial\Http\Requests;
+namespace App\Plugins\Testimonial\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class TestimonialRequest extends Request

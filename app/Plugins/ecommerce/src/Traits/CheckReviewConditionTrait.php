@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Traits;
+namespace App\Plugins\Ecommerce\Traits;
 
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Review;
 
 trait CheckReviewConditionTrait
 {

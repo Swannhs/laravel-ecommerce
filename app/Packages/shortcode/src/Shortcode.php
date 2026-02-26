@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shortcode;
+namespace App\Packages\Shortcode;
 
-use Botble\Shortcode\Compilers\ShortcodeCompiler;
+use App\Packages\Shortcode\Compilers\ShortcodeCompiler;
 use Closure;
 use Illuminate\Support\Arr;
 use Illuminate\Support\HtmlString;

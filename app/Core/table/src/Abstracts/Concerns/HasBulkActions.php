@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Table\Abstracts\Concerns;
+namespace App\Core\Table\Abstracts\Concerns;
 
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Models\BaseModel;
-use Botble\Table\Abstracts\TableBulkActionAbstract;
-use Botble\Table\Abstracts\TableBulkChangeAbstract;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Table\Abstracts\TableBulkActionAbstract;
+use App\Core\Table\Abstracts\TableBulkChangeAbstract;
 use Closure;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
@@ -19,12 +19,12 @@ use Throwable;
 trait HasBulkActions
 {
     /**
-     * @var \Botble\Table\Abstracts\TableBulkActionAbstract[]|class-string<\Botble\Table\Abstracts\TableBulkActionAbstract>[]
+     * @var \App\Core\Table\Abstracts\TableBulkActionAbstract[]|class-string<\App\Core\Table\Abstracts\TableBulkActionAbstract>[]
      */
     protected array $bulkActions = [];
 
     /**
-     * @var \Botble\Table\Abstracts\TableBulkActionAbstract[]
+     * @var \App\Core\Table\Abstracts\TableBulkActionAbstract[]
      */
     protected array $bulkActionsCaches;
 
@@ -54,7 +54,7 @@ trait HasBulkActions
     }
 
     /**
-     * @param \Botble\Table\Abstracts\TableBulkActionAbstract[] $bulkActions
+     * @param \App\Core\Table\Abstracts\TableBulkActionAbstract[] $bulkActions
      */
     public function addBulkActions(Closure|callable|array $bulkActions): static
     {

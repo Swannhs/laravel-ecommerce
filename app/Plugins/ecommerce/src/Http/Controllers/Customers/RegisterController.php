@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace App\Plugins\Ecommerce\Http\Controllers\Customers;
 
-use Botble\ACL\Traits\RegistersUsers;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Events\CustomerEmailVerified;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\Fronts\Auth\RegisterForm;
-use Botble\Ecommerce\Http\Requests\RegisterRequest;
-use Botble\Ecommerce\Models\Customer;
-use Botble\JsValidation\Facades\JsValidator;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\ACL\Traits\RegistersUsers;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Events\CustomerEmailVerified;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\RegisterForm;
+use App\Plugins\Ecommerce\Http\Requests\RegisterRequest;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Core\JsValidation\Facades\JsValidator;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;

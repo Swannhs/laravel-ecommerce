@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace App\Packages\PluginManagement\Commands;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\PluginManagement\Services\PluginService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\PluginManagement\Services\PluginService;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Symfony\Component\Console\Attribute\AsCommand;

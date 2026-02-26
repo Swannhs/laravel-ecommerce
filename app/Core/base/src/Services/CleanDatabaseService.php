@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Services;
+namespace App\Core\Base\Services;
 
-use Botble\Setting\Facades\Setting;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;

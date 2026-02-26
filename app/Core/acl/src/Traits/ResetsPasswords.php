@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Traits;
+namespace App\Core\ACL\Traits;
 
-use Botble\Base\Rules\EmailRule;
+use App\Core\Base\Rules\EmailRule;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

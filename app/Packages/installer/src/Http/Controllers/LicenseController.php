@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers;
+namespace App\Packages\Installer\Http\Controllers;
 
-use Botble\Base\Exceptions\LicenseInvalidException;
-use Botble\Base\Exceptions\LicenseIsAlreadyActivatedException;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Core;
-use Botble\Setting\Facades\Setting;
-use Botble\Setting\Http\Requests\LicenseSettingRequest;
+use App\Core\Base\Exceptions\LicenseInvalidException;
+use App\Core\Base\Exceptions\LicenseIsAlreadyActivatedException;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Core;
+use App\Core\Setting\Facades\Setting;
+use App\Core\Setting\Http\Requests\LicenseSettingRequest;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
@@ -25,22 +25,22 @@ class LicenseController extends BaseController
 
     public function store(LicenseSettingRequest $request, Core $core): RedirectResponse
     {
-        $buyer = $request->input('buyer');
+        // $buyer = $request->input('buyer');
 
-        if (filter_var($buyer, FILTER_VALIDATE_URL)) {
-            $username = Str::afterLast($buyer, '/');
+        // if (filter_var($buyer, FILTER_VALIDATE_URL)) {
+        //     $username = Str::afterLast($buyer, '/');
 
-            throw ValidationException::withMessages([
-                'buyer' => sprintf('Envato username must not a URL. Please try with username "%s".', $username),
-            ]);
-        }
+        //     throw ValidationException::withMessages([
+        //         'buyer' => sprintf('Envato username must not a URL. Please try with username "%s".', $username),
+        //     ]);
+        // }
 
         try {
-            $licenseKey = $request->input('purchase_code');
+            // $licenseKey = $request->input('purchase_code');
 
-            $core->activateLicense($licenseKey, $buyer);
+            // $core->activateLicense($licenseKey, $buyer);
 
-            Setting::forceSet('licensed_to', $buyer)->save();
+            Setting::forceSet('licensed_to', "Test")->save();
 
             $finalUrl = URL::temporarySignedRoute('installers.final', Carbon::now()->addMinutes(30));
 

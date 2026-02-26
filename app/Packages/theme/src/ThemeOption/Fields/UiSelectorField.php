@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Theme\ThemeOption\Fields;
+namespace App\Packages\Theme\ThemeOption\Fields;
 
-use Botble\Base\Traits\FieldOptions\HasAspectRatio;
-use Botble\Base\Traits\FieldOptions\HasNumberItemsPerRow;
-use Botble\Theme\Concerns\ThemeOption\Fields\HasOptions;
-use Botble\Theme\ThemeOption\ThemeOptionField;
+use App\Core\Base\Traits\FieldOptions\HasAspectRatio;
+use App\Core\Base\Traits\FieldOptions\HasNumberItemsPerRow;
+use App\Packages\Theme\Concerns\ThemeOption\Fields\HasOptions;
+use App\Packages\Theme\ThemeOption\ThemeOptionField;
 
 class UiSelectorField extends ThemeOptionField
 {

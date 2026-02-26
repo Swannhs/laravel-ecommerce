@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ads\Http\Controllers\API;
+namespace App\Plugins\Ads\Http\Controllers\API;
 
-use Botble\Ads\Models\Ads;
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Ads\Models\Ads;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Dashboard\Supports;
+namespace App\Core\Dashboard\Supports;
 
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\Dashboard\Models\DashboardWidgetSetting;
+use App\Core\Dashboard\Models\DashboardWidget;
+use App\Core\Dashboard\Models\DashboardWidgetSetting;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Support\Collection;

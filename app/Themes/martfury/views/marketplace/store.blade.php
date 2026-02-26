@@ -91,7 +91,7 @@
                                     ->modify(
                                         'submit',
                                         'submit',
-                                        Botble\Base\Forms\FieldOptions\ButtonFieldOption::make()
+                                        App\Core\Base\Forms\FieldOptions\ButtonFieldOption::make()
                                             ->addAttribute('data-bb-loading', 'button-loading')
                                             ->cssClass('ps-btn')
                                             ->label(__('Send message'))

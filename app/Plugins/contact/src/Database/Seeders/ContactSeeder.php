@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Database\Seeders;
+namespace App\Plugins\Contact\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Contact\Models\Contact;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Contact\Enums\ContactStatusEnum;
+use App\Plugins\Contact\Models\Contact;
 
 class ContactSeeder extends BaseSeeder
 {

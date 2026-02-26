@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace App\Core\Base\Listeners;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Facades\DashboardMenu;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Facades\DashboardMenu;
 use Illuminate\Auth\Events\Login;
 
 class ClearDashboardMenuCachesForLoggedUser

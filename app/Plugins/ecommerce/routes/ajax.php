@@ -1,10 +1,10 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductCollection;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Models\ProductCollection;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Route;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Backup\Providers;
+namespace App\Plugins\Backup\Providers;
 
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\PanelSections\System\SystemPanelSection;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\System\SystemPanelSection;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
 class BackupServiceProvider extends ServiceProvider implements DeferrableProvider

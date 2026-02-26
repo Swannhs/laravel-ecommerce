@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\PayPalPayout\Http\Controllers;
+namespace App\Plugins\PayPalPayout\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Repositories\Interfaces\WithdrawalInterface;
-use Botble\PayPal\Services\Gateways\PayPalPaymentService;
-use Botble\PayPalPayout\PayPalPayoutsSDK\Payouts\PayoutsGetRequest;
-use Botble\PayPalPayout\PayPalPayoutsSDK\Payouts\PayoutsPostRequest;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Repositories\Interfaces\WithdrawalInterface;
+use App\Plugins\PayPal\Services\Gateways\PayPalPaymentService;
+use App\Plugins\PayPalPayout\PayPalPayoutsSDK\Payouts\PayoutsGetRequest;
+use App\Plugins\PayPalPayout\PayPalPayoutsSDK\Payouts\PayoutsPostRequest;
 use Illuminate\Support\Arr;
 use Throwable;
 

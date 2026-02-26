@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Ecommerce\Forms\ProductTagForm;
-use Botble\Ecommerce\Http\Requests\ProductTagRequest;
-use Botble\Ecommerce\Models\ProductTag;
-use Botble\Ecommerce\Tables\ProductTagTable;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Ecommerce\Forms\ProductTagForm;
+use App\Plugins\Ecommerce\Http\Requests\ProductTagRequest;
+use App\Plugins\Ecommerce\Models\ProductTag;
+use App\Plugins\Ecommerce\Tables\ProductTagTable;
 
 class ProductTagController extends BaseController
 {

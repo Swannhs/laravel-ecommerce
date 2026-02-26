@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace App\Packages\Theme\Supports;
 
 use Closure;
 use Illuminate\Support\Str;

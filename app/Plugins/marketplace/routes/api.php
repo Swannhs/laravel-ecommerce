@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Ecommerce\Http\Middleware\ApiCurrencyMiddleware;
-use Botble\Marketplace\Http\Controllers\API\StoreController;
-use Botble\Marketplace\Http\Controllers\API\VendorController;
+use App\Plugins\Ecommerce\Http\Middleware\ApiCurrencyMiddleware;
+use App\Plugins\Marketplace\Http\Controllers\API\StoreController;
+use App\Plugins\Marketplace\Http\Controllers\API\VendorController;
 use Illuminate\Support\Facades\Route;
 
 Route::group([

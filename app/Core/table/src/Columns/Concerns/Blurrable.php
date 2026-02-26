@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\Columns\Concerns;
+namespace App\Core\Table\Columns\Concerns;
 
-use Botble\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\FormattedColumn;
 
 trait Blurrable
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Chart\Supports;
+namespace App\Core\Chart\Supports;
 
 use Illuminate\Contracts\Container\Container;
 use InvalidArgumentException;

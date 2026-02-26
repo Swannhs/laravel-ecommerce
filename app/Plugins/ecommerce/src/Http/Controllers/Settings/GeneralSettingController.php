@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\GeneralSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\GeneralSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\GeneralSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\GeneralSettingRequest;
 
 class GeneralSettingController extends SettingController
 {

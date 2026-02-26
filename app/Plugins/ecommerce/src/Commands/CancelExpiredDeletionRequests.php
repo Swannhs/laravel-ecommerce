@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Commands;
+namespace App\Plugins\Ecommerce\Commands;
 
-use Botble\Ecommerce\Enums\DeletionRequestStatusEnum;
-use Botble\Ecommerce\Models\CustomerDeletionRequest;
+use App\Plugins\Ecommerce\Enums\DeletionRequestStatusEnum;
+use App\Plugins\Ecommerce\Models\CustomerDeletionRequest;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

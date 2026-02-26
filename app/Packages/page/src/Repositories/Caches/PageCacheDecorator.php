@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Page\Repositories\Caches;
+namespace App\Packages\Page\Repositories\Caches;
 
-use Botble\Page\Repositories\Eloquent\PageRepository;
+use App\Packages\Page\Repositories\Eloquent\PageRepository;
 
 /**
  * @deprecated

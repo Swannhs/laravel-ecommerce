@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\API;
+namespace App\Plugins\Marketplace\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Resources\API\AvailableProductResource;
-use Botble\Ecommerce\Services\Products\GetProductService;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Http\Requests\API\ContactStoreRequest;
-use Botble\Marketplace\Http\Resources\API\StoreDetailResource;
-use Botble\Marketplace\Http\Resources\API\StoreResource;
-use Botble\Marketplace\Models\Message;
-use Botble\Marketplace\Models\Store;
-use Botble\Slug\Facades\SlugHelper;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\EmailHandler;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Resources\API\AvailableProductResource;
+use App\Plugins\Ecommerce\Services\Products\GetProductService;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Http\Requests\API\ContactStoreRequest;
+use App\Plugins\Marketplace\Http\Resources\API\StoreDetailResource;
+use App\Plugins\Marketplace\Http\Resources\API\StoreResource;
+use App\Plugins\Marketplace\Models\Message;
+use App\Plugins\Marketplace\Models\Store;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

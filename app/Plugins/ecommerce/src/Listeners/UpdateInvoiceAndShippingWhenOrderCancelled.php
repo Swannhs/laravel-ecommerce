@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Ecommerce\Enums\InvoiceStatusEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Events\OrderCancelledEvent;
+use App\Plugins\Ecommerce\Enums\InvoiceStatusEnum;
+use App\Plugins\Ecommerce\Enums\ShippingStatusEnum;
+use App\Plugins\Ecommerce\Events\OrderCancelledEvent;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class UpdateInvoiceAndShippingWhenOrderCancelled implements ShouldQueue

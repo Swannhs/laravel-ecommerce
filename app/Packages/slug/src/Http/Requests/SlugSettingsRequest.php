@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Http\Requests;
+namespace App\Packages\Slug\Http\Requests;
 
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Support\Str;
 
 class SlugSettingsRequest extends Request

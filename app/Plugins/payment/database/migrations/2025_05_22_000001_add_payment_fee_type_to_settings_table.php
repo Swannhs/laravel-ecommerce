@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Payment\Enums\PaymentFeeTypeEnum;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Setting\Facades\Setting;
+use App\Plugins\Payment\Enums\PaymentFeeTypeEnum;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

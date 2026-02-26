@@ -1,7 +1,7 @@
 <?php
 
-namespace Botble\Base\Forms\FieldTypes;
+namespace App\Core\Base\Forms\FieldTypes;
 
-abstract class FormField extends \Botble\Base\Forms\FormField
+abstract class FormField extends \App\Core\Base\Forms\FormField
 {
 }

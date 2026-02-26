@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Newsletter\Listeners;
+namespace App\Plugins\Newsletter\Listeners;
 
-use Botble\Newsletter\Events\UnsubscribeNewsletterEvent;
-use Botble\Newsletter\Facades\Newsletter;
+use App\Plugins\Newsletter\Events\UnsubscribeNewsletterEvent;
+use App\Plugins\Newsletter\Facades\Newsletter;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class RemoveSubscriberToMailchimpContactListListener implements ShouldQueue

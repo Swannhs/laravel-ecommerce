@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Models\Order;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Ecommerce\Enums\OrderStatusEnum;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Support\Facades\DB;
 
 class OrderStatusDistributionChart extends Chart

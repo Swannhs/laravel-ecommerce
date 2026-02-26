@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Widgets;
+namespace App\Packages\Widget\Widgets;
 
-use Botble\Widget\AbstractWidget;
+use App\Packages\Widget\AbstractWidget;
 
 class Text extends AbstractWidget
 {

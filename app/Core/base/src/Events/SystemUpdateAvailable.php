@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
-use Botble\Base\Supports\ValueObjects\CoreProduct;
+use App\Core\Base\Supports\ValueObjects\CoreProduct;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class SystemUpdateAvailable

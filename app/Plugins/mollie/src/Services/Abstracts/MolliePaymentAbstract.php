@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Mollie\Services\Abstracts;
+namespace App\Plugins\Mollie\Services\Abstracts;
 
-use Botble\Payment\Services\Traits\PaymentErrorTrait;
-use Botble\Support\Services\ProduceServiceInterface;
+use App\Plugins\Payment\Services\Traits\PaymentErrorTrait;
+use App\Core\Support\Services\ProduceServiceInterface;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

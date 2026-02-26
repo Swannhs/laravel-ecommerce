@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Marketplace\Forms\Settings;
+namespace App\Plugins\Marketplace\Forms\Settings;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\CheckboxFieldOption;
-use Botble\Base\Forms\FieldOptions\MultiChecklistFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Marketplace\Enums\WithdrawalFeeTypeEnum;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Http\Requests\MarketPlaceSettingFormRequest;
-use Botble\Marketplace\Models\Store;
-use Botble\Media\Facades\RvMedia;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\CheckboxFieldOption;
+use App\Core\Base\Forms\FieldOptions\MultiChecklistFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Plugins\Marketplace\Enums\WithdrawalFeeTypeEnum;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Http\Requests\MarketPlaceSettingFormRequest;
+use App\Plugins\Marketplace\Models\Store;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Setting\Forms\SettingForm;
 
 class MarketplaceSettingForm extends SettingForm
 {

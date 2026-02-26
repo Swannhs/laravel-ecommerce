@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Models\Concerns;
+namespace App\Plugins\Ecommerce\Models\Concerns;
 
-use Botble\Ecommerce\Enums\DiscountTypeOptionEnum;
-use Botble\Ecommerce\Facades\Discount as DiscountFacade;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\FlashSale as FlashSaleFacade;
-use Botble\Ecommerce\Services\Products\ProductPriceService;
-use Botble\Ecommerce\ValueObjects\ProductPrice;
+use App\Plugins\Ecommerce\Enums\DiscountTypeOptionEnum;
+use App\Plugins\Ecommerce\Facades\Discount as DiscountFacade;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\FlashSale as FlashSaleFacade;
+use App\Plugins\Ecommerce\Services\Products\ProductPriceService;
+use App\Plugins\Ecommerce\ValueObjects\ProductPrice;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 
 trait ProductPrices

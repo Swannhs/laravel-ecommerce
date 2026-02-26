@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Models;
+namespace App\Core\Media\Models;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 
 class MediaSetting extends BaseModel
 {

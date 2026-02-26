@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Blog\Http\Resources;
+namespace App\Plugins\Blog\Http\Resources;
 
-use Botble\Blog\Models\Category;
+use App\Plugins\Blog\Models\Category;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

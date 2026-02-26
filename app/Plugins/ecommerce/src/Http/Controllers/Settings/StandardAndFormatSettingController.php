@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\StandardAndFormatSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\StandardAndFormatSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\StandardAndFormatSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\StandardAndFormatSettingRequest;
 
 class StandardAndFormatSettingController extends SettingController
 {

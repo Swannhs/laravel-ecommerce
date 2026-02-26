@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Controllers\Concerns;
+namespace App\Core\Base\Http\Controllers\Concerns;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 
 trait HasHttpResponse
 {

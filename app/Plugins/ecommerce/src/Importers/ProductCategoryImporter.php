@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Importers;
+namespace App\Plugins\Ecommerce\Importers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\DataSynchronize\Contracts\Importer\WithMapping;
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Slug\Facades\SlugHelper;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Packages\DataSynchronize\Contracts\Importer\WithMapping;
+use App\Packages\DataSynchronize\Importer\ImportColumn;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;

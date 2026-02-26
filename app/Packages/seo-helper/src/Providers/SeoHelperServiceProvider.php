@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\SeoHelper\Providers;
+namespace App\Packages\SeoHelper\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\SeoHelper\Contracts\SeoHelperContract;
-use Botble\SeoHelper\Contracts\SeoMetaContract;
-use Botble\SeoHelper\Contracts\SeoOpenGraphContract;
-use Botble\SeoHelper\Contracts\SeoTwitterContract;
-use Botble\SeoHelper\SeoHelper;
-use Botble\SeoHelper\SeoMeta;
-use Botble\SeoHelper\SeoOpenGraph;
-use Botble\SeoHelper\SeoTwitter;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\SeoHelper\Contracts\SeoHelperContract;
+use App\Packages\SeoHelper\Contracts\SeoMetaContract;
+use App\Packages\SeoHelper\Contracts\SeoOpenGraphContract;
+use App\Packages\SeoHelper\Contracts\SeoTwitterContract;
+use App\Packages\SeoHelper\SeoHelper;
+use App\Packages\SeoHelper\SeoMeta;
+use App\Packages\SeoHelper\SeoOpenGraph;
+use App\Packages\SeoHelper\SeoTwitter;
 
 /**
  * @since 02/12/2015 14:09 PM

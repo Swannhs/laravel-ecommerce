@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Translation\Http\Controllers\Concerns;
+namespace App\Plugins\Translation\Http\Controllers\Concerns;
 
-use Botble\Base\Supports\Language;
-use Botble\Translation\Tables\ThemeTranslationTable;
-use Botble\Translation\Tables\TranslationTable;
+use App\Core\Base\Supports\Language;
+use App\Plugins\Translation\Tables\ThemeTranslationTable;
+use App\Plugins\Translation\Tables\TranslationTable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shortcode;
+namespace App\Packages\Shortcode;
 
-use Botble\Shortcode\Compilers\Shortcode as ShortcodeCompiler;
+use App\Packages\Shortcode\Compilers\Shortcode as ShortcodeCompiler;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

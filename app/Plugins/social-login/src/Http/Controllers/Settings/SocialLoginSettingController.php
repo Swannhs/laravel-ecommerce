@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SocialLogin\Http\Controllers\Settings;
+namespace App\Plugins\SocialLogin\Http\Controllers\Settings;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\SocialLogin\Forms\SocialLoginSettingForm;
-use Botble\SocialLogin\Http\Requests\Settings\SocialLoginSettingRequest;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Plugins\SocialLogin\Forms\SocialLoginSettingForm;
+use App\Plugins\SocialLogin\Http\Requests\Settings\SocialLoginSettingRequest;
 use Illuminate\Support\Arr;
 
 class SocialLoginSettingController extends SettingController

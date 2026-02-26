@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace App\Core\Base\Providers;
 
-use Botble\Base\Supports\BreadcrumbsManager;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Supports\BreadcrumbsManager;
+use App\Core\Base\Supports\ServiceProvider;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
 /**

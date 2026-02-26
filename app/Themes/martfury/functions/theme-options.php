@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Theme\Events\RenderingThemeOptionSettings;
-use Botble\Theme\ThemeOption\Fields\MediaImageField;
+use App\Packages\Theme\Events\RenderingThemeOptionSettings;
+use App\Packages\Theme\ThemeOption\Fields\MediaImageField;
 
 app('events')->listen(RenderingThemeOptionSettings::class, function (): void {
     theme_option()

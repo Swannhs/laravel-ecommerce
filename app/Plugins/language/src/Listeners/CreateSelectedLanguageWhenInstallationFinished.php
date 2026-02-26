@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Language\Listeners;
+namespace App\Plugins\Language\Listeners;
 
-use Botble\Base\Supports\Language as LanguageSupport;
-use Botble\Language\Models\Language;
+use App\Core\Base\Supports\Language as LanguageSupport;
+use App\Plugins\Language\Models\Language;
 
 class CreateSelectedLanguageWhenInstallationFinished
 {

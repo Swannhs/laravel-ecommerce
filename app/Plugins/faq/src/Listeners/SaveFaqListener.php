@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Faq\Listeners;
+namespace App\Plugins\Faq\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\MetaBox;
-use Botble\Faq\FaqSupport;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\MetaBox;
+use App\Plugins\Faq\FaqSupport;
 
 class SaveFaqListener
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Newsletter\Drivers;
+namespace App\Plugins\Newsletter\Drivers;
 
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;

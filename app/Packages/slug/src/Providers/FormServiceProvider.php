@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace App\Packages\Slug\Providers;
 
-use Botble\Base\Facades\Form;
-use Botble\Base\Supports\ServiceProvider;
+use App\Core\Base\Facades\Form;
+use App\Core\Base\Supports\ServiceProvider;
 
 class FormServiceProvider extends ServiceProvider
 {

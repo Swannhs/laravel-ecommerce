@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\API;
+namespace App\Plugins\Marketplace\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Http\Requests\API\BecomeVendorRequest;
-use Botble\Marketplace\Http\Requests\API\RegisterVendorRequest;
-use Botble\Marketplace\Models\Store;
-use Botble\Slug\Facades\SlugHelper;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Http\Requests\API\BecomeVendorRequest;
+use App\Plugins\Marketplace\Http\Requests\API\RegisterVendorRequest;
+use App\Plugins\Marketplace\Models\Store;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;

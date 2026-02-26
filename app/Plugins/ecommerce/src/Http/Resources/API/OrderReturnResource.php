@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources\API;
+namespace App\Plugins\Ecommerce\Http\Resources\API;
 
-use Botble\Ecommerce\Models\OrderReturn;
+use App\Plugins\Ecommerce\Models\OrderReturn;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

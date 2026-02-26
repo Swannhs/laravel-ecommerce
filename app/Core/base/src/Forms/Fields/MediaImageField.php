@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Forms\Fields;
+namespace App\Core\Base\Forms\Fields;
 
-use Botble\Base\Forms\FieldTypes\FormField;
+use App\Core\Base\Forms\FieldTypes\FormField;
 
 class MediaImageField extends FormField
 {

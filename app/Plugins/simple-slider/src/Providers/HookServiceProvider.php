@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\SimpleSlider\Providers;
+namespace App\Plugins\SimpleSlider\Providers;
 
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Shortcode\Compilers\Shortcode;
-use Botble\Shortcode\Forms\ShortcodeForm;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Packages\Shortcode\Compilers\Shortcode;
+use App\Packages\Shortcode\Forms\ShortcodeForm;
+use App\Plugins\SimpleSlider\Models\SimpleSlider;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;

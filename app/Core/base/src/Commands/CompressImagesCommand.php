@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Media\Facades\RvMedia;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Encoders\AutoEncoder;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\API;
+namespace App\Plugins\Ecommerce\Http\Requests\API;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Support\Http\Requests\Request;
 
 class ReviewRequest extends Request
 {

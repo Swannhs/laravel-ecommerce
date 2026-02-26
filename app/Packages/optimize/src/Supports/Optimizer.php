@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Optimize\Supports;
+namespace App\Packages\Optimize\Supports;
 
 class Optimizer
 {

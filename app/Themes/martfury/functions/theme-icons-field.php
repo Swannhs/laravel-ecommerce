@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Theme as BaseTheme;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Theme\Theme as BaseTheme;
 
 app()->booted(function (): void {
     if (! method_exists(BaseTheme::class, 'registerThemeIconFields')) {

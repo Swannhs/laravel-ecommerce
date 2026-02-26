@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Payment\Supports;
+namespace App\Plugins\Payment\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Helper;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Models\PaymentLog;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Helper;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Payment\Models\PaymentLog;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Request;

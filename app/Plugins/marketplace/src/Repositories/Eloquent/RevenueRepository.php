@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Repositories\Eloquent;
+namespace App\Plugins\Marketplace\Repositories\Eloquent;
 
-use Botble\Marketplace\Repositories\Interfaces\RevenueInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Marketplace\Repositories\Interfaces\RevenueInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class RevenueRepository extends RepositoriesAbstract implements RevenueInterface
 {

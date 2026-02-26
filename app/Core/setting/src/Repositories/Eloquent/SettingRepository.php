@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Repositories\Eloquent;
+namespace App\Core\Setting\Repositories\Eloquent;
 
-use Botble\Setting\Repositories\Interfaces\SettingInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Setting\Repositories\Interfaces\SettingInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class SettingRepository extends RepositoriesAbstract implements SettingInterface
 {

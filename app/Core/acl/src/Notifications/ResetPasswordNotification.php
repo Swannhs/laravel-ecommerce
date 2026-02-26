@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Notifications;
+namespace App\Core\ACL\Notifications;
 
-use Botble\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\EmailHandler;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\HtmlString;

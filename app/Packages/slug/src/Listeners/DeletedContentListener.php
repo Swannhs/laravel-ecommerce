@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Slug\Listeners;
+namespace App\Packages\Slug\Listeners;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 
 class DeletedContentListener
 {

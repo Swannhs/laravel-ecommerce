@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace App\Core\Base\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
 use Exception;
 
 class CreatedContentListener

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Newsletter\Drivers;
+namespace App\Plugins\Newsletter\Drivers;
 
-use Botble\Newsletter\Contracts\Provider;
+use App\Plugins\Newsletter\Contracts\Provider;
 use Illuminate\Support\Arr;
 
 class SendGrid extends AbstractProvider implements Provider

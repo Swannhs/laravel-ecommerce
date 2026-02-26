@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace App\Packages\Slug\Providers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Facades\MacroableModels;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Page\Models\Page;
-use Botble\Setting\PanelSections\SettingCommonPanelSection;
-use Botble\Slug\Facades\SlugHelper as SlugHelperFacade;
-use Botble\Slug\Models\Slug;
-use Botble\Slug\Repositories\Eloquent\SlugRepository;
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
-use Botble\Slug\SlugCompiler;
-use Botble\Slug\SlugHelper;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\MacroableModels;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Page\Models\Page;
+use App\Core\Setting\PanelSections\SettingCommonPanelSection;
+use App\Packages\Slug\Facades\SlugHelper as SlugHelperFacade;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Slug\Repositories\Eloquent\SlugRepository;
+use App\Packages\Slug\Repositories\Interfaces\SlugInterface;
+use App\Packages\Slug\SlugCompiler;
+use App\Packages\Slug\SlugHelper;
 use Illuminate\Database\Eloquent\Model;
 
 class SlugServiceProvider extends ServiceProvider

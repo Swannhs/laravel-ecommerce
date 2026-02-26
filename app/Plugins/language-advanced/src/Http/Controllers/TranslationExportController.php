@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Http\Controllers;
+namespace App\Plugins\LanguageAdvanced\Http\Controllers;
 
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\DataSynchronize\Http\Controllers\ExportController;
-use Botble\LanguageAdvanced\Exporters\TranslationExporterManager;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Packages\DataSynchronize\Http\Controllers\ExportController;
+use App\Plugins\LanguageAdvanced\Exporters\TranslationExporterManager;
 
 class TranslationExportController extends ExportController
 {

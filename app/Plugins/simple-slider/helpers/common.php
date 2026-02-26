@@ -1,6 +1,6 @@
 <?php
 
-use Botble\SimpleSlider\Models\SimpleSlider;
+use App\Plugins\SimpleSlider\Models\SimpleSlider;
 use Illuminate\Database\Eloquent\Collection;
 
 if (! function_exists('get_all_simple_sliders')) {

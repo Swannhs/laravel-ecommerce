@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Icon\View\Components;
+namespace App\Core\Icon\View\Components;
 
-use Botble\Icon\Facades\Icon as IconFacade;
+use App\Core\Icon\Facades\Icon as IconFacade;
 use Closure;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\View\View as ViewContract;

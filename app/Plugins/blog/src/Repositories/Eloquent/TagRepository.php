@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Repositories\Eloquent;
+namespace App\Plugins\Blog\Repositories\Eloquent;
 
-use Botble\Blog\Repositories\Interfaces\TagInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Blog\Repositories\Interfaces\TagInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Support\Collection;
 
 class TagRepository extends RepositoriesAbstract implements TagInterface

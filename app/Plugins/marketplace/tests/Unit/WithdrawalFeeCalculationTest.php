@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Tests\Unit;
+namespace App\Plugins\Marketplace\Tests\Unit;
 
-use Botble\Marketplace\Enums\WithdrawalFeeTypeEnum;
+use App\Plugins\Marketplace\Enums\WithdrawalFeeTypeEnum;
 use PHPUnit\Framework\TestCase;
 
 class WithdrawalFeeCalculationTest extends TestCase

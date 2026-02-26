@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Location\Listeners;
+namespace App\Plugins\Location\Listeners;
 
-use Botble\Language\Facades\Language;
-use Botble\Location\Events\ImportedCountryEvent;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Location\Events\ImportedCountryEvent;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 
@@ -17,7 +17,7 @@ class CreateCountryTranslationListener
 
         $languages = Language::getActiveLanguage(['lang_code', 'lang_is_default']);
 
-        /** @var \Botble\Language\Models\Language $language */
+        /** @var \App\Plugins\Language\Models\Language $language */
         foreach ($languages as $language) {
             if ($language->lang_is_default) {
                 continue;

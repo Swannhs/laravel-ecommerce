@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Marketplace\Models;
+namespace App\Plugins\Marketplace\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Avatar;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\QueryBuilders\StoreQueryBuilder;
-use Botble\Ecommerce\Traits\LocationTrait;
-use Botble\Marketplace\Enums\StoreStatusEnum;
-use Botble\Media\Facades\RvMedia;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Supports\Avatar;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\QueryBuilders\StoreQueryBuilder;
+use App\Plugins\Ecommerce\Traits\LocationTrait;
+use App\Plugins\Marketplace\Enums\StoreStatusEnum;
+use App\Core\Media\Facades\RvMedia;
 use Exception;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

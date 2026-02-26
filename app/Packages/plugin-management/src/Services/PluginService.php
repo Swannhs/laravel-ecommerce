@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\PluginManagement\Services;
+namespace App\Packages\PluginManagement\Services;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Services\ClearCacheService;
-use Botble\Base\Supports\Helper;
-use Botble\PluginManagement\Events\ActivatedPluginEvent;
-use Botble\PluginManagement\Events\DeactivatedPlugin;
-use Botble\PluginManagement\Events\RemovedPlugin;
-use Botble\PluginManagement\Events\UpdatedPluginEvent;
-use Botble\PluginManagement\Events\UpdatingPluginEvent;
-use Botble\PluginManagement\PluginManifest;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Services\ClearCacheService;
+use App\Core\Base\Supports\Helper;
+use App\Packages\PluginManagement\Events\ActivatedPluginEvent;
+use App\Packages\PluginManagement\Events\DeactivatedPlugin;
+use App\Packages\PluginManagement\Events\RemovedPlugin;
+use App\Packages\PluginManagement\Events\UpdatedPluginEvent;
+use App\Packages\PluginManagement\Events\UpdatingPluginEvent;
+use App\Packages\PluginManagement\PluginManifest;
+use App\Core\Setting\Facades\Setting;
 use Carbon\Carbon;
 use Composer\Autoload\ClassLoader;
 use Exception;

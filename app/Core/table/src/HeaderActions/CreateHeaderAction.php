@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\HeaderActions;
+namespace App\Core\Table\HeaderActions;
 
 class CreateHeaderAction extends HeaderAction
 {

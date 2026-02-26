@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Repositories\Eloquent;
+namespace App\Plugins\Marketplace\Repositories\Eloquent;
 
-use Botble\Marketplace\Repositories\Interfaces\WithdrawalInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Marketplace\Repositories\Interfaces\WithdrawalInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class WithdrawalRepository extends RepositoriesAbstract implements WithdrawalInterface
 {

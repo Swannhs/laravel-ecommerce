@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Analytics;
+namespace App\Plugins\Analytics;
 
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Setting\Facades\Setting;
+use App\Core\Dashboard\Models\DashboardWidget;
+use App\Packages\PluginManagement\Abstracts\PluginOperationAbstract;
+use App\Core\Setting\Facades\Setting;
 
 class Plugin extends PluginOperationAbstract
 {

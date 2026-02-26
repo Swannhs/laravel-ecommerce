@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Icon\Facades;
+namespace App\Core\Icon\Facades;
 
-use Botble\Icon\IconManager;
+use App\Core\Icon\IconManager;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @method static string getDefaultDriver()
- * @method static \Botble\Icon\IconDriver createSvgDriver()
+ * @method static \App\Core\Icon\IconDriver createSvgDriver()
  * @method static mixed driver(string|null $driver = null)
- * @method static \Botble\Icon\IconManager extend(string $driver, \Closure $callback)
+ * @method static \App\Core\Icon\IconManager extend(string $driver, \Closure $callback)
  * @method static array getDrivers()
  * @method static \Illuminate\Contracts\Container\Container getContainer()
- * @method static \Botble\Icon\IconManager setContainer(\Illuminate\Contracts\Container\Container $container)
- * @method static \Botble\Icon\IconManager forgetDrivers()
+ * @method static \App\Core\Icon\IconManager setContainer(\Illuminate\Contracts\Container\Container $container)
+ * @method static \App\Core\Icon\IconManager forgetDrivers()
  * @method static static setConfig(array $config)
  * @method static array getConfig()
  * @method static array all()
@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static static setIconPath(string $path)
  * @method static string iconPath()
  *
- * @see \Botble\Icon\IconManager
- * @see \Botble\Icon\IconDriver
+ * @see \App\Core\Icon\IconManager
+ * @see \App\Core\Icon\IconDriver
  */
 class Icon extends Facade
 {

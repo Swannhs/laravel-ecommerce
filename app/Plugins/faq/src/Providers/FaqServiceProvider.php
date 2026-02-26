@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Faq\Providers;
+namespace App\Plugins\Faq\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Faq\Contracts\Faq as FaqContract;
-use Botble\Faq\FaqSupport;
-use Botble\Faq\Models\Faq;
-use Botble\Faq\Models\FaqCategory;
-use Botble\Faq\Repositories\Eloquent\FaqCategoryRepository;
-use Botble\Faq\Repositories\Eloquent\FaqRepository;
-use Botble\Faq\Repositories\Interfaces\FaqCategoryInterface;
-use Botble\Faq\Repositories\Interfaces\FaqInterface;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Plugins\Faq\Contracts\Faq as FaqContract;
+use App\Plugins\Faq\FaqSupport;
+use App\Plugins\Faq\Models\Faq;
+use App\Plugins\Faq\Models\FaqCategory;
+use App\Plugins\Faq\Repositories\Eloquent\FaqCategoryRepository;
+use App\Plugins\Faq\Repositories\Eloquent\FaqRepository;
+use App\Plugins\Faq\Repositories\Interfaces\FaqCategoryInterface;
+use App\Plugins\Faq\Repositories\Interfaces\FaqInterface;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
 class FaqServiceProvider extends ServiceProvider implements DeferrableProvider

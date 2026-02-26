@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Slug\Http\Controllers;
+namespace App\Packages\Slug\Http\Controllers;
 
-use Botble\Menu\Facades\Menu;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\Setting\Supports\SettingStore;
-use Botble\Slug\Events\UpdatedPermalinkSettings;
-use Botble\Slug\Forms\SlugSettingForm;
-use Botble\Slug\Http\Requests\SlugRequest;
-use Botble\Slug\Http\Requests\SlugSettingsRequest;
-use Botble\Slug\Models\Slug;
-use Botble\Slug\Services\SlugService;
+use App\Packages\Menu\Facades\Menu;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Core\Setting\Supports\SettingStore;
+use App\Packages\Slug\Events\UpdatedPermalinkSettings;
+use App\Packages\Slug\Forms\SlugSettingForm;
+use App\Packages\Slug\Http\Requests\SlugRequest;
+use App\Packages\Slug\Http\Requests\SlugSettingsRequest;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Slug\Services\SlugService;
 use Illuminate\Support\Str;
 
 class SlugController extends SettingController

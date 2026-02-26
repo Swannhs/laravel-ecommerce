@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Traits\FieldOptions;
+namespace App\Core\Base\Traits\FieldOptions;
 
 trait HasAspectRatio
 {

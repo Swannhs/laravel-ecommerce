@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Abstracts;
+namespace App\Core\Table\Abstracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 

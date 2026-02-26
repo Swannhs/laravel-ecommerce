@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Testimonial\Repositories\Interfaces;
+namespace App\Plugins\Testimonial\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface TestimonialInterface extends RepositoryInterface
 {

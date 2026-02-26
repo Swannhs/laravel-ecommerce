@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Stripe\Services\Gateways;
+namespace App\Plugins\Stripe\Services\Gateways;
 
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Supports\PaymentHelper;
-use Botble\Stripe\Services\Abstracts\StripePaymentAbstract;
-use Botble\Stripe\Supports\StripeHelper;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Supports\PaymentHelper;
+use App\Plugins\Stripe\Services\Abstracts\StripePaymentAbstract;
+use App\Plugins\Stripe\Supports\StripeHelper;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;

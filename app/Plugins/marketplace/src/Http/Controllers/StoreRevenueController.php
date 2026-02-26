@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Marketplace\Enums\RevenueTypeEnum;
-use Botble\Marketplace\Http\Requests\StoreRevenueRequest;
-use Botble\Marketplace\Models\Revenue;
-use Botble\Marketplace\Models\Store;
-use Botble\Marketplace\Tables\StoreRevenueTable;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Marketplace\Enums\RevenueTypeEnum;
+use App\Plugins\Marketplace\Http\Requests\StoreRevenueRequest;
+use App\Plugins\Marketplace\Models\Revenue;
+use App\Plugins\Marketplace\Models\Store;
+use App\Plugins\Marketplace\Tables\StoreRevenueTable;
 use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;

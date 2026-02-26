@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Analytics\Http\Controllers;
+namespace App\Plugins\Analytics\Http\Controllers;
 
-use Botble\Analytics\Rules\AnalyticsCredentialRule;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Analytics\Rules\AnalyticsCredentialRule;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;

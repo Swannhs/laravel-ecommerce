@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Table\HeaderActions;
+namespace App\Core\Table\HeaderActions;
 
-use Botble\Base\Supports\Builders\HasAttributes;
-use Botble\Base\Supports\Builders\HasColor;
-use Botble\Base\Supports\Builders\HasIcon;
-use Botble\Base\Supports\Builders\HasLabel;
-use Botble\Base\Supports\Builders\HasPermissions;
-use Botble\Base\Supports\Builders\HasUrl;
+use App\Core\Base\Supports\Builders\HasAttributes;
+use App\Core\Base\Supports\Builders\HasColor;
+use App\Core\Base\Supports\Builders\HasIcon;
+use App\Core\Base\Supports\Builders\HasLabel;
+use App\Core\Base\Supports\Builders\HasPermissions;
+use App\Core\Base\Supports\Builders\HasUrl;
 use Illuminate\Contracts\Support\Arrayable;
 
 class HeaderAction implements Arrayable

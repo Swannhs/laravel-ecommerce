@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Language\Repositories\Caches;
+namespace App\Plugins\Language\Repositories\Caches;
 
-use Botble\Language\Repositories\Eloquent\LanguageMetaRepository;
+use App\Plugins\Language\Repositories\Eloquent\LanguageMetaRepository;
 
 /**
  * @deprecated

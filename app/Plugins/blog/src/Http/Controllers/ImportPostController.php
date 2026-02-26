@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\Blog\Importers\PostImporter;
-use Botble\DataSynchronize\Http\Controllers\ImportController;
-use Botble\DataSynchronize\Importer\Importer;
+use App\Plugins\Blog\Importers\PostImporter;
+use App\Packages\DataSynchronize\Http\Controllers\ImportController;
+use App\Packages\DataSynchronize\Importer\Importer;
 
 class ImportPostController extends ImportController
 {

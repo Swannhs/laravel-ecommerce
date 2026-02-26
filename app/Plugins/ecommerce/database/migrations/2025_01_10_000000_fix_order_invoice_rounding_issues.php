@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Ecommerce\Models\Currency;
-use Botble\Ecommerce\Models\Invoice;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Currency;
+use App\Plugins\Ecommerce\Models\Invoice;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Collection;
 

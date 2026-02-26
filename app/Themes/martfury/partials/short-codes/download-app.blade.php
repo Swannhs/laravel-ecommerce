@@ -25,7 +25,7 @@
                                     <button class="ps-btn" type="submit">{{ __('Subscribe') }}</button>
                                 </div>
 
-                                @if ($extraFields = apply_filters('form_extra_fields_render', null, \Botble\Newsletter\Forms\Fronts\NewsletterForm::class))
+                                @if ($extraFields = apply_filters('form_extra_fields_render', null, \App\Plugins\Newsletter\Forms\Fronts\NewsletterForm::class))
                                     <div style="margin-top: 15px;">{!! $extraFields !!}</div>
                                 @endif
                             </form>

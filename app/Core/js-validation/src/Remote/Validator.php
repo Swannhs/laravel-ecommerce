@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\JsValidation\Remote;
+namespace App\Core\JsValidation\Remote;
 
-use Botble\JsValidation\Support\AccessProtectedTrait;
-use Botble\JsValidation\Support\RuleListTrait;
+use App\Core\JsValidation\Support\AccessProtectedTrait;
+use App\Core\JsValidation\Support\RuleListTrait;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Arr;

@@ -1,14 +1,14 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductCollection;
-use Botble\Ecommerce\Models\ProductView;
-use Botble\Ecommerce\Models\Review;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Services\ProductCacheService;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Models\ProductCollection;
+use App\Plugins\Ecommerce\Models\ProductView;
+use App\Plugins\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Repositories\Interfaces\ProductInterface;
+use App\Plugins\Ecommerce\Services\ProductCacheService;
 use Carbon\Carbon;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;

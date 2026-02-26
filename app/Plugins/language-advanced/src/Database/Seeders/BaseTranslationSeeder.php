@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Database\Seeders;
+namespace App\Plugins\LanguageAdvanced\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\LanguageAdvanced\Database\Seeders\Traits\HasTranslationLoader;
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\LanguageAdvanced\Database\Seeders\Traits\HasTranslationLoader;
+use App\Plugins\LanguageAdvanced\Supports\LanguageAdvancedManager;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 

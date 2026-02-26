@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Setting\Facades\Setting;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Database\Migrations\Migration;
 
 return new class () extends Migration {

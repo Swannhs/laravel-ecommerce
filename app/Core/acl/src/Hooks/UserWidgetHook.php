@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Hooks;
+namespace App\Core\ACL\Hooks;
 
-use Botble\ACL\Models\User;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use App\Core\ACL\Models\User;
+use App\Core\Dashboard\Supports\DashboardWidgetInstance;
 use Illuminate\Support\Collection;
 
 class UserWidgetHook

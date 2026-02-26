@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shortcode\Forms\Fields;
+namespace App\Packages\Shortcode\Forms\Fields;
 
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Forms\FormField;
 
 class ShortcodeTabsField extends FormField
 {

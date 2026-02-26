@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Shortcode\Forms\Fields;
+namespace App\Packages\Shortcode\Forms\Fields;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\Html;
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Forms\FormField;
 
 class ShortcodeTagsField extends FormField
 {

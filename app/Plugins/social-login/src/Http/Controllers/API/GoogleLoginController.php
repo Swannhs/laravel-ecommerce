@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SocialLogin\Http\Controllers\API;
+namespace App\Plugins\SocialLogin\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\SocialLogin\Facades\SocialService;
-use Botble\SocialLogin\Services\SocialLoginService;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\SocialLogin\Facades\SocialService;
+use App\Plugins\SocialLogin\Services\SocialLoginService;
 use Carbon\Carbon;
 use Exception;
 use Google_Client;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
-use Botble\Base\Supports\AdminNotificationItem;
+use App\Core\Base\Supports\AdminNotificationItem;
 use Illuminate\Queue\SerializesModels;
 
 class AdminNotificationEvent extends Event

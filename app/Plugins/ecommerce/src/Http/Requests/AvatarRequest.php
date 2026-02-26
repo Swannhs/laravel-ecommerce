@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Media\Facades\RvMedia;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Support\Http\Requests\Request;
 
 class AvatarRequest extends Request
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\ValueObjects\CheckoutOrderData;
-use Botble\Payment\Supports\PaymentFeeHelper;
-use Botble\Payment\Supports\PaymentHelper;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\ValueObjects\CheckoutOrderData;
+use App\Plugins\Payment\Supports\PaymentFeeHelper;
+use App\Plugins\Payment\Supports\PaymentHelper;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

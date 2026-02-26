@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Menu\Repositories\Eloquent;
+namespace App\Packages\Menu\Repositories\Eloquent;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Menu\Models\Menu;
-use Botble\Menu\Repositories\Interfaces\MenuInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Core\Base\Models\BaseModel;
+use App\Packages\Menu\Models\Menu;
+use App\Packages\Menu\Repositories\Interfaces\MenuInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class MenuRepository extends RepositoriesAbstract implements MenuInterface
 {

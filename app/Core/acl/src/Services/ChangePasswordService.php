@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Services;
+namespace App\Core\ACL\Services;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Support\Services\ProduceServiceInterface;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Support\Services\ProduceServiceInterface;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;

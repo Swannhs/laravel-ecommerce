@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shortcode\Http\Requests;
+namespace App\Packages\Shortcode\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class RenderBlockUiRequest extends Request
 {

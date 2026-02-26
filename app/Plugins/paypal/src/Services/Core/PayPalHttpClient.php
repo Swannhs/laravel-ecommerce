@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\PayPal\Services\Core;
+namespace App\Plugins\PayPal\Services\Core;
 
 use PayPalCheckoutSdk\Core\PayPalEnvironment;
 use PayPalCheckoutSdk\Core\PayPalHttpClient as BasePayPalHttpClient;

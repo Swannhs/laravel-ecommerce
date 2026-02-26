@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Interfaces;
+namespace App\Plugins\Ecommerce\Repositories\Interfaces;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 interface ProductInterface extends RepositoryInterface

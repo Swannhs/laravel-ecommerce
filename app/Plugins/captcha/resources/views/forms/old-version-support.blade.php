@@ -1,6 +1,6 @@
 @php
     // Check if this is a FormAbstract-based form that would have fields added via beforeRendering hook
-    $isFormAbstract = $form && class_exists($form) && is_subclass_of($form, \Botble\Base\Forms\FormAbstract::class);
+    $isFormAbstract = $form && class_exists($form) && is_subclass_of($form, \App\Core\Base\Forms\FormAbstract::class);
 @endphp
 
 @if (!$isFormAbstract)

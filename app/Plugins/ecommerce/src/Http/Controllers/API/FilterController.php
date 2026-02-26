@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Resources\API\FilterResource;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Supports\RenderProductAttributeSetsOnSearchPageSupport;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Resources\API\FilterResource;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Ecommerce\Supports\RenderProductAttributeSetsOnSearchPageSupport;
 use Exception;
 use Illuminate\Http\Request;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions;
 
-use Botble\Base\Forms\FieldOptions\EmailFieldOption as BaseEmailFieldOption;
+use App\Core\Base\Forms\FieldOptions\EmailFieldOption as BaseEmailFieldOption;
 
 class EmailFieldOption extends BaseEmailFieldOption
 {

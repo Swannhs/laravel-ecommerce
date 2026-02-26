@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\Invoice;
-use Botble\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Models\Invoice;
+use App\Plugins\Ecommerce\Models\Order;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

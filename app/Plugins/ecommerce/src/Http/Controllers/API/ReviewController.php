@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\API\ReviewRequest;
-use Botble\Ecommerce\Http\Resources\API\ReviewResource;
-use Botble\Ecommerce\Models\Review;
-use Botble\Ecommerce\Traits\CheckReviewConditionForApiTrait;
-use Botble\Media\Facades\RvMedia;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\API\ReviewRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\ReviewResource;
+use App\Plugins\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Traits\CheckReviewConditionForApiTrait;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Chart;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Widgets\Traits\HasCategory;
+use App\Core\Base\Widgets\Chart;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Ecommerce\Widgets\Traits\HasCategory;
 
 class OrderChart extends Chart
 {

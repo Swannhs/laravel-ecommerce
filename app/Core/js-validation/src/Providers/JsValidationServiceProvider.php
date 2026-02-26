@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\JsValidation\Providers;
+namespace App\Core\JsValidation\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\JsValidation\Javascript\ValidatorHandler;
-use Botble\JsValidation\JsValidatorFactory;
-use Botble\JsValidation\RemoteValidationMiddleware;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\JsValidation\Javascript\ValidatorHandler;
+use App\Core\JsValidation\JsValidatorFactory;
+use App\Core\JsValidation\RemoteValidationMiddleware;
 use Illuminate\Contracts\Http\Kernel;
 
 class JsValidationServiceProvider extends ServiceProvider

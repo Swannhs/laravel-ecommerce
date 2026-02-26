@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Contact\Events;
+namespace App\Plugins\Contact\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Events\Event;
+use App\Core\Base\Models\BaseModel;
 use Illuminate\Queue\SerializesModels;
 
 class SentContactEvent extends Event

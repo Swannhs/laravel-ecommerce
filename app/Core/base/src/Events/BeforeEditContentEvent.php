@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace App\Core\Base\Events;
 
-use Botble\Base\Contracts\BaseModel;
+use App\Core\Base\Contracts\BaseModel;
 use Illuminate\Http\Request;
 use Illuminate\Queue\SerializesModels;
 

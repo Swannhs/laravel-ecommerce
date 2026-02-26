@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Table\Actions;
+namespace App\Core\Table\Actions;
 
-use Botble\Base\Supports\Builders\HasAttributes;
-use Botble\Base\Supports\Builders\HasColor;
-use Botble\Base\Supports\Builders\HasIcon;
-use Botble\Base\Supports\Builders\HasUrl;
-use Botble\Table\Abstracts\TableActionAbstract;
-use Botble\Table\Actions\Concerns\HasAction;
+use App\Core\Base\Supports\Builders\HasAttributes;
+use App\Core\Base\Supports\Builders\HasColor;
+use App\Core\Base\Supports\Builders\HasIcon;
+use App\Core\Base\Supports\Builders\HasUrl;
+use App\Core\Table\Abstracts\TableActionAbstract;
+use App\Core\Table\Actions\Concerns\HasAction;
 
 class Action extends TableActionAbstract
 {

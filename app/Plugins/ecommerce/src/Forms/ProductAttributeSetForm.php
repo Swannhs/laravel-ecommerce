@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace App\Plugins\Ecommerce\Forms;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\FieldOptions\SortOrderFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TreeCategoryField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Facades\ProductCategoryHelper;
-use Botble\Ecommerce\Http\Requests\ProductAttributeSetsRequest;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Language\Facades\Language;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\FieldOptions\SortOrderFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TreeCategoryField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\Ecommerce\Facades\ProductCategoryHelper;
+use App\Plugins\Ecommerce\Http\Requests\ProductAttributeSetsRequest;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Language\Facades\Language;
 
 class ProductAttributeSetForm extends FormAbstract
 {

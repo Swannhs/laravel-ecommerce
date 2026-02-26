@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Http\Requests\ReviewReplyRequest;
-use Botble\Ecommerce\Models\Review;
-use Botble\Ecommerce\Models\ReviewReply;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Http\Requests\ReviewReplyRequest;
+use App\Plugins\Ecommerce\Models\Review;
+use App\Plugins\Ecommerce\Models\ReviewReply;
 
 class ReviewReplyController extends BaseController
 {

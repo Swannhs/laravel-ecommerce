@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Http\Requests;
+namespace App\Packages\Slug\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use App\Core\Support\Http\Requests\Request;
 
 class SlugRequest extends Request
 {

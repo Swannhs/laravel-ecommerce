@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SimpleSlider\Forms\Settings;
+namespace App\Plugins\SimpleSlider\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Setting\Forms\SettingForm;
-use Botble\SimpleSlider\Http\Requests\Settings\SimpleSliderSettingRequest;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Setting\Forms\SettingForm;
+use App\Plugins\SimpleSlider\Http\Requests\Settings\SimpleSliderSettingRequest;
 
 class SimpleSliderSettingForm extends SettingForm
 {

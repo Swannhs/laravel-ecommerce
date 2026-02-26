@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Supports\Core;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Supports\Core;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

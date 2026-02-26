@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Models\Product;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 
 class ProductController extends BaseController
 {

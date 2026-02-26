@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace App\Core\Base\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Setting\Facades\Setting;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Setting\Facades\Setting;
 use Illuminate\Foundation\Testing\TestCase;
 
 abstract class BaseTestCase extends TestCase

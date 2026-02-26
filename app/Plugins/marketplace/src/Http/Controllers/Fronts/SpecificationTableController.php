@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Ecommerce\Http\Controllers\SpecificationTableController as BaseSpecificationTableController;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\SpecificationTable;
-use Botble\Marketplace\Forms\SpecificationTableForm;
-use Botble\Marketplace\Tables\SpecificationTableTable;
+use App\Plugins\Ecommerce\Http\Controllers\SpecificationTableController as BaseSpecificationTableController;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\SpecificationTable;
+use App\Plugins\Marketplace\Forms\SpecificationTableForm;
+use App\Plugins\Marketplace\Tables\SpecificationTableTable;
 
 class SpecificationTableController extends BaseSpecificationTableController
 {

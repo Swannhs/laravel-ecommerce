@@ -1,6 +1,6 @@
 @if (get_payment_setting('status', RAZORPAY_PAYMENT_METHOD_NAME) == 1)
     @php
-        $paymentService = new Botble\Razorpay\Services\Gateways\RazorpayPaymentService();
+        $paymentService = new App\Plugins\Razorpay\Services\Gateways\RazorpayPaymentService();
     @endphp
 
     <x-plugins-payment::payment-method

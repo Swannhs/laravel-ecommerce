@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests;
+namespace App\Plugins\Marketplace\Http\Requests;
 
-use Botble\Base\Rules\OnOffRule;
-use Botble\Ecommerce\Http\Requests\ProductRequest as BaseProductRequest;
-use Botble\Marketplace\Enums\PayoutPaymentMethodsEnum;
-use Botble\Marketplace\Enums\WithdrawalFeeTypeEnum;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Rules\OnOffRule;
+use App\Plugins\Ecommerce\Http\Requests\ProductRequest as BaseProductRequest;
+use App\Plugins\Marketplace\Enums\PayoutPaymentMethodsEnum;
+use App\Plugins\Marketplace\Enums\WithdrawalFeeTypeEnum;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Validation\Rule;
 
 class MarketPlaceSettingFormRequest extends BaseProductRequest

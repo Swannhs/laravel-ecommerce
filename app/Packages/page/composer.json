@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Page\\": "src"
+            "App\\Page\\": "src"
         }
     },
     "require": {
@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Page\\Providers\\PageServiceProvider"
+                "App\\Page\\Providers\\PageServiceProvider"
             ]
         }
     }

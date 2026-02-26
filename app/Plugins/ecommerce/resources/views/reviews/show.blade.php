@@ -54,7 +54,7 @@
                             >
                                 {{ trans('plugins/ecommerce::review.delete') }}
                             </x-core::button>
-                            @if ($review->status == Botble\Base\Enums\BaseStatusEnum::PUBLISHED)
+                            @if ($review->status == App\Core\Base\Enums\BaseStatusEnum::PUBLISHED)
                                 <x-core::button
                                     color="warning"
                                     data-id="{{ $review->getKey() }}"

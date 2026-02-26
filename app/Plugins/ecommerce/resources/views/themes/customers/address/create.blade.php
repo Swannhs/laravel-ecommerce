@@ -4,6 +4,6 @@
 
 @section('content')
     {!! Form::open(['route' => 'customer.address.create']) !!}
-        @include(EcommerceHelper::viewPath('customers.address.form'), ['address' => new Botble\Ecommerce\Models\Address(), 'form'])
+        @include(EcommerceHelper::viewPath('customers.address.form'), ['address' => new App\Plugins\Ecommerce\Models\Address(), 'form'])
     {!! Form::close() !!}
 @endsection

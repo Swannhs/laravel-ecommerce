@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Slug\Forms;
+namespace App\Packages\Slug\Forms;
 
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\OnOffField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Setting\Forms\SettingForm;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Http\Requests\SlugSettingsRequest;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\OnOffField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Setting\Forms\SettingForm;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Http\Requests\SlugSettingsRequest;
 use Illuminate\Support\Str;
 
 class SlugSettingForm extends SettingForm

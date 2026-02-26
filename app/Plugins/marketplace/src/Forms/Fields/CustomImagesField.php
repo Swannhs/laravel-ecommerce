@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Forms\Fields;
+namespace App\Plugins\Marketplace\Forms\Fields;
 
-use Botble\Base\Forms\FormField;
-use Botble\Marketplace\Facades\MarketplaceHelper;
+use App\Core\Base\Forms\FormField;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
 
 class CustomImagesField extends FormField
 {

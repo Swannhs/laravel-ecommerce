@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Newsletter\Http\Requests;
+namespace App\Plugins\Newsletter\Http\Requests;
 
-use Botble\Newsletter\Enums\NewsletterStatusEnum;
-use Botble\Newsletter\Models\Newsletter;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Newsletter\Enums\NewsletterStatusEnum;
+use App\Plugins\Newsletter\Models\Newsletter;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Validation\Rule;
 

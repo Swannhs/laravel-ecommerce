@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ads\Http\Requests;
+namespace App\Plugins\Ads\Http\Requests;
 
-use Botble\Ads\Facades\AdsManager;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ads\Facades\AdsManager;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class AdsRequest extends Request

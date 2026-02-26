@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Installer\Services;
+namespace App\Packages\Installer\Services;
 
-use Botble\Base\Services\ClearCacheService;
-use Botble\Base\Supports\Database;
+use App\Core\Base\Services\ClearCacheService;
+use App\Core\Base\Supports\Database;
 use Illuminate\Database\QueryException;
 use Illuminate\Validation\ValidationException;
 

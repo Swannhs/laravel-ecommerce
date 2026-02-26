@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\SocialLogin\Services;
+namespace App\Plugins\SocialLogin\Services;
 
 use Exception;
 use Firebase\JWT\JWT;

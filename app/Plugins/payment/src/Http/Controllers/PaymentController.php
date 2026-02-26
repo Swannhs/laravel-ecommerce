@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Payment\Http\Controllers;
+namespace App\Plugins\Payment\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Forms\BankTransferPaymentMethodForm;
-use Botble\Payment\Forms\CODPaymentMethodForm;
-use Botble\Payment\Forms\Settings\PaymentMethodSettingForm;
-use Botble\Payment\Http\Requests\PaymentMethodRequest;
-use Botble\Payment\Http\Requests\Settings\PaymentMethodSettingRequest;
-use Botble\Payment\Http\Requests\UpdatePaymentRequest;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Tables\PaymentTable;
-use Botble\Setting\Http\Controllers\SettingController;
-use Botble\Setting\Supports\SettingStore;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Forms\BankTransferPaymentMethodForm;
+use App\Plugins\Payment\Forms\CODPaymentMethodForm;
+use App\Plugins\Payment\Forms\Settings\PaymentMethodSettingForm;
+use App\Plugins\Payment\Http\Requests\PaymentMethodRequest;
+use App\Plugins\Payment\Http\Requests\Settings\PaymentMethodSettingRequest;
+use App\Plugins\Payment\Http\Requests\UpdatePaymentRequest;
+use App\Plugins\Payment\Models\Payment;
+use App\Plugins\Payment\Tables\PaymentTable;
+use App\Core\Setting\Http\Controllers\SettingController;
+use App\Core\Setting\Supports\SettingStore;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

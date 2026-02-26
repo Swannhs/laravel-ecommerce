@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Commands\Traits;
+namespace App\Packages\Theme\Commands\Traits;
 
-use Botble\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\Theme;
 
 trait ThemeTrait
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Language\Commands;
+namespace App\Plugins\Language\Commands;
 
-use Botble\Language\Facades\Language;
-use Botble\Language\LanguageManager;
-use Botble\Language\Traits\TranslatedRouteCommandContext;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\LanguageManager;
+use App\Plugins\Language\Traits\TranslatedRouteCommandContext;
 use Illuminate\Foundation\Console\RouteCacheCommand as BaseRouteCacheCommand;
 use Illuminate\Routing\RouteCollection;
 

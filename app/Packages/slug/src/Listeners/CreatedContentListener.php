@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Slug\Listeners;
+namespace App\Packages\Slug\Listeners;
 
-use Botble\Base\Contracts\BaseModel;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
-use Botble\Slug\Services\SlugService;
+use App\Core\Base\Contracts\BaseModel;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
+use App\Packages\Slug\Services\SlugService;
 use Exception;
 use Illuminate\Support\Str;
 

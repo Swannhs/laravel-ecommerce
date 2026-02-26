@@ -73,7 +73,7 @@
 
 <body>
 @php
-    use Botble\Installer\InstallerStep\InstallerStep;
+    use App\Packages\Installer\InstallerStep\InstallerStep;
 
     $currentStep = InstallerStep::currentStep();
 @endphp

@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Widget\Facades;
+namespace App\Packages\Widget\Facades;
 
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\WidgetGroup;
+use App\Packages\Widget\AbstractWidget;
+use App\Packages\Widget\WidgetGroup;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Botble\Widget\Factories\WidgetFactory registerWidget(string $widget)
+ * @method static \App\Packages\Widget\Factories\WidgetFactory registerWidget(string $widget)
  * @method static array getWidgets()
  * @method static \Illuminate\Support\HtmlString|string|null run()
  * @method static void ignoreCaches(array $widgets)
  *
- * @see \Botble\Widget\Factories\WidgetFactory
+ * @see \App\Packages\Widget\Factories\WidgetFactory
  */
 class Widget extends Facade
 {

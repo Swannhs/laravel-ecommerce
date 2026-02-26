@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\SeoHelper\Contracts;
+namespace App\Packages\SeoHelper\Contracts;
 
 interface SeoHelperContract extends RenderableContract
 {

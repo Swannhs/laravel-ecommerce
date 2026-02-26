@@ -1,8 +1,8 @@
 {
     "id": "botble/backup",
     "name": "Backup",
-    "namespace": "Botble\\Backup\\",
-    "provider": "Botble\\Backup\\Providers\\BackupServiceProvider",
+    "namespace": "App\\Plugins\\Backup\\",
+    "provider": "App\\Plugins\\Backup\\Providers\\BackupServiceProvider",
     "author": "Botble Technologies",
     "url": "https://botble.com",
     "version": "2.0.8",

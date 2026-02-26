@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\DataSynchronize\Http\Controllers\ImportController;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Ecommerce\Importers\ProductInventoryImporter;
+use App\Packages\DataSynchronize\Http\Controllers\ImportController;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Ecommerce\Importers\ProductInventoryImporter;
 
 class ImportProductInventoryController extends ImportController
 {

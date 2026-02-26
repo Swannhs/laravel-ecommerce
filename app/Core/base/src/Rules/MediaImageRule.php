@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Rules;
+namespace App\Core\Base\Rules;
 
-use Botble\Media\Facades\RvMedia;
+use App\Core\Media\Facades\RvMedia;
 use Brick\Math\BigNumber;
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

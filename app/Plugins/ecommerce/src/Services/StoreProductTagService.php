@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace App\Plugins\Ecommerce\Services;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductTag;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductTag;
 use Illuminate\Http\Request;
 
 class StoreProductTagService

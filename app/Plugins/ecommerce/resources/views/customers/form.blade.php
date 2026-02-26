@@ -9,7 +9,7 @@
         size="md"
     >
         {!!
-            \Botble\Ecommerce\Forms\Fronts\Customer\AddressForm::create()
+            \App\Plugins\Ecommerce\Forms\Fronts\Customer\AddressForm::create()
                 ->add('customer_id', 'hidden', ['value' => $form->getModel()->id])
                 ->remove('submit')
                 ->renderForm()
@@ -99,7 +99,7 @@
             </x-core::card.header>
 
             <div>
-                {!! app(Botble\Ecommerce\Tables\CustomerReviewTable::class)->customerId($customerId)->setAjaxUrl(route('customers.ajax.reviews', $customerId))->renderTable() !!}
+                {!! app(App\Plugins\Ecommerce\Tables\CustomerReviewTable::class)->customerId($customerId)->setAjaxUrl(route('customers.ajax.reviews', $customerId))->renderTable() !!}
             </div>
         </x-core::card>
     @endif

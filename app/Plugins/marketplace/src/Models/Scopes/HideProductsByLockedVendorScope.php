@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Models\Scopes;
+namespace App\Plugins\Marketplace\Models\Scopes;
 
-use Botble\Marketplace\Enums\StoreStatusEnum;
+use App\Plugins\Marketplace\Enums\StoreStatusEnum;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;

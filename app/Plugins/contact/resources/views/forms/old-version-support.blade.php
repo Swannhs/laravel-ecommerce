@@ -2,7 +2,7 @@
     @if ($loop->index % 2 == 0)
         <div class="row">
     @endif
-    @if ($customField->type == \Botble\Contact\Enums\CustomFieldType::TEXT)
+    @if ($customField->type == \App\Plugins\Contact\Enums\CustomFieldType::TEXT)
         <div class="col-md-6">
             <div class="form-group mb-3">
                 <input
@@ -13,7 +13,7 @@
                 >
             </div>
         </div>
-    @elseif($customField->type == \Botble\Contact\Enums\CustomFieldType::NUMBER)
+    @elseif($customField->type == \App\Plugins\Contact\Enums\CustomFieldType::NUMBER)
         <div class="col-md-6">
             <div class="form-group mb-3">
                 <input
@@ -24,7 +24,7 @@
                 >
             </div>
         </div>
-    @elseif($customField->type == \Botble\Contact\Enums\CustomFieldType::TEXTAREA)
+    @elseif($customField->type == \App\Plugins\Contact\Enums\CustomFieldType::TEXTAREA)
         <div class="col-md-6">
             <div class="form-group mb-3">
                 <textarea
@@ -35,7 +35,7 @@
                 ></textarea>
             </div>
         </div>
-    @elseif($customField->type == \Botble\Contact\Enums\CustomFieldType::DROPDOWN)
+    @elseif($customField->type == \App\Plugins\Contact\Enums\CustomFieldType::DROPDOWN)
         @continue(!$customField->options->filter(fn($option) => !empty($option->label)))
         <div class="col-md-6">
             <div class="form-group mb-3">
@@ -50,7 +50,7 @@
                 </select>
             </div>
         </div>
-    @elseif($customField->type == \Botble\Contact\Enums\CustomFieldType::CHECKBOX)
+    @elseif($customField->type == \App\Plugins\Contact\Enums\CustomFieldType::CHECKBOX)
         @continue(!$customField->options->filter(fn($option) => !empty($option->label)))
         <div class="col-md-12">
             <div class="form-group mb-3">

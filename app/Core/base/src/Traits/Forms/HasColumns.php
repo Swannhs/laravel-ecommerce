@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Traits\Forms;
+namespace App\Core\Base\Traits\Forms;
 
 use Illuminate\Support\HtmlString;
 

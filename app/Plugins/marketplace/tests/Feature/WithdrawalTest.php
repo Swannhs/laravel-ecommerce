@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Marketplace\Tests\Feature;
+namespace App\Plugins\Marketplace\Tests\Feature;
 
-use Botble\Base\Supports\BaseTestCase;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Models\VendorInfo;
-use Botble\Marketplace\Models\Withdrawal;
+use App\Core\Base\Supports\BaseTestCase;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Models\VendorInfo;
+use App\Plugins\Marketplace\Models\Withdrawal;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class WithdrawalTest extends BaseTestCase

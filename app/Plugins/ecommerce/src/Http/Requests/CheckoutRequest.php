@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
-use Botble\Base\Rules\EmailRule;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Support\Http\Requests\Request;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Requests\Concerns\HasPhoneFieldValidation;
+use App\Core\Base\Rules\EmailRule;
+use App\Plugins\Ecommerce\Enums\ShippingMethodEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Core\Support\Http\Requests\Request;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Rule;
 

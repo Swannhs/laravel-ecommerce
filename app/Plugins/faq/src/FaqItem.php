@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Faq;
+namespace App\Plugins\Faq;
 
 class FaqItem
 {

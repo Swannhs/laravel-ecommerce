@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Settings;
+namespace App\Plugins\Ecommerce\Http\Controllers\Settings;
 
-use Botble\Ecommerce\Forms\Settings\ProductReviewSettingForm;
-use Botble\Ecommerce\Http\Requests\Settings\ProductReviewSettingRequest;
+use App\Plugins\Ecommerce\Forms\Settings\ProductReviewSettingForm;
+use App\Plugins\Ecommerce\Http\Requests\Settings\ProductReviewSettingRequest;
 
 class ProductReviewSettingController extends SettingController
 {

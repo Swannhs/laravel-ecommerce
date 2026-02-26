@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Language\Http\Controllers\Settings;
+namespace App\Plugins\Language\Http\Controllers\Settings;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Language\Facades\Language;
-use Botble\Language\Http\Requests\Settings\LanguageSettingRequest;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Http\Requests\Settings\LanguageSettingRequest;
+use App\Core\Setting\Http\Controllers\SettingController;
 
 class LanguageSettingController extends SettingController
 {

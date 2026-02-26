@@ -3,7 +3,7 @@
 @push('header')
     @include('plugins/ecommerce::discounts.partials.trans')
 
-    {!! JsValidator::formRequest(Botble\Ecommerce\Http\Requests\DiscountRequest::class) !!}
+    {!! JsValidator::formRequest(App\Plugins\Ecommerce\Http\Requests\DiscountRequest::class) !!}
 @endpush
 
 @section('content')

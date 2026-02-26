@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Analytics\Http\Controllers\AnalyticsController;
-use Botble\Analytics\Http\Controllers\AnalyticsSettingJsonController;
-use Botble\Analytics\Http\Controllers\Settings\AnalyticsSettingController;
-use Botble\Base\Facades\AdminHelper;
+use App\Plugins\Analytics\Http\Controllers\AnalyticsController;
+use App\Plugins\Analytics\Http\Controllers\AnalyticsSettingJsonController;
+use App\Plugins\Analytics\Http\Controllers\Settings\AnalyticsSettingController;
+use App\Core\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {

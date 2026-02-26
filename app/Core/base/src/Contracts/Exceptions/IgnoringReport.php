@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Contracts\Exceptions;
+namespace App\Core\Base\Contracts\Exceptions;
 
 interface IgnoringReport
 {

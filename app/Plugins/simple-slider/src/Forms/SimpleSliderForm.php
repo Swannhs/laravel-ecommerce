@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\SimpleSlider\Forms;
+namespace App\Plugins\SimpleSlider\Forms;
 
-use Botble\Base\Forms\FieldOptions\DescriptionFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\StatusFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TextareaField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\SimpleSlider\Http\Requests\SimpleSliderRequest;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Tables\SimpleSliderItemTable;
-use Botble\Table\TableBuilder;
+use App\Core\Base\Forms\FieldOptions\DescriptionFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\StatusFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TextareaField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Plugins\SimpleSlider\Http\Requests\SimpleSliderRequest;
+use App\Plugins\SimpleSlider\Models\SimpleSlider;
+use App\Plugins\SimpleSlider\Tables\SimpleSliderItemTable;
+use App\Core\Table\TableBuilder;
 
 class SimpleSliderForm extends FormAbstract
 {

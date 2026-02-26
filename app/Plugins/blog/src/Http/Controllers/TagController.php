@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Blog\Forms\TagForm;
-use Botble\Blog\Http\Requests\TagRequest;
-use Botble\Blog\Models\Tag;
-use Botble\Blog\Tables\TagTable;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Plugins\Blog\Forms\TagForm;
+use App\Plugins\Blog\Http\Requests\TagRequest;
+use App\Plugins\Blog\Models\Tag;
+use App\Plugins\Blog\Tables\TagTable;
 use Illuminate\Support\Facades\Auth;
 
 class TagController extends BaseController

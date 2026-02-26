@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Location\Providers;
+namespace App\Plugins\Location\Providers;
 
-use Botble\Location\Events\ImportedCityEvent;
-use Botble\Location\Events\ImportedCountryEvent;
-use Botble\Location\Events\ImportedStateEvent;
-use Botble\Location\Listeners\CreateCityTranslationListener;
-use Botble\Location\Listeners\CreateCountryTranslationListener;
-use Botble\Location\Listeners\CreateStateTranslationListener;
+use App\Plugins\Location\Events\ImportedCityEvent;
+use App\Plugins\Location\Events\ImportedCountryEvent;
+use App\Plugins\Location\Events\ImportedStateEvent;
+use App\Plugins\Location\Listeners\CreateCityTranslationListener;
+use App\Plugins\Location\Listeners\CreateCountryTranslationListener;
+use App\Plugins\Location\Listeners\CreateStateTranslationListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseServiceProvider;
 
 class EventServiceProvider extends BaseServiceProvider

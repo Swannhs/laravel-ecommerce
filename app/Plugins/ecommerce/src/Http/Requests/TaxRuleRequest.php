@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace App\Plugins\Ecommerce\Http\Requests;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Ecommerce\Models\TaxRule;
-use Botble\Location\Rules\CityRule;
-use Botble\Location\Rules\StateRule;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Ecommerce\Models\TaxRule;
+use App\Plugins\Location\Rules\CityRule;
+use App\Plugins\Location\Rules\StateRule;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class TaxRuleRequest extends Request

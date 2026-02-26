@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace App\Plugins\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Models\GroupedProduct;
-use Botble\Ecommerce\Repositories\Interfaces\GroupedProductInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use App\Plugins\Ecommerce\Models\GroupedProduct;
+use App\Plugins\Ecommerce\Repositories\Interfaces\GroupedProductInterface;
+use App\Core\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class GroupedProductRepository extends RepositoriesAbstract implements GroupedProductInterface
 {

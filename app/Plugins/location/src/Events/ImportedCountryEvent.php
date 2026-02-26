@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Location\Events;
+namespace App\Plugins\Location\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Location\Models\Country;
+use App\Core\Base\Events\Event;
+use App\Plugins\Location\Models\Country;
 use Illuminate\Queue\SerializesModels;
 
 class ImportedCountryEvent extends Event

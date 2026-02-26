@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Listeners;
+namespace App\Packages\Slug\Listeners;
 
-use Botble\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Facades\SlugHelper;
 
 class CreateMissingSlug
 {

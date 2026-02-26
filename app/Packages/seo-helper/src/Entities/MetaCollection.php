@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace App\Packages\SeoHelper\Entities;
 
-use Botble\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
-use Botble\SeoHelper\Exceptions\InvalidArgumentException;
-use Botble\SeoHelper\Helpers\Meta;
+use App\Packages\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
+use App\Packages\SeoHelper\Exceptions\InvalidArgumentException;
+use App\Packages\SeoHelper\Helpers\Meta;
 
 class MetaCollection extends BaseMetaCollection
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Installer\InstallerStep;
+namespace App\Packages\Installer\InstallerStep;
 
-use Botble\Theme\Facades\Manager;
-use Botble\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\Manager;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;

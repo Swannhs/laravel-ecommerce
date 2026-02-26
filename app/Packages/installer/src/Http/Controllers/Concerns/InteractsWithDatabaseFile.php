@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Installer\Http\Controllers\Concerns;
+namespace App\Packages\Installer\Http\Controllers\Concerns;
 
-use Botble\Installer\Services\ImportDatabaseService;
+use App\Packages\Installer\Services\ImportDatabaseService;
 use Illuminate\Support\Facades\File;
 
 trait InteractsWithDatabaseFile

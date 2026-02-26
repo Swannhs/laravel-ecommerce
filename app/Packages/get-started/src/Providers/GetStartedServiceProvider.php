@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\GetStarted\Providers;
+namespace App\Packages\GetStarted\Providers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Dashboard\Events\RenderingDashboardWidgets;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Dashboard\Events\RenderingDashboardWidgets;
 use Illuminate\Support\Facades\Auth;
 
 class GetStartedServiceProvider extends ServiceProvider

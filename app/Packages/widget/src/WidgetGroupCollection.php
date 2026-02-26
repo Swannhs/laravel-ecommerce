@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Widget;
+namespace App\Packages\Widget;
 
-use Botble\Language\Facades\Language;
-use Botble\Theme\Facades\Theme;
-use Botble\Widget\Models\Widget;
+use App\Plugins\Language\Facades\Language;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Widget\Models\Widget;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\JsValidation\Javascript;
+namespace App\Core\JsValidation\Javascript;
 
-use Botble\JsValidation\JsValidatorFactory;
-use Botble\JsValidation\Support\DelegatedValidator;
-use Botble\JsValidation\Support\RuleListTrait;
-use Botble\JsValidation\Support\UseDelegatedValidatorTrait;
+use App\Core\JsValidation\JsValidatorFactory;
+use App\Core\JsValidation\Support\DelegatedValidator;
+use App\Core\JsValidation\Support\RuleListTrait;
+use App\Core\JsValidation\Support\UseDelegatedValidatorTrait;
 
 class RuleParser
 {

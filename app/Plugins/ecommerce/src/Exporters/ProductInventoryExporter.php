@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Exporters;
+namespace App\Plugins\Ecommerce\Exporters;
 
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\Ecommerce\Enums\StockStatusEnum;
-use Botble\Ecommerce\Models\Product;
+use App\Packages\DataSynchronize\Exporter\ExportColumn;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Plugins\Ecommerce\Enums\StockStatusEnum;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Support\Collection;
 
 class ProductInventoryExporter extends Exporter

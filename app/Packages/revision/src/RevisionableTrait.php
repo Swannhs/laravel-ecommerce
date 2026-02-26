@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Revision;
+namespace App\Packages\Revision;
 
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseModel;
 use DateTime;
 use Exception;
 use Illuminate\Database\Eloquent\Relations\MorphMany;

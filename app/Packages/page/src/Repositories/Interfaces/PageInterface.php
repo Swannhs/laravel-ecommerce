@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Page\Repositories\Interfaces;
+namespace App\Packages\Page\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use App\Core\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 

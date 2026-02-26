@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\Columns\Concerns;
+namespace App\Core\Table\Columns\Concerns;
 
-use Botble\Base\Facades\Html;
+use App\Core\Base\Facades\Html;
 use Closure;
 
 trait HasColor

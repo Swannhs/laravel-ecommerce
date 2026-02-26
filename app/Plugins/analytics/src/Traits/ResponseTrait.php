@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Analytics\Traits;
+namespace App\Plugins\Analytics\Traits;
 
-use Botble\Analytics\AnalyticsResponse;
+use App\Plugins\Analytics\AnalyticsResponse;
 use Google\Analytics\Data\V1beta\RunReportResponse;
 
 trait ResponseTrait

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Translation\Http\Controllers;
+namespace App\Plugins\Translation\Http\Controllers;
 
-use Botble\DataSynchronize\Http\Controllers\ImportController;
-use Botble\DataSynchronize\Importer\Importer;
-use Botble\Translation\Importers\ThemeTranslationImporter;
+use App\Packages\DataSynchronize\Http\Controllers\ImportController;
+use App\Packages\DataSynchronize\Importer\Importer;
+use App\Plugins\Translation\Importers\ThemeTranslationImporter;
 
 class ImportThemeTranslationController extends ImportController
 {

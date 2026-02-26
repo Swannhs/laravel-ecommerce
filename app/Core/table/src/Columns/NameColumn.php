@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Table\Columns;
+namespace App\Core\Table\Columns;
 
 class NameColumn extends LinkableColumn
 {

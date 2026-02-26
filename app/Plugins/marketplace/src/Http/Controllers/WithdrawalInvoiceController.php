@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers;
+namespace App\Plugins\Marketplace\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Marketplace\Enums\WithdrawalStatusEnum;
-use Botble\Marketplace\Models\Withdrawal;
-use Botble\Marketplace\Services\GeneratePayoutInvoiceService;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Marketplace\Enums\WithdrawalStatusEnum;
+use App\Plugins\Marketplace\Models\Withdrawal;
+use App\Plugins\Marketplace\Services\GeneratePayoutInvoiceService;
 use Illuminate\Http\Request;
 
 class WithdrawalInvoiceController extends BaseController

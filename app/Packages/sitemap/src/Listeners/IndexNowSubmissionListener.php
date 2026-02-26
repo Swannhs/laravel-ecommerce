@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Sitemap\Listeners;
+namespace App\Packages\Sitemap\Listeners;
 
-use Botble\Sitemap\Events\SitemapUpdatedEvent;
-use Botble\Sitemap\Jobs\IndexNowSubmissionJob;
-use Botble\Sitemap\Services\IndexNowService;
+use App\Packages\Sitemap\Events\SitemapUpdatedEvent;
+use App\Packages\Sitemap\Jobs\IndexNowSubmissionJob;
+use App\Packages\Sitemap\Services\IndexNowService;
 use Carbon\Carbon;
 
 class IndexNowSubmissionListener

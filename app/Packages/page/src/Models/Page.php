@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Page\Models;
+namespace App\Packages\Page\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Revision\RevisionableTrait;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Models\BaseModel;
+use App\Packages\Revision\RevisionableTrait;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Page extends BaseModel

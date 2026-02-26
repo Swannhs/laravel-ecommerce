@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Contact\Models;
+namespace App\Plugins\Contact\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Casts\SafeContent;
+use App\Core\Base\Models\BaseModel;
 
 class ContactReply extends BaseModel
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Faq\Providers;
+namespace App\Plugins\Faq\Providers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Faq\Listeners\DeletedContentListener;
-use Botble\Faq\Listeners\SaveFaqListener;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Plugins\Faq\Listeners\DeletedContentListener;
+use App\Plugins\Faq\Listeners\SaveFaqListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

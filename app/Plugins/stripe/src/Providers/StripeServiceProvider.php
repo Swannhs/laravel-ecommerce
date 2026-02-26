@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Stripe\Providers;
+namespace App\Plugins\Stripe\Providers;
 
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 

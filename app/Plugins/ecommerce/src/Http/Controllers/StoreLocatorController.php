@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Actions\DeleteResourceAction;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Forms\StoreLocatorForm;
-use Botble\Ecommerce\Http\Requests\StoreLocatorRequest;
-use Botble\Ecommerce\Models\StoreLocator;
-use Botble\Setting\Supports\SettingStore;
+use App\Core\Base\Http\Actions\DeleteResourceAction;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Forms\StoreLocatorForm;
+use App\Plugins\Ecommerce\Http\Requests\StoreLocatorRequest;
+use App\Plugins\Ecommerce\Models\StoreLocator;
+use App\Core\Setting\Supports\SettingStore;
 
 class StoreLocatorController extends BaseController
 {

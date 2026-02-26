@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Settings;
+namespace App\Plugins\Ecommerce\Forms\Settings;
 
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Requests\Settings\ReturnSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Requests\Settings\ReturnSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class ReturnSettingForm extends SettingForm
 {

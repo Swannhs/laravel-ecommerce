@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Optimize\Http\Middleware;
+namespace App\Packages\Optimize\Http\Middleware;
 
 class DeferJavascript extends PageSpeed
 {

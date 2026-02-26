@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace App\Core\Setting\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\Setting\Http\Controllers\Concerns\InteractsWithSettings;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Base\Supports\Breadcrumb;
+use App\Core\Setting\Http\Controllers\Concerns\InteractsWithSettings;
 
 abstract class SettingController extends BaseController
 {

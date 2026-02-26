@@ -35,7 +35,7 @@
         </a>
     </div>
     <div class="item-details">
-        {!! Botble\Menu\Forms\MenuNodeForm::createFromModel($row)->renderForm([], false, true, false) !!}
+        {!! App\Packages\Menu\Forms\MenuNodeForm::createFromModel($row)->renderForm([], false, true, false) !!}
         <div class="text-end mt-2">
             <a
                 class="btn btn-danger btn-remove btn-sm"

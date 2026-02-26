@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Resources;
+namespace App\Plugins\Ecommerce\Http\Resources;
 
-use Botble\Ecommerce\Cart\CartItem;
-use Botble\Media\Facades\RvMedia;
+use App\Plugins\Ecommerce\Cart\CartItem;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;

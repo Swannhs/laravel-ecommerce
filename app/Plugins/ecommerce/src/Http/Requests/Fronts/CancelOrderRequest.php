@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\Fronts;
+namespace App\Plugins\Ecommerce\Http\Requests\Fronts;
 
-use Botble\Ecommerce\Enums\OrderCancellationReasonEnum;
-use Botble\Support\Http\Requests\Request;
+use App\Plugins\Ecommerce\Enums\OrderCancellationReasonEnum;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CancelOrderRequest extends Request

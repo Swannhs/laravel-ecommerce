@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Sitemap;
+namespace App\Packages\Sitemap;
 
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Facades\BaseHelper;
 use Carbon\Carbon;
 use Datetime;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Optimize\Http\Controllers\Settings;
+namespace App\Packages\Optimize\Http\Controllers\Settings;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Optimize\Forms\Settings\OptimizeSettingForm;
-use Botble\Optimize\Http\Requests\OptimizeSettingRequest;
-use Botble\Setting\Http\Controllers\SettingController;
+use App\Core\Base\Http\Responses\BaseHttpResponse;
+use App\Packages\Optimize\Forms\Settings\OptimizeSettingForm;
+use App\Packages\Optimize\Http\Requests\OptimizeSettingRequest;
+use App\Core\Setting\Http\Controllers\SettingController;
 
 class OptimizeSettingController extends SettingController
 {

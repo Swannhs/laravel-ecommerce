@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Models\ProductCategory;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Models\ProductCategory;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Query\JoinClause;
 use Illuminate\Database\Schema\Blueprint;

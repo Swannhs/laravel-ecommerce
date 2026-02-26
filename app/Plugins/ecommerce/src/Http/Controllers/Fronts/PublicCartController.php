@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace App\Plugins\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\AdsTracking\FacebookPixel;
-use Botble\Ecommerce\AdsTracking\GoogleTagManager;
-use Botble\Ecommerce\Cart\Cart as CartInstance;
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Facades\Cart;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\OrderHelper;
-use Botble\Ecommerce\Http\Requests\CartRequest;
-use Botble\Ecommerce\Http\Requests\UpdateCartRequest;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Services\AbandonedCartService;
-use Botble\Ecommerce\Services\HandleApplyCouponService;
-use Botble\Ecommerce\Services\HandleApplyPromotionsService;
-use Botble\SeoHelper\Facades\SeoHelper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\AdsTracking\FacebookPixel;
+use App\Plugins\Ecommerce\AdsTracking\GoogleTagManager;
+use App\Plugins\Ecommerce\Cart\Cart as CartInstance;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Facades\Cart;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\OrderHelper;
+use App\Plugins\Ecommerce\Http\Requests\CartRequest;
+use App\Plugins\Ecommerce\Http\Requests\UpdateCartRequest;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Services\AbandonedCartService;
+use App\Plugins\Ecommerce\Services\HandleApplyCouponService;
+use App\Plugins\Ecommerce\Services\HandleApplyPromotionsService;
+use App\Packages\SeoHelper\Facades\SeoHelper;
+use App\Packages\Theme\Facades\Theme;
 use Exception;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;

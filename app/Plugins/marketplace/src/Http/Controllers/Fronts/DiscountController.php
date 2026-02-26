@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Marketplace\Http\Controllers\Fronts;
+namespace App\Plugins\Marketplace\Http\Controllers\Fronts;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Facades\Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Models\Discount;
-use Botble\JsValidation\Facades\JsValidator;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Http\Requests\Fronts\DiscountRequest;
-use Botble\Marketplace\Tables\DiscountTable;
+use App\Core\Base\Events\CreatedContentEvent;
+use App\Core\Base\Events\DeletedContentEvent;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Core\JsValidation\Facades\JsValidator;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Http\Requests\Fronts\DiscountRequest;
+use App\Plugins\Marketplace\Tables\DiscountTable;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

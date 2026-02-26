@@ -1,14 +1,14 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Ecommerce\Http\Controllers\ExportProductPriceController;
-use Botble\Ecommerce\Http\Controllers\ImportProductPriceController;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\Ecommerce\Http\Controllers\ExportProductPriceController;
+use App\Plugins\Ecommerce\Http\Controllers\ImportProductPriceController;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {
     Route::group(
         [
-            'namespace' => 'Botble\Ecommerce\Http\Controllers',
+            'namespace' => 'App\Plugins\Ecommerce\Http\Controllers',
             'prefix' => 'ecommerce',
             'as' => 'ecommerce.',
         ],

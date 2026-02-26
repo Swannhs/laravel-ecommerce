@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table\Http\Controllers;
+namespace App\Core\Table\Http\Controllers;
 
-use Botble\Table\Http\Requests\FilterRequest;
+use App\Core\Table\Http\Requests\FilterRequest;
 use Illuminate\Support\Arr;
 
 class TableFilterController extends TableController

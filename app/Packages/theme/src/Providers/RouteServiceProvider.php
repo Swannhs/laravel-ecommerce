@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Providers;
+namespace App\Packages\Theme\Providers;
 
-use Botble\Theme\Facades\Theme;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider

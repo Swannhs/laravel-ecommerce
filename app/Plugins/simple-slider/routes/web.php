@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
+use App\Core\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Botble\SimpleSlider\Http\Controllers'], function (): void {
+Route::group(['namespace' => 'App\Plugins\SimpleSlider\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
         Route::group(['prefix' => 'simple-sliders', 'as' => 'simple-slider.'], function (): void {
             Route::resource('', 'SimpleSliderController')->parameters(['' => 'simple-slider']);

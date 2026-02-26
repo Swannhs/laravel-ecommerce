@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\ACL\Forms\Auth;
+namespace App\Core\ACL\Forms\Auth;
 
-use Botble\ACL\Http\Requests\ForgotPasswordRequest;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\FieldOptions\TextFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\Fields\TextField;
+use App\Core\ACL\Http\Requests\ForgotPasswordRequest;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\FieldOptions\TextFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\Fields\TextField;
 
 class ForgotPasswordForm extends AuthForm
 {

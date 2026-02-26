@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Http\Requests\Vendor;
+namespace App\Plugins\Marketplace\Http\Requests\Vendor;
 
-use Botble\Base\Supports\Language;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Supports\Language;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class LanguageSettingRequest extends Request

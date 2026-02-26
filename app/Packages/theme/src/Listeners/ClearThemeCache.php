@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Listeners;
+namespace App\Packages\Theme\Listeners;
 
-use Botble\Base\Events\CacheCleared;
-use Botble\Theme\Facades\Manager as ThemeManager;
+use App\Core\Base\Events\CacheCleared;
+use App\Packages\Theme\Facades\Manager as ThemeManager;
 
 class ClearThemeCache
 {

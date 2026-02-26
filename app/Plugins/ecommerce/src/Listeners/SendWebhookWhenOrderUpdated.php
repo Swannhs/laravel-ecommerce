@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace App\Plugins\Ecommerce\Listeners;
 
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Ecommerce\Models\Order;
+use App\Core\Base\Events\UpdatedContentEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Ecommerce\Models\Order;
 use Exception;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\URL;

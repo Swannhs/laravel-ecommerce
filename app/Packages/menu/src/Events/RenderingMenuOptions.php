@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Events;
+namespace App\Packages\Menu\Events;
 
-use Botble\Base\Events\Event;
+use App\Core\Base\Events\Event;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class RenderingMenuOptions extends Event

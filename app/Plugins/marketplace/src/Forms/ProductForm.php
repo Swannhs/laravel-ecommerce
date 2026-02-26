@@ -1,40 +1,40 @@
 <?php
 
-namespace Botble\Marketplace\Forms;
+namespace App\Plugins\Marketplace\Forms;
 
-use Botble\Base\Forms\FieldOptions\ContentFieldOption;
-use Botble\Base\Forms\FieldOptions\EditorFieldOption;
-use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
-use Botble\Base\Forms\FieldOptions\NameFieldOption;
-use Botble\Base\Forms\FieldOptions\NumberFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\MediaImageField;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\NumberField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Base\Forms\Fields\TagField;
-use Botble\Base\Forms\Fields\TextField;
-use Botble\Base\Forms\Fields\TreeCategoryField;
-use Botble\Base\Forms\MetaBox;
-use Botble\Ecommerce\Enums\GlobalOptionEnum;
-use Botble\Ecommerce\Enums\ProductTypeEnum;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Facades\ProductCategoryHelper;
-use Botble\Ecommerce\Forms\ProductForm as BaseProductForm;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\GlobalOption;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Models\ProductCollection;
-use Botble\Ecommerce\Models\ProductLabel;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Models\SpecificationTable;
-use Botble\Ecommerce\Models\Tax;
-use Botble\Marketplace\Facades\MarketplaceHelper;
-use Botble\Marketplace\Forms\Fields\CustomEditorField;
-use Botble\Marketplace\Forms\Fields\CustomImagesField;
-use Botble\Marketplace\Http\Requests\ProductRequest;
-use Botble\Marketplace\Tables\ProductVariationTable;
+use App\Core\Base\Forms\FieldOptions\ContentFieldOption;
+use App\Core\Base\Forms\FieldOptions\EditorFieldOption;
+use App\Core\Base\Forms\FieldOptions\MediaImageFieldOption;
+use App\Core\Base\Forms\FieldOptions\NameFieldOption;
+use App\Core\Base\Forms\FieldOptions\NumberFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\MediaImageField;
+use App\Core\Base\Forms\Fields\MultiCheckListField;
+use App\Core\Base\Forms\Fields\NumberField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Core\Base\Forms\Fields\TagField;
+use App\Core\Base\Forms\Fields\TextField;
+use App\Core\Base\Forms\Fields\TreeCategoryField;
+use App\Core\Base\Forms\MetaBox;
+use App\Plugins\Ecommerce\Enums\GlobalOptionEnum;
+use App\Plugins\Ecommerce\Enums\ProductTypeEnum;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Facades\ProductCategoryHelper;
+use App\Plugins\Ecommerce\Forms\ProductForm as BaseProductForm;
+use App\Plugins\Ecommerce\Models\Brand;
+use App\Plugins\Ecommerce\Models\GlobalOption;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
+use App\Plugins\Ecommerce\Models\ProductCollection;
+use App\Plugins\Ecommerce\Models\ProductLabel;
+use App\Plugins\Ecommerce\Models\ProductVariation;
+use App\Plugins\Ecommerce\Models\SpecificationTable;
+use App\Plugins\Ecommerce\Models\Tax;
+use App\Plugins\Marketplace\Facades\MarketplaceHelper;
+use App\Plugins\Marketplace\Forms\Fields\CustomEditorField;
+use App\Plugins\Marketplace\Forms\Fields\CustomImagesField;
+use App\Plugins\Marketplace\Http\Requests\ProductRequest;
+use App\Plugins\Marketplace\Tables\ProductVariationTable;
 
 class ProductForm extends BaseProductForm
 {

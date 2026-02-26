@@ -1,8 +1,8 @@
 {
     "id": "botble/faq",
     "name": "FAQ",
-    "namespace": "Botble\\Faq\\",
-    "provider": "Botble\\Faq\\Providers\\FaqServiceProvider",
+    "namespace": "App\\Plugins\\Faq\\",
+    "provider": "App\\Plugins\\Faq\\Providers\\FaqServiceProvider",
     "author": "Botble Technologies",
     "url": "https://botble.com",
     "version": "2.0.8",

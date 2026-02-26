@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\API;
+namespace App\Plugins\Ecommerce\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Ecommerce\Http\Requests\API\CreateAddressRequest;
-use Botble\Ecommerce\Http\Requests\API\UpdateAddressRequest;
-use Botble\Ecommerce\Http\Resources\API\AddressResource;
-use Botble\Ecommerce\Models\Address;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Plugins\Ecommerce\Http\Requests\API\CreateAddressRequest;
+use App\Plugins\Ecommerce\Http\Requests\API\UpdateAddressRequest;
+use App\Plugins\Ecommerce\Http\Resources\API\AddressResource;
+use App\Plugins\Ecommerce\Models\Address;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

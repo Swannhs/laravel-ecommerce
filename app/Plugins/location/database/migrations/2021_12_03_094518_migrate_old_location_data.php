@@ -1,10 +1,10 @@
 <?php
 
-use Botble\Language\Facades\Language;
-use Botble\Language\Models\LanguageMeta;
-use Botble\Location\Models\City;
-use Botble\Location\Models\Country;
-use Botble\Location\Models\State;
+use App\Plugins\Language\Facades\Language;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Plugins\Location\Models\City;
+use App\Plugins\Location\Models\Country;
+use App\Plugins\Location\Models\State;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;

@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\LanguageAdvanced\Http\Controllers\LanguageAdvancedController;
-use Botble\LanguageAdvanced\Http\Controllers\TranslationExportController;
-use Botble\LanguageAdvanced\Http\Controllers\TranslationImportController;
+use App\Core\Base\Facades\AdminHelper;
+use App\Plugins\LanguageAdvanced\Http\Controllers\LanguageAdvancedController;
+use App\Plugins\LanguageAdvanced\Http\Controllers\TranslationExportController;
+use App\Plugins\LanguageAdvanced\Http\Controllers\TranslationImportController;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {

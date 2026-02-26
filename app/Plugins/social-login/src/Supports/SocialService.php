@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SocialLogin\Supports;
+namespace App\Plugins\SocialLogin\Supports;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\SocialLogin\Models\SocialLogin;
-use Botble\SocialLogin\Services\SocialLoginService;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\SocialLogin\Models\SocialLogin;
+use App\Plugins\SocialLogin\Services\SocialLoginService;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;

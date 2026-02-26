@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Shortcode\Providers;
+namespace App\Packages\Shortcode\Providers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Shortcode\Compilers\ShortcodeCompiler;
-use Botble\Shortcode\Shortcode;
-use Botble\Shortcode\View\Factory;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Packages\Shortcode\Compilers\ShortcodeCompiler;
+use App\Packages\Shortcode\Shortcode;
+use App\Packages\Shortcode\View\Factory;
 use Illuminate\Support\Arr;
 
 class ShortcodeServiceProvider extends ServiceProvider

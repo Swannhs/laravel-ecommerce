@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\PluginManagement\Providers;
+namespace App\Packages\PluginManagement\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\PluginManagement\Commands\ClearCompiledCommand;
-use Botble\PluginManagement\Commands\IlluminateClearCompiledCommand as OverrideIlluminateClearCompiledCommand;
-use Botble\PluginManagement\Commands\PackageDiscoverCommand;
-use Botble\PluginManagement\Commands\PluginActivateAllCommand;
-use Botble\PluginManagement\Commands\PluginActivateCommand;
-use Botble\PluginManagement\Commands\PluginAssetsPublishCommand;
-use Botble\PluginManagement\Commands\PluginDeactivateAllCommand;
-use Botble\PluginManagement\Commands\PluginDeactivateCommand;
-use Botble\PluginManagement\Commands\PluginDiscoverCommand;
-use Botble\PluginManagement\Commands\PluginInstallFromMarketplaceCommand;
-use Botble\PluginManagement\Commands\PluginListCommand;
-use Botble\PluginManagement\Commands\PluginRemoveAllCommand;
-use Botble\PluginManagement\Commands\PluginRemoveCommand;
-use Botble\PluginManagement\Commands\PluginUpdateVersionInfoCommand;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Packages\PluginManagement\Commands\ClearCompiledCommand;
+use App\Packages\PluginManagement\Commands\IlluminateClearCompiledCommand as OverrideIlluminateClearCompiledCommand;
+use App\Packages\PluginManagement\Commands\PackageDiscoverCommand;
+use App\Packages\PluginManagement\Commands\PluginActivateAllCommand;
+use App\Packages\PluginManagement\Commands\PluginActivateCommand;
+use App\Packages\PluginManagement\Commands\PluginAssetsPublishCommand;
+use App\Packages\PluginManagement\Commands\PluginDeactivateAllCommand;
+use App\Packages\PluginManagement\Commands\PluginDeactivateCommand;
+use App\Packages\PluginManagement\Commands\PluginDiscoverCommand;
+use App\Packages\PluginManagement\Commands\PluginInstallFromMarketplaceCommand;
+use App\Packages\PluginManagement\Commands\PluginListCommand;
+use App\Packages\PluginManagement\Commands\PluginRemoveAllCommand;
+use App\Packages\PluginManagement\Commands\PluginRemoveCommand;
+use App\Packages\PluginManagement\Commands\PluginUpdateVersionInfoCommand;
 use Illuminate\Foundation\Console\ClearCompiledCommand as IlluminateClearCompiledCommand;
 use Illuminate\Foundation\Console\PackageDiscoverCommand as IlluminatePackageDiscoverCommand;
 

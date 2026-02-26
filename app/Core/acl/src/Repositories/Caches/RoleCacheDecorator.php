@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Repositories\Caches;
+namespace App\Core\ACL\Repositories\Caches;
 
-use Botble\ACL\Repositories\Eloquent\RoleRepository;
+use App\Core\ACL\Repositories\Eloquent\RoleRepository;
 
 /**
  * @deprecated

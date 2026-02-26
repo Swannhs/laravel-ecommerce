@@ -1,6 +1,6 @@
 <?php
 
-use Botble\PluginManagement\Services\PluginService;
+use App\Packages\PluginManagement\Services\PluginService;
 
 if (! function_exists('plugin_path')) {
     function plugin_path(?string $path = null): string

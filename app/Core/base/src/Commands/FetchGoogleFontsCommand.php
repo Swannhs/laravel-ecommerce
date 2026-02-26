@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Base\Commands\Traits\ValidateCommandInput;
+use App\Core\Base\Commands\Traits\ValidateCommandInput;
 use Exception;
 use Illuminate\Console\Command;
 

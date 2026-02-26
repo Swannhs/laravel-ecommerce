@@ -1,8 +1,8 @@
 {
     "id": "botble/audit-log",
     "name": "Audit Log",
-    "namespace": "Botble\\AuditLog\\",
-    "provider": "Botble\\AuditLog\\Providers\\AuditLogServiceProvider",
+    "namespace": "App\\Plugins\\AuditLog\\",
+    "provider": "App\\Plugins\\AuditLog\\Providers\\AuditLogServiceProvider",
     "author": "Botble Technologies",
     "url": "https://botble.com",
     "version": "2.0.8",

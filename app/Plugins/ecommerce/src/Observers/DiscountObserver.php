@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Observers;
+namespace App\Plugins\Ecommerce\Observers;
 
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Services\PromotionCacheService;
+use App\Plugins\Ecommerce\Models\Discount;
+use App\Plugins\Ecommerce\Services\PromotionCacheService;
 
 class DiscountObserver
 {

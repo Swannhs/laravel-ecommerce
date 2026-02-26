@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers\API;
+namespace App\Plugins\Blog\Http\Controllers\API;
 
-use Botble\Api\Http\Controllers\BaseApiController;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Blog\Http\Resources\ListPostResource;
-use Botble\Blog\Http\Resources\PostResource;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Blog\Supports\FilterPost;
-use Botble\Slug\Facades\SlugHelper;
+use App\Packages\Api\Http\Controllers\BaseApiController;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Blog\Http\Resources\ListPostResource;
+use App\Plugins\Blog\Http\Resources\PostResource;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Repositories\Interfaces\PostInterface;
+use App\Plugins\Blog\Supports\FilterPost;
+use App\Packages\Slug\Facades\SlugHelper;
 use Illuminate\Http\Request;
 
 class PostController extends BaseApiController

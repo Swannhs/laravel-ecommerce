@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace App\Packages\Theme\Supports;
 
-use Botble\Theme\Events\RenderingAdminBar;
+use App\Packages\Theme\Events\RenderingAdminBar;
 use Illuminate\Support\Facades\Auth;
 
 class AdminBar

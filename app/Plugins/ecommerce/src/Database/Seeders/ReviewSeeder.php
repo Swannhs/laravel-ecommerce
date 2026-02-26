@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Database\Seeders;
+namespace App\Plugins\Ecommerce\Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\Review;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Review;
 use Illuminate\Support\Facades\DB;
 
 class ReviewSeeder extends BaseSeeder

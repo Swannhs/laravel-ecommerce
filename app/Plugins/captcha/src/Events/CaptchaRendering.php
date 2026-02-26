@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Captcha\Events;
+namespace App\Plugins\Captcha\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Marketplace\Listeners;
+namespace App\Plugins\Marketplace\Listeners;
 
-use Botble\Ecommerce\Models\Product;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Support\Facades\Cache;
 
 class ClearVendorCategoriesCacheOnSync

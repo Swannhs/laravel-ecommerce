@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Installer\Enums;
+namespace App\Packages\Installer\Enums;
 
-use Botble\Base\Supports\Enum;
+use App\Core\Base\Supports\Enum;
 
 /**
  * @method static DatabaseConnectionsEnum MYSQL()

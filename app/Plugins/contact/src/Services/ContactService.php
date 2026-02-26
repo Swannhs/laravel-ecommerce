@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Contact\Services;
+namespace App\Plugins\Contact\Services;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Contact\Enums\CustomFieldType;
-use Botble\Contact\Events\SentContactEvent;
-use Botble\Contact\Forms\Fronts\ContactForm;
-use Botble\Contact\Http\Requests\ContactRequest;
-use Botble\Contact\Models\CustomField;
+use App\Core\Base\Facades\BaseHelper;
+use App\Plugins\Contact\Enums\CustomFieldType;
+use App\Plugins\Contact\Events\SentContactEvent;
+use App\Plugins\Contact\Forms\Fronts\ContactForm;
+use App\Plugins\Contact\Http\Requests\ContactRequest;
+use App\Plugins\Contact\Models\CustomField;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

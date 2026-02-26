@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Http\Middleware\RequiresJsonRequestMiddleware;
-use Botble\Shortcode\Http\Controllers\ShortcodeController;
-use Botble\Shortcode\Http\Middleware\ShortcodePerformanceMiddleware;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Http\Middleware\RequiresJsonRequestMiddleware;
+use App\Packages\Shortcode\Http\Controllers\ShortcodeController;
+use App\Packages\Shortcode\Http\Middleware\ShortcodePerformanceMiddleware;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Support\Facades\Route;
 

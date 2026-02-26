@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Ads\Tables;
+namespace App\Plugins\Ads\Tables;
 
-use Botble\Ads\Models\Ads;
-use Botble\Base\Facades\Html;
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\BulkChanges\DateBulkChange;
-use Botble\Table\BulkChanges\NameBulkChange;
-use Botble\Table\BulkChanges\StatusBulkChange;
-use Botble\Table\Columns\Column;
-use Botble\Table\Columns\DateColumn;
-use Botble\Table\Columns\FormattedColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\ImageColumn;
-use Botble\Table\Columns\NameColumn;
-use Botble\Table\Columns\StatusColumn;
-use Botble\Table\HeaderActions\CreateHeaderAction;
+use App\Plugins\Ads\Models\Ads;
+use App\Core\Base\Facades\Html;
+use App\Core\Table\Abstracts\TableAbstract;
+use App\Core\Table\Actions\DeleteAction;
+use App\Core\Table\Actions\EditAction;
+use App\Core\Table\BulkActions\DeleteBulkAction;
+use App\Core\Table\BulkChanges\DateBulkChange;
+use App\Core\Table\BulkChanges\NameBulkChange;
+use App\Core\Table\BulkChanges\StatusBulkChange;
+use App\Core\Table\Columns\Column;
+use App\Core\Table\Columns\DateColumn;
+use App\Core\Table\Columns\FormattedColumn;
+use App\Core\Table\Columns\IdColumn;
+use App\Core\Table\Columns\ImageColumn;
+use App\Core\Table\Columns\NameColumn;
+use App\Core\Table\Columns\StatusColumn;
+use App\Core\Table\HeaderActions\CreateHeaderAction;
 
 class AdsTable extends TableAbstract
 {

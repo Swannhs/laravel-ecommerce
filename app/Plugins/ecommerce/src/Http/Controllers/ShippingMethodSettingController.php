@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace App\Plugins\Ecommerce\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Ecommerce\Services\HandleShippingFeeService;
-use Botble\Setting\Supports\SettingStore;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\Ecommerce\Services\HandleShippingFeeService;
+use App\Core\Setting\Supports\SettingStore;
+use App\Core\Support\Services\Cache\Cache;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

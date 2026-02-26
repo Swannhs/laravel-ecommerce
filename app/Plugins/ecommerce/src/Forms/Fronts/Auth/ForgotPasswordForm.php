@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fronts\Auth;
+namespace App\Plugins\Ecommerce\Forms\Fronts\Auth;
 
-use Botble\Base\Forms\Fields\EmailField;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
-use Botble\Ecommerce\Http\Requests\Fronts\Auth\ForgotPasswordRequest;
+use App\Core\Base\Forms\Fields\EmailField;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Plugins\Ecommerce\Forms\Fronts\Auth\FieldOptions\EmailFieldOption;
+use App\Plugins\Ecommerce\Http\Requests\Fronts\Auth\ForgotPasswordRequest;
 
 class ForgotPasswordForm extends AuthForm
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Forms\Fields;
+namespace App\Packages\Slug\Forms\Fields;
 
-use Botble\Base\Forms\FormField;
+use App\Core\Base\Forms\FormField;
 
 class PermalinkField extends FormField
 {

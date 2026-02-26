@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace App\Core\Base\Http\Controllers;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Requests\ClearCacheRequest;
-use Botble\Base\Services\ClearCacheService;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Http\Requests\ClearCacheRequest;
+use App\Core\Base\Services\ClearCacheService;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\File;
 

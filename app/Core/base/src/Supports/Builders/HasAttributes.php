@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports\Builders;
+namespace App\Core\Base\Supports\Builders;
 
 use Illuminate\Support\Arr;
 

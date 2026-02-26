@@ -1,26 +1,26 @@
 <?php
 
-namespace Botble\Setting\Providers;
+namespace App\Core\Setting\Providers;
 
-use Botble\Base\Events\PanelSectionsRendering;
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Facades\EmailHandler;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\PanelSections\System\SystemPanelSection;
-use Botble\Base\Supports\DashboardMenuItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Setting\Commands\CronJobTestCommand;
-use Botble\Setting\Facades\Setting;
-use Botble\Setting\Listeners\PushDashboardMenuToOtherSectionPanel;
-use Botble\Setting\Models\Setting as SettingModel;
-use Botble\Setting\PanelSections\SettingCommonPanelSection;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
-use Botble\Setting\Repositories\Eloquent\SettingRepository;
-use Botble\Setting\Repositories\Interfaces\SettingInterface;
-use Botble\Setting\Supports\DatabaseSettingStore;
-use Botble\Setting\Supports\SettingStore;
+use App\Core\Base\Events\PanelSectionsRendering;
+use App\Core\Base\Facades\DashboardMenu;
+use App\Core\Base\Facades\EmailHandler;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\System\SystemPanelSection;
+use App\Core\Base\Supports\DashboardMenuItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Setting\Commands\CronJobTestCommand;
+use App\Core\Setting\Facades\Setting;
+use App\Core\Setting\Listeners\PushDashboardMenuToOtherSectionPanel;
+use App\Core\Setting\Models\Setting as SettingModel;
+use App\Core\Setting\PanelSections\SettingCommonPanelSection;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
+use App\Core\Setting\Repositories\Eloquent\SettingRepository;
+use App\Core\Setting\Repositories\Interfaces\SettingInterface;
+use App\Core\Setting\Supports\DatabaseSettingStore;
+use App\Core\Setting\Supports\SettingStore;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Foundation\AliasLoader;

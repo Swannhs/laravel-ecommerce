@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Marketplace\Database\Seeders\Traits;
+namespace App\Plugins\Marketplace\Database\Seeders\Traits;
 
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Product;
-use Botble\Marketplace\Models\Store;
-use Botble\Marketplace\Models\VendorInfo;
-use Botble\Slug\Facades\SlugHelper;
+use App\Plugins\Ecommerce\Models\Customer;
+use App\Plugins\Ecommerce\Models\Product;
+use App\Plugins\Marketplace\Models\Store;
+use App\Plugins\Marketplace\Models\VendorInfo;
+use App\Packages\Slug\Facades\SlugHelper;
 
 trait HasMarketplaceSeeder
 {

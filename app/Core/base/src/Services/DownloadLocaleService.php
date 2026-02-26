@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Services;
+namespace App\Core\Base\Services;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Zipper;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Zipper;
+use App\Packages\Theme\Facades\Theme;
 use Exception;
 use GuzzleHttp\Psr7\Utils;
 use Illuminate\Support\Facades\File;

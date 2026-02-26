@@ -1,22 +1,22 @@
 <?php
 
-use Botble\Base\Facades\AdminHelper;
-use Botble\Base\Http\Middleware\RequiresJsonRequestMiddleware;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Ecommerce\Http\Controllers\ExportProductCategoryController;
-use Botble\Ecommerce\Http\Controllers\Fronts\GuestPaymentProofController;
-use Botble\Ecommerce\Http\Controllers\Fronts\PublicUpdateCheckoutController;
-use Botble\Ecommerce\Http\Controllers\Fronts\PublicUpdateTaxCheckoutController;
-use Botble\Ecommerce\Http\Controllers\Fronts\QuickShopController;
-use Botble\Ecommerce\Http\Controllers\Fronts\QuickViewController;
-use Botble\Ecommerce\Http\Controllers\ImportProductCategoryController;
-use Botble\Ecommerce\Http\Controllers\OrderExportController;
-use Botble\Theme\Events\ThemeRoutingBeforeEvent;
-use Botble\Theme\Facades\Theme;
+use App\Core\Base\Facades\AdminHelper;
+use App\Core\Base\Http\Middleware\RequiresJsonRequestMiddleware;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Plugins\Ecommerce\Http\Controllers\ExportProductCategoryController;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\GuestPaymentProofController;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\PublicUpdateCheckoutController;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\PublicUpdateTaxCheckoutController;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\QuickShopController;
+use App\Plugins\Ecommerce\Http\Controllers\Fronts\QuickViewController;
+use App\Plugins\Ecommerce\Http\Controllers\ImportProductCategoryController;
+use App\Plugins\Ecommerce\Http\Controllers\OrderExportController;
+use App\Packages\Theme\Events\ThemeRoutingBeforeEvent;
+use App\Packages\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function (): void {
-    Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
+    Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers', 'prefix' => 'ecommerce'], function (): void {
         Route::post('update-currencies-from-exchange-api', [
             'as' => 'ecommerce.setting.update-currencies-from-exchange-api',
             'uses' => 'EcommerceController@updateCurrenciesFromExchangeApi',
@@ -228,7 +228,7 @@ AdminHelper::registerRoutes(function (): void {
 
 Theme::registerRoutes(function (): void {
     app('events')->listen(ThemeRoutingBeforeEvent::class, function (): void {
-        Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Fronts'], function (): void {
+        Route::group(['namespace' => 'App\Plugins\Ecommerce\Http\Controllers\Fronts'], function (): void {
             Route::get(EcommerceHelper::getPageSlug('product_listing'), [
                 'uses' => 'PublicProductController@getProducts',
                 'as' => 'public.products',

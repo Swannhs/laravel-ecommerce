@@ -92,7 +92,7 @@
                                     {{ trans('plugins/ecommerce::order.return_reason') }}
                                     <span class="text-danger">*</span>
                                 </label>
-                                {!! Form::select('reason', array_filter(Botble\Ecommerce\Enums\OrderReturnReasonEnum::labels()), old('reason'), [
+                                {!! Form::select('reason', array_filter(App\Plugins\Ecommerce\Enums\OrderReturnReasonEnum::labels()), old('reason'), [
                                     'class' => 'order-return-reason-select form-select',
                                     'placeholder' => trans('plugins/ecommerce::ecommerce.choose_reason'),
                                 ]) !!}
@@ -233,7 +233,7 @@
                                                             </label>
                                                             {!! Form::select(
                                                                 'return_items[' . $key . '][reason]',
-                                                                array_filter(Botble\Ecommerce\Enums\OrderReturnReasonEnum::labels()),
+                                                                array_filter(App\Plugins\Ecommerce\Enums\OrderReturnReasonEnum::labels()),
                                                                 old('return_items.' . $key . '.reason'),
                                                                 [
                                                                     'class' => 'form-select form-select-sm',

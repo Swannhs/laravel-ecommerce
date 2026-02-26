@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Database\Traits;
+namespace App\Packages\Widget\Database\Traits;
 
-use Botble\Widget\Models\Widget;
+use App\Packages\Widget\Models\Widget;
 
 trait HasWidgetSeeder
 {

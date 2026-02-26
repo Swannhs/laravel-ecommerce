@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Widgets;
+namespace App\Plugins\Ecommerce\Widgets;
 
-use Botble\Base\Widgets\Html;
-use Botble\Ecommerce\Models\Order;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use App\Core\Base\Widgets\Html;
+use App\Plugins\Ecommerce\Models\Order;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
 use Carbon\CarbonPeriod;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;

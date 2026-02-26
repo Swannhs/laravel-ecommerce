@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Location\Rules;
+namespace App\Plugins\Location\Rules;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Location\Models\City;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Location\Models\City;
 use Illuminate\Contracts\Validation\DataAwareRule;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Arr;

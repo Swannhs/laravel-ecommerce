@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Marketplace\Models;
+namespace App\Plugins\Marketplace\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Models\ProductCategory;
+use App\Core\Base\Models\BaseModel;
+use App\Plugins\Ecommerce\Models\ProductCategory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class CategoryCommission extends BaseModel

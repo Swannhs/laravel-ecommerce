@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Exporters;
+namespace App\Plugins\Ecommerce\Exporters;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\ExportCounter;
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Media\Facades\RvMedia;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Packages\DataSynchronize\Exporter\ExportColumn;
+use App\Packages\DataSynchronize\Exporter\ExportCounter;
+use App\Packages\DataSynchronize\Exporter\Exporter;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Core\Media\Facades\RvMedia;
 use Illuminate\Support\Collection;
 
 class ProductCategoryExporter extends Exporter

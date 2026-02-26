@@ -1,5 +1,5 @@
 <?php
 
-use Botble\Menu\Facades\Menu;
+use App\Packages\Menu\Facades\Menu;
 
 app()->booted(fn () => Menu::useMenuItemIconImage());

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace App\Plugins\Ecommerce\Supports;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Language\Facades\Language;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Support\Services\Cache\Cache;
+use App\Core\Base\Enums\BaseStatusEnum;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Plugins\Language\Facades\Language;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Core\Support\Services\Cache\Cache;
 use Carbon\Carbon;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\JoinClause;

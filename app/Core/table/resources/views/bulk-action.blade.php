@@ -1,6 +1,6 @@
 @php
-    /** @var Botble\Table\Actions\Action $action */
-    /** @var Botble\Table\Abstracts\TableAbstract $table */
+    /** @var App\Core\Table\Actions\Action $action */
+    /** @var App\Core\Table\Abstracts\TableAbstract $table */
 @endphp
 
 <x-core::dropdown.item

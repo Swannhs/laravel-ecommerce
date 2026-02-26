@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SocialLogin\Http\Controllers;
+namespace App\Plugins\SocialLogin\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\SocialLogin\Supports\FacebookDataDeletionSignedRequestParser;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Plugins\SocialLogin\Supports\FacebookDataDeletionSignedRequestParser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

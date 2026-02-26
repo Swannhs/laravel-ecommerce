@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests\Fronts;
+namespace App\Plugins\Ecommerce\Http\Requests\Fronts;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Rules\EmailRule;
-use Botble\Ecommerce\Facades\EcommerceHelper;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Rules\EmailRule;
+use App\Plugins\Ecommerce\Facades\EcommerceHelper;
+use App\Core\Support\Http\Requests\Request;
 
 class OrderTrackingRequest extends Request
 {

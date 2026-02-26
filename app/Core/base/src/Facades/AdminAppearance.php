@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace App\Core\Base\Facades;
 
-use Botble\Base\Supports\AdminAppearance as BaseAdminAppearance;
+use App\Core\Base\Supports\AdminAppearance as BaseAdminAppearance;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static static forUser(\Illuminate\Contracts\Auth\Authenticatable|\Botble\ACL\Contracts\HasPreferences $user)
+ * @method static static forUser(\Illuminate\Contracts\Auth\Authenticatable|\App\Core\ACL\Contracts\HasPreferences $user)
  * @method static static forCurrentUser(string|null $guard = null)
  * @method static string getLocale()
  * @method static string getLocaleDirection()
@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string getCustomCSS()
  * @method static string getCustomJS(string $location)
  *
- * @see \Botble\Base\Supports\AdminAppearance
+ * @see \App\Core\Base\Supports\AdminAppearance
  */
 class AdminAppearance extends Facade
 {

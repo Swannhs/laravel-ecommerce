@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Captcha;
+namespace App\Plugins\Captcha;
 
-use Botble\Captcha\Contracts\Captcha as CaptchaContract;
-use Botble\Captcha\Events\CaptchaRendered;
-use Botble\Captcha\Events\CaptchaRendering;
+use App\Plugins\Captcha\Contracts\Captcha as CaptchaContract;
+use App\Plugins\Captcha\Events\CaptchaRendered;
+use App\Plugins\Captcha\Events\CaptchaRendering;
 use Illuminate\Support\Facades\Http;
 
 class Captcha extends CaptchaContract

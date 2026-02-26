@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\ACL\Forms\Auth;
+namespace App\Core\ACL\Forms\Auth;
 
-use Botble\Base\Facades\Assets;
-use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
-use Botble\Base\Forms\Fields\HtmlField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Models\BaseModel;
+use App\Core\Base\Facades\Assets;
+use App\Core\Base\Forms\FieldOptions\HtmlFieldOption;
+use App\Core\Base\Forms\Fields\HtmlField;
+use App\Core\Base\Forms\FormAbstract;
+use App\Core\Base\Models\BaseModel;
 
 class AuthForm extends FormAbstract
 {

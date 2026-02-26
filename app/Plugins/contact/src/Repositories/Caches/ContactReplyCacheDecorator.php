@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Repositories\Caches;
+namespace App\Plugins\Contact\Repositories\Caches;
 
-use Botble\Contact\Repositories\Eloquent\ContactReplyRepository;
+use App\Plugins\Contact\Repositories\Eloquent\ContactReplyRepository;
 
 /**
  * @deprecated

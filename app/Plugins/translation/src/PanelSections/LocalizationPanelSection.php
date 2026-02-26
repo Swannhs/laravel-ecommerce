@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Translation\PanelSections;
+namespace App\Plugins\Translation\PanelSections;
 
-use Botble\Base\PanelSections\PanelSection;
-use Botble\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\PanelSections\PanelSection;
+use App\Core\Base\PanelSections\PanelSectionItem;
 
 class LocalizationPanelSection extends PanelSection
 {

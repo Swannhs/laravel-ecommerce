@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Blog\Forms\Settings;
+namespace App\Plugins\Blog\Forms\Settings;
 
-use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
-use Botble\Base\Forms\FieldOptions\SelectFieldOption;
-use Botble\Base\Forms\Fields\OnOffCheckboxField;
-use Botble\Base\Forms\Fields\SelectField;
-use Botble\Blog\Http\Requests\Settings\BlogSettingRequest;
-use Botble\Setting\Forms\SettingForm;
+use App\Core\Base\Forms\FieldOptions\OnOffFieldOption;
+use App\Core\Base\Forms\FieldOptions\SelectFieldOption;
+use App\Core\Base\Forms\Fields\OnOffCheckboxField;
+use App\Core\Base\Forms\Fields\SelectField;
+use App\Plugins\Blog\Http\Requests\Settings\BlogSettingRequest;
+use App\Core\Setting\Forms\SettingForm;
 
 class BlogSettingForm extends SettingForm
 {

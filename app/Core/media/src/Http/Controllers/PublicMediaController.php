@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Media\Http\Controllers;
+namespace App\Core\Media\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Media\Facades\RvMedia;
-use Botble\Media\Models\MediaFile;
+use App\Core\Base\Http\Controllers\BaseController;
+use App\Core\Media\Facades\RvMedia;
+use App\Core\Media\Models\MediaFile;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Storage;

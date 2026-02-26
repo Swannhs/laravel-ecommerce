@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Services;
+namespace App\Core\Base\Services;
 
-use Botble\Base\Exceptions\FileNotWritableException;
-use Botble\Base\Facades\BaseHelper;
+use App\Core\Base\Exceptions\FileNotWritableException;
+use App\Core\Base\Facades\BaseHelper;
 use Illuminate\Support\Facades\File;
 
 class DeleteLocaleService

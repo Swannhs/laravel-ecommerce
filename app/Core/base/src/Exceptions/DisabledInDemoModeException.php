@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Exceptions;
+namespace App\Core\Base\Exceptions;
 
-use Botble\Base\Contracts\Exceptions\IgnoringReport;
+use App\Core\Base\Contracts\Exceptions\IgnoringReport;
 use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 use Throwable;
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\JsValidation;
+namespace App\Core\JsValidation;
 
-use Botble\JsValidation\Javascript\JavascriptValidator;
-use Botble\JsValidation\Javascript\MessageParser;
-use Botble\JsValidation\Javascript\RuleParser;
-use Botble\JsValidation\Javascript\ValidatorHandler;
-use Botble\JsValidation\Support\DelegatedValidator;
-use Botble\JsValidation\Support\ValidationRuleParserProxy;
-use Botble\Support\Http\Requests\Request;
+use App\Core\JsValidation\Javascript\JavascriptValidator;
+use App\Core\JsValidation\Javascript\MessageParser;
+use App\Core\JsValidation\Javascript\RuleParser;
+use App\Core\JsValidation\Javascript\ValidatorHandler;
+use App\Core\JsValidation\Support\DelegatedValidator;
+use App\Core\JsValidation\Support\ValidationRuleParserProxy;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Foundation\Http\FormRequest;

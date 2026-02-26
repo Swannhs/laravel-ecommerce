@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Analytics\Providers;
+namespace App\Plugins\Analytics\Providers;
 
-use Botble\Analytics\Abstracts\AnalyticsAbstract;
-use Botble\Analytics\Analytics;
-use Botble\Analytics\Exceptions\InvalidConfiguration;
-use Botble\Analytics\Facades\Analytics as AnalyticsFacade;
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Setting\PanelSections\SettingOthersPanelSection;
+use App\Plugins\Analytics\Abstracts\AnalyticsAbstract;
+use App\Plugins\Analytics\Analytics;
+use App\Plugins\Analytics\Exceptions\InvalidConfiguration;
+use App\Plugins\Analytics\Facades\Analytics as AnalyticsFacade;
+use App\Core\Base\Facades\PanelSectionManager;
+use App\Core\Base\PanelSections\PanelSectionItem;
+use App\Core\Base\Supports\ServiceProvider;
+use App\Core\Base\Traits\LoadAndPublishDataTrait;
+use App\Core\Setting\PanelSections\SettingOthersPanelSection;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Foundation\AliasLoader;
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Contact\Http\Requests;
+namespace App\Plugins\Contact\Http\Requests;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Rules\EmailRule;
-use Botble\Base\Rules\OnOffRule;
-use Botble\Base\Rules\PhoneNumberRule;
-use Botble\Contact\Enums\CustomFieldType;
-use Botble\Contact\Models\CustomField;
-use Botble\Support\Http\Requests\Request;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Rules\EmailRule;
+use App\Core\Base\Rules\OnOffRule;
+use App\Core\Base\Rules\PhoneNumberRule;
+use App\Plugins\Contact\Enums\CustomFieldType;
+use App\Plugins\Contact\Models\CustomField;
+use App\Core\Support\Http\Requests\Request;
 use Illuminate\Database\Eloquent\Collection;
 use Throwable;
 

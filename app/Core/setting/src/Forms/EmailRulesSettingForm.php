@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Forms;
+namespace App\Core\Setting\Forms;
 
-use Botble\Base\Forms\Fields\TagField;
-use Botble\Setting\Http\Requests\EmailRulesSettingRequest;
+use App\Core\Base\Forms\Fields\TagField;
+use App\Core\Setting\Http\Requests\EmailRulesSettingRequest;
 
 class EmailRulesSettingForm extends SettingForm
 {

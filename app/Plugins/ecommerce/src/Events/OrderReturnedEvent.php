@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Events;
+namespace App\Plugins\Ecommerce\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Ecommerce\Models\OrderReturn;
+use App\Core\Base\Events\Event;
+use App\Plugins\Ecommerce\Models\OrderReturn;
 use Illuminate\Queue\SerializesModels;
 
 class OrderReturnedEvent extends Event

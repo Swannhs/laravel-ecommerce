@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace App\Plugins\Ecommerce\Models;
 
-use Botble\Base\Facades\MacroableModels;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Models\BaseQueryBuilder;
-use Botble\Base\Models\Concerns\HasPhoneNumber;
-use Botble\Base\Supports\Avatar;
-use Botble\Ecommerce\Enums\CustomerStatusEnum;
-use Botble\Ecommerce\Enums\DiscountTypeEnum;
-use Botble\Ecommerce\Notifications\ConfirmEmailNotification;
-use Botble\Ecommerce\Notifications\ResetPasswordNotification;
-use Botble\Media\Facades\RvMedia;
-use Botble\Payment\Models\Payment;
+use App\Core\Base\Facades\MacroableModels;
+use App\Core\Base\Models\BaseModel;
+use App\Core\Base\Models\BaseQueryBuilder;
+use App\Core\Base\Models\Concerns\HasPhoneNumber;
+use App\Core\Base\Supports\Avatar;
+use App\Plugins\Ecommerce\Enums\CustomerStatusEnum;
+use App\Plugins\Ecommerce\Enums\DiscountTypeEnum;
+use App\Plugins\Ecommerce\Notifications\ConfirmEmailNotification;
+use App\Plugins\Ecommerce\Notifications\ResetPasswordNotification;
+use App\Core\Media\Facades\RvMedia;
+use App\Plugins\Payment\Models\Payment;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Auth\Authenticatable;

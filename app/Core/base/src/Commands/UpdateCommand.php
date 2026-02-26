@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace App\Core\Base\Commands;
 
-use Botble\Base\Events\UpdatedEvent;
-use Botble\Base\Events\UpdatingEvent;
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Core;
+use App\Core\Base\Events\UpdatedEvent;
+use App\Core\Base\Events\UpdatingEvent;
+use App\Core\Base\Facades\BaseHelper;
+use App\Core\Base\Supports\Core;
 use Illuminate\Console\Command;
 use Illuminate\Support\Composer;
 

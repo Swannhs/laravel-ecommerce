@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\LanguageAdvanced\Listeners;
+namespace App\Plugins\LanguageAdvanced\Listeners;
 
-use Botble\Language\Facades\Language;
-use Botble\Theme\Facades\AdminBar;
+use App\Plugins\Language\Facades\Language;
+use App\Packages\Theme\Facades\AdminBar;
 
 class AddRefLangToAdminBar
 {

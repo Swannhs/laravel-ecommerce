@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Payment\Services\Gateways;
+namespace App\Plugins\Payment\Services\Gateways;
 
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use App\Plugins\Payment\Enums\PaymentMethodEnum;
+use App\Plugins\Payment\Enums\PaymentStatusEnum;
 use Illuminate\Support\Str;
 
 class BankTransferPaymentService
