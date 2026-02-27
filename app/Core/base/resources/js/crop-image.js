@@ -49,7 +49,7 @@ class CropImage {
                         .then(({ data }) => {
                             this.updateImage(data.data.url)
 
-                            Botble.showSuccess(data.message)
+                            PlatformCore.showSuccess(data.message)
                             this.modal.modal('hide')
                         })
                 })
@@ -79,7 +79,7 @@ class CropImage {
                 .then(({ data }) => {
                     this.updateImage(data.data.url)
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     this.modal.modal('hide')
                 })
         })

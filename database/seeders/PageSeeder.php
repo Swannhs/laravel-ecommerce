@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Facades\Html;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Page\Models\Page;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Facades\Html;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Packages\Page\Models\Page;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Support\Str;
 
 class PageSeeder extends BaseSeeder

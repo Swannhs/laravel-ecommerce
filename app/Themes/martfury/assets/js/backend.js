@@ -7,10 +7,10 @@
         },
     })
 
-    window.botbleCookieNewsletter = (() => {
+    window.platformcoreCookieNewsletter = (() => {
 
         const COOKIE_VALUE = 1
-        const COOKIE_NAME = 'botble_cookie_newsletter'
+        const COOKIE_NAME = 'platformcore_cookie_newsletter'
         const COOKIE_DOMAIN = $('div[data-session-domain]').data('session-domain')
         const COOKIE_MODAL = $('#subscribe')
         const COOKIE_MODAL_TIME = COOKIE_MODAL.data('time')
@@ -132,7 +132,7 @@
                 .removeClass('active')
             $('body').css('overflow', 'auto')
 
-            window.botbleCookieNewsletter.hideCookieDialog()
+            window.platformcoreCookieNewsletter.hideCookieDialog()
         })
 
         $('#subscribe').on('click', function(event) {
@@ -140,7 +140,7 @@
                 $(this).removeClass('active')
                 $('body').css('overflow-y', 'auto')
 
-                window.botbleCookieNewsletter.newsletterWithCookies(30)
+                window.platformcoreCookieNewsletter.newsletterWithCookies(30)
                 $('.ps-popup').removeClass('active').hide()
             }
         })
@@ -168,7 +168,7 @@
                     }
 
                     if (!res.error) {
-                        window.botbleCookieNewsletter.newsletterWithCookies(30)
+                        window.platformcoreCookieNewsletter.newsletterWithCookies(30)
                         _self.closest('form').find('input[type=email]').val('')
                         showSuccess(res.message)
                         setTimeout(() => {

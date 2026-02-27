@@ -7,7 +7,7 @@ $(() => {
     if (endDate > today) {
         endDate = today
     }
-    let rangesTrans = BotbleVariables.languages.reports
+    let rangesTrans = PlatformCoreVariables.languages.reports
     let ranges = {
         [rangesTrans.today]: [moment(), moment()],
         [rangesTrans.this_week]: [moment().startOf('week'), moment()],
@@ -39,7 +39,7 @@ $(() => {
                 type: 'GET',
                 success: (data) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
                         $('.report-chart-content').html(data.data.html)
                         new Vue({
@@ -57,7 +57,7 @@ $(() => {
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
             })
         }

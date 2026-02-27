@@ -7,6 +7,6 @@ RUN apt-get update \
         libpng-dev \
         libwebp-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
-    && docker-php-ext-install -j"$(nproc)" gd pdo_mysql \
+    && docker-php-ext-install -j"$(nproc)" gd pdo_mysql calendar \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

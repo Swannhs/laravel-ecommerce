@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Vaadake täielikku API dokumentatsiooni koos näidete ja lõpp-punktide üksikasjade.',
     'view_documentation' => 'Vaata API dokumentatsiooni',
     'generate_docs_title' => 'Loo API dokumentatsioon',
-    'generate_docs_description' => 'API dokumentatsiooni loomiseks oma Botble CMS rakendusele järgi neid lihtsaid samme:',
+    'generate_docs_description' => 'API dokumentatsiooni loomiseks oma PlatformCore CMS rakendusele järgi neid lihtsaid samme:',
     'generate_docs_step_1' => '1. Paigalda Scribe pakett:',
     'generate_docs_step_2' => '2. Loo API dokumentatsioon:',
     'generate_docs_step_3' => '3. Juurde pääs oma API dokumentatsioonile:',

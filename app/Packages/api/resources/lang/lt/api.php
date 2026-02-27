@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Peržiūrėkite išsamią API dokumentaciją su pavyzdžiais ir galutinių taškų informacija.',
     'view_documentation' => 'Peržiūrėti API dokumentaciją',
     'generate_docs_title' => 'Generuoti API dokumentaciją',
-    'generate_docs_description' => 'Norėdami sugeneruoti API dokumentaciją savo Botble CMS programai, atlikite šiuos paprastus veiksmus:',
+    'generate_docs_description' => 'Norėdami sugeneruoti API dokumentaciją savo PlatformCore CMS programai, atlikite šiuos paprastus veiksmus:',
     'generate_docs_step_1' => '1. Įdiekite Scribe paketą:',
     'generate_docs_step_2' => '2. Sugeneruokite API dokumentaciją:',
     'generate_docs_step_3' => '3. Prieiga prie jūsų API dokumentacijos:',

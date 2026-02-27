@@ -1,5 +1,5 @@
 {
-    "name": "botble/paystack",
+    "name": "platformcore/paystack",
     "description": "Paystack",
     "type": "package",
     "require": {}

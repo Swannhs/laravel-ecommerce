@@ -20,7 +20,7 @@ class ContactPluginManagement {
 
             const _self = $(event.currentTarget)
 
-            Botble.showButtonLoading(_self)
+            PlatformCore.showButtonLoading(_self)
 
             let message = $('#message').val()
             if (typeof tinymce != 'undefined') {
@@ -49,12 +49,12 @@ class ContactPluginManagement {
                         }
                     }
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     $('#reply-wrapper').load(window.location.href + ' #reply-wrapper > *')
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading($(event.currentTarget))
+                    PlatformCore.hideButtonLoading($(event.currentTarget))
                 })
         })
     }

@@ -29,11 +29,11 @@ class WidgetServiceProvider extends ServiceProvider
             return new WidgetRepository(new Widget());
         });
 
-        $this->app->bind('botble.widget', function (Application $app) {
+        $this->app->bind('platformcore.widget', function (Application $app) {
             return new WidgetFactory($app);
         });
 
-        $this->app->singleton('botble.widget-group-collection', function (Application $app) {
+        $this->app->singleton('platformcore.widget-group-collection', function (Application $app) {
             return new WidgetGroupCollection($app);
         });
     }

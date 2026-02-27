@@ -1,10 +1,10 @@
 {
-    "id": "botble/social-login",
+    "id": "platformcore/social-login",
     "name": "Social Login",
     "namespace": "App\\Plugins\\SocialLogin\\",
     "provider": "App\\Plugins\\SocialLogin\\Providers\\SocialLoginServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.0.8",
     "description": "Easier and faster login with Facebook, LinkedIn, GitHub or Google.",
     "minimum_core_version": "7.3.0"

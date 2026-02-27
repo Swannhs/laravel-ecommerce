@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Database\Seeders\Traits\HasProductCategorySeeder;
-use Botble\Ecommerce\Models\ProductCategory;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\Traits\HasProductCategorySeeder;
+use App\Plugins\Ecommerce\Models\ProductCategory;
 
 class ProductCategorySeeder extends BaseSeeder
 {

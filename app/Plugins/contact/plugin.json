@@ -1,10 +1,10 @@
 {
-    "id": "botble/contact",
+    "id": "platformcore/contact",
     "name": "Contact Form",
     "namespace": "App\\Plugins\\Contact\\",
     "provider": "App\\Plugins\\Contact\\Providers\\ContactServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.0.8",
     "description": "Contact Form",
     "minimum_core_version": "7.3.0"

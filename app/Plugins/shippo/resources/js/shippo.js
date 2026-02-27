@@ -16,13 +16,13 @@ Shippo.init = () => {
             },
             success: (res) => {
                 if (res.error) {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 } else {
                     $self.find('.modal-body').html(res.data.html)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $related.removeClass('button-loading')
@@ -41,15 +41,15 @@ Shippo.init = () => {
             },
             success: (res) => {
                 if (res.error) {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 } else {
                     $('[data-bs-target="#shippo-view-n-create-transaction"]').addClass('d-none')
                     $('#shippo-view-n-create-transaction').modal('hide')
-                    Botble.showSuccess(res.message)
+                    PlatformCore.showSuccess(res.message)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $self.removeClass('button-loading')
@@ -68,15 +68,15 @@ Shippo.init = () => {
             },
             success: (res) => {
                 if (res.error) {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 } else {
-                    Botble.showSuccess(res.message)
+                    PlatformCore.showSuccess(res.message)
                     $self.addClass('d-none')
                     $self.parent().append(res.data.html)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $self.removeClass('button-loading')
@@ -98,14 +98,14 @@ Shippo.init = () => {
             },
             success: (res) => {
                 if (res.error) {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 } else {
-                    Botble.showSuccess(res.message)
+                    PlatformCore.showSuccess(res.message)
                     $('#shippo-view-n-create-transaction').find('.modal-body').html(res.data.html)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $button.removeClass('button-loading')

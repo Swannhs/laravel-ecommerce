@@ -1,5 +1,5 @@
 {
-    "name": "@botble/media",
+    "name": "@platformcore/media",
     "version": "1.0.0",
     "devDependencies": {
         "clipboard": "^2.0.11"

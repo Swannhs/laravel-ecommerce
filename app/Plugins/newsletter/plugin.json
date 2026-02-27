@@ -1,10 +1,10 @@
 {
-    "id": "botble/newsletter",
+    "id": "platformcore/newsletter",
     "name": "Newsletter",
     "namespace": "App\\Plugins\\Newsletter\\",
     "provider": "App\\Plugins\\Newsletter\\Providers\\NewsletterServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.0.8",
     "description": "Newsletter",
     "minimum_core_version": "7.3.0"

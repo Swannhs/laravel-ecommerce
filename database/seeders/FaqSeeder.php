@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Faq\Models\Faq;
-use Botble\Faq\Models\FaqCategory;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Faq\Models\Faq;
+use App\Plugins\Faq\Models\FaqCategory;
 
 class FaqSeeder extends BaseSeeder
 {

@@ -38,7 +38,7 @@ $(function () {
 
                 data.set('json', target.files[0])
 
-                Botble.showLoading($setting)
+                PlatformCore.showLoading($setting)
 
                 $httpClient
                     .make()
@@ -54,7 +54,7 @@ $(function () {
                         codeMirror.setValue(error.response.data.data.content)
                     })
                     .finally(() => {
-                        Botble.hideLoading($setting)
+                        PlatformCore.hideLoading($setting)
                         target.value = ''
                     })
             })

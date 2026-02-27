@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Zeigen Sie die vollständige API-Dokumentation mit Beispielen und Endpunkt-Details an.',
     'view_documentation' => 'API-Dokumentation anzeigen',
     'generate_docs_title' => 'API-Dokumentation generieren',
-    'generate_docs_description' => 'Um die API-Dokumentation für Ihre Botble CMS-Anwendung zu generieren, folgen Sie diesen einfachen Schritten:',
+    'generate_docs_description' => 'Um die API-Dokumentation für Ihre PlatformCore CMS-Anwendung zu generieren, folgen Sie diesen einfachen Schritten:',
     'generate_docs_step_1' => '1. Installieren Sie das Scribe-Paket:',
     'generate_docs_step_2' => '2. Generieren Sie die API-Dokumentation:',
     'generate_docs_step_3' => '3. Greifen Sie auf Ihre API-Dokumentation zu unter:',

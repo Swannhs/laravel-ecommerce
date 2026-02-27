@@ -18,8 +18,8 @@ $(() => {
                 .get(_self.data('url'))
                 .then(({ data }) => {
                     _self.closest('.modal').modal('hide')
-                    $('#botble-audit-log-tables-audit-log-table').DataTable().draw()
-                    return Botble.showSuccess(data.message)
+                    $('#platformcore-audit-log-tables-audit-log-table').DataTable().draw()
+                    return PlatformCore.showSuccess(data.message)
                 })
         })
     })

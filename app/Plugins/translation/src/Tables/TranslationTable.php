@@ -187,6 +187,6 @@ class TranslationTable extends TableAbstract
 
     public function htmlDrawCallbackFunction(): ?string
     {
-        return parent::htmlDrawCallbackFunction() . 'Botble.initEditable()';
+        return parent::htmlDrawCallbackFunction() . 'PlatformCore.initEditable()';
     }
 }

@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Address;
-use Botble\Ecommerce\Models\Customer;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\Address;
+use App\Plugins\Ecommerce\Models\Customer;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 
@@ -25,8 +25,8 @@ class CustomerSeeder extends BaseSeeder
         $zipCodes = ['10001', '20002', '30003', '40004', '50005'];
 
         $customers = [
-            'customer@botble.com',
-            'vendor@botble.com',
+            'customer@platformcore.com',
+            'vendor@platformcore.com',
         ];
 
         foreach ($customers as $item) {

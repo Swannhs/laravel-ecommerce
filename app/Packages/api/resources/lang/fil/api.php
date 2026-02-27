@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Tingnan ang kumpletong dokumentasyon ng API na may mga halimbawa at detalye ng endpoint.',
     'view_documentation' => 'Tingnan ang API Docs',
     'generate_docs_title' => 'Bumuo ng API Documentation',
-    'generate_docs_description' => 'Upang makabuo ng API documentation para sa iyong Botble CMS application, sundin ang mga simpleng hakbang na ito:',
+    'generate_docs_description' => 'Upang makabuo ng API documentation para sa iyong PlatformCore CMS application, sundin ang mga simpleng hakbang na ito:',
     'generate_docs_step_1' => '1. I-install ang Scribe package:',
     'generate_docs_step_2' => '2. Bumuo ng API documentation:',
     'generate_docs_step_3' => '3. I-access ang iyong API documentation sa:',

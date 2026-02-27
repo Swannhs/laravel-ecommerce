@@ -29,11 +29,11 @@
                     _token: '{{ csrf_token() }}'
                 },
                 success: function (data) {
-                    Botble.showSuccess(data.message);
+                    PlatformCore.showSuccess(data.message);
                     $this.prop('disabled', false);
                 },
                 error: function (data) {
-                    Botble.showError(data.responseJSON.message || 'An error occurred');
+                    PlatformCore.showError(data.responseJSON.message || 'An error occurred');
                     $this.prop('disabled', false);
                 }
             });

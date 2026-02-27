@@ -1,5 +1,5 @@
 {
-    "name": "botble/optimize",
+    "name": "platformcore/optimize",
     "description": "Optimize page speed package",
     "type": "package",
     "autoload": {
@@ -8,7 +8,7 @@
         }
     },
     "require": {
-        "botble/platform": "*@dev"
+        "platformcore/platform": "*@dev"
     },
     "extra": {
         "laravel": {

@@ -2960,7 +2960,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                       line: 54
                       function: show
-                      class: Botble\Ecommerce\Http\Controllers\API\BrandController
+                      class: PlatformCore\Ecommerce\Http\Controllers\API\BrandController
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -2993,7 +2993,7 @@ paths:
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                       line: 14
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
@@ -3002,7 +3002,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                      class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -3092,7 +3092,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\JsValidation\RemoteValidationMiddleware
+                      class: PlatformCore\JsValidation\RemoteValidationMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -3341,7 +3341,7 @@ paths:
                       class: Illuminate\Console\Command
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                       line: 17
                       function: call
                       class: Illuminate\Console\Command
@@ -3350,7 +3350,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                       line: 36
                       function: handle
-                      class: Botble\Api\Commands\GenerateDocumentationCommand
+                      class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -3458,7 +3458,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                         line: 54
                         function: show
-                        class: Botble\Ecommerce\Http\Controllers\API\BrandController
+                        class: PlatformCore\Ecommerce\Http\Controllers\API\BrandController
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -3491,7 +3491,7 @@ paths:
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                         line: 14
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
@@ -3500,7 +3500,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                        class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -3590,7 +3590,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\JsValidation\RemoteValidationMiddleware
+                        class: PlatformCore\JsValidation\RemoteValidationMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -3839,7 +3839,7 @@ paths:
                         class: Illuminate\Console\Command
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                         line: 17
                         function: call
                         class: Illuminate\Console\Command
@@ -3848,7 +3848,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                         line: 36
                         function: handle
-                        class: Botble\Api\Commands\GenerateDocumentationCommand
+                        class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -6897,7 +6897,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                       line: 54
                       function: show
-                      class: Botble\Ecommerce\Http\Controllers\API\ProductCategoryController
+                      class: PlatformCore\Ecommerce\Http\Controllers\API\ProductCategoryController
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -6930,7 +6930,7 @@ paths:
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                       line: 14
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
@@ -6939,7 +6939,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                      class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -7029,7 +7029,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\JsValidation\RemoteValidationMiddleware
+                      class: PlatformCore\JsValidation\RemoteValidationMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -7278,7 +7278,7 @@ paths:
                       class: Illuminate\Console\Command
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                       line: 17
                       function: call
                       class: Illuminate\Console\Command
@@ -7287,7 +7287,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                       line: 36
                       function: handle
-                      class: Botble\Api\Commands\GenerateDocumentationCommand
+                      class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -7395,7 +7395,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                         line: 54
                         function: show
-                        class: Botble\Ecommerce\Http\Controllers\API\ProductCategoryController
+                        class: PlatformCore\Ecommerce\Http\Controllers\API\ProductCategoryController
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -7428,7 +7428,7 @@ paths:
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                         line: 14
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
@@ -7437,7 +7437,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                        class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -7527,7 +7527,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\JsValidation\RemoteValidationMiddleware
+                        class: PlatformCore\JsValidation\RemoteValidationMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -7776,7 +7776,7 @@ paths:
                         class: Illuminate\Console\Command
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                         line: 17
                         function: call
                         class: Illuminate\Console\Command
@@ -7785,7 +7785,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                         line: 36
                         function: handle
-                        class: Botble\Api\Commands\GenerateDocumentationCommand
+                        class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -12546,7 +12546,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                       line: 54
                       function: show
-                      class: Botble\Ecommerce\Http\Controllers\API\ProductController
+                      class: PlatformCore\Ecommerce\Http\Controllers\API\ProductController
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -12579,7 +12579,7 @@ paths:
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                       line: 14
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
@@ -12588,7 +12588,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                      class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -12678,7 +12678,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\JsValidation\RemoteValidationMiddleware
+                      class: PlatformCore\JsValidation\RemoteValidationMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -12927,7 +12927,7 @@ paths:
                       class: Illuminate\Console\Command
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                       line: 17
                       function: call
                       class: Illuminate\Console\Command
@@ -12936,7 +12936,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                       line: 36
                       function: handle
-                      class: Botble\Api\Commands\GenerateDocumentationCommand
+                      class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -13044,7 +13044,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                         line: 54
                         function: show
-                        class: Botble\Ecommerce\Http\Controllers\API\ProductController
+                        class: PlatformCore\Ecommerce\Http\Controllers\API\ProductController
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -13077,7 +13077,7 @@ paths:
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                         line: 14
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
@@ -13086,7 +13086,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                        class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -13176,7 +13176,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\JsValidation\RemoteValidationMiddleware
+                        class: PlatformCore\JsValidation\RemoteValidationMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -13425,7 +13425,7 @@ paths:
                         class: Illuminate\Console\Command
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                         line: 17
                         function: call
                         class: Illuminate\Console\Command
@@ -13434,7 +13434,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                         line: 36
                         function: handle
-                        class: Botble\Api\Commands\GenerateDocumentationCommand
+                        class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -13575,7 +13575,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                       line: 54
                       function: relatedProducts
-                      class: Botble\Ecommerce\Http\Controllers\API\ProductController
+                      class: PlatformCore\Ecommerce\Http\Controllers\API\ProductController
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -13608,7 +13608,7 @@ paths:
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                       line: 14
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
@@ -13617,7 +13617,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                      class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -13707,7 +13707,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\JsValidation\RemoteValidationMiddleware
+                      class: PlatformCore\JsValidation\RemoteValidationMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -13956,7 +13956,7 @@ paths:
                       class: Illuminate\Console\Command
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                       line: 17
                       function: call
                       class: Illuminate\Console\Command
@@ -13965,7 +13965,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                       line: 36
                       function: handle
-                      class: Botble\Api\Commands\GenerateDocumentationCommand
+                      class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -14073,7 +14073,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                         line: 54
                         function: relatedProducts
-                        class: Botble\Ecommerce\Http\Controllers\API\ProductController
+                        class: PlatformCore\Ecommerce\Http\Controllers\API\ProductController
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -14106,7 +14106,7 @@ paths:
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                         line: 14
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
@@ -14115,7 +14115,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                        class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -14205,7 +14205,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\JsValidation\RemoteValidationMiddleware
+                        class: PlatformCore\JsValidation\RemoteValidationMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -14454,7 +14454,7 @@ paths:
                         class: Illuminate\Console\Command
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                         line: 17
                         function: call
                         class: Illuminate\Console\Command
@@ -14463,7 +14463,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                         line: 36
                         function: handle
-                        class: Botble\Api\Commands\GenerateDocumentationCommand
+                        class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -14604,7 +14604,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                       line: 54
                       function: reviews
-                      class: Botble\Ecommerce\Http\Controllers\API\ProductController
+                      class: PlatformCore\Ecommerce\Http\Controllers\API\ProductController
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -14637,7 +14637,7 @@ paths:
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                       line: 14
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
@@ -14646,7 +14646,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                      class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -14736,7 +14736,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 183
                       function: handle
-                      class: Botble\JsValidation\RemoteValidationMiddleware
+                      class: PlatformCore\JsValidation\RemoteValidationMiddleware
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -14985,7 +14985,7 @@ paths:
                       class: Illuminate\Console\Command
                       type: '->'
                     -
-                      file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                      file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                       line: 17
                       function: call
                       class: Illuminate\Console\Command
@@ -14994,7 +14994,7 @@ paths:
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                       line: 36
                       function: handle
-                      class: Botble\Api\Commands\GenerateDocumentationCommand
+                      class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                       type: '->'
                     -
                       file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php
@@ -15102,7 +15102,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
                         line: 54
                         function: reviews
-                        class: Botble\Ecommerce\Http\Controllers\API\ProductController
+                        class: PlatformCore\Ecommerce\Http\Controllers\API\ProductController
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
@@ -15135,7 +15135,7 @@ paths:
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Http/Middleware/ForceJsonResponseMiddleware.php
                         line: 14
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
@@ -15144,7 +15144,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\Api\Http\Middleware\ForceJsonResponseMiddleware
+                        class: PlatformCore\Api\Http\Middleware\ForceJsonResponseMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
@@ -15234,7 +15234,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 183
                         function: handle
-                        class: Botble\JsValidation\RemoteValidationMiddleware
+                        class: PlatformCore\JsValidation\RemoteValidationMiddleware
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
@@ -15483,7 +15483,7 @@ paths:
                         class: Illuminate\Console\Command
                         type: '->'
                       -
-                        file: /Users/sangnguyen/workspace/martfury/vendor/botble/api/src/Commands/GenerateDocumentationCommand.php
+                        file: /Users/sangnguyen/workspace/martfury/vendor/platformcore/api/src/Commands/GenerateDocumentationCommand.php
                         line: 17
                         function: call
                         class: Illuminate\Console\Command
@@ -15492,7 +15492,7 @@ paths:
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                         line: 36
                         function: handle
-                        class: Botble\Api\Commands\GenerateDocumentationCommand
+                        class: PlatformCore\Api\Commands\GenerateDocumentationCommand
                         type: '->'
                       -
                         file: /Users/sangnguyen/workspace/martfury/vendor/laravel/framework/src/Illuminate/Container/Util.php

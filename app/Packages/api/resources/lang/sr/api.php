@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Pogledajte kompletnu API dokumentaciju sa primerima i detaljima o krajnjim tačkama.',
     'view_documentation' => 'Pogledaj API Dokumentaciju',
     'generate_docs_title' => 'Генериши API документацију',
-    'generate_docs_description' => 'Да бисте генерисали API документацију за вашу Botble CMS апликацију, пратите ове једноставне кораке:',
+    'generate_docs_description' => 'Да бисте генерисали API документацију за вашу PlatformCore CMS апликацију, пратите ове једноставне кораке:',
     'generate_docs_step_1' => '1. Инсталирајте Scribe пакет:',
     'generate_docs_step_2' => '2. Генеришите API документацију:',
     'generate_docs_step_3' => '3. Приступите својој API документацији на:',

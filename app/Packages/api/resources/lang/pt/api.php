@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Visualize a documentação completa da API com exemplos e detalhes dos endpoints.',
     'view_documentation' => 'Ver Documentação da API',
     'generate_docs_title' => 'Gerar Documentação da API',
-    'generate_docs_description' => 'Para gerar a documentação da API para sua aplicação Botble CMS, siga estes passos simples:',
+    'generate_docs_description' => 'Para gerar a documentação da API para sua aplicação PlatformCore CMS, siga estes passos simples:',
     'generate_docs_step_1' => '1. Instale o pacote Scribe:',
     'generate_docs_step_2' => '2. Gere a documentação da API:',
     'generate_docs_step_3' => '3. Acesse sua documentação da API em:',

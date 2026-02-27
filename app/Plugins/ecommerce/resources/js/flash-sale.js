@@ -40,23 +40,23 @@ $(() => {
         $formBody.show()
         $formBody.addClass('active')
         if ($formBody.find('.card-body').length === 0) {
-            Botble.showLoading($formBody)
+            PlatformCore.showLoading($formBody)
 
             $.ajax({
                 url: _self.data('bb-target'),
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $formBody.html(res.data)
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($formBody)
+                    PlatformCore.hideLoading($formBody)
                 },
             })
         }
@@ -66,23 +66,23 @@ $(() => {
         const _self = $(event.currentTarget)
         const $formBody = _self.closest('.box-search-advance').find('.card')
         setTimeout(() => {
-            Botble.hideLoading($formBody)
+            PlatformCore.hideLoading($formBody)
 
             $.ajax({
                 url: `${_self.data('bb-target')}?keyword=${_self.val()}`,
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $formBody.html(res.data)
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($formBody)
+                    PlatformCore.hideLoading($formBody)
                 },
             })
         }, 500)
@@ -95,23 +95,23 @@ $(() => {
             .find('[data-bb-toggle="product-search-advanced"]')
         if (!$searchBox.closest('.page-item').hasClass('disabled') && $searchBox.data('bb-target')) {
             const $formBody = $searchBox.closest('.box-search-advance').find('.card')
-            Botble.showLoading($formBody)
+            PlatformCore.showLoading($formBody)
 
             $.ajax({
                 url: `${$(event.currentTarget).prop('href')}&keyword=${$searchBox.val()}`,
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $formBody.html(res.data)
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($formBody)
+                    PlatformCore.hideLoading($formBody)
                 },
             })
         }

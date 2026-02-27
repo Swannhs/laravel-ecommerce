@@ -33,7 +33,7 @@
         <x-core::icon name="ti ti-circle-x" />
         <a
             class="ms-2"
-            href="{{ route('products.index') }}?filter_table_id=botble-ecommerce-tables-product-table&class=Botble%5CEcommerce%5CTables%5CProductTable&filter_columns%5B%5D=stock_status&filter_operators%5B%5D=%3D&filter_values%5B%5D=out_of_stock">
+            href="{{ route('products.index') }}?filter_table_id=platformcore-ecommerce-tables-product-table&class=PlatformCore%5CEcommerce%5CTables%5CProductTable&filter_columns%5B%5D=stock_status&filter_operators%5B%5D=%3D&filter_values%5B%5D=out_of_stock">
             <strong>{{ $outOfStockProducts }}</strong> {{ trans('plugins/ecommerce::reports.product_out_of_stock') }}
         </a>
     </li>

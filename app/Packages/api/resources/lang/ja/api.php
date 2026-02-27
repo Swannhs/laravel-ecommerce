@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => '例とエンドポイントの詳細を含む完全なAPIドキュメントを表示します。',
     'view_documentation' => 'APIドキュメントを表示',
     'generate_docs_title' => 'APIドキュメントを生成',
-    'generate_docs_description' => 'Botble CMSアプリケーションのAPIドキュメントを生成するには、次の簡単な手順に従ってください：',
+    'generate_docs_description' => 'PlatformCore CMSアプリケーションのAPIドキュメントを生成するには、次の簡単な手順に従ってください：',
     'generate_docs_step_1' => '1. Scribeパッケージをインストール：',
     'generate_docs_step_2' => '2. APIドキュメントを生成：',
     'generate_docs_step_3' => '3. APIドキュメントにアクセス：',

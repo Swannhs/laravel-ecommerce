@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Skatīt pilnu API dokumentāciju ar piemēriem un galapunktu detaļām.',
     'view_documentation' => 'Skatīt API dokumentāciju',
     'generate_docs_title' => 'Ģenerēt API dokumentāciju',
-    'generate_docs_description' => 'Lai ģenerētu API dokumentāciju savai Botble CMS lietojumprogrammai, izpildiet šīs vienkāršās darbības:',
+    'generate_docs_description' => 'Lai ģenerētu API dokumentāciju savai PlatformCore CMS lietojumprogrammai, izpildiet šīs vienkāršās darbības:',
     'generate_docs_step_1' => '1. Instalējiet Scribe pakotni:',
     'generate_docs_step_2' => '2. Ģenerējiet API dokumentāciju:',
     'generate_docs_step_3' => '3. Piekļūstiet savam API dokumentācijai:',

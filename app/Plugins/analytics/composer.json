@@ -1,5 +1,5 @@
 {
-    "name": "botble/analytics",
+    "name": "platformcore/analytics",
     "description": "Analytics plugin",
     "type": "package",
     "require": {

@@ -50,7 +50,7 @@ class CropAvatar {
                 .post($(this).attr('data-url'))
                 .then(function (response) {
                     if (!response.data.error) {
-                        Botble.showSuccess(response.data.message)
+                        PlatformCore.showSuccess(response.data.message)
                         $('.image-preview').attr('src', response.data.data.url)
                         $('.avatar-view').find('.action .remove-avatar').hide()
                     }
@@ -102,7 +102,7 @@ class CropAvatar {
             } else if (firstLoad) {
                 firstLoad = false
             } else {
-                Botble.showError('Image upload failed!')
+                PlatformCore.showError('Image upload failed!')
             }
 
             _this.submitEnd()
@@ -139,7 +139,7 @@ class CropAvatar {
 
     submit() {
         if (!this.$avatarSrc.val() && !this.$avatarInput.val()) {
-            Botble.showError('Please select image!')
+            PlatformCore.showError('Please select image!')
             return false
         }
 
@@ -247,12 +247,12 @@ class CropAvatar {
                 $('.avatar-view').find('.action .remove-avatar').show()
 
                 this.$avatarInput.val('')
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
             } else {
-                Botble.showError(data.message)
+                PlatformCore.showError(data.message)
             }
         } else {
-            Botble.showError(data.message)
+            PlatformCore.showError(data.message)
         }
     }
 

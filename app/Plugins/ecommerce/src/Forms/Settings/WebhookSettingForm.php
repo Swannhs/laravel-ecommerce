@@ -498,7 +498,7 @@ class WebhookSettingForm extends SettingForm
                         const originalButtonHtml = button.html();
 
                         if (!webhookUrl) {
-                            Botble.showError('{$pleaseEnterUrlText}');
+                            PlatformCore.showError('{$pleaseEnterUrlText}');
                             return;
                         }
 

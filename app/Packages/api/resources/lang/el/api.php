@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Προβολή της πλήρους τεκμηρίωσης API με παραδείγματα και λεπτομέρειες σημείων πρόσβασης.',
     'view_documentation' => 'Προβολή Τεκμηρίωσης API',
     'generate_docs_title' => 'Δημιουργία τεκμηρίωσης API',
-    'generate_docs_description' => 'Για να δημιουργήσετε τεκμηρίωση API για την εφαρμογή Botble CMS σας, ακολουθήστε αυτά τα απλά βήματα:',
+    'generate_docs_description' => 'Για να δημιουργήσετε τεκμηρίωση API για την εφαρμογή PlatformCore CMS σας, ακολουθήστε αυτά τα απλά βήματα:',
     'generate_docs_step_1' => '1. Εγκαταστήστε το πακέτο Scribe:',
     'generate_docs_step_2' => '2. Δημιουργήστε την τεκμηρίωση API:',
     'generate_docs_step_3' => '3. Πρόσβαση στην τεκμηρίωση API σας στο:',

@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Contact\Enums\ContactStatusEnum;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Contact\Enums\ContactStatusEnum;
 use Illuminate\Support\Arr;
-use Botble\Contact\Models\Contact;
+use App\Plugins\Contact\Models\Contact;
 
 class ContactSeeder extends BaseSeeder
 {

@@ -2,15 +2,15 @@
 
 namespace Database\Seeders;
 
-use Botble\ACL\Database\Seeders\UserSeeder;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Database\Seeders\CurrencySeeder;
-use Botble\Ecommerce\Database\Seeders\DiscountSeeder;
-use Botble\Ecommerce\Database\Seeders\ProductSpecificationSeeder;
-use Botble\Ecommerce\Database\Seeders\ReviewSeeder;
-use Botble\Ecommerce\Database\Seeders\ShippingSeeder;
-use Botble\Ecommerce\Database\Seeders\TaxSeeder;
-use Botble\Language\Database\Seeders\LanguageSeeder;
+use App\Core\ACL\Database\Seeders\UserSeeder;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\CurrencySeeder;
+use App\Plugins\Ecommerce\Database\Seeders\DiscountSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\ProductSpecificationSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\ReviewSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\ShippingSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\TaxSeeder;
+use App\Plugins\Language\Database\Seeders\LanguageSeeder;
 
 class DatabaseSeeder extends BaseSeeder
 {

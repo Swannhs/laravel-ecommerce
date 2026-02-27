@@ -15,11 +15,11 @@ $(() => {
                 if (!res.error) {
                     $($this.data('element')).html(res.data)
                 } else {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $this.find('i').removeClass('fa-spin')

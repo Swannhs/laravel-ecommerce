@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'View the complete API documentation with examples and endpoint details.',
     'view_documentation' => 'View API Docs',
     'generate_docs_title' => 'Generate API Documentation',
-    'generate_docs_description' => 'To generate API documentation for your Botble CMS application, follow these simple steps:',
+    'generate_docs_description' => 'To generate API documentation for your PlatformCore CMS application, follow these simple steps:',
     'generate_docs_step_1' => '1. Install the Scribe package:',
     'generate_docs_step_2' => '2. Generate the API documentation:',
     'generate_docs_step_3' => '3. Access your API documentation at:',

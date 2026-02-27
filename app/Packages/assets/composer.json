@@ -1,14 +1,14 @@
 {
-    "name": "botble/assets",
+    "name": "platformcore/assets",
     "description": "Laravel assets management",
     "license": "MIT",
     "keywords": [
-        "botble",
-        "botble cms",
-        "botble platform",
-        "botble assets"
+        "platformcore",
+        "platformcore cms",
+        "platformcore platform",
+        "platformcore assets"
     ],
-    "homepage": "https://botble.com",
+    "homepage": "https://platformcore.com",
     "authors": [
         {
             "name": "Sang Nguyen",

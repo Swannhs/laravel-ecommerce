@@ -81,7 +81,7 @@ abstract class AbstractWidget
 
     protected function renderWidget(array $args): ?string
     {
-        $widgetGroup = app('botble.widget-group-collection');
+        $widgetGroup = app('platformcore.widget-group-collection');
         $widgetGroup->load();
         $widgetGroupData = $widgetGroup->getData();
 
@@ -170,7 +170,7 @@ abstract class AbstractWidget
         Theme::uses(Theme::getThemeName());
 
         if (! empty($sidebarId)) {
-            $widgetGroup = app('botble.widget-group-collection');
+            $widgetGroup = app('platformcore.widget-group-collection');
             $widgetGroup->load();
             $widgetGroupData = $widgetGroup->getData();
 

@@ -9,7 +9,7 @@ $(() => {
         $httpClient
             .make()
             .post(url, { key: key, value: _self.prop('checked') ? 1 : 0 })
-            .then(({ data }) => Botble.showSuccess(data.message))
+            .then(({ data }) => PlatformCore.showSuccess(data.message))
     })
 
     $(document).on('click', '[data-bb-toggle="reset-default"]', (event) => {
@@ -68,7 +68,7 @@ $(() => {
         event.preventDefault()
         const _self = $(event.currentTarget)
 
-        Botble.showButtonLoading(_self)
+        PlatformCore.showButtonLoading(_self)
 
         $httpClient
             .make()
@@ -78,7 +78,7 @@ $(() => {
                 template_file: $('input[name=template_file]').val(),
             })
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
 
                 setTimeout(() => {
                     window.location.reload()
@@ -87,7 +87,7 @@ $(() => {
                 $('#reset-template-to-default-modal').modal('hide')
             })
             .finally(() => {
-                Botble.hideButtonLoading(_self)
+                PlatformCore.hideButtonLoading(_self)
             })
     })
 })

@@ -166,8 +166,8 @@ class ContextMenu {
                     shortcodeName: shortcodes[index].name,
                     attributes: JSON.parse(JSON.stringify(shortcodes[index].attributes || {}))
                 }
-                if (typeof Botble !== 'undefined' && Botble.showSuccess) {
-                    Botble.showSuccess('Style copied!')
+                if (typeof PlatformCore !== 'undefined' && PlatformCore.showSuccess) {
+                    PlatformCore.showSuccess('Style copied!')
                 }
                 break
 
@@ -179,8 +179,8 @@ class ContextMenu {
                     if (typeof PreviewIframe !== 'undefined') {
                         PreviewIframe.updateShortcode(id, { attributes: newAttributes })
                     }
-                    if (typeof Botble !== 'undefined' && Botble.showSuccess) {
-                        Botble.showSuccess('Style pasted!')
+                    if (typeof PlatformCore !== 'undefined' && PlatformCore.showSuccess) {
+                        PlatformCore.showSuccess('Style pasted!')
                     }
                 }
                 break

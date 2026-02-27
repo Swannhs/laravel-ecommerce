@@ -36,7 +36,7 @@ $(() => {
         let _self = $(this)
         let _form = _self.closest('form')
 
-        Botble.showButtonLoading(_self)
+        PlatformCore.showButtonLoading(_self)
 
         $httpClient
             .make()
@@ -46,7 +46,7 @@ $(() => {
                 $(`.get-started-modal[data-step="${data.data.step}"]`).modal('show')
             })
             .finally(() => {
-                Botble.hideButtonLoading(_self)
+                PlatformCore.hideButtonLoading(_self)
             })
     })
 

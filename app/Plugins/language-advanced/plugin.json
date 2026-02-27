@@ -1,14 +1,14 @@
 {
-    "id": "botble/language-advanced",
+    "id": "platformcore/language-advanced",
     "name": "Language Advanced",
     "namespace": "App\\Plugins\\LanguageAdvanced\\",
     "provider": "App\\Plugins\\LanguageAdvanced\\Providers\\LanguageAdvancedServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "1.2.8",
     "description": "Advanced Multi-language",
     "minimum_core_version": "7.3.0",
     "require": [
-        "botble/language"
+        "platformcore/language"
     ]
 }

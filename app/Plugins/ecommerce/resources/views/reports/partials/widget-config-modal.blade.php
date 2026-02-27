@@ -176,7 +176,7 @@ $(document).ready(function() {
             error: function(xhr) {
                 console.error('Failed to load widget configuration:', xhr);
                 $('#widget-categories').html('<div class="text-center p-4 text-danger">{{ trans("plugins/ecommerce::reports.failed_to_load_configuration") }}</div>');
-                Botble.showError('{{ trans("plugins/ecommerce::ecommerce.forms.load_error") }}');
+                PlatformCore.showError('{{ trans("plugins/ecommerce::ecommerce.forms.load_error") }}');
             }
         });
     }
@@ -272,7 +272,7 @@ $(document).ready(function() {
             processData: false,
             contentType: false,
             success: function(response) {
-                Botble.showSuccess(response.message || '{{ trans("plugins/ecommerce::reports.widget_configuration_saved") }}');
+                PlatformCore.showSuccess(response.message || '{{ trans("plugins/ecommerce::reports.widget_configuration_saved") }}');
                 $('#widget-config-modal').modal('hide');
                 // Reload the page to show updated widgets
                 setTimeout(() => {
@@ -280,7 +280,7 @@ $(document).ready(function() {
                 }, 1000);
             },
             error: function(xhr) {
-                Botble.showError(xhr.responseJSON?.message || '{{ trans("plugins/ecommerce::ecommerce.forms.save_error") }}');
+                PlatformCore.showError(xhr.responseJSON?.message || '{{ trans("plugins/ecommerce::ecommerce.forms.save_error") }}');
             },
             complete: function() {
                 $button.prop('disabled', false).html(originalText);

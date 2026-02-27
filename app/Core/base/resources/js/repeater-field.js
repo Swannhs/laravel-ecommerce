@@ -39,10 +39,10 @@ $(() => {
 
         $group.data('nextIndex', nextIndex + 1)
 
-        if (window.Botble) {
-            window.Botble.initResources()
-            window.Botble.initMediaIntegrate()
-            window.Botble.initCoreIcon()
+        if (window.PlatformCore) {
+            window.PlatformCore.initResources()
+            window.PlatformCore.initMediaIntegrate()
+            window.PlatformCore.initCoreIcon()
         }
 
         if (window.EditorManagement) {

@@ -29,14 +29,14 @@ $(() => {
         const totalFiles = $modal.data('total-files')
         let message = null
 
-        Botble.showButtonLoading(currentTarget)
+        PlatformCore.showButtonLoading(currentTarget)
 
         function sendRequest(offset = 0, limit = $modal.data('chunk-limit')) {
             if (offset > totalFiles) {
-                Botble.hideButtonLoading(currentTarget)
+                PlatformCore.hideButtonLoading(currentTarget)
                 $modal.modal('hide')
 
-                Botble.showSuccess(message)
+                PlatformCore.showSuccess(message)
 
                 return
             }
@@ -53,7 +53,7 @@ $(() => {
                 })
                 .finally(() => {
                     if (offset > totalFiles) {
-                        Botble.hideButtonLoading(currentTarget)
+                        PlatformCore.hideButtonLoading(currentTarget)
                         $modal.modal('hide')
                     }
                 })

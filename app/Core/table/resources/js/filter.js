@@ -22,7 +22,7 @@ class TableFilter {
                     $input.data('typeahead').source = data
                 }
 
-                Botble.initResources()
+                PlatformCore.initResources()
             })
     }
 
@@ -44,7 +44,7 @@ class TableFilter {
                 const html = $template.html()
 
                 $(document).find('.filter-items-wrap').append(html.replace('<script>', '').replace('<\\/script>', ''))
-                Botble.initResources()
+                PlatformCore.initResources()
 
                 const element = $(document)
                     .find('.filter-items-wrap .filter-item:last-child')

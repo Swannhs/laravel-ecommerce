@@ -1,5 +1,5 @@
 {
-    "name": "botble/mollie",
+    "name": "platformcore/mollie",
     "description": "Mollie payment gateway",
     "type": "package",
     "require": {

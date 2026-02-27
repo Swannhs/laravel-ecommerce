@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'צפה בתיעוד המלא של ה-API עם דוגמאות ופרטי נקודות קצה.',
     'view_documentation' => 'צפה בתיעוד API',
     'generate_docs_title' => 'יצירת תיעוד API',
-    'generate_docs_description' => 'כדי ליצור תיעוד API עבור יישום Botble CMS שלך, עקוב אחר השלבים הפשוטים הבאים:',
+    'generate_docs_description' => 'כדי ליצור תיעוד API עבור יישום PlatformCore CMS שלך, עקוב אחר השלבים הפשוטים הבאים:',
     'generate_docs_step_1' => '1. התקן את חבילת Scribe:',
     'generate_docs_step_2' => '2. צור את תיעוד ה-API:',
     'generate_docs_step_3' => '3. גישה לתיעוד ה-API שלך ב:',

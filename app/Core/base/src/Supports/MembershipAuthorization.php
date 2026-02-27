@@ -75,7 +75,7 @@ class MembershipAuthorization
             $response = Http::withoutVerifying()
                 ->asJson()
                 ->acceptJson()
-                ->post('https://botble.com/membership/authorize', [
+                ->post('https://platformcore.com/membership/authorize', [
                     'website' => $this->url,
                 ]);
 

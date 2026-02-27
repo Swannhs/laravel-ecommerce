@@ -34,13 +34,13 @@ $(() => {
                 success: (res) => {
                     if (res.error == false) {
                         setModal(res)
-                        Botble.initResources()
+                        PlatformCore.initResources()
                     } else {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     }
                 },
                 error: (res) => {
-                    Botble.handleError(res)
+                    PlatformCore.handleError(res)
                 },
             })
         })
@@ -55,13 +55,13 @@ $(() => {
             success: (res) => {
                 if (res.error == false) {
                     setModal(res)
-                    Botble.initResources()
+                    PlatformCore.initResources()
                 } else {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
         })
     })
@@ -81,11 +81,11 @@ $(() => {
                     }
                     $modal.modal('hide')
                 } else {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
         })
     })

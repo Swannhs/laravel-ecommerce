@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductTag;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\ProductTag;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Support\Str;
 
 class ProductTagSeeder extends BaseSeeder

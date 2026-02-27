@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Lihat dokumentasi API lengkap dengan contoh dan detail endpoint.',
     'view_documentation' => 'Lihat Dokumentasi API',
     'generate_docs_title' => 'Buat Dokumentasi API',
-    'generate_docs_description' => 'Untuk membuat dokumentasi API untuk aplikasi Botble CMS Anda, ikuti langkah-langkah sederhana berikut:',
+    'generate_docs_description' => 'Untuk membuat dokumentasi API untuk aplikasi PlatformCore CMS Anda, ikuti langkah-langkah sederhana berikut:',
     'generate_docs_step_1' => '1. Install paket Scribe:',
     'generate_docs_step_2' => '2. Buat dokumentasi API:',
     'generate_docs_step_3' => '3. Akses dokumentasi API Anda di:',

@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Menu\Database\Traits\HasMenuSeeder;
-use Botble\Page\Models\Page;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\ProductCategory;
+use App\Packages\Menu\Database\Traits\HasMenuSeeder;
+use App\Packages\Page\Models\Page;
 
 class MenuSeeder extends BaseSeeder
 {

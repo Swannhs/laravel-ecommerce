@@ -1,21 +1,21 @@
 $(() => {
     const toggleReviewStatus = (url, button) => {
-        Botble.showButtonLoading(button)
+        PlatformCore.showButtonLoading(button)
 
         $httpClient
             .make()
             .post(url)
             .then(({ data }) => {
                 if (data.error) {
-                    Botble.showError(data.message)
+                    PlatformCore.showError(data.message)
                     return
                 }
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
                 $('#review-section-wrapper').load(`${window.location.href} #review-section-wrapper > *`)
 
                 button.closest('.modal').modal('hide')
             })
-            .finally(() => Botble.hideButtonLoading(button))
+            .finally(() => PlatformCore.hideButtonLoading(button))
     }
 
     const toggleEditReply = () => {
@@ -44,13 +44,13 @@ $(() => {
                 .withButtonLoading(_self)
                 .delete(url)
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     _self.closest('.modal').modal('hide')
 
                     setTimeout(() => (window.location.href = _self.data('next-url')), 2000)
                 })
-                .finally(() => Botble.hideButtonLoading(_self))
+                .finally(() => PlatformCore.hideButtonLoading(_self))
         })
         .on('click', '[data-bb-toggle="review-unpublish"]', (event) => {
             const button = $(event.currentTarget)
@@ -71,7 +71,7 @@ $(() => {
                 .withButtonLoading(currentTarget)
                 .delete(form.prop('action'))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     form.closest('.modal').modal('hide')
 

@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Botble Test Suite">
+        <testsuite name="PlatformCore Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

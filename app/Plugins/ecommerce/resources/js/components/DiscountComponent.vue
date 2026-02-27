@@ -1043,7 +1043,7 @@ export default {
                     $('.coupon-code-input').closest('div').find('.invalid-feedback').remove()
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
         },
         changeDiscountType: function () {
@@ -1115,7 +1115,7 @@ export default {
                         context.loading = false
                     })
                     .catch((res) => {
-                        Botble.handleError(res.response.data)
+                        PlatformCore.handleError(res.response.data)
                     })
             }
         },
@@ -1169,7 +1169,7 @@ export default {
                         context.loading = false
                     })
                     .catch((res) => {
-                        Botble.handleError(res.response.data)
+                        PlatformCore.handleError(res.response.data)
                     })
             }
         },
@@ -1188,7 +1188,7 @@ export default {
                             context.product_category_id = data.data[0].id
                         }
                     })
-                    .catch(({ response }) => Botble.handleError(response.data))
+                    .catch(({ response }) => PlatformCore.handleError(response.data))
                     .finally(() => (context.loading = false))
             }
         },
@@ -1213,7 +1213,7 @@ export default {
                         context.loading = false
                     })
                     .catch((res) => {
-                        Botble.handleError(res.response.data)
+                        PlatformCore.handleError(res.response.data)
                     })
             }
         },

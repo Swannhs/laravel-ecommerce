@@ -135,7 +135,7 @@ class Location
     public function getRemoteAvailableLocations(): array
     {
         try {
-            $url = 'https://api.github.com/repos/botble/locations/git/trees/master';
+            $url = 'https://api.github.com/repos/platformcore/locations/git/trees/master';
 
             $data = Cache::remember($url, 60 * 60, function () use ($url) {
                 $response = Http::withoutVerifying()
@@ -168,7 +168,7 @@ class Location
 
     public function downloadRemoteLocation(string $countryCode, bool $continue = false): array
     {
-        $repository = 'https://github.com/botble/locations';
+        $repository = 'https://github.com/platformcore/locations';
 
         $destination = storage_path('app/location-files.zip');
 

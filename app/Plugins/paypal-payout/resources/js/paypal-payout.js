@@ -14,20 +14,20 @@ $(document).ready(function () {
             url: $this.prop('href'),
             success: (res) => {
                 if (!res.error) {
-                    Botble.showSuccess(res.message)
+                    PlatformCore.showSuccess(res.message)
 
                     $this.closest('.widget.meta-boxes').remove()
 
                     window.location.reload()
                 } else {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 }
 
                 $this.removeClass('button-loading')
             },
             error: (res) => {
                 $this.removeClass('button-loading')
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
         })
     })

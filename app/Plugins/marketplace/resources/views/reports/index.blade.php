@@ -28,8 +28,8 @@
 
 @push('footer')
     <script>
-        var BotbleVariables = BotbleVariables || {};
-        BotbleVariables.languages = BotbleVariables.languages || {};
-        BotbleVariables.languages.reports = @json(trans('plugins/ecommerce::reports.ranges'))
+        var PlatformCoreVariables = PlatformCoreVariables || {};
+        PlatformCoreVariables.languages = PlatformCoreVariables.languages || {};
+        PlatformCoreVariables.languages.reports = @json(trans('plugins/ecommerce::reports.ranges'))
     </script>
 @endpush

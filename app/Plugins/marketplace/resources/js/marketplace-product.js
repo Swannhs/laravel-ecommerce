@@ -18,17 +18,17 @@ class MarketplaceProductManagement {
                 url: _self.data('action'),
                 success: (res) => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message)
+                        PlatformCore.showSuccess(res.message)
                         $('.approve-product-warning').fadeOut(500)
                         window.location.reload()
                     } else {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     }
                     _self.removeClass('button-loading')
                     _self.closest('.modal').modal('hide')
                 },
                 error: (res) => {
-                    Botble.handleError(res)
+                    PlatformCore.handleError(res)
                     _self.removeClass('button-loading')
                 },
             })

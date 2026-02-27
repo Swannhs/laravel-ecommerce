@@ -1,5 +1,5 @@
 {
-	"name": "botble/sitemap",
+	"name": "platformcore/sitemap",
 	"description": "Sitemap package for Laravel.",
 	"license": "MIT",
 	"require": {

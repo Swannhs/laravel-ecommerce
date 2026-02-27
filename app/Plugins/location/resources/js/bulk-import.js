@@ -6,7 +6,7 @@ $(() => {
         const countries = currentTarget.find('select').val()
 
         if (!countries || countries.length === 0) {
-            Botble.showError(currentTarget.data('empty-selection-message'))
+            PlatformCore.showError(currentTarget.data('empty-selection-message'))
             return
         }
 
@@ -24,16 +24,16 @@ $(() => {
                     .post(currentTarget.prop('action'), formData)
 
                 if (error) {
-                    Botble.showError(data.message)
+                    PlatformCore.showError(data.message)
                     return
                 }
 
                 if (isLast) {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     currentTarget.find('select').val('').trigger('change')
                 }
             } catch (error) {
-                Botble.showError(error.message)
+                PlatformCore.showError(error.message)
             }
         }
     })

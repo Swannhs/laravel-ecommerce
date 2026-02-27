@@ -2,13 +2,13 @@
 
 namespace Database\Seeders;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Slug\Facades\SlugHelper;
-use Botble\Slug\Models\Slug;
+use App\Core\ACL\Models\User;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Blog\Models\Category;
+use App\Plugins\Blog\Models\Post;
+use App\Plugins\Blog\Models\Tag;
+use App\Packages\Slug\Facades\SlugHelper;
+use App\Packages\Slug\Models\Slug;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

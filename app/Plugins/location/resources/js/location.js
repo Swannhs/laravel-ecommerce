@@ -1,8 +1,8 @@
 class Location {
     // Show error message - works on both admin and frontend
     static showError(message) {
-        if (typeof Botble !== 'undefined' && Botble.showError) {
-            Botble.showError(message)
+        if (typeof PlatformCore !== 'undefined' && PlatformCore.showError) {
+            PlatformCore.showError(message)
         } else if (typeof Theme !== 'undefined' && Theme.showError) {
             Theme.showError(message)
         } else if (typeof toastr !== 'undefined') {

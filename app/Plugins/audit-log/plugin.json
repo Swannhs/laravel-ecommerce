@@ -1,10 +1,10 @@
 {
-    "id": "botble/audit-log",
+    "id": "platformcore/audit-log",
     "name": "Audit Log",
     "namespace": "App\\Plugins\\AuditLog\\",
     "provider": "App\\Plugins\\AuditLog\\Providers\\AuditLogServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.0.8",
     "description": "Record activities logs",
     "minimum_core_version": "7.3.0"

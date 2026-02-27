@@ -24,7 +24,7 @@ $(() => {
         copyButton.show();
 
         // Show success message
-        Botble.showSuccess(window.trans.api.api_key_edit_enabled || 'API key field is now editable.');
+        PlatformCore.showSuccess(window.trans.api.api_key_edit_enabled || 'API key field is now editable.');
     });
 
     // Generate random API key
@@ -44,7 +44,7 @@ $(() => {
         copyButton.show();
 
         // Show success message
-        Botble.showSuccess(window.trans.api.api_key_generated || 'API key generated successfully!');
+        PlatformCore.showSuccess(window.trans.api.api_key_generated || 'API key generated successfully!');
 
         // Update examples with new key
         updateExamplesWithApiKey(newApiKey);
@@ -81,13 +81,13 @@ $(() => {
         if (file) {
             // Validate file type
             if (file.type !== 'application/json' && !file.name.toLowerCase().endsWith('.json')) {
-                Botble.showError(window.trans.api.invalid_json_file || 'Please select a valid JSON file.');
+                PlatformCore.showError(window.trans.api.invalid_json_file || 'Please select a valid JSON file.');
                 return;
             }
 
             // Validate file size (max 2MB)
             if (file.size > 2 * 1024 * 1024) {
-                Botble.showError(window.trans.api.file_size_too_large || 'File size must be less than 2MB.');
+                PlatformCore.showError(window.trans.api.file_size_too_large || 'File size must be less than 2MB.');
                 return;
             }
 
@@ -148,14 +148,14 @@ $(() => {
                     updateServiceAccountStatus(response.data.path, response.data.filename);
 
                     // Show success message
-                    Botble.showSuccess(window.trans.api.file_uploaded_successfully || 'File uploaded successfully!');
+                    PlatformCore.showSuccess(window.trans.api.file_uploaded_successfully || 'File uploaded successfully!');
 
                     // Refresh the page to update the form state
                     setTimeout(() => {
                         window.location.reload();
                     }, 1500);
                 } else {
-                    Botble.showError(response.message || (window.trans.api.file_upload_error || 'Failed to upload file'));
+                    PlatformCore.showError(response.message || (window.trans.api.file_upload_error || 'Failed to upload file'));
                 }
             },
             error: function(xhr) {
@@ -163,7 +163,7 @@ $(() => {
                 if (xhr.responseJSON && xhr.responseJSON.message) {
                     errorMessage = xhr.responseJSON.message;
                 }
-                Botble.showError(errorMessage);
+                PlatformCore.showError(errorMessage);
             },
             complete: function() {
                 uploadBtn.prop('disabled', false);
@@ -199,14 +199,14 @@ $(() => {
                     updateServiceAccountStatus('', '');
 
                     // Show success message
-                    Botble.showSuccess(window.trans.api.file_removed_successfully || 'File removed successfully!');
+                    PlatformCore.showSuccess(window.trans.api.file_removed_successfully || 'File removed successfully!');
 
                     // Refresh the page to update the form state
                     setTimeout(() => {
                         window.location.reload();
                     }, 1500);
                 } else {
-                    Botble.showError(response.message || (window.trans.api.file_remove_error || 'Failed to remove file'));
+                    PlatformCore.showError(response.message || (window.trans.api.file_remove_error || 'Failed to remove file'));
                 }
             },
             error: function(xhr) {
@@ -214,7 +214,7 @@ $(() => {
                 if (xhr.responseJSON && xhr.responseJSON.message) {
                     errorMessage = xhr.responseJSON.message;
                 }
-                Botble.showError(errorMessage);
+                PlatformCore.showError(errorMessage);
             },
             complete: function() {
                 removeBtn.prop('disabled', false).html(originalHtml);
@@ -260,13 +260,13 @@ $(() => {
         const message = $('#notification-message').val().trim();
 
         if (!title) {
-            Botble.showError(window.trans.api.please_enter_notification_title || 'Please enter a notification title.');
+            PlatformCore.showError(window.trans.api.please_enter_notification_title || 'Please enter a notification title.');
             $('#notification-title').focus();
             return;
         }
 
         if (!message) {
-            Botble.showError(window.trans.api.please_enter_notification_message || 'Please enter a notification message.');
+            PlatformCore.showError(window.trans.api.please_enter_notification_message || 'Please enter a notification message.');
             $('#notification-message').focus();
             return;
         }

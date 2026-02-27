@@ -36,15 +36,15 @@ class PendingRequest {
     }
 
     withButtonLoading(element) {
-        this.beforeSend(() => Botble.showButtonLoading(element))
-        this.completed(() => Botble.hideButtonLoading(element))
+        this.beforeSend(() => PlatformCore.showButtonLoading(element))
+        this.completed(() => PlatformCore.hideButtonLoading(element))
 
         return this
     }
 
     withLoading(element) {
-        this.beforeSend(() => Botble.showLoading(element))
-        this.completed(() => Botble.hideLoading(element))
+        this.beforeSend(() => PlatformCore.showLoading(element))
+        this.completed(() => PlatformCore.hideLoading(element))
 
         return this
     }
@@ -203,17 +203,17 @@ class PendingRequest {
 
             switch (statusCode) {
                 case 419:
-                    Botble.showError('Session expired this page will reload in 5s.')
+                    PlatformCore.showError('Session expired this page will reload in 5s.')
                     setTimeout(() => window.location.reload(), 5000)
                     break
                 case 422:
                     if (typeof data.errors !== 'undefined') {
-                        Botble.handleValidationError(data.errors)
+                        PlatformCore.handleValidationError(data.errors)
                     }
                     break
                 default:
                     if (data.message !== undefined) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
             }
 

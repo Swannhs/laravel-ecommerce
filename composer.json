@@ -53,8 +53,6 @@
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",
-        "botble/dev-tool": "^1.0.2",
-        "botble/git-commit-checker": "^2.1",
         "driftingly/rector-laravel": "^2.0",
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^3.0",
@@ -145,26 +143,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-                "botble/get-started",
-                "botble/installer",
-                "botble/menu",
-                "botble/optimize",
-                "botble/page",
-                "botble/platform",
-                "botble/plugin-management",
-                "botble/revision",
-                "botble/seo-helper",
-                "botble/shortcode",
-                "botble/sitemap",
-                "botble/slug",
-                "botble/theme",
-                "botble/widget",
-                "botble/api",
-                "botble/assets",
-                "botble/data-synchronize",
-                "botble/form-builder"
-            ]
+            "dont-discover": []
         },
         "aws/aws-sdk-php": [
             "S3",

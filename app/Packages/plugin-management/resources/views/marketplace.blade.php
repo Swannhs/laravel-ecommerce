@@ -6,10 +6,10 @@
         title="Important notes:"
         :important="false"
     >
-        Those plugins are from our Botble community <a
-            href="https://marketplace.botble.com/products"
+        Those plugins are from our PlatformCore community <a
+            href="https://marketplace.platformcore.com/products"
             target="_blank"
-        >marketplace.botble.com/products</a>. We regret to inform
+        >marketplace.platformcore.com/products</a>. We regret to inform
         you that we cannot assume responsibility for the functionality or support of free plugins, as they are
         developed and maintained independently. However, we are more than happy to assist with any inquiries or
         issues related to our official products and services.
@@ -30,13 +30,13 @@
     >
         <div class="text-start">
             <p>
-                You are installing plugin from our Botble community. Those plugins are developed by author
+                You are installing plugin from our PlatformCore community. Those plugins are developed by author
                 on <a
-                    href="https://marketplace.botble.com"
+                    href="https://marketplace.platformcore.com"
                     target="_blank"
-                >marketplace.botble.com</a>.
+                >marketplace.platformcore.com</a>.
             </p>
-            <p>We (Botble) <strong>won't</strong> support free plugins from Marketplace.</p>
+            <p>We (PlatformCore) <strong>won't</strong> support free plugins from Marketplace.</p>
             <p>
                 If it has issues or bugs, please contact the author of that plugin to get support or just
                 delete it from <a :href="installedPluginsUrl">Installed Plugins</a> page.

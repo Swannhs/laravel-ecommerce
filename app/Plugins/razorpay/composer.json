@@ -1,5 +1,5 @@
 {
-    "name": "botble/razorpay",
+    "name": "platformcore/razorpay",
     "description": "Razorpay",
     "type": "package",
     "require": {

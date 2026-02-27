@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Testimonial\Models\Testimonial;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Testimonial\Models\Testimonial;
 
 class TestimonialSeeder extends BaseSeeder
 {

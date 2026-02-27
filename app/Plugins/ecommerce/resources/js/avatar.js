@@ -1,5 +1,5 @@
 /**
- * Created by Botble Technologies on 06/09/2015.
+ * Created by PlatformCore Technologies on 06/09/2015.
  */
 
 var handleError = function (data, form) {

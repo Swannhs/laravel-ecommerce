@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Ads\Models\Ads;
-use Botble\Base\Supports\BaseSeeder;
+use App\Plugins\Ads\Models\Ads;
+use App\Core\Base\Supports\BaseSeeder;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 

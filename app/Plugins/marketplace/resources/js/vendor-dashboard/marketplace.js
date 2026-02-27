@@ -99,7 +99,7 @@
 
         if (window.noticeMessages && window.noticeMessages.length) {
             noticeMessages.map((x) => {
-                Botble.showNotice(x.type, x.message, '')
+                PlatformCore.showNotice(x.type, x.message, '')
             })
         }
     })

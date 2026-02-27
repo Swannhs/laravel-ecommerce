@@ -92,7 +92,7 @@ class BaseServiceProvider extends ServiceProvider
 
         $this->prepareAliasesIfMissing();
 
-        config()->set(['session.cookie' => Str::slug(config('core.base.general.session_cookie', 'botble_session'), '_')]);
+        config()->set(['session.cookie' => Str::slug(config('core.base.general.session_cookie', 'platformcore_session'), '_')]);
 
         $this->overrideDefaultConfigs();
 

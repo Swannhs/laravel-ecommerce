@@ -19,6 +19,6 @@ class WidgetGroup extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'botble.widget-group-collection';
+        return 'platformcore.widget-group-collection';
     }
 }

@@ -69,7 +69,7 @@ class EcommerceProduct {
                     }
                 },
                 error: (res) => {
-                    Botble.handleError(res)
+                    PlatformCore.handleError(res)
                 },
             })
         } else {
@@ -152,7 +152,7 @@ class EcommerceProduct {
                 })
 
             if (ids.length === 0) {
-                Botble.showError(BotbleVariables.languages.tables.please_select_record)
+                PlatformCore.showError(PlatformCoreVariables.languages.tables.please_select_record)
                 return false
             }
 
@@ -186,9 +186,9 @@ class EcommerceProduct {
                     },
                     success: (res) => {
                         if (res.error) {
-                            Botble.showError(res.message)
+                            PlatformCore.showError(res.message)
                         } else {
-                            Botble.showSuccess(res.message)
+                            PlatformCore.showSuccess(res.message)
                             _self.afterDeleteVersion(res, $table)
 
                             $('.btn-trigger-delete-selected-variations').hide()
@@ -198,7 +198,7 @@ class EcommerceProduct {
                         }
                     },
                     error: (data) => {
-                        Botble.handleError(data)
+                        PlatformCore.handleError(data)
                     },
                     complete: () => {
                         $current.removeClass('button-loading')
@@ -323,9 +323,9 @@ class EcommerceProduct {
                 },
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
-                        Botble.showSuccess(res.message)
+                        PlatformCore.showSuccess(res.message)
 
                         $('#select-attribute-sets-modal').modal('hide')
                         $('form').removeClass('dirty')
@@ -333,7 +333,7 @@ class EcommerceProduct {
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
                     $current.removeClass('button-loading')
@@ -349,7 +349,7 @@ class EcommerceProduct {
             let $form = $current.closest('.modal-content').find('.variation-form-wrapper form')
             let formData = new FormData($form[0])
 
-            formData = Botble.unmaskInputNumber($form, formData)
+            formData = PlatformCore.unmaskInputNumber($form, formData)
 
             $.ajax({
                 url: $current.data('target'),
@@ -362,9 +362,9 @@ class EcommerceProduct {
                 },
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
-                        Botble.showSuccess(res.message)
+                        PlatformCore.showSuccess(res.message)
                         $current.closest('.modal.fade').modal('hide')
 
                         let $table = $('#product-variations-wrapper').find('table')
@@ -379,7 +379,7 @@ class EcommerceProduct {
                     $current.removeClass('button-loading')
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
             })
         }
@@ -425,9 +425,9 @@ class EcommerceProduct {
                 },
                 success: ({ error, message }) => {
                     if (error) {
-                        Botble.showError(message)
+                        PlatformCore.showError(message)
                     } else {
-                        Botble.showSuccess(message)
+                        PlatformCore.showSuccess(message)
 
                         $('#generate-versions-modal').modal('hide')
 
@@ -440,7 +440,7 @@ class EcommerceProduct {
                     $current.removeClass('button-loading')
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
             })
         })
@@ -458,7 +458,7 @@ class EcommerceProduct {
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $('#add-new-product-variation-modal .modal-body .loading-spinner').hide()
                         $('#add-new-product-variation-modal .modal-body').append(res.data)
@@ -471,7 +471,7 @@ class EcommerceProduct {
                                     return { id: item.id, text: item.title }
                                 })
 
-                                Botble.select(el, {
+                                PlatformCore.select(el, {
                                     data,
                                     ajax: {},
                                     dataAdapter: CustomDataApdapterSelect2,
@@ -481,7 +481,7 @@ class EcommerceProduct {
                         })
 
                         _self.initElements()
-                        Botble.initResources()
+                        PlatformCore.initResources()
                         $('#store-product-variation-button').data('target', $current.data('target'))
 
                         $('.list-gallery-media-images').each((index, item) => {
@@ -494,7 +494,7 @@ class EcommerceProduct {
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
             })
         })
@@ -514,7 +514,7 @@ class EcommerceProduct {
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $('#edit-product-variation-modal .modal-body .loading-spinner').hide()
                         $('#edit-product-variation-modal .modal-body').append(res.data)
@@ -527,7 +527,7 @@ class EcommerceProduct {
                                     return { id: item.id, text: item.title }
                                 })
 
-                                Botble.select(el, {
+                                PlatformCore.select(el, {
                                     data,
                                     ajax: {},
                                     dataAdapter: CustomDataApdapterSelect2,
@@ -537,7 +537,7 @@ class EcommerceProduct {
                         })
 
                         _self.initElements()
-                        Botble.initResources()
+                        PlatformCore.initResources()
                         $('.list-gallery-media-images').each((index, item) => {
                             let $current = $(item)
                             if ($current.data('ui-sortable')) {
@@ -548,7 +548,7 @@ class EcommerceProduct {
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
             })
         })
@@ -581,18 +581,18 @@ class EcommerceProduct {
                     },
                     success: (res) => {
                         if (res.error) {
-                            Botble.showError(res.message)
+                            PlatformCore.showError(res.message)
                         } else {
                             $('form').removeClass('dirty')
                             window.location.reload()
-                            Botble.showSuccess(res.message)
+                            PlatformCore.showSuccess(res.message)
                         }
                     },
                     complete: () => {
                         $current.removeClass('button-loading')
                     },
                     error: (data) => {
-                        Botble.handleError(data)
+                        PlatformCore.handleError(data)
                     },
                 })
             }
@@ -622,19 +622,19 @@ class EcommerceProduct {
                 },
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         _self.afterDeleteVersion(res)
 
                         $('#confirm-delete-version-modal').modal('hide')
-                        Botble.showSuccess(res.message)
+                        PlatformCore.showSuccess(res.message)
                     }
                 },
                 complete: () => {
                     $current.removeClass('button-loading')
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
             })
         })
@@ -650,13 +650,13 @@ class EcommerceProduct {
                     method: 'POST',
                     success: (res) => {
                         if (res.error) {
-                            Botble.showError(res.message)
+                            PlatformCore.showError(res.message)
                         } else {
-                            Botble.showSuccess(res.message)
+                            PlatformCore.showSuccess(res.message)
                         }
                     },
                     error: (res) => {
-                        Botble.handleError(res)
+                        PlatformCore.handleError(res)
                     },
                 })
             }
@@ -736,7 +736,7 @@ class EcommerceProduct {
                         )
                     }
 
-                    Botble.select(select, {
+                    PlatformCore.select(select, {
                         data,
                         width: '100%',
                         dropdownAutoWidth: true,
@@ -1062,23 +1062,23 @@ $(() => {
         $formBody.addClass('active')
 
         if ($formBody.find('.card-body').length === 0) {
-            Botble.showLoading($formBody)
+            PlatformCore.showLoading($formBody)
 
             $.ajax({
                 url: _self.data('bb-target'),
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $formBody.html(res.data)
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($formBody)
+                    PlatformCore.hideLoading($formBody)
                 },
             })
         }
@@ -1093,7 +1093,7 @@ $(() => {
         const $formBody = _self.closest('.box-search-advance').find('.card')
 
         setTimeout(() => {
-            Botble.showLoading($formBody)
+            PlatformCore.showLoading($formBody)
 
             if (hasAjaxSearchRequested) {
                 ajaxRequest.abort()
@@ -1107,7 +1107,7 @@ $(() => {
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $formBody.html(res.data)
                     }
@@ -1115,11 +1115,11 @@ $(() => {
                 },
                 error: (data) => {
                     if (data.statusText !== 'abort') {
-                        Botble.handleError(data)
+                        PlatformCore.handleError(data)
                     }
                 },
                 complete: () => {
-                    Botble.hideLoading($formBody)
+                    PlatformCore.hideLoading($formBody)
                 },
             })
         }, 500)
@@ -1134,7 +1134,7 @@ $(() => {
         if (!$searchBox.closest('.page-item').hasClass('disabled') && $searchBox.data('bb-target')) {
             let $formBody = $searchBox.closest('.box-search-advance').find('.card')
 
-            Botble.showLoading($formBody)
+            PlatformCore.showLoading($formBody)
 
             $.ajax({
                 url: $(event.currentTarget).prop('href'),
@@ -1142,16 +1142,16 @@ $(() => {
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $formBody.html(res.data)
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($formBody)
+                    PlatformCore.hideLoading($formBody)
                 },
             })
         }
@@ -1193,25 +1193,25 @@ $(() => {
         let $wrapBody = $('.wrap-relation-product')
 
         if ($wrapBody.length) {
-            Botble.showLoading($wrapBody)
+            PlatformCore.showLoading($wrapBody)
 
             $.ajax({
                 url: $wrapBody.data('target'),
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $wrapBody.html(res.data)
 
-                        Botble.initResources()
+                        PlatformCore.initResources()
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($wrapBody)
+                    PlatformCore.hideLoading($wrapBody)
                 },
             })
         }
@@ -1309,7 +1309,7 @@ $(() => {
             ++u
         } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < units.length - 1)
 
-        return Botble.numberFormat(bytes, dp, ',', '.') + ' ' + units[u]
+        return PlatformCore.numberFormat(bytes, dp, ',', '.') + ' ' + units[u]
     }
 
     $(document)
@@ -1329,17 +1329,17 @@ $(() => {
                 },
                 success: ({ error, message, data }) => {
                     if (error) {
-                        Botble.showError(message)
+                        PlatformCore.showError(message)
                         return
                     }
 
-                    Botble.showSuccess(message)
+                    PlatformCore.showSuccess(message)
                     $('#duplicate-product-modal').modal('hide')
 
                     setTimeout(() => (window.location.href = data.next_url), 1000)
                 },
                 error: (error) => {
-                    Botble.handleError(error)
+                    PlatformCore.handleError(error)
                 },
                 complete: () => {
                     button.removeClass('button-loading')

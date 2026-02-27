@@ -258,7 +258,7 @@ export default {
                         context.countries = res.data.data
                     })
                     .catch((res) => {
-                        Botble.handleError(res.response.data)
+                        PlatformCore.handleError(res.response.data)
                     })
             }
         },
@@ -274,7 +274,7 @@ export default {
                     context.states = res.data.data
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
         },
         loadCities: function ($event, state_id) {
@@ -289,7 +289,7 @@ export default {
                     context.cities = res.data.data
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
         },
     },

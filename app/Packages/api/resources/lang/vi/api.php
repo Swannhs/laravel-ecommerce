@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Xem tài liệu API đầy đủ với các ví dụ và chi tiết endpoint.',
     'view_documentation' => 'Xem tài liệu API',
     'generate_docs_title' => 'Tạo tài liệu API',
-    'generate_docs_description' => 'Để tạo tài liệu API cho ứng dụng Botble CMS của bạn, hãy làm theo các bước đơn giản sau:',
+    'generate_docs_description' => 'Để tạo tài liệu API cho ứng dụng PlatformCore CMS của bạn, hãy làm theo các bước đơn giản sau:',
     'generate_docs_step_1' => '1. Cài đặt gói Scribe:',
     'generate_docs_step_2' => '2. Tạo tài liệu API:',
     'generate_docs_step_3' => '3. Truy cập tài liệu API của bạn tại:',

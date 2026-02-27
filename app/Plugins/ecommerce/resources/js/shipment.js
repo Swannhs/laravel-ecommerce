@@ -21,10 +21,10 @@ class ShipmentManagement {
                 .then(({ data }) => {
                     if (!data.error) {
                         $('.page-body').load(`${window.location.href} .page-body > *`)
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         _self.closest('.modal').modal('hide')
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -33,7 +33,7 @@ class ShipmentManagement {
     }
 
     handleShipmentInfoForm() {
-        const form = $('#botble-ecommerce-forms-shipment-info-form')
+        const form = $('#platformcore-ecommerce-forms-shipment-info-form')
 
         if (!form.length) {
             return
@@ -50,9 +50,9 @@ class ShipmentManagement {
                 .post(form.prop('action'), form.serialize())
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })

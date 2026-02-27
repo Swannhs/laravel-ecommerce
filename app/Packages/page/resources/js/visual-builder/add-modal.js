@@ -106,8 +106,8 @@ const AddShortcodeModal = {
         }
 
         const $modalContent = this.$formModal.find('.modal-content')
-        if (typeof Botble !== 'undefined' && Botble.showLoading) {
-            Botble.showLoading($modalContent)
+        if (typeof PlatformCore !== 'undefined' && PlatformCore.showLoading) {
+            PlatformCore.showLoading($modalContent)
         }
 
         $.ajax({
@@ -123,17 +123,17 @@ const AddShortcodeModal = {
                 $('.shortcode-input-key').val(key)
                 $('.shortcode-admin-config').html(response.data)
 
-                if (typeof Botble !== 'undefined') {
-                    Botble.hideLoading($modalContent)
-                    Botble.initResources()
-                    Botble.initMediaIntegrate()
-                    Botble.initFieldCollapse()
+                if (typeof PlatformCore !== 'undefined') {
+                    PlatformCore.hideLoading($modalContent)
+                    PlatformCore.initResources()
+                    PlatformCore.initMediaIntegrate()
+                    PlatformCore.initFieldCollapse()
                 }
             },
             error: () => {
-                if (typeof Botble !== 'undefined') {
-                    Botble.hideLoading($modalContent)
-                    Botble.showError('Failed to load shortcode configuration')
+                if (typeof PlatformCore !== 'undefined') {
+                    PlatformCore.hideLoading($modalContent)
+                    PlatformCore.showError('Failed to load shortcode configuration')
                 }
             },
         })

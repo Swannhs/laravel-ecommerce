@@ -11,7 +11,7 @@ return new class () extends Migration {
         rescue(function (): void {
             DB::table('settings')->insertOrIgnore([
                 'id' => BaseModel::isUsingIntegerId() ? null : (new BaseModel())->newUniqueId(),
-                'key' => 'enable_recaptcha_botble_contact_forms_fronts_contact_form',
+                'key' => 'enable_recaptcha_platformcore_contact_forms_fronts_contact_form',
                 'value' => '1',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
@@ -20,7 +20,7 @@ return new class () extends Migration {
             if (setting('enable_math_captcha_for_contact_form')) {
                 DB::table('settings')->insertOrIgnore([
                     'id' => BaseModel::isUsingIntegerId() ? null : (new BaseModel())->newUniqueId(),
-                    'key' => 'enable_math_captcha_botble_contact_forms_fronts_contact_form',
+                    'key' => 'enable_math_captcha_platformcore_contact_forms_fronts_contact_form',
                     'value' => '1',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),

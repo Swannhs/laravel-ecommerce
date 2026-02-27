@@ -49,7 +49,7 @@ $(() => {
                     if (selectedOption != 0) {
                         self.addFromGlobalOption(selectedOption)
                     } else {
-                        Botble.showError(productOptionLang.please_select_option)
+                        PlatformCore.showError(productOptionLang.please_select_option)
                     }
 
                     return false

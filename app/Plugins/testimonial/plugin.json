@@ -1,10 +1,10 @@
 {
-    "id": "botble/testimonial",
+    "id": "platformcore/testimonial",
     "name": "Testimonial",
     "namespace": "App\\Plugins\\Testimonial\\",
     "provider": "App\\Plugins\\Testimonial\\Providers\\TestimonialServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.1.8",
     "description": "Customer testimonials",
     "minimum_core_version": "7.3.0"

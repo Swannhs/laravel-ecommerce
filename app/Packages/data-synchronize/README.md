@@ -26,8 +26,8 @@ This is how an exporter should look like, below is an example of a `PostExporter
 namespace App\Plugins\Blog\Exporters;
 
 use App\Plugins\Blog\Models\Post;
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\Exporter;
+use PlatformCore\DataSynchronize\Exporter\ExportColumn;
+use PlatformCore\DataSynchronize\Exporter\Exporter;
 use Illuminate\Support\Collection;
 
 class PostExporter extends Exporter
@@ -60,8 +60,8 @@ This is how to use the exporter in a controller.
 
 namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\DataSynchronize\Exporter\Exporter;
-use Botble\DataSynchronize\Http\Controllers\ExportController;
+use PlatformCore\DataSynchronize\Exporter\Exporter;
+use PlatformCore\DataSynchronize\Http\Controllers\ExportController;
 use App\Plugins\Blog\Exporters\PostExporter;
 
 class ExportPostController extends ExportController
@@ -76,7 +76,7 @@ class ExportPostController extends ExportController
 And then register the route in your routes file.
 
 ```php
-use Botble\Base\Facades\AdminHelper;
+use PlatformCore\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
 use App\Plugins\Blog\Http\Controllers\ExportPostController;
 
@@ -116,9 +116,9 @@ To add the exporter to the Export/Import Data panel section, you can use the `be
 the `PanelSectionManager` class to register the exporter into the panel section.
 
 ```php
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\DataSynchronize\PanelSections\ExportPanelSection;
+use PlatformCore\Base\Facades\PanelSectionManager;
+use PlatformCore\Base\PanelSections\PanelSectionItem;
+use PlatformCore\DataSynchronize\PanelSections\ExportPanelSection;
 
 public function boot(): void
 {
@@ -169,8 +169,8 @@ This is how an importer should look like, below is an example of a `PostImporter
 namespace App\Plugins\Blog\Importers;
 
 use App\Plugins\Blog\Models\Post;
-use Botble\DataSynchronize\Importer\ImportColumn;
-use Botble\DataSynchronize\Importer\Importer;
+use PlatformCore\DataSynchronize\Importer\ImportColumn;
+use PlatformCore\DataSynchronize\Importer\Importer;
 
 class PostImporter extends Importer
 {
@@ -245,8 +245,8 @@ This is how to use the importer in a controller.
 
 namespace App\Plugins\Blog\Http\Controllers;
 
-use Botble\DataSynchronize\Http\Controllers\ImportController;
-use Botble\DataSynchronize\Importer\Importer;
+use PlatformCore\DataSynchronize\Http\Controllers\ImportController;
+use PlatformCore\DataSynchronize\Importer\Importer;
 
 class ImportPostController extends ImportController
 {
@@ -260,7 +260,7 @@ class ImportPostController extends ImportController
 And then register the route in your routes file.
 
 ```php
-use Botble\Base\Facades\AdminHelper;
+use PlatformCore\Base\Facades\AdminHelper;
 
 AdminHelper::registerRoutes(function () {
     Route::prefix('tools/data-synchronize')->name('tools.data-synchronize.')->group(function () {
@@ -295,9 +295,9 @@ Now you can navigate to `http://your-domain/tools/data-synchronize/import/posts`
 To add the importer to the Export/Import Data panel section, you can use the `beforeRendering` method of the `PanelSectionManager` class to register the importer into the panel section.
 
 ```php
-use Botble\Base\Facades\PanelSectionManager;
-use Botble\Base\PanelSections\PanelSectionItem;
-use Botble\DataSynchronize\PanelSections\ImportPanelSection;
+use PlatformCore\Base\Facades\PanelSectionManager;
+use PlatformCore\Base\PanelSections\PanelSectionItem;
+use PlatformCore\DataSynchronize\PanelSections\ImportPanelSection;
 
 public function boot(): void
 {

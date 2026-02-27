@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Theme\Database\Traits\HasThemeOptionSeeder;
-use Botble\Theme\Supports\ThemeSupport;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Packages\Theme\Database\Traits\HasThemeOptionSeeder;
+use App\Packages\Theme\Supports\ThemeSupport;
 
 class ThemeOptionSeeder extends BaseSeeder
 {

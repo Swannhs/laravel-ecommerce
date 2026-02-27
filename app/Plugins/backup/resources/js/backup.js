@@ -30,25 +30,25 @@ class BackupManagement {
 
                     backupTable.find(`button[data-section="${deleteURL}"]`).closest('tr').remove()
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                 })
         })
 
         $('#restore-backup-button').on('click', (event) => {
             event.preventDefault()
             let _self = $(event.currentTarget)
-            Botble.showButtonLoading(_self)
+            PlatformCore.showButtonLoading(_self)
 
             $httpClient
                 .make()
                 .get(_self.data('section'))
                 .then(({ data }) => {
                     _self.closest('.modal').modal('hide')
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     window.location.reload()
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading(_self)
+                    PlatformCore.hideButtonLoading(_self)
                 })
         })
 
@@ -72,7 +72,7 @@ class BackupManagement {
                 .then(({ data }) => {
                     backupTable.find('.no-backup-row').remove()
                     backupTable.find('tbody').append(data.data)
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                 })
                 .finally(() => {
                     _self.closest('.modal').modal('hide')

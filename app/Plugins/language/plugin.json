@@ -1,10 +1,10 @@
 {
-    "id": "botble/language",
+    "id": "platformcore/language",
     "name": "Language",
     "namespace": "App\\Plugins\\Language\\",
     "provider": "App\\Plugins\\Language\\Providers\\LanguageServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.2.8",
     "description": "Multi-language features.",
     "minimum_core_version": "7.3.0"

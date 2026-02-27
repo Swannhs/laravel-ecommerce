@@ -67,14 +67,14 @@
                         success: function(data) {
                             $('#resend-verification-email-modal').modal('hide');
                             if (data.error) {
-                                Botble.showError(data.message);
+                                PlatformCore.showError(data.message);
                             } else {
-                                Botble.showSuccess(data.message);
+                                PlatformCore.showSuccess(data.message);
                             }
                         },
                         error: function() {
                             $('#resend-verification-email-modal').modal('hide');
-                            Botble.showError('{{ trans('plugins/ecommerce::customer.error_sending_verification_email') }}');
+                            PlatformCore.showError('{{ trans('plugins/ecommerce::customer.error_sending_verification_email') }}');
                         },
                         complete: function() {
                             button.prop('disabled', false);

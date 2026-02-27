@@ -1,6 +1,6 @@
 class LanguageManagement {
     init() {
-        Botble.select($('.select-search-language'), {
+        PlatformCore.select($('.select-search-language'), {
             templateResult: LanguageManagement.formatState,
             templateSelection: LanguageManagement.formatState,
         })
@@ -59,7 +59,7 @@ class LanguageManagement {
             $('.modal-confirm-delete').modal('hide')
 
             let deleteURL = $(event.currentTarget).data('section')
-            Botble.showButtonLoading($(this))
+            PlatformCore.showButtonLoading($(this))
 
             $httpClient
                 .make()
@@ -70,10 +70,10 @@ class LanguageManagement {
                         $('.tooltip').remove()
                     }
                     languageTable.find(`button[data-section="${deleteURL}"]`).closest('tr').remove()
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading($(this))
+                    PlatformCore.hideButtonLoading($(this))
                 })
         })
 
@@ -102,7 +102,7 @@ class LanguageManagement {
 
                     $('.tooltip').remove()
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                 })
         })
 
@@ -136,17 +136,17 @@ class LanguageManagement {
             const form = $(event.currentTarget)
             const button = form.find('button[type=submit]')
 
-            Botble.showButtonLoading(button)
+            PlatformCore.showButtonLoading(button)
 
             $httpClient
                 .make()
                 .postForm(form.prop('action'), new FormData(form[0]))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     form.removeClass('dirty')
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading(button)
+                    PlatformCore.hideButtonLoading(button)
                 })
         })
     }
@@ -184,7 +184,7 @@ class LanguageManagement {
             url = $('#btn-language-submit-edit').data('update-url') + `?lang_code=${code}`
         }
 
-        Botble.showButtonLoading($buttonSubmit, true)
+        PlatformCore.showButtonLoading($buttonSubmit, true)
 
         $httpClient
             .make()
@@ -205,7 +205,7 @@ class LanguageManagement {
                 } else {
                     $('.table-language').append(data.data)
                 }
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
             })
             .finally(() => {
                 $('#language_id').val('').trigger('change')
@@ -218,7 +218,7 @@ class LanguageManagement {
                 $('#btn-language-submit-edit')
                     .prop('id', 'btn-language-submit')
                     .text($('#btn-language-submit').data('add-language-text'))
-                Botble.hideButtonLoading($buttonSubmit)
+                PlatformCore.hideButtonLoading($buttonSubmit)
             })
     }
 }

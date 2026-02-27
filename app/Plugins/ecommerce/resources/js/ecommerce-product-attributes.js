@@ -22,7 +22,7 @@ class EcommerceProductAttribute {
 
         _self.totalItem++
 
-        Botble.initMediaIntegrate()
+        PlatformCore.initMediaIntegrate()
     }
 
     exportData() {
@@ -62,7 +62,7 @@ class EcommerceProductAttribute {
 
                 _self.addNewAttribute()
 
-                Botble.initColorPicker()
+                PlatformCore.initColorPicker()
             })
             .on('click', '.swatches-container .swatches-list tr .remove-item', (event) => {
                 event.preventDefault()

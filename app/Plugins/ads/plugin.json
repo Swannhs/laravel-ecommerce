@@ -1,11 +1,11 @@
 {
-    "id": "botble/ads",
+    "id": "platformcore/ads",
     "name": "Ads",
     "namespace": "App\\Plugins\\Ads\\",
     "provider": "App\\Plugins\\Ads\\Providers\\AdsServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "1.1.3",
-    "description": "Ads manager for Botble CMS",
+    "description": "Ads manager for PlatformCore CMS",
     "minimum_core_version": "7.3.0"
 }

@@ -199,8 +199,8 @@
 
                     localStorage.removeItem('vb_draft_' + self.config.pageId)
 
-                    if (typeof Botble !== 'undefined' && Botble.showSuccess) {
-                        Botble.showSuccess(self.config.translations.saved)
+                    if (typeof PlatformCore !== 'undefined' && PlatformCore.showSuccess) {
+                        PlatformCore.showSuccess(self.config.translations.saved)
                     } else {
                         alert(self.config.translations.saved)
                     }
@@ -213,8 +213,8 @@
                         errorMsg = xhr.responseJSON.message
                     }
 
-                    if (typeof Botble !== 'undefined' && Botble.showError) {
-                        Botble.showError(errorMsg)
+                    if (typeof PlatformCore !== 'undefined' && PlatformCore.showError) {
+                        PlatformCore.showError(errorMsg)
                     } else {
                         alert(errorMsg)
                     }

@@ -9,7 +9,7 @@ $(() => {
             .withButtonLoading($button)
             .postForm($button.data('url'))
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
 
                 if ($button.closest('.modal').length) {
                     $button.closest('.modal').modal('hide')

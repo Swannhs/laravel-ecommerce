@@ -147,7 +147,7 @@ class UserTable extends TableAbstract
 
     public function htmlDrawCallbackFunction(): ?string
     {
-        return parent::htmlDrawCallbackFunction() . 'Botble.initEditable()';
+        return parent::htmlDrawCallbackFunction() . 'PlatformCore.initEditable()';
     }
 
     public function saveBulkChanges(array $ids, string $inputKey, ?string $inputValue): bool

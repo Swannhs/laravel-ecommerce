@@ -1,15 +1,15 @@
 {
-    "id": "botble/stripe-connect",
+    "id": "platformcore/stripe-connect",
     "name": "Stripe Connect",
     "namespace": "App\\Plugins\\StripeConnect\\",
     "provider": "App\\Plugins\\StripeConnect\\Providers\\StripeConnectServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "1.0.1",
     "description": "Enables Stripe Connect for vendor payments and withdrawals.",
     "minimum_core_version": "7.3.0",
     "require": [
-        "botble/marketplace",
-        "botble/stripe"
+        "platformcore/marketplace",
+        "platformcore/stripe"
     ]
 }

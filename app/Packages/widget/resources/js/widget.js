@@ -22,18 +22,18 @@ class WidgetManagement {
                 .then(({ data }) => {
                     parentElement.find('ul').html(data.data)
                     this.updateWidgetCount(parentElement)
-                    Botble.callScroll($('.list-page-select-widget'))
-                    Botble.initResources()
-                    Botble.initMediaIntegrate()
-                    Botble.initTreeCheckboxes()
+                    PlatformCore.callScroll($('.list-page-select-widget'))
+                    PlatformCore.initResources()
+                    PlatformCore.initMediaIntegrate()
+                    PlatformCore.initTreeCheckboxes()
 
-                    if (window.Botble) {
-                        window.Botble.initCoreIcon()
+                    if (window.PlatformCore) {
+                        window.PlatformCore.initCoreIcon()
                     }
 
                     $(document).trigger('widgets:reloaded')
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                 })
                 .finally(() => {
                     parentElement.find('.widget-save i').remove()
@@ -79,12 +79,12 @@ class WidgetManagement {
             .then(({ data }) => {
                 $('#widget-add-form-container').html(data.data.form)
 
-                Botble.initResources()
-                Botble.initMediaIntegrate()
-                Botble.initTreeCheckboxes()
+                PlatformCore.initResources()
+                PlatformCore.initMediaIntegrate()
+                PlatformCore.initTreeCheckboxes()
 
-                if (window.Botble) {
-                    window.Botble.initCoreIcon()
+                if (window.PlatformCore) {
+                    window.PlatformCore.initCoreIcon()
                 }
             })
             .catch(() => {
@@ -254,7 +254,7 @@ class WidgetManagement {
 
                 let widget = _self.closest('li')
 
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
 
                 $httpClient
                     .make()
@@ -264,21 +264,21 @@ class WidgetManagement {
                         sidebar_id: _self.closest('.sidebar-item').data('id'),
                     })
                     .then(({ data }) => {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         const sidebarItem = _self.closest('.sidebar-item')
                         sidebarItem.find('ul').html(data.data)
                         this.updateWidgetCount(sidebarItem)
 
-                        if (window.Botble) {
-                            window.Botble.initResources()
-                            window.Botble.initMediaIntegrate()
-                            window.Botble.initCoreIcon()
+                        if (window.PlatformCore) {
+                            window.PlatformCore.initResources()
+                            window.PlatformCore.initMediaIntegrate()
+                            window.PlatformCore.initCoreIcon()
                         }
 
                         $(document).trigger('widgets:reloaded')
                     })
                     .finally(() => {
-                        Botble.showButtonLoading(widget.find('.widget-control-delete'))
+                        PlatformCore.showButtonLoading(widget.find('.widget-control-delete'))
                     })
             })
             .on('click', '.widget-item .widget-item-header', (event) => {
@@ -304,7 +304,7 @@ class WidgetManagement {
             .on('click', '.widget-save', (event) => {
                 event.preventDefault()
                 let _self = $(event.currentTarget)
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
                 this.saveWidget(_self.closest('.sidebar-item'))
             })
             .on('click', '.widget-add-btn', (event) => {

@@ -1,10 +1,10 @@
 {
-    "id": "botble/location",
+    "id": "platformcore/location",
     "name": "Location",
     "namespace": "App\\Plugins\\Location\\",
     "provider": "App\\Plugins\\Location\\Providers\\LocationServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "1.1.8",
     "description": "Manage location data: country, state, city.",
     "minimum_core_version": "7.3.0"

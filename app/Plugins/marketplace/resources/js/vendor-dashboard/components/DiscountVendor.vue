@@ -283,7 +283,7 @@ export default {
                     $('.coupon-code-input').closest('div').find('.invalid-feedback').remove()
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
         },
         handleChangeTypeOption: function () {

@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => '예제 및 엔드포인트 세부 정보가 포함된 전체 API 문서를 확인하세요.',
     'view_documentation' => 'API 문서 보기',
     'generate_docs_title' => 'API 문서 생성',
-    'generate_docs_description' => 'Botble CMS 애플리케이션의 API 문서를 생성하려면 다음 간단한 단계를 따르세요:',
+    'generate_docs_description' => 'PlatformCore CMS 애플리케이션의 API 문서를 생성하려면 다음 간단한 단계를 따르세요:',
     'generate_docs_step_1' => '1. Scribe 패키지 설치:',
     'generate_docs_step_2' => '2. API 문서 생성:',
     'generate_docs_step_3' => '3. API 문서에 액세스:',

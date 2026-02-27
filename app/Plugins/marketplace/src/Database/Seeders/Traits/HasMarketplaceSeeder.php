@@ -18,7 +18,7 @@ trait HasMarketplaceSeeder
 
         $faker = $this->fake();
 
-        $customers = Customer::query()->whereNot('email', 'customer@botble.com')->get();
+        $customers = Customer::query()->whereNot('email', 'customer@platformcore.com')->get();
         $vendorCount = 0;
         $maxVendors = 8;
 
@@ -59,7 +59,7 @@ trait HasMarketplaceSeeder
             $customerId = $item['customer_id'] ?? ($vendorIds->count() > 0 ? $vendorIds->random() : null);
 
             if ($key == 0) {
-                $customerId = Customer::query()->where('email', 'vendor@botble.com')->value('id');
+                $customerId = Customer::query()->where('email', 'vendor@platformcore.com')->value('id');
             }
 
             if (! $customerId) {

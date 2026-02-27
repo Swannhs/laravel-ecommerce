@@ -7,13 +7,13 @@ $(() => {
         const $form = $(this)
         const formData = new FormData(e.currentTarget)
 
-        Botble.showLoading($form[0])
+        PlatformCore.showLoading($form[0])
 
         $httpClient
             .make()
             .postForm($form.prop('action'), formData)
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
 
                 localStorage.removeItem('license_check_time')
 
@@ -32,7 +32,7 @@ $(() => {
                 }
             })
             .finally(() => {
-                Botble.hideLoading($form[0])
+                PlatformCore.hideLoading($form[0])
             })
     })
 })

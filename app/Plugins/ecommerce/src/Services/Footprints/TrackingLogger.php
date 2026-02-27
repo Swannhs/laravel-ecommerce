@@ -17,7 +17,7 @@ class TrackingLogger implements TrackingLoggerInterface
 
         if ($data && ! app(FootprinterInterface::class)->getFootprints()) {
             Cookie::queue(
-                'botble_footprints_cookie_data',
+                'platformcore_footprints_cookie_data',
                 json_encode($data),
                 604800,
                 null,

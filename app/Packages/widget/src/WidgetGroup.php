@@ -63,7 +63,7 @@ class WidgetGroup
         $widget['arguments'][] = $this->id;
         $widget['arguments'][] = $position;
 
-        $factory = $this->app->make('botble.widget');
+        $factory = $this->app->make('platformcore.widget');
 
         return $factory->run(...$widget['arguments']);
     }

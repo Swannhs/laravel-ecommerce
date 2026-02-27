@@ -1,14 +1,14 @@
 {
-    "id": "botble/marketplace",
+    "id": "platformcore/marketplace",
     "name": "Marketplace",
     "namespace": "App\\Plugins\\Marketplace\\",
     "provider": "App\\Plugins\\Marketplace\\Providers\\MarketplaceServiceProvider",
-    "author": "Botble technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore technologies",
+    "url": "https://platformcore.com",
     "version": "2.2.1",
     "description": "Marketplace plugin for Ecommerce site",
     "minimum_core_version": "7.6.0",
     "require": [
-        "botble/ecommerce"
+        "platformcore/ecommerce"
     ]
 }

@@ -1,10 +1,10 @@
 {
-    "id": "botble/simple-slider",
+    "id": "platformcore/simple-slider",
     "name": "Simple Slider",
     "namespace": "App\\Plugins\\SimpleSlider\\",
     "provider": "App\\Plugins\\SimpleSlider\\Providers\\SimpleSliderServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.0.9",
     "description": "A plugin to create sliders",
     "minimum_core_version": "7.3.0"

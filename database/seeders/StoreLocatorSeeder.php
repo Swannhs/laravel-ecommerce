@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Ecommerce\Models\StoreLocator;
-use Botble\Setting\Models\Setting as SettingModel;
+use App\Plugins\Ecommerce\Models\StoreLocator;
+use App\Core\Setting\Models\Setting as SettingModel;
 use Illuminate\Database\Seeder;
 
 class StoreLocatorSeeder extends Seeder
@@ -14,7 +14,7 @@ class StoreLocatorSeeder extends Seeder
 
         $storeLocator = StoreLocator::query()->create([
             'name' => 'Martfury',
-            'email' => 'sales@botble.com',
+            'email' => 'sales@platformcore.com',
             'phone' => '1800979769',
             'address' => '502 New Street',
             'state' => 'Brighton VIC',

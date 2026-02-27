@@ -148,14 +148,14 @@
                     data: $(this).serialize(),
                     success: function(response) {
                         if (response.error) {
-                            Botble.showError(response.message);
+                            PlatformCore.showError(response.message);
                         } else {
-                            Botble.showSuccess(response.message);
+                            PlatformCore.showSuccess(response.message);
                             location.reload();
                         }
                     },
                     error: function(xhr) {
-                        Botble.handleError(xhr);
+                        PlatformCore.handleError(xhr);
                     }
                 });
             });
@@ -181,14 +181,14 @@
                     data: $(this).serialize(),
                     success: function(response) {
                         if (response.error) {
-                            Botble.showError(response.message);
+                            PlatformCore.showError(response.message);
                         } else {
-                            Botble.showSuccess(response.message);
+                            PlatformCore.showSuccess(response.message);
                             location.reload();
                         }
                     },
                     error: function(xhr) {
-                        Botble.handleError(xhr);
+                        PlatformCore.handleError(xhr);
                     }
                 });
             });
@@ -206,14 +206,14 @@
                         },
                         success: function(response) {
                             if (response.error) {
-                                Botble.showError(response.message);
+                                PlatformCore.showError(response.message);
                             } else {
-                                Botble.showSuccess(response.message);
+                                PlatformCore.showSuccess(response.message);
                                 location.reload();
                             }
                         },
                         error: function(xhr) {
-                            Botble.handleError(xhr);
+                            PlatformCore.handleError(xhr);
                         }
                     });
                 }
@@ -229,14 +229,14 @@
                     data: $(this).serialize(),
                     success: function(response) {
                         if (response.error) {
-                            Botble.showError(response.message);
+                            PlatformCore.showError(response.message);
                         } else {
-                            Botble.showSuccess(response.message);
+                            PlatformCore.showSuccess(response.message);
                             location.reload();
                         }
                     },
                     error: function(xhr) {
-                        Botble.handleError(xhr);
+                        PlatformCore.handleError(xhr);
                     }
                 });
             });

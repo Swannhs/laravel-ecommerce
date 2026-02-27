@@ -35,8 +35,8 @@
     <script>
         'use strict';
 
-        var BotbleVariables = BotbleVariables || {};
-        BotbleVariables.languages = BotbleVariables.languages || {};
-        BotbleVariables.languages.reports = {!! json_encode(trans('plugins/ecommerce::reports.ranges'), JSON_HEX_APOS) !!}
+        var PlatformCoreVariables = PlatformCoreVariables || {};
+        PlatformCoreVariables.languages = PlatformCoreVariables.languages || {};
+        PlatformCoreVariables.languages.reports = {!! json_encode(trans('plugins/ecommerce::reports.ranges'), JSON_HEX_APOS) !!}
     </script>
 @endpush

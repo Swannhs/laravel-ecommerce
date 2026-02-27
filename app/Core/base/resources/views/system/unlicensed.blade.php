@@ -58,7 +58,7 @@
                             <span class="col">
                                 <strong class="d-block">Get Free Plugins</strong>
                                 <span class="d-block text-secondary">Unlimited plugins, extended your website from <a
-                                        href="https://marketplace.botble.com"
+                                        href="https://marketplace.platformcore.com"
                                         target="_blank"
                                     >our marketplace <x-core::icon name="ti ti-external-link" /></a>.</span>
                             </span>

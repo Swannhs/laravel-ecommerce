@@ -96,7 +96,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.aws_bucket'))
                     ->value(setting('media_aws_bucket'))
-                    ->placeholder('Ex: botble')
+                    ->placeholder('Ex: platformcore')
             )
             ->add(
                 'media_aws_url',
@@ -104,7 +104,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.aws_url'))
                     ->value(setting('media_aws_url'))
-                    ->placeholder('Ex: https://s3-ap-southeast-1.amazonaws.com/botble')
+                    ->placeholder('Ex: https://s3-ap-southeast-1.amazonaws.com/platformcore')
             )
             ->add(
                 'media_aws_endpoint',
@@ -158,7 +158,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.r2_bucket'))
                     ->value(setting('media_r2_bucket'))
-                    ->placeholder('Ex: botble')
+                    ->placeholder('Ex: platformcore')
             )
             ->add(
                 'media_r2_url',
@@ -219,7 +219,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.do_spaces_bucket'))
                     ->value(setting('media_do_spaces_bucket'))
-                    ->placeholder('Ex: botble')
+                    ->placeholder('Ex: platformcore')
             )
             ->add(
                 'media_do_spaces_endpoint',
@@ -227,7 +227,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.do_spaces_endpoint'))
                     ->value(setting('media_do_spaces_endpoint'))
-                    ->placeholder('Ex: https://botble.sfo2.digitaloceanspaces.com')
+                    ->placeholder('Ex: https://platformcore.sfo2.digitaloceanspaces.com')
             )
             ->add(
                 'media_do_spaces_cdn_enabled',
@@ -288,7 +288,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.wasabi_bucket'))
                     ->value(setting('media_wasabi_bucket'))
-                    ->placeholder('Ex: botble')
+                    ->placeholder('Ex: platformcore')
             )
             ->add(
                 'media_wasabi_root',
@@ -307,7 +307,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.bunnycdn_zone'))
                     ->value(setting('media_bunnycdn_zone'))
-                    ->placeholder('Ex: botble')
+                    ->placeholder('Ex: platformcore')
             )
             ->add(
                 'media_bunnycdn_hostname',
@@ -315,7 +315,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.bunnycdn_hostname'))
                     ->value(setting('media_bunnycdn_hostname'))
-                    ->placeholder('Ex: botble.b-cdn.net')
+                    ->placeholder('Ex: platformcore.b-cdn.net')
             )
             ->add(
                 'media_bunnycdn_key',
@@ -372,7 +372,7 @@ class MediaSettingForm extends SettingForm
                 TextFieldOption::make()
                     ->label(trans('core/setting::setting.media.backblaze_bucket'))
                     ->value(setting('media_backblaze_bucket'))
-                    ->placeholder('Ex: botble')
+                    ->placeholder('Ex: platformcore')
             )
             ->add(
                 'media_backblaze_endpoint',

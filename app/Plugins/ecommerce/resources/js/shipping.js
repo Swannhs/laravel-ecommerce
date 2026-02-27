@@ -24,9 +24,9 @@ class ShippingManagement {
                     if (!data.error) {
                         $(`.wrap-table-shipping-${_self.data('id')}`).remove()
 
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                     $('#confirm-delete-region-item-modal').modal('hide')
 
@@ -69,9 +69,9 @@ class ShippingManagement {
                             window.location.reload()
                         }
 
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                     $('#confirm-delete-price-item-modal').modal('hide')
                 })
@@ -101,7 +101,7 @@ class ShippingManagement {
                 formData.shipping_id = shippingId
             }
 
-            formData = Botble.unmaskInputNumber($form, formData)
+            formData = PlatformCore.unmaskInputNumber($form, formData)
 
             formData = $.extend({}, formData)
 
@@ -111,7 +111,7 @@ class ShippingManagement {
                 .post($form.prop('action'), formData)
                 .then(({data}) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         if (data?.data?.rule?.shipping_id && data?.data?.html) {
                             const $box = $(`.wrap-table-shipping-${data.data.rule.shipping_id}`)
                             const $item = $box.find(`.box-table-shipping-item-${data.data.rule.id}`)
@@ -124,10 +124,10 @@ class ShippingManagement {
 
                             $('.wrapper-content .empty').remove();
 
-                            Botble.initResources()
+                            PlatformCore.initResources()
                         }
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
 
                     if (shippingId) {
@@ -168,7 +168,7 @@ class ShippingManagement {
             $this
                 .closest('.input-shipping-sync-wrapper')
                 .find($this.data('target'))
-                .text(Botble.numberFormat(parseFloat(number), 2))
+                .text(PlatformCore.numberFormat(parseFloat(number), 2))
         })
 
         $(document).on('keyup', '.input-sync-text-item', (event) => {
@@ -227,9 +227,9 @@ class ShippingManagement {
                     if (!data.error) {
                         $modal.find('.modal-body').html(data.data.html)
                         $modal.find('.modal-title strong').html(data.message)
-                        Botble.initResources()
+                        PlatformCore.initResources()
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -245,14 +245,14 @@ class ShippingManagement {
             const method = $form.prop('method').toLowerCase()
 
             if (!allowedMethods.includes(method)) {
-                Botble.showError('This method is not supported.')
+                PlatformCore.showError('This method is not supported.')
 
                 return
             }
 
             let formData = new FormData($form[0])
 
-            formData = Botble.unmaskInputNumber($form, formData)
+            formData = PlatformCore.unmaskInputNumber($form, formData)
 
             $httpClient
                 .make()
@@ -267,9 +267,9 @@ class ShippingManagement {
                             $table.prepend(data.data.html)
                         }
                         $modal.modal('hide')
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -302,15 +302,15 @@ class ShippingManagement {
                             })
                         }
 
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                     $('#confirm-delete-shipping-rule-item-modal').modal('hide')
                 })
         })
 
-        Botble.select($(document).find('.select-country-search'))
+        PlatformCore.select($(document).find('.select-country-search'))
 
         $(document).on('click', '.btn-select-country', (event) => {
             event.preventDefault()
@@ -328,7 +328,7 @@ class ShippingManagement {
                 .withButtonLoading(_self)
                 .post($form.prop('action'), $form.serialize())
                 .then(({data}) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     $('.wrapper-content').load(`${window.location.href} .wrapper-content > *`)
                     $('#select-country-modal').modal('hide')
                     $('.wrapper-content').show()
@@ -357,7 +357,7 @@ class ShippingManagement {
                     adjustmentPrice = 0
                 }
 
-                $(item).text(Botble.numberFormat(parseFloat(basePrice) + parseFloat(adjustmentPrice)), 2)
+                $(item).text(PlatformCore.numberFormat(parseFloat(basePrice) + parseFloat(adjustmentPrice)), 2)
             })
         })
 
@@ -447,7 +447,7 @@ class ShippingManagement {
                     if (!data.error) {
                         $table.replaceWith(data.data.html)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         }

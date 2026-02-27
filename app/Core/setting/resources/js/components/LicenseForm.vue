@@ -106,7 +106,7 @@ export default {
                 })
                 .catch((data) => {
                     if (data.response && data.response.status === 400) {
-                        Botble.showError(data.response.data.message)
+                        PlatformCore.showError(data.response.data.message)
                     }
 
                     localStorage.setItem('license_verification_time', Date.now().toString())
@@ -159,7 +159,7 @@ export default {
                 .then(({ data }) => {
                     this.verified = true
                     this.license = data.data
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     // Update localStorage to reflect activation
                     localStorage.setItem('license_verification_time', Date.now().toString())
@@ -181,7 +181,7 @@ export default {
                 .then(({ data }) => {
                     this.verified = false
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     localStorage.setItem('license_verification_time', Date.now().toString())
                     localStorage.setItem('license_is_verified', 'false')

@@ -1,10 +1,10 @@
 {
-    "id": "botble/shippo",
+    "id": "platformcore/shippo",
     "name": "Shippo",
     "namespace": "App\\Plugins\\Shippo\\",
     "provider": "App\\Plugins\\Shippo\\Providers\\ShippoServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "1.0.3",
     "description": "Multi-Carrier Shippo Shipping Rates & Address Validation for Ecommerce",
     "minimum_core_version": "7.3.0"

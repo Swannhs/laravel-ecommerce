@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'उदाहरणों और एंडपॉइंट विवरण के साथ पूर्ण API दस्तावेज़ीकरण देखें।',
     'view_documentation' => 'API दस्तावेज़ देखें',
     'generate_docs_title' => 'API दस्तावेज़ उत्पन्न करें',
-    'generate_docs_description' => 'अपने Botble CMS एप्लिकेशन के लिए API दस्तावेज़ उत्पन्न करने के लिए, इन सरल चरणों का पालन करें:',
+    'generate_docs_description' => 'अपने PlatformCore CMS एप्लिकेशन के लिए API दस्तावेज़ उत्पन्न करने के लिए, इन सरल चरणों का पालन करें:',
     'generate_docs_step_1' => '1. Scribe पैकेज स्थापित करें:',
     'generate_docs_step_2' => '2. API दस्तावेज़ उत्पन्न करें:',
     'generate_docs_step_3' => '3. अपने API दस्तावेज़ तक पहुंचें:',

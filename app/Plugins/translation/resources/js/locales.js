@@ -13,7 +13,7 @@ $(() => {
         $('.modal-confirm-delete').modal('hide')
 
         let deleteURL = $(event.currentTarget).data('url')
-        Botble.showButtonLoading($(this))
+        PlatformCore.showButtonLoading($(this))
 
         $httpClient
             .make()
@@ -26,10 +26,10 @@ $(() => {
 
                 languageTable.find(`.delete-locale-button[data-url="${deleteURL}"]`).closest('tr').remove()
 
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
             })
             .finally(() => {
-                Botble.hideButtonLoading($(this))
+                PlatformCore.hideButtonLoading($(this))
             })
     })
 
@@ -40,17 +40,17 @@ $(() => {
         const form = $(this)
         const button = form.find('button[type="submit"]')
 
-        Botble.showButtonLoading(button)
+        PlatformCore.showButtonLoading(button)
 
         $httpClient
             .make()
             .postForm(form.prop('action'), new FormData(form[0]))
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
                 languageTable.load(`${window.location.href} .table-language > *`)
             })
             .finally(() => {
-                Botble.hideButtonLoading(button)
+                PlatformCore.hideButtonLoading(button)
             })
     })
 })

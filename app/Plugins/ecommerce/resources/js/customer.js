@@ -17,18 +17,18 @@ $(() => {
             url: _self.data('action'),
             success: (res) => {
                 if (!res.error) {
-                    Botble.showSuccess(res.message)
+                    PlatformCore.showSuccess(res.message)
                     setTimeout(() => {
                         window.location.reload()
                     }, 2000)
                 } else {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 }
                 _self.removeClass('button-loading')
                 _self.closest('.modal').modal('hide')
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
                 _self.removeClass('button-loading')
             },
         })

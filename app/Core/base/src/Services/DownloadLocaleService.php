@@ -13,7 +13,7 @@ use Throwable;
 
 class DownloadLocaleService
 {
-    public const REPOSITORY = 'botble/translations';
+    public const REPOSITORY = 'platformcore/translations';
 
     public function handle(string $locale, bool $includeVendor = true): void
     {

@@ -24,7 +24,7 @@
                 :multiple="true"
                 :data-placeholder="trans('plugins/location::bulk-import.choose_country')"
                 :helper-text="trans('plugins/location::bulk-import.available_data_help', [
-                    'link' => Html::link('https://github.com/botble/locations', attributes: ['target' => '_blank']),
+                    'link' => Html::link('https://github.com/platformcore/locations', attributes: ['target' => '_blank']),
                 ])"
             />
 

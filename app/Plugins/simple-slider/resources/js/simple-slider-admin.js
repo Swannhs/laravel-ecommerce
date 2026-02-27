@@ -52,7 +52,7 @@ class SimpleSliderAdminManagement {
                     .text(index + 1)
             })
 
-            Botble.showButtonLoading(_self)
+            PlatformCore.showButtonLoading(_self)
 
             $httpClient
                 .make()
@@ -60,10 +60,10 @@ class SimpleSliderAdminManagement {
                     items,
                 })
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading(_self)
+                    PlatformCore.hideButtonLoading(_self)
                     _self.hide()
                 })
         })
@@ -88,9 +88,9 @@ $(() => {
                     modal.find('.modal-header .modal-title').text(data.data.title)
                     modal.find('.modal-body').html(data.data.content)
 
-                    Botble.initMediaIntegrate()
+                    PlatformCore.initMediaIntegrate()
 
-                    Botble.initResources()
+                    PlatformCore.initResources()
                 })
         })
 
@@ -107,11 +107,11 @@ $(() => {
                 .withButtonLoading(button)
                 .post(form.prop('action'), form.serialize())
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     modal.modal('hide')
 
-                    $('#botble-simple-slider-tables-simple-slider-item-table').DataTable().draw()
+                    $('#platformcore-simple-slider-tables-simple-slider-item-table').DataTable().draw()
                 })
         })
 })

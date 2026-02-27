@@ -19,7 +19,7 @@ $(() => {
         let $settingContentContainer = $($(this).data('setting-container'))
         if ($(this).val() == '1') {
             $settingContentContainer.removeClass('d-none')
-            Botble.initResources()
+            PlatformCore.initResources()
         } else {
             $settingContentContainer.addClass('d-none')
         }

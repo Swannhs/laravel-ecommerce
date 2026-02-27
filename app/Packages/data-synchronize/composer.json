@@ -1,14 +1,14 @@
 {
-    "name": "botble/data-synchronize",
+    "name": "platformcore/data-synchronize",
     "description": "Make site ready in few steps",
-    "type": "botble-package",
+    "type": "platformcore-package",
     "autoload": {
         "psr-4": {
             "App\\DataSynchronize\\": "src/"
         }
     },
     "require": {
-        "botble/platform": "*@dev",
+        "platformcore/platform": "*@dev",
         "maatwebsite/excel": "^3.1",
         "spatie/simple-excel": "^3.6"
     },

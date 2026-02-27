@@ -13,14 +13,14 @@ $(() => {
                 data: _self.closest('form').serialize(),
                 success: (res) => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message)
+                        PlatformCore.showSuccess(res.message)
                     } else {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     }
                     _self.removeClass('button-loading')
                 },
                 error: (res) => {
-                    Botble.handleError(res)
+                    PlatformCore.handleError(res)
                     _self.removeClass('button-loading')
                 },
             })
@@ -42,15 +42,15 @@ $(() => {
                 url: _self.data('action'),
                 success: (res) => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message)
+                        PlatformCore.showSuccess(res.message)
                     } else {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     }
                     _self.removeClass('button-loading')
                     $('#send-order-recover-email-modal').modal('hide')
                 },
                 error: (res) => {
-                    Botble.handleError(res)
+                    PlatformCore.handleError(res)
                     _self.removeClass('button-loading')
                 },
             })
@@ -67,13 +67,13 @@ $(() => {
                 .post($form.prop('action'), $form.serialize())
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                         return
                     }
 
                     $('#mark-order-as-completed-modal').modal('hide')
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     if (data.data.next_url) {
                         setTimeout(() => (window.location.href = data.data.next_url), 2000)

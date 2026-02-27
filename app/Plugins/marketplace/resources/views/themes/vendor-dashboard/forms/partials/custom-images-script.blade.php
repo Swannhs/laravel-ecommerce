@@ -70,7 +70,7 @@
             },
             success: function(file, response) {
                 if (response.error) {
-                    Botble.showError(response.message);
+                    PlatformCore.showError(response.message);
                 } else {
                     if ({{ setting('media_chunk_enabled') == '1' ? 'true' : 'false' }}) {
                         response = JSON.parse(file.xhr.response);

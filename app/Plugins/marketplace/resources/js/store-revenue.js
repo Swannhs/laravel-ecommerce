@@ -9,7 +9,7 @@ $(() => {
             data: $form.serialize(),
             success: (res) => {
                 if (!res.error) {
-                    Botble.showNotice('success', res.message)
+                    PlatformCore.showNotice('success', res.message)
                     $button.closest('.modal').modal('hide')
                     if (window.LaravelDataTables) {
                         Object.keys(window.LaravelDataTables).map((x) => {
@@ -20,11 +20,11 @@ $(() => {
                         $('.vendor-balance').text(res.data.balance)
                     }
                 } else {
-                    Botble.showNotice('error', res.message)
+                    PlatformCore.showNotice('error', res.message)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $button.removeClass('button-loading')
@@ -59,17 +59,17 @@ $(() => {
             data: $form.serialize(),
             success: (res) => {
                 if (!res.error) {
-                    Botble.showNotice('success', res.message)
+                    PlatformCore.showNotice('success', res.message)
                     $('#verify-store-modal').modal('hide')
                     setTimeout(() => {
                         window.location.reload()
                     }, 1000)
                 } else {
-                    Botble.showNotice('error', res.message)
+                    PlatformCore.showNotice('error', res.message)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $button.removeClass('button-loading')
@@ -92,17 +92,17 @@ $(() => {
             data: $form.serialize(),
             success: (res) => {
                 if (!res.error) {
-                    Botble.showNotice('success', res.message)
+                    PlatformCore.showNotice('success', res.message)
                     $('#unverify-store-modal').modal('hide')
                     setTimeout(() => {
                         window.location.reload()
                     }, 1000)
                 } else {
-                    Botble.showNotice('error', res.message)
+                    PlatformCore.showNotice('error', res.message)
                 }
             },
             error: (res) => {
-                Botble.handleError(res)
+                PlatformCore.handleError(res)
             },
             complete: () => {
                 $button.removeClass('button-loading')

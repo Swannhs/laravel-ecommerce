@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Zobraziť kompletnú dokumentáciu API s príkladmi a podrobnosťami o koncových bodoch.',
     'view_documentation' => 'Zobraziť dokumentáciu API',
     'generate_docs_title' => 'Vygenerovať API dokumentáciu',
-    'generate_docs_description' => 'Na vygenerovanie API dokumentácie pre vašu Botble CMS aplikáciu postupujte podľa týchto jednoduchých krokov:',
+    'generate_docs_description' => 'Na vygenerovanie API dokumentácie pre vašu PlatformCore CMS aplikáciu postupujte podľa týchto jednoduchých krokov:',
     'generate_docs_step_1' => '1. Nainštalujte balík Scribe:',
     'generate_docs_step_2' => '2. Vygenerujte API dokumentáciu:',
     'generate_docs_step_3' => '3. Prístup k vašej API dokumentácii na:',

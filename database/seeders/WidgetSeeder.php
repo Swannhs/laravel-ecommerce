@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Theme\Facades\Theme;
-use Botble\Widget\Models\Widget as WidgetModel;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Packages\Theme\Facades\Theme;
+use App\Packages\Widget\Models\Widget as WidgetModel;
 
 class WidgetSeeder extends BaseSeeder
 {

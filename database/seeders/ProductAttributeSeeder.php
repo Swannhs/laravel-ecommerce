@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductAttribute;
-use Botble\Ecommerce\Models\ProductAttributeSet;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\ProductAttribute;
+use App\Plugins\Ecommerce\Models\ProductAttributeSet;
 
 class ProductAttributeSeeder extends BaseSeeder
 {

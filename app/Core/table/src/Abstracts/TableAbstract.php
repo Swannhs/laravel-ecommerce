@@ -627,7 +627,7 @@ abstract class TableAbstract extends DataTable implements ExtensibleContract
     public function htmlInitCompleteFunction(): ?string
     {
         return '
-            Botble.initResources();
+            PlatformCore.initResources();
 
             document.dispatchEvent(new CustomEvent("core-table-init-completed", {
                 detail: {

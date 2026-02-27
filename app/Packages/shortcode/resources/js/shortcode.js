@@ -154,7 +154,7 @@ $(() => {
         $('.shortcode-modal').modal('show')
 
         const $modalLoading = $shortcodeFormModal.find('.modal-content')
-        Botble.showLoading($modalLoading)
+        PlatformCore.showLoading($modalLoading)
 
         $httpClient
             .make()
@@ -163,11 +163,11 @@ $(() => {
                 $('.shortcode-data-form').trigger('reset')
                 $('.shortcode-input-key').val(key)
                 $('.shortcode-admin-config').html(data.data)
-                Botble.hideLoading($modalLoading)
+                PlatformCore.hideLoading($modalLoading)
 
-                Botble.initResources()
-                Botble.initMediaIntegrate()
-                Botble.initFieldCollapse()
+                PlatformCore.initResources()
+                PlatformCore.initMediaIntegrate()
+                PlatformCore.initFieldCollapse()
 
                 const eventDetail = {
                     shortcode: key,
@@ -204,7 +204,7 @@ $(() => {
         if ($shortcodeItem.length === 0) {
             const message = window.BB_SHORTCODE_MESSAGES?.shortcode_not_available?.replace(':name', name)
                 || `Shortcode "${name}" is not available or has been removed.`
-            Botble.showError(message)
+            PlatformCore.showError(message)
             return
         }
 

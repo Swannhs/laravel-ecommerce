@@ -24,22 +24,22 @@ $(() => {
             }
         }
 
-        Botble.showButtonLoading($button)
+        PlatformCore.showButtonLoading($button)
 
         $httpClient
             .make()
             .post($form.prop('action'), new FormData($form[0]))
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
                 $form.removeClass('dirty')
             })
             .finally(() => {
-                Botble.hideButtonLoading($button)
+                PlatformCore.hideButtonLoading($button)
             })
     })
 
     $('.theme-option button[data-bs-toggle="pill"]').on('shown.bs.tab', () => {
-        Botble.initResources()
+        PlatformCore.initResources()
 
         if (typeof EditorManagement != 'undefined') {
             window.EDITOR = new EditorManagement().init()

@@ -85,7 +85,7 @@ class ThemeTranslationTable extends TableAbstract
 
     public function htmlDrawCallbackFunction(): ?string
     {
-        return parent::htmlDrawCallbackFunction() . 'Botble.initEditable()';
+        return parent::htmlDrawCallbackFunction() . 'PlatformCore.initEditable()';
     }
 
     public function isSimpleTable(): bool

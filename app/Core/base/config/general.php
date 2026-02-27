@@ -2,7 +2,7 @@
 
 return [
     'admin_dir' => env('ADMIN_DIR', 'admin'),
-    'base_name' => env('APP_NAME', 'Botble Technologies'),
+    'base_name' => env('APP_NAME', 'PlatformCore Technologies'),
     'logo' => '/vendor/core/core/base/images/logo.png',
     'favicon' => '/vendor/core/core/base/images/favicon.png',
     'editor' => [
@@ -474,7 +474,7 @@ return [
     'google_fonts_key' => env('CMS_GOOGLE_FONTS_KEY'),
     'demo_mode_enabled' => env('CMS_DEMO_MODE_ENABLED', false),
     'enable_email_configuration_from_admin_panel' => env('CMS_ENABLE_EMAIL_CONFIGURATION_FROM_ADMIN_PANEL', true),
-    'session_cookie' => env('CMS_SESSION_COOKIE_KEY_NAME', 'botble_session'),
+    'session_cookie' => env('CMS_SESSION_COOKIE_KEY_NAME', 'platformcore_session'),
     'allowed_iframe_urls' => env('CMS_IFRAME_ALLOWED_URLS', ''),
     'iframe_regex' => env('CMS_IFRAME_FILTER_URL_REGEX', ''),
     'static_ip' => env('CMS_STATIC_IP'),

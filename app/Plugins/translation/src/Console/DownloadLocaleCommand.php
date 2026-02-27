@@ -8,7 +8,7 @@ use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;
 
-#[AsCommand('cms:translations:download-locale', 'Download translation files from https://github.com/botble/translations')]
+#[AsCommand('cms:translations:download-locale', 'Download translation files from https://github.com/platformcore/translations')]
 class DownloadLocaleCommand extends Command implements PromptsForMissingInput
 {
     public function handle(Manager $manager): int

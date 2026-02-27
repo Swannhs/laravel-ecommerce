@@ -51,7 +51,7 @@ class EditorManagement {
         if (ckfinder && btnGalleries.length) {
             ckfinder.execute = () => btnGalleries.trigger('click')
         } else {
-            ckfinder.execute = () => Botble.showError('Not available.')
+            ckfinder.execute = () => PlatformCore.showError('Not available.')
         }
     }
     initCkEditor(element, extraConfig) {

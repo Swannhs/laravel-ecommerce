@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Database\Seeders\Traits\HasProductSeeder;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\Traits\HasProductSeeder;
 use Illuminate\Support\Facades\File;
 
 class ProductSeeder extends BaseSeeder

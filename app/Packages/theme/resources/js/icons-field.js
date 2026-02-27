@@ -37,7 +37,7 @@ $(() => {
                     return $(`<span><i class="${state.id}"></i></span> ${state.text}</span>`)
                 }
 
-                Botble.select(element, {
+                PlatformCore.select(element, {
                     templateResult: (state) => templateCallback(state),
                     templateSelection: (state) => templateCallback(state),
                     placeholder: $this.data('empty-value'),

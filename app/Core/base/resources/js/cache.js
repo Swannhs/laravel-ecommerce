@@ -5,13 +5,13 @@ class CacheManagement {
 
             let _self = $(event.currentTarget)
 
-            Botble.showButtonLoading(_self)
+            PlatformCore.showButtonLoading(_self)
 
             $httpClient
                 .make()
                 .post(_self.data('url'), { type: _self.data('type') })
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     // Refresh the page to update cache size display
                     if (_self.data('type') === 'clear_cms_cache') {
@@ -20,7 +20,7 @@ class CacheManagement {
                         }, 1000)
                     }
                 })
-                .finally(() => Botble.hideButtonLoading(_self))
+                .finally(() => PlatformCore.hideButtonLoading(_self))
         })
     }
 }

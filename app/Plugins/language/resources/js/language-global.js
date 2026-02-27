@@ -20,7 +20,7 @@ class LanguageGlobalManagement {
             let _self = $(event.currentTarget)
             let flagPath = $('#language_flag_path').val()
 
-            Botble.showButtonLoading(_self)
+            PlatformCore.showButtonLoading(_self)
             languageChoiceSelect = $('#post_lang_choice')
 
             $httpClient
@@ -79,7 +79,7 @@ class LanguageGlobalManagement {
                         languageChoiceSelect.data('prev', languageChoiceSelect.val()).trigger('change')
                     }
                 })
-                .finally(() => Botble.hideButtonLoading(_self))
+                .finally(() => PlatformCore.hideButtonLoading(_self))
         })
 
         $(document).on('click', '.change-data-language-item', (event) => {

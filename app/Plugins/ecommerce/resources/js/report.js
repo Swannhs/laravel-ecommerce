@@ -24,7 +24,7 @@ $(() => {
     if (endDate > today) {
         endDate = today
     }
-    let rangesTrans = BotbleVariables.languages.reports
+    let rangesTrans = PlatformCoreVariables.languages.reports
     let ranges = {
         [rangesTrans.today]: [today, today],
         [rangesTrans.this_week]: [moment().startOf('week'), today],
@@ -59,7 +59,7 @@ $(() => {
                 type: 'GET',
                 success: (data) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
                         if (!$('#report-stats-content').length) {
                             const newUrl = new URL(window.location.href)
@@ -89,7 +89,7 @@ $(() => {
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
             })
         }

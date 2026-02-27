@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => '查看包含範例和端點詳細信息的完整API文件。',
     'view_documentation' => '查看API文件',
     'generate_docs_title' => '生成API文檔',
-    'generate_docs_description' => '要為您的Botble CMS應用程式生成API文檔，請按照以下簡單步驟操作：',
+    'generate_docs_description' => '要為您的PlatformCore CMS應用程式生成API文檔，請按照以下簡單步驟操作：',
     'generate_docs_step_1' => '1. 安裝Scribe包：',
     'generate_docs_step_2' => '2. 生成API文檔：',
     'generate_docs_step_3' => '3. 訪問您的API文檔：',

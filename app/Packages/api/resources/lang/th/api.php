@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'ดูเอกสาร API ฉบับสมบูรณ์พร้อมตัวอย่างและรายละเอียดจุดเชื่อมต่อ',
     'view_documentation' => 'ดูเอกสาร API',
     'generate_docs_title' => 'สร้างเอกสาร API',
-    'generate_docs_description' => 'ในการสร้างเอกสาร API สำหรับแอปพลิเคชัน Botble CMS ของคุณ ให้ทำตามขั้นตอนง่ายๆ เหล่านี้:',
+    'generate_docs_description' => 'ในการสร้างเอกสาร API สำหรับแอปพลิเคชัน PlatformCore CMS ของคุณ ให้ทำตามขั้นตอนง่ายๆ เหล่านี้:',
     'generate_docs_step_1' => '1. ติดตั้งแพ็คเกจ Scribe:',
     'generate_docs_step_2' => '2. สร้างเอกสาร API:',
     'generate_docs_step_3' => '3. เข้าถึงเอกสาร API ของคุณที่:',

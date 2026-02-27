@@ -436,7 +436,7 @@
             });
         }
 
-        window.botbleCookieConsent = (function() {
+        window.platformcoreCookieConsent = (function() {
             const COOKIE_NAME = document.querySelector('div[data-site-cookie-name]').getAttribute(
                 'data-site-cookie-name') || 'cookie_for_consent';
             const COOKIE_DOMAIN = document.querySelector('div[data-site-cookie-domain]').getAttribute(

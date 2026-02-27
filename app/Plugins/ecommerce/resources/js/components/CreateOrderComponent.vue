@@ -1128,7 +1128,7 @@ export default {
                     .catch((error) => {
                         if (!axios.isCancel(error)) {
                             context.loading = false
-                            Botble.handleError(error.response.data)
+                            PlatformCore.handleError(error.response.data)
                         }
                     })
             }
@@ -1177,7 +1177,7 @@ export default {
                     })
                     .catch((error) => {
                         if (!axios.isCancel(error)) {
-                            Botble.handleError(error.response.data)
+                            PlatformCore.handleError(error.response.data)
                             context.loading = false
                         }
                     })
@@ -1199,7 +1199,7 @@ export default {
         selectProductVariant: function (product, refOptions) {
             let context = this
             if (_.isEmpty(product) && product.is_out_of_stock) {
-                Botble.showError(context.__('order.cant_select_out_of_stock_product'))
+                PlatformCore.showError(context.__('order.cant_select_out_of_stock_product'))
                 return false
             }
             const requiredOptions = product.product_options.filter((item) => item.required)
@@ -1221,7 +1221,7 @@ export default {
 
                 if (errorMessage && errorMessage.length) {
                     errorMessage.forEach((message) => {
-                        Botble.showError(message)
+                        PlatformCore.showError(message)
                     })
                     return
                 }
@@ -1301,7 +1301,7 @@ export default {
                     }
 
                     if (res.data.error) {
-                        Botble.showError(res.data.message)
+                        PlatformCore.showError(res.data.message)
                         if (onError) {
                             onError()
                         }
@@ -1315,7 +1315,7 @@ export default {
                 .catch((error) => {
                     if (!axios.isCancel(error)) {
                         context.checking = false
-                        Botble.handleError(error.response.data)
+                        PlatformCore.handleError(error.response.data)
                     }
                 })
         },
@@ -1387,9 +1387,9 @@ export default {
                 .then((res) => {
                     let data = res.data.data
                     if (res.data.error) {
-                        Botble.showError(res.data.message)
+                        PlatformCore.showError(res.data.message)
                     } else {
-                        Botble.showSuccess(res.data.message)
+                        PlatformCore.showSuccess(res.data.message)
 
                         $event.emit('ec-modal:close', 'create-order')
 
@@ -1399,7 +1399,7 @@ export default {
                     }
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
                 .then(() => {
                     $(event.target).removeClass('btn-loading')
@@ -1417,7 +1417,7 @@ export default {
                 .post(route('products.create-product-when-creating-order'), product)
                 .then((res) => {
                     if (res.data.error) {
-                        Botble.showError(res.data.message)
+                        PlatformCore.showError(res.data.message)
                     } else {
                         context.product = res.data.data
 
@@ -1433,7 +1433,7 @@ export default {
 
                         context.hidden_product_search_panel = true
 
-                        Botble.showSuccess(res.data.message)
+                        PlatformCore.showSuccess(res.data.message)
 
                         $event.emit('ec-modal:close', 'add-product-item')
 
@@ -1441,7 +1441,7 @@ export default {
                     }
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
                 .then(() => {
                     $(event.target).removeClass('btn-loading')
@@ -1460,15 +1460,15 @@ export default {
                 })
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
 
                         $event.emit('ec-modal:close', 'edit-email')
                     }
                 })
                 .catch(({ response }) => {
-                    Botble.handleError(response.data)
+                    PlatformCore.handleError(response.data)
                 })
                 .then(() => {
                     $(event.target).removeClass('btn-loading')
@@ -1516,7 +1516,7 @@ export default {
                 })
                 .then((res) => {
                     if (res.data.error) {
-                        Botble.showError(res.data.message)
+                        PlatformCore.showError(res.data.message)
                     } else {
                         context.child_customer_address = res.data.data.address
                         context.child_customer = res.data.data.customer
@@ -1526,14 +1526,14 @@ export default {
                             data: [],
                         }
 
-                        Botble.showSuccess(res.data.message)
+                        PlatformCore.showSuccess(res.data.message)
                         context.checkDataBeforeCreateOrder()
 
                         $event.emit('ec-modal:close', 'add-customer')
                     }
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
                 .then(() => {
                     $(event.target).removeClass('btn-loading')
@@ -1557,7 +1557,7 @@ export default {
                     context.child_customer_order_numbers = res.data.data
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
         },
         loadCustomerAddress: function () {
@@ -1572,7 +1572,7 @@ export default {
                     this.checkDataBeforeCreateOrder()
                 })
                 .catch((res) => {
-                    Botble.handleError(res.response.data)
+                    PlatformCore.handleError(res.response.data)
                 })
         },
         selectShippingMethod: function (event) {

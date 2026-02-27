@@ -1,5 +1,5 @@
 {
-    "name": "@botble/core",
+    "name": "@platformcore/core",
     "version": "1.0.0",
     "devDependencies": {
         "@tabler/core": "^1.4.0",

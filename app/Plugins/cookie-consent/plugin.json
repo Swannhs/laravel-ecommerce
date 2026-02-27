@@ -1,10 +1,10 @@
 {
-    "id": "botble/cookie-consent",
+    "id": "platformcore/cookie-consent",
     "name": "Cookie Consent",
     "namespace": "App\\Plugins\\CookieConsent\\",
     "provider": "App\\Plugins\\CookieConsent\\Providers\\CookieConsentServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.0.9",
     "description": "Cookie Consent",
     "minimum_core_version": "7.3.0"

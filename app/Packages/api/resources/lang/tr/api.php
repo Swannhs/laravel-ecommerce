@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Örnekler ve uç nokta ayrıntılarıyla birlikte tam API belgelerini görüntüleyin.',
     'view_documentation' => 'API Belgelerini Görüntüle',
     'generate_docs_title' => 'API Dokümantasyonu Oluştur',
-    'generate_docs_description' => 'Botble CMS uygulamanız için API dokümantasyonu oluşturmak için şu basit adımları izleyin:',
+    'generate_docs_description' => 'PlatformCore CMS uygulamanız için API dokümantasyonu oluşturmak için şu basit adımları izleyin:',
     'generate_docs_step_1' => '1. Scribe paketini kurun:',
     'generate_docs_step_2' => '2. API dokümantasyonunu oluşturun:',
     'generate_docs_step_3' => '3. API dokümantasyonunuza şu adresten erişin:',

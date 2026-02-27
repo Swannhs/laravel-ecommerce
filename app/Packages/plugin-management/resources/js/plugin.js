@@ -17,7 +17,7 @@ class PluginManagement {
                 .withButtonLoading(_self)
                 .delete(_self.data('url'))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     window.location.reload()
                 })
                 .finally(() => $('#remove-plugin-modal').modal('hide'))
@@ -36,7 +36,7 @@ class PluginManagement {
                 .withButtonLoading(currentTarget)
                 .post(url)
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     localStorage.removeItem('plugin_update_check_time')
                     localStorage.removeItem('plugin_update_data')
@@ -56,9 +56,9 @@ class PluginManagement {
             const changeStatusUrl = _self.data('change-status-url')
 
             if (_self.data('status') === 1) {
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
                 await this.activateOrDeactivatePlugin(changeStatusUrl)
-                Botble.hideButtonLoading(_self)
+                PlatformCore.hideButtonLoading(_self)
                 return
             }
 
@@ -80,7 +80,7 @@ class PluginManagement {
                         return
                     }
 
-                    Botble.showError(message)
+                    PlatformCore.showError(message)
                 })
         })
 
@@ -240,7 +240,7 @@ class PluginManagement {
             .make()
             .put(url)
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
 
                 if (reload) {
                     window.location.reload()

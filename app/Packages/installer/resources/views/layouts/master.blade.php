@@ -15,7 +15,7 @@
 
     <meta
         name="description"
-        content="Installation Botble CMS v{{ get_cms_version() }}"
+        content="Installation PlatformCore CMS v{{ get_cms_version() }}"
     >
 
     <link
@@ -136,7 +136,7 @@
 {!! Assets::renderFooter() !!}
 
 <script type="text/javascript">
-    var BotbleVariables = BotbleVariables || {
+    var PlatformCoreVariables = PlatformCoreVariables || {
         languages: {
             notices_msg: {{ Js::from(trans('core/base::notices')) }},
         },
@@ -148,17 +148,17 @@
         <script type="text/javascript">
             $(function() {
                 @if (Session::has('success_msg'))
-                Botble.showSuccess('{{ session('success_msg') }}')
+                PlatformCore.showSuccess('{{ session('success_msg') }}')
                 @endif
                 @if (Session::has('error_msg'))
-                Botble.showError('{{ session('error_msg') }}')
+                PlatformCore.showError('{{ session('error_msg') }}')
                 @endif
                 @if (isset($error_msg))
-                Botble.showError('{{ $error_msg }}')
+                PlatformCore.showError('{{ $error_msg }}')
                 @endif
                 @if (isset($errors))
                 @foreach ($errors->all() as $error)
-                Botble.showError('{{ $error }}')
+                PlatformCore.showError('{{ $error }}')
                 @endforeach
                 @endif
             })

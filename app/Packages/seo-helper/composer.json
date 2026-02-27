@@ -1,5 +1,5 @@
 {
-    "name": "botble/seo-helper",
+    "name": "platformcore/seo-helper",
     "description": "SEO helper package",
     "type": "package",
     "autoload": {
@@ -8,8 +8,8 @@
         }
     },
     "require": {
-        "botble/platform": "*@dev",
-        "botble/theme": "*@dev"
+        "platformcore/platform": "*@dev",
+        "platformcore/theme": "*@dev"
     },
     "extra": {
         "laravel": {

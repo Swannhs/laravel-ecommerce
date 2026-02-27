@@ -85,7 +85,7 @@
                 </svg>
             ${dt.i18n(
                 'buttons.excel',
-                BotbleVariables.languages.tables.excel ? BotbleVariables.languages.tables.excel : 'Excel'
+                PlatformCoreVariables.languages.tables.excel ? PlatformCoreVariables.languages.tables.excel : 'Excel'
             )}`
         },
 
@@ -108,7 +108,7 @@
             </svg>
             ${dt.i18n(
                 'buttons.excel',
-                BotbleVariables.languages.tables.excel ? BotbleVariables.languages.tables.excel : 'Excel'
+                PlatformCoreVariables.languages.tables.excel ? PlatformCoreVariables.languages.tables.excel : 'Excel'
             )}`
         },
 
@@ -134,7 +134,7 @@
             </svg>
             ${dt.i18n(
                 'buttons.export',
-                BotbleVariables.languages.tables.export ? BotbleVariables.languages.tables.export : 'Export'
+                PlatformCoreVariables.languages.tables.export ? PlatformCoreVariables.languages.tables.export : 'Export'
             )}`
         },
 
@@ -155,7 +155,7 @@
             </svg>
             ${dt.i18n(
                 'buttons.csv',
-                BotbleVariables.languages.tables.csv ? BotbleVariables.languages.tables.csv : 'CSV'
+                PlatformCoreVariables.languages.tables.csv ? PlatformCoreVariables.languages.tables.csv : 'CSV'
             )}`
         },
 
@@ -178,7 +178,7 @@
             </svg>
             ${dt.i18n(
                 'buttons.csv',
-                BotbleVariables.languages.tables.csv ? BotbleVariables.languages.tables.csv : 'CSV'
+                PlatformCoreVariables.languages.tables.csv ? PlatformCoreVariables.languages.tables.csv : 'CSV'
             )}`
         },
 
@@ -247,7 +247,7 @@
                 </svg>
                 ${dt.i18n(
                     'buttons.print',
-                    BotbleVariables.languages.tables.print ? BotbleVariables.languages.tables.print : 'Print'
+                    PlatformCoreVariables.languages.tables.print ? PlatformCoreVariables.languages.tables.print : 'Print'
                 )}`
         },
 
@@ -266,7 +266,7 @@
                 </svg>
                 ${dt.i18n(
                     'buttons.reset',
-                    BotbleVariables.languages.tables.reset ? BotbleVariables.languages.tables.reset : 'Reset'
+                    PlatformCoreVariables.languages.tables.reset ? PlatformCoreVariables.languages.tables.reset : 'Reset'
                 )}`
         },
 
@@ -288,7 +288,7 @@
                 </svg>
                 ${dt.i18n(
                     'buttons.reload',
-                    BotbleVariables.languages.tables.reload ? BotbleVariables.languages.tables.reload : 'Reload'
+                    PlatformCoreVariables.languages.tables.reload ? PlatformCoreVariables.languages.tables.reload : 'Reload'
                 )}`
         },
 
@@ -340,7 +340,7 @@
             if ($.fn.dataTable) {
                 $.fn.dataTable.ext.errMode = 'none'
                 $(document).on('error.dt', (e, settings, techNote, message) => {
-                    Botble.handleDatatableError({ responseJSON: { message } })
+                    PlatformCore.handleDatatableError({ responseJSON: { message } })
                 })
             }
 
@@ -452,7 +452,7 @@
                 event.preventDefault()
                 let _self = $(event.currentTarget)
 
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
 
                 let deleteURL = _self.data('section')
 
@@ -465,7 +465,7 @@
                             .remove()
                             .draw()
 
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
 
                         _self.closest('.modal').modal('hide')
                     })
@@ -473,7 +473,7 @@
                         $('.modal-confirm-delete').modal('hide')
                     })
                     .finally(() => {
-                        Botble.hideButtonLoading(_self)
+                        PlatformCore.hideButtonLoading(_self)
                     })
             })
 
@@ -492,9 +492,9 @@
                     })
 
                 if (ids.length === 0) {
-                    Botble.showError(
-                        BotbleVariables.languages.tables.please_select_record
-                            ? BotbleVariables.languages.tables.please_select_record
+                    PlatformCore.showError(
+                        PlatformCoreVariables.languages.tables.please_select_record
+                            ? PlatformCoreVariables.languages.tables.please_select_record
                             : 'Please select at least one record to perform this action!'
                     )
                     return false
@@ -513,7 +513,7 @@
 
                 let _self = $(event.currentTarget)
 
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
 
                 let $table = $(`#${_self.data('parent-table')}`)
 
@@ -529,7 +529,7 @@
                         class: _self.data('class-item'),
                     })
                     .then(({ data }) => {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
 
                         $table.find('.table-check-all').prop('checked', false).prop('indeterminate', false)
 
@@ -538,7 +538,7 @@
                         _self.closest('.modal').modal('hide')
                     })
                     .finally(() => {
-                        Botble.hideButtonLoading(_self)
+                        PlatformCore.hideButtonLoading(_self)
                     })
             })
 
@@ -556,9 +556,9 @@
                     .each((i, el) => ids.push($(el).val()))
 
                 if (ids.length === 0) {
-                    Botble.showError(
-                        BotbleVariables.languages.tables.please_select_record
-                            ? BotbleVariables.languages.tables.please_select_record
+                    PlatformCore.showError(
+                        PlatformCoreVariables.languages.tables.please_select_record
+                            ? PlatformCoreVariables.languages.tables.please_select_record
                             : 'Please select at least one record to perform this action!'
                     )
 
@@ -587,7 +587,7 @@
 
                 const _self = $(event.currentTarget)
 
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
 
                 const tableId = _self.data('table-id')
                 const method = _self.data('method').toLowerCase() || 'post'
@@ -607,7 +607,7 @@
                         bulk_action_target: _self.data('target'),
                     })
                     .then(({ data }) => {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
 
                         $table.find('.table-check-all').prop('checked', false).prop('indeterminate', false)
 
@@ -619,7 +619,7 @@
                         _self.closest('.modal').modal('hide')
                     })
                     .finally(() => {
-                        Botble.hideButtonLoading(_self)
+                        PlatformCore.hideButtonLoading(_self)
                     })
             })
 
@@ -658,7 +658,7 @@
 
                 const _self = $(event.currentTarget)
 
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
 
                 triggerSingleAction(
                     _self.data('table-id'),
@@ -667,10 +667,10 @@
                     () => {
                         _self.closest('.modal').modal('hide')
 
-                        Botble.hideButtonLoading(_self)
+                        PlatformCore.hideButtonLoading(_self)
                     },
                     () => {
-                        Botble.hideButtonLoading(_self)
+                        PlatformCore.hideButtonLoading(_self)
                     }
                 )
             })
@@ -683,7 +683,7 @@
                     .make()
                     [$method](url)
                     .then(({ data }) => {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
 
                         $table.find('.table-check-all').prop('checked', false).prop('indeterminate', false)
 
@@ -710,9 +710,9 @@
                     })
 
                 if (ids.length === 0) {
-                    Botble.showError(
-                        BotbleVariables.languages.tables.please_select_record
-                            ? BotbleVariables.languages.tables.please_select_record
+                    PlatformCore.showError(
+                        PlatformCoreVariables.languages.tables.please_select_record
+                            ? PlatformCoreVariables.languages.tables.please_select_record
                             : 'Please select at least one record to perform this action!'
                     )
                     return false
@@ -741,7 +741,7 @@
                     ids[i] = $(el).val()
                 })
 
-                Botble.showButtonLoading(_self)
+                PlatformCore.showButtonLoading(_self)
 
                 $httpClient
                     .make()
@@ -752,7 +752,7 @@
                         class: _self.data('class-item'),
                     })
                     .then(({ data }) => {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
 
                         $table.find('.table-check-all').prop('checked', false).prop('indeterminate', false)
 
@@ -765,7 +765,7 @@
                         _self.closest('.modal').modal('hide')
                     })
                     .finally(() => {
-                        Botble.hideButtonLoading(_self)
+                        PlatformCore.hideButtonLoading(_self)
                     })
             })
 
@@ -881,7 +881,7 @@
                         $input.data('typeahead').source = data
                     }
 
-                    Botble.initResources()
+                    PlatformCore.initResources()
                 })
         }
 

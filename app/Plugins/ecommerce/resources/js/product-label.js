@@ -44,23 +44,23 @@ $(() => {
         $card.show().addClass('active')
 
         if ($card.find('.card-body').length === 0) {
-            Botble.showLoading($card)
+            PlatformCore.showLoading($card)
 
             $.ajax({
                 url: $searchInput.data('bb-target'),
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $card.html(res.data)
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($card)
+                    PlatformCore.hideLoading($card)
                 },
             })
         }
@@ -74,23 +74,23 @@ $(() => {
         clearTimeout(searchTimeout)
 
         searchTimeout = setTimeout(() => {
-            Botble.showLoading($card)
+            PlatformCore.showLoading($card)
 
             $.ajax({
                 url: `${$searchInput.data('bb-target')}?keyword=${$searchInput.val()}`,
                 type: 'GET',
                 success: (res) => {
                     if (res.error) {
-                        Botble.showError(res.message)
+                        PlatformCore.showError(res.message)
                     } else {
                         $card.html(res.data)
                     }
                 },
                 error: (data) => {
-                    Botble.handleError(data)
+                    PlatformCore.handleError(data)
                 },
                 complete: () => {
-                    Botble.hideLoading($card)
+                    PlatformCore.hideLoading($card)
                 },
             })
         }, 300)
@@ -108,23 +108,23 @@ $(() => {
             return
         }
 
-        Botble.showLoading($card)
+        PlatformCore.showLoading($card)
 
         $.ajax({
             url: `${$link.prop('href')}&keyword=${$searchInput.val()}`,
             type: 'GET',
             success: (res) => {
                 if (res.error) {
-                    Botble.showError(res.message)
+                    PlatformCore.showError(res.message)
                 } else {
                     $card.html(res.data)
                 }
             },
             error: (data) => {
-                Botble.handleError(data)
+                PlatformCore.handleError(data)
             },
             complete: () => {
-                Botble.hideLoading($card)
+                PlatformCore.hideLoading($card)
             },
         })
     })

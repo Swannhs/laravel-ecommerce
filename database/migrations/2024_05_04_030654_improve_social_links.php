@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Setting\Facades\Setting;
-use Botble\Theme\Facades\ThemeOption;
+use App\Core\Setting\Facades\Setting;
+use App\Packages\Theme\Facades\ThemeOption;
 use Illuminate\Database\Migrations\Migration;
 
 return new class() extends Migration

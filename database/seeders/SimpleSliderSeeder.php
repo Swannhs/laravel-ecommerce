@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Facades\MetaBox;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Language\Models\LanguageMeta;
-use Botble\Setting\Models\Setting;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
+use App\Core\Base\Facades\MetaBox;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Language\Models\LanguageMeta;
+use App\Core\Setting\Models\Setting;
+use App\Plugins\SimpleSlider\Models\SimpleSlider;
+use App\Plugins\SimpleSlider\Models\SimpleSliderItem;
 
 class SimpleSliderSeeder extends BaseSeeder
 {

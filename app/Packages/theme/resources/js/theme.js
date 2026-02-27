@@ -3,17 +3,17 @@ class ThemeManagement {
         $(document).on('click', '.btn-trigger-active-theme', (event) => {
             event.preventDefault()
             let _self = $(event.currentTarget)
-            Botble.showButtonLoading(_self)
+            PlatformCore.showButtonLoading(_self)
 
             $httpClient
                 .make()
                 .post(_self.data('url'))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     window.location.reload()
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading(_self)
+                    PlatformCore.hideButtonLoading(_self)
                 })
         })
 
@@ -28,17 +28,17 @@ class ThemeManagement {
         $(document).on('click', '#confirm-remove-theme-button', (event) => {
             event.preventDefault()
             let _self = $(event.currentTarget)
-            Botble.showButtonLoading(_self)
+            PlatformCore.showButtonLoading(_self)
 
             $httpClient
                 .make()
                 .post(_self.data('url'))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     window.location.reload()
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading(_self)
+                    PlatformCore.hideButtonLoading(_self)
                     $('#remove-theme-modal').modal('hide')
                 })
         })

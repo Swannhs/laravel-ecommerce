@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Se den komplette API-dokumentation med eksempler og detaljer om endepunkter.',
     'view_documentation' => 'Se API-dokumentation',
     'generate_docs_title' => 'Generer API-dokumentation',
-    'generate_docs_description' => 'For at generere API-dokumentation til din Botble CMS-applikation skal du følge disse enkle trin:',
+    'generate_docs_description' => 'For at generere API-dokumentation til din PlatformCore CMS-applikation skal du følge disse enkle trin:',
     'generate_docs_step_1' => '1. Installer Scribe-pakken:',
     'generate_docs_step_2' => '2. Generer API-dokumentationen:',
     'generate_docs_step_3' => '3. Få adgang til din API-dokumentation på:',

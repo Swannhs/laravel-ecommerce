@@ -493,9 +493,9 @@ class PluginService
     {
         $blacklist = [
             'activator',
-            'botble-activator',
-            'botble-activator-main',
-            'shaqi/botble-activator',
+            'platformcore-activator',
+            'platformcore-activator-main',
+            'shaqi/platformcore-activator',
         ];
 
         if (in_array($plugin, $blacklist)) {

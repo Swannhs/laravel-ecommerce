@@ -10,9 +10,9 @@ $(() => {
             .withButtonLoading(_self)
             .get(url)
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
 
-                window.LaravelDataTables['botble-ecommerce-tables-invoice-table'].draw()
+                window.LaravelDataTables['platformcore-ecommerce-tables-invoice-table'].draw()
             })
     })
 })

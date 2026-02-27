@@ -52,8 +52,8 @@ const ShortcodeEditPanel = {
 
         const url = schema.url
 
-        if (typeof Botble !== 'undefined' && Botble.showLoading) {
-            Botble.showLoading(this.$content)
+        if (typeof PlatformCore !== 'undefined' && PlatformCore.showLoading) {
+            PlatformCore.showLoading(this.$content)
         }
 
         const formData = {}
@@ -75,8 +75,8 @@ const ShortcodeEditPanel = {
             timeout: 30000,
             success: (response) => {
                 this.currentRequest = null
-                if (typeof Botble !== 'undefined') {
-                    Botble.hideLoading(this.$content)
+                if (typeof PlatformCore !== 'undefined') {
+                    PlatformCore.hideLoading(this.$content)
                 }
 
                 if (!this.$content || this.$content.length === 0) {
@@ -88,17 +88,17 @@ const ShortcodeEditPanel = {
 
                     const $container = this.$content
                     setTimeout(() => {
-                        if (typeof Botble !== 'undefined') {
-                            Botble.initResources()
-                            Botble.initMediaIntegrate()
-                            Botble.initFieldCollapse()
+                        if (typeof PlatformCore !== 'undefined') {
+                            PlatformCore.initResources()
+                            PlatformCore.initMediaIntegrate()
+                            PlatformCore.initFieldCollapse()
 
-                            if (typeof Botble.initCoreIcon === 'function') {
-                                Botble.initCoreIcon()
+                            if (typeof PlatformCore.initCoreIcon === 'function') {
+                                PlatformCore.initCoreIcon()
                             }
 
-                            if (typeof Botble.initColorPicker === 'function') {
-                                Botble.initColorPicker()
+                            if (typeof PlatformCore.initColorPicker === 'function') {
+                                PlatformCore.initColorPicker()
                             }
                         }
 
@@ -119,8 +119,8 @@ const ShortcodeEditPanel = {
                     return
                 }
 
-                if (typeof Botble !== 'undefined') {
-                    Botble.hideLoading(this.$content)
+                if (typeof PlatformCore !== 'undefined') {
+                    PlatformCore.hideLoading(this.$content)
                 }
 
                 if (!this.$content || this.$content.length === 0) {

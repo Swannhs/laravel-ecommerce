@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'عرض وثائق API الكاملة مع الأمثلة وتفاصيل نقاط النهاية.',
     'view_documentation' => 'عرض وثائق API',
     'generate_docs_title' => 'إنشاء وثائق API',
-    'generate_docs_description' => 'لإنشاء وثائق API لتطبيق Botble CMS الخاص بك، اتبع هذه الخطوات البسيطة:',
+    'generate_docs_description' => 'لإنشاء وثائق API لتطبيق PlatformCore CMS الخاص بك، اتبع هذه الخطوات البسيطة:',
     'generate_docs_step_1' => '1. قم بتثبيت حزمة Scribe:',
     'generate_docs_step_2' => '2. قم بإنشاء وثائق API:',
     'generate_docs_step_3' => '3. قم بالوصول إلى وثائق API الخاصة بك على:',

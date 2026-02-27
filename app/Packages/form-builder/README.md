@@ -3,10 +3,10 @@
 Customized from https://github.com/kristijanhusak/laravel-form-builder
 
 <p align="center">
-    <a href="https://packagist.org/packages/botble/form-builder"><img src="https://img.shields.io/packagist/v/botble/form-builder.svg?style=flat-square" alt="Latest Version"></a>
+    <a href="https://packagist.org/packages/platformcore/form-builder"><img src="https://img.shields.io/packagist/v/platformcore/form-builder.svg?style=flat-square" alt="Latest Version"></a>
     <a href="/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></a>
-    <a href="https://packagist.org/packages/botble/form-builder"><img src="https://img.shields.io/packagist/dt/botble/form-builder.svg?style=flat-square" alt="Total Downloads"></a>
-    <a href="https://codeclimate.com/github/botble/laravel-form-builder/maintainability"><img src="https://api.codeclimate.com/v1/badges/a6e4612307e3b3bf8252/maintainability" alt="Maintainability"></a>
+    <a href="https://packagist.org/packages/platformcore/form-builder"><img src="https://img.shields.io/packagist/dt/platformcore/form-builder.svg?style=flat-square" alt="Total Downloads"></a>
+    <a href="https://codeclimate.com/github/platformcore/laravel-form-builder/maintainability"><img src="https://api.codeclimate.com/v1/badges/a6e4612307e3b3bf8252/maintainability" alt="Maintainability"></a>
 </p>
 
 ## Documentation
@@ -22,7 +22,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email contact@botble.com instead of using the issue tracker.
+If you discover any security related issues, please email contact@platformcore.com instead of using the issue tracker.
 
 ## Credits
 

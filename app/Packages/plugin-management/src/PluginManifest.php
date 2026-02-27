@@ -87,7 +87,7 @@ class PluginManifest
             $content = BaseHelper::getFileData($configFilePath);
             if (! empty($content)) {
                 $conflicts = [
-                    'botble-ip-blocker',
+                    'platformcore-ip-blocker',
                     'archielite/ip-blocker',
                 ];
 

@@ -18,7 +18,7 @@ $(() => {
                             data: $dd.nestable('serialize'),
                         })
                         .then(({ data }) => {
-                            Botble.showSuccess(data.message)
+                            PlatformCore.showSuccess(data.message)
                         })
                 },
             })
@@ -30,16 +30,16 @@ $(() => {
     function reloadForm(data) {
         $('.tree-form-body').html(data)
         initNestable()
-        Botble.initResources()
-        Botble.handleCounterUp()
+        PlatformCore.initResources()
+        PlatformCore.handleCounterUp()
         if (window.EditorManagement) {
             window.EDITOR = new EditorManagement().init()
         }
-        Botble.initMediaIntegrate()
+        PlatformCore.initMediaIntegrate()
     }
 
     function fetchData(url, $el) {
-        Botble.showLoading($formLoading)
+        PlatformCore.showLoading($formLoading)
         $treeWrapper.find('.dd3-content.active').removeClass('active')
 
         if ($el) {
@@ -50,7 +50,7 @@ $(() => {
             .make()
             .get(url)
             .then(({ data }) => reloadForm(data.data))
-            .finally(() => Botble.hideLoading($formLoading))
+            .finally(() => PlatformCore.hideLoading($formLoading))
     }
 
     $treeWrapper.on('click', '.fetch-data', (event) => {
@@ -81,13 +81,13 @@ $(() => {
             data.ref_lang = searchParams.get('ref_lang')
         }
 
-        Botble.showLoading($formLoading)
+        PlatformCore.showLoading($formLoading)
 
         $httpClient
             .make()
             .get(url, data)
             .then(({ data }) => reloadForm(data.data))
-            .finally(() => Botble.hideLoading($formLoading))
+            .finally(() => PlatformCore.hideLoading($formLoading))
     }
 
     function reloadTree(activeId, callback) {
@@ -143,7 +143,7 @@ $(() => {
             .withLoading($formLoading)
             [method]($form.attr('action'), formData)
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
 
                 let $createButton = $('.tree-categories-create')
 
@@ -183,7 +183,7 @@ $(() => {
                 .withButtonLoading(button)
                 .delete($(button).get(0).dataset.url)
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     reloadTree()
 

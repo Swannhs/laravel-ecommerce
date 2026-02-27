@@ -19,7 +19,7 @@ class StoreLocatorManagement {
                 .get($button.data('load-form'))
                 .then(({ data }) => {
                     $modalBody.html(data.data)
-                    Botble.initResources()
+                    PlatformCore.initResources()
                     $modalBody.closest('.modal.fade').modal('show')
                 })
         })
@@ -32,7 +32,7 @@ class StoreLocatorManagement {
                 .withButtonLoading($button)
                 .post($form.prop('action'), $form.serialize())
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     $('.store-locator-table').load(`${window.location.href} .store-locator-table > *`)
                     $button.closest('.modal.fade').modal('hide')
@@ -66,7 +66,7 @@ class StoreLocatorManagement {
                 .withButtonLoading($button)
                 .post($button.data('target'))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     $('.store-locator-table').load(`${window.location.href} .store-locator-table > *`)
                     $button.removeClass('button-loading')
@@ -85,7 +85,7 @@ class StoreLocatorManagement {
                 .withButtonLoading($button)
                 .post($form.prop('action'), $form.serialize())
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     $('.store-locator-table').load(`${window.location.href} .store-locator-table > *`)
                     $button.removeClass('button-loading')
                     $button.closest('.modal.fade').modal('hide')

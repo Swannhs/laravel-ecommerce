@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductCollection;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\ProductCollection;
 use Illuminate\Support\Str;
 
 class ProductCollectionSeeder extends BaseSeeder

@@ -1,20 +1,20 @@
 {
-    "name": "botble/platform",
-    "description": "The Botble Platform based on Laravel Framework.",
+    "name": "platformcore/platform",
+    "description": "The PlatformCore Platform based on Laravel Framework.",
     "keywords": [
-        "botble",
-        "botble cms",
-        "botble platform"
+        "platformcore",
+        "platformcore cms",
+        "platformcore platform"
     ],
-    "homepage": "https://botble.com",
+    "homepage": "https://platformcore.com",
     "support": {
-        "issues": "https://botble.ticksy.com",
-        "document": "https://docs.botble.com"
+        "issues": "https://platformcore.ticksy.com",
+        "document": "https://docs.platformcore.com"
     },
     "authors": [
         {
-            "name": "Botble Technologies",
-            "email": "contact@botble.com"
+            "name": "PlatformCore Technologies",
+            "email": "contact@platformcore.com"
         }
     ],
     "type": "project",
@@ -22,8 +22,8 @@
         "ext-gd": "*",
         "ext-zip": "*",
         "barryvdh/laravel-dompdf": "^3.1",
-        "botble/assets": "^1.0",
-        "botble/form-builder": "^1.0",
+        "platformcore/assets": "^1.0",
+        "platformcore/form-builder": "^1.0",
         "intervention/image": "^3.4",
         "league/flysystem-aws-s3-v3": "^3.0",
         "maatwebsite/excel": "^3.1",

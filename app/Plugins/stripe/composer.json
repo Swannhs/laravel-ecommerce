@@ -1,5 +1,5 @@
 {
-    "name": "botble/stripe",
+    "name": "platformcore/stripe",
     "description": "Stripe Payment Gateway",
     "type": "package",
     "require": {

@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Marketplace\Database\Seeders\Traits\HasMarketplaceSeeder;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Marketplace\Database\Seeders\Traits\HasMarketplaceSeeder;
 use Illuminate\Support\Arr;
 
 class MarketplaceSeeder extends BaseSeeder

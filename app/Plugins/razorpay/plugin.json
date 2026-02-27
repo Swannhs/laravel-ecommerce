@@ -1,14 +1,14 @@
 {
-    "id": "botble/razorpay",
+    "id": "platformcore/razorpay",
     "name": "Razorpay Payment Gateway",
     "namespace": "App\\Plugins\\Razorpay\\",
     "provider": "App\\Plugins\\Razorpay\\Providers\\RazorpayServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "1.0.3",
     "description": "Razorpay payment gateway integration",
     "minimum_core_version": "7.3.0",
     "require": [
-        "botble/payment"
+        "platformcore/payment"
     ]
 }

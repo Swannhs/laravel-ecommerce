@@ -56,7 +56,7 @@ export default defineComponent({
                 .withButtonLoading(element)
                 .post(url.replace(':id', id))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     $event.emit('plugin-installed', data.data.name)
 
@@ -162,7 +162,7 @@ export default defineComponent({
                 .withButtonLoading(event.currentTarget)
                 .delete(this.pluginRemoveUrl.replace('__name__', plugin))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     $event.emit('plugin-uninstalled', plugin)
 
@@ -175,7 +175,7 @@ export default defineComponent({
                 .withButtonLoading(event.currentTarget)
                 .put(window.marketplace.route.active, { name })
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     $event.emit('plugin-toggle-activation', name)
 

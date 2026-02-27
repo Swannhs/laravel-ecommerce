@@ -29,7 +29,7 @@
                 column: column,
             })
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
             })
     })
 })(jQuery)

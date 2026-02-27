@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Bekijk de volledige API-documentatie met voorbeelden en eindpunt details.',
     'view_documentation' => 'API-documentatie bekijken',
     'generate_docs_title' => 'Genereer API-documentatie',
-    'generate_docs_description' => 'Om API-documentatie te genereren voor uw Botble CMS-applicatie, volgt u deze eenvoudige stappen:',
+    'generate_docs_description' => 'Om API-documentatie te genereren voor uw PlatformCore CMS-applicatie, volgt u deze eenvoudige stappen:',
     'generate_docs_step_1' => '1. Installeer het Scribe-pakket:',
     'generate_docs_step_2' => '2. Genereer de API-documentatie:',
     'generate_docs_step_3' => '3. Toegang tot uw API-documentatie op:',

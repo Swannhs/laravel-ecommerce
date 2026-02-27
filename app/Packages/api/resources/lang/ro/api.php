@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Vizualizati documentatia API completa cu exemple si detalii despre punctele finale.',
     'view_documentation' => 'Vizualizati documentatia API',
     'generate_docs_title' => 'Generați documentația API',
-    'generate_docs_description' => 'Pentru a genera documentația API pentru aplicația dvs. Botble CMS, urmați acești pași simpli:',
+    'generate_docs_description' => 'Pentru a genera documentația API pentru aplicația dvs. PlatformCore CMS, urmați acești pași simpli:',
     'generate_docs_step_1' => '1. Instalați pachetul Scribe:',
     'generate_docs_step_2' => '2. Generați documentația API:',
     'generate_docs_step_3' => '3. Accesați documentația API la:',

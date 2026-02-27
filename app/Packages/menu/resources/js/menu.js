@@ -195,8 +195,8 @@ class MenuNestable {
 
         parent.find('.btn_remove_image').trigger('click')
 
-        Botble.initResources()
-        Botble.initMediaIntegrate()
+        PlatformCore.initResources()
+        PlatformCore.initMediaIntegrate()
     }
 }
 

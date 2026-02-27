@@ -1,6 +1,6 @@
 import Toastify from './base/toast'
 
-class Botble {
+class PlatformCore {
     static noticesTimeout = {}
     static noticesTimeoutCount = 500
 
@@ -10,16 +10,16 @@ class Botble {
         this.manageSidebar()
         this.handleWayPoint()
         this.handleTurnOffDebugMode()
-        Botble.initNavbarMinimal()
-        Botble.initResources()
-        Botble.initGlobalResources()
-        Botble.handleCounterUp()
-        Botble.initMediaIntegrate()
+        PlatformCore.initNavbarMinimal()
+        PlatformCore.initResources()
+        PlatformCore.initGlobalResources()
+        PlatformCore.handleCounterUp()
+        PlatformCore.initMediaIntegrate()
 
         if (
-            BotbleVariables &&
-            BotbleVariables.authorized === '0' &&
-            typeof BotbleVariables.authorize_url !== 'undefined'
+            PlatformCoreVariables &&
+            PlatformCoreVariables.authorized === '0' &&
+            typeof PlatformCoreVariables.authorize_url !== 'undefined'
         ) {
             this.processAuthorize()
         }
@@ -38,7 +38,7 @@ class Botble {
             return $(`<span><span class="dropdown-item-indicator">${text}</span> ${id}</span>`)
         }
 
-        Botble.select(
+        PlatformCore.select(
             $coreIcon,
             {
                 ajax: {
@@ -76,11 +76,11 @@ class Botble {
     static blockUI(options) {
         options = options || {}
 
-        Botble.showLoading(options.target)
+        PlatformCore.showLoading(options.target)
     }
 
     static unblockUI(target) {
-        Botble.hideLoading(target)
+        PlatformCore.hideLoading(target)
     }
 
     static showNotice(messageType, message, messageHeader = '') {
@@ -88,18 +88,18 @@ class Botble {
         let color = ''
         let icon = ''
 
-        if (Botble.noticesTimeout[key]) {
-            clearTimeout(Botble.noticesTimeout[key])
+        if (PlatformCore.noticesTimeout[key]) {
+            clearTimeout(PlatformCore.noticesTimeout[key])
         }
 
-        Botble.noticesTimeout[key] = setTimeout(() => {
+        PlatformCore.noticesTimeout[key] = setTimeout(() => {
             if (!messageHeader) {
                 switch (messageType) {
                     case 'error':
-                        messageHeader = BotbleVariables.languages.notices_msg.error
+                        messageHeader = PlatformCoreVariables.languages.notices_msg.error
                         break
                     case 'success':
-                        messageHeader = BotbleVariables.languages.notices_msg.success
+                        messageHeader = PlatformCoreVariables.languages.notices_msg.success
                         break
                 }
             }
@@ -130,7 +130,7 @@ class Botble {
                     background: color,
                 },
             }).showToast()
-        }, Botble.noticesTimeoutCount)
+        }, PlatformCore.noticesTimeoutCount)
     }
 
     static showError(message, messageHeader = '') {
@@ -143,31 +143,31 @@ class Botble {
 
     static handleError(data) {
         if (typeof data.errors !== 'undefined' && !_.isArray(data.errors)) {
-            Botble.handleValidationError(data.errors)
+            PlatformCore.handleValidationError(data.errors)
         } else {
             if (typeof data.responseJSON !== 'undefined') {
                 if (typeof data.responseJSON.errors !== 'undefined') {
                     if (data.status === 422) {
-                        Botble.handleValidationError(data.responseJSON.errors)
+                        PlatformCore.handleValidationError(data.responseJSON.errors)
                     }
                 } else if (typeof data.responseJSON.message !== 'undefined') {
-                    Botble.showError(data.responseJSON.message)
+                    PlatformCore.showError(data.responseJSON.message)
                 } else {
                     $.each(data.responseJSON, (index, el) => {
                         $.each(el, (key, item) => {
-                            Botble.showError(item)
+                            PlatformCore.showError(item)
                         })
                     })
                 }
             } else {
-                Botble.showError(data.statusText)
+                PlatformCore.showError(data.statusText)
             }
         }
     }
 
     static handleDatatableError(error) {
-        let errorMessage = BotbleVariables.languages.tables.error_loading
-            ? BotbleVariables.languages.tables.error_loading
+        let errorMessage = PlatformCoreVariables.languages.tables.error_loading
+            ? PlatformCoreVariables.languages.tables.error_loading
             : 'An error occurred while loading the data. Please refresh the page and try again.'
 
         if (typeof error.responseJSON !== 'undefined') {
@@ -175,7 +175,7 @@ class Botble {
                 // Remove any sensitive information from error message
                 errorMessage = error.responseJSON.message
                     .replace(/table\s+[a-zA-Z0-9_-]+/g, 'table')
-                    .replace('botble-', '')
+                    .replace('platformcore-', '')
                     .replace(/column\s+['"]\w+['"]/g, 'column')
                     .replace(/parameter\s+['"]\w+['"]/g, 'parameter')
                     .replace(/row\s+\d+/g, 'row')
@@ -185,7 +185,7 @@ class Botble {
             }
         }
 
-        Botble.showError(errorMessage)
+        PlatformCore.showError(errorMessage)
     }
 
     static handleValidationError(errors) {
@@ -193,7 +193,7 @@ class Botble {
         $.each(errors, (index, item) => {
             message += item + '\n'
         })
-        Botble.showError(message)
+        PlatformCore.showError(message)
     }
 
     static callScroll(obj) {
@@ -216,7 +216,7 @@ class Botble {
         if (navigator.clipboard && window.isSecureContext) {
             await navigator.clipboard.writeText(textToCopy)
         } else {
-            Botble.unsecuredCopyToClipboard(textToCopy, parentTarget)
+            PlatformCore.unsecuredCopyToClipboard(textToCopy, parentTarget)
         }
     }
 
@@ -591,11 +591,11 @@ class Botble {
             })
 
         $.each($(document).find('select.select-search-full'), function (index, element) {
-            Botble.select(element)
+            PlatformCore.select(element)
         })
 
         $.each($(document).find('select.select-full'), function (index, element) {
-            Botble.select(element, {
+            PlatformCore.select(element, {
                 controlInput: null,
             })
         })
@@ -605,7 +605,7 @@ class Botble {
             .each(function (index, element) {
                 const $element = $(element)
 
-                Botble.select(element, {
+                PlatformCore.select(element, {
                     minimumInputLength: $element.data('minimum-input') || 1,
                     width: '100%',
                     delay: 250,
@@ -638,7 +638,7 @@ class Botble {
         $.each($(document).find('.select-multiple'), function (index, element) {
             const $element = $(element)
 
-            Botble.select(element, {
+            PlatformCore.select(element, {
                 allowClear: $element.data('allow-clear'),
                 placeholder: $element.data('placeholder'),
             })
@@ -704,7 +704,7 @@ class Botble {
                     allowClear: true,
                 }
 
-                Botble.select(element, options)
+                PlatformCore.select(element, options)
                 const selected = $element.data('selected')
 
                 if (typeof selected !== 'undefined' && Object.keys(selected).length > 0) {
@@ -731,7 +731,7 @@ class Botble {
                         width: '100%',
                     }
 
-                    Botble.select(element, options)
+                    PlatformCore.select(element, options)
                 }
             })
 
@@ -870,17 +870,17 @@ class Botble {
             $(element).html(urlify($(element).html()))
         })
 
-        Botble.initDatePicker('.datepicker')
+        PlatformCore.initDatePicker('.datepicker')
 
         if (jQuery().textareaAutoSize) {
             $('textarea.textarea-auto-height').textareaAutoSize()
         }
 
-        Botble.initCodeEditorComponent()
-        Botble.initColorPicker()
-        Botble.initLightbox()
-        Botble.initTreeCategoriesSelect()
-        Botble.initCoreIcon()
+        PlatformCore.initCodeEditorComponent()
+        PlatformCore.initColorPicker()
+        PlatformCore.initLightbox()
+        PlatformCore.initTreeCategoriesSelect()
+        PlatformCore.initCoreIcon()
 
         document.dispatchEvent(new CustomEvent('core-init-resources'))
     }
@@ -909,10 +909,10 @@ class Botble {
             $(this).closest('.attachment-wrapper').find('.media-file-input').trigger('click')
         })
 
-        Botble.initFieldCollapse()
-        Botble.initTreeCheckboxes()
-        Botble.initClipboard()
-        Botble.initDropdownCheckboxes()
+        PlatformCore.initFieldCollapse()
+        PlatformCore.initTreeCheckboxes()
+        PlatformCore.initClipboard()
+        PlatformCore.initDropdownCheckboxes()
     }
 
     static numberFormat(number, decimals, dec_point, thousands_sep) {
@@ -997,13 +997,13 @@ class Botble {
         $submit.on('click', function (event) {
             event.preventDefault()
 
-            Botble.showButtonLoading($submit[0])
+            PlatformCore.showButtonLoading($submit[0])
 
             $httpClient
                 .make()
                 .post($submit.data('url'))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     debugConfirmationModal.modal('hide')
 
@@ -1012,7 +1012,7 @@ class Botble {
                     }, 1000)
                 })
                 .finally(() => {
-                    Botble.hideButtonLoading($submit[0])
+                    PlatformCore.hideButtonLoading($submit[0])
                 })
         })
     }
@@ -1034,7 +1034,7 @@ class Botble {
 
     static initMediaIntegrate() {
         if (jQuery().rvMedia) {
-            Botble.gallerySelectImageTemplate = `
+            PlatformCore.gallerySelectImageTemplate = `
             <div class='custom-image-box image-box'>
                 <input type='hidden' name='__name__' value='' class='image-data'>
                     <div class='preview-image-wrapper w-100'>
@@ -1155,7 +1155,7 @@ class Botble {
             }
 
             const gallerySelectImages = function (files, $currentBoxList, excludeIndexes = []) {
-                let template = Botble.gallerySelectImageTemplate
+                let template = PlatformCore.gallerySelectImageTemplate
                 const allowThumb = $currentBoxList.data('allow-thumb')
                 _.forEach(files, (file, index) => {
                     if (_.includes(excludeIndexes, index)) {
@@ -1412,8 +1412,8 @@ class Botble {
         $('.handle-tool-drag').mousedown((event) => {
             let _self = $(event.currentTarget)
             _self.attr('data-start_h', _self.parent().find('.CodeMirror').height()).attr('data-start_y', event.pageY)
-            $('body').attr('data-dragtool', _self.attr('id')).on('mousemove', Botble.onDragTool)
-            $(window).on('mouseup', Botble.onReleaseTool)
+            $('body').attr('data-dragtool', _self.attr('id')).on('mousemove', PlatformCore.onDragTool)
+            $(window).on('mouseup', PlatformCore.onReleaseTool)
         })
     }
 
@@ -1428,8 +1428,8 @@ class Botble {
     }
 
     static onReleaseTool() {
-        $('body').off('mousemove', Botble.onDragTool)
-        $(window).off('mouseup', Botble.onReleaseTool)
+        $('body').off('mousemove', PlatformCore.onDragTool)
+        $(window).off('mouseup', PlatformCore.onReleaseTool)
     }
 
     processAuthorize() {
@@ -1451,7 +1451,7 @@ class Botble {
 
         $httpClient
             .makeWithoutErrorHandler()
-            .post(BotbleVariables.authorize_url)
+            .post(PlatformCoreVariables.authorize_url)
             .then(() => {
                 // Store the current time as the last authorization time
                 localStorage.setItem('membership_authorization_time', Date.now().toString())
@@ -1496,7 +1496,7 @@ class Botble {
 
             $httpClient
                 .make()
-                .get($menuItems.data('url') || BotbleVariables.menu_item_count_url)
+                .get($menuItems.data('url') || PlatformCoreVariables.menu_item_count_url)
                 .then(({ data }) => {
                     // Store the current time as the last check time
                     localStorage.setItem('menu_items_count_check_time', Date.now().toString())
@@ -1586,7 +1586,7 @@ class Botble {
                     handleButtonCollapse(target)
                     break
                 default:
-                    console.warn(`[Botble] Unknown type ${type} of collapse`)
+                    console.warn(`[PlatformCore] Unknown type ${type} of collapse`)
             }
         })
 
@@ -1678,7 +1678,7 @@ class Botble {
                     return
                 }
 
-                Botble.initCodeEditor(this, this.dataset.mode || 'htmlmixed')
+                PlatformCore.initCodeEditor(this, this.dataset.mode || 'htmlmixed')
             })
     }
 
@@ -1808,7 +1808,7 @@ class Botble {
             const instanceName = element.dataset.bbLightbox
 
             if (!instance[instanceName]) {
-                instance[instanceName] = Botble.lightbox()
+                instance[instanceName] = PlatformCore.lightbox()
             }
 
             const source = element.href
@@ -1970,10 +1970,10 @@ class Botble {
                 }
             }
 
-            await Botble.copyToClipboard(text, clipboardParentTarget)
+            await PlatformCore.copyToClipboard(text, clipboardParentTarget)
 
             if (copiedMessage) {
-                Botble.showSuccess(copiedMessage)
+                PlatformCore.showSuccess(copiedMessage)
             }
 
             iconClipboard.addClass('d-none')
@@ -1993,7 +1993,7 @@ class Botble {
             return
         }
 
-        Botble.select(element, {
+        PlatformCore.select(element, {
             render: {
                 option: (data) => {
                     return `<div>${data.renderOption}</div>`
@@ -2166,11 +2166,11 @@ class Botble {
             mode: 'inline',
             success: function (response) {
                 if (response.error && response.message) {
-                    Botble.showError(response.message)
+                    PlatformCore.showError(response.message)
                 }
             },
             error: function (response) {
-                Botble.handleError(response)
+                PlatformCore.handleError(response)
             },
         })
     }
@@ -2200,6 +2200,6 @@ $(() => {
         },
     })
 
-    new Botble()
-    window.Botble = Botble
+    new PlatformCore()
+    window.PlatformCore = PlatformCore
 })

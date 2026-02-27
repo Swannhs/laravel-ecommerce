@@ -13,9 +13,9 @@ class OrderAdminManagement {
                     if (!data.error) {
                         $('#main-order-content').load(`${window.location.href} #main-order-content > *`)
                         _self.closest('div').remove()
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -37,9 +37,9 @@ class OrderAdminManagement {
                 .post(_self.data('action'))
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
 
                     $('#resend-order-confirmation-email-modal').modal('hide')
@@ -54,47 +54,47 @@ class OrderAdminManagement {
             $formBody.slideToggle()
 
             if (!$formBody.hasClass('shipment-data-loaded')) {
-                Botble.showLoading($formBody)
+                PlatformCore.showLoading($formBody)
 
                 $httpClient
                     .make()
                     .get(_self.data('target'))
                     .then(({ data }) => {
                         if (data.error) {
-                            Botble.showError(data.message)
+                            PlatformCore.showError(data.message)
                         } else {
                             $formBody.html(data.data)
                             $formBody.addClass('shipment-data-loaded')
-                            Botble.initResources()
+                            PlatformCore.initResources()
                         }
 
-                        Botble.hideLoading($formBody)
+                        PlatformCore.hideLoading($formBody)
                     })
             }
         })
 
         $(document).on('change', '#store_id', (event) => {
             const $formBody = $('.shipment-create-wrap')
-            Botble.showLoading($formBody)
+            PlatformCore.showLoading($formBody)
 
             $('#select-shipping-provider').load(
                 `${$('.btn-trigger-shipment').data('target')}?view=true&store_id=${$(event.currentTarget).val()} #select-shipping-provider > *`,
                 () => {
-                    Botble.hideLoading($formBody)
-                    Botble.initResources()
+                    PlatformCore.hideLoading($formBody)
+                    PlatformCore.initResources()
                 }
             )
         })
 
         $(document).on('change', '.shipment-form-weight', (event) => {
             const $formBody = $('.shipment-create-wrap')
-            Botble.showLoading($formBody)
+            PlatformCore.showLoading($formBody)
 
             $('#select-shipping-provider').load(
                 `${$('.btn-trigger-shipment').data('target')}?view=true&store_id=${$('#store_id').val()}&weight=${$(event.currentTarget).val()} #select-shipping-provider > *`,
                 () => {
-                    Botble.hideLoading($formBody)
-                    Botble.initResources()
+                    PlatformCore.hideLoading($formBody)
+                    PlatformCore.initResources()
                 }
             )
         })
@@ -117,11 +117,11 @@ class OrderAdminManagement {
                 .post(_self.closest('form').prop('action'), _self.closest('form').serialize())
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         $('#main-order-content').load(`${window.location.href} #main-order-content > *`)
                         $('.btn-trigger-shipment').remove()
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -143,13 +143,13 @@ class OrderAdminManagement {
                 .post(_self.data('action'))
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         $('.carrier-status').addClass(`carrier-status-${data.data.status}`).text(data.data.status_text)
                         $('#cancel-shipment-modal').modal('hide')
                         $('#order-history-wrapper').load(`${window.location.href} #order-history-wrapper > *`)
                         $('.shipment-actions-wrapper').remove()
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -182,7 +182,7 @@ class OrderAdminManagement {
                 .post(form.prop('action'), form.serialize())
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         $('#update-shipping-address-modal').modal('hide')
                         $('.shipment-address-box-1').html(data.data.line)
                         $('.shipping-address-info').html(data.data.detail)
@@ -190,11 +190,11 @@ class OrderAdminManagement {
                         $('#select-shipping-provider').load(
                             `${$('.btn-trigger-shipment').data('target')}?view=true #select-shipping-provider > *`,
                             () => {
-                                Botble.initResources()
+                                PlatformCore.initResources()
                             }
                         )
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -211,14 +211,14 @@ class OrderAdminManagement {
                 .post(form.prop('action'), form.serialize())
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                         return
                     }
 
                     $('.text-infor-subdued.tax-info').html(data.data)
                     $('#update-tax-information-modal').modal('hide')
 
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                 })
         })
 
@@ -233,9 +233,9 @@ class OrderAdminManagement {
                 .post(_self.closest('form').prop('action'), _self.closest('form').serialize())
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
 
                     if (_self.closest('.modal')) {
@@ -274,12 +274,12 @@ class OrderAdminManagement {
             const reasonDescription = modal.find('#cancellation_reason_description').val()
 
             if (!reason) {
-                Botble.showError('Please select a cancellation reason.')
+                PlatformCore.showError('Please select a cancellation reason.')
                 return
             }
 
             if (reason === 'other' && (!reasonDescription || reasonDescription.length < 3)) {
-                Botble.showError('Please enter a description for the cancellation reason (minimum 3 characters).')
+                PlatformCore.showError('Please enter a description for the cancellation reason (minimum 3 characters).')
                 return
             }
 
@@ -292,11 +292,11 @@ class OrderAdminManagement {
                 })
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         $('#main-order-content').load(`${window.location.href} #main-order-content > *`)
                         modal.modal('hide')
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -317,11 +317,11 @@ class OrderAdminManagement {
                 .post(_self.data('target'))
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         $('#main-order-content').load(`${window.location.href} #main-order-content > *`)
                         $('#confirm-payment-modal').modal('hide')
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -340,7 +340,7 @@ class OrderAdminManagement {
             $(event.currentTarget)
                 .closest('body')
                 .find($(event.currentTarget).data('target'))
-                .text(Botble.numberFormat(parseFloat(number), 2))
+                .text(PlatformCore.numberFormat(parseFloat(number), 2))
         })
 
         $(document).on('click', '.btn-trigger-refund', (event) => {
@@ -377,11 +377,11 @@ class OrderAdminManagement {
                             window.location.href = data.data.refund_redirect_url
                         } else {
                             $('#main-order-content').load(`${window.location.href} #main-order-content > *`)
-                            Botble.showSuccess(data.message)
+                            PlatformCore.showSuccess(data.message)
                             _self.closest('.modal').modal('hide')
                         }
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })
@@ -404,10 +404,10 @@ class OrderAdminManagement {
                 .then(({ data }) => {
                     if (!data.error) {
                         $('#main-order-content').load(`${window.location.href} #main-order-content > *`)
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                         _self.closest('.modal').modal('hide')
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })

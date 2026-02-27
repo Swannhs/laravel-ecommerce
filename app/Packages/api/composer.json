@@ -1,19 +1,19 @@
 {
-    "name": "botble/api",
-    "description": "API package for Botble CMS",
+    "name": "platformcore/api",
+    "description": "API package for PlatformCore CMS",
     "type": "package",
     "license": "MIT",
     "keywords": [
-        "botble",
-        "botble cms",
-        "botble platform",
-        "botble api"
+        "platformcore",
+        "platformcore cms",
+        "platformcore platform",
+        "platformcore api"
     ],
-    "homepage": "https://botble.com",
+    "homepage": "https://platformcore.com",
     "authors": [
         {
-            "name": "Botble Technologies",
-            "email": "contact@botble.com"
+            "name": "PlatformCore Technologies",
+            "email": "contact@platformcore.com"
         }
     ],
     "autoload": {

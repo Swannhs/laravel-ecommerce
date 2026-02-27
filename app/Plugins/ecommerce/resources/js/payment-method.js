@@ -33,9 +33,9 @@ class PaymentMethodManagement {
                                 _self.closest('tbody').find('.btn-text-trigger-save').removeClass('hidden')
                                 _self.addClass('hidden')
                                 $('#confirm-disable-payment-method-modal').modal('hide')
-                                Botble.showSuccess(data.message)
+                                PlatformCore.showSuccess(data.message)
                             } else {
-                                Botble.showError(data.message)
+                                PlatformCore.showError(data.message)
                             }
                         })
                 })
@@ -66,9 +66,9 @@ class PaymentMethodManagement {
                             _self.closest('tbody').find('.save-payment-item-btn-trigger').addClass('hidden')
                             _self.closest('tbody').find('.btn-text-trigger-update').removeClass('hidden')
                             _self.closest('tbody').find('.btn-text-trigger-save').addClass('hidden')
-                            Botble.showSuccess(data.message)
+                            PlatformCore.showSuccess(data.message)
                         } else {
-                            Botble.showError(data.message)
+                            PlatformCore.showError(data.message)
                         }
                     })
             })

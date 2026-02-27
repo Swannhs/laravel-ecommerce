@@ -61,7 +61,7 @@ $(() => {
                 window.URL.revokeObjectURL(url)
             },
             error: (data) => {
-                Botble.handleError(data)
+                PlatformCore.handleError(data)
             },
             complete: () => {
                 setTimeout(() => {
@@ -97,7 +97,7 @@ $(() => {
             .withLoading($form)
             .post($form.attr('action'), formData)
             .then(({ data }) => {
-                Botble.showSuccess(data.message)
+                PlatformCore.showSuccess(data.message)
 
                 let $class = 'alert alert-success'
 

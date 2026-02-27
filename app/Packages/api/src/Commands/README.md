@@ -1,6 +1,6 @@
 # Push Notification Commands
 
-This directory contains commands for managing push notifications in the Botble CMS API package.
+This directory contains commands for managing push notifications in the PlatformCore CMS API package.
 
 ## Available Commands
 

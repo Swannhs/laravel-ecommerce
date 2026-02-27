@@ -11,7 +11,7 @@ $(() => {
                 .get($wrapBody.data('target'))
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
                         $wrapBody.html(data.data)
                     }
@@ -66,7 +66,7 @@ $(() => {
                 .get(_self.data('bb-target'))
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
                         $formBody.html(data.data)
                     }
@@ -91,7 +91,7 @@ $(() => {
                 .get(_self.data('bb-target'), { keyword: _self.val() })
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
                         $formBody.html(data.data)
                     }
@@ -99,7 +99,7 @@ $(() => {
                 })
                 .catch((error) => {
                     if (data.statusText !== 'abort') {
-                        Botble.handleError(error)
+                        PlatformCore.handleError(error)
                     }
                 })
         }, 500)
@@ -119,7 +119,7 @@ $(() => {
                 .get($(event.currentTarget).prop('href'), { keyword: $searchBox.val() })
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
                         $formBody.html(data.data)
                     }

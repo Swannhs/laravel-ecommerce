@@ -108,7 +108,7 @@ export default {
                     .get(this.url + '?date_from=' + this.chartFromDate + '&date_to=' + this.chartToDate)
                     .then((res) => {
                         if (res.data.error) {
-                            Botble.showError(res.data.message)
+                            PlatformCore.showError(res.data.message)
                         } else {
                             this.earningSales = res.data.data.earningSales
                             const series = res.data.data.series
@@ -128,7 +128,7 @@ export default {
                                     },
                                     tooltip: { x: { format: this.format } },
                                     noData: {
-                                        text: BotbleVariables.languages.tables.no_data,
+                                        text: PlatformCoreVariables.languages.tables.no_data,
                                     },
                                 })
 
@@ -160,7 +160,7 @@ export default {
                 })
                 .then((res) => {
                     if (res.data.error) {
-                        Botble.showError(res.data.message)
+                        PlatformCore.showError(res.data.message)
                     } else {
                         that.earningSales = res.data.data.earningSales
                         const options = {

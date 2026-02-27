@@ -1,5 +1,5 @@
 {
-    "name": "botble/get-started",
+    "name": "platformcore/get-started",
     "description": "Make site ready in few steps",
     "type": "package",
     "autoload": {

@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\FlashSale;
-use Botble\Ecommerce\Models\Product;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Ecommerce\Models\FlashSale;
+use App\Plugins\Ecommerce\Models\Product;
 use Illuminate\Support\Facades\DB;
 
 class FlashSaleSeeder extends BaseSeeder

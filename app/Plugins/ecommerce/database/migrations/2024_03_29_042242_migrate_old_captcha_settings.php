@@ -12,7 +12,7 @@ return new class () extends Migration {
             if (setting('ecommerce_enable_recaptcha_in_register_page')) {
                 DB::table('settings')->insertOrIgnore([
                     'id' => BaseModel::getTypeOfId() === 'BIGINT' ? null : (new BaseModel())->newUniqueId(),
-                    'key' => 'enable_recaptcha_botble_ecommerce_forms_fronts_auth_register_form',
+                    'key' => 'enable_recaptcha_platformcore_ecommerce_forms_fronts_auth_register_form',
                     'value' => '1',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
@@ -22,7 +22,7 @@ return new class () extends Migration {
             if (setting('ecommerce_enable_math_captcha_in_register_page')) {
                 DB::table('settings')->insertOrIgnore([
                     'id' => BaseModel::getTypeOfId() === 'BIGINT' ? null : (new BaseModel())->newUniqueId(),
-                    'key' => 'enable_math_captcha_botble_ecommerce_forms_fronts_auth_register_form',
+                    'key' => 'enable_math_captcha_platformcore_ecommerce_forms_fronts_auth_register_form',
                     'value' => '1',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),

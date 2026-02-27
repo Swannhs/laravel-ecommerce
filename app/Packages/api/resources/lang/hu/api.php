@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Teljes API dokumentáció megtekintése példákkal és végpont részletekkel.',
     'view_documentation' => 'API dokumentáció megtekintése',
     'generate_docs_title' => 'API dokumentáció generálása',
-    'generate_docs_description' => 'Az API dokumentáció generálásához a Botble CMS alkalmazáshoz kövesse ezeket az egyszerű lépéseket:',
+    'generate_docs_description' => 'Az API dokumentáció generálásához a PlatformCore CMS alkalmazáshoz kövesse ezeket az egyszerű lépéseket:',
     'generate_docs_step_1' => '1. Telepítse a Scribe csomagot:',
     'generate_docs_step_2' => '2. Generálja le az API dokumentációt:',
     'generate_docs_step_3' => '3. Nyissa meg az API dokumentációt:',

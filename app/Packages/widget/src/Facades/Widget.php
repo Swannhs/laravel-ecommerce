@@ -18,12 +18,12 @@ class Widget extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'botble.widget';
+        return 'platformcore.widget';
     }
 
     public static function group(string $name): WidgetGroup
     {
-        return app('botble.widget-group-collection')->group($name);
+        return app('platformcore.widget-group-collection')->group($name);
     }
 
     public static function ignoreCaches(array $widgets): void

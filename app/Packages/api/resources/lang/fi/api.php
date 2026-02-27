@@ -21,7 +21,7 @@ return [
     'api_documentation_description' => 'Tarkastele täydellistä API-dokumentaatiota esimerkkeineen ja päätepisteiden tietoineen.',
     'view_documentation' => 'Näytä API-dokumentaatio',
     'generate_docs_title' => 'Luo API-dokumentaatio',
-    'generate_docs_description' => 'Luodaksesi API-dokumentaation Botble CMS -sovelluksellesi, noudata näitä yksinkertaisia ​​vaiheita:',
+    'generate_docs_description' => 'Luodaksesi API-dokumentaation PlatformCore CMS -sovelluksellesi, noudata näitä yksinkertaisia ​​vaiheita:',
     'generate_docs_step_1' => '1. Asenna Scribe-paketti:',
     'generate_docs_step_2' => '2. Luo API-dokumentaatio:',
     'generate_docs_step_3' => '3. Käytä API-dokumentaatiotasi osoitteessa:',

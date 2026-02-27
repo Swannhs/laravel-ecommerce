@@ -1,10 +1,10 @@
 {
-    "id": "botble/faq",
+    "id": "platformcore/faq",
     "name": "FAQ",
     "namespace": "App\\Plugins\\Faq\\",
     "provider": "App\\Plugins\\Faq\\Providers\\FaqServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "2.0.8",
     "description": "Frequently Asked Question(s) FAQ",
     "minimum_core_version": "7.3.0"

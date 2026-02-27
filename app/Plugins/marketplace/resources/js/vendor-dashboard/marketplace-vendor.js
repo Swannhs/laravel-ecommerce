@@ -14,9 +14,9 @@ $(() => {
                 $modal.modal('hide')
 
                 if (data.error) {
-                    Botble.showError(data.message)
+                    PlatformCore.showError(data.message)
                 } else {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
                     setTimeout(() => {
                         window.location.href = route('marketplace.unverified-vendors.index')
                     }, 3000)

@@ -123,7 +123,7 @@ class Currencies {
                 .post(form.prop('action'), form.serialize())
                 .then(({ data }) => {
                     if (data.error) {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     } else {
                         $httpClient
                             .make()
@@ -132,7 +132,7 @@ class Currencies {
                             .post(_self.data('url'))
                             .then(({ data }) => {
                                 if (!data.error) {
-                                    Botble.showNotice('success', data.message)
+                                    PlatformCore.showNotice('success', data.message)
                                     const template = $('#currency_template').html()
                                     let html = ''
                                     $.each(data.data, (index, item) => {
@@ -160,7 +160,7 @@ class Currencies {
                                         $('.swatches-container .swatches-list').html(html)
                                     }, 1000)
                                 } else {
-                                    Botble.showNotice('error', data.message)
+                                    PlatformCore.showNotice('error', data.message)
                                 }
                             })
                     }
@@ -180,9 +180,9 @@ class Currencies {
                 .post(_self.data('url'))
                 .then(({ data }) => {
                     if (!data.error) {
-                        Botble.showSuccess(data.message)
+                        PlatformCore.showSuccess(data.message)
                     } else {
-                        Botble.showError(data.message)
+                        PlatformCore.showError(data.message)
                     }
                 })
         })

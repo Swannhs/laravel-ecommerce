@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use Botble\Ecommerce\Models\GlobalOption;
-use Botble\Ecommerce\Models\GlobalOptionValue;
-use Botble\Ecommerce\Option\OptionType\Dropdown;
-use Botble\Ecommerce\Option\OptionType\RadioButton;
+use App\Plugins\Ecommerce\Models\GlobalOption;
+use App\Plugins\Ecommerce\Models\GlobalOptionValue;
+use App\Plugins\Ecommerce\Option\OptionType\Dropdown;
+use App\Plugins\Ecommerce\Option\OptionType\RadioButton;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 

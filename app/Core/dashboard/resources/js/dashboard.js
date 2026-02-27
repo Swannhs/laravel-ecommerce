@@ -16,7 +16,7 @@ class BDashboard {
             return
         }
 
-        Botble.showLoading(loading)
+        PlatformCore.showLoading(loading)
 
         if (typeof data === 'undefined' || data == null) {
             data = {}
@@ -52,7 +52,7 @@ class BDashboard {
                 $widget.html(content)
             })
             .finally(() => {
-                Botble.hideLoading(loading)
+                PlatformCore.hideLoading(loading)
             })
     }
 
@@ -88,7 +88,7 @@ class BDashboard {
                         .makeWithoutErrorHandler()
                         .post($widgetsList.data('url'), { items: items })
                         .then(({ data }) => {
-                            Botble.showSuccess(data.message)
+                            PlatformCore.showSuccess(data.message)
                         })
                 },
             })
@@ -139,7 +139,7 @@ $(() => {
                 .withButtonLoading(form.find('button[type="submit"]'))
                 .postForm(form.prop('action'), new FormData(form[0]))
                 .then(({ data }) => {
-                    Botble.showSuccess(data.message)
+                    PlatformCore.showSuccess(data.message)
 
                     setTimeout(() => {
                         window.location.reload()

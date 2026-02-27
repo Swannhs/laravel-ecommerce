@@ -1,10 +1,10 @@
 {
-    "id": "botble/paypal-payout",
+    "id": "platformcore/paypal-payout",
     "name": "PayPal Payout",
     "namespace": "App\\Plugins\\PayPalPayout\\",
     "provider": "App\\Plugins\\PayPalPayout\\Providers\\PayPalPayoutServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "PlatformCore Technologies",
+    "url": "https://platformcore.com",
     "version": "1.0.3",
     "description": "PayPal Payout payment gateway integration",
     "minimum_core_version": "7.3.0",

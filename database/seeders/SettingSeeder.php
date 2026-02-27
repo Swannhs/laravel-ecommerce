@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Database\Traits\HasBlogSeeder;
-use Botble\Ecommerce\Database\Seeders\Traits\HasEcommerceSettingsSeeder;
+use App\Core\Base\Supports\BaseSeeder;
+use App\Plugins\Blog\Database\Traits\HasBlogSeeder;
+use App\Plugins\Ecommerce\Database\Seeders\Traits\HasEcommerceSettingsSeeder;
 
 class SettingSeeder extends BaseSeeder
 {

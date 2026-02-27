@@ -21,7 +21,7 @@ class Footprinter implements FootprinterInterface
     {
         $this->request = $request;
 
-        $cookieName = 'botble_footprints_cookie';
+        $cookieName = 'platformcore_footprints_cookie';
 
         if ($request->hasCookie($cookieName)) {
             return $request->cookie($cookieName);
@@ -57,7 +57,7 @@ class Footprinter implements FootprinterInterface
 
     public function getFootprints(): array
     {
-        $data = Cookie::get('botble_footprints_cookie_data');
+        $data = Cookie::get('platformcore_footprints_cookie_data');
 
         if (! $data) {
             return [];
