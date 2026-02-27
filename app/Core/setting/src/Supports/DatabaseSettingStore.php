@@ -8,6 +8,7 @@ use App\Core\Setting\Models\Setting;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Schema;
 use UnexpectedValueException;
 
 class DatabaseSettingStore extends SettingStore
@@ -83,6 +84,11 @@ class DatabaseSettingStore extends SettingStore
         }
 
         if (! $this->connectedDatabase) {
+            return [];
+        }
+
+        // During fresh install, DB may be connected before migrations run.
+        if (! Schema::hasTable((new Setting())->getTable())) {
             return [];
         }
 

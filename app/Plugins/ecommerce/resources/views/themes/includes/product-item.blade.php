@@ -25,9 +25,12 @@
                     <button
                         type="button"
                         class="btn btn-primary bb-btn-product-actions-icon"
-                        @if($isConfigurable)
+                        @if($isConfigurable && filled($product->slug))
                             data-url="{{ route('public.ajax.quick-shop', $product->slug) }}"
                         {!! EcommerceHelper::jsAttributes('quick-shop', $product) !!}
+                        @elseif($isConfigurable)
+                            data-url="{{ $product->url }}"
+                            onclick="window.location.href='{{ $product->url }}'"
                         @else
                             data-url="{{ route('public.cart.add-to-cart') }}"
                             data-id="{{ $product->original_product->id }}"

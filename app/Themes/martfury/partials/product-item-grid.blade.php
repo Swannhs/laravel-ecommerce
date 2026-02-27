@@ -60,7 +60,11 @@
             @endif
             @if (EcommerceHelper::isCartEnabled())
                 @if ($product->has_variation)
-                    <a class="ps-btn" href="#" data-bb-toggle="quick-shop" data-url="{{ route('public.ajax.quick-shop', $product->slug) }}" {!! EcommerceHelper::jsAttributes('quick-shop', $product) !!} title="{{ __('Select Options') }}">{{ __('Select Options') }}</a>
+                    @if (filled($product->slug))
+                        <a class="ps-btn" href="#" data-bb-toggle="quick-shop" data-url="{{ route('public.ajax.quick-shop', $product->slug) }}" {!! EcommerceHelper::jsAttributes('quick-shop', $product) !!} title="{{ __('Select Options') }}">{{ __('Select Options') }}</a>
+                    @else
+                        <a class="ps-btn" href="{{ $product->url }}" title="{{ __('Select Options') }}">{{ __('Select Options') }}</a>
+                    @endif
                 @else
                     <a class="ps-btn add-to-cart-button" data-id="{{ $product->id }}" href="#" data-url="{{ route('public.cart.add-to-cart') }}" {!! EcommerceHelper::jsAttributes('add-to-cart', $product, additional: ['data-bb-toggle' => 'none']) !!} title="{{ __('Add to cart') }}">{{ __('Add to cart') }}</a>
                 @endif

@@ -20,6 +20,7 @@ Route::group([
         Route::post('welcome/next', [InstallController::class, 'next'])->name('welcome.next');
         Route::resource('requirements', RequirementController::class)->only(['index']);
         Route::resource('environments', EnvironmentController::class)->only(['index', 'store']);
+        Route::get('environments/create', fn () => redirect()->route('installers.environments.index'));
     });
 
     Route::group(['middleware' => 'installing'], function (): void {
