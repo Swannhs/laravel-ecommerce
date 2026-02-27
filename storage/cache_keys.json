@@ -1,0 +1,24 @@
+{
+    "App\\Plugins\\Ecommerce\\Models\\ProductCategory": [
+        "7084f9ecb2421bf7e753bd5be0711bc7@ecommerce_categories_for_widgets_en_315e0d9e72c7a04ac078fa129bb8047f",
+        "7084f9ecb2421bf7e753bd5be0711bc7@ecommerce_categories_for_rendering_select_en_315e0d9e72c7a04ac078fa129bb8047f",
+        "7084f9ecb2421bf7e753bd5be0711bc7@ecommerce_categories_for_widgets_en_ea227f0efcecee7b4a148f739c58a399",
+        "7084f9ecb2421bf7e753bd5be0711bc7@ecommerce_categories_for_widgets_en_67a5f0fb81ae8a2b346fb5f4cc251f9e",
+        "7084f9ecb2421bf7e753bd5be0711bc7@ecommerce_categories_for_widgets_en_67910844167812918740b34866fe9e09",
+        "7084f9ecb2421bf7e753bd5be0711bc7@ecommerce_categories_for_widgets_en_19d610c11d2bc962f5dd72dc78ea156e",
+        "7084f9ecb2421bf7e753bd5be0711bc7@ecommerce_categories_for_widgets_en_3e3141c39f77e1acd831cf5aa3b8c3e1"
+    ],
+    "App\\Packages\\Menu\\Models\\Menu": [
+        "36f441d73169d032fd3f1d2a2c7f2993@menu_all_menus_fc097b8e85a234c0a9d56f4dd6049699",
+        "36f441d73169d032fd3f1d2a2c7f2993@menu_location_7d470fb17d718d84302e64421213a6a6",
+        "36f441d73169d032fd3f1d2a2c7f2993@menu_location_ec44b3f4ab4f8a7b80df59d3dc29bd2f",
+        "36f441d73169d032fd3f1d2a2c7f2993@menu_location_63028ea9a564b089a7815a11041b432b"
+    ],
+    "App\\Core\\ACL\\Models\\UserMeta": [
+        "0ce1ab382984b0be9c657fea2167be85@user-meta-1"
+    ],
+    "App\\Plugins\\Contact\\Models\\Contact": [
+        "dc0ca901cd22455484fde5b9393885ca@unread-contacts",
+        "dc0ca901cd22455484fde5b9393885ca@unread-contacts-count"
+    ]
+}
