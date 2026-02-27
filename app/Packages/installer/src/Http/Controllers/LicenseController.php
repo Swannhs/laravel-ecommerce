@@ -25,27 +25,17 @@ class LicenseController extends BaseController
 
     public function store(LicenseSettingRequest $request, Core $core): RedirectResponse
     {
-        // $buyer = $request->input('buyer');
-
-        // if (filter_var($buyer, FILTER_VALIDATE_URL)) {
-        //     $username = Str::afterLast($buyer, '/');
-
-        //     throw ValidationException::withMessages([
-        //         'buyer' => sprintf('Envato username must not a URL. Please try with username "%s".', $username),
-        //     ]);
-        // }
+        $buyer = $request->input('buyer');
 
         try {
-            // $licenseKey = $request->input('purchase_code');
+            $licenseKey = $request->input('purchase_code');
 
-            // $core->activateLicense($licenseKey, $buyer);
-
-            Setting::forceSet('licensed_to', "Test")->save();
+            $core->activateLicense($licenseKey, $buyer);
 
             $finalUrl = URL::temporarySignedRoute('installers.final', Carbon::now()->addMinutes(30));
 
             return redirect()->to($finalUrl);
-        } catch (LicenseInvalidException|LicenseIsAlreadyActivatedException $exception) {
+        } catch (LicenseInvalidException | LicenseIsAlreadyActivatedException $exception) {
             throw ValidationException::withMessages([
                 'purchase_code' => [$exception->getMessage()],
             ]);
