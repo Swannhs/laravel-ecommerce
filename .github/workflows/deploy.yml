@@ -1,0 +1,57 @@
+name: Build and Push to Amazon ECR
+
+on:
+  push:
+    branches:
+      - main # Or whatever your production branch is called
+
+env:
+  AWS_REGION: ${{ secrets.AWS_REGION }}                   # e.g., us-east-1
+  ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}               # e.g., 123456789012.dkr.ecr.us-east-1.amazonaws.com
+
+jobs:
+  build-and-push:
+    name: Build & Push
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v2
+      
+    - name: Install Dependencies & Compile Assets (Node)
+      run: |
+        npm install
+        npm run build 
+
+    - name: Build, tag, and push PHP image to Amazon ECR
+      env:
+        ECR_REPOSITORY: laravel-app-php
+        IMAGE_TAG: ${{ github.sha }}
+      run: |
+        docker build -f docker/prod/php/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        
+    - name: Build, tag, and push Nginx image to Amazon ECR
+      env:
+        ECR_REPOSITORY: laravel-app-nginx
+        IMAGE_TAG: ${{ github.sha }}
+      run: |
+        docker build -f docker/prod/nginx/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG

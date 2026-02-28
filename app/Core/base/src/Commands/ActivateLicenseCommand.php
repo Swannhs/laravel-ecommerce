@@ -27,17 +27,17 @@ class ActivateLicenseCommand extends Command
 
     public function handle(): int
     {
-        if ($this->option('buyer') && $this->option('purchase_code')) {
-            $username = $this->option('buyer');
-            $purchasedCode = $this->option('purchase_code');
+        if ($this->option('username') && $this->option('key')) {
+            $username = $this->option('username');
+            $purchasedCode = $this->option('key');
             $validator = Validator::make(
                 [
-                    'buyer' => $username,
-                    'purchase_code' => $purchasedCode,
+                    'username' => $username,
+                    'key' => $purchasedCode,
                 ],
                 [
-                    'buyer' => ['required', 'string', 'min:2', 'max:60'],
-                    'purchase_code' => ['required', 'string', 'min:19', 'max:36'],
+                    'username' => ['required', 'string'],
+                    'key' => ['required', 'string'],
                 ]
             )->stopOnFirstFailure();
 
@@ -48,26 +48,13 @@ class ActivateLicenseCommand extends Command
             }
         } else {
             $username = text(
-                label: 'Envato username',
+                label: 'Client username',
                 required: true,
-                validate: $this->validate('string|min:2|max:60'),
             );
 
-            if (filter_var($username, FILTER_VALIDATE_URL)) {
-                $this->components->error(
-                    sprintf(
-                        'Envato username must not a URL. Please try "%s".',
-                        explode('/', $username)[count(explode('/', $username)) - 1]
-                    )
-                );
-
-                return self::FAILURE;
-            }
-
             $purchasedCode = text(
-                label: 'Purchase code',
+                label: 'License Key',
                 required: true,
-                validate: $this->validate('string|min:19|max:36'),
             );
         }
 
@@ -78,7 +65,7 @@ class ActivateLicenseCommand extends Command
 
             return tap(
                 $this->performUpdate($purchasedCode, $username),
-                fn () => $this->components->warn('Your license on the previous domain has been revoked!')
+                fn() => $this->components->warn('Your license on the previous domain has been revoked!')
             );
         } catch (Throwable $exception) {
             $this->components->error($exception->getMessage());
@@ -91,7 +78,7 @@ class ActivateLicenseCommand extends Command
     {
         $status = $this->core->activateLicense($purchasedCode, $username);
 
-        if (! $status) {
+        if (!$status) {
             $this->components->error('This license is invalid.');
 
             return self::FAILURE;
@@ -106,7 +93,7 @@ class ActivateLicenseCommand extends Command
 
     protected function configure(): void
     {
-        $this->addOption('buyer', null, InputOption::VALUE_REQUIRED, 'The buyer name');
-        $this->addOption('purchase_code', null, InputOption::VALUE_REQUIRED, 'The purchase code');
+        $this->addOption('username', null, InputOption::VALUE_REQUIRED, 'The client username');
+        $this->addOption('key', null, InputOption::VALUE_REQUIRED, 'The license key');
     }
 }
