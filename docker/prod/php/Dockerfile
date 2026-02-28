@@ -4,25 +4,26 @@ WORKDIR /var/www/html
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        git \
-        unzip \
-        curl \
-        libzip-dev \
-        libicu-dev \
-        libpng-dev \
-        libjpeg62-turbo-dev \
-        libfreetype6-dev \
-        libwebp-dev \
+    git \
+    unzip \
+    curl \
+    libzip-dev \
+    libicu-dev \
+    libpng-dev \
+    libjpeg62-turbo-dev \
+    libfreetype6-dev \
+    libwebp-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
     && docker-php-ext-install -j"$(nproc)" \
-        bcmath \
-        exif \
-        gd \
-        intl \
-        opcache \
-        pcntl \
-        pdo_mysql \
-        zip \
+    bcmath \
+    calendar \
+    exif \
+    gd \
+    intl \
+    opcache \
+    pcntl \
+    pdo_mysql \
+    zip \
     && pecl install redis \
     && docker-php-ext-enable redis \
     && apt-get clean \
