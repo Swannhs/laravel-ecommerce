@@ -94,7 +94,10 @@ jobs:
             export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/snap/bin
             export PHP_IMAGE=${{ env.ECR_REGISTRY }}/laravel-ecommerce:php-${{ env.IMAGE_TAG }}
             export NGINX_IMAGE=${{ env.ECR_REGISTRY }}/laravel-ecommerce:nginx-${{ env.IMAGE_TAG }}
+            echo "Using PHP_IMAGE=$PHP_IMAGE"
+            echo "Using NGINX_IMAGE=$NGINX_IMAGE"
             $(which aws || echo aws) ecr get-login-password --region ${{ env.AWS_REGION }} | sudo docker login --username AWS --password-stdin ${{ env.ECR_REGISTRY }}
-            sudo docker compose pull
-            sudo docker compose up -d --remove-orphans
+            sudo --preserve-env=PHP_IMAGE,NGINX_IMAGE docker compose config | grep -E 'image:' || true
+            sudo --preserve-env=PHP_IMAGE,NGINX_IMAGE docker compose pull
+            sudo --preserve-env=PHP_IMAGE,NGINX_IMAGE docker compose up -d --remove-orphans
             sudo docker system prune -af
