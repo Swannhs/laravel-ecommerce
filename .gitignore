@@ -10,21 +10,8 @@
 # Laravel framework cache / generated files
 /bootstrap/cache/*.php
 /bootstrap/cache/*.json
-/storage/*.key
-/storage/cache_keys.json
-/storage/installed
-/storage/installing
-/storage/framework/cache/*
-!/storage/framework/cache/.gitignore
-/storage/framework/sessions/*
-!/storage/framework/sessions/.gitignore
-/storage/framework/testing/*
-!/storage/framework/testing/.gitignore
-/storage/framework/views/*
-!/storage/framework/views/.gitignore
-/storage/framework/license-reminder-latest-time.txt
-/storage/logs/*
-!/storage/logs/.gitignore
+/storage/**
+!/storage/**/.gitignore
 
 # Public build/runtime artifacts
 /public/storage
@@ -54,7 +41,4 @@ Thumbs.db
 # Docker override files
 /docker-compose.override.yml
 
-.env
-.env.*
-!.env.example
 !.env.prod.example
