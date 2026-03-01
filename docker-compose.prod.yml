@@ -1,67 +1,51 @@
+version: '3.8'
+
 services:
-  app:
-    build:
-      context: .
-      dockerfile: docker/prod/php/Dockerfile
-    image: laravel-ecommerce/app:prod
-    restart: unless-stopped
-    env_file:
-      - .env.prod
-    environment:
-      APP_ENV: production
-      APP_DEBUG: "false"
-      LOG_CHANNEL: stderr
-      RUN_MIGRATIONS: "${RUN_MIGRATIONS:-false}"
-    volumes:
-      - storage_data:/var/www/html/storage
-    depends_on:
-      db:
-        condition: service_healthy
-    networks:
-      - appnet
-
-  web:
-    image: nginx:1.27-alpine
-    restart: unless-stopped
+  nginx:
+    image: 767397729598.dkr.ecr.us-east-1.amazonaws.com/laravel-ecommerce:nginx-latest
+    container_name: laravel-nginx
+    restart: always
     ports:
-      - "${APP_PORT:-8080}:80"
-    volumes:
-      - ./public:/var/www/html/public:ro
-      - storage_data:/var/www/html/storage:ro
-      - ./docker/prod/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - "80:80"
+      - "443:443"
     depends_on:
-      - app
+      - php
     networks:
-      - appnet
+      - app-network
 
-  db:
-    image: mysql/mysql-server:8.0
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD:-root}"
-      MYSQL_ROOT_HOST: "%"
-      MYSQL_DATABASE: "${DB_DATABASE}"
-      MYSQL_USER: "${DB_USERNAME}"
-      MYSQL_PASSWORD: "${DB_PASSWORD}"
-      MYSQL_ALLOW_EMPTY_PASSWORD: 0
+  php:
+    image: 767397729598.dkr.ecr.us-east-1.amazonaws.com/laravel-ecommerce:php-latest
+    container_name: laravel-php
+    restart: always
+    depends_on:
+      - mysql
+    env_file:
+      - .env
     volumes:
-      - mysql_data:/var/lib/mysql
-    healthcheck:
-      test:
-        - CMD
-        - mysqladmin
-        - ping
-        - "-p${DB_ROOT_PASSWORD:-root}"
-      retries: 5
-      timeout: 10s
-      interval: 10s
+      # It's important to map storage to the host so uploads/caches survive container restarts
+      - ./storage:/var/www/html/storage
+      - ./bootstrap/cache:/var/www/html/bootstrap/cache
     networks:
-      - appnet
+      - app-network
+  mysql:
+    image: mysql:8.0
+    container_name: laravel-mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_USER: '${DB_USERNAME}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - app-network
+    ports:
+      - "3306:3306"
 
 networks:
-  appnet:
+  app-network:
     driver: bridge
 
 volumes:
-  storage_data:
-  mysql_data:
+  db-data:

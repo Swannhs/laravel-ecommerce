@@ -1,0 +1,98 @@
+---
+- name: Provision and Deploy Laravel Application
+  hosts: all
+  become: yes
+  vars:
+    app_dir: "/home/ubuntu/my-app"
+    aws_region: "us-east-1"
+    ecr_registry: "767397729598.dkr.ecr.us-east-1.amazonaws.com"
+
+  tasks:
+    - name: Update apt packages
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install required dependencies
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - awscli
+        state: present
+
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Install Docker and Docker Compose
+      apt:
+        name:
+          - docker-ce
+          - docker-compose
+        state: present
+
+    - name: Add ubuntu user to docker group
+      user:
+        name: ubuntu
+        groups: docker
+        append: yes
+
+    - name: Create application directory
+      file:
+        path: "{{ app_dir }}"
+        state: directory
+        owner: ubuntu
+        group: ubuntu
+        mode: '0755'
+
+    - name: Create storage directories
+      file:
+        path: "{{ app_dir }}/{{ item }}"
+        state: directory
+        owner: "33" # www-data user ID in container
+        group: "33"
+        mode: '0775'
+      loop:
+        - storage
+        - storage/framework
+        - storage/framework/cache
+        - storage/framework/sessions
+        - storage/framework/views
+        - storage/logs
+        - bootstrap/cache
+
+# Note: The actual files (.env and docker-compose.prod.yml) should be copied securely via GitHub Actions
+# but Ansible can orchestrate the Docker commands below.
+
+    - name: Authenticate Docker with Amazon ECR
+      command: "aws ecr get-login-password --region {{ aws_region }} | docker login --username AWS --password-stdin {{ ecr_registry }}"
+      become: yes
+      become_user: ubuntu
+
+    - name: Pull Docker images
+      command: docker-compose -f docker-compose.prod.yml pull
+      args:
+        chdir: "{{ app_dir }}"
+      become: yes
+      become_user: ubuntu
+
+    - name: Restart Docker containers
+      command: docker-compose -f docker-compose.prod.yml up -d --build
+      args:
+        chdir: "{{ app_dir }}"
+      become: yes
+      become_user: ubuntu
+
+    - name: Prune old Docker images
+      command: docker system prune -af
+      become: yes
+      become_user: ubuntu
