@@ -3,7 +3,7 @@ name: Build, Push to ECR, and Deploy to EC2
 on:
   push:
     branches:
-      - main # Or whatever your production branch is called
+      - main
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
@@ -89,6 +89,9 @@ jobs:
           envs: AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,AWS_DEFAULT_REGION
           script: |
             mkdir -p my-app/storage/framework/{cache,sessions,views} my-app/storage/logs my-app/bootstrap/cache
+            sudo chown -R 33:33 my-app/storage my-app/bootstrap/cache
+            sudo find my-app/storage my-app/bootstrap/cache -type d -exec chmod 775 {} \;
+            sudo find my-app/storage my-app/bootstrap/cache -type f -exec chmod 664 {} \;
             cd my-app
             mv docker-compose.prod.yml docker-compose.yml
             rm -f bootstrap/cache/*.php
