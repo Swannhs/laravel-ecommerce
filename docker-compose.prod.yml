@@ -10,6 +10,8 @@ services:
       - php
     networks:
       - app-network
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
 
   php:
     image: ${PHP_IMAGE:-767397729598.dkr.ecr.us-east-1.amazonaws.com/laravel-ecommerce:php-latest}
@@ -37,7 +39,7 @@ services:
     volumes:
       - db-data:/var/lib/mysql
     healthcheck:
-      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$$MYSQL_USER -p$$MYSQL_PASSWORD --silent"]
+      test: [ "CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$$MYSQL_USER -p$$MYSQL_PASSWORD --silent" ]
       interval: 10s
       timeout: 5s
       retries: 12
