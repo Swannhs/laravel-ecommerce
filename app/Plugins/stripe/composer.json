@@ -1,8 +1,0 @@
-{
-    "name": "platformcore/stripe",
-    "description": "Stripe Payment Gateway",
-    "type": "package",
-    "require": {
-        "stripe/stripe-php": "18.2.0"
-    }
-}
