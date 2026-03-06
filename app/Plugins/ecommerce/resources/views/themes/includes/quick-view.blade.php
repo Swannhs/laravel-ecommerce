@@ -103,7 +103,7 @@
                     @endif
                     <span>
                     <span
-                        id="is-out-of-stock">{{ !$product->isOutOfStock() ? trans('plugins/ecommerce::ecommerce.in_stock' : trans('plugins/ecommerce::ecommerce.out_of_stock' }}</span>
+                        id="is-out-of-stock">{{ !$product->isOutOfStock() ? trans('plugins/ecommerce::ecommerce.in_stock') : trans('plugins/ecommerce::ecommerce.out_of_stock') }}</span>
                 </span>
 
                     @if (!$product->categories->isEmpty())
