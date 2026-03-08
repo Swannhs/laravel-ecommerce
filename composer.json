@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2|^8.3",
@@ -30,16 +33,12 @@
         "maennchen/zipstream-php": "3.1.*",
         "mews/purifier": "^3.3",
         "mobiledetect/mobiledetectlib": "^4.8",
-        "mollie/laravel-mollie": "^3.0",
         "mpdf/mpdf": "^8.2",
-        "paypal/paypal-checkout-sdk": "^1.0",
         "phpseclib/bcmath_compat": "^2.0",
         "predis/predis": "^3.0",
-        "razorpay/razorpay": "^2.9",
         "resend/resend-php": "*",
         "shippo/shippo-php": "^2.0",
         "spatie/simple-excel": "^3.2.0",
-        "stripe/stripe-php": "18.2.0",
         "symfony/cache": "^5.4|^6.0|^7.0",
         "symfony/http-client": "^7.2",
         "symfony/mailgun-mailer": "^7.2",
